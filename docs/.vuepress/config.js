@@ -24,28 +24,6 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
-    locales: {
-      '/': {
-        recoLocales: {
-          homeBlog: {
-            // 默认 文章
-            article: '美文',
-            // 默认 标签
-            tag: '标识',
-            // 默认 分类
-            category: '类别',
-            // 默认 友情链接
-            friendLink: '友链'
-          },
-          pagation: {
-            prev: '上一页',
-            next: '下一页',
-            go: '前往',
-            jump: '跳转至'
-          }
-        }
-      }
-    },
     //设置项目加密密钥
     keyPage: {
       //1.3.0 版本后需要设置为密文,['32位的 md5 加密密文']
@@ -86,8 +64,8 @@ module.exports = {
       },
       // 信息栏展示社交信息
       socialLinks: [
-        { icon: 'reco-github', link: 'https://github.com/recoluan' },
-        { icon: 'reco-npm', link: 'https://www.npmjs.com/~reco_luan' }
+        { icon: 'reco-github', link: 'https://github.com/AnyFork/blog-docs' },
+        { icon: 'reco-gitee', link: 'https://gitee.com/AnyFork' }
       ]
     },
     friendLink: [
@@ -117,10 +95,20 @@ module.exports = {
     authorAvatar: '/user.jpg',
     record: '陕ICP备17067667号-1',
     startYear: '2022',
-    lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
-    docsDir: '.vuepress', // 编辑的文件夹
-    editLinks: true, // 启用编辑
-    editLinkText: '编辑'
+    //开启最后更新
+    lastUpdated: true,
+    //开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
+    lastUpdated: '上次更新',
+    //git地址
+    repo: 'AnyFork/blog-docs',
+    //如果你的文档不在仓库的根部
+    docsDir: 'docs',
+    //是否开启编辑链接
+    editLinks: true,
+    //链接文本
+    editLinkText: '在 GitHub 上编辑此页！',
+    //仓库代码提交的分支,默认main
+    docsBranch: 'main'
   },
   markdown: {
     lineNumbers: true

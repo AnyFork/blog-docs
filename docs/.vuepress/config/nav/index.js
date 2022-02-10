@@ -11,7 +11,7 @@ module.exports = [
     items: [
       {
         text: 'java资料库',
-        link: '/docs/java/'
+        link: '/java/'
       }
     ]
   },
@@ -21,7 +21,7 @@ module.exports = [
     items: [
       {
         text: 'Vue资料库',
-        link: '/docs/vue/'
+        link: '/vue/'
       }
     ]
   },
@@ -31,7 +31,7 @@ module.exports = [
     items: [
       {
         text: '运维资料库',
-        link: '/docs/devOps/'
+        link: '/devOps/'
       }
     ]
   },
@@ -41,15 +41,15 @@ module.exports = [
     items: [
       {
         text: '朋友圈',
-        link: '/docs/other/firends'
+        link: '/other/firends'
       },
       {
         text: '关于我',
-        link: '/docs/other/about'
+        link: '/other/about'
       },
       {
         text: '杂聊',
-        link: '/docs/other/2022/'
+        link: '/other/2022/'
       },
       {
         text: 'LeetCode',
@@ -61,10 +61,5 @@ module.exports = [
     text: '时间轴',
     link: '/timeline/',
     icon: 'reco-date'
-  },
-  {
-    text: 'GitHub',
-    link: 'https://github.com/recoluan',
-    icon: 'reco-github'
   }
 ]

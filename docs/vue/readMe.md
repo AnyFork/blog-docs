@@ -1,15 +1,91 @@
 ---
-title: 摘要
-date: 2019-11-01
+title: 朋友圈
+date: 2022-02-09
+lang: zh-CN
+tags:
+  - 其他
+categories:
+  - 其他
+isShowComments: true
+subSidebar: true
+sidebar: false
+publish: false
 ---
 
-这里的内容会被显示成摘要。
+<style>
+body{
+  background-image: url('/bg.gif');
+}
+.anchor-down {
+  display: block;
+  margin: 12rem auto 0;
+  bottom: 30px;
+  width: 15px;
+  height: 15px;
+  font-size: 30px;
+  text-align: center;
+  animation: bounce-in 5s 3s infinite;
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  margin-left: -10px;
+  cursor: pointer;
+}
+@-webkit-keyframes bounce-in{
+  0%{transform:translateY(0)}
+  20%{transform:translateY(0)}
+  50%{transform:translateY(-20px)}
+  80%{transform:translateY(0)}
+  to{transform:translateY(0)}
+}
+.anchor-down::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  transform: rotate(135deg);
+  position: absolute;
+  bottom: 10px;
+}
+.anchor-down::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-right: 3px solid #fff;
+  border-top: 3px solid #fff;
+  transform: rotate(135deg);
+}
+</style>
+<script>
+export default {
+  mounted () {
+    //  var options = {
+    //   strings: ['vuepress-theme-reco', 'A simple and beautiful vuepress blog theme.'],
+    //    typeSpeed: 100,   //打印速度
+    //    startDelay: 30, //开始之前的延迟30毫秒
+    //    loop: true     //是否循环
+    // };
+    // var typed = new Typed('.hero', options);
+    const ifJanchor = document.getElementById("JanchorDown"); 
+    ifJanchor && ifJanchor.parentNode.removeChild(ifJanchor);
+    let a = document.createElement('a');
+    a.id = 'JanchorDown';
+    a.className = 'anchor-down';
+    document.getElementsByClassName('hero')[0].append(a);
+    let targetA = document.getElementById("JanchorDown");
+    targetA.addEventListener('click', e => { // 添加点击事件
+      this.scrollFn();
+    })   
+  },
 
-1. 可以放置文案；
-2. 可以放置图片作为文章封面。
-
-![avatar](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic41.nipic.com%2F20140518%2F4135003_102025858000_2.jpg&refer=http%3A%2F%2Fpic41.nipic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1646986859&t=793f3b02576d2a06245b7865f4f82865)
-
-<!-- more -->
-
-这里是文章的正文。
+  methods: {
+    scrollFn() {
+      const windowH = document.getElementsByClassName('hero')[0].clientHeight; // 获取窗口高度
+      document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
+    }
+  }
+}
+</script>
