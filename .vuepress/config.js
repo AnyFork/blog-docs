@@ -11,6 +11,9 @@ module.exports = {
   dest: 'dist',
   head: [
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+    ['meta', { name: 'renderer', content: 'webkit' }],
+    ['meta', { name: 'referrer', content: 'never' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   //修改默认的语言
@@ -28,11 +31,11 @@ module.exports = {
             // 默认 文章
             article: '美文',
             // 默认 标签
-            tag: '标识', 
-             // 默认 分类
+            tag: '标识',
+            // 默认 分类
             category: '类别',
             // 默认 友情链接
-            friendLink: '友链' 
+            friendLink: '友链'
           },
           pagation: {
             prev: '上一页',

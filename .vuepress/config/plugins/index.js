@@ -30,11 +30,21 @@ module.exports = [
       }
     }
   ],
+  [
+    '@vuepress/pwa',
+    {
+      serviceWorker: true,
+      updatePopup: {
+        message: '发现新内容可用',
+        buttonText: '刷新'
+      }
+    }
+  ],
   //kanbanniang
   [
     '@vuepress-reco/vuepress-plugin-kan-ban-niang',
     {
-      theme: ['whiteCat','miku', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'blackCat', 'z16'],
+      theme: ['whiteCat', 'miku', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'blackCat', 'z16'],
       clean: false,
       messages: {
         welcome: '欢迎来到我的博客',
@@ -55,25 +65,26 @@ module.exports = [
       body: [
         {
           type: 'title',
-          content: '欢迎加我的QQ/vx 🎉🎉🎉',
-          style: 'text-aligin: center;'
+          content: '欢迎来到我的博客🎉🎉🎉',
+          style: 'text-align: center;font-size: 15px;font-weight: bold;'
         },
         {
           type: 'text',
-          content: 'QQ/VX：1349320519',
-          style: 'text-align: center;'
+          content: '博客汇集了个人总结的资料文档，会不定期进行更新!',
+          style: 'text-align: left;text-indent: 10px;font-size: 13px;'
         },
         {
           type: 'text',
-          content: '喜欢的主题特效可以去个人信息',
-          style: 'text-align: center;'
+          content: '博客中可能存在一些问题，欢迎小伙伴们给我留言.',
+          style: 'text-align: left;text-indent: 10px;font-size: 13px;'
         },
         {
           type: 'text',
-          content: '友链或疑问均可在留言板给我留言',
-          style: 'text-align: center;'
+          content: '邮箱：874957743@qq.com',
+          style: 'text-align: left;text-indent: 10px;font-size: 13px;'
         }
-      ]
+      ],
+      footer: null
     }
   ],
   //音乐播放器插件
