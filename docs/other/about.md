@@ -14,7 +14,7 @@ publish: false
 <!-- more -->
 
 <Boxx/>
-![这就是我](/user.jpg)
+![这就是我](/images/user.jpg)
 :::tip
 联系我
 :::

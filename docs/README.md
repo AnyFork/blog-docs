@@ -2,14 +2,14 @@
 home: true
 heroText: vuepress-theme-reco
 tagline: A simple and beautiful vuepress blog theme.
-bgImage: bg.jpg
+bgImage: images/bg.jpg
 bgImageStyle: { height: '450px', color: '#fff' }
 isShowTitleInHome: false
 ---
 
 <style>
 body{
-  background-image: url('/bg.gif');
+  background-image: url('/images/bg.gif');
 }
 .anchor-down {
   display: block;

@@ -88,11 +88,11 @@ module.exports = {
         link: 'https://vuepress-community.netlify.app/zh/'
       }
     ],
-    logo: '/user.jpg',
+    logo: '/images/user.jpg',
     search: true,
     searchMaxSuggestions: 10,
     author: '小紫念沁',
-    authorAvatar: '/user.jpg',
+    authorAvatar: '/images/user.jpg',
     record: '陕ICP备17067667号-1',
     startYear: '2022',
     //开启最后更新
