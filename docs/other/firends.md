@@ -79,27 +79,29 @@ publish: false
   desc: 喜欢大数据，嵌入式和机器视觉
   bgColor: 'rgb(243 126 126)'
   textColor: 'rgb(102 48 72)'
-- name: 站位等待中...
-  link:
-  avatar:
-  desc: 稍息，立正。欢迎入队！👍
-  bgColor: 'rgb(157 156 186)'
-  textColor: 'rgb(252 249 247)'
+- name: 饭团也有春天
+  link: http://www.zpzpup.com/blog/
+  avatar: https://www.zpzpup.com/assets/image/avatar.png
+  desc: 一个被程序员生涯耽误的优秀厨子
+  bgColor: 'rgb(163 243 126)'
+  textColor: 'rgb(102 48 72)'
+- name: 山海以南
+  link: https://mu-yan.cn/
+  avatar: https://cdn.jsdelivr.net/gh/Mu-Yan/Mu-Yan.github.io/avatar.jpg
+  desc: 己所不欲勿施于人
+  bgColor: 'rgb(163 243 126)'
+  textColor: 'rgb(102 48 72)'
 ```
 
 :::
 
-::: cardImgList 2
+::: cardImgList 1
 
 ```yaml
-- img: https://gitee.com/lovelijunyi/images/raw/master/20200404135847.jpg
-  link: /znote/other/friends.html
-  name: For you
-  desc: 你若盛开，清风自来。
-- img: https://gitee.com/lovelijunyi/images/raw/master/20200404135847.jpg
-  link: /znote/other/friends.html
-  name: To me
-  desc: 心若浮沉，浅笑安然。
+- img: https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png
+  link: https://vuepress-theme-reco.recoluan.com/views/other/theme-example.html
+  name: 官网案例
+  desc: 优秀博客案例
 ```
 
 :::

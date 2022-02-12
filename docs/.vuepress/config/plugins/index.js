@@ -93,24 +93,38 @@ module.exports = [
     '@vuepress-reco/vuepress-plugin-bgm-player',
     {
       audios: [
-        // 网络文件示例
+        //本地音乐4首
         {
-          name: '강남역 4번 출구',
-          artist: 'Plastic / Fallin` Dild',
-          url: 'https://assets.smallsunnyfox.com/music/2.mp3',
-          cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+          name: 'Victory(胜利)',
+          artist: 'Two Steps From Hell',
+          url: '/music/victory/victory.mp3',
+          cover: '/music/victory/victory.jpg'
         },
         {
-          name: '用胳膊当枕头',
-          artist: '최낙타',
-          url: 'https://assets.smallsunnyfox.com/music/3.mp3',
-          cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+          name: '卡农',
+          artist: '卡农钢琴版',
+          url: '/music/canon/canon.mp3',
+          cover: '/music/canon/canon.jpg'
+        },
+        {
+          name: '风居住的街道',
+          artist: '风居住的街道 钢琴版 - 钢琴曲',
+          url: '/music/wind/wind.mp3',
+          cover: '/music/wind/wind.jpg'
+        },
+        {
+          name: '夜的钢琴曲',
+          artist: '夜的钢琴曲五 - 石进',
+          url: '/music/night/night.mp3',
+          cover: '/music/night/night.jpg'
         }
       ],
       //自动缩放
-      autoShrink: false,
+      autoShrink: true,
       //自动播放
-      autoplay: true
+      autoplay: true,
+      //float样式
+      floatStyle: { bottom: '80px', 'z-index': '999999' }
     }
   ],
   //鼠标点击插件
@@ -118,9 +132,12 @@ module.exports = [
     //github地址：https://github.com/moefyit/vuepress-plugin-cursor-effects
     'vuepress-plugin-cursor-effects',
     {
-      size: 4, // size of the particle, default: 2
-      shape: 'star', // shape of the particle, default: 'star'
-      zIndex: 999999999 // z-index property of the canvas, default: 999999999
+      // size of the particle, default: 2
+      size: 4,
+      // shape of the particle, default: 'star'
+      shape: 'star',
+      // z-index property of the canvas, default: 999999999
+      zIndex: 999999999
     }
   ],
   // 只要把这个放进 config的plugins中就可以了 有木有很简单
@@ -152,20 +169,27 @@ module.exports = [
         // 随着时间的推移，为每个功能区添加动画效果
         animateSections: true
       },
-      ribbonShow: false, //  点击彩带  true显示  false为不显示
-      ribbonAnimationShow: true // 滑动彩带
+      //  点击彩带  true显示  false为不显示
+      ribbonShow: false,
+      // 滑动彩带
+      ribbonAnimationShow: true
     }
   ],
   //樱花插件，github地址：https://github.com/JabinPeng/vuepress-plugin-sakura
   [
     'sakura',
     {
-      num: 30, // 默认数量
-      show: true, //  是否显示
-      zIndex: 100, // 层级
+      // 默认数量
+      num: 40,
+      //是否显示
+      show: true,
+      // 层级
+      zIndex: 100,
       img: {
-        replace: false, // false 默认图 true 换图 需要填写httpUrl地址
-        httpUrl: '...' // 绝对路径
+        // false 默认图 true 换图 需要填写httpUrl地址
+        replace: true,
+        // 绝对路径
+        httpUrl: '/snowflake/blue.png'
       }
     }
   ],

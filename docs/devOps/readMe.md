@@ -11,9 +11,7 @@ sticky: 1
 isShowComments: true
 subSidebar: true
 sidebar: false
-keys:
-  - 'e10adc3949ba59abbe56e057f20f883e'
-publish: true
+listCell: { mode: right, summary: xxxxxxxx, image: /images/index/bg1.jpg }
 ---
 
 ::: tip

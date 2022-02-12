@@ -1,86 +1,38 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
-bgImage: images/bg.jpg
+#主标题文本，为数组时会使用打印机打印功能，非数组静态文本
+heroText:
+  - 学而时习之，不亦说乎?^1000
+  - 学习要有三心，一信心，二决心，三恒心
+#副标题
+tagline: 人不光是靠他生来就拥有一切,而是靠他从学习中所得到的一切来造就自己。
+#背景图片，可以为数组,可以为远程背景图片，图片资源网：https://pic.netbian.com/4kmeinv/
+bgImage:
+  - images/index/bg1.jpg
+  - images/index/bg2.jpg
+  - https://pic.netbian.com/uploads/allimg/210812/234309-1628782989eba1.jpg
+  - https://pic.netbian.com/uploads/allimg/220118/123915-1642480755aebf.jpg
+  - https://pic.netbian.com/uploads/allimg/220114/233626-164217458617bf.jpg
+  - https://pic.netbian.com/uploads/allimg/210302/004312-1614616992f346.jpg
+# 背景图片切换时间间隔：默认10秒，单位毫秒
+bgImageSec: 10000
+#背景图片是否动态切换,默认不开启，刷新会更换图片
+isBgImagetrigger: true
+#是否使用系统默认的背景图片，开启后会和自定义的背景图片一起使用
+needDefaultImages: true
+#背景图片样式
 bgImageStyle: { height: '450px', color: '#fff' }
 isShowTitleInHome: false
+#是否展示箭头
+showArrow: true
+# 个人摘要
+summary: 加油,为更美好的明天而战!
+# 兴趣爱好
+hobby:
+  - 游泳
+  - 滑雪
+  - 乒乓球
+  - 看小说
+  - 编程
+  - 旅游
 ---
-
-<style>
-body{
-  background-image: url('/images/bg.gif');
-}
-.anchor-down {
-  display: block;
-  margin: 12rem auto 0;
-  bottom: 30px;
-  width: 15px;
-  height: 15px;
-  font-size: 30px;
-  text-align: center;
-  animation: bounce-in 5s 3s infinite;
-  position: absolute;
-  left: 50%;
-  bottom: 30%;
-  margin-left: -10px;
-  cursor: pointer;
-}
-@-webkit-keyframes bounce-in{
-  0%{transform:translateY(0)}
-  20%{transform:translateY(0)}
-  50%{transform:translateY(-20px)}
-  80%{transform:translateY(0)}
-  to{transform:translateY(0)}
-}
-.anchor-down::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-  transform: rotate(135deg);
-  position: absolute;
-  bottom: 10px;
-}
-.anchor-down::after {
-  content: "";
-  width: 15px;
-  height: 15px;
-  display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-  transform: rotate(135deg);
-}
-</style>
-<script>
-export default {
-  mounted () {
-    //  var options = {
-    //   strings: ['vuepress-theme-reco', 'A simple and beautiful vuepress blog theme.'],
-    //    typeSpeed: 100,   //打印速度
-    //    startDelay: 30, //开始之前的延迟30毫秒
-    //    loop: true     //是否循环
-    // };
-    // var typed = new Typed('.hero', options);
-    const ifJanchor = document.getElementById("JanchorDown"); 
-    ifJanchor && ifJanchor.parentNode.removeChild(ifJanchor);
-    let a = document.createElement('a');
-    a.id = 'JanchorDown';
-    a.className = 'anchor-down';
-    document.getElementsByClassName('hero')[0].append(a);
-    let targetA = document.getElementById("JanchorDown");
-    targetA.addEventListener('click', e => { // 添加点击事件
-      this.scrollFn();
-    })   
-  },
-
-  methods: {
-    scrollFn() {
-      const windowH = document.getElementsByClassName('hero')[0].clientHeight; // 获取窗口高度
-      document.documentElement.scrollTop = windowH; // 滚动条滚动到指定位置
-    }
-  }
-}
-</script>

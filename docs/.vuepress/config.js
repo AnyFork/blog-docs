@@ -51,7 +51,8 @@ module.exports = {
     nav: nav,
     //侧边栏sidebar
     sidebar: sidebar,
-    type: 'blog',
+    //自定义首页
+    type: 'IndexPage',
     //blog分类和标签设置
     blogConfig: {
       category: {
@@ -65,7 +66,7 @@ module.exports = {
       // 信息栏展示社交信息
       socialLinks: [
         { icon: 'reco-github', link: 'https://github.com/AnyFork/blog-docs' },
-        { icon: 'reco-gitee', link: 'https://gitee.com/AnyFork' }
+        { icon: 'reco-mayun', link: 'https://gitee.com/AnyFork' }
       ]
     },
     friendLink: [

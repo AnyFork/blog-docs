@@ -14,7 +14,7 @@ export default {
     name: 'Reward',
     data() {
         return {
-            rewardImg: '/pay.jpg'
+            rewardImg: '/images/pay.png'
         }
     }
 }

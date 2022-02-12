@@ -1,6 +1,6 @@
 ---
 title: 友人帐
-date: 2019-10-20 00:00:00
+date: 2019-10-20 18:34:00
 description: description,
 lang: zh-CN
 tags:
@@ -11,14 +11,19 @@ sticky: 1
 isShowComments: true
 subSidebar: true
 sidebar: false
-keys:
-  - 'e10adc3949ba59abbe56e057f20f883e'
 publish: true
+listCell: {
+ mode: left,
+ summary: xxxxxxxx,
+ image: /images/index/bg1.jpg
+}
+layout: Projects
+footer: true
 ---
 
-::: tip
-这是一个摘要
-:::
+这是摘要信息，测试一下
+- 哈哈
+- 你好
 
 <!-- more -->
 

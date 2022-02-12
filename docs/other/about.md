@@ -9,6 +9,7 @@ isShowComments: true
 subSidebar: true
 sidebar: false
 publish: false
+layout: HomeBlog
 ---
 
 <!-- more -->
