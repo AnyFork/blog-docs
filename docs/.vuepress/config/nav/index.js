@@ -48,7 +48,7 @@ module.exports = [
         link: '/other/about'
       },
       {
-        text: '杂聊',
+        text: '资源网',
         link: '/other/2022/'
       },
       {

@@ -6,7 +6,7 @@
     <reco-icon v-if="pageInfo.frontmatter.date" icon="reco-date">
       <span>{{ formatDateValue(pageInfo.frontmatter.date) }}</span>
     </reco-icon>
-    <br v-if="windowsWidth<500" />
+    <br v-if="windowsWidth < 500" />
     <reco-icon v-if="pageInfo.frontmatter.tags" icon="reco-tag" class="tags">
       <span v-for="(subItem, subIndex) in pageInfo.frontmatter.tags" :key="subIndex" class="tag-item" :class="{ active: currentTag == subItem }" @click.stop="goTags(subItem)">{{ subItem }}</span>
     </reco-icon>
@@ -64,6 +64,9 @@ export default defineComponent({
       return dayjs(value).format('YYYY-MM-DD HH:mm:ss')
     }
     return { goTags, formatDateValue, goCategory }
+  },
+  mounted() {
+    console.log(this.windowsWidth)
   }
 })
 </script>

@@ -5,9 +5,9 @@
         <div class="page-title">
           <div style="display: flex; align-items: center; justify-content: space-between">
             <h1 class="title" style="display: inline-block">{{ $page.title }}</h1>
-            <h1 v-show="!$frontmatter.home" style="display: inline-block; float: right; cursor: pointer; font-size: 15px" @click="$router.go(-1)"><img src="/svg/back.svg" style="width: 15px" />返回</h1>
+            <h1 v-show="!$frontmatter.home" style="display: inline-block; float: right; cursor: pointer; font-size: 15px" @click="$router.go(-1)"><img src="/svg/back.svg" style="width: 15px" /> 返回</h1>
           </div>
-          <PageInfo :pageInfo="$page" :showAccessNumber="showAccessNumber"></PageInfo>
+          <PageInfo :pageInfo="$page" :showAccessNumber="showAccessNumber" :windowsWidth="width"></PageInfo>
         </div>
         <!-- 这里使用 v-show，否则影响 SSR -->
         <Content class="theme-reco-content" />
@@ -20,7 +20,6 @@
           <a :href="editLink" target="_blank" rel="noopener noreferrer">{{ editLinkText }}</a>
           <OutboundLink />
         </div>
-
         <div class="last-updated" v-if="lastUpdated">
           <span class="prefix">{{ lastUpdatedText }}: </span>
           <span class="time">{{ lastUpdated }}</span>
@@ -56,17 +55,25 @@
 </template>
 
 <script>
-import { defineComponent, computed, toRefs } from 'vue-demi'
+import { defineComponent, computed, toRefs,ref } from 'vue-demi'
 import PageInfo from './PageInfo'
 import { resolvePage, outboundRE, endingSlashRE } from 'vuepress-theme-reco/helpers/utils'
 import { ModuleTransition } from '@vuepress-reco/core/lib/components'
 import SubSidebar from 'vuepress-theme-reco/components/SubSidebar'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
+import windowsSize from '../utils/windowsSize.js'
 
 export default defineComponent({
   components: { PageInfo, ModuleTransition, SubSidebar },
   props: ['sidebarItems'],
   setup(props, ctx) {
+    const { winWidth } = windowsSize.getWindowSize()
+    const width = ref(winWidth)
+    setInterval(() => {
+      const windowsWidth = windowsSize.getWindowSize()
+      width.value = windowsWidth.winWidth
+    }, 1000)
+
     const instance = useInstance()
 
     const { sidebarItems } = toRefs(props)
@@ -158,7 +165,8 @@ export default defineComponent({
       next,
       editLink,
       editLinkText,
-      pageStyle
+      pageStyle,
+      width
     }
   }
 })

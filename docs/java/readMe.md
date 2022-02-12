@@ -14,10 +14,9 @@ sidebar: false
 publish: true
 listCell: {
  mode: left,
- summary: xxxxxxxx,
  image: /images/index/bg1.jpg
 }
-layout: Projects
+layout: PageLayOut
 footer: true
 ---
 
