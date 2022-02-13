@@ -24,7 +24,7 @@
     <div v-if="$frontmatter.hobby">
       <span><reco-icon icon="reco-document"></reco-icon>兴趣爱好</span>
       <div style="margin-top: 5px">
-        <span v-for="(item, index) in $frontmatter.hobby" :key="index" :style="{ backgroundColor: color }" class="hobbySpan">{{ item }}</span>
+        <span v-for="(item, index) in $frontmatter.hobby" :key="index" :style="{ backgroundColor: getOneColor() }" class="hobbySpan">{{ item }}</span>
       </div>
     </div>
     <!--其他链接-->
@@ -45,7 +45,6 @@ import { defineComponent, computed, ref } from 'vue-demi'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import { getOneColor } from 'vuepress-theme-reco/helpers/other'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
-
 export default defineComponent({
   components: { RecoIcon },
   setup(props, ctx) {
@@ -56,13 +55,7 @@ export default defineComponent({
         return item
       })
     )
-    //兴趣爱好颜色
-    const color = ref(getOneColor())
-    //10秒更新一次
-    setInterval(() => {
-      color.value = getOneColor()
-    }, 10000)
-    return { socialLinks, color }
+    return { socialLinks,getOneColor }
   }
 })
 </script>

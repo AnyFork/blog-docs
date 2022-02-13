@@ -1,3 +1,4 @@
+//获取public/images/index文件下所有的图片,用于系统默认首页顶部图片和用户自定义图片混合或单独使用
 export default {
   //获取指定文件夹下面的图片
   getPublicImages: () => {

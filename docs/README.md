@@ -14,7 +14,7 @@ bgImage:
   - https://pic.netbian.com/uploads/allimg/220118/123915-1642480755aebf.jpg
   - https://pic.netbian.com/uploads/allimg/220114/233626-164217458617bf.jpg
   - https://pic.netbian.com/uploads/allimg/210302/004312-1614616992f346.jpg
-# 背景图片切换时间间隔：默认10秒，单位毫秒
+#背景图片切换时间间隔：默认10秒，单位毫秒
 bgImageSec: 10000
 #背景图片是否动态切换,默认不开启，刷新会更换图片
 isBgImagetrigger: true
@@ -25,9 +25,9 @@ bgImageStyle: { height: '450px', color: '#fff' }
 isShowTitleInHome: false
 #是否展示箭头
 showArrow: true
-# 个人摘要
+#个人摘要
 summary: 加油,为更美好的明天而战!
-# 兴趣爱好
+#兴趣爱好
 hobby:
   - 游泳
   - 滑雪

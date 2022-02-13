@@ -9,7 +9,7 @@
 import { defineComponent, ref, toRefs, computed, onMounted } from 'vue-demi'
 import pagination from 'vuepress-theme-reco/mixins/pagination'
 import NoteAbstractItem from './NoteAbstractItem'
-import windowsSize from '../utils/windowsSize.js'
+import windowsSize from '../utils/mixins/windowsSize.js'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
 export default defineComponent({
   mixins: [pagination,windowsSize],

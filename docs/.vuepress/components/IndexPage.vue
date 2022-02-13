@@ -36,11 +36,12 @@
           <personal-info />
           <!--分类-->
           <h4>
-            <reco-icon icon="reco-category" /> {{ $recoLocales.category }}
-            <span style="float: right; margin-right: 10px"
-              ><span style="font-weight: bold">{{ categoryArticleNum }}</span
-              >篇</span
-            >
+            <reco-icon icon="reco-category" />
+            {{ $recoLocales.category }}
+            <span style="float: right; margin-right: 10px">
+              <span style="font-weight: bold">{{ categoryArticleNum }}</span
+              >篇
+            </span>
           </h4>
           <ul class="category-wrapper">
             <li class="category-item" v-for="(item, index) in $categories.list" :key="index">
@@ -69,14 +70,13 @@
     </ModuleTransition>
 
     <ModuleTransition delay="0.24">
-      <Content v-show="recoShowModule" class="home-center" custom/>
+      <Content v-show="recoShowModule" class="home-center" custom />
     </ModuleTransition>
   </div>
 </template>
 
 <script>
-import Typed from 'typed.js'
-import { defineComponent, toRefs, reactive, computed, onMounted, ref, nextTick } from 'vue-demi'
+import { defineComponent, toRefs, reactive, computed, onMounted, ref } from 'vue-demi'
 import TagList from './TagList'
 import FriendLink from './FriendLink'
 import NoteAbstract from './NoteAbstract'
@@ -84,9 +84,10 @@ import { ModuleTransition, RecoIcon } from '@vuepress-reco/core/lib/components'
 import PersonalInfo from './PersonalInfo'
 import { getOneColor } from 'vuepress-theme-reco/helpers/other'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
-import publicImages from '../utils/publicImages.js'
+import changBg from '../utils/mixins/changeBg.js'
 export default defineComponent({
   components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon },
+  mixins: [changBg],
   setup(props, ctx) {
     const instance = useInstance()
     const state = reactive({
@@ -106,82 +107,11 @@ export default defineComponent({
     //index图片样式
     const heroImageStyle = computed(() => instance.$frontmatter.heroImageStyle || {})
 
-    //顶部背景图片
-    const bgImageStyle = computed(() => {
-      let mixImage = []
-      //默认的背景图片，目录public/images/index
-      const defaultImgaess = publicImages.getPublicImages()
-      if (instance.$frontmatter.needDefaultImages) {
-        if (instance.$frontmatter.bgImage instanceof Array) {
-          mixImage = defaultImgaess.concat(instance.$frontmatter.bgImage)
-        } else {
-          if (instance.$frontmatter.bgImage) {
-            mixImage.push(instance.$frontmatter.bgImage)
-            mixImage = mixImage.concat(defaultImgaess)
-          } else {
-            mixImage.push(defaultImgaess[0])
-          }
-        }
-      } else {
-        mixImage.push(instance.$frontmatter.bgImage ? instance.$frontmatter.bgImage : defaultImgaess[0])
-      }
-      //数组滤重
-      mixImage = Array.from(new Set(mixImage))
-      //获取随机图片
-      let imageUrl = mixImage.length == 1 ? mixImage[0] : publicImages.getRandomImage(mixImage)
-      //判断图片是否是远程图片
-      const url = ref(imageUrl.indexOf('http') > -1 || imageUrl.indexOf('http') > -1 ? imageUrl : instance.$withBase(imageUrl))
-      //判断是否被开启背景图片切换功能
-      if (instance.$frontmatter.isBgImagetrigger) {
-        //定时切花背景图片
-        setInterval(
-          () => {
-            imageUrl = mixImage.length == 1 ? mixImage[0] : publicImages.getRandomImage(mixImage)
-            //判断图片是否是远程图片
-            url.value = imageUrl.indexOf('http://') > -1 || imageUrl.indexOf('https://') > -1 ? imageUrl : instance.$withBase(imageUrl)
-          },
-          instance.$frontmatter.bgImageSec ? instance.$frontmatter.bgImageSec : 10000
-        )
-      }
-      const initBgImageStyle = { textAlign: 'center', overflow: 'hidden', background: `url(${url.value}) center/cover no-repeat` }
-      const { bgImageStyle } = instance.$frontmatter
-      return bgImageStyle ? { ...initBgImageStyle, ...bgImageStyle } : initBgImageStyle
-    })
-    const typedFction = () => {
-      //输入的主标题为数组时，通过typed进行打印，否则原样显示
-      if (instance.$frontmatter.heroText instanceof Array) {
-        new Typed('.mainTitle', {
-          //打印的字符串数组
-          strings: instance.$frontmatter.heroText,
-          //打印速度
-          typeSpeed: 300,
-          //开始之前的延迟300毫秒
-          startDelay: 300,
-          //退格速度
-          backSpeed: 500,
-          //是否循环
-          loop: true,
-          //Default value
-          smartBackspace: true
-        })
-      }
-    }
     onMounted(() => {
-      console.log('sssssssssssssss')
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true
-      //打印字符
-      nextTick(() => {
-        setTimeout(() => {
-          const el = document.querySelector('.mainTitle')
-          if (el) {
-            typedFction()
-          }
-        },500)
-      })
     })
-
-    return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor, categoryArticleNum }
+    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor, categoryArticleNum }
   },
   methods: {
     paginationChange(page) {

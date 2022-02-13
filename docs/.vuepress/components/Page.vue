@@ -63,7 +63,7 @@ import { resolvePage, outboundRE, endingSlashRE } from 'vuepress-theme-reco/help
 import { ModuleTransition } from '@vuepress-reco/core/lib/components'
 import SubSidebar from 'vuepress-theme-reco/components/SubSidebar'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
-import windowsSize from '../utils/windowsSize.js'
+import windowsSize from '../utils/mixins/windowsSize.js'
 
 export default defineComponent({
   components: { PageInfo, ModuleTransition, SubSidebar },
