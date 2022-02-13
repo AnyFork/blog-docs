@@ -1,4 +1,3 @@
-const path = require('path')
 const yaml = require('js-yaml')
 const CARD_LIST = 'cardList'
 const CARD_IMG_LIST = 'cardImgList'
