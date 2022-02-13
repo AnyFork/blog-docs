@@ -3,7 +3,7 @@ const sidebar = require('./config/sidebar')
 const plugins = require('./config/plugins')
 module.exports = {
   //站点根路径,默认配置/
-  base: '/blog-docs',
+  base: '/',
   //站点语言配置
   lang: 'zh-CN',
   title: '小紫念沁',
