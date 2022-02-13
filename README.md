@@ -1,15 +1,15 @@
-# QD-DOCS
+# BLOG-DOCS
 > 项目采用vuePress进行构建，markdown进行资料文档编写，vuePress对markdown文档进行编译，最终项目以html静态文件形式进行部署。主要用于总结前端技术资料文档，以备后续温顾和复习使用，资料正在收集中。
 
-* 仓库地址：https://github.com/AnyFork/QD-DOCS.git
-* 代码提交Token：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
+* 仓库地址：https://github.com/AnyFork/blog-docs.git
+* 代码提交: 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
 * vuePress官网地址：https://v2.vuepress.vuejs.org/zh/
 * 线上访问地址：https://anyfork.top
 
 ## 项目启动
 ```bash
 #拉取代码
-git clone -b main https://github.com/AnyFork/QD-DOCS.git
+git clone -b main https://github.com/AnyFork/blog-docs.git
 
 # 安装依赖包
 npm install
@@ -34,16 +34,20 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
       - name: Checkout
         uses: actions/checkout@v2.3.1
-      - name: Install and Build 
-        run: |
-          npm install
-          npm run build
-        env:
-          NODE_OPTIONS: '--max_old_space_size=4096'
+        with:
+          persist-credentials: false     
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.3
+        uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           BRANCH: gh-pages
           FOLDER: dist

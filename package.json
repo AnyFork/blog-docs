@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "author": "AnyFork",
   "description": "vuepress构建的资料文档博客",
+  "homepage": "https://anyfork.github.io/blog-docs/",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "npm run build&& gh-pages -d dist -r https://github.com/AnyFork/blog-docs.git"
   },
   "devDependencies": {
     "@vuepress/plugin-pwa": "^1.9.7",
@@ -20,6 +22,7 @@
     "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "dayjs": "^1.10.7",
+    "gh-pages": "^3.2.3",
     "typed.js": "^2.0.12",
     "vuepress-plugin-boxx": "0.0.7",
     "vuepress-plugin-cursor-effects": "^1.1.2",

@@ -10,7 +10,7 @@
         <!--主标题，主标题为数组时通过typed.js进行打印，反之正常显示 -->
         <ModuleTransition delay="0.04">
           <div class="hero-main-title">
-            <h1 v-if="recoShowModule && `${$frontmatter.heroText instanceof Array}`" class="mainTitle"></h1>
+            <h1 v-if="recoShowModule && `${$frontmatter.heroText instanceof Array}`" class="mainTitle" style="display: inline-block"></h1>
             <h1 v-if="recoShowModule && !($frontmatter.heroText instanceof Array)">{{ $frontmatter.heroText || $title || 'vuePress-theme-reco' }}</h1>
           </div>
         </ModuleTransition>
