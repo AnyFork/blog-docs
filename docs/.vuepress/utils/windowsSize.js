@@ -1,34 +1,32 @@
-//获取窗口尺寸大小
-const windowsSize = {
-  getWindowSize: () => {
-    let winWidth = ''
-    let winHeight = ''
-    // 获取窗口宽度
-    if (window.innerWidth) {
-      winWidth = window.innerWidth
-    } else if (document.body && document.body.clientWidth) {
-      winWidth = document.body.clientWidth
+export default {
+  data() {
+    return {
+      winWidth: 800,
+      winHeight: 1000
     }
-    // 获取窗口高度
-    if (window.innerHeight) {
-      winHeight = window.innerHeight
-    } else if (document.body && document.body.clientHeight) {
-      winHeight = document.body.clientHeight
-    }
-    // 通过深入 Document 内部对 body 进行检测，获取窗口大小
-    if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
-      winHeight = document.documentElement.clientHeight
-      winWidth = document.documentElement.clientWidth
-    }
-    return { winHeight, winWidth }
   },
-  bulletinPopoverShowSetting: () => {
-    const { winWidth } = windowsSize.getWindowSize()
-    //当窗口小于500自动隐藏公告栏
-    if (winWidth > 500) {
-      sessionStorage.setItem('closeNote', 'true')
+  mounted() {
+    this.getWindowSize()
+    this.bulletinPopoverShowSetting()
+    //监听浏览器窗口变化修改高度和宽度
+    window.onresize = () => {
+      this.$nextTick(() => {
+        this.getWindowSize()
+        this.bulletinPopoverShowSetting()
+      })
+    }
+  },
+  methods: {
+    getWindowSize() {
+      this.winWidth = document.body.clientWidth
+      this.winHeight = document.body.clientHeight
+      console.log(`窗口大小:width:${this.winWidth},height:${this.winHeight}`)
+    },
+    bulletinPopoverShowSetting() {
+      //当窗口小于500自动隐藏公告栏
+      if (this.winWidth > 500) {
+        sessionStorage.setItem('closeNote', 'true')
+      }
     }
   }
 }
-
-export default windowsSize

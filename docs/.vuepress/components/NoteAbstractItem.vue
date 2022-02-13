@@ -1,7 +1,7 @@
 <template>
   <div class="abstract-item" @click.stop="$router.push(item.path)">
     <reco-icon v-if="item.frontmatter.sticky" icon="reco-sticky" />
-    <div v-if="item.frontmatter.listCell && item.frontmatter.listCell.mode === 'left' && width > 500" class="box">
+    <div v-if="item.frontmatter.listCell && item.frontmatter.listCell.mode === 'left' && winWidth > 500" class="box">
       <div class="box_img">
         <img :src="item.frontmatter.listCell.image" />
       </div>
@@ -13,7 +13,7 @@
         <div class="abstract" v-html="item.excerpt"></div>
       </div>
     </div>
-    <div v-if="item.frontmatter.listCell && item.frontmatter.listCell.mode === 'right' && width > 500" class="box">
+    <div v-if="item.frontmatter.listCell && item.frontmatter.listCell.mode === 'right' && winWidth > 500" class="box">
       <div class="content right">
         <div class="title">
           <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
@@ -25,7 +25,7 @@
         <img :src="item.frontmatter.listCell.image" />
       </div>
     </div>
-    <div v-if="!item.frontmatter.listCell && width > 500">
+    <div v-if="!item.frontmatter.listCell && winWidth > 500">
       <div class="title">
         <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
         <router-link :to="item.path">{{ item.title }}</router-link>
@@ -33,17 +33,17 @@
       <div class="abstract" v-html="item.excerpt"></div>
     </div>
     <!--移动端样式，屏幕尺寸小于500布局样式-->
-    <div v-if="width < 500">
+    <div v-if="winWidth < 500">
       <div class="title">
         <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
         <router-link :to="item.path">{{ item.title }}</router-link>
       </div>
-      <div class="boxImg">
+      <div class="boxImg" v-if="item.frontmatter.listCell && item.frontmatter.listCell.image">
         <img :src="item.frontmatter.listCell.image" />
       </div>
       <div class="abstract" v-html="item.excerpt"></div>
     </div>
-    <page-info :pageInfo="item" :currentTag="currentTag" :showAccessNumber="true" :windowsWidth="width"></page-info>
+    <page-info :pageInfo="item" :currentTag="currentTag" :showAccessNumber="true" :windowsWidth="winWidth"></page-info>
   </div>
 </template>
 
@@ -51,19 +51,9 @@
 import { defineComponent, ref } from 'vue-demi'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import PageInfo from './PageInfo'
-import windowsSize from '../utils/windowsSize.js'
 export default defineComponent({
   components: { PageInfo, RecoIcon },
-  props: ['item', 'currentPage', 'currentTag'],
-  setup() {
-    const { winWidth } = windowsSize.getWindowSize()
-    const width = ref(winWidth)
-    setInterval(() => {
-      const windowsWidth = windowsSize.getWindowSize()
-      width.value = windowsWidth.winWidth
-    }, 1000)
-    return { width }
-  }
+  props: ['item', 'currentPage', 'currentTag', 'winWidth']
 })
 </script>
 <style lang="stylus" scoped>

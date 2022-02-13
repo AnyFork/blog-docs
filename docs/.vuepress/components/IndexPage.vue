@@ -85,7 +85,6 @@ import PersonalInfo from './PersonalInfo'
 import { getOneColor } from 'vuepress-theme-reco/helpers/other'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
 import publicImages from '../utils/publicImages.js'
-import windowsSize from '../utils/windowsSize.js'
 export default defineComponent({
   components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon },
   setup(props, ctx) {
@@ -168,8 +167,6 @@ export default defineComponent({
       }
     }
     onMounted(() => {
-      //判断当前窗口是否小于500，小于500关闭公告栏，主要适配移动端
-      windowsSize.bulletinPopoverShowSetting()
       console.log('sssssssssssssss')
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true

@@ -1,6 +1,6 @@
 <template>
   <div class="abstract-wrapper">
-    <note-abstract-item  class="border" v-for="(item,index) in currentPageData" :key="item.path" :item="item" :currentPage="currentPage"
+    <note-abstract-item  class="border" v-for="(item,index) in currentPageData" :key="item.path" :item="item" :currentPage="currentPage" :winWidth="winWidth"
     :currentTag="currentTag" :class="index%3==0?'draw':index%3==1?'draw meet':'center'"/>
     <pagation class="pagation" :total="data.length" :currentPage="currentPage" @getCurrentPage="getCurrentPage" />
   </div>
@@ -9,9 +9,10 @@
 import { defineComponent, ref, toRefs, computed, onMounted } from 'vue-demi'
 import pagination from 'vuepress-theme-reco/mixins/pagination'
 import NoteAbstractItem from './NoteAbstractItem'
+import windowsSize from '../utils/windowsSize.js'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
 export default defineComponent({
-  mixins: [pagination],
+  mixins: [pagination,windowsSize],
   components: { NoteAbstractItem },
   props: ['data', 'currentTag'],
   setup(props, ctx) {
