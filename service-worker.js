@@ -143,19 +143,19 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/index.html",
-    "revision": "38c477323f4d58d031f3953882015c1b"
+    "revision": "98db3e821f2aa57f419d814b1030b16c"
   },
   {
     "url": "categories/其他/index.html",
-    "revision": "5feca4bf61aaad36f7ad3a214638e67d"
+    "revision": "8a13db0e932d5c0d2f6a8c3645d4dc9c"
   },
   {
     "url": "categories/随笔Essay/index.html",
-    "revision": "0a0408b97bca6ed3a7bead3e26467722"
+    "revision": "b0964355f82a3b2745c26dc4aa67a832"
   },
   {
     "url": "devOps/index.html",
-    "revision": "acfc6af1ff2df53c9dbf161845894e13"
+    "revision": "0708026e9c81120a1692cb27991e350d"
   },
   {
     "url": "images/bg.gif",
@@ -171,27 +171,27 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "9258f4cd6ead9cf88432b1740f637367"
+    "revision": "1775403dd9e5d110ea6ea113f670862d"
   },
   {
     "url": "java/index.html",
-    "revision": "1372f6fa1135e2117b2f0f2502d9e854"
+    "revision": "5a501c1bd5ff110b54ff1fd47b39e1d0"
   },
   {
     "url": "other/2022/20220209.html",
-    "revision": "1f1a5e443b02f279230aba877a4ec39f"
+    "revision": "5321f0f408993c96e7b9109b71048b2f"
   },
   {
     "url": "other/2022/index.html",
-    "revision": "67fc2580cffbec895d73c8f89b465377"
+    "revision": "409cbcfbb8c369eb8c32c41aef0de2d6"
   },
   {
     "url": "other/about.html",
-    "revision": "9b0702d5ed4e00617076e00592e8e10d"
+    "revision": "f24668a80fc34b5c7303050057cdfaf6"
   },
   {
     "url": "other/firends.html",
-    "revision": "06429c6ae7e5f0514972726e7e12c4e4"
+    "revision": "27d2494a1ea86eed320621bc29f082e2"
   },
   {
     "url": "setting.png",
@@ -199,23 +199,23 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "5adbd8ca3cb6f682b52728667291d8d7"
+    "revision": "850a1ea8157e01f4727da60c3d9d297b"
   },
   {
     "url": "tag/其他/index.html",
-    "revision": "c5bc7a8c97c0a15f24f1a49bab497df3"
+    "revision": "f2bb5947479cf1ba5eb6ae20b129f63d"
   },
   {
     "url": "tag/随笔/index.html",
-    "revision": "9d080defc32bfa159770c45520971acf"
+    "revision": "a3bab45ca07af484a1b7aca10e35c6f2"
   },
   {
     "url": "timeline/index.html",
-    "revision": "5f8d03e520006aa408ed87c9d16a13a7"
+    "revision": "d5516994a6af47eb12b860bdc9e4de0a"
   },
   {
     "url": "vue/index.html",
-    "revision": "d5661a8a21e867a9e0227d72d00e31c3"
+    "revision": "96048e1c21f355360a757ee752954cd1"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
