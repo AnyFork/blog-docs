@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "npm run build&& gh-pages -d dist -r https://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@github.com/AnyFork/blog-docs.git"
+    "deploy": "npm run build&& gh-pages -d dist -r https://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@github.com/AnyFork/blog-docs.git"
   },
   "devDependencies": {
     "@vuepress/plugin-pwa": "^1.9.7",

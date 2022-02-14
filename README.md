@@ -2,7 +2,7 @@
 > 项目采用vuePress进行构建，markdown进行资料文档编写，vuePress对markdown文档进行编译，最终项目以html静态文件形式进行部署。主要用于总结前端技术资料文档，以备后续温顾和复习使用，资料正在收集中。
 
 * 仓库地址：https://github.com/AnyFork/blog-docs.git
-* 代码提交: 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
+* 代码提交: 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
 * vuePress官网地址：https://v2.vuepress.vuejs.org/zh/
 * 线上访问地址：https://anyfork.top
 
