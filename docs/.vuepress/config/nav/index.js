@@ -41,15 +41,15 @@ module.exports = [
     items: [
       {
         text: '朋友圈',
-        link: '/other/firends'
+        link: '/others/firends'
       },
       {
         text: '关于我',
-        link: '/other/about'
+        link: '/others/about'
       },
       {
         text: '资源网',
-        link: '/other/2022/'
+        link: '/others/2022/'
       },
       {
         text: 'LeetCode',

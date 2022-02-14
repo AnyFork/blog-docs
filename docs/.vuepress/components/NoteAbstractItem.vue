@@ -3,7 +3,7 @@
     <reco-icon v-if="item.frontmatter.sticky" icon="reco-sticky" />
     <div v-if="item.frontmatter.listCell && item.frontmatter.listCell.mode === 'left' && winWidth > 500" class="box">
       <div class="box_img">
-        <img :src="item.frontmatter.listCell.image" />
+        <img :src="$withBase(item.frontmatter.listCell.image)" />
       </div>
       <div class="content">
         <div class="title">
@@ -22,7 +22,7 @@
         <div class="abstract" v-html="item.excerpt"></div>
       </div>
       <div class="box_img">
-        <img :src="item.frontmatter.listCell.image" />
+        <img :src="$withBase(item.frontmatter.listCell.image)" />
       </div>
     </div>
     <div v-if="!item.frontmatter.listCell && winWidth > 500">
@@ -39,7 +39,7 @@
         <router-link :to="item.path">{{ item.title }}</router-link>
       </div>
       <div class="boxImg" v-if="item.frontmatter.listCell && item.frontmatter.listCell.image">
-        <img :src="item.frontmatter.listCell.image" />
+        <img :src="$withBase(item.frontmatter.listCell.image)" />
       </div>
       <div class="abstract" v-html="item.excerpt"></div>
     </div>
