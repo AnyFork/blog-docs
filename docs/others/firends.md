@@ -1,6 +1,6 @@
 ---
 title: 朋友圈
-date: 2022-02-09
+date: 2022-02-14 15:34:34
 lang: zh-CN
 tags:
   - 其他
@@ -8,21 +8,22 @@ categories:
   - 其他
 isShowComments: true
 subSidebar: true
-sidebar: false
 publish: false
+layout: PageLayOut
 ---
 
 <!-- more -->
 
 <Boxx/>
 
-### 高质量朋友圈
+### 朋友圈集锦
 
-- 朋友丰富人生 —— 林肯
-- 展示所有友情站点，排名不分先后！
-- 稍息，立正。欢迎入队！👍
+- 志合者，不以山海为远；道乖者，不以咫尺为近。——晋·葛洪
+- 此处展示了所有高质量的友情站点链接，用于相互参考，借鉴和学习，排名不分先后！
+- 友情链接是我在开发博客中网上查阅资料找到的，如有侵权，请及时联系我！
+- 部分网站需要翻墙才能访问，同时也欢迎新朋友加入。
 
-::: cardList 2
+::: cardList 3
 
 ```yaml
 - name: 午后南杂
@@ -41,7 +42,7 @@ publish: false
   desc: 荷尽已无擎雨盖，菊残犹有傲霜枝。
   avatar: https://zpj80231.gitee.io/znote/vuepress/head-fish.jpg
   link: https://zpj80231.gitee.io/znote/
-  bgColor: '#FCDBA0'
+  bgColor: rgb(212 162 72)
   textColor: '#A05F2C'
 - name: 半落沙痕
   desc: Everything Wins！
@@ -89,37 +90,72 @@ publish: false
   link: https://mu-yan.cn/
   avatar: https://cdn.jsdelivr.net/gh/Mu-Yan/Mu-Yan.github.io/avatar.jpg
   desc: 己所不欲勿施于人
-  bgColor: 'rgb(163 243 126)'
+  bgColor: rgb(213 136 216);
   textColor: 'rgb(102 48 72)'
+- name: WangScaler
+  link: https://blog.wangscaler.com/
+  avatar: https://blog.wangscaler.com/logo.png
+  desc: WangScaler
+  bgColor: rgb(220 46 122);
+  textColor: 'rgb(102 48 72)'
+- name: Evan's blog
+  link: https://xugaoyi.com/
+  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+  desc: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
+  bgColor: rgb(110 179 136);
+  textColor: 'rgb(102 48 72)'
+- name: 涛涛之海
+  link: https://claa.gitee.io/vuepress-theme-vdoing/
+  avatar: https://claa.gitee.io/vuepress-theme-vdoing/img/taotao.jpg
+  desc: 清醒时做事，糊涂时读书，大怒时睡觉，独处时思考。
+  bgColor: rgb(114 173 87);
+  textColor: 'rgb(102 48 72)'
+- name: 平凡的你我
+  link: https://reinness.com/
+  avatar: https://reinness.com/avatar.png
+  desc: 理想成为大牛的小陈同学
+  bgColor: rgb(243 126 150);
+  textColor: 'rgb(102 48 72)'
+- name: 小紫念沁
+  desc: 不积跬步,无以至千里.不积小流,无以成江海
+  avatar: https://anyfork.github.io/blog-docs/images/user.jpg
+  link: https://anyfork.github.io/blog-docs/
+  bgColor: rgb(218 88 88 / 62%);
+  textColor: rgb(5 41 14 / 75%);
 ```
 
 :::
 
-::: cardImgList 1
+::: cardImgList 2
 
 ```yaml
 - img: https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png
   link: https://vuepress-theme-reco.recoluan.com/views/other/theme-example.html
-  name: 官网案例
-  desc: 优秀博客案例
+  name: vuepress-theme-reco官网案例
+  desc: 官网更多优秀的博客案例
+- img: https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png
+  link: https://vuepress-theme-reco.recoluan.com/views/plugins/
+  name: vuepress-theme-reco官方插件
+  desc: 官网更多优秀的插件
+- img: https://vuepress.vuejs.org/hero.png
+  link: https://vuepress-community.netlify.app/zh/
+  name: VuePress 官方社区
+  desc: 官网更多优秀的插件
 ```
 
 :::
 
-### 友链互换
+### 朋友圈互换
 
-如需友链，请 [联系我](https://mp.weixin.qq.com/s?__biz=MzU4MDY1NjE1MQ==&mid=100000138&idx=1&sn=6b5e532de9685de1bbf4051eaca2de86&chksm=7d52ccf24a2545e479c7b6ed4401bc850a341e54e10cbdd54ce72b757ea7c986c37585375fa2&scene=18#wechat_redirect) 或 <a> 留言 👇 </a> 告知，格式如下：
+如需要友链，请<a> 留言 👇 </a> 告知，申请前请记得先添加本站哦～, 并使用如下格式：
 
 ```yaml
-- name: znote
-  desc: 荷尽已无擎雨盖，菊残犹有傲霜枝
-  avatar: https://zpj80231.gitee.io/znote/vuepress/head-fish.jpg
-  link: https://zpj80231.gitee.io/znote/
-  bgColor: '#FCDBA0'
-  textColor: '#A05F2C'
+- name: 小紫念沁
+  desc: 不积跬步,无以至千里.不积小流,无以成江海
+  avatar: https://anyfork.github.io/blog-docs/images/user.jpg
+  link: https://anyfork.github.io/blog-docs/
+  bgColor: rgb(218 88 88 / 62%)
+  textColor: rgb(5 41 14 / 75%)
 ```
 
-- 颜色仅供参考。
-- 站点要求：内容合法、非营利性。
-- 申请前请记得先添加本站哦～
-  <Reward/>
+<Reward/>

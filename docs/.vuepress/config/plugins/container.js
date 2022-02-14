@@ -3,7 +3,7 @@ const CARD_LIST = 'cardList'
 const CARD_IMG_LIST = 'cardImgList'
 module.exports = {
   cardList: [
-    'container',
+    'vuepress-plugin-container',
     {
       //卡片列表
       type: CARD_LIST,
@@ -19,7 +19,7 @@ module.exports = {
     }
   ],
   cardImgList: [
-    'container',
+    'vuepress-plugin-container',
     {
       //图文卡片列表
       type: CARD_IMG_LIST,
@@ -73,7 +73,7 @@ function renderCardList(tokens, idx, type) {
         }
 
         let listDOM = ''
-        if (type === CARDLIST) {
+        if (type === CARD_LIST) {
           // 普通卡片列表
           listDOM = getCardListDOM(dataList, row)
         } else if (type === CARD_IMG_LIST) {

@@ -5,7 +5,7 @@ heroText:
   - 学而时习之，不亦说乎?^1000
   - 学习要有三心，一信心，二决心，三恒心
 #副标题
-tagline: 人不光是靠他生来就拥有一切,而是靠他从学习中所得到的一切来造就自己。
+tagline: 不积跬步,无以至千里。不积小流,无以成江海。
 #背景图片，可以为数组,可以为远程背景图片，图片资源网：https://pic.netbian.com/4kmeinv/
 bgImage:
   - images/index/bg1.jpg

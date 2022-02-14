@@ -54,6 +54,14 @@ module.exports = [
       {
         text: 'LeetCode',
         link: 'https://leetcode-cn.com/'
+      },
+      {
+        text: 'github博客',
+        link: 'https://anyfork.github.io/blog-docs/'
+      },
+      {
+        text: 'gitee博客',
+        link: 'https://anyfork.gitee.io/blog-docs/'
       }
     ]
   },
