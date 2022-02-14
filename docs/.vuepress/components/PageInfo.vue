@@ -20,14 +20,9 @@
 </template>
 <script>
 import dayjs from 'dayjs'
-import utc from 'dayjs/plugin/utc'
-import timezone from 'dayjs/plugin/timezone'
 import { defineComponent } from 'vue-demi'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.tz.guess()
 export default defineComponent({
   components: { RecoIcon },
   props: {
@@ -66,8 +61,7 @@ export default defineComponent({
     }
     //时间格式化
     const formatDateValue = (value) => {
-      console.log(value)
-      return dayjs.utc(value).format('YYYY-MM-DD HH:mm:ss')
+      return dayjs(value).add(8, 'hour').format('YYYY-MM-DD HH:mm:ss')
     }
     return { goTags, formatDateValue, goCategory }
   },
