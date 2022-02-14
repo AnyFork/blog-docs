@@ -118,10 +118,10 @@ layout: PageLayOut
   textColor: 'rgb(102 48 72)'
 - name: 小紫念沁
   desc: 不积跬步,无以至千里.不积小流,无以成江海
-  avatar: https://anyfork.github.io/blog-docs/images/user.jpg
-  link: https://anyfork.github.io/blog-docs/
-  bgColor: rgb(218 88 88 / 62%);
-  textColor: rgb(5 41 14 / 75%);
+  avatar: https://anyfork.gitee.io/blog-docs/images/user.jpg
+  link: https://anyfork.gitee.io/blog-docs/
+  bgColor: rgb(218 88 88 / 62%)
+  textColor: rgb(5 41 14 / 75%)
 ```
 
 :::
@@ -152,8 +152,8 @@ layout: PageLayOut
 ```yaml
 - name: 小紫念沁
   desc: 不积跬步,无以至千里.不积小流,无以成江海
-  avatar: https://anyfork.github.io/blog-docs/images/user.jpg
-  link: https://anyfork.github.io/blog-docs/
+  avatar: https://anyfork.gitee.io/blog-docs/images/user.jpg
+  link: https://anyfork.gitee.io/blog-docs/
   bgColor: rgb(218 88 88 / 62%)
   textColor: rgb(5 41 14 / 75%)
 ```

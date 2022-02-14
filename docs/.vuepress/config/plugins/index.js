@@ -201,5 +201,20 @@ module.exports = [
         return dayjs.tz(timestamp, 'Asia/Shanghai').format('YYYY-MM-DD HH:mm:ss')
       }
     }
+  ],
+  //gitalk评论插件，github地址：https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+  [
+    'vuepress-plugin-comment',
+    {
+      choosen: 'gitalk',
+      options: {
+        clientID: '85f8ec984fa87a6ce536',
+        clientSecret: '1df94a9d2362071c398e34f30bcecea987fa3aa4',
+        repo: 'blog-docs',
+        owner: 'AnyFork',
+        admin: ['AnyFork'],
+        distractionFreeMode: false
+      }
+    }
   ]
 ]
