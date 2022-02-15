@@ -8,14 +8,12 @@ tags:
 categories:
   - 随笔Essay
 sticky: 1
-isShowComments: true
 subSidebar: true
 sidebar: false
 publish: true
 listCell: { mode: left, image: /images/index/bg1.jpg }
 layout: PageLayOut
 footer: true
-comment: false
 ---
 
 这是摘要信息，测试一下

@@ -14,7 +14,7 @@ module.exports = {
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ['meta', { name: 'renderer', content: 'webkit' }],
     ['meta', { name: 'referrer', content: 'never' }],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+    ['link', { rel: 'manifest', href: '/manifest.json' }]
   ],
   //修改默认的语言
   locales: {
@@ -36,17 +36,17 @@ module.exports = {
     //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     subSidebar: 'auto',
     //valine配置，官网地址：https://valine.js.org/quickstart.html
-    valineConfig: {
-      appId: 'GpWG2PgOaXLTczcInOTXdvza-gzGzoHsz',
-      appKey: 'NgptF7WB2wjLOjYNPobYYtla',
-      showComment: false,
-      placeholder: '填写邮箱可以收到回复哦!',
-      // 邮件提醒
-      notify: true,
-      // 验证码
-      verify: true,
-      recordIP: true
-    },
+    // valineConfig: {
+    //   appId: 'GpWG2PgOaXLTczcInOTXdvza-gzGzoHsz',
+    //   appKey: 'NgptF7WB2wjLOjYNPobYYtla',
+    //   showComment: false,
+    //   placeholder: '填写邮箱可以收到回复哦!',
+    //   // 邮件提醒
+    //   notify: true,
+    //   // 验证码
+    //   verify: true,
+    //   recordIP: true
+    // },
     //顶部nav配置
     nav: nav,
     //侧边栏sidebar

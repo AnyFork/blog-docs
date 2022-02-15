@@ -5,7 +5,6 @@ tags:
   - 其他
 categories:
   - 其他
-isShowComments: true
 subSidebar: true
 sidebar: false
 publish: false

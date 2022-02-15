@@ -6,7 +6,6 @@ tags:
   - 其他
 categories:
   - 其他
-isShowComments: true
 subSidebar: true
 publish: false
 layout: PageLayOut

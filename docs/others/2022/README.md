@@ -6,7 +6,6 @@ tags:
 categories:
   - 网络资源
 subSidebar: true
-isShowComments: true
 sidebar: true
 layout: PageLayOut
 footer: true
