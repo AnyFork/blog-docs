@@ -97,12 +97,6 @@ layout: PageLayOut
   desc: WangScaler
   bgColor: rgb(220 46 122);
   textColor: 'rgb(102 48 72)'
-- name: Evan's blog
-  link: https://xugaoyi.com/
-  avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
-  desc: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
-  bgColor: rgb(110 179 136);
-  textColor: 'rgb(102 48 72)'
 - name: 涛涛之海
   link: https://claa.gitee.io/vuepress-theme-vdoing/
   avatar: https://claa.gitee.io/vuepress-theme-vdoing/img/taotao.jpg

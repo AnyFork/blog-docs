@@ -43,7 +43,7 @@
       </div>
       <div class="abstract" v-html="item.excerpt"></div>
     </div>
-    <page-info :pageInfo="item" :currentTag="currentTag" :showAccessNumber="true" :windowsWidth="winWidth"></page-info>
+    <page-info :pageInfo="item" :currentTag="currentTag" :showAccessNumber="false" :windowsWidth="winWidth"></page-info>
   </div>
 </template>
 
@@ -75,11 +75,12 @@ export default defineComponent({
   &:hover
     box-shadow: var(--box-shadow-hover);
   &:hover .box .box_img img
-    transform: scale(1);
+    transform: scale(1.5);
   .box
     display: flex;
     align-items: center;
     margin-top: 15px;
+    max-height: 200px;
     .box_img
       width: 50%;
       height: 200px;
@@ -89,7 +90,7 @@ export default defineComponent({
       img
         width: 100%;
         height: 100%;
-        transform: scale(1.5);
+        transform: scale(1);
         transition: transform 0.6s;
     .right
       padding-right: 80px;
@@ -99,10 +100,18 @@ export default defineComponent({
       flex: 1;
       display: flex;
       flex-wrap: wrap;
-      padding-left: 80px;
+      padding-left: 40px;
       font-weight: normal
       .abstract
         width:100%
+        overflow: hidden;
+        height: 180px;
+        /**对象作为伸缩盒子模型展示**/
+        display:-webkit-box;
+        /**设置或检索伸缩盒子对象的子元素的排列方式**/
+        -webkit-box-orient:vertical;
+        /**显示的行数**/
+        -webkit-line-clamp:5;
 
   .reco-sticky
     position absolute
@@ -114,7 +123,6 @@ export default defineComponent({
   .title
     position: relative;
     font-size: 1.28rem;
-    line-height: 46px;
     display: inline-block;
     width:100%;
     a

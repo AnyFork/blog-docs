@@ -23,6 +23,8 @@
           <a v-if="recoShowModule && $frontmatter.showArrow" class="anchor-down" @click="scrollFn"></a>
         </ModuleTransition>
       </div>
+      <!--首页图片气泡-->
+      <bubbles-effect v-if="bubbles"></bubbles-effect>
     </div>
     <!--中部主体博客列表 -->
     <ModuleTransition delay="0.16">
@@ -85,8 +87,9 @@ import PersonalInfo from './PersonalInfo'
 import { getOneColor } from 'vuepress-theme-reco/helpers/other'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
 import changBg from '../utils/mixins/changeBg.js'
+import { Bubbles } from 'vue-canvas-effect'
 export default defineComponent({
-  components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon },
+  components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon, bubblesEffect: Bubbles },
   mixins: [changBg],
   setup(props, ctx) {
     const instance = useInstance()
@@ -106,12 +109,13 @@ export default defineComponent({
 
     //index图片样式
     const heroImageStyle = computed(() => instance.$frontmatter.heroImageStyle || {})
-
+    //是否显示首页气泡
+    const bubbles = computed(() => instance.$frontmatter.bubbles || true)
     onMounted(() => {
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true
     })
-    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor, categoryArticleNum }
+    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor, categoryArticleNum, bubbles }
   },
   methods: {
     paginationChange(page) {
@@ -143,6 +147,7 @@ export default defineComponent({
   bottom: 20%;
   margin-left: -10px;
   cursor: pointer;
+  z-index: 1000;
 }
 @-webkit-keyframes bounce-in{
   0%{transform:translateY(0)}

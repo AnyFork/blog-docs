@@ -19,7 +19,7 @@ module.exports = [
   [
     '@vuepress-reco/vuepress-plugin-kan-ban-niang',
     {
-      theme: ['whiteCat', 'miku', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'blackCat', 'z16'],
+      theme: ['haru1','whiteCat', 'miku','haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'blackCat', 'z16'],
       clean: false,
       messages: {
         welcome: '欢迎来到我的博客',

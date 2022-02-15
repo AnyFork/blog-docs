@@ -24,29 +24,20 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
-    //设置项目加密密钥
-    keyPage: {
-      //1.3.0 版本后需要设置为密文,['32位的 md5 加密密文']
-      keys: ['e10adc3949ba59abbe56e057f20f883e'],
-      // 登录页动画球的颜色
-      color: '#42b983',
-      // 登录页动画线的颜色
-      lineColor: '#42b983'
-    },
     //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     subSidebar: 'auto',
     //valine配置，官网地址：https://valine.js.org/quickstart.html
-    // valineConfig: {
-    //   appId: 'GpWG2PgOaXLTczcInOTXdvza-gzGzoHsz',
-    //   appKey: 'NgptF7WB2wjLOjYNPobYYtla',
-    //   showComment: false,
-    //   placeholder: '填写邮箱可以收到回复哦!',
-    //   // 邮件提醒
-    //   notify: true,
-    //   // 验证码
-    //   verify: true,
-    //   recordIP: true
-    // },
+    valineConfig: {
+      appId: 'GpWG2PgOaXLTczcInOTXdvza-gzGzoHsz',
+      appKey: 'NgptF7WB2wjLOjYNPobYYtla',
+      showComment: false,
+      placeholder: '填写邮箱可以收到回复哦!',
+      // 邮件提醒
+      notify: true,
+      // 验证码
+      verify: true,
+      recordIP: true
+    },
     //顶部nav配置
     nav: nav,
     //侧边栏sidebar

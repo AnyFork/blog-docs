@@ -7,7 +7,7 @@ tags:
   - 随笔
 categories:
   - 随笔Essay
-sticky: 1
+sticky: 2
 subSidebar: true
 sidebar: false
 publish: true

@@ -13,7 +13,7 @@
     <reco-icon v-if="pageInfo.frontmatter.categories" icon="reco-category" class="tags">
       <span v-for="(subItem, subIndex) in pageInfo.frontmatter.categories" :key="subItem + '_' + subIndex" class="tag-item" :class="{ active: currentTag == subItem }" @click.stop="goCategory(subItem)">{{ subItem }}</span>
     </reco-icon>
-    <reco-icon v-if="showAccessNumber === true" icon="reco-eye">
+    <reco-icon v-if="showAccessNumber" icon="reco-eye">
       <AccessNumber :idVal="pageInfo.path" :numStyle="{ fontSize: '.9rem', fontWeight: 'normal', color: '#999' }" />
     </reco-icon>
   </div>
