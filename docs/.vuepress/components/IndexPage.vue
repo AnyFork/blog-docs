@@ -24,7 +24,7 @@
         </ModuleTransition>
       </div>
       <!--首页图片气泡-->
-      <bubbles-effect v-if="bubbles"></bubbles-effect>
+      <component v-if="bubbles" :is="bubblesRef"></component>
     </div>
     <!--中部主体博客列表 -->
     <ModuleTransition delay="0.16">
@@ -87,9 +87,8 @@ import PersonalInfo from './PersonalInfo'
 import { getOneColor } from 'vuepress-theme-reco/helpers/other'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
 import changBg from '../utils/mixins/changeBg.js'
-import { Bubbles } from 'vue-canvas-effect'
 export default defineComponent({
-  components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon, bubblesEffect: Bubbles },
+  components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon },
   mixins: [changBg],
   setup(props, ctx) {
     const instance = useInstance()
@@ -111,11 +110,15 @@ export default defineComponent({
     const heroImageStyle = computed(() => instance.$frontmatter.heroImageStyle || {})
     //是否显示首页气泡
     const bubbles = computed(() => instance.$frontmatter.bubbles || true)
+    const bubblesRef = ref('')
     onMounted(() => {
+      import('vue-canvas-effect/src/components/bubbles').then((module) => {
+        bubblesRef.value = module.default
+      })
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true
     })
-    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor, categoryArticleNum, bubbles }
+    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor, categoryArticleNum, bubbles, bubblesRef }
   },
   methods: {
     paginationChange(page) {
