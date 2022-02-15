@@ -213,7 +213,10 @@ module.exports = [
         repo: 'blog-docs',
         owner: 'AnyFork',
         admin: ['AnyFork'],
-        distractionFreeMode: false
+        distractionFreeMode: false,
+        id: '<%- frontmatter.commentid || frontmatter.permalink %>',
+        title: '<%- document.title %>',
+        body: '<%- frontmatter.title %>：<%-window.location.origin %><%- frontmatter.to.path || window.location.pathname %>'
       }
     }
   ]

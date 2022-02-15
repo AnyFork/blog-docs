@@ -12,15 +12,14 @@ isShowComments: true
 subSidebar: true
 sidebar: false
 publish: true
-listCell: {
- mode: left,
- image: /images/index/bg1.jpg
-}
+listCell: { mode: left, image: /images/index/bg1.jpg }
 layout: PageLayOut
 footer: true
+comment: false
 ---
 
 这是摘要信息，测试一下
+
 - 哈哈
 - 你好
 
