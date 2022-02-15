@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "711187b2dc0eb91b1265dfdb0489a83c"
+    "revision": "209b2b39b66ce2583f957ccdb6648ef7"
   },
   {
     "url": "assets/css/0.styles.accdedb9.css",
@@ -190,28 +190,36 @@ self.__precacheManifest = [
     "revision": "17d409d3c5118a877bed68056f3d15dd"
   },
   {
-    "url": "assets/js/app.430e4b57.js",
-    "revision": "139b488ef98a39331b0b119265e7a39d"
+    "url": "assets/js/app.3f3223a6.js",
+    "revision": "2b93be0a2550ca6d127c6372006959e2"
   },
   {
     "url": "categories/index.html",
-    "revision": "18f8d553e8ffa5e1270b66734215ff84"
+    "revision": "9dfedc55fc362a93f436ab76e31fad39"
   },
   {
     "url": "categories/其他/index.html",
-    "revision": "79bf36057409fa4e83384f3ea679e402"
+    "revision": "843725d275e9eabd849788ef70a419a0"
   },
   {
     "url": "categories/网络资源/index.html",
-    "revision": "2663d81d918ebaf1ec06ddc707ab199e"
+    "revision": "e7181ff32a8785b8700fa66710f19d14"
   },
   {
     "url": "categories/随笔Essay/index.html",
-    "revision": "a41c3e133d3c5f0437409a0aad8f0b7b"
+    "revision": "e86b09a665cd3a77bf59b0fb75cc1dd7"
   },
   {
     "url": "devOps/index.html",
-    "revision": "51c8e9d448f486ba7d305624da35b78d"
+    "revision": "e45e11a5ba85c614ab82ca8df9832c64"
+  },
+  {
+    "url": "images/184.png",
+    "revision": "4a53cf302746206c34f7def829a2b97a"
+  },
+  {
+    "url": "images/525.png",
+    "revision": "80ddb277d0fefa8a211aec6e47cf0adf"
   },
   {
     "url": "images/bg.gif",
@@ -227,11 +235,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "38a374b5bb99d396399f37aafcc596df"
+    "revision": "b32b142055bae7c446ff601fefae0ce8"
   },
   {
     "url": "java/index.html",
-    "revision": "9595303097a4beda3357ab7a7cd31ffd"
+    "revision": "665f8fc4a2e850e4cb88e14d0e831bb0"
   },
   {
     "url": "music/canon/canon.jpg",
@@ -251,19 +259,19 @@ self.__precacheManifest = [
   },
   {
     "url": "others/2022/20220209.html",
-    "revision": "2d809eb2afedcea0b2d63cf89ece3b05"
+    "revision": "f2db013235875bdb51a56730889a6034"
   },
   {
     "url": "others/2022/index.html",
-    "revision": "45e6e5932d5260310d28177036d13654"
+    "revision": "ce15c406c95051081581c45d9378e2bb"
   },
   {
     "url": "others/about.html",
-    "revision": "83094cf7e666e4a0c95c9853b152c45a"
+    "revision": "991f773da7b01c4ca2fa26fd4194ded0"
   },
   {
     "url": "others/firends.html",
-    "revision": "42d3e3fab87a7e729553918318a2301e"
+    "revision": "71d1cd4869e9331f9f81b73307b610c8"
   },
   {
     "url": "setting.png",
@@ -283,27 +291,27 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/index.html",
-    "revision": "cf4c083d24e20ae508f907318679b86c"
+    "revision": "77eadef9798d7dec50674974e8cf7ed8"
   },
   {
     "url": "tag/其他/index.html",
-    "revision": "9875a14acfdf97903819263350a8101f"
+    "revision": "30b6dd07d17dd7f860bf1fc5a8d07572"
   },
   {
     "url": "tag/网络资源链接/index.html",
-    "revision": "3a75b15f09dc6073df886f6b9cde2782"
+    "revision": "8e519138f3365144e580a430b094240a"
   },
   {
     "url": "tag/随笔/index.html",
-    "revision": "bcffa772274840d5923ff31dc2345111"
+    "revision": "b4f172072ed77c1f3826924dbcacb22f"
   },
   {
     "url": "timeline/index.html",
-    "revision": "84a3529279a0ee6746c6345df55ede38"
+    "revision": "e83a3ee5a1d6662df16d4f76ec95ce90"
   },
   {
     "url": "vue/index.html",
-    "revision": "87908b3c2c3d5b318b4e5018ee4ac811"
+    "revision": "32a2934e054e9e547666692f30ad97aa"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
