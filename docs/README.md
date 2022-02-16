@@ -10,10 +10,10 @@ tagline: 不积跬步,无以至千里。不积小流,无以成江海。
 bgImage:
   - images/index/bg1.jpg
   - images/index/bg2.jpg
-  - https://pic.netbian.com/uploads/allimg/210812/234309-1628782989eba1.jpg
-  - https://pic.netbian.com/uploads/allimg/220118/123915-1642480755aebf.jpg
-  - https://pic.netbian.com/uploads/allimg/220114/233626-164217458617bf.jpg
-  - https://pic.netbian.com/uploads/allimg/210302/004312-1614616992f346.jpg
+  - images/index/bg3.jpg
+  - images/index/bg4.jpg
+  - images/index/bg5.jpg
+  - images/index/bg6.jpg
 #背景图片切换时间间隔：默认10秒，单位毫秒
 bgImageSec: 10000
 #背景图片是否动态切换,默认不开启，刷新会更换图片

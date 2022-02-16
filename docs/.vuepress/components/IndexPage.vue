@@ -1,11 +1,13 @@
 <template>
   <div class="home-blog">
     <!--首页背景图模块-->
-    <div class="hero" :style="{ ...bgImageStyle }">
+    <div class="hero" :style="bgImageStyle">
+      <image-page :mixImage="mixImage"></image-page>
       <div class="index">
         <!--首页主标题上面img-->
         <ModuleTransition>
-          <img class="hero-img" v-if="recoShowModule && $frontmatter.heroImage" :style="heroImageStyle || {}" :src="$withBase($frontmatter.heroImage)" alt="hero" />
+          <!-- <img class="hero-img" v-if="recoShowModule && $frontmatter.heroImage" :style="heroImageStyle || {}" :src="$withBase($frontmatter.heroImage)" alt="hero" /> -->
+          {{ heroImageStyle }}
         </ModuleTransition>
         <!--主标题，主标题为数组时通过typed.js进行打印，反之正常显示 -->
         <ModuleTransition delay="0.04">
@@ -87,8 +89,9 @@ import PersonalInfo from './PersonalInfo'
 import { getOneColor } from 'vuepress-theme-reco/helpers/other'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
 import changBg from '../utils/mixins/changeBg.js'
+import ImagePage from './ImagePage'
 export default defineComponent({
-  components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon },
+  components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon, ImagePage },
   mixins: [changBg],
   setup(props, ctx) {
     const instance = useInstance()

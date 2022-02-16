@@ -5,14 +5,12 @@ export default {
   data() {
     return {
       bgImageStyle: '',
-      index: '',
       mixImage: [],
       typedObject: ''
     }
   },
   mounted() {
     this.changeBgImageStyle()
-    this.setIntervalTimer()
     //打印字符
     this.$nextTick(() => {
       setTimeout(() => {
@@ -43,30 +41,18 @@ export default {
       }
       //数组滤重
       this.mixImage = Array.from(new Set(this.mixImage))
-      //获取随机图片
-      let imageUrl = this.mixImage.length == 1 ? this.mixImage[0] : publicImages.getRandomImage(this.mixImage)
-      //判断图片是否是远程图片
-      const url = imageUrl.indexOf('http') > -1 || imageUrl.indexOf('http') > -1 ? imageUrl : this.$withBase(imageUrl)
-      const initBgImageStyle = { textAlign: 'center', overflow: 'hidden', background: `url(${url}) center/cover no-repeat` }
+      //定义新数组
+      const newImage = []
+      //数组图片判断
+      this.mixImage.forEach((imageUrl) => {
+        //判断图片是否是远程图片
+        const url = imageUrl.indexOf('http') > -1 || imageUrl.indexOf('https') > -1 ? imageUrl : this.$withBase(imageUrl)
+        newImage.push(url)
+      })
+      this.mixImage = newImage
+      const initBgImageStyle = { textAlign: 'center', overflow: 'hidden' }
       const { bgImageStyle } = this.$frontmatter
       this.bgImageStyle = bgImageStyle ? { ...initBgImageStyle, ...bgImageStyle } : initBgImageStyle
-    },
-    setIntervalTimer() {
-      //判断是否被开启背景图片切换功能
-      if (this.$frontmatter.isBgImagetrigger) {
-        //定时切花背景图片
-        this.index = window.setInterval(
-          () => {
-            const imageUrl = this.mixImage.length == 1 ? this.mixImage[0] : publicImages.getRandomImage(this.mixImage)
-            //判断图片是否是远程图片
-            const url = imageUrl.indexOf('http') > -1 || imageUrl.indexOf('http') > -1 ? imageUrl : this.$withBase(imageUrl)
-            const initBgImageStyle = { textAlign: 'center', overflow: 'hidden', background: `url(${url}) center/cover no-repeat` }
-            const { bgImageStyle } = this.$frontmatter
-            this.bgImageStyle = bgImageStyle ? { ...initBgImageStyle, ...bgImageStyle } : initBgImageStyle
-          },
-          this.$frontmatter.bgImageSec ? this.$frontmatter.bgImageSec : 10000
-        )
-      }
     },
     typedFction() {
       //输入的主标题为数组时，通过typed进行打印，否则原样显示
@@ -89,9 +75,6 @@ export default {
     }
   },
   destroyed() {
-    if (this.index) {
-      window.clearInterval(this.index)
-    }
     if (this.typedObject) {
       this.typedObject = null
     }
