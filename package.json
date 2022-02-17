@@ -10,11 +10,13 @@
     "deploy": "npm run build&& gh-pages -d dist -r https://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@github.com/AnyFork/blog-docs.git"
   },
   "devDependencies": {
+    "@vuepress-reco/vuepress-plugin-extract-code": "^1.0.4",
     "@vuepress/plugin-pwa": "^1.9.7",
     "js-yaml": "^4.1.0",
     "vuepress": "1.8.2",
     "vuepress-plugin-container": "^2.1.5",
     "vuepress-plugin-nuggets-style-copy": "^1.0.3",
+    "vuepress-plugin-permalink-pinyin": "^1.0.0",
     "vuepress-theme-reco": "1.6.10"
   },
   "dependencies": {

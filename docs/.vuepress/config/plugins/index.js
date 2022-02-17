@@ -19,7 +19,7 @@ module.exports = [
   [
     '@vuepress-reco/vuepress-plugin-kan-ban-niang',
     {
-      theme: ['haru1','whiteCat', 'miku','haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'blackCat', 'z16'],
+      theme: ['haru1', 'whiteCat', 'miku', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'blackCat', 'z16'],
       clean: false,
       messages: {
         welcome: '欢迎来到我的博客',
@@ -214,10 +214,21 @@ module.exports = [
         owner: 'AnyFork',
         admin: ['AnyFork'],
         distractionFreeMode: false,
-        id: '<%- frontmatter.commentid || frontmatter.permalink %>',
-        title: '<%- document.title %>',
-        body: '<%- frontmatter.title %>：<%-window.location.origin %><%- frontmatter.to.path || window.location.pathname %>'
+        id: '<%- window.location.pathname %>',
+        title: '<%- document.title %>'
       }
     }
-  ]
+  ],
+  //支持中文目录连接转拼音名
+  [
+    'permalink-pinyin',
+    {
+      // Converted into lowercase, default: true
+      lowercase: true,
+      // Separator of the slug, default: '-'
+      separator: '-'
+    }
+  ],
+  //代码展示扩展优化
+  ['@vuepress-reco/extract-code']
 ]
