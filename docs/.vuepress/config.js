@@ -56,8 +56,8 @@ module.exports = {
       },
       // 信息栏展示社交信息
       socialLinks: [
-        { icon: 'reco-github', link: 'https://github.com/AnyFork/blog-docs' },
-        { icon: 'reco-mayun', link: 'https://gitee.com/AnyFork' }
+        { icon: 'reco-github', link: 'https://anyFork.github.io//blog-docs/' },
+        { icon: 'reco-mayun', link: 'https://anyFork.gitee.io/blog-docs/' }
       ]
     },
     friendLink: [
@@ -92,7 +92,7 @@ module.exports = {
     //开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     lastUpdated: '上次更新',
     //git地址
-    repo: 'AnyFork/blog-docs',
+    // repo: 'AnyFork/blog-docs',
     //如果你的文档不在仓库的根部
     docsDir: 'docs',
     //是否开启编辑链接

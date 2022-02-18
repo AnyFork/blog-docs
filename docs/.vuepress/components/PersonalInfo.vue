@@ -29,7 +29,7 @@
     </div>
     <!--其他链接-->
     <div v-if="$frontmatter.hobby" style="margin-top: 5px">
-      <span><reco-icon icon="reco-document"></reco-icon>代码库链接</span>
+      <span><reco-icon icon="reco-document"></reco-icon>博客地址</span>
     </div>
     <ul class="social-links">
       <li class="social-item" v-for="(item, index) in socialLinks" :key="index">
