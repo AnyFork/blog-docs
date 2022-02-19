@@ -10,7 +10,7 @@ categories:
 sticky: 2
 subSidebar: true
 sidebar: false
-publish: true
+publish: false
 listCell: { mode: left, image: /images/index/bg1.jpg }
 layout: PageLayOut
 footer: true

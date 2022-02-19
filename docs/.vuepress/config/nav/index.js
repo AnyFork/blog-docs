@@ -30,8 +30,12 @@ module.exports = [
     icon: 'reco-blog',
     items: [
       {
-        text: '运维资料库',
-        link: '/devOps/'
+        text: 'Nginx文档',
+        link: '/devOps/nginx/'
+      },
+      {
+        text: 'Docker文档',
+        link: '/devOps/docker/'
       }
     ]
   },
