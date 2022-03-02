@@ -52,12 +52,16 @@ module.exports = [
         link: '/others/about'
       },
       {
-        text: '资源网',
+        text: '网络资源',
         link: '/others/2022/'
       },
       {
-        text: 'LeetCode',
-        link: 'https://leetcode-cn.com/'
+        text: 'wordPress',
+        link: '/others/wordpress/'
+      },
+      {
+        text: '其他杂谈',
+        link: '/others/other/'
       }
     ]
   },

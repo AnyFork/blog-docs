@@ -1,5 +1,5 @@
 ---
-title: nginx简介
+title: nginx专题介绍
 date: 2022-02-19 15:53:03
 lang: zh-CN
 tags:

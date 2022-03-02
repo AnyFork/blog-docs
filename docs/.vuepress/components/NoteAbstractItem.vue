@@ -8,7 +8,7 @@
       <div class="content">
         <div class="title">
           <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
-          <router-link :to="item.path">{{ item.title }}</router-link>
+          <router-link :to="item.path" style="font-weight:bold">{{ item.title }}</router-link>
         </div>
         <div class="abstract" v-html="item.excerpt"></div>
       </div>
@@ -17,7 +17,7 @@
       <div class="content right">
         <div class="title">
           <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
-          <router-link :to="item.path">{{ item.title }}</router-link>
+          <router-link :to="item.path" style="font-weight:bold">{{ item.title }}</router-link>
         </div>
         <div class="abstract" v-html="item.excerpt"></div>
       </div>
@@ -28,7 +28,7 @@
     <div v-if="!item.frontmatter.listCell && winWidth > 500">
       <div class="title">
         <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
-        <router-link :to="item.path">{{ item.title }}</router-link>
+        <router-link :to="item.path" style="font-weight:bold">{{ item.title }}</router-link>
       </div>
       <div class="abstract" v-html="item.excerpt"></div>
     </div>

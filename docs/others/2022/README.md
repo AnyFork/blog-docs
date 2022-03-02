@@ -22,8 +22,7 @@ listCell: { mode: left, image: /images/index/bg2.jpg }
 
 - [彼岸图网](https://pic.netbian.com/): 4k 高清美女,风景资源网,每日限量免费下载,也可以通过爬虫获取，动漫超喜欢,你值得拥有! 本站首页图片来源于此网站。
 
-## 前端资源网
-### 网站类
+## 网站类
 - [vite@2.x](https://vitejs.cn/): 下一代前端开发与构建工具 。
 - [vue@2.X](https://cn.vuejs.org/index.html): 渐进式JavaScript框架。
 - [vue@3.X](https://v3.cn.vuejs.org/): 渐进式JavaScript框架。
@@ -39,13 +38,31 @@ listCell: { mode: left, image: /images/index/bg2.jpg }
 - [typed.js](https://mattboldt.com/demos/typed-js/): 一款文本打印机特效的插件。
 - [fontAwesome](https://fontawesome.com/): 一套绝佳的图标字体库和CSS框架。 [Vue](https://fontawesome.com/docs/web/use-with/vue/)中使用方法，网站访问需要梯子。
 - [vue-i18n-next](https://github.com/intlify/vue-i18n-next): 一款基于vue3的i18n插件。
+- [客来图床](https://img.itclan.cn/#/help):一个图片上传到github图床的工具。
+- [IT资源网](https://itclan.cn/): IT资源网
+- [爱客来博客](https://coder.itclan.cn/):一款综合性博客。
 
-### 系统类
+## 系统类
 - [vbenAdmin](https://vvbin.cn/next/#/login): 一款基于`Vue3`和`ant-design-vue 3` 的后台管理系统，[github](https://github.com/vbenjs/vue-vben-admin)仓库。
 - [Vue-Antd-Admin](https://iczer.gitee.io/vue-antd-admin/#/login):  一款基于`Vue3`和`ant-design-vue 3` 的后台管理系统。
 - [jeecgBoot](http://boot3.jeecg.com/login?redirect=/dashboard/analysis):  一款基于`Vue3`和`ant-design-vue 3` 的后台管理系统。
 - [vue-netx-admin](https://lyt-top.gitee.io/vue-next-admin-preview/#/login):  一款基于`Vue3`和`ant-design-vue 3` 的后台管理系统。
 - [ant-design-pro](https://preview.pro.antdv.com/dashboard/workplace): 一款基于`Vue3`和`ant-design-vue 3` 的后台管理系统。
 - [admin-pro](https://admin.makeit.vip/start): 一款基于`Vue3`和`ant-design-vue 3` 的后台管理系统。
+
+## 优秀博客类
+
+此模块收集了一些优秀的博主链接，原创文章多，涉及范围广，可以相互借鉴学习。
+
+::: cardList 3
+
+```yaml
+- name: 兮动人
+  avatar: https://avatar.csdnimg.cn/F/7/6/3_qq_41684621_1612151476.jpg
+  desc: 世间味趣亦如此，万物且去轮浮生.
+  link: https://xdr630.blog.csdn.net/?type=blog
+  bgColor: 'rgb(165 216 243)'
+  textColor: '#6854A1'
+```
 
 <Reward/>

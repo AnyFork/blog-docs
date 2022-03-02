@@ -12,6 +12,8 @@ module.exports = {
   head: [
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+    //关闭referrer,防止第三方图片因防盗链无法显示问题。
+    ['meta', { name: 'referrer', content: 'never' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/js/jquery.min.js' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/js/flux.min.js' }]
