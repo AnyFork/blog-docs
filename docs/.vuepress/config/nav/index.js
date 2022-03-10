@@ -60,6 +60,10 @@ module.exports = [
         link: '/others/wordpress/'
       },
       {
+        text: 'linux专题',
+        link: '/others/linux/'
+      },
+      {
         text: '其他杂谈',
         link: '/others/other/'
       },

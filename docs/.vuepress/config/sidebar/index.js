@@ -12,5 +12,6 @@ module.exports = {
       children: ['20220215']
     }
   ],
-  '/others/other/': ['','20220302']
+  '/others/other/': ['','20220302'],
+  '/others/linux/':['','baseCommand']
 }
