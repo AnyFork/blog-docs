@@ -62,6 +62,10 @@ module.exports = [
       {
         text: '其他杂谈',
         link: '/others/other/'
+      },
+      {
+        text: '烟花特效',
+        link: 'https://anyfork.gitee.io/fireworks-effect/'
       }
     ]
   },
