@@ -14,7 +14,7 @@ publish: false
 <!-- more -->
 
 :::tip
-日常工作中，nginx 使用非常频繁。今日抽空，顺便整理一下 linux 环境下 nginx 的 2 种安装方式，以备日后使用，减少不必要的错误。
+日常工作中，nginx 使用非常频繁。今日抽空，顺便整理一下 linux 环境下 nginx 的 2 种安装方式，以备日后使用，减少不必要的错误。普通方式需要手动编译，比较麻烦。docker方式比较简单，但一定要注意文件目录挂载配置要正确，配置不正确，即使容器启动起来，nginx也无法运行。
 :::
 
 ## 普通安装
@@ -171,13 +171,13 @@ docker pull nginx
 ```bash
 docker run --name nginx -p 80:80 -d nginx
 ```
-
+至此一个简单的nginx容器就启动成功了，下面配置挂载目录。
 ### 3、创建挂载目录
 
 ```bash
 mkdir -p /opt/nginx
 mkdir -p /opt/nginx/html
-mkdir -p /opt/nginx/conf
+mkdir -p /opt/nginx/conf.d
 mkdir -p /opt/nginx/logs
 ```
 
@@ -185,8 +185,8 @@ mkdir -p /opt/nginx/logs
 
 ```bash
 docker cp 67e:/etc/nginx/nginx.conf /opt/nginx/
-docker cp 67e:/etc/nginx/conf.d /opt/nginx/conf/
-docker cp 67e:/usr/share/nginx/html/ /opt/nginx/www/
+docker cp 67e:/etc/nginx/conf.d /opt/nginx/conf.d/
+docker cp 67e:/usr/share/nginx/html/ /opt/nginx/html/
 docker cp 67e:/var/log/nginx/ /opt/nginx/logs/
 注：docker cp 67e 中的 "67e" 为容器ID前缀，只要唯一就好了
 ```
@@ -198,19 +198,21 @@ docker cp 67e:/var/log/nginx/ /opt/nginx/logs/
 docker stop 67e
 # 移除容器
 docker rm 67e
+#或者强制删除容器
+docker rm -f 67e
 ```
 
 ### 6、创建 nginx 挂载目录容器
 
 ```bash
-docker run --name nginx -p 80:80 \
--v /opt/nginx/nginx.conf:/etc/nginx/nginx.conf \
--v /opt/nginx/html/:/usr/share/nginx/html/ \
--v /opt/nginx/logs/:/var/log/nginx/ \
--v /opt/nginx/conf/:/etc/nginx/conf.d \
---privileged=true -d nginx
+docker run -d --name nginx -p 80:80 -p 443:443 -v /opt/nginx/nginx.conf:/etc/nginx/nginx.conf \
+-v /opt/nginx/html:/usr/share/nginx/html -v /opt/nginx/logs:/var/log/nginx \
+-v /opt/nginx/conf.d:/etc/nginx/conf.d --privileged=true --restart=always nginx
 ```
-
+`--privileged=true`: 使用该参数，container内的root拥有真正的root权限。否则，container内的root只是外部的一个普通用户权限。privileged启动的容器，可以看到很多host上的设备，并且可以执行mount。甚至允许你在docker容器中启动docker容器  
+`--restart=always`: 当Docker重启时，容器自动启动。  
+修改运行中的容器自启动：`docker container update --restart=always 容器名字`  
+构建容器自启动：启动命令额外加上`--restart=always`
 ### 7、查看 nginx 容器运行情况
 
 ```bash
@@ -220,5 +222,6 @@ docker ps
 http:ip/
 
 ```
+如果浏览器访问不了，应该是防火墙的原因。可以通过命令`systemctl stop firewalld`关闭防火墙或者开通对应的端口`80`和`443`，端口开通命令参考：[linux常用指令](../../others/linux/basecommand.html#_6-centos-端口开通)
 
 <Reward/>
