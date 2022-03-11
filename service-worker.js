@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "ea74d02bd5246f4b041ac9921b9ae42e"
+    "revision": "91462a32668e7dd60469ab6efbd1dc7d"
   },
   {
     "url": "assets/css/0.styles.2f9feedc.css",
@@ -170,8 +170,8 @@ self.__precacheManifest = [
     "revision": "137c0f76be06e4e1492638bd0158e926"
   },
   {
-    "url": "assets/js/30.9c98f3cb.js",
-    "revision": "85714671bec6d364f85db498abd55b58"
+    "url": "assets/js/30.2fe92d58.js",
+    "revision": "ae18788cd22866a1bdbdb15fd5a76497"
   },
   {
     "url": "assets/js/31.abc2cb0a.js",
@@ -198,8 +198,8 @@ self.__precacheManifest = [
     "revision": "777776de2f916b1694069dc142966dc6"
   },
   {
-    "url": "assets/js/37.cb6b26db.js",
-    "revision": "204f9243e43c910fc8f6b49d0bc40de7"
+    "url": "assets/js/37.4737d770.js",
+    "revision": "b987827dd762fd2ba42a26685fe833d5"
   },
   {
     "url": "assets/js/38.50ce55fe.js",
@@ -246,48 +246,48 @@ self.__precacheManifest = [
     "revision": "f9f9809212affd2d9440f5af1e7753ae"
   },
   {
-    "url": "assets/js/app.f27a585e.js",
-    "revision": "05bafe8c1fbf30a182cd74ebd3460e4f"
+    "url": "assets/js/app.e6585198.js",
+    "revision": "551b8391108e9aa3a731d6cc0148e16d"
   },
   {
     "url": "categories/index.html",
-    "revision": "cabcea570d9ce0aa15c6a1265bc0ee19"
+    "revision": "0129733c0d8cf05bb7204d14f572f5ac"
   },
   {
     "url": "categories/其他/index.html",
-    "revision": "1e0f2521429b3ec61ed4d4d02046661a"
+    "revision": "3ec4e382f8f6d1e7e4bd44fbd28866ea"
   },
   {
     "url": "categories/杂谈/index.html",
-    "revision": "2b96ca9ed6f98f4cd907ac8e60629ad5"
+    "revision": "cf293c6370a634764298193d7190cdeb"
   },
   {
     "url": "categories/网络资源/index.html",
-    "revision": "5b7a8647fb0530063b7063e073d23f62"
+    "revision": "73a3f2cb60f9786b16ee111db24230f2"
   },
   {
     "url": "categories/运维/index.html",
-    "revision": "c988ee1200ab2888beb8827b46cc1c70"
+    "revision": "0131f4a8d566d6f198ff32328c5538b6"
   },
   {
     "url": "categories/部署/index.html",
-    "revision": "b3a091b812bfd2f278e4044d593daad9"
+    "revision": "3c05b6d8829cd5c5416011006dc84856"
   },
   {
     "url": "categories/随笔Essay/index.html",
-    "revision": "b58f450e1c6d9095950a63d882669afe"
+    "revision": "2b484866455828a08ad4baf23691b766"
   },
   {
     "url": "devops/docker/index.html",
-    "revision": "e72eb6f85b6d4ce9c887871ef5e1daf2"
+    "revision": "6451af794b872936b5468ab0fd65158c"
   },
   {
     "url": "devops/nginx/index.html",
-    "revision": "98d4d0f3dab800ed4ac5d1906582f264"
+    "revision": "c1104d5fd75dbc014b32f72517de42bb"
   },
   {
     "url": "devops/nginx/nginxinstall.html",
-    "revision": "95a3f346d1a25b8f8046f8dc9f425ef0"
+    "revision": "8c9963e0c137ca957f6c0285cd20af20"
   },
   {
     "url": "images/184.png",
@@ -371,11 +371,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "ede5a2bf55a5c185e3191129f3b105bd"
+    "revision": "28c689869b39c57b3fa0b10ed86caabd"
   },
   {
     "url": "java/index.html",
-    "revision": "6bd6a80aab0bccd0ea355d10053bb301"
+    "revision": "d6d319bc4c6da70deaff3599c48cde69"
   },
   {
     "url": "js/flux.min.js",
@@ -403,35 +403,35 @@ self.__precacheManifest = [
   },
   {
     "url": "others/2022/20220215.html",
-    "revision": "ca83cc844860208304cfc6f763575681"
+    "revision": "bb2710a6158de9cfad15bf0025a8b0eb"
   },
   {
     "url": "others/2022/index.html",
-    "revision": "ebe7a1a17779293ddf3a71b37910df6d"
+    "revision": "461394b876788813a83fd4cf455b7fec"
   },
   {
     "url": "others/about.html",
-    "revision": "590783aa04324d2596bb49e86efac42c"
+    "revision": "1c6a07dcacb998bd367160491b377bee"
   },
   {
     "url": "others/firends.html",
-    "revision": "153d53ba4fbddb6b97864e82bbeb4ae8"
+    "revision": "eb885f2eda7e7647812519fbdf0128b7"
   },
   {
     "url": "others/linux/basecommand.html",
-    "revision": "b09b837ca83e2ea5889d5aeaaf467aae"
+    "revision": "1c009e6eb5e282c0327185cabed19e6a"
   },
   {
     "url": "others/linux/index.html",
-    "revision": "37048b1375be18cae07f2216aa9eb627"
+    "revision": "1a2e52742d2c27f43cc38bc257922eb2"
   },
   {
     "url": "others/other/20220302.html",
-    "revision": "99f3e8619c7ba5d9f98eabd4baaacd50"
+    "revision": "9f3e47d635d5ac8e5695d7212c6cafb3"
   },
   {
     "url": "others/other/index.html",
-    "revision": "7b71122d8c763f79770da20717a2500a"
+    "revision": "3305d6412ed19932975febfc502ccf08"
   },
   {
     "url": "setting.png",
@@ -451,47 +451,47 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/docker/index.html",
-    "revision": "72cc1b0ebc07f03804d3f0fc492f6067"
+    "revision": "aaca51c635618a7fe98a0ba3d60704fc"
   },
   {
     "url": "tag/index.html",
-    "revision": "2f67de74266394a97b39dc00d9237b1f"
+    "revision": "4ab19c9293f976fa35c5cf91e606fa2a"
   },
   {
     "url": "tag/linux/index.html",
-    "revision": "1d2a24128bda8a15b0a29fd029438359"
+    "revision": "5f9c2564357c8438253c5e2190e02201"
   },
   {
     "url": "tag/nginx/index.html",
-    "revision": "c393fc73a46ba2689f7b386613d0fd49"
+    "revision": "a51038a0b173345df6a90af57e0cddb4"
   },
   {
     "url": "tag/其他/index.html",
-    "revision": "914825eb9f9d7a6dc001840df84125ee"
+    "revision": "038ef43d0d587c822cb8ba3aa9a89ba7"
   },
   {
     "url": "tag/博客/index.html",
-    "revision": "c06a48ef01098f87fcecd3ec28fab0a6"
+    "revision": "c6dc01f9cd9aea3ab951c817e93c3c18"
   },
   {
     "url": "tag/杂谈/index.html",
-    "revision": "049c1826b0990e5b67b1bf77091c78c1"
+    "revision": "8521dfc9c1c66bd0768a4671099dd58b"
   },
   {
     "url": "tag/网络资源链接/index.html",
-    "revision": "2f084d947aab75329c4215a32dc299cf"
+    "revision": "3e9293d68ac87e354a8a802d05818e59"
   },
   {
     "url": "tag/随笔/index.html",
-    "revision": "687fe32155e4668f8d662d5a0b51a4bc"
+    "revision": "b549ac63c1aec25db37d4d2919eaef82"
   },
   {
     "url": "timeline/index.html",
-    "revision": "8a387e2c20fd36e84e971c804f10422f"
+    "revision": "344bdb059eb0ff1dda006e93f1f43f67"
   },
   {
     "url": "vue/index.html",
-    "revision": "8fc9e8cfbc7df5aa7a9d45645159fdd6"
+    "revision": "a7208ec72e69ebea840c392d41f9e20f"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
