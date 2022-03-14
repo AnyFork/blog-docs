@@ -1,5 +1,5 @@
 ---
-title: Nginx安装
+title: Nginx安装步骤
 date: 2022-02-18 18:51:45
 tags:
   - nginx

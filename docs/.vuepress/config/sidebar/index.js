@@ -2,7 +2,7 @@
 module.exports = {
   '/java/': [''],
   '/vue/': [''],
-  '/devOps/nginx/': ['', 'nginxInstall'],
+  '/devOps/nginx/': ['', 'nginxInstall','nginxGzip','nginxCache','nginxLocation','nginxLog'],
   '/devOps/docker/': [''],
   '/others/2022/': [
     '',
