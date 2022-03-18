@@ -13,5 +13,6 @@ module.exports = {
     }
   ],
   '/others/other/': ['','20220302'],
-  '/others/linux/':['','baseCommand']
+  '/others/linux/':['','baseCommand'],
+  '/others/mysql/':['','mysqlInstall']
 }

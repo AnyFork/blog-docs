@@ -1,5 +1,5 @@
 ---
-title: Nginx安装步骤
+title: Nginx以及第三方模块安装步骤
 date: 2022-02-18 18:51:45
 tags:
   - nginx
@@ -14,10 +14,84 @@ publish: false
 <!-- more -->
 
 :::tip
-日常工作中，nginx 使用非常频繁。今日抽空，顺便整理一下 linux 环境下 nginx 的 2 种安装方式，以备日后使用，减少不必要的错误。普通方式需要手动编译，比较麻烦。docker方式比较简单，但一定要注意文件目录挂载配置要正确，配置不正确，即使容器启动起来，nginx也无法运行。
+日常工作中，nginx 使用非常频繁。今日抽空，顺便整理一下 linux 环境下 nginx 常用的 3 种安装方式(yum,源码编译，docker)，以备日后使用，减少不必要的错误。docker 方式比较简单，但一定要注意文件目录挂载配置，配置不正确，即使容器启动起来，nginx 也无法运行。
 :::
 
-## 普通安装
+## 一 yum 安装 nginx
+
+yum 安装 nginx 操作简单，无需编译源码，还会生成 nginx 服务。具体步骤如下：
+
+### 1 更新 yum
+
+```bash
+yum update -y
+```
+
+### 2 安装 nginx 源
+
+可以通过：<http://nginx.org/packages/centos/7/x86_64/RPMS/>,查找自己想安装的版本。
+
+```bash
+#安装nginx源
+rpm -ivh http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.20.2-1.el7.ngx.x86_64.rpm
+#查看nginx信息
+yum info nginx
+```
+
+### 3 安装 nginx
+
+```bash
+yum install nginx -y
+```
+
+### 4 开放 80 端口或者关闭防火墙
+
+```bash
+# 开发80端口
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+# 重新加载
+firewall-cmd --reload
+#或直接关闭防火墙
+systemctl stop firewalld
+```
+
+### 5 启动 nginx
+
+```bash
+# 启动nginx
+systemctl start nginx
+```
+
+### 6 开机自启动
+
+```bash
+systemctl enable nginx
+```
+
+### 7 查看 nginx 版本和编译参数信息
+
+```bash
+#nginx版本信息
+nginx -v
+#nginx编译参数信息,包括安装位置以及各种配置文件信息。
+nginx -V
+```
+
+**nginx 相关配置信息：**
+![](https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203181052935.png)
+
+**yum 方式安装的默认地址和配置的默认地址**
+
+```bash
+#yum方式安装后默认配置文件的路径
+/etc/nginx/nginx.conf
+#nginx网站默认存放目录
+/usr/share/nginx/html
+#网站默认主页路径
+/usr/share/nginx/html/index.html
+```
+
+## 二 源码编译安装
 
 ### 1、下载 Nginx
 
@@ -68,10 +142,10 @@ yum install -y openssl openssl-devel
 
 ### 4、预编译
 
-进入解压后的目录 nginx-1.20.1 进行预编译 ./configure --prefix=/opt/nginx 注意：--prefix 是指定安装目录
+进入解压后的目录 nginx-1.20.1 进行预编译。注意：--prefix 是指定安装目录，默认`/usr/local/nginx`
 
 ```bash
-./configure --prefix=/opt/nginx
+./configure --prefix=/opt/nginx --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module
 ```
 
 ### 5、编译
@@ -158,7 +232,7 @@ vi /etc/rc.d/rc.local
 
 **上面这种是最简单的 nginx 开机自启动的，推荐大家使用**。
 
-## Docker 安装
+## 三 Docker 安装
 
 ### 1、拉取 nginx 镜像
 
@@ -171,7 +245,9 @@ docker pull nginx
 ```bash
 docker run --name nginx -p 80:80 -d nginx
 ```
-至此一个简单的nginx容器就启动成功了，下面配置挂载目录。
+
+至此一个简单的 nginx 容器就启动成功了，下面配置挂载目录。
+
 ### 3、创建挂载目录
 
 ```bash
@@ -209,10 +285,12 @@ docker run -d --name nginx -p 80:80 -p 443:443 -v /opt/nginx/nginx.conf:/etc/ngi
 -v /opt/nginx/html:/usr/share/nginx/html -v /opt/nginx/logs:/var/log/nginx \
 -v /opt/nginx/conf.d:/etc/nginx/conf.d --privileged=true --restart=always nginx
 ```
-`--privileged=true`: 使用该参数，container内的root拥有真正的root权限。否则，container内的root只是外部的一个普通用户权限。privileged启动的容器，可以看到很多host上的设备，并且可以执行mount。甚至允许你在docker容器中启动docker容器  
-`--restart=always`: 当Docker重启时，容器自动启动。  
+
+`--privileged=true`: 使用该参数，container 内的 root 拥有真正的 root 权限。否则，container 内的 root 只是外部的一个普通用户权限。privileged 启动的容器，可以看到很多 host 上的设备，并且可以执行 mount。甚至允许你在 docker 容器中启动 docker 容器  
+`--restart=always`: 当 Docker 重启时，容器自动启动。  
 修改运行中的容器自启动：`docker container update --restart=always 容器名字`  
 构建容器自启动：启动命令额外加上`--restart=always`
+
 ### 7、查看 nginx 容器运行情况
 
 ```bash
@@ -222,6 +300,43 @@ docker ps
 http:ip/
 
 ```
-如果浏览器访问不了，应该是防火墙的原因。可以通过命令`systemctl stop firewalld`关闭防火墙或者开通对应的端口`80`和`443`，端口开通命令参考：[linux常用指令](../../others/linux/basecommand.html#_6-centos-端口开通)
+
+如果浏览器访问不了，应该是防火墙的原因。可以通过命令`systemctl stop firewalld`关闭防火墙或者开通对应的端口`80`和`443`，端口开通命令参考：[linux 常用指令](../../others/linux/basecommand.html#_6-centos-端口开通)
+
+## 四 nginx 安装第三方模块
+
+&emsp;nginx 文件非常小但是性能非常的高效,这方面完胜 apache,nginx 文件小的一个原因之一是 nginx 自带的功能相对较少,好在 nginx 允许第三方模块,第三方模块使得 nginx 越发的强大. 在安装模块方面,nginx 显得没有 apache 安装模块方便，当然也没有 php 安装扩展方便.在原生的 nginx,他不可以动态加载模块,所以当你安装第三方模块的时候需要覆盖 nginx 文件.接下来看看如何安装 nginx 第三模块吧。
+
+nginx 第三方模块安装方法：`./configure --prefix=/你的安装目录 --add-module=/第三方模块路径`。下面以`nginx-upsync-module`第三方模块为例子。
+
+- 如果第一次安装 nginx 并安装第三方模块：
+
+```bash
+#进入源码文件目录
+cd nginx-1.19
+#进行预编译
+./configure --prefix=/opt/nginx --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module    --with-pcre --add-module=../nginx-upsync-module-master
+#编译
+make
+#安装
+make install
+```
+
+- 如果已经安装 nginx 并安装第三方模块：
+
+```bash
+#如果没有已安装好的nginx源码目录，需要从nginx官网下载相同版本的源码，在源码基础上重新安装nginx,进入源码文件目录
+cd nginx-1.19
+#进行预编译
+./configure --prefix=/opt/nginx  --with-http_ssl_module    --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module    --with-pcre --add-module=../nginx-upsync-module-master
+#编译
+make
+#将编译好的文件覆盖原来的nginx文件，在nginx源码目录下的objs文件在
+cp objs/nginx /opt/nginx/sbin/nginx
+```
+
+总结,安装 nginx 安装第三方模块实际上是使用--add-module 重新安装一次 nginx，不要 make install 而是直接把编译目录下 objs/nginx 文件直接覆盖老的 nginx 文件。如果你需要安装多个 nginx 第三方模块,你只需要多指定几个相应的--add-module 即可。注意：重新编译的时候，记得一定要把以前编译过的模块一同加到 configure 参数里面。
+
+nginx 提供了非常多的第三方模块：<https://www.nginx.com/resources/wiki/modules/>
 
 <Reward/>

@@ -58,7 +58,7 @@ module.exports = {
       },
       // 信息栏展示社交信息
       socialLinks: [
-        { icon: 'reco-github', link: 'https://anyFork.github.io//blog-docs/' },
+        { icon: 'reco-github', link: 'https://anyFork.github.io/blog-docs/' },
         { icon: 'reco-mayun', link: 'https://anyFork.gitee.io/blog-docs/' }
       ]
     },

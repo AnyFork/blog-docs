@@ -64,6 +64,10 @@ module.exports = [
         link: '/others/linux/'
       },
       {
+        text: 'MySql专题',
+        link: '/others/mysql/'
+      },
+      {
         text: '其他杂谈',
         link: '/others/other/'
       },
