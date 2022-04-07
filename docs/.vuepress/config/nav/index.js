@@ -16,12 +16,20 @@ module.exports = [
     ]
   },
   {
-    text: 'Vue文档库',
+    text: '前端资料库',
     icon: 'reco-document',
     items: [
       {
-        text: 'Vue资料库',
+        text: 'Vue专题',
         link: '/vue/'
+      },
+      {
+        text: 'Nuxt专题',
+        link: '/nuxt/'
+      },
+      {
+        text: 'Node专题',
+        link: '/node/'
       }
     ]
   },

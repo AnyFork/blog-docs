@@ -2,7 +2,9 @@
 module.exports = {
   '/java/': [''],
   '/vue/': [''],
-  '/devOps/nginx/': ['', 'nginxInstall','nginxGzip','nginxCache','nginxLocation','nginxLog'],
+  '/nuxt/': ['', 'nuxtdeploy'],
+  '/node/': ['', 'pm2', 'nohup'],
+  '/devOps/nginx/': ['', 'nginxInstall', 'nginxGzip', 'nginxCache', 'nginxLocation', 'nginxLog'],
   '/devOps/docker/': [''],
   '/others/2022/': [
     '',
@@ -12,7 +14,7 @@ module.exports = {
       children: ['20220215']
     }
   ],
-  '/others/other/': ['','20220302'],
-  '/others/linux/':['','baseCommand'],
-  '/others/mysql/':['','mysqlInstall']
+  '/others/other/': ['', '20220302'],
+  '/others/linux/': ['', 'baseCommand'],
+  '/others/mysql/': ['', 'mysqlInstall']
 }
