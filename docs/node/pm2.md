@@ -39,39 +39,101 @@ $ npm install pm2 -g
 配置 pm2 应用实例配置文件`ecosystem.config.js`,如下：
 
 ```bash
-//pm2实例配置：ecosystem.config.js
+#pm2实例配置：ecosystem.config.js
 module.exports = {
   apps: [
     {
-      //实例名称
+      #实例名称
       name: 'NuxtRmbRate',
-      //部署模式，单机：'fork',集群：'cluster'
+      #部署模式，单机：'fork',集群：'cluster'
       exec_mode: 'fork',
-      //实例数目
+      #实例数目
       instances: '1',
-      //nuxt start的执行路径
-      script: './node_modules/nuxt/bin/nuxt.js',
-      //启动参数
-      args: 'start',
-      // 完整日志路径
+      #需要执行的脚本文件，对于普通的nuxt项目(没有server)，一般采用nuxt start命令，用pm2执行时需要修改成./node-modules/nuxt/dist/bin/nuxt.js,否则报错
+      script: 'server/index.js',
+      #应用程序所在的目录
+      cwd: '',
+      # 传递给脚本的参数，例如nuxt start命令，参数为start
+      args: '',
+      # 完整日志路径
       output: 'log/output.log',
-      // 错误日志路径
+      # 错误日志路径
       error: 'log/error.log',
-      // 访问日志路径
+      # 访问日志路径
       log: 'log/access.log',
-      // 日志格式
+      # 日志格式
       log_type: 'json',
-      // 合并日志
+      # 合并日志
       merge_logs: true,
-      // 日志日期格式
-      log_date_format: 'YYYY-MM-DD HH:mm:ss'
+      # 日志日期格式
+      log_date_format: 'YYYY-MM-DD HH:mm:ss',
+       # 最小运行时间，这里设置的是60s即如果应用程序在* 60s内退出，pm2会认为程序异常退出，此时触发重启* max_restarts设置数量，应用运行少于时间被认为是异常启动
+      min_uptime: '60s',
+      # 设置应用程序异常退出重启的次数，默认15次（从0开始计数）,最大异常重启次数，即小于min_uptime运行时间重启次数；
+      max_restarts: 10,
+      # 启用/禁用应用程序崩溃或退出时自动重启，默认为true, 发生异常的情况下自动重启
+      autorestart: true,
+      # 异常重启情况下，延时重启时间
+      restart_delay: 30,
+      #生产环境配置
+      env_prod: {
+        # 环境参数，当前指定为生产环境 process.env.NODE_ENV
+        NODE_ENV: 'production'
+      },
     }
   ]
 }
-
 ```
 
-启动名字为`NuxtRmbRate`的应用
+其他配置项如下：
+
+```bash
+name 应用进程名称；
+
+script 启动脚本路径；
+
+cwd 应用启动的路径，关于 script 与 cwd 的区别举例说明：在/home/polo/目录下运行/data/release/node/index.js，此处 script 为/data/release/node/index.js，cwd 为/home/polo/；
+
+args 传递给脚本的参数；
+
+interpreter 指定的脚本解释器；
+
+interpreter_args 传递给解释器的参数；
+
+instances 应用启动实例个数，仅在 cluster 模式有效，默认为 fork；
+
+exec_mode 应用启动模式，支持 fork 和 cluster 模式；
+
+watch 监听重启，启用情况下，文件夹或子文件夹下变化应用自动重启；
+
+ignore_watch 忽略监听的文件夹，支持正则表达式；
+
+max_memory_restart 最大内存限制数，超出自动重启；
+
+env 环境变量，object 类型，如{"NODE_ENV":"production", "ID": "42"}；
+
+log_date_format 指定日志日期格式，如 YYYY-MM-DD HH:mm:ss；
+
+error_file 记录标准错误流，$HOME/.pm2/logs/XXXerr.log)，代码错误可在此文件查找；
+
+out_file 记录标准输出流，$HOME/.pm2/logs/XXXout.log)，如应用打印大量的标准输出，会导致 pm2 日志过大；
+
+min_uptime 应用运行少于时间被认为是异常启动；
+
+max_restarts 最大异常重启次数，即小于 min_uptime 运行时间重启次数；
+
+autorestart 默认为 true, 发生异常的情况下自动重启；
+
+cron_restart crontab 时间格式重启应用，目前只支持 cluster 模式；
+
+force 默认 false，如果 true，可以重复启动一个脚本。pm2 不建议这么做；
+
+restart_delay 异常重启情况下，延时重启时间；
+```
+
+**注意：** 设置环境变量时需要以`env_`开头，详细参考：<https:#pm2.keymetrics.io/docs/usage/environment/>。例如设置了环境变量`env_production`，采用 pm2 启动时如下：`pm2 start ecosystem.config.js --env production`
+
+启动项目实例
 
 ```bash
 pm2 start ecosystem.config.js
