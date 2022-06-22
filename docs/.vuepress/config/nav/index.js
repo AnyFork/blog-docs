@@ -48,6 +48,10 @@ module.exports = [
       {
         text: 'Redis文档',
         link: '/devOps/redis/'
+      },
+      {
+        text: 'Gitlab文档',
+        link: '/devOps/gitlab/'
       }
     ]
   },

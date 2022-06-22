@@ -45,12 +45,12 @@ module.exports = [
         },
         {
           type: 'text',
-          content: '博客汇集了个人总结的资料文档，会不定期进行更新!',
+          content: '博客汇集了个人总结的资料文档，会进行不定期更新!',
           style: 'text-align: left;text-indent: 10px;font-size: 13px;'
         },
         {
           type: 'text',
-          content: '博客中可能存在一些问题，欢迎小伙伴们给我留言.',
+          content: '博客中可能存在一些不足的问题，欢迎小伙伴们给我留言.',
           style: 'text-align: left;text-indent: 10px;font-size: 13px;'
         },
         {
@@ -70,16 +70,16 @@ module.exports = [
       audios: [
         //本地音乐4首
         {
+          name: '卡农',
+          artist: '卡农钢琴版',
+          url: '/blog-docs/music/canon/canon.mp3',
+          cover: '/blog-docs/music/canon/canon.jpg'
+        },
+        {
           name: 'Victory(胜利)',
           artist: 'Two Steps From Hell',
           url: '/blog-docs/music/victory/victory.mp3',
           cover: '/blog-docs/music/victory/victory.jpg'
-        },
-        {
-          name: '卡农',
-          artist: '卡农钢琴版',
-          url: '//blog-docs/music/canon/canon.mp3',
-          cover: '/blog-docs/music/canon/canon.jpg'
         },
         {
           name: '风居住的街道',

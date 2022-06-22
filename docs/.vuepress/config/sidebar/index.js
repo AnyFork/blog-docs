@@ -7,6 +7,7 @@ module.exports = {
   '/devOps/nginx/': ['', 'nginxInstall', 'nginxGzip', 'nginxCache', 'nginxLocation', 'nginxLog'],
   '/devOps/docker/': [''],
   '/devOps/redis/': ['', 'install'],
+  '/devOps/gitlab/': [''],
   '/others/2022/': [
     '',
     {
