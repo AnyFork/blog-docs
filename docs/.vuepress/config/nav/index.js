@@ -44,6 +44,10 @@ module.exports = [
       {
         text: 'Docker文档',
         link: '/devOps/docker/'
+      },
+      {
+        text: 'Redis文档',
+        link: '/devOps/redis/'
       }
     ]
   },

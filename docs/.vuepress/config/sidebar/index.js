@@ -2,10 +2,11 @@
 module.exports = {
   '/java/': [''],
   '/vue/': [''],
-  '/nuxt/': ['', 'nuxtdeploy','nuxtInfo'],
-  '/node/': ['', 'pm2', 'nohup','tools'],
+  '/nuxt/': ['', 'nuxtdeploy', 'nuxtInfo'],
+  '/node/': ['', 'pm2', 'nohup', 'tools'],
   '/devOps/nginx/': ['', 'nginxInstall', 'nginxGzip', 'nginxCache', 'nginxLocation', 'nginxLog'],
   '/devOps/docker/': [''],
+  '/devOps/redis/': ['', 'install'],
   '/others/2022/': [
     '',
     {
