@@ -1,5 +1,5 @@
 ---
-title: Mysql专题
+title: Mysql专题汇总
 date: 2022-03-14 15:25:59
 tags:
   - MySql
@@ -7,7 +7,7 @@ categories:
   - 数据库
 subSidebar: true
 layout: PageLayOut
-listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203141729266.gif }
+listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203141729266.gif }
 comment: true
 ---
 

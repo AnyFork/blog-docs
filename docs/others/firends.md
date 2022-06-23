@@ -8,7 +8,7 @@ categories:
   - 其他
 subSidebar: true
 publish: false
-layout: PageLayOut
+layout: HomeBlog
 ---
 
 <!-- more -->

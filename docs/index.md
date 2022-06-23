@@ -35,5 +35,6 @@ hobby:
   - 看小说
   - 编程
   - 旅游
+  - 看电视
 bubbles: true
 ---

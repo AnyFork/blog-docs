@@ -8,8 +8,8 @@ categories:
 comments: true
 subSidebar: true
 layout: PageLayOut
-listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202204221600458.jpg }
-sticky: 7
+listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202204221600458.jpg }
+sticky: 6
 ---
 
 &emsp;Redis(Remote Dictionary Server)，即远程字典服务，是一个开源的使用 ANSI C 语言编写、支持网络、可基于内存亦可持久化的日志型、Key-Value 数据库，并提供多种语言的 API。redis 的官网地址，非常好记，是 redis.io。(域名后缀 io 属于国家域名，是 british Indian Ocean territory，即英属印度洋领地），Vmware 在资助着 redis 项目的开发和维护。

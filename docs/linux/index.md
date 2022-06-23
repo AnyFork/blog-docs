@@ -1,5 +1,5 @@
 ---
-title: linux专题
+title: linux专题汇总
 date: 2022-03-10 10:46:59
 tags:
   - linux
@@ -7,7 +7,7 @@ categories:
   - 运维
 subSidebar: true
 layout: PageLayOut
-listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203101051054.jpg }
+listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203101051054.jpg }
 comment: true
 ---
 

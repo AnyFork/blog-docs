@@ -4,9 +4,9 @@ date: 2022-02-14 13:25:00
 description: description,
 lang: zh-CN
 tags:
-  - 随笔
+  - 其他
 categories:
-  - 随笔Essay
+  - 其他
 sticky: 2
 subSidebar: true
 sidebar: false
