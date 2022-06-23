@@ -1,19 +1,19 @@
 ---
-title: Gitlab专题
-date: 2022-6-22 18:53:03
+title: Gitlab安装
+date: 2022-6-23 9:59:03
 tags:
   - Gitlab
 categories:
   - 运维
-comments: true
+omment: true
 subSidebar: true
+sidebar: true
+publish: false
 layout: PageLayOut
-listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202206221855008.png }
-sticky: 6
 ---
 
-&emsp;GitLab 是由 GitLabInc.开发，使用 MIT 许可证的基于网络的 Git 仓库管理工具，且具有 wiki 和 issue 跟踪功能。使用 Git 作为代码管理工具，并在此基础上搭建起来的 web 服务。
 <!-- more -->
+<boxx/>
 
 ## 一、GitLab 简介
 

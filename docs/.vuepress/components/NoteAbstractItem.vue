@@ -102,6 +102,7 @@ export default defineComponent({
       flex-wrap: wrap;
       padding-left: 40px;
       font-weight: normal
+      margin:0px !important;
       .abstract
         width:100%
         overflow: hidden;

@@ -9,6 +9,7 @@ omment: true
 subSidebar: true
 sidebar: true
 publish: false
+layout: PageLayOut
 ---
 
 <!-- more -->
