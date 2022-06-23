@@ -8,12 +8,11 @@ categories:
 comments: true
 subSidebar: true
 layout: PageLayOut
-listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202206221855008.png }
+listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202206221855008.png }
 sticky: 6
 ---
 
-&emsp;GitLab 是由 GitLabInc.开发，使用 MIT 许可证的基于网络的 Git 仓库管理工具，且具有 wiki 和 issue 跟踪功能。使用 Git 作为代码管理工具，并在此基础上搭建起来的 web 服务。，一般用于在企业内搭建 git 私服，要自己搭环境。
-
+&emsp;GitLab 是由 GitLabInc.开发，使用 MIT 许可证的基于网络的 Git 仓库管理工具，且具有 wiki 和 issue 跟踪功能。使用 Git 作为代码管理工具，并在此基础上搭建起来的 web 服务。
 <!-- more -->
 
 ## 一、GitLab 简介

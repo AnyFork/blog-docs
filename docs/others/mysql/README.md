@@ -7,7 +7,7 @@ categories:
   - 数据库
 subSidebar: true
 layout: PageLayOut
-listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203141729266.gif }
+listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203141729266.gif }
 comment: true
 ---
 

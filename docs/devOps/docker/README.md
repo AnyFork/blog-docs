@@ -8,7 +8,7 @@ categories:
   - 运维
 comments: true
 subSidebar: true
-listCell: { mode: left, image: /images/markdown/docker.jpg }
+listCell: { mode: right, image: /images/markdown/docker.jpg }
 sticky: 2
 ---
 
