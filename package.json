@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "author": "AnyFork",
   "description": "vuepress构建的资料文档博客",
-  "homepage": "https://anyfork.github.io/blog-docs/",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs",
-    "deploy": "npm run build&& gh-pages -d dist -r https://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@github.com/AnyFork/blog-docs.git"
+    "build": "vuepress build docs"
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-extract-code": "^1.0.4",

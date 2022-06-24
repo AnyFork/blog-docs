@@ -5,9 +5,9 @@
       <div>
         <h1><reco-icon icon="reco-category" style="font-size:25px"></reco-icon>分类列表</h1>
         <ul v-show="recoShowModule" class="category-wrapper">
-          <li class="category-item" :class="title == item.name ? 'active' : ''" v-for="(item, index) in $categoriesList" v-show="item.pages.length > 0" :key="index">
+          <li class="category-item" :class="title == item.key ? 'active' : ''" v-for="(item, index) in $categories._metaMap" v-show="item.pages.length > 0" :key="index">
             <router-link :to="item.path">
-              <span class="category-name">{{ item.name }}</span>
+              <span class="category-name">{{ item.key }}</span>
               <span class="post-num" :style="{ backgroundColor: getOneColor() }">{{ item.pages.length }}</span>
             </router-link>
           </li>

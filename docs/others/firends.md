@@ -131,6 +131,10 @@ layout: HomeBlog
   name: vuepress-theme-reco官方插件
   desc: 官网更多优秀的插件
 - img: https://vuepress.vuejs.org/hero.png
+  link: https://www.vuepress.cn/
+  name: VuePress 中文官网
+  desc: VuePress 中文官网地址
+- img: https://vuepress.vuejs.org/hero.png
   link: https://vuepress-community.netlify.app/zh/
   name: VuePress 官方社区
   desc: 官网更多优秀的插件
