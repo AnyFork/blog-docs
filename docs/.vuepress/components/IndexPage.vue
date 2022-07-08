@@ -26,7 +26,7 @@
         </ModuleTransition>
       </div>
       <!--首页图片气泡-->
-      <component v-if="bubbles" :is="bubblesRef"></component>
+      <div v-if="bubbles" id="bubbles" style="position: absolute; height: 100%; width: 100%; z-index: 100000"></div>
     </div>
     <!--中部主体博客列表 -->
     <ModuleTransition delay="0.16">
@@ -90,6 +90,7 @@ import { getOneColor } from 'vuepress-theme-reco/helpers/other'
 import { useInstance } from 'vuepress-theme-reco/helpers/composable'
 import changBg from '../utils/mixins/changeBg.js'
 import ImagePage from './ImagePage'
+import { circleMagic } from '../utils/utils.js'
 export default defineComponent({
   components: { NoteAbstract, TagList, FriendLink, ModuleTransition, PersonalInfo, RecoIcon, ImagePage },
   mixins: [changBg],
@@ -113,15 +114,18 @@ export default defineComponent({
     const heroImageStyle = computed(() => instance.$frontmatter.heroImageStyle || {})
     //是否显示首页气泡
     const bubbles = computed(() => instance.$frontmatter.bubbles || true)
-    const bubblesRef = ref('')
     onMounted(() => {
-      import('vue-canvas-effect/src/components/bubbles').then((module) => {
-        bubblesRef.value = module.default
+      circleMagic({
+        radius: 15,
+        density: 0.3,
+        // color: "rgba(255,255,255, .4)",
+        color: 'random', //气泡随机颜色
+        clearOffset: 0.2
       })
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true
     })
-    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor, categoryArticleNum, bubbles, bubblesRef }
+    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor, categoryArticleNum, bubbles }
   },
   methods: {
     paginationChange(page) {
@@ -130,7 +134,6 @@ export default defineComponent({
       }, 100)
     },
     getPagesByTags(tagInfo) {
-      console.log(tagInfo)
       this.$router.push({ path: tagInfo.path })
     },
     scrollFn() {

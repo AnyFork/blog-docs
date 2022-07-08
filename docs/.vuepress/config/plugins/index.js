@@ -76,12 +76,6 @@ module.exports = [
           cover: '/blog-docs/music/canon/canon.jpg'
         },
         {
-          name: 'Victory(胜利)',
-          artist: 'Two Steps From Hell',
-          url: '/blog-docs/music/victory/victory.mp3',
-          cover: '/blog-docs/music/victory/victory.jpg'
-        },
-        {
           name: '风居住的街道',
           artist: '风居住的街道 钢琴版 - 钢琴曲',
           url: '/blog-docs/music/wind/wind.mp3',

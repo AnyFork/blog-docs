@@ -13,7 +13,6 @@ export default {
   },
   methods: {
     click(event) {
-      console.log(event.target.href)
       window.f.next(event.target.hash.split('#')[1])
     }
   }
