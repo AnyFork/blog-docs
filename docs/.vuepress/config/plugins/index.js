@@ -32,36 +32,6 @@ module.exports = [
       height: 320
     }
   ],
-  //公告弹框插件
-  [
-    '@vuepress-reco/vuepress-plugin-bulletin-popover',
-    {
-      title: '公告',
-      body: [
-        {
-          type: 'title',
-          content: '欢迎来到我的博客🎉🎉🎉',
-          style: 'text-align: center;font-size: 15px;font-weight: bold;'
-        },
-        {
-          type: 'text',
-          content: '博客汇集了个人总结的资料文档，会进行不定期更新!',
-          style: 'text-align: left;text-indent: 10px;font-size: 13px;'
-        },
-        {
-          type: 'text',
-          content: '博客中可能存在一些不足的问题，欢迎小伙伴们给我留言.',
-          style: 'text-align: left;text-indent: 10px;font-size: 13px;'
-        },
-        {
-          type: 'text',
-          content: '邮箱：874957743@qq.com',
-          style: 'text-align: left;text-indent: 10px;font-size: 13px;'
-        }
-      ],
-      footer: null
-    }
-  ],
   //音乐播放器插件
   [
     //github地址：https://github.com/vuepress-reco/vuepress-plugin-bgm-player
@@ -149,7 +119,7 @@ module.exports = [
     'sakura',
     {
       // 默认数量
-      num: 40,
+      num: 15,
       //是否显示
       show: true,
       // 层级

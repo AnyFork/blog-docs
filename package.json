@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",
-    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.6.0",
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "dayjs": "^1.10.7",
     "gh-pages": "^3.2.3",
