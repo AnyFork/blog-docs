@@ -14,14 +14,14 @@ bgImage:
   - images/index/bg4.jpg
   - images/index/bg5.jpg
   - images/index/bg6.jpg
-#背景图片切换时间间隔：默认10秒，单位毫秒
+#背景图片切换时间间隔：默认4秒，单位毫秒
 bgImageSec: 10000
-#背景图片是否动态切换,默认不开启，刷新会更换图片
+#背景图片是否动态切换,默认不开启，每次刷新会更换图片
 isBgImagetrigger: true
 #是否使用系统默认的背景图片，开启后会和自定义的背景图片一起使用
 needDefaultImages: true
 #背景图片样式
-bgImageStyle: { height: '450px', color: '#fff' }
+bgImageStyle: { height: '550px', color: '#fff' }
 isShowTitleInHome: false
 #是否展示箭头
 showArrow: true
