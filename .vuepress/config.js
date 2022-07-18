@@ -84,8 +84,7 @@ module.exports = {
       }
     ],
     logo: '/images/user.jpg',
-    search: false,
-    // searchMaxSuggestions: 10,
+    searchPlaceholder: '点我进行全文检索',
     algolia: {
       apiKey: 'e3224f6a8f05632af9c14c9767650b54',
       indexName: 'anyfork',

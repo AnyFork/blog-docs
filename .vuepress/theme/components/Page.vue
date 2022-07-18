@@ -5,7 +5,7 @@
         <div class="page-title">
           <div style="display: flex; align-items: center; justify-content: space-between">
             <h1 class="title" style="display: inline-block">{{ $page.title }}</h1>
-            <h1 v-show="!$frontmatter.home" style="display: inline-block; float: right; cursor: pointer; font-size: 15px; line-height: 25px; padding: 5px; background-color: #67cc86; border-radius: 3px" @click="$router.go(-1)">
+            <h1 v-show="!$frontmatter.home" style="display: inline-block; float: right; cursor: pointer; font-size: 15px; line-height: 25px; padding: 5px;" @click="$router.go(-1)">
               <img :src="$withBase('/svg/back.svg')" style="width: 15px" /> 返回
             </h1>
           </div>

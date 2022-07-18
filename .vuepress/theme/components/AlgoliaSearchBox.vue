@@ -1,7 +1,7 @@
 <template>
   <form id="search-form" class="algolia-search-wrapper search-box" role="search">
-    <reco-icon icon="reco-search" />
-    <input id="algolia-search-input" class="search-query" :placeholder="placeholder" style="border-radius:20px;outline:none" />
+    <reco-icon icon="reco-search" style="top: 1.5px" />
+    <input id="algolia-search-input" class="search-query" :placeholder="placeholder" style="border-radius: 20px; outline: none" />
   </form>
 </template>
 
@@ -9,17 +9,12 @@
 import { defineComponent, ref, onMounted } from 'vue'
 import { RecoIcon } from '@vuepress-reco/core/lib/components'
 import { useInstance } from '@theme/helpers/composable'
-
 export default defineComponent({
   components: { RecoIcon },
-
   props: ['options'],
-
   setup(props, ctx) {
     const instance = useInstance()
-
     const placeholder = ref(undefined)
-
     const initialize = (userOptions, lang) => {
       Promise.all([import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.js'), import(/* webpackChunkName: "docsearch" */ 'docsearch.js/dist/cdn/docsearch.min.css')]).then(([docsearch]) => {
         docsearch = docsearch.default
@@ -35,8 +30,10 @@ export default defineComponent({
               algoliaOptions
             ),
             handleSelected: (input, event, suggestion) => {
+              const base = instance.$site.base
               const { pathname, hash } = new URL(suggestion.url)
-              this.$router.push(`${pathname}${hash}`)
+              // 替换base,处理路由跳转路径错误。
+              instance.$router.push(`${pathname.replace(base, '/')}${hash}`)
             }
           })
         )
@@ -74,6 +71,10 @@ export default defineComponent({
     vertical-align middle
   .algolia-autocomplete
     line-height normal
+    .search-query::placeholder
+      font-size 0.5rem
+      font-family Bubblegum Sans, cursive !important;
+      color #242424;
     .ds-dropdown-menu
       background-color var(--background-color)
       border-radius $borderRadius
