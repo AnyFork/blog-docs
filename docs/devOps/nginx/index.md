@@ -1,5 +1,5 @@
 ---
-title: nginx专题汇总
+title: nginx安装步骤
 date: 2022-02-19 15:53:03
 lang: zh-CN
 tags:

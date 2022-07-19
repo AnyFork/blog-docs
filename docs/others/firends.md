@@ -8,7 +8,6 @@ categories:
   - 其他
 subSidebar: true
 publish: false
-layout: HomeBlog
 ---
 
 <!-- more -->
@@ -62,7 +61,7 @@ layout: HomeBlog
   bgColor: 'rgb(136,181,214)'
   textColor: 'rgb(249,249,249)'
 - name: 田小波
-  avatar: http://www.tianxiaobo.com/images/tx.png
+  avatar: https://www.tianxiaobo.com/images/avatar.jpg
   desc: 欢迎访问田小波的技术博客。
   link: http://www.tianxiaobo.com/
   bgColor: '#B39CD0'
@@ -75,7 +74,7 @@ layout: HomeBlog
   textColor: '#2c3e50'
 - name: 会飞的小弋
   link: https://lovelijunyi.gitee.io/
-  avatar: https://gitee.com/lovelijunyi/images/raw/master/20200404135847.jpg
+  avatar: https://lovelijunyi.gitee.io/img/avatar.gif
   desc: 喜欢大数据，嵌入式和机器视觉
   bgColor: 'rgb(243 126 126)'
   textColor: 'rgb(102 48 72)'

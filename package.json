@@ -4,8 +4,8 @@
   "author": "AnyFork",
   "description": "vuepress构建的资料文档博客",
   "scripts": {
-    "dev": "vuepress dev .",
-    "build": "vuepress build ."
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "devDependencies": {
     "vuepress": "1.8.2"

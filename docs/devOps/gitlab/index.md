@@ -1,5 +1,5 @@
 ---
-title: Gitlab专题汇总
+title: Gitlab内容简介
 date: 2022-6-22 18:53:03
 tags:
   - Gitlab

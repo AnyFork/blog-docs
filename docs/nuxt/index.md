@@ -1,11 +1,10 @@
 ---
-title: Nuxt专题汇总
+title: Nuxt简介
 date: 2022-04-06 09:44:16
 tags:
   - Nuxt
 categories:
-  - 前端
-  - Vue
+  - Nuxt
 subSidebar: true
 layout: PageLayOut
 listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202204060942130.jpg }

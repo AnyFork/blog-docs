@@ -6,7 +6,7 @@ lang: zh-CN
 tags:
   - 博客
 categories:
-  - 部署
+  - 运维
 subSidebar: true
 layout: PageLayOut
 listCell: { mode: left, image: /images/markdown/blog.png }
