@@ -1,5 +1,5 @@
 ---
-title: Node安装步骤
+title: Node多种安装方式
 date: 2022-04-07 11:56:16
 tags:
   - Node

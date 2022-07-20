@@ -37,10 +37,6 @@
           <h4>
             <reco-icon icon="reco-category" />
             {{ $recoLocales.category }}
-            <span style="float: right; margin-right: 10px">
-              <span style="font-weight: bold">{{ categoryArticleNum }}</span
-              >篇
-            </span>
           </h4>
           <ul class="category-wrapper">
             <li class="category-item" v-for="(item, index) in $categories.list" :key="index">
@@ -95,14 +91,6 @@ export default defineComponent({
       recoShow: false,
       heroHeight: 0
     })
-    //分类文章数目
-    const categoryArticleNum = computed(() => {
-      let num = 0
-      instance.$categories.list.forEach((item) => {
-        num = num + item.pages.length
-      })
-      return num
-    })
     const recoShowModule = computed(() => instance && instance.$parent.recoShowModule)
 
     //是否显示首页气泡
@@ -118,7 +106,7 @@ export default defineComponent({
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true
     })
-    return { recoShowModule, ...toRefs(state), getOneColor, categoryArticleNum, bubbles }
+    return { recoShowModule, ...toRefs(state), getOneColor, bubbles }
   },
   methods: {
     paginationChange(page) {

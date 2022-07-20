@@ -1,10 +1,11 @@
 ---
-title: Centos7安装docker步骤
+title: Centos7安装Docker步骤
 date: 2022-02-19 15:53:03
 lang: zh-CN
 tags:
   - docker
 categories:
+  - docker
   - 运维
 comments: true
 subSidebar: true

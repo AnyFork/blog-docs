@@ -1,5 +1,5 @@
 ---
-title: Redis
+title: Redis 多种安装方式
 date: 2022-4-22 15:53:03
 tags:
   - Redis

@@ -4,14 +4,14 @@ date: 2022-03-10 10:48:07
 tags:
   - linux
 categories:
-  - 运维
+  - linux
 subSidebar: true
 layout: PageLayOut
 comment: true
 listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203101051054.jpg }
 ---
 
-日常工作总结，常用的 linux 命令使用比较频繁。如果不是专门从事运维工作的小伙伴，偶尔部署一个项目，可能会遗忘一些常用的命令。今天就已 centos7 系统为例，记录一些常用的 linux 命令，以备遗忘查阅和温顾复习。
+&emsp;日常工作总结，常用的 linux 命令使用比较频繁。如果不是专门从事运维工作的小伙伴，偶尔部署一个项目，可能会遗忘一些常用的命令。今天就已 centos7 系统为例，记录一些常用的 linux 命令，以备遗忘查阅和温顾复习。
 <!-- more -->
 
 # 一、常用命令

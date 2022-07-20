@@ -1,10 +1,11 @@
 ---
-title: nginx安装步骤
+title: nginx 内容简介和性能分析
 date: 2022-02-19 15:53:03
 lang: zh-CN
 tags:
   - nginx
 categories:
+  - nginx
   - 运维
 subSidebar: true
 layout: PageLayOut

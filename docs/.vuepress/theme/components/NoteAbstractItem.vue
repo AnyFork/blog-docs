@@ -10,7 +10,7 @@
           <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
           <router-link :to="item.path" style="font-weight: bold">{{ item.title }}</router-link>
         </div>
-        <div class="abstract" v-html="item.excerpt"></div>
+        <div class="abstract" v-html="item.excerpt" style="font-weight: normal"></div>
       </div>
     </div>
     <div v-if="item.frontmatter.listCell && item.frontmatter.listCell.mode === 'right' && winWidth > 500" class="box">
@@ -19,7 +19,7 @@
           <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
           <router-link :to="item.path" style="font-weight: bold">{{ item.title }}</router-link>
         </div>
-        <div class="abstract" v-html="item.excerpt"></div>
+        <div class="abstract" v-html="item.excerpt" style="font-weight: normal"></div>
       </div>
       <div class="box_img">
         <img :src="$withBase(item.frontmatter.listCell.image)" />
@@ -30,7 +30,7 @@
         <reco-icon v-if="item.frontmatter.keys" icon="reco-lock" />
         <router-link :to="item.path" style="font-weight: bold">{{ item.title }}</router-link>
       </div>
-      <div class="abstract" v-html="item.excerpt"></div>
+      <div class="abstract" v-html="item.excerpt" style="font-weight: normal"></div>
     </div>
     <!--移动端样式，屏幕尺寸小于500布局样式-->
     <div v-if="winWidth < 500">
@@ -41,7 +41,7 @@
       <div class="boxImg" v-if="item.frontmatter.listCell && item.frontmatter.listCell.image">
         <img :src="$withBase(item.frontmatter.listCell.image)" />
       </div>
-      <div class="abstract" v-html="item.excerpt"></div>
+      <div class="abstract" v-html="item.excerpt" style="font-weight: normal"></div>
     </div>
     <page-info :pageInfo="item" :currentTag="currentTag" :showAccessNumber="false" :windowsWidth="winWidth"></page-info>
   </div>

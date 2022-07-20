@@ -1,5 +1,5 @@
 ---
-title: MySql安装步骤
+title: MySql多种安装方式
 date: 2022-03-14 15:34:59
 tags:
   - MySql
@@ -7,15 +7,17 @@ categories:
   - 数据库
 subSidebar: true
 layout: PageLayOut
-publish: false
 comment: true
 listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203141729266.gif }
 ---
 
+&emsp;MySQL 是最流行的关系型数据库管理系统，在 WEB 应用方面 MySQL 是最好的 RDBMS(Relational Database Management System：关系数据库管理系统)应用软件之一。
+在本专题中，会让大家快速掌握 MySQL 的基本知识，并轻松使用 MySQL 数据库。
+
 <!-- more -->
 <boxx/>
 
-## 1 docker安装MySql8.x 版本
+## 1 docker 安装 MySql8.x 版本
 
 ### 拉取最新镜像
 
@@ -98,4 +100,5 @@ firewall-cmd --zone=public --add-port=3306/tcp --permanent
 #配置立即生效
 firewall-cmd --reload
 ```
+
 <Reward/>
