@@ -1,4 +1,4 @@
-name: Build and Deploy to github and gitee
+name: Build and Deploy to github & gitee
 on:
   push:
     branches:
@@ -7,25 +7,31 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Use Node.js
+      # 构建Node环境
+      - name: Build Node.js Env
         uses: actions/setup-node@v1
         with:
           node-version: '14'
-      - name: Checkout
+      # 检出main分支代码
+      - name: Checkout Code
         uses: actions/checkout@v2.3.1
         with:
           persist-credentials: false
-      - name: Install
+      # 安装依赖
+      - name: Install dependencies
         run: npm install
-      - name: Build
+      # 项目打包
+      - name: Build Project
         run: npm run build
-      - name: Deploy
+      # github 部署分支gh-pages 到github pages
+      - name: Deploy dist on gh-pages
         uses: JamesIves/github-pages-deploy-action@4.2.0
         with:
           BRANCH: gh-pages
           FOLDER: dist
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
+      # 同步github代码到gitee
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         env:
@@ -37,6 +43,7 @@ jobs:
           # 注意替换为你的 Gitee 目标仓库地址
           destination-repo: git@gitee.com:AnyFork/blog-docs.git
 
+      # 自动部署gitee gh-pages分支
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@main
         with:

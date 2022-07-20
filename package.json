@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@anyfork/vuepress-plugin-code-copy": "0.1.0-beta.1",
-    "@anyfork/vuepress-plugin-loading-page": "0.1.0-beta.5",
+    "@anyfork/vuepress-plugin-loading-page": "^0.1.1",
     "@vuepress-reco/core": "^1.6.9",
     "@vuepress-reco/vuepress-plugin-back-to-top": "^1.6.0",
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.4",

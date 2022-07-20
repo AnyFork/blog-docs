@@ -583,13 +583,13 @@ module.exports = {
 
 <RecoDemo :collapse="true">
   <template slot="code-template">
-    <<< @/docs/.vuepress/components/Tags.vue?template
+    <<< @/docs/.vuepress/theme/components/Tags.vue?template
   </template>
   <template slot="code-script">
-    <<< @/docs/.vuepress/components/Tags.vue?script
+    <<< @/docs/.vuepress/theme/components/Tags.vue?script
   </template>
   <template slot="code-style">
-    <<< @/docs/.vuepress/components/Tags.vue?style
+    <<< @/docs/.vuepress/theme/components/Tags.vue?style
   </template>
 </RecoDemo>
 
