@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "9dab5b7e98ea71d56046b906d4cbeb05"
+    "revision": "e3a7736efc62b5671b08e416a0eb23c6"
   },
   {
     "url": "assets/css/0.styles.4f2125f7.css",
@@ -238,8 +238,8 @@ self.__precacheManifest = [
     "revision": "401533f488bfaa113b32da630154b3c8"
   },
   {
-    "url": "assets/js/app.57c98b8d.js",
-    "revision": "dbb12b1111e996975d3ce0b377e44829"
+    "url": "assets/js/app.2a7fd211.js",
+    "revision": "e3d6c272e22a8efebc603b303eee7ca6"
   },
   {
     "url": "assets/js/vendors~docsearch.fe1299d7.js",
@@ -247,79 +247,79 @@ self.__precacheManifest = [
   },
   {
     "url": "categories/docker/index.html",
-    "revision": "e18e8133a69d3652f8150492d7abd03d"
+    "revision": "5c43392596048eee0ffdb0a860179d00"
   },
   {
     "url": "categories/index.html",
-    "revision": "86edfd32f959139280a33eb537891c54"
+    "revision": "4e4ccd14768ec33baa80107152ea51ec"
   },
   {
     "url": "categories/linux/index.html",
-    "revision": "d884a4ca8c1b54e5c70bd6b774a0518b"
+    "revision": "aae22e77fe8355b539e1e7d3a0004f6c"
   },
   {
     "url": "categories/nginx/index.html",
-    "revision": "5d725989d670055da01415bf8c18ecbd"
+    "revision": "0278f78212a9ed62230d7a47ce569d08"
   },
   {
     "url": "categories/Node/index.html",
-    "revision": "f492c483da832ba91485934b24ce2a5c"
+    "revision": "bb54546df3a0b15ee1806a42d834b0d0"
   },
   {
     "url": "categories/Nuxt/index.html",
-    "revision": "af220b2593bd3a00570d7f510e12c015"
+    "revision": "e004543c4a9a644352bace5fc69d44c0"
   },
   {
     "url": "categories/其他/index.html",
-    "revision": "67e0541b3b1a0357f57733bc571995b4"
+    "revision": "679c89837e45d9bd5c695af2f6f8c434"
   },
   {
     "url": "categories/数据库/index.html",
-    "revision": "8d2ac3d5d9273a1d47b426006c476c3e"
+    "revision": "7a61050f7c67cb30874b0bf505264d90"
   },
   {
     "url": "categories/运维/index.html",
-    "revision": "7f0fff303770419ededfec54b71ade61"
+    "revision": "3017ca9e4e30a67cc7fad10e61d34aba"
   },
   {
     "url": "categories/运维/page/2/index.html",
-    "revision": "71ec853a666dca8fe153f9bbab60c05a"
+    "revision": "d33125fcd8715f151d00ebd8fbeae3e1"
   },
   {
     "url": "devops/docker/install.html",
-    "revision": "90ea280c41cf14a397b650c140de379f"
+    "revision": "aa6697d943e8d76a79411a163f5f4a95"
   },
   {
     "url": "devops/gitlab/index.html",
-    "revision": "99fe404b7b35865a209254fbb71986f7"
+    "revision": "afe7c8662f38f1f28ee2dff05aa0c7ee"
   },
   {
     "url": "devops/nginx/cache.html",
-    "revision": "a3ba209ebb3a4476e79d58869295c530"
+    "revision": "36d33976ccf11c501086b0145496c074"
   },
   {
     "url": "devops/nginx/gzip.html",
-    "revision": "2a056660982e9da6457c886d499a2823"
+    "revision": "9be250ad7e0bf3ad4f34881a10757a74"
   },
   {
     "url": "devops/nginx/index.html",
-    "revision": "626a6b95e20e21d0722d57b103da7963"
+    "revision": "2d4eb6d5a1becd9868a42a3b4fc15fc3"
   },
   {
     "url": "devops/nginx/install.html",
-    "revision": "4813f0d817d14165c087776d39d73f09"
+    "revision": "77da380ff6120eb15cb9af60f9ff7318"
   },
   {
     "url": "devops/nginx/location.html",
-    "revision": "6806cf7322f8171bd069bf13eda78bfa"
+    "revision": "d90c0215efc8ff4de2fd8cbf577461ab"
   },
   {
     "url": "devops/nginx/log.html",
-    "revision": "58bca7f2b93e2aa6c9b98a87472afe5a"
+    "revision": "db338711aeecf653376816d623ca1c67"
   },
   {
     "url": "devops/redis/index.html",
-    "revision": "73c01240d0658e0239d73398672ac5c1"
+    "revision": "1583a22660b258faf279724d142b0198"
   },
   {
     "url": "images/184.png",
@@ -403,7 +403,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "deaa36cdb36fc89df620ae67717b31e4"
+    "revision": "1593ef927c3434fc3900e866cf3851de"
   },
   {
     "url": "js/flux.min.js",
@@ -415,11 +415,11 @@ self.__precacheManifest = [
   },
   {
     "url": "linux/command.html",
-    "revision": "e03305f33a5aef818d98dd5d49410077"
+    "revision": "7bbb11fc715fb15eb1ff477d971cd977"
   },
   {
     "url": "linux/nohup.html",
-    "revision": "80ddbe021183202d899b5c66d2878395"
+    "revision": "2f7d51bc2f0809a36016fa29f768eee9"
   },
   {
     "url": "music/canon/canon.jpg",
@@ -435,47 +435,47 @@ self.__precacheManifest = [
   },
   {
     "url": "mysql/install.html",
-    "revision": "758cf45f61bed8b416c27fb1c0f8cac3"
+    "revision": "0310b87d6aaa99a7154a594d4e16b953"
   },
   {
     "url": "node/index.html",
-    "revision": "cd31ad4c58530685f4902d27de7faf19"
+    "revision": "80286b05c423d01088f3dc9e82457436"
   },
   {
     "url": "node/pm2.html",
-    "revision": "e319addc7ccf3bdb821e75092b537740"
+    "revision": "f7a4988bd9b55ca5b51288fac6609a81"
   },
   {
     "url": "node/tools.html",
-    "revision": "b5558754380b972cf2d2bbba155af761"
+    "revision": "099fc5ac547948c29be9e16a5051f570"
   },
   {
     "url": "nuxt/deploy.html",
-    "revision": "2e921cdb4bd3f3d806547c53b17b66a2"
+    "revision": "6ffbabf7c562ca5813f8fe8ecde22efc"
   },
   {
     "url": "nuxt/index.html",
-    "revision": "ad3b080b4016eccd97b12c112b20e76c"
+    "revision": "818ecff44234f7273b919ed53a78376e"
   },
   {
     "url": "others/20220302.html",
-    "revision": "73a96a5beb1f1e8830c0ec9a4dbceb17"
+    "revision": "b055dbfa872f7984cef58013d7878a50"
   },
   {
     "url": "others/20220622.html",
-    "revision": "34b08313bc834b9cbbb3efbdf2a45b59"
+    "revision": "65434cc3c172230de2c0680eeec4f729"
   },
   {
     "url": "others/20220623.html",
-    "revision": "be1e2140e0c91ff0315b6e67b32bdb11"
+    "revision": "37ebd90e151c4f8ed80711849bdf99da"
   },
   {
     "url": "others/blog.html",
-    "revision": "c8e03787f893af45a241f4629d4dfd0b"
+    "revision": "3d6fcc5a2257986ad8d45d311644edec"
   },
   {
     "url": "others/firends.html",
-    "revision": "ce5740c3268919b6a5e5ed1cfae4d943"
+    "revision": "0f7987d71b6774082be735bc32a552c3"
   },
   {
     "url": "setting.png",
@@ -503,55 +503,55 @@ self.__precacheManifest = [
   },
   {
     "url": "tag/docker/index.html",
-    "revision": "8ae2afe95201ae2de4bca9224aa5cfed"
+    "revision": "87889987b291aa9bc0c78fa9b84dc063"
   },
   {
     "url": "tag/Gitlab/index.html",
-    "revision": "50ed28009ecf9e054a571465ffc392e8"
+    "revision": "112a6e00579dd8537f08b905b5159a75"
   },
   {
     "url": "tag/index.html",
-    "revision": "fcb203a4f4aa71abef916b50211f2da5"
+    "revision": "f5e62077e49af29b991610bce5e0c55d"
   },
   {
     "url": "tag/linux/index.html",
-    "revision": "ef8ebd8f940a21dab743263704348f20"
+    "revision": "9c2ccdd22f35504cbbbb71e9e4211a0a"
   },
   {
     "url": "tag/MySql/index.html",
-    "revision": "5b27d28e872bd80ebb88d1bbf9f55395"
+    "revision": "ff3515ba74482d56c9fa4a37eb5ef688"
   },
   {
     "url": "tag/nginx/index.html",
-    "revision": "24b88e48e5f34389f28a5a27c8bb490a"
+    "revision": "6fe7ff653f08018bcfbdd4967a255dc9"
   },
   {
     "url": "tag/Node/index.html",
-    "revision": "b520e93811a35e8246f484a2e8949d9a"
+    "revision": "4febdff36778689943f1925f9cc91e8c"
   },
   {
     "url": "tag/Nuxt/index.html",
-    "revision": "eea6f93eed603ddf9f509b8acd00a598"
+    "revision": "96514a58bc051fd8bec00d78f957d625"
   },
   {
     "url": "tag/pm2/index.html",
-    "revision": "5974fcb9d02d3bba6b636055ebebe3ba"
+    "revision": "d5e4cd1d89e4455f21115ef8b6e38920"
   },
   {
     "url": "tag/Redis/index.html",
-    "revision": "14c952e190401006e3d8dd38234d6142"
+    "revision": "9238d5c78b7a34292d5bd4992d450071"
   },
   {
     "url": "tag/其他/index.html",
-    "revision": "e4b3aefa0b1b8e4fdf6278c1a865994c"
+    "revision": "2994a8031f40657f775b8a49f6e2bb81"
   },
   {
     "url": "tag/博客/index.html",
-    "revision": "ab57fcc70c295561e777e44d2430a8e0"
+    "revision": "280fc36623a6c150e5612881da291f15"
   },
   {
     "url": "timeline/index.html",
-    "revision": "197c0b9d5f5980e3363ed6fa19f9ad24"
+    "revision": "5aefe20cd8eb8fcdeec9ab8dd77752f6"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
