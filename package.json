@@ -8,7 +8,8 @@
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "1.8.2"
+    "vuepress": "1.8.2",
+    "vuepress-plugin-sitemap": "^2.3.1"
   },
   "dependencies": {
     "@anyfork/vuepress-plugin-code-copy": "0.1.0-beta.1",

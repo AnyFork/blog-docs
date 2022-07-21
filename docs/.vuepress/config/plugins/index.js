@@ -194,5 +194,13 @@ module.exports = [
     }
   ],
   //代码展示扩展优化
-  ['@vuepress-reco/extract-code']
+  ['@vuepress-reco/extract-code'],
+  //图片放大插件
+  ['@vuepress/medium-zoom'],
+  [
+    'sitemap',
+    {
+      hostname: 'https://anyfork.gitee.io/blog-docs/'
+    }
+  ]
 ]

@@ -1,5 +1,5 @@
 <template>
-  <main class="page" :style="pageStyle">
+  <main class="page theme-default-content" :style="pageStyle">
     <ModuleTransition delay="0.08">
       <section v-show="recoShowModule">
         <div class="page-title">

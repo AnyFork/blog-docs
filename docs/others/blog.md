@@ -14,11 +14,14 @@ comment: true
 sticky: 1
 ---
 
-&emsp;经过几天的摸索，踩过了无数的坑，终于搭建好了一个属于自己的博客。在此记录一下踩坑历史，让以后的小伙伴们少走弯路，能够轻轻松松搭建自己的博客。文档采用了`vuepress@1.x`进行构建，同时对`vuepress-theme-reco@1.x`主题进行了魔改，整个主题大的布局未改动，只是对首页和展示页面进行了布局调整，最终效果为当前博客显示效果。小伙伴们还等什么，赶快开始吧！👍
+&emsp;经过一段时间的摸索，踩过了无数的坑，终于搭建好了一个属于自己的博客。在此记录一下踩坑历史，让以后的小伙伴们少走弯路，能够轻轻松松搭建自己的博客。博客采用了`vuepress@1.x`进行构建，同时对`vuepress-theme-reco@1.x`主题进行了本地化魔改，整个主题大的布局未改动，只是对首页和展示页面进行了布局调整，最终效果为当前博客显示效果。小伙伴们还等什么，赶快开始吧！👍
 
 <!-- more -->
 
-<Boxx title="温馨提示：" content="vuepress-theme-reco@2.x虽然已经发布Beta版本，目前还不够稳定，官方文档还不够完善。小编尝鲜了一下，首页布局变动较大，相对1.X去掉了好几个模块，配置变化也挺大，整体色调没1.X好看，由于2.X模块化了，学习需要一定成本，感兴趣的小伙伴可以研究一下源码，尝尝鲜。"/>
+:::tip
+1、vuepress-theme-reco@2.x虽然已经发布 Beta 版本，目前还不够稳定，官方文档还不够完善。博主尝鲜了一下，首页布局变动较大，相对 1.X 去掉了好几个模块，配置变化也挺大，整体色调没 1.X 好看，由于 2.X 模块化了，学习需要一定成本，个人感觉主题颜色很丑，css 采用了 tailWindCss 3.x, 不好修改主题色，最终还是放弃了，感兴趣的小伙伴可以研究一下源码，尝尝鲜。  
+2、博客地址：<https://anyfork.github.io/blog-docs/>或<https://anyfork.gitee.io/blog-docs/>
+:::
 
 ## 一、初始化项目
 
@@ -136,7 +139,7 @@ module.exports = {
 注意：上面配置的密码是项目级的，如果需要配置页面密码，需要在`front-matter`中配置`keys: - e10adc3949ba59abbe56e057f20f883e`,此密码同样需要 32 位的 md5 加密密文。
 :::
 
-### 3、<span id="index">自定义首页</span>
+### 3、自定义首页
 
 :::tip
 自定义首页会自动添加`header` 和 `footer`，自定义部分无需考虑添加头部和脚部内容。请查看[官网](https://vuepress-theme-reco.recoluan.com/views/1.x/home.html#自定义首页)
@@ -500,7 +503,7 @@ module.exports = {
 
 <font color="red">注意：</font>如果需要处理 git 提交时间少 8 个小时，请配置上面的时间格式化代码，小编用的`dayjs`
 
-### 12、<span id="gitalk">gitalk 插件</span>
+### 12、gitalk 插件
 
 [vuepress-plugin-comment](https://github.com/dongyuanxin/vuepress-plugin-comment#readme): 集成了 gitalk 无后台的评论的插件
 :::warning
@@ -581,15 +584,15 @@ module.exports = {
 
 **最终效果如下**：
 
-<RecoDemo :collapse="true">
+<RecoDemo :collapse="false">
   <template slot="code-template">
-    <<< @/docs/.vuepress/theme/components/Tags.vue?template
+    <<< @/docs/.vuepress/theme/components/TagList.vue?template
   </template>
   <template slot="code-script">
-    <<< @/docs/.vuepress/theme/components/Tags.vue?script
+    <<< @/docs/.vuepress/theme/components/TagList.vue?script
   </template>
   <template slot="code-style">
-    <<< @/docs/.vuepress/theme/components/Tags.vue?style
+    <<< @/docs/.vuepress/theme/components/TagList.vue?style
   </template>
 </RecoDemo>
 
@@ -629,34 +632,19 @@ module.exports = {
 
   <RecoDemo :collapse="true">
   <template slot="code-自定义背景动画效果">
-  <<< @/docs/.vuepress/components/ImagePage.vue
+  <<< @/docs/.vuepress/theme/components/BannerImage.vue
   </template>
   </RecoDemo>
 
 至此插件使用就整理完了，后续再补充.....
 
-## 五、<span id="主题魔改">主题魔改</span>
+## 五、主题魔改
 
-:::tip
-小伙伴们都清楚，将自定义的`vue`组件放置在`.vuepress`下面的 components 目录下，组件会被全局注册，可以在`markdown`文件中使用。同时`vuepress-theme-reco@1.x`
-允许我们[自定义首页](#index), 按照这个原理我们对主题进行修改。网上大部分人把`node-modules`目录下整个`vuepress-theme-reco@1.x`文件 copy 出来放到当前项目`theme`目录下进行
-修改,小编没有这样做，按照主题模板重新开发了一款名为`IndexPage`的首页(包含博客列表排版，增加了左右布局和原主题自带的上下布局。左右布局中文章封面图可以通过设置`front-matter`来确定在左侧还是右侧显示)，同时对右侧侧边栏进行了部分布局调整。文章单页面(详情页面)新增了返回按钮。请看下面代码文件。
-:::
+- 方式一：自定义首页，覆盖默认组件。刚开始博主也是通过自定义首页来微调首页布局，通过组件名覆盖来自定义布局组件，使用一段时间后，博主发现主题`vuepress-theme-reco@1.x`存在很多 bug,于是就采用了方式二。
+- 方式二：本地主题开发。将`vuepress-theme-reco@1.x`主题包进行本地化修改，不仅方便，而且改起来还很随性，想怎么改就怎么改，一个字爽。至于方式二本地化主题开发，请参考官方文档，或者小伙伴们可以参考我的 Github:<https://github.com/AnyFork/blog-docs>
 
-<RecoDemo :collapse="true">
-  <template slot="code-首页">
-    <<< @/docs/.vuepress/components/IndexPage.vue
-  </template>
-  <template slot="code-博客列表">
-    <<< @/docs/.vuepress/components/NoteAbstractItem.vue
-  </template>
-  <template slot="code-单页面">
-    <<< @/docs/.vuepress/components/Page.vue
-  </template>
-</RecoDemo>
-
-按照官方对应模板组件布局，调整对应的组件，就可以达到小编博客中展示的效果。小编在自定义页面时增加了额外的`front-matter`属性控制页面布局，例如首页多个背景图，博客列表布局风格等。
-
-**此篇入门级别的 vuepress 博客搭建教程就编写完了，文章中有问题欢迎小伙伴们指正**
+此篇入门级别的 vuepress 博客搭建教程就编写完了，文章中有问题欢迎小伙伴们指正,其他进一步配置，可以参考其他几篇文章：  
+[GitHub Actions 自动部署 GitHub Pages 和 Gitee Pages](deploy.md)  
+[VuePress博客优化之开启Algolia 全文搜索](algolia.md)
 
 <Reward/>

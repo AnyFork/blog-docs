@@ -16,7 +16,11 @@ module.exports = {
     ['meta', { name: 'referrer', content: 'never' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/js/jquery.min.js' }],
-    ['script', { language: 'javascript', type: 'text/javascript', src: '/js/flux.min.js' }]
+    ['script', { language: 'javascript', type: 'text/javascript', src: '/js/flux.min.js' }],
+    ['link', { href: "https://cdn.jsdelivr.net/npm/@docsearch/css@3", rel: "stylesheet" }],
+    ['script', { language: 'javascript', type: 'text/javascript', src: "https://cdn.jsdelivr.net/npm/@docsearch/js@3" }],
+    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
+    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
   ],
   //修改默认的语言
   locales: {
@@ -78,7 +82,6 @@ module.exports = {
       },
     ],
     logo: '/images/user.jpg',
-    searchPlaceholder: '点我进行全文检索',
     algolia: {
       apiKey: 'e3224f6a8f05632af9c14c9767650b54',
       indexName: 'anyfork',

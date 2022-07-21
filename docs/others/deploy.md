@@ -102,7 +102,7 @@ jobs:
   - 2、将本地远程仓库设置为 GitHub 仓库 SSH 地址,例如：`git remote set-url origin git@github.com:xxx/blog-docs.git`
 - **推送代码**：每次文档编写完毕，可以通过`vscode，git-bash或者命令行窗口`推送代码，触发 Aciton，实现 GitHub 和 Gitee 自动部署 Pages,
 
-## 相关 Aciton 地址：
+## 相关Aciton地址
 
 **actions/setup-node@v1**：<https://github.com/actions/setup-node/>
 

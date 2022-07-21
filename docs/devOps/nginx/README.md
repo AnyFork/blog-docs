@@ -11,7 +11,7 @@ subSidebar: true
 layout: PageLayOut
 listCell: { mode: left, image: /images/markdown/nginxlogo.png }
 comment: true
-sticky: 2
+sticky: 5
 ---
 
 &emsp;Nginx是一个高性能的 HTTP 和反向代理 web 服务器，同时也提供了IMAP/POP3/SMTP 服务。适合做静态文件处理和反向代理服务器，轻量级,非阻塞，支持高并发，高抗压，耗费内存少。同时支持故障转移，负载均衡等功能。
