@@ -8,7 +8,6 @@ categories:
   - 运维
 omment: true
 subSidebar: true
-sidebar: true
 layout: PageLayOut
 listCell: { mode: left, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202207201025944.jpg }
 ---

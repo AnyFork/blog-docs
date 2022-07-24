@@ -18,9 +18,7 @@ module.exports = {
     ['script', { language: 'javascript', type: 'text/javascript', src: '/js/jquery.min.js' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/js/flux.min.js' }],
     ['link', { href: "https://cdn.jsdelivr.net/npm/@docsearch/css@3", rel: "stylesheet" }],
-    ['script', { language: 'javascript', type: 'text/javascript', src: "https://cdn.jsdelivr.net/npm/@docsearch/js@3" }],
-    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
-    ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
+    ['script', { language: 'javascript', type: 'text/javascript', src: "https://cdn.jsdelivr.net/npm/@docsearch/js@3" }]
   ],
   //修改默认的语言
   locales: {
@@ -80,6 +78,10 @@ module.exports = {
         title: 'vuepress-theme-reco 2.x',
         link: 'http://v2.vuepress-reco.recoluan.com/'
       },
+      {
+        title:'TypeScript中文文档',
+        link:'https://ts.yayujs.com/'
+      }
     ],
     logo: '/images/user.jpg',
     algolia: {

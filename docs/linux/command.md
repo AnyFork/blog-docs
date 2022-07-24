@@ -8,10 +8,10 @@ categories:
 subSidebar: true
 layout: PageLayOut
 comment: true
-listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203101051054.jpg }
+listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202207241420511.jpg }
 ---
 
-&emsp;日常工作总结，常用的 linux 命令使用比较频繁。如果不是专门从事运维工作的小伙伴，偶尔部署一个项目，可能会遗忘一些常用的命令。今天就已 centos7 系统为例，记录一些常用的 linux 命令，以备遗忘查阅和温顾复习。
+&emsp;Linux系统命令比较繁杂，虽然容易上手，但在使用时容易遗忘具体参数的含义，很是让人苦恼，因此本篇文章收集一些常用的Limux命令，以备日后使用过程中进行查阅和复习。
 <!-- more -->
 
 # 一、常用命令
@@ -135,7 +135,7 @@ cd `文件目录`
 sz `filename`
 ```
 
-## 6 centos 端口开通
+## 6 端口命令
 
 **1 开放端口**
 
@@ -176,7 +176,7 @@ netstat -lnpt
 ```
 
 PS:centos7 默认没有 netstat 命令，需要安装 net-tools 工具，yum install -y net-tools
-**6 检查端口被哪个进程占用**
+**6 端口进程占用命令**
 
 ```bash
 netstat -lnpt | grep 5672
@@ -193,7 +193,7 @@ ps 6832
 ```bash
 kill -9 6832
 ```
-## 7 docker 查看容器运行日志
+## 7 Docker容器运行日志命令
 
 通过docker logs命令可以查看容器的日志：`docker logs -f -t --tail 100 datacenter`
 
@@ -219,4 +219,45 @@ docker logs -t --since="2018-02-08T13:23:37" CONTAINER_ID
 #查看某时间段日志：
 docker logs -t --since="2018-02-08T13:23:37" --until "2018-02-09T12:23:37" CONTAINER_ID
 ```
+## 8文件大小查看命令
+
+1、查看当前文件夹及文件夹下大小，h:以K,M,G为单位显示，max-depth标识目录的深度
+```bash
+du -ah --max-depth=1
+```
+2、查看当前文件夹总大小
+```bash
+du -sh
+```
+3、查看指定文件夹总大小
+```bash
+du -sh ./data
+```
+4、显示目录或所有文件所占空间
+```bash
+du 
+```
+5、文件从大到小排序
+```bash
+du -sh  * | sort -rh
+```
+6、参数说明
+
+- -a或-all 显示目录中个别文件的大小。
+- -b或-bytes 显示目录或文件大小时，以byte为单位。
+- -c或--total 除了显示个别目录或文件的大小外，同时也显示所有目录或文件的总和。
+- -D或--dereference-args 显示指定符号连接的源文件大小。
+- -h或--human-readable 以K，M，G为单位，提高信息的可读性。
+- -H或--si 与-h参数相同，但是K，M，G是以1000为换算单位。
+- -k或--kilobytes 以1024 bytes为单位。
+- -l或--count-links 重复计算硬件连接的文件。
+- -L<符号连接>或--dereference<符号连接> 显示选项中所指定符号连接的源文件大小。
+- -m或--megabytes 以1MB为单位。
+- -s或--summarize 仅显示总计。
+- -S或--separate-dirs 显示个别目录的大小时，并不含其子目录的大小。
+- -x或--one-file-xystem 以一开始处理时的文件系统为准，若遇上其它不同的文件系统目录则略过。
+- -X<文件>或--exclude-from=<文件> 在<文件>指定目录或文件。
+- --exclude=<目录或文件> 略过指定的目录或文件。
+- --max-depth=<目录层数> 超过指定层数的目录后，予以忽略。
+
 <Reward/>

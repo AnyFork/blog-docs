@@ -11,7 +11,7 @@ comment: true
 listCell: { mode: right, image: https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202207201006898.jpg }
 ---
 
-&emsp;nohup 是不挂断的意思( no hang up)。如果你正在运行一个进程，而且你觉得在退出帐户时该进程还不会结束，那么可以使用 nohup 命令。该命令忽略所有挂（SIGHUP）信号，可以在你退出帐户/关闭终端之后继续运行相应的进程。&是指在后台运行，但当用户推出(挂起)的时候，命令自动也跟着退出. nohup 与&结合起来，可以实现不挂断的后台运行。
+&emsp;nohup 是不挂断的意思( no hang up)。如果你正在运行一个进程，而且你觉得在退出帐户时该进程还不会结束，那么可以使用 nohup 命令。该命令忽略所有挂（SIGHUP）信号，可以在你退出帐户/关闭终端之后继续运行相应的进程。  是指在后台运行，但当用户推出(挂起)的时候，命令自动也跟着退出. nohup 与   结合起来，可以实现不挂断的后台运行。
 
 <!-- more -->
 <Boxx/>
@@ -120,5 +120,62 @@ nohup sh test.sh 2> /home/dir1/dir2/my1.log &
 nohup sh test.sh > /home/dir1/dir2/my1.log 2>&1 &
 nohup sh test.sh &> /home/dir1/dir2/my1.log &
 ```
+
+## 三、Tomcat 清除 catalina.out 日志
+
+**一、重定向方法清空文件：**
+
+- 进入 tomcat 的 logs 文件夹下:
+- 查看日志文件大小：du -h catalina.out
+- 重定向清空文件：catalina.out
+- 再次查看日志文件大小：du -h catalina.out
+
+**二、使用 true 命令重定向清空文件：**
+
+- 进入 tomcat 的 logs 文件夹下:
+- 查看日志文件大小：du -h catalina.out
+- 重定向清空文件：true>catalina.out
+- 再次查看日志文件大小：du -h catalina.out
+
+**三、使用 cat/cp/dd 命令及/dev/null 设备来清空文件**
+
+进入 tomcat 的 logs 文件夹下: 1.使用 cat /dev/null 命令清空文件：
+
+- 查看日志文件大小：du -h catalina.out
+- 重定向清空文件：cat /dev/null>catalina.out
+- 再次查看日志文件大小：du -h catalina.out
+
+  2.使用 cp /dev/null 命令清空文件：
+
+- 查看日志文件大小：du -h catalina.out
+- 重定向清空文件：cp /dev/null catalina.out
+- 再次查看日志文件大小：du -h catalina.out
+
+  3.使用 dd if=/dev/null of=catalina.out 命令清空文件：
+
+- 查看日志文件大小：du -h catalina.out
+- 重定向清空文件：dd if=/dev/null of=catalina.out
+- 再次查看日志文件大小：du -h catalina.out
+
+**四、使用 echo 命令清空文件：**
+
+进入 tomcat 的 logs 文件夹下:
+
+- echo -n "">catalina.out ——>加上“-n”参数，默认情况下会“\n",
+- 查看日志文件大小：du -h catalina.out
+- 重定向清空文件：echo -n "参数">catalina.out
+- 再次查看日志文件大小：du -h catalina.out
+
+**五、使用 truecate 命令清空文件：**
+
+```bash
+# -s参数是设置文件的大小，清空文件的话，就设定为0
+truncate -s 0 catalina.out
+```
+
+进入 tomcat 的 logs 文件夹下:
+- 查看日志文件大小：du -h catalina.out
+- 重定向清空文件：truncate -s 0 catalina.out
+- 再次查看日志文件大小：du -h catalina.out
 
 <Reward/>

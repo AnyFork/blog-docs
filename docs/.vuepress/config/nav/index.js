@@ -10,11 +10,11 @@ module.exports = [
     icon: 'reco-suggestion',
     items: [
       {
-        text: '朋友圈',
+        text: '朋友圈子',
         link: '/others/firends'
       },
       {
-        text: '网络资源',
+        text: '工具资源网',
         link: '/others/20220623'
       },
       {
