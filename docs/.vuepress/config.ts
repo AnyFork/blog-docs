@@ -26,7 +26,7 @@ export default defineUserConfig({
     ],
     //关闭referrer,防止第三方图片因防盗链无法显示问题。
     ["meta", { name: "referrer", content: "never" }],
-    ["link", { rel: "manifest", href: "/manifest.json" }],
+    ["link", { rel: "manifest", href: "/blog-docs/manifest.json" }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/blog-docs/js/jquery.min.js' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/blog-docs/js/flux.min.js' }],
   ],
