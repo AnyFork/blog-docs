@@ -1870,11 +1870,6 @@ body {
   margin: 0px auto;
 }
 
-.sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
-  border-color: none;
-  color: var(--c-brand);
-}
-
 .home .hero img {
   width: 100px;
   border-radius: 50%;
@@ -2490,9 +2485,9 @@ h1:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-\[\#eee\] {
+.bg-\[\#ebe9e9\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+  background-color: rgb(235 233 233 / var(--tw-bg-opacity));
 }
 .p-\[15px\] {
   padding: 15px;
@@ -2669,10 +2664,10 @@ h1:focus {
 .dark .dark\:hover\:text-\[\#fff\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}.blog-item:hover img[data-v-4f9ec3ef] {
+}.blog-item:hover img[data-v-804de990] {
   transform: scale(1.5);
 }
-.blog-item .abstract[data-v-4f9ec3ef] {
+.blog-item .abstract[data-v-804de990] {
   /**对象作为伸缩盒子模型展示**/
   display: -webkit-box;
   /**设置或检索伸缩盒子对象的子元素的排列方式**/
@@ -2680,13 +2675,13 @@ h1:focus {
   /**显示的行数**/
   -webkit-line-clamp: 6;
 }
-.blog-item .title[data-v-4f9ec3ef] {
+.blog-item .title[data-v-804de990] {
   position: relative;
   font-size: 1.28rem;
   display: inline-block;
   z-index: 1000;
 }
-.blog-item .title[data-v-4f9ec3ef]:after {
+.blog-item .title[data-v-804de990]:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -2698,14 +2693,14 @@ h1:focus {
   transform: scaleX(0);
   transition: transform 0.7s ease-in-out;
 }
-.blog-item .title:hover a[data-v-4f9ec3ef] {
+.blog-item .title:hover a[data-v-804de990] {
   color: var(--c-text-accent);
 }
-.blog-item .title[data-v-4f9ec3ef]:hover:after {
+.blog-item .title[data-v-804de990]:hover:after {
   visibility: visible;
   transform: scaleX(1);
 }
-.blog-item .toTop[data-v-4f9ec3ef]::before {
+.blog-item .toTop[data-v-804de990]::before {
   content: "";
   width: 0px;
   height: 0px;
@@ -2714,6 +2709,12 @@ h1:focus {
   position: absolute;
   left: -20px;
   z-index: -10;
+}span[data-v-0c104478] {
+  margin: 4px 8px 10px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 13px;
+  transition: all 0.5s;
 }
 .pagination {
     display: inline-flex;
@@ -2743,11 +2744,4 @@ h1:focus {
 .disabled {
     background-color: #efefef;
     cursor: not-allowed;
-}
-span[data-v-0def500c] {
-  margin: 4px 8px 10px;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  font-size: 13px;
-  transition: all 0.5s;
 }

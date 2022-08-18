@@ -1,5 +1,4 @@
-import { onMounted, onUnmounted, nextTick, defineComponent, resolveComponent, openBlock, createElementBlock, createElementVNode, unref, createCommentVNode, toDisplayString, createVNode, Fragment, renderList, normalizeStyle, createBlock, reactive, computed, normalizeClass, withCtx, createTextVNode, renderSlot, toRefs, onBeforeUnmount, withKeys, withDirectives, vShow, watch, ref, Transition } from "vue";
-import { i as isLinkHttp, r as removeLeadingSlash, b as removeEndingSlash, c as resolveRepoType, d as usePageFrontmatter, w as withBase, e as __vitePreload, T as Typed, _ as _export_sfc, f as usePostData, g as useCategory, h as useTags, j as useRandomColor, k as useThemeData, B as BlogItem, p as pagination, a as useThemeLocaleData, A as AutoLink, l as usePageData, m as useSidebarItems, n as useRoute, o as isString, q as useNavLink, s as isPlainObject, t as useRouter, v as useToggle, D as DropdownTransition, N as NavbarItems, x as Navbar, y as useScrollPromise, I as Icon, z as BlogItemInfo } from "./app.0e46cff3.js";
+import { i as isLinkHttp, j as removeLeadingSlash, k as removeEndingSlash, l as resolveRepoType, m as usePageFrontmatter, n as onMounted, p as onUnmounted, q as withBase, s as __vitePreload, v as nextTick, T as Typed, _ as _export_sfc, d as defineComponent, x as usePostData, y as useCategory, z as useTags, r as resolveComponent, o as openBlock, c as createElementBlock, e as createBaseVNode, h as unref, A as createCommentVNode, t as toDisplayString, f as createVNode, F as Fragment, B as renderList, C as normalizeStyle, D as useRandomColor, E as createBlock, G as useThemeData, H as reactive, I as computed, J as normalizeClass, K as BlogItem, b as useThemeLocaleData, L as AutoLink, w as withCtx, g as createTextVNode, M as usePageData, N as useSidebarItems, O as useRoute, P as isString, Q as useNavLink, R as isPlainObject, S as renderSlot, U as toRefs, V as useRouter, W as useToggle, X as onBeforeUnmount, Y as withKeys, Z as withDirectives, $ as vShow, a0 as DropdownTransition, a1 as watch, a2 as NavbarItems, a3 as ref, a4 as Navbar, a5 as Transition, a6 as useScrollPromise, a7 as BlogItemInfo } from "./app.34aef14f.js";
 const normalizePath = (path) => decodeURI(path).replace(/#.*$/, "").replace(/(index)?\.(md|html)$/, "");
 const isActiveLink = (link, route) => {
   if (route.hash === link) {
@@ -69,7 +68,7 @@ const useBanner = () => {
     const imageArray = [];
     Object.keys(modules).forEach((path) => {
       const fileName = path.replace(/(.*\/)*([\s\S]*?)/gi, "$2");
-      const filePath = withBase("images/index/" + fileName);
+      const filePath = withBase("/images/index/" + fileName);
       imageArray.push(filePath);
     });
     return imageArray;
@@ -259,16 +258,16 @@ const _hoisted_4$3 = {
 const _hoisted_5$2 = { class: "w-[80%] flex flex-wrap items-center justify-center my-[20px] mx-auto" };
 const _hoisted_6$2 = { class: "text-center flex-[0_0_33%] border-r-[#333] border-r border-solid border-y-0 border-l-0" };
 const _hoisted_7$2 = { class: "m-0" };
-const _hoisted_8$1 = /* @__PURE__ */ createElementVNode("h6", { class: "m-0 font-normal mt-[10px]" }, "\u6587\u7AE0", -1);
+const _hoisted_8$1 = /* @__PURE__ */ createBaseVNode("h6", { class: "m-0 font-normal mt-[10px]" }, "\u6587\u7AE0", -1);
 const _hoisted_9$1 = { class: "text-center flex-[0_0_33%] border-r-[#333] border-r border-solid border-y-0 border-l-0" };
 const _hoisted_10$1 = { class: "m-0" };
-const _hoisted_11 = /* @__PURE__ */ createElementVNode("h6", { class: "m-0 font-normal mt-[10px]" }, "\u5206\u7C7B", -1);
+const _hoisted_11 = /* @__PURE__ */ createBaseVNode("h6", { class: "m-0 font-normal mt-[10px]" }, "\u5206\u7C7B", -1);
 const _hoisted_12 = { class: "text-center flex-[0_0_33%]" };
 const _hoisted_13 = { class: "m-0" };
-const _hoisted_14 = /* @__PURE__ */ createElementVNode("h6", { class: "m-0 font-normal mt-[10px]" }, "\u6807\u7B7E", -1);
+const _hoisted_14 = /* @__PURE__ */ createBaseVNode("h6", { class: "m-0 font-normal mt-[10px]" }, "\u6807\u7B7E", -1);
 const _hoisted_15 = {
   key: 0,
-  class: "leading-[30px] border-solid border-l-[10px] border-l-[#67cc86] border-y-0 border-r-0 bg-[#eee] pl-[10px] my-[10px] dark:text-[#000]"
+  class: "leading-[30px] border-solid border-l-[10px] border-l-[#67cc86] border-y-0 border-r-0 bg-[#ebe9e9] pl-[10px] my-[10px] dark:text-[#000]"
 };
 const _hoisted_16 = { key: 1 };
 const _hoisted_17 = { style: { "margin-top": "5px" } };
@@ -277,7 +276,7 @@ const _hoisted_18 = {
   style: { "margin-top": "5px" }
 };
 const _hoisted_19 = { class: "pt-2" };
-const _hoisted_20 = /* @__PURE__ */ createElementVNode("hr", null, null, -1);
+const _hoisted_20 = /* @__PURE__ */ createBaseVNode("hr", null, null, -1);
 const _hoisted_21 = { class: "w-full flex my-[10px] flex-wrap" };
 const _hoisted_22 = { class: "w-full" };
 const _hoisted_23 = { class: "flex items-center justify-between text-[#666] py-[8px] px-[14px] dark:hover:text-[#fff] text-[13px]" };
@@ -298,7 +297,7 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
     return (_ctx, _cache) => {
       const _component_Icon = resolveComponent("Icon");
       return openBlock(), createElementBlock("div", _hoisted_1$a, [
-        createElementVNode("div", _hoisted_2$7, [
+        createBaseVNode("div", _hoisted_2$7, [
           unref(themeData).authorAvatar ? (openBlock(), createElementBlock("img", {
             key: 0,
             class: "rounded-[50%] h-[6rem] w-[6rem] mt-[2rem] mb-[1rem] inline-block",
@@ -307,17 +306,17 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
           }, null, 8, _hoisted_3$4)) : createCommentVNode("", true),
           unref(themeData).author ? (openBlock(), createElementBlock("h3", _hoisted_4$3, toDisplayString(unref(themeData).author), 1)) : createCommentVNode("", true)
         ]),
-        createElementVNode("div", _hoisted_5$2, [
-          createElementVNode("div", _hoisted_6$2, [
-            createElementVNode("h3", _hoisted_7$2, toDisplayString(unref(posts).length), 1),
+        createBaseVNode("div", _hoisted_5$2, [
+          createBaseVNode("div", _hoisted_6$2, [
+            createBaseVNode("h3", _hoisted_7$2, toDisplayString(unref(posts).length), 1),
             _hoisted_8$1
           ]),
-          createElementVNode("div", _hoisted_9$1, [
-            createElementVNode("h3", _hoisted_10$1, toDisplayString(unref(category).length), 1),
+          createBaseVNode("div", _hoisted_9$1, [
+            createBaseVNode("h3", _hoisted_10$1, toDisplayString(unref(category).length), 1),
             _hoisted_11
           ]),
-          createElementVNode("div", _hoisted_12, [
-            createElementVNode("h3", _hoisted_13, toDisplayString(unref(tags).length), 1),
+          createBaseVNode("div", _hoisted_12, [
+            createBaseVNode("h3", _hoisted_13, toDisplayString(unref(tags).length), 1),
             _hoisted_14
           ])
         ]),
@@ -328,7 +327,7 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
             text: "\u5174\u8DA3\u7231\u597D",
             textSize: 15
           }),
-          createElementVNode("div", _hoisted_17, [
+          createBaseVNode("div", _hoisted_17, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(frontmatter).hobby, (item, index) => {
               return openBlock(), createElementBlock("span", {
                 key: index,
@@ -344,7 +343,7 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
             text: "\u535A\u5BA2\u5730\u5740",
             textSize: 15
           }),
-          createElementVNode("div", _hoisted_19, [
+          createBaseVNode("div", _hoisted_19, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(themeData).socialLinks, (item, index) => {
               return openBlock(), createBlock(_component_Icon, {
                 key: index,
@@ -359,8 +358,8 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
           ])
         ])) : createCommentVNode("", true),
         _hoisted_20,
-        createElementVNode("div", _hoisted_21, [
-          createElementVNode("div", _hoisted_22, [
+        createBaseVNode("div", _hoisted_21, [
+          createBaseVNode("div", _hoisted_22, [
             createVNode(_component_Icon, {
               icon: "AppstoreTwotone",
               text: "\u5206\u7C7B\u5217\u8868",
@@ -373,9 +372,9 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
               class: "shadow-item w-full mt-[10px] bg-[#fff] hover:bg-[#3eaf7c] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] hover:scale-110",
               key: index
             }, [
-              createElementVNode("a", _hoisted_23, [
-                createElementVNode("span", null, toDisplayString(item.name), 1),
-                createElementVNode("span", {
+              createBaseVNode("a", _hoisted_23, [
+                createBaseVNode("span", null, toDisplayString(item.name), 1),
+                createBaseVNode("span", {
                   class: "ml-[4px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]",
                   style: normalizeStyle({ "background-color": unref(useRandomColor)() })
                 }, toDisplayString(item.path.length), 5)
@@ -383,8 +382,8 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
             ]);
           }), 128))
         ]),
-        createElementVNode("div", _hoisted_24, [
-          createElementVNode("div", _hoisted_25, [
+        createBaseVNode("div", _hoisted_24, [
+          createBaseVNode("div", _hoisted_25, [
             createVNode(_component_Icon, {
               icon: "TagsOutlined",
               text: "\u6807\u7B7E\u5217\u8868",
@@ -397,9 +396,9 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
               class: "shadow-item mt-[10px] bg-[#fff] hover:bg-[#3eaf7c] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] hover:scale-110",
               key: index
             }, [
-              createElementVNode("a", _hoisted_26, [
-                createElementVNode("span", null, toDisplayString(item.name), 1),
-                createElementVNode("span", {
+              createBaseVNode("a", _hoisted_26, [
+                createBaseVNode("span", null, toDisplayString(item.name), 1),
+                createBaseVNode("span", {
                   class: "ml-[4px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]",
                   style: normalizeStyle({ "background-color": unref(useRandomColor)() })
                 }, toDisplayString(item.path.length), 5)
@@ -407,8 +406,8 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
             ]);
           }), 128))
         ]),
-        createElementVNode("div", _hoisted_27, [
-          createElementVNode("div", _hoisted_28, [
+        createBaseVNode("div", _hoisted_27, [
+          createBaseVNode("div", _hoisted_28, [
             createVNode(_component_Icon, {
               icon: "LinkOutlined",
               text: "\u53CB\u60C5\u94FE\u63A5",
@@ -421,12 +420,12 @@ const _sfc_main$c = /* @__PURE__ */ defineComponent({
               class: "shadow-item mt-[10px] bg-[#fff] dark:bg-[#181818] hover:scale-110",
               key: index
             }, [
-              createElementVNode("a", {
+              createBaseVNode("a", {
                 href: item.link,
                 target: "_blank",
                 class: "flex items-center justify-between text-[#3eaf7c] py-[8px] px-[14px] text-[13px]"
               }, [
-                createElementVNode("span", null, toDisplayString(item.title), 1)
+                createBaseVNode("span", null, toDisplayString(item.title), 1)
               ], 8, _hoisted_29)
             ]);
           }), 128))
@@ -455,8 +454,9 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
       pages.pageSize = pageSize;
     };
     return (_ctx, _cache) => {
+      const _component_Pagination = resolveComponent("Pagination");
       return openBlock(), createElementBlock("div", _hoisted_1$9, [
-        createElementVNode("div", _hoisted_2$6, [
+        createBaseVNode("div", _hoisted_2$6, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(blogData), (item, index) => {
             return openBlock(), createBlock(BlogItem, {
               class: normalizeClass(["border", index % 3 == 0 ? "draw" : index % 3 == 1 ? "draw meet" : "center"]),
@@ -465,14 +465,14 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
               position: index % 2 == 0 ? "left" : "right"
             }, null, 8, ["page", "position", "class"]);
           }), 128)),
-          createVNode(pagination, {
+          createVNode(_component_Pagination, {
             pageTotal: pages.pageTotal,
             pageNumber: pages.pageNumber,
             pageSize: pages.pageSize,
             onClick: getBack
           }, null, 8, ["pageTotal", "pageNumber", "pageSize"])
         ]),
-        createElementVNode("div", _hoisted_3$3, [
+        createBaseVNode("div", _hoisted_3$3, [
           createVNode(BlogSider)
         ])
       ]);
@@ -539,7 +539,7 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
         class: "hero w-full relative h-[500px] flex justify-center items-center",
         style: normalizeStyle(unref(homeBanner).bannerOptions.bgImageStyle)
       }, [
-        createElementVNode("div", _hoisted_1$7, [
+        createBaseVNode("div", _hoisted_1$7, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(unref(mixImage), (item) => {
             return openBlock(), createElementBlock("img", {
               src: item,
@@ -547,8 +547,8 @@ const _sfc_main$9 = /* @__PURE__ */ defineComponent({
             }, null, 8, _hoisted_2$5);
           }), 128))
         ]),
-        createElementVNode("div", _hoisted_3$2, [
-          createElementVNode("div", null, [
+        createBaseVNode("div", _hoisted_3$2, [
+          createBaseVNode("div", null, [
             `${unref(homeBanner).bannerOptions.heroText instanceof Array}` ? (openBlock(), createElementBlock("h1", _hoisted_4$2)) : (openBlock(), createElementBlock("h1", _hoisted_5$1, " vuePress-theme-Anyfork "))
           ]),
           unref(homeBanner).bannerOptions.tagline ? (openBlock(), createElementBlock("p", _hoisted_6$1, toDisplayString(unref(homeBanner).bannerOptions.tagline || "Welcome to your vuePress-theme-AnyFork site"), 1)) : createCommentVNode("", true),
@@ -675,20 +675,20 @@ const _sfc_main$7 = /* @__PURE__ */ defineComponent({
           }, null, 8, ["item"])
         ])) : createCommentVNode("", true),
         unref(lastUpdated) ? (openBlock(), createElementBlock("div", _hoisted_3$1, [
-          createElementVNode("span", _hoisted_4$1, toDisplayString(unref(themeLocale).lastUpdatedText) + ": ", 1),
+          createBaseVNode("span", _hoisted_4$1, toDisplayString(unref(themeLocale).lastUpdatedText) + ": ", 1),
           createVNode(_component_ClientOnly, null, {
             default: withCtx(() => [
-              createElementVNode("span", _hoisted_5, toDisplayString(unref(lastUpdated)), 1)
+              createBaseVNode("span", _hoisted_5, toDisplayString(unref(lastUpdated)), 1)
             ]),
             _: 1
           })
         ])) : createCommentVNode("", true),
         unref(contributors) && unref(contributors).length ? (openBlock(), createElementBlock("div", _hoisted_6, [
-          createElementVNode("span", _hoisted_7, toDisplayString(unref(themeLocale).contributorsText) + ": ", 1),
-          createElementVNode("span", _hoisted_8, [
+          createBaseVNode("span", _hoisted_7, toDisplayString(unref(themeLocale).contributorsText) + ": ", 1),
+          createBaseVNode("span", _hoisted_8, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(contributors), (contributor, index) => {
               return openBlock(), createElementBlock(Fragment, { key: index }, [
-                createElementVNode("span", {
+                createBaseVNode("span", {
                   class: "contributor",
                   title: `email: ${contributor.email}`
                 }, toDisplayString(contributor.name), 9, _hoisted_9),
@@ -774,7 +774,7 @@ const _sfc_main$6 = /* @__PURE__ */ defineComponent({
     });
     return (_ctx, _cache) => {
       return unref(prevNavLink) || unref(nextNavLink) ? (openBlock(), createElementBlock("nav", _hoisted_1$5, [
-        createElementVNode("p", _hoisted_2$3, [
+        createBaseVNode("p", _hoisted_2$3, [
           unref(prevNavLink) ? (openBlock(), createElementBlock("span", _hoisted_3, [
             createVNode(AutoLink, { item: unref(prevNavLink) }, null, 8, ["item"])
           ])) : createCommentVNode("", true),
@@ -796,7 +796,7 @@ const _sfc_main$5 = /* @__PURE__ */ defineComponent({
       const _component_Content = resolveComponent("Content");
       return openBlock(), createElementBlock("main", _hoisted_1$4, [
         renderSlot(_ctx.$slots, "top"),
-        createElementVNode("div", _hoisted_2$2, [
+        createBaseVNode("div", _hoisted_2$2, [
           renderSlot(_ctx.$slots, "content-top"),
           createVNode(_component_Content),
           renderSlot(_ctx.$slots, "content-bottom")
@@ -874,7 +874,7 @@ const _sfc_main$4 = /* @__PURE__ */ defineComponent({
         ], 42, _hoisted_1$3)),
         ((_a = unref(item).children) == null ? void 0 : _a.length) ? (openBlock(), createBlock(DropdownTransition, { key: 2 }, {
           default: withCtx(() => [
-            withDirectives(createElementVNode("ul", _hoisted_2$1, [
+            withDirectives(createBaseVNode("ul", _hoisted_2$1, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(unref(item).children, (child) => {
                 return openBlock(), createBlock(_component_SidebarItem, {
                   key: `${unref(depth)}${child.text}${child.link}`,
@@ -1023,7 +1023,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
             _: 3
           })) : createCommentVNode("", true)
         ]),
-        createElementVNode("div", {
+        createBaseVNode("div", {
           class: "sidebar-mask",
           onClick: _cache[0] || (_cache[0] = ($event) => toggleSidebar(false))
         }),
@@ -1080,12 +1080,13 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   setup(__props) {
     const page = usePageData();
     return (_ctx, _cache) => {
+      const _component_Icon = resolveComponent("Icon");
       return openBlock(), createBlock(ParentLayout, null, {
         "page-top": withCtx(() => [
-          createElementVNode("div", _hoisted_1, [
-            createElementVNode("div", _hoisted_2, [
-              createElementVNode("h1", null, toDisplayString(unref(page).title), 1),
-              createVNode(Icon, {
+          createBaseVNode("div", _hoisted_1, [
+            createBaseVNode("div", _hoisted_2, [
+              createBaseVNode("h1", null, toDisplayString(unref(page).title), 1),
+              createVNode(_component_Icon, {
                 icon: "RollbackOutlined",
                 text: "\u8FD4\u56DE",
                 onClick: _cache[0] || (_cache[0] = ($event) => _ctx.$router.go(-1)),

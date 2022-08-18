@@ -1,5 +1,4 @@
-import { openBlock, createElementBlock } from "vue";
-import { _ as _export_sfc } from "./app.0e46cff3.js";
+import { _ as _export_sfc, o as openBlock, c as createElementBlock } from "./app.34aef14f.js";
 const _sfc_main = {};
 function _sfc_render(_ctx, _cache) {
   return openBlock(), createElementBlock("div");
