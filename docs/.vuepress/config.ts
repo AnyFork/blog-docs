@@ -96,7 +96,10 @@ export default defineUserConfig({
           plugins: [require("tailwindcss")({}), require("autoprefixer")({})],
         },
       },
-    },
+      optimizeDeps: {
+        exclude: ['vue']
+      }
+    }
   }),
   // plugins: plugins,
   //定义全局常量
