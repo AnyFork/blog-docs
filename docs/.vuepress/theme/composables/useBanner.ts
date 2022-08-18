@@ -32,7 +32,7 @@ export const useBanner = () => {
             //匹配path为./xx的格式，匹配./的后面的部分名称
             const fileName = path.replace(/(.*\/)*([\s\S]*?)/gi, "$2");
             //拼接图片路径
-            const filePath = withBase("images/index/" + fileName);
+            const filePath = withBase("/images/index/" + fileName);
             imageArray.push(filePath);
         });
         return imageArray;

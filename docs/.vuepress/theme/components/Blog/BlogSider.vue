@@ -19,7 +19,7 @@
       </div>
     </div>
     <!--个人摘要 -->
-    <div v-if="frontmatter.summary" class="leading-[30px] border-solid border-l-[10px] border-l-[#67cc86] border-y-0 border-r-0 bg-[#eee] pl-[10px] my-[10px] dark:text-[#000]">{{ frontmatter.summary }}</div>
+    <div v-if="frontmatter.summary" class="leading-[30px] border-solid border-l-[10px] border-l-[#67cc86] border-y-0 border-r-0 bg-[#ebe9e9] pl-[10px] my-[10px] dark:text-[#000]">{{ frontmatter.summary }}</div>
     <!--个人兴趣爱好 -->
     <div v-if="frontmatter.hobby">
       <Icon icon="DribbbleOutlined" text="兴趣爱好" :textSize="15"></Icon>

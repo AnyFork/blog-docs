@@ -6,7 +6,7 @@
       <Item v-for="(item, index) in tags" :key="index" :categoryItem="item" :color="useRandomColor()" :style="styleBg(item)" @click="changeTag(item)"></Item>
     </div>
     <BlogItem v-for="(obj, index) in blogData" :page="obj" :position="index % 2 == 0 ? 'left' : 'right'" :key="obj" />
-    <pagination :pageTotal="pages.pageTotal" :pageNumber="pages.pageNumber" :pageSize="pages.pageSize" @click="getBack"> </pagination>
+    <Pagination :pageTotal="pages.pageTotal" :pageNumber="pages.pageNumber" :pageSize="pages.pageSize" @click="getBack"> </Pagination>
   </div>
 </template>
 
@@ -15,7 +15,6 @@ import Navbar from '@theme/Navbar.vue'
 import BlogItem from '../Blog/BlogItem.vue'
 import { useTags } from '../../composables'
 import { useRandomColor } from '../../utils/useColor'
-import pagination from '../common/pagination.vue'
 import { ref, reactive, computed } from 'vue'
 const { tags } = useTags()
 const active = ref(tags[0])

@@ -29,7 +29,6 @@
       </div>
     </div>
     <!-- <Icon :size="25" color="#fff" class="toTop absolute top-[10px] right-[10px] z-0">
-      <VerticalAlignTopOutlined />
     </Icon> -->
     <BlogItemInfo :page="page"></BlogItemInfo>
   </div>

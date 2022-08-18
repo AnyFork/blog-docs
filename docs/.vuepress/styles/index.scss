@@ -76,10 +76,11 @@ body {
 }
 
 //左侧sider激活样式
-.sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
-  border-color: none;
-  color: var(--c-brand);
-}
+// .sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
+//   border-color: none;
+//   color: var(--c-brand);
+//   background-color: none;
+// }
 
 .home .hero img {
   width: 100px;

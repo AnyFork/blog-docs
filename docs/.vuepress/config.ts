@@ -95,15 +95,11 @@ export default defineUserConfig({
         postcss: {
           plugins: [require("tailwindcss")({}), require("autoprefixer")({})],
         },
-      },
-      build: {
-        rollupOptions: {
-          external: ['vue']
-        }
       }
     }
   }),
-  // plugins: plugins,
+  //注册插件
+  plugins: plugins,
   //定义全局常量
   define: (app) => {
     return {

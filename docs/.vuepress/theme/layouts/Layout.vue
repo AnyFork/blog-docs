@@ -16,6 +16,5 @@
 import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
 import BlogItemInfo from '../components/Blog/BlogItemInfo.vue'
 import { usePageData } from '@vuepress/client'
-import Icon from '../components/common/Icon.vue'
 const page = usePageData()
 </script>
