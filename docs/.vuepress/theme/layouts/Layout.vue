@@ -1,54 +1,21 @@
 <template>
-  <Common :sidebarItems="sidebarItems" :showModule="recoShowModule">
-    <component v-if="$frontmatter.home" :is="homeCom"/>
-    <Page v-else :sidebar-items="sidebarItems"/>
-    <Footer v-if="$frontmatter.home" class="footer" />
-  </Common>
+  <ParentLayout>
+    <template #page-top>
+      <div class="title w-[var(--content-width)] my-0 mx-auto">
+        <div class="flex items-center justify-between">
+          <h1>{{ page.title }}</h1>
+          <Icon icon="RollbackOutlined" text="返回" @click="$router.go(-1)" class="cursor-pointer"></Icon>
+        </div>
+        <BlogItemInfo :page="page"></BlogItemInfo>
+      </div>
+    </template>
+  </ParentLayout>
 </template>
 
-<script>
-import { defineComponent, computed } from 'vue'
-import Home from '@theme/components/Home'
-import HomeBlog from '@theme/components/HomeBlog'
-import Page from '@theme/components/Page'
-import Footer from '@theme/components/Footer'
-import Common from '@theme/components/Common'
-import { resolveSidebarItems } from '@theme/helpers/utils'
-import moduleTransitonMixin from '@theme/mixins/moduleTransiton'
-import { useInstance } from '@theme/helpers/composable'
-
-export default defineComponent({
-  mixins: [moduleTransitonMixin],
-  components: { HomeBlog, Home, Page, Common, Footer },
-  setup (props, ctx) {
-    const instance = useInstance()
-
-    const sidebarItems = computed(() => {
-      const { $page, $site, $localePath } = instance
-      if ($page) {
-        return resolveSidebarItems(
-          $page,
-          $page.regularPath,
-          $site,
-          $localePath
-        )
-      } else {
-        return []
-      }
-    })
-
-    const homeCom = computed(() => {
-      const { type } = instance.$themeConfig || {}
-      if (type) {
-        return type == 'blog' ? 'HomeBlog' : type
-      }
-      return 'Home'
-    })
-
-    return { sidebarItems, homeCom }
-  }
-})
+<script setup lang="ts">
+import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
+import BlogItemInfo from '../components/Blog/BlogItemInfo.vue'
+import { usePageData } from '@vuepress/client'
+import Icon from '../components/common/Icon.vue'
+const page = usePageData()
 </script>
-
-<style src="prismjs/themes/prism-tomorrow.css"></style>
-<style src="../styles/theme.styl" lang="stylus"></style>

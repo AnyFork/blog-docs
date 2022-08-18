@@ -1,0 +1,86 @@
+{
+  "hash": "7ed305a8",
+  "browserHash": "4a7a4b1a",
+  "optimized": {
+    "@vicons/antd": {
+      "src": "../../../../node_modules/@vicons/antd/es/index.js",
+      "file": "@vicons_antd.js",
+      "fileHash": "5920bc51",
+      "needsInterop": false
+    },
+    "@vue/devtools-api": {
+      "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "@vue_devtools-api.js",
+      "fileHash": "a4862f17",
+      "needsInterop": false
+    },
+    "@vuepress/shared": {
+      "src": "../../../../node_modules/@vuepress/shared/dist/index.js",
+      "file": "@vuepress_shared.js",
+      "fileHash": "2ac907e9",
+      "needsInterop": false
+    },
+    "@vueuse/core": {
+      "src": "../../../../node_modules/@vueuse/core/index.mjs",
+      "file": "@vueuse_core.js",
+      "fileHash": "308598da",
+      "needsInterop": false
+    },
+    "dayjs": {
+      "src": "../../../../node_modules/dayjs/dayjs.min.js",
+      "file": "dayjs.js",
+      "fileHash": "1811a371",
+      "needsInterop": true
+    },
+    "dayjs/plugin/timezone": {
+      "src": "../../../../node_modules/dayjs/plugin/timezone.js",
+      "file": "dayjs_plugin_timezone.js",
+      "fileHash": "67c808f3",
+      "needsInterop": true
+    },
+    "dayjs/plugin/utc": {
+      "src": "../../../../node_modules/dayjs/plugin/utc.js",
+      "file": "dayjs_plugin_utc.js",
+      "fileHash": "9e8d761b",
+      "needsInterop": true
+    },
+    "typed.js": {
+      "src": "../../../../node_modules/typed.js/lib/typed.js",
+      "file": "typed_js.js",
+      "fileHash": "f1b8559c",
+      "needsInterop": true
+    },
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "3137e8ec",
+      "needsInterop": false
+    },
+    "vue-router": {
+      "src": "../../../../node_modules/vue-router/dist/vue-router.esm-bundler.js",
+      "file": "vue-router.js",
+      "fileHash": "aa2a2aa1",
+      "needsInterop": false
+    },
+    "vuejs-paginate-next": {
+      "src": "../../../../node_modules/vuejs-paginate-next/dist/vuejs-paginate-next.es.js",
+      "file": "vuejs-paginate-next.js",
+      "fileHash": "caacdfb4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-3JCLN5HW": {
+      "file": "chunk-3JCLN5HW.js"
+    },
+    "chunk-RBMQ4XAB": {
+      "file": "chunk-RBMQ4XAB.js"
+    },
+    "chunk-JXWOJOBL": {
+      "file": "chunk-JXWOJOBL.js"
+    },
+    "chunk-MFIQ4W27": {
+      "file": "chunk-MFIQ4W27.js"
+    }
+  }
+}

@@ -7,5 +7,5 @@
   "bracketSpacing": true,
   "arrowParens": "always",
   "endOfLine": "lf",
-  "printWidth": 240
+  "printWidth": 300
 }
