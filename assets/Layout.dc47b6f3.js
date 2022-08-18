@@ -1,4 +1,4 @@
-import { i as isLinkHttp, j as removeLeadingSlash, k as removeEndingSlash, l as resolveRepoType, m as usePageFrontmatter, n as onMounted, p as onUnmounted, q as withBase, s as __vitePreload, v as nextTick, T as Typed, _ as _export_sfc, d as defineComponent, x as usePostData, y as useCategory, z as useTags, r as resolveComponent, o as openBlock, c as createElementBlock, e as createBaseVNode, h as unref, A as createCommentVNode, t as toDisplayString, f as createVNode, F as Fragment, B as renderList, C as normalizeStyle, D as useRandomColor, E as createBlock, G as useThemeData, H as reactive, I as computed, J as normalizeClass, K as BlogItem, b as useThemeLocaleData, L as AutoLink, w as withCtx, g as createTextVNode, M as usePageData, N as useSidebarItems, O as useRoute, P as isString, Q as useNavLink, R as isPlainObject, S as renderSlot, U as toRefs, V as useRouter, W as useToggle, X as onBeforeUnmount, Y as withKeys, Z as withDirectives, $ as vShow, a0 as DropdownTransition, a1 as watch, a2 as NavbarItems, a3 as ref, a4 as Navbar, a5 as Transition, a6 as useScrollPromise, a7 as BlogItemInfo } from "./app.34aef14f.js";
+import { i as isLinkHttp, j as removeLeadingSlash, k as removeEndingSlash, l as resolveRepoType, m as usePageFrontmatter, n as onMounted, p as nextTick, q as onUnmounted, s as withBase, v as __vitePreload, T as Typed, _ as _export_sfc, d as defineComponent, x as usePostData, y as useCategory, z as useTags, r as resolveComponent, o as openBlock, c as createElementBlock, e as createBaseVNode, h as unref, A as createCommentVNode, t as toDisplayString, f as createVNode, F as Fragment, B as renderList, C as normalizeStyle, D as useRandomColor, E as createBlock, G as useThemeData, H as reactive, I as computed, J as normalizeClass, K as BlogItem, b as useThemeLocaleData, L as AutoLink, w as withCtx, g as createTextVNode, M as usePageData, N as useSidebarItems, O as useRoute, P as isString, Q as useNavLink, R as isPlainObject, S as renderSlot, U as toRefs, V as useRouter, W as useToggle, X as onBeforeUnmount, Y as withKeys, Z as withDirectives, $ as vShow, a0 as DropdownTransition, a1 as watch, a2 as NavbarItems, a3 as ref, a4 as Navbar, a5 as Transition, a6 as useScrollPromise, a7 as BlogItemInfo } from "./app.4ba388dd.js";
 const normalizePath = (path) => decodeURI(path).replace(/#.*$/, "").replace(/(index)?\.(md|html)$/, "");
 const isActiveLink = (link, route) => {
   if (route.hash === link) {
@@ -82,12 +82,14 @@ const useBanner = () => {
     return mixImageArray ? Array.from(new Set(imageArray.concat(mixImageArray))) : imageArray;
   };
   onMounted(() => {
-    new flux.slider("#banner", {
-      autoplay: bannerOptions.isBgImagetrigger,
-      pagination: false,
-      width: "100%",
-      height: Number(bgImageStyle.height.slice(0, -2)),
-      delay: bannerOptions.bgImageSec
+    nextTick(() => {
+      new flux.slider("#banner", {
+        autoplay: bannerOptions.isBgImagetrigger,
+        pagination: false,
+        width: "100%",
+        height: Number(bgImageStyle.height.slice(0, -2)),
+        delay: bannerOptions.bgImageSec
+      });
     });
   });
   onUnmounted(() => {
@@ -521,7 +523,7 @@ const _hoisted_6$1 = {
 const _hoisted_7$1 = {
   key: 0,
   id: "bubbles",
-  class: "absolute w-full h-full z-[1000]"
+  class: "absolute w-full h-full z-[100]"
 };
 const _sfc_main$9 = /* @__PURE__ */ defineComponent({
   __name: "HomeBanner",

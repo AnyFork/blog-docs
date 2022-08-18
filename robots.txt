@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://anyfork.github.io/blog-docs/blog-docs/sitemap.xml
