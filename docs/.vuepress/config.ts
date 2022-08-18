@@ -15,7 +15,7 @@ export default defineUserConfig({
   head: [
     [
       "link",
-      { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "shortcut icon", type: "image/x-icon", href: "/blog-docs/favicon.ico" },
     ],
     [
       "meta",
@@ -27,8 +27,8 @@ export default defineUserConfig({
     //关闭referrer,防止第三方图片因防盗链无法显示问题。
     ["meta", { name: "referrer", content: "never" }],
     ["link", { rel: "manifest", href: "/manifest.json" }],
-    ['script', { language: 'javascript', type: 'text/javascript', src: '/js/jquery.min.js' }],
-    ['script', { language: 'javascript', type: 'text/javascript', src: '/js/flux.min.js' }],
+    ['script', { language: 'javascript', type: 'text/javascript', src: '/blog-docs/js/jquery.min.js' }],
+    ['script', { language: 'javascript', type: 'text/javascript', src: '/blog-docs/js/flux.min.js' }],
   ],
   theme: AnyForkTheme({
     logo: "/images/logo.png",
