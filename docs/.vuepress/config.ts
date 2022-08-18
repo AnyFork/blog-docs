@@ -96,8 +96,10 @@ export default defineUserConfig({
           plugins: [require("tailwindcss")({}), require("autoprefixer")({})],
         },
       },
-      optimizeDeps: {
-        exclude: ['vue']
+      build: {
+        rollupOptions: {
+          external: ['vue']
+        }
       }
     }
   }),
