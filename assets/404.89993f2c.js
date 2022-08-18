@@ -1,5 +1,5 @@
 import { defineComponent, resolveComponent, openBlock, createElementBlock, createElementVNode, toDisplayString, createVNode, unref, withCtx, createTextVNode } from "vue";
-import { _ as _export_sfc, u as useRouteLocale, a as useThemeLocaleData } from "./app.69ad0fe9.js";
+import { _ as _export_sfc, u as useRouteLocale, a as useThemeLocaleData } from "./app.b08d813e.js";
 const _hoisted_1 = { class: "theme-container" };
 const _hoisted_2 = { class: "page" };
 const _hoisted_3 = { class: "theme-default-content" };
