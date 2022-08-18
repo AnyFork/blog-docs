@@ -64,7 +64,7 @@ defineProps<{
     position: relative;
     font-size: 1.28rem;
     display: inline-block;
-    z-index: 1000;
+    z-index: 100;
 
     &:after {
       content: '';

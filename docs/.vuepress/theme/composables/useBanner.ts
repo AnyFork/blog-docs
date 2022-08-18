@@ -1,6 +1,6 @@
 const modules = import.meta.glob("../../public/images/index/*.jpg");
 import { usePageFrontmatter, PageFrontmatterRef, withBase } from "@vuepress/client";
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted, nextTick } from 'vue';
 export const useBanner = () => {
     const frontmatter = usePageFrontmatter() as PageFrontmatterRef<Blog.Home>;
     let fx: any
@@ -58,14 +58,17 @@ export const useBanner = () => {
     };
 
     onMounted(() => {
-        /**slider动画 */
-        fx = new flux.slider("#banner", {
-            autoplay: bannerOptions.isBgImagetrigger,
-            pagination: false,
-            width: "100%",
-            height: Number(bgImageStyle.height.slice(0, -2)),
-            delay: bannerOptions.bgImageSec
-        });
+        nextTick(() => {
+            /**slider动画 */
+            fx = new flux.slider("#banner", {
+                autoplay: bannerOptions.isBgImagetrigger,
+                pagination: false,
+                width: "100%",
+                height: Number(bgImageStyle.height.slice(0, -2)),
+                delay: bannerOptions.bgImageSec
+            });
+        })
+
     })
     onUnmounted(() => {
         if (fx) {

@@ -37,7 +37,7 @@
     <div
       v-if="homeBanner.bannerOptions.bubbles"
       id="bubbles"
-      class="absolute w-full h-full z-[1000]"
+      class="absolute w-full h-full z-[100]"
     ></div>
   </div>
 </template>

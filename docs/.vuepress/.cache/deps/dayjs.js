@@ -1,14 +1,22 @@
 import {
   __commonJS,
+  init_define_CODE_COPY_LOCALES,
+  init_define_CODE_COPY_OPTIONS,
+  init_define_DOCSEARCH_OPTIONS,
   init_define_EXTERNAL_LINK_ICON_LOCALES,
   init_define_MZ_ZOOM_OPTIONS,
-  init_define_POSTS
-} from "./chunk-MFIQ4W27.js";
+  init_define_POSTS,
+  init_define_READING_TIME_LOCALES
+} from "./chunk-EQAQX5IR.js";
 
 // node_modules/dayjs/dayjs.min.js
 var require_dayjs_min = __commonJS({
   "node_modules/dayjs/dayjs.min.js"(exports, module) {
+    init_define_CODE_COPY_LOCALES();
+    init_define_CODE_COPY_OPTIONS();
     init_define_POSTS();
+    init_define_READING_TIME_LOCALES();
+    init_define_DOCSEARCH_OPTIONS();
     init_define_EXTERNAL_LINK_ICON_LOCALES();
     init_define_MZ_ZOOM_OPTIONS();
     !function(t, e) {
@@ -218,7 +226,11 @@ var require_dayjs_min = __commonJS({
 });
 
 // dep:dayjs
+init_define_CODE_COPY_LOCALES();
+init_define_CODE_COPY_OPTIONS();
 init_define_POSTS();
+init_define_READING_TIME_LOCALES();
+init_define_DOCSEARCH_OPTIONS();
 init_define_EXTERNAL_LINK_ICON_LOCALES();
 init_define_MZ_ZOOM_OPTIONS();
 var dayjs_default = require_dayjs_min();

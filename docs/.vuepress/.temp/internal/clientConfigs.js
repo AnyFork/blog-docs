@@ -6,7 +6,12 @@ import clientConfig4 from 'C:/Users/Administrator/Desktop/blog-docs/node_modules
 import clientConfig5 from 'C:/Users/Administrator/Desktop/blog-docs/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import clientConfig6 from 'C:/Users/Administrator/Desktop/blog-docs/node_modules/@vuepress/theme-default/lib/client/config.js'
 import clientConfig7 from 'C:/Users/Administrator/Desktop/blog-docs/docs/.vuepress/.temp/register-components/clientConfig.0d40ab40.js'
-import clientConfig8 from 'C:/Users/Administrator/Desktop/blog-docs/docs/.vuepress/client.ts'
+import clientConfig8 from 'C:/Users/Administrator/Desktop/blog-docs/node_modules/@vuepress/plugin-docsearch/lib/client/config.js'
+import clientConfig9 from 'C:/Users/Administrator/Desktop/blog-docs/node_modules/@vuepress/plugin-pwa/lib/client/config.js'
+import clientConfig10 from 'C:/Users/Administrator/Desktop/blog-docs/node_modules/@vuepress/plugin-pwa-popup/lib/client/config.js'
+import clientConfig11 from 'C:/Users/Administrator/Desktop/blog-docs/docs/.vuepress/.temp/sass-palette/load-hope.js'
+import clientConfig12 from 'C:/Users/Administrator/Desktop/blog-docs/node_modules/vuepress-plugin-copy-code2/lib/client/config.js'
+import clientConfig13 from 'C:/Users/Administrator/Desktop/blog-docs/docs/.vuepress/client.ts'
 
 export const clientConfigs = [
   clientConfig0,
@@ -18,4 +23,9 @@ export const clientConfigs = [
   clientConfig6,
   clientConfig7,
   clientConfig8,
+  clientConfig9,
+  clientConfig10,
+  clientConfig11,
+  clientConfig12,
+  clientConfig13,
 ]

@@ -8,6 +8,10 @@
     <Icon icon="AppstoreOutlined" :text="page.frontmatter.categories" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="page.frontmatter.categories"></Icon>
     <!-- 标签 -->
     <Icon icon="TagsOutlined" :text="page.frontmatter.tags" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="page.frontmatter.tags"></Icon>
+    <!-- 字数 -->
+    <!-- <Icon icon="ReadOutlined" :text="timeAndWord.words" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="timeAndWord.words"></Icon> -->
+    <!-- 阅读时间 -->
+    <!-- <Icon icon="HourglassOutlined" :text="timeAndWord.minutes" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="timeAndWord.minutes"></Icon> -->
   </div>
 </template>
 <script setup lang="ts">
@@ -27,4 +31,18 @@ const author = computed(() => props.page.frontmatter.author || themeData.value.a
 const formatDateValue = (value: string) => {
   return value ? dayjs.tz(value, 'Asia/Shanghai').format('YYYY-MM-DD HH:mm:ss') : ''
 }
+//阅读时间
+const timeAndWord = computed(() => {
+  const { minutes, words } = props.page.readingTime
+  console.log(minutes, words)
+  if (minutes && words) {
+    if (minutes < 1) {
+      return { minutes: '少于1分钟', words: `${words}字` }
+    } else {
+      return { minutes: `大约${Math.floor(minutes)}分钟`, words: `${words}字` }
+    }
+  } else {
+    return { minutes: undefined, words: undefined }
+  }
+})
 </script>

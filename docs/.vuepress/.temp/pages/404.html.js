@@ -1,14 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-3706649a\",\"path\":\"/404.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"layout\":\"404\"},\"excerpt\":\"\",\"headers\":[],\"git\":{},\"filePathRelative\":null}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
+export const data = JSON.parse("{\"key\":\"v-3706649a\",\"path\":\"/404.html\",\"title\":\"\",\"lang\":\"zh-CN\",\"frontmatter\":{\"layout\":\"404\",\"summary\":\"\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://anyfork.github.io/blog-docs/blog-docs/404.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"小紫念沁\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"小紫念沁\"}]]},\"excerpt\":\"\",\"headers\":[],\"git\":{},\"filePathRelative\":null,\"readingTime\":{\"minutes\":0,\"words\":0}}")
