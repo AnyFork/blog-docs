@@ -1566,7 +1566,7 @@ public class Demo {
 
 对上面的代码大家应该很熟，使用迭代器遍历集合，获取集合中的元素。而单列集合获取迭代器的方法就使用到了工厂方法模式。我们看通过类图看看结构：
 
-<img src="/img/JDK源码解析.png" style="zoom:75%;" />
+<img src="/img/jdk源码解析.png" style="zoom:75%;" />
 
 Collection 接口是抽象工厂类，ArrayList 是具体的工厂类；Iterator 接口是抽象商品类，ArrayList 类中的 Iter 内部类是具体的商品类。在具体的工厂类中 iterator()方法创建具体的商品类的对象。
 
