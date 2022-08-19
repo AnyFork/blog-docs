@@ -17,7 +17,7 @@ body {
   bottom: -50%;
   margin-left: -10px;
   cursor: pointer;
-  z-index: 100000;
+  z-index: 100000000;
 }
 @-webkit-keyframes bounce-in {
   0% {
@@ -76,11 +76,10 @@ body {
 }
 
 //左侧sider激活样式
-// .sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
-//   border-color: none;
-//   color: var(--c-brand);
-//   background-color: none;
-// }
+.active {
+  background-color: #3eaf7c1a;
+  border-left-color: #3eaf7c;
+}
 
 .home .hero img {
   width: 100px;
@@ -99,7 +98,7 @@ h1:focus {
 
 :root {
   // markdown 宽度900px
-  --content-width: 900px;
+  --content-width: 900px !important;
 }
 
 .navbar {
@@ -121,6 +120,20 @@ h1:focus {
 }
 .back-to-top {
   bottom: 4rem;
+}
+//复制插件图标颜色
+.copy-code-button {
+  background: var(--c-text-accent) !important;
+}
+
+#app {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+#bgCanvas {
+  z-index: auto !important;
+  background-color: initial !important;
 }
 @import 'common';
 @import 'tailwind';

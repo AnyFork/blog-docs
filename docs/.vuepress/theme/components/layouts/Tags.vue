@@ -5,7 +5,7 @@
     <div class="w-full flex my-[10px]">
       <Item v-for="(item, index) in tags" :key="index" :categoryItem="item" :color="useRandomColor()" :style="styleBg(item)" @click="changeTag(item)"></Item>
     </div>
-    <BlogItem v-for="(obj, index) in blogData" :page="obj" :position="index % 2 == 0 ? 'left' : 'right'" :key="obj" />
+    <BlogItem v-for="(obj, index) in blogData" :page="obj.data" :position="index % 2 == 0 ? 'left' : 'right'" :key="obj" />
     <Pagination :pageTotal="pages.pageTotal" :pageNumber="pages.pageNumber" :pageSize="pages.pageSize" @click="getBack"> </Pagination>
   </div>
 </template>

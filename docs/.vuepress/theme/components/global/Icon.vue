@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" :target="target" v-if="text" class="inline-flex items-center !text-[color:var(--c-text)]">
+  <a :href="link" :target="target" v-if="link || text" class="inline-flex items-center !text-[color:var(--c-text)]">
     <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
     <span class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </span>
   </a>
@@ -29,7 +29,7 @@ const props = withDefaults(
     textSize: 14
   }
 )
-const { icon, iconSize, iconColor, textColor, textSize } =toRefs(props)
+const { icon, iconSize, iconColor, textColor, textSize } = toRefs(props)
 const iconStyle = computed(() => {
   return { color: iconColor.value, width: `${iconSize.value}px`, height: `${iconSize.value}px`, fontSize: `${iconSize.value}px` }
 })

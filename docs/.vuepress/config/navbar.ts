@@ -28,14 +28,7 @@ export const navbar: (NavbarItems | NavbarGroup | string)[] = [
                 link: '/design-pattern/',
                 //该元素将一直处于激活状态
                 activeMatch: '/design-pattern/',
-            },
-            {
-                text: 'Active on /foo/',
-                link: '/not-foo/',
-                // 该元素在当前路由路径是 /foo/ 开头时激活
-                // 支持正则表达式
-                activeMatch: '^/foo/',
-            },
+            }
         ],
     },
 ]

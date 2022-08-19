@@ -8,7 +8,7 @@
       <img :src="item" v-for="item in mixImage" :key="item" />
     </div>
     <!--标题 -->
-    <div class="index z-10 absolute text-[#fff] text-center">
+    <div class="index z-100 absolute text-[#fff] text-center">
       <!--主标题，主标题为数组时通过typed.js进行打印，反之正常显示 -->
       <div>
         <h1
@@ -37,7 +37,7 @@
     <div
       v-if="homeBanner.bannerOptions.bubbles"
       id="bubbles"
-      class="absolute w-full h-full z-[100]"
+      class="absolute w-full h-full z-[10]"
     ></div>
   </div>
 </template>

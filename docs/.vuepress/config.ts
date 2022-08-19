@@ -1,9 +1,9 @@
 import { AnyForkTheme } from "./theme";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
-import { navbar, plugins } from './config/index'
+import { navbar, plugins, sidebar } from './config/index'
 import { AnyForkThemeOptions } from "./theme/types/theme";
-const { path } = require('@vuepress/utils')
+import { path } from '@vuepress/utils'
 export default defineUserConfig({
   //站点根路径,默认配置/
   base: "/blog-docs/",
@@ -13,17 +13,8 @@ export default defineUserConfig({
   description: "资料文档汇集网站",
   dest: "dist",
   head: [
-    [
-      "link",
-      { rel: "shortcut icon", type: "image/x-icon", href: "/blog-docs/favicon.ico" },
-    ],
-    [
-      "meta",
-      {
-        name: "viewport",
-        content: "width=device-width,initial-scale=1,user-scalable=no",
-      },
-    ],
+    ["link", { rel: "shortcut icon", type: "image/x-icon", href: "/blog-docs/favicon.ico" }],
+    ["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
     //关闭referrer,防止第三方图片因防盗链无法显示问题。
     ["meta", { name: "referrer", content: "never" }],
     ["link", { rel: "manifest", href: "/blog-docs/manifest.json" }],
@@ -35,6 +26,24 @@ export default defineUserConfig({
     logo: "/images/logo.png",
     author: "小紫念沁",
     authorAvatar: "/images/logo.png",
+    //仓库地址
+    repo: 'https://github.com/AnyFork/blog-docs',
+    //如果你的文档不在仓库的根部
+    docsDir: 'docs',
+    //是否开启编辑链接
+    editLinks: true,
+    //链接文本
+    editLinkText: '在 GitHub 上编辑此页！',
+    //仓库代码提交的分支,默认main
+    docsBranch: 'main',
+    //开启最后更新
+    lastUpdated: true,
+    //开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
+    lastUpdatedText: '上次更新',
+    //是否启用 贡献者列表
+    contributors: true,
+    //贡献者列表 标签的文字
+    contributorsText: '小紫念沁',
     //信息栏展示社交信息
     socialLinks: [
       { icon: 'GithubOutlined', link: 'https://anyFork.github.io/blog-docs/' },
@@ -43,12 +52,8 @@ export default defineUserConfig({
     //友情链接
     friendLink: [
       {
-        title: 'vuepress 2.x',
+        title: 'vuepress 2.X',
         link: 'https://v2.vuepress.vuejs.org/zh/'
-      },
-      {
-        title: 'vuepress 1.x社区',
-        link: 'https://vuepress-community.netlify.app/zh/'
       },
       {
         title: 'vuepress-theme-reco 2.x',
@@ -63,23 +68,7 @@ export default defineUserConfig({
     //侧边栏深度
     sidebarDepth: 3,
     navbar: navbar,
-    sidebar: {
-      "/design-patterns/": [
-        {
-          text: "VuePress Reference",
-          collapsible: true,
-          children: ["/reference/cli.md", "/reference/config.md"],
-        },
-        {
-          text: "Bundlers Reference",
-          collapsible: true,
-          children: [
-            "/reference/bundler/vite.md",
-            "/reference/bundler/webpack.md",
-          ],
-        },
-      ],
-    },
+    sidebar: sidebar
   } as AnyForkThemeOptions),
   markdown: {
     headers: {

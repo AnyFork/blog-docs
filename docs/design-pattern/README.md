@@ -1,6 +1,7 @@
 ---
-title: "设计模式"
-description: "Java 23种设计模式"
+title: 'Java 23种设计模式'
+description: 'Java 23种设计模式,设计模式，Java'
+date: 2022-8-19 21:55:00
 sidebar: 'auto'
 tags: 设计模式
 categories: java
