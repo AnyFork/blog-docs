@@ -39,7 +39,7 @@
 // import { VerticalAlignTopOutlined } from '@vicons/antd'
 import { withBase } from '@vuepress/client'
 import BlogItemInfo from './BlogItemInfo.vue'
-defineProps<{
+const props=defineProps<{
   page: Record<string, any>
   position: string
 }>()

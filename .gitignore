@@ -1,5 +1,5 @@
-/node_modules
-/.history
-/.vuepress/.temp
-/.vuepress/.cache
-/dist
+node_modules
+.history
+docs/.vuepress/.temp
+docs/.vuepress/.cache
+dist
