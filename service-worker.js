@@ -94,15 +94,15 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
 
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "fa8a22b85ea35dca4d60674658d8ee3f"
+    "revision": "a8def67f73d73559c8fae478ee765fc6"
   }, {
-    "url": "assets/404.1920a953.js",
+    "url": "assets/404.82e04f18.js",
+    "revision": null
+  }, {
+    "url": "assets/404.html.0d274bc6.js",
     "revision": null
   }, {
     "url": "assets/404.html.395c9ca3.js",
-    "revision": null
-  }, {
-    "url": "assets/404.html.790b0720.js",
     "revision": null
   }, {
     "url": "assets/back-to-top.8efcbe56.svg",
@@ -144,38 +144,38 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
     "url": "assets/bg6.4223ab9c.jpg",
     "revision": null
   }, {
-    "url": "assets/Icon.d6abe288.js",
+    "url": "assets/Icon.f74e48d7.js",
     "revision": null
   }, {
     "url": "assets/index.0e8935cb.js",
     "revision": null
   }, {
-    "url": "assets/index.html.517d4f2b.js",
+    "url": "assets/index.html.cc4c7470.js",
     "revision": null
   }, {
-    "url": "assets/index.html.56e88f16.js",
+    "url": "assets/index.html.d89c9dd2.js",
     "revision": null
   }, {
-    "url": "assets/index.html.e7ae0b4d.js",
+    "url": "assets/index.html.e99fad9b.js",
     "revision": null
   }, {
-    "url": "assets/index.html.ffb05d5a.js",
+    "url": "assets/index.html.ff0eacb3.js",
     "revision": null
   }, {
-    "url": "assets/Item.a83b3495.js",
+    "url": "assets/Item.35d3737a.js",
     "revision": null
   }, {
-    "url": "assets/Layout.dc47b6f3.js",
+    "url": "assets/Layout.4c7e3d7b.js",
     "revision": null
   }, {
-    "url": "assets/Pagination.20c41999.js",
+    "url": "assets/Pagination.9205ddde.js",
     "revision": null
   }, {
-    "url": "assets/style.75364f2a.css",
+    "url": "assets/style.a6ee6132.css",
     "revision": null
   }, {
     "url": "design-pattern/index.html",
-    "revision": "e286efb4ae2c1733fb4b50278d30b100"
+    "revision": "658a8061c1dd9c9523900b59f678a055"
   }, {
     "url": "images/184.png",
     "revision": "4a53cf302746206c34f7def829a2b97a"
@@ -457,7 +457,7 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
     "revision": "0bc2eeb9471f6cc3e16da23b1772d3c0"
   }, {
     "url": "index.html",
-    "revision": "e4454423a44ba4f28fc7a3a05efa6cc5"
+    "revision": "d02d98d354093dd8a8db5ba65775e89d"
   }, {
     "url": "js/flux.min.js",
     "revision": "9547393d8b7ebb80a108ba42f8cbc7d7"

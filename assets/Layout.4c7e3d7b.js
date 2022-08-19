@@ -1,4 +1,4 @@
-import { i as isLinkHttp, j as removeLeadingSlash, k as removeEndingSlash, l as resolveRepoType, m as usePageFrontmatter, n as onMounted, p as nextTick, q as onUnmounted, s as withBase, v as __vitePreload, T as Typed, _ as _export_sfc, d as defineComponent, x as usePostData, y as useCategory, z as useTags, r as resolveComponent, o as openBlock, c as createElementBlock, e as createBaseVNode, h as unref, A as createCommentVNode, t as toDisplayString, f as createVNode, F as Fragment, B as renderList, C as normalizeStyle, D as useRandomColor, E as createBlock, G as useThemeData, H as reactive, I as computed, J as normalizeClass, K as BlogItem, b as useThemeLocaleData, L as AutoLink, w as withCtx, g as createTextVNode, M as usePageData, N as useSidebarItems, O as useRoute, P as isString, Q as useNavLink, R as isPlainObject, S as renderSlot, U as toRefs, V as useRouter, W as useToggle, X as onBeforeUnmount, Y as withKeys, Z as withDirectives, $ as vShow, a0 as DropdownTransition, a1 as watch, a2 as NavbarItems, a3 as ref, a4 as Navbar, a5 as Transition, a6 as useScrollPromise, a7 as BlogItemInfo } from "./app.4ba388dd.js";
+import { i as isLinkHttp, j as removeLeadingSlash, k as removeEndingSlash, l as resolveRepoType, m as usePageFrontmatter, n as onMounted, p as nextTick, q as onUnmounted, s as withBase, v as __vitePreload, T as Typed, _ as _export_sfc, d as defineComponent, x as usePostData, y as useCategory, z as useTags, r as resolveComponent, o as openBlock, c as createElementBlock, e as createBaseVNode, h as unref, A as createCommentVNode, t as toDisplayString, f as createVNode, F as Fragment, B as renderList, C as normalizeStyle, D as useRandomColor, E as createBlock, G as useThemeData, H as reactive, I as computed, J as normalizeClass, K as BlogItem, b as useThemeLocaleData, L as AutoLink, w as withCtx, g as createTextVNode, M as usePageData, N as useSidebarItems, O as useRoute, P as isString, Q as useNavLink, R as isPlainObject, S as renderSlot, U as toRefs, V as useRouter, W as useToggle, X as onBeforeUnmount, Y as withKeys, Z as withDirectives, $ as vShow, a0 as DropdownTransition, a1 as watch, a2 as NavbarItems, a3 as ref, a4 as Navbar, a5 as Transition, a6 as useScrollPromise, a7 as BlogItemInfo } from "./app.f21c36fe.js";
 const normalizePath = (path) => decodeURI(path).replace(/#.*$/, "").replace(/(index)?\.(md|html)$/, "");
 const isActiveLink = (link, route) => {
   if (route.hash === link) {
@@ -463,7 +463,7 @@ const _sfc_main$b = /* @__PURE__ */ defineComponent({
             return openBlock(), createBlock(BlogItem, {
               class: normalizeClass(["border", index % 3 == 0 ? "draw" : index % 3 == 1 ? "draw meet" : "center"]),
               key: index,
-              page: item,
+              page: item.data,
               position: index % 2 == 0 ? "left" : "right"
             }, null, 8, ["page", "position", "class"]);
           }), 128)),
