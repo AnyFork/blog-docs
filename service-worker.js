@@ -94,15 +94,15 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
 
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "a8def67f73d73559c8fae478ee765fc6"
+    "revision": "0d1e0728c5ba2ee0c615638d33c69c81"
   }, {
-    "url": "assets/404.82e04f18.js",
+    "url": "assets/404.280e226a.js",
     "revision": null
   }, {
-    "url": "assets/404.html.0d274bc6.js",
+    "url": "assets/404.html.0f6459cb.js",
     "revision": null
   }, {
-    "url": "assets/404.html.395c9ca3.js",
+    "url": "assets/404.html.507817d7.js",
     "revision": null
   }, {
     "url": "assets/back-to-top.8efcbe56.svg",
@@ -144,38 +144,47 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
     "url": "assets/bg6.4223ab9c.jpg",
     "revision": null
   }, {
-    "url": "assets/Icon.f74e48d7.js",
+    "url": "assets/Icon.36653895.js",
+    "revision": null
+  }, {
+    "url": "assets/iconfont.0ae9f5e1.svg",
+    "revision": null
+  }, {
+    "url": "assets/iconfont.f8ff8401.svg",
     "revision": null
   }, {
     "url": "assets/index.0e8935cb.js",
     "revision": null
   }, {
-    "url": "assets/index.html.cc4c7470.js",
+    "url": "assets/index.html.074df06d.js",
     "revision": null
   }, {
-    "url": "assets/index.html.d89c9dd2.js",
+    "url": "assets/index.html.182f74ec.js",
     "revision": null
   }, {
-    "url": "assets/index.html.e99fad9b.js",
+    "url": "assets/index.html.32e63ed7.js",
     "revision": null
   }, {
-    "url": "assets/index.html.ff0eacb3.js",
+    "url": "assets/index.html.dc80cb10.js",
     "revision": null
   }, {
-    "url": "assets/Item.35d3737a.js",
+    "url": "assets/Item.9e85199f.js",
     "revision": null
   }, {
-    "url": "assets/Layout.4c7e3d7b.js",
+    "url": "assets/Layout.2489bc9f.js",
     "revision": null
   }, {
-    "url": "assets/Pagination.9205ddde.js",
+    "url": "assets/Pagination.35cc2d17.js",
     "revision": null
   }, {
-    "url": "assets/style.a6ee6132.css",
+    "url": "assets/sakura.e2074011.png",
+    "revision": null
+  }, {
+    "url": "assets/style.6acf0213.css",
     "revision": null
   }, {
     "url": "design-pattern/index.html",
-    "revision": "658a8061c1dd9c9523900b59f678a055"
+    "revision": "45a2a66aa951dac0faea0d0d580f0e7a"
   }, {
     "url": "images/184.png",
     "revision": "4a53cf302746206c34f7def829a2b97a"
@@ -185,6 +194,9 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
   }, {
     "url": "images/bg.gif",
     "revision": "c8f26794a0ee092e62abbd0f99857064"
+  }, {
+    "url": "images/blue.png",
+    "revision": "275ba7773ea73e26b8c8eb9401abad1f"
   }, {
     "url": "images/index/bg1.jpg",
     "revision": "5ad0201fda8eae83f8e01e96340d2ff0"
@@ -457,13 +469,22 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
     "revision": "0bc2eeb9471f6cc3e16da23b1772d3c0"
   }, {
     "url": "index.html",
-    "revision": "d02d98d354093dd8a8db5ba65775e89d"
+    "revision": "fda4a6d1102f49167a1b15a1a38f0bd4"
   }, {
     "url": "js/flux.min.js",
     "revision": "9547393d8b7ebb80a108ba42f8cbc7d7"
   }, {
     "url": "js/jquery.min.js",
     "revision": "b8d64d0bc142b3f670cc0611b0aebcae"
+  }, {
+    "url": "music/canon/canon.jpg",
+    "revision": "2d5b5f7af1277220148c7a9297b74c73"
+  }, {
+    "url": "music/night/night.jpg",
+    "revision": "5c9fe76738538df551f5a0358091f91d"
+  }, {
+    "url": "music/wind/wind.jpg",
+    "revision": "6e9c57b6aa43978c7b22dcebcd86e47a"
   }], {});
 
 }));
