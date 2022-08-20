@@ -13,7 +13,6 @@ import { dynamicTitle } from '@anyfork/vuepress-plugin-dynamic-title-next'
 import { kanBanNiang } from '@anyfork/vuepress-plugin-kan-ban-niang-next'
 import { ribbon } from '@anyfork/vuepress-plugin-ribbon-next'
 import { sakura } from '@anyfork/vuepress-plugin-sakura-next'
-
 import { path } from '@vuepress/utils'
 
 export const plugins = [
@@ -53,7 +52,7 @@ export const plugins = [
     readingTimePlugin({}),
     // seo插件，https://vuepress-theme-hope.github.io/v2/seo/
     seoPlugin({
-        hostname: 'https://anyfork.github.io/blog-docs/',
+        hostname: 'https://anyfork.github.io/',
         author: {
             name: '小紫念沁',
             url: 'https://anyfork.github.io/blog-docs/'
@@ -86,20 +85,20 @@ export const plugins = [
             {
                 name: '卡农',
                 artist: '卡农钢琴版',
-                url: '/music/canon/canon.mp3',
-                cover: '/music/canon/canon.jpg'
+                url: '/blog-docs/music/canon/canon.mp3',
+                cover: '/blog-docs/music/canon/canon.jpg'
             },
             {
                 name: '风居住的街道',
                 artist: '风居住的街道 钢琴版 - 钢琴曲',
-                url: '/music/wind/wind.mp3',
-                cover: '/music/wind/wind.jpg'
+                url: '/blog-docs/music/wind/wind.mp3',
+                cover: '/blog-docs/music/wind/wind.jpg'
             },
             {
                 name: '夜的钢琴曲',
                 artist: '夜的钢琴曲五 - 石进',
-                url: '/music/night/night.mp3',
-                cover: '/music/night/night.jpg'
+                url: '/blog-docs/music/night/night.mp3',
+                cover: '/blog-docs/music/night/night.jpg'
             }
         ],
         autoShrink: true,
