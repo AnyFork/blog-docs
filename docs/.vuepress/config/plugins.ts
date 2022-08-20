@@ -148,7 +148,7 @@ export const plugins = [
     }),
     //樱花特效
     sakura({
-        Sakura_zindex: 1,
+        sakura_zindex: 1,
         sakura_img: '/blog-docs/images/blue.png'
     })
 ]
