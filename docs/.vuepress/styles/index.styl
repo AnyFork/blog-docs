@@ -1,0 +1,41 @@
+body {
+  background-image: url('/blog-docs/images/bg.gif') !important;
+}
+
+#vuepress-plugin-comment {
+  min-width: 860px;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+}
+
+.page .theme-reco-content h2:before {
+  position: absolute;
+  left: 0;
+  top: 3.5rem;
+  display: block;
+  height: 1.8rem;
+  content: '';
+  border-left: 5px solid #3eaf7c;
+}
+
+.navbar {
+  z-index: 20000 !important;
+}
+
+.navbar .links {
+  background: transparent !important;
+}
+
+html.light .navbar {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: saturate(180%) blur(5px);
+}
+html.dark .navbar {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: saturate(180%) blur(15px);
+}
+
+@require './markdown-container';
+@require './common.styl';
+@require './mobile.styl';
