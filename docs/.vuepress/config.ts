@@ -85,6 +85,11 @@ export default defineUserConfig({
         postcss: {
           plugins: [require("tailwindcss")({}), require("autoprefixer")({})],
         },
+      },
+      //打包配置
+      build: {
+        //配置超过1000kb经过提醒
+        chunkSizeWarningLimit: 1000
       }
     }
   }),
