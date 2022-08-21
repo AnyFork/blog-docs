@@ -94,15 +94,18 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
 
   workbox.precacheAndRoute([{
     "url": "404.html",
-    "revision": "736860b0088ff8850d3887403f4d1c2d"
+    "revision": "b9904b660beb0b613f9fd188dc9065c4"
   }, {
-    "url": "assets/404.c70c39b9.js",
+    "url": "article/index.html",
+    "revision": "25fef9f8d1fe8bd3adebf9ae3dedc71e"
+  }, {
+    "url": "assets/404.4301cbf8.js",
     "revision": null
   }, {
     "url": "assets/404.html.459faed1.js",
     "revision": null
   }, {
-    "url": "assets/404.html.5c11a6cf.js",
+    "url": "assets/404.html.6b2aee3c.js",
     "revision": null
   }, {
     "url": "assets/back-to-top.8efcbe56.svg",
@@ -144,7 +147,10 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
     "url": "assets/bg6.4223ab9c.jpg",
     "revision": null
   }, {
-    "url": "assets/Icon.c72afc48.js",
+    "url": "assets/Category.d966b166.js",
+    "revision": null
+  }, {
+    "url": "assets/Icon.34063f00.js",
     "revision": null
   }, {
     "url": "assets/iconfont.0ae9f5e1.svg",
@@ -156,35 +162,113 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
     "url": "assets/index.0e8935cb.js",
     "revision": null
   }, {
-    "url": "assets/index.html.01c24ef9.js",
+    "url": "assets/index.html.07fb7218.js",
     "revision": null
   }, {
-    "url": "assets/index.html.09e1f4d7.js",
+    "url": "assets/index.html.0b0a13a2.js",
     "revision": null
   }, {
-    "url": "assets/index.html.3b519b2e.js",
+    "url": "assets/index.html.19ea981b.js",
     "revision": null
   }, {
-    "url": "assets/index.html.7e0ae65e.js",
+    "url": "assets/index.html.25233c7f.js",
     "revision": null
   }, {
-    "url": "assets/Item.f4b4444b.js",
+    "url": "assets/index.html.27b0cb17.js",
     "revision": null
   }, {
-    "url": "assets/Layout.5062f16f.js",
+    "url": "assets/index.html.2a57be01.js",
     "revision": null
   }, {
-    "url": "assets/Pagination.6363cc85.js",
+    "url": "assets/index.html.2f78f615.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.44d22b8b.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.4b98cdf9.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.50e4c642.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.6397e7e2.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.73972842.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.7481acd0.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.98ea0f8d.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.9ba35e31.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.c32afd3d.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.cae6f7e9.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.cb58336b.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.d3529e91.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.e3782d86.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.e90876cd.js",
+    "revision": null
+  }, {
+    "url": "assets/index.html.f71513ce.js",
+    "revision": null
+  }, {
+    "url": "assets/Item.6c60db76.js",
+    "revision": null
+  }, {
+    "url": "assets/Layout.350c3af2.js",
+    "revision": null
+  }, {
+    "url": "assets/Layout.b1375d06.js",
+    "revision": null
+  }, {
+    "url": "assets/page1.html.3d3e575b.js",
+    "revision": null
+  }, {
+    "url": "assets/page1.html.d275edfa.js",
+    "revision": null
+  }, {
+    "url": "assets/Pagination.c575ad68.js",
     "revision": null
   }, {
     "url": "assets/sakura.e2074011.png",
     "revision": null
   }, {
-    "url": "assets/style.6acf0213.css",
+    "url": "assets/style.4588532c.css",
     "revision": null
   }, {
-    "url": "design-pattern/index.html",
-    "revision": "9f0a60815d1a5896511fcfff1a64a66a"
+    "url": "assets/Tag.b9dc0f6e.js",
+    "revision": null
+  }, {
+    "url": "assets/Timeline.2a727fd5.js",
+    "revision": null
+  }, {
+    "url": "category/category-a/index.html",
+    "revision": "c387b5672b85407504af8fbd1ac461ad"
+  }, {
+    "url": "category/category-b/index.html",
+    "revision": "0e425db89295ed537fb2811a7eaa4cdc"
+  }, {
+    "url": "category/index.html",
+    "revision": "bd865fd1e1bceb4f111a055cf4ed5f0e"
+  }, {
+    "url": "category/java/index.html",
+    "revision": "c23889f46ec30f8c9a84fb3c7e14179b"
   }, {
     "url": "images/184.png",
     "revision": "4a53cf302746206c34f7def829a2b97a"
@@ -469,7 +553,7 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
     "revision": "0bc2eeb9471f6cc3e16da23b1772d3c0"
   }, {
     "url": "index.html",
-    "revision": "208c207838bb3504f7e4940af662cec8"
+    "revision": "c5dd39cd8f791e01f27413b2127a4779"
   }, {
     "url": "js/flux.min.js",
     "revision": "9547393d8b7ebb80a108ba42f8cbc7d7"
@@ -485,6 +569,27 @@ define(['./workbox-f09d4406'], (function (workbox) { 'use strict';
   }, {
     "url": "music/wind/wind.jpg",
     "revision": "6e9c57b6aa43978c7b22dcebcd86e47a"
+  }, {
+    "url": "posts/design-pattern/index.html",
+    "revision": "967edde710476e770b6a9ad305734700"
+  }, {
+    "url": "posts/page1.html",
+    "revision": "e0831d6a3a1db9a5707fce4254a6a44d"
+  }, {
+    "url": "setting.png",
+    "revision": "2a045d90b17a55d36904a238d94f583b"
+  }, {
+    "url": "tag/index.html",
+    "revision": "dbd41f3ad07b28c5a0b01549223d31b4"
+  }, {
+    "url": "tag/标签c/index.html",
+    "revision": "73e477c1fd4ed148f29eece719a799a7"
+  }, {
+    "url": "tag/设计模式/index.html",
+    "revision": "7112e6a73abe37dc2ed343b15b2f208f"
+  }, {
+    "url": "timeline/index.html",
+    "revision": "edabad53c2dcff5351c81aabaa653024"
   }], {});
 
 }));
