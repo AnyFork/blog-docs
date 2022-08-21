@@ -13,6 +13,7 @@ import { dynamicTitle } from '@anyfork/vuepress-plugin-dynamic-title-next'
 import { kanBanNiang } from '@anyfork/vuepress-plugin-kan-ban-niang-next'
 import { ribbon } from '@anyfork/vuepress-plugin-ribbon-next'
 import { sakura } from '@anyfork/vuepress-plugin-sakura-next'
+import { blogPlugin } from "vuepress-plugin-blog2";
 import { path } from '@vuepress/utils'
 
 export const plugins = [
@@ -149,5 +150,79 @@ export const plugins = [
     sakura({
         sakura_zindex: 1,
         sakura_img: '/blog-docs/images/blue.png'
+    }),
+    //博客插件
+    blogPlugin({
+        // 页面过滤器，此函数用于鉴别页面是否作为文章。
+        filter: ({ filePathRelative }) => filePathRelative ? filePathRelative?.startsWith("posts/") : false,
+        // 获取文章信息的函数。
+        getInfo: (page) => ({
+            ...page
+        }),
+        category: [
+            {
+                key: "category",
+                getter: (page) => <string[]>page.frontmatter.category || [],
+                layout: "Category",
+                itemLayout: "Category",
+                frontmatter: () => ({ title: "Categories", sidebar: false }),
+                itemFrontmatter: (name) => ({
+                    title: `Category ${name}`,
+                    sidebar: false,
+                }),
+            },
+            {
+                key: "tag",
+                getter: (page) => <string[]>page.frontmatter.tag || [],
+                layout: "Tag",
+                itemLayout: "Tag",
+                frontmatter: () => ({ title: "Tags", sidebar: false }),
+                itemFrontmatter: (name) => ({
+                    title: `Tag ${name}`,
+                    sidebar: false,
+                }),
+            },
+        ],
+
+        type: [
+            {
+                key: "article",
+                // remove archive articles
+                filter: (page) => !page.frontmatter.archive,
+                path: "/article/",
+                layout: "Layout",
+                frontmatter: () => ({ title: "Articles", sidebar: false }),
+                // sort pages with time and sticky
+                sorter: (pageA, pageB) => {
+                    if (pageA.frontmatter.sticky && pageB.frontmatter.sticky)
+                        return pageB.frontmatter.sticky - pageA.frontmatter.sticky;
+                    if (pageA.frontmatter.sticky && !pageB.frontmatter.sticky)
+                        return -1;
+
+                    if (!pageA.frontmatter.sticky && pageB.frontmatter.sticky) return 1;
+
+                    if (!pageB.frontmatter.date) return 1;
+                    if (!pageA.frontmatter.date) return -1;
+
+                    return (
+                        new Date(pageB.frontmatter.date).getTime() -
+                        new Date(pageA.frontmatter.date).getTime()
+                    );
+                },
+            },
+            {
+                key: "timeline",
+                // only article with date should be added to timeline
+                filter: (page) => page.frontmatter.date,
+                // sort pages with time
+                sorter: (pageA, pageB) =>
+                    new Date(pageB.frontmatter.date).getTime() -
+                    new Date(pageA.frontmatter.date).getTime(),
+                path: "/timeline/",
+                layout: "Timeline",
+                frontmatter: () => ({ title: "Timeline", sidebar: false }),
+            },
+        ],
+        hotReload: true,
     })
 ]

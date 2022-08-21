@@ -9,7 +9,4 @@
 import HomeBlog from "./HomeBlog.vue";
 import HomeFooter from "@theme/HomeFooter.vue";
 import HomeBanner from "./HomeBanner.vue";
-import { usePostData} from '../composables'
-const data= usePostData()
-
 </script>

@@ -1,6 +1,3 @@
-export * from './usePostData'
 export * from './useBanner'
 export * from './useCircleMagic'
 export * from './useTyped'
-export * from './useCategory'
-export * from './useTags'

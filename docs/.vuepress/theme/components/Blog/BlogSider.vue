@@ -6,15 +6,15 @@
     </div>
     <div class="w-[80%] flex flex-wrap items-center justify-center my-[20px] mx-auto">
       <div class="text-center flex-[0_0_33%] border-r-[#333] border-r border-solid border-y-0 border-l-0">
-        <h3 class="m-0">{{ posts.length }}</h3>
+        <h3 class="m-0">{{ post.items.length }}</h3>
         <h6 class="m-0 font-normal mt-[10px]">文章</h6>
       </div>
       <div class="text-center flex-[0_0_33%] border-r-[#333] border-r border-solid border-y-0 border-l-0">
-        <h3 class="m-0">{{ category.length }}</h3>
+        <h3 class="m-0">{{ Object.keys(category.map).length }}</h3>
         <h6 class="m-0 font-normal mt-[10px]">分类</h6>
       </div>
       <div class="text-center flex-[0_0_33%]">
-        <h3 class="m-0">{{ tags.length }}</h3>
+        <h3 class="m-0">{{ Object.keys(tag.map).length }}</h3>
         <h6 class="m-0 font-normal mt-[10px]">标签</h6>
       </div>
     </div>
@@ -31,7 +31,7 @@
     <div v-if="themeData.socialLinks" style="margin-top: 5px">
       <Icon icon="FolderOpenOutlined" text="博客地址" :textSize="15"></Icon>
       <div class="pt-2">
-        <Icon v-for="(item, index) in themeData.socialLinks" :key="index" :icon="item.icon" :iconSize="25" :iconColor="useRandomColor()"  :link="item.link" target="_target" class="mx-2 hover:scale-110"></Icon>
+        <Icon v-for="(item, index) in themeData.socialLinks" :key="index" :icon="item.icon" :iconSize="25" :iconColor="useRandomColor()" :link="item.link" target="_target" class="mx-2 hover:scale-110"></Icon>
       </div>
     </div>
     <hr />
@@ -40,24 +40,20 @@
       <div class="w-full">
         <Icon icon="AppstoreTwotone" text="分类列表" :textSize="15" class="dark:hover:text-[#fff]" />
       </div>
-      <span class="shadow-item w-full mt-[10px] bg-[#fff] hover:bg-[#3eaf7c] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] hover:scale-110" v-for="(item, index) in category" :key="index">
-        <a class="flex items-center justify-between text-[#666] py-[8px] px-[14px] dark:hover:text-[#fff] text-[13px]">
-          <span>{{ item.name }}</span>
-          <span class="ml-[4px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ item.path.length }}</span></a
-        >
-      </span>
+      <RouterLink v-for="({ items, path }, name) in category.map" :key="name" :to="path" class="shadow-item w-full flex items-center justify-between text-[#666] px-[14px] my-[5px] font-normal h-[40px] bg-[#fff] hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]">
+        <span class="text-[13px]">{{ name }}</span>
+        <span class="ml-[10px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ items.length }}</span>
+      </RouterLink>
     </div>
     <!--标签-->
     <div class="w-full flex my-[10px] flex-wrap">
       <div class="w-full">
         <Icon icon="TagsOutlined" text="标签列表" :textSize="15" class="dark:hover:text-[#fff]" />
       </div>
-      <span class="shadow-item mt-[10px] bg-[#fff] hover:bg-[#3eaf7c] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] hover:scale-110" v-for="(item, index) in tags" :key="index">
-        <a class="flex items-center justify-between text-[#666] py-[8px] px-[14px] dark:hover:text-[#fff] text-[13px]">
-          <span>{{ item.name }}</span>
-          <span class="ml-[4px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ item.path.length }}</span></a
-        >
-      </span>
+      <RouterLink v-for="({ items, path }, name) in tag.map" :key="name" :to="path" class="shadow-item flex items-center text-[#666] px-[14px] my-[5px] font-normal h-[30px] bg-[#fff] hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]">
+        <span class="text-[13px]">{{ name }}</span>
+        <span class="ml-[10px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ items.length }}</span>
+      </RouterLink>
     </div>
     <!--友情链接-->
     <div class="w-full flex my-[10px] flex-wrap">
@@ -75,12 +71,12 @@
 
 <script setup lang="ts">
 import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
-import { usePostData, useCategory, useTags } from '../../composables'
 import { usePageFrontmatter, withBase } from '@vuepress/client'
 import { useRandomColor } from '../../utils/useColor'
-const { posts } = usePostData()
-const { category } = useCategory()
-const { tags } = useTags()
+import { useBlogCategory, useBlogType } from 'vuepress-plugin-blog2/lib/client'
 const themeData: any = useThemeData()
 const frontmatter = usePageFrontmatter()
+const category = useBlogCategory('category')
+const tag = useBlogCategory('tag')
+const post = useBlogType('article')
 </script>

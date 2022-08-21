@@ -5,9 +5,9 @@
     <!--文章日期 -->
     <Icon icon="FieldTimeOutlined" :text="formatDateValue(page.frontmatter.date)" v-if="formatDateValue(page.frontmatter.date)" class="text-[#7F7F7F] text-[13px] mr-[1rem]"> </Icon>
     <!-- 分类 -->
-    <Icon icon="AppstoreOutlined" :text="page.frontmatter.categories" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="page.frontmatter.categories"></Icon>
+    <Icon icon="AppstoreOutlined" :text="page.frontmatter.category" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="page.frontmatter.category"></Icon>
     <!-- 标签 -->
-    <Icon icon="TagsOutlined" :text="page.frontmatter.tags" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="page.frontmatter.tags"></Icon>
+    <Icon icon="TagsOutlined" :text="page.frontmatter.tag" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="page.frontmatter.tag"></Icon>
     <!-- 字数 -->
     <Icon icon="ReadOutlined" :text="timeAndWord.words" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="timeAndWord.words"></Icon>
     <!-- 阅读时间 -->

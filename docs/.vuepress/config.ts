@@ -1,7 +1,7 @@
 import { AnyForkTheme } from "./theme";
 import { defineUserConfig } from "vuepress";
 import { viteBundler } from "@vuepress/bundler-vite";
-import { navbar, plugins, sidebar } from './config/index'
+import { navbar, plugins, sidebar, firendLink } from './config/index'
 import { AnyForkThemeOptions } from "./theme/types/theme";
 import { path } from '@vuepress/utils'
 export default defineUserConfig({
@@ -50,20 +50,7 @@ export default defineUserConfig({
       { icon: 'GoogleCircleFilled', link: 'https://anyFork.gitee.io/blog-docs/' }
     ],
     //友情链接
-    friendLink: [
-      {
-        title: 'vuepress 2.X',
-        link: 'https://v2.vuepress.vuejs.org/zh/'
-      },
-      {
-        title: 'vuepress-theme-reco 2.x',
-        link: 'http://v2.vuepress-reco.recoluan.com/'
-      },
-      {
-        title: 'TypeScript中文文档',
-        link: 'https://ts.yayujs.com/'
-      }
-    ],
+    friendLink: firendLink,
     colorMode: "auto",
     //侧边栏深度
     sidebarDepth: 3,

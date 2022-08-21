@@ -11,10 +11,12 @@ export const AnyForkTheme = (options: AnyForkThemeOptions): Theme => {
       '@theme/Home.vue': path.resolve(__dirname, './components/Home.vue'),
       '@theme/NavbarItems.vue': path.resolve(__dirname, './components/NavbarItems.vue'),
       '@theme/HomeFooter.vue': path.resolve(__dirname, './components/HomeFooter.vue'),
-      // '@theme/AutoLink.vue': path.resolve(__dirname, './components/AutoLink.vue')
     },
     layouts: {
       Layout: path.resolve(__dirname, './layouts/Layout.vue'),
+      Category: path.resolve(__dirname, "./layouts/Category.vue"),
+      Tag: path.resolve(__dirname, "./layouts/Tag.vue"),
+      Timeline: path.resolve(__dirname, "./layouts/Timeline.vue")
     }
   }
 }

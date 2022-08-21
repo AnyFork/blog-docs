@@ -1,7 +1,7 @@
 import { NavbarGroup, NavbarItem } from "vuepress";
 
 interface NavbarItems extends NavbarItem {
-    icon?:any
+    icon?: any
 }
 export const navbar: (NavbarItems | NavbarGroup | string)[] = [
     {
@@ -11,13 +11,18 @@ export const navbar: (NavbarItems | NavbarGroup | string)[] = [
     },
     {
         text: '分类',
-        link: '/category',
+        link: '/category/',
         icon: 'AppstoreOutlined'
     },
     {
         text: '标签',
-        link: '/tags',
+        link: '/tag/',
         icon: 'TagsOutlined'
+    },
+    {
+        text: '时间轴',
+        link: '/timeline/',
+        icon: 'ClockCircleTwotone'
     },
     // 控制元素何时被激活,最大深度2
     {
