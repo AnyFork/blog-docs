@@ -1,2 +1,1 @@
-var bg3 = "/blog-docs/assets/bg3.415b52e9.jpg";
-export { bg3 as default };
+var s="/blog-docs/assets/bg3.415b52e9.jpg";export{s as default};
