@@ -16,7 +16,6 @@ import BlogSider from '../components/Blog/BlogSider.vue'
 import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 import { computed, reactive } from 'vue'
 const articles = useBlogType('article')
-console.log(articles.value.items)
 const pages = reactive({
   pageTotal: articles.value.items.length,
   pageNumber: 1,

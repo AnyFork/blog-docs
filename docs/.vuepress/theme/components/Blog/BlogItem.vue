@@ -22,7 +22,7 @@
         <img :src="page.data.frontmatter.image ? page.data.frontmatter.image : withBase('/images/index/bg1.jpg')" class="w-full h-full scale-100 transition-transform duration-[.6s]" />
       </div>
     </div>
-    <div class="toTop absolute top-[10px] right-[10px] z-0">
+    <div class="toTop absolute top-[10px] right-[10px] z-0" v-if="page.data.frontmatter.sticky">
       <Icon icon="VerticalAlignTopOutlined" :iconSize="28" iconColor="#fff"> </Icon>
     </div>
     <BlogItemInfo :page="page.data"></BlogItemInfo>

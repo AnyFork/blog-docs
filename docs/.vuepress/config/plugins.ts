@@ -14,6 +14,8 @@ import { kanBanNiang } from '@anyfork/vuepress-plugin-kan-ban-niang-next'
 import { ribbon } from '@anyfork/vuepress-plugin-ribbon-next'
 import { sakura } from '@anyfork/vuepress-plugin-sakura-next'
 import { blogPlugin } from "vuepress-plugin-blog2";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { commentPlugin } from "vuepress-plugin-comment2";
 import { path } from '@vuepress/utils'
 
 export const plugins = [
@@ -151,7 +153,7 @@ export const plugins = [
         sakura_zindex: 1,
         sakura_img: '/blog-docs/images/blue.png'
     }),
-    //博客插件
+    //博客插件,https://vuepress-theme-hope.github.io/v2/blog/zh/guide.html
     blogPlugin({
         // 页面过滤器，此函数用于鉴别页面是否作为文章。
         filter: ({ filePathRelative }) => filePathRelative ? filePathRelative?.startsWith("posts/") : false,
@@ -187,7 +189,7 @@ export const plugins = [
         type: [
             {
                 key: "article",
-                // remove archive articles
+                //需要过滤的条件
                 filter: (page) => !page.frontmatter.archive,
                 path: "/article/",
                 layout: "Layout",
@@ -195,34 +197,48 @@ export const plugins = [
                 // sort pages with time and sticky
                 sorter: (pageA, pageB) => {
                     if (pageA.frontmatter.sticky && pageB.frontmatter.sticky)
-                        return pageB.frontmatter.sticky - pageA.frontmatter.sticky;
+                        return pageA.frontmatter.sticky as number - (pageB.frontmatter.sticky as number);
                     if (pageA.frontmatter.sticky && !pageB.frontmatter.sticky)
                         return -1;
-
                     if (!pageA.frontmatter.sticky && pageB.frontmatter.sticky) return 1;
-
                     if (!pageB.frontmatter.date) return 1;
                     if (!pageA.frontmatter.date) return -1;
-
                     return (
-                        new Date(pageB.frontmatter.date).getTime() -
-                        new Date(pageA.frontmatter.date).getTime()
+                        new Date(pageB.frontmatter.date).getTime() - new Date(pageA.frontmatter.date).getTime()
                     );
                 },
             },
             {
                 key: "timeline",
                 // only article with date should be added to timeline
-                filter: (page) => page.frontmatter.date,
+                filter: (page) => page.frontmatter.date ? true : false,
                 // sort pages with time
-                sorter: (pageA, pageB) =>
-                    new Date(pageB.frontmatter.date).getTime() -
-                    new Date(pageA.frontmatter.date).getTime(),
+                sorter: (pageA, pageB) => new Date(pageB.frontmatter.date as string).getTime() - new Date(pageA.frontmatter.date as string).getTime(),
                 path: "/timeline/",
                 layout: "Timeline",
                 frontmatter: () => ({ title: "Timeline", sidebar: false }),
             },
         ],
         hotReload: true,
+    }),
+    //markdown 增强插件，https://vuepress-theme-hope.github.io/v2/md-enhance/zh/guide/
+    mdEnhancePlugin({
+        // 启用自定义容器
+        container: true
+    }),
+    //giscus评论插件,https://vuepress-theme-hope.github.io/v2/comment/zh/config/giscus.html
+    commentPlugin({
+        provider: 'Giscus',
+        comment: true,
+        //仓库名称
+        repo: 'AnyFork/blog-docs',
+        //仓库id
+        repoId: 'R_kgDOG0MPtA',
+        //分类类型
+        category: 'Announcements',
+        //分类id
+        categoryId: 'DIC_kwDOG0MPtM4CQ_kf',
+        //页面 ↔️ discussion 映射关系
+        mapping: 'og:title'
     })
 ]

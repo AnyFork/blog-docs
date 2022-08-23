@@ -2,10 +2,19 @@
   <ParentLayout>
     <template #page>
       <main class="page">
-        <div class="pt-[20px] w-[var(--content-width)] my-0 mx-auto">
-          <h1 class="timeline-title">时间轴</h1>
-          <BlogItem v-for="(item, index) in blogData" :page="item.info" :position="index % 2 == 0 ? 'left' : 'right'" :key="index" />
-          <Pagination :pageTotal="pages.pageTotal" :pageNumber="pages.pageNumber" :pageSize="pages.pageSize" @click="getBack"> </Pagination>
+        <div class="mt-[40px] w-[var(--content-width)] my-0 mx-auto relative ul-item">
+          <h3 class="title relative pl-[1.2rem]">时间轴</h3>
+          <ul class="relative mt-[50px]">
+            <li v-for="(item, index) in timelineData" :key="index">
+              <h3 class="point relative">{{ item.year }}</h3>
+              <ul class="pl-0">
+                <li v-for="{ info, path } in item.value" class="relative">
+                  <span class="point mr-[10px]">{{ dateFormat(info.data.frontmatter.date) }}</span>
+                  <span class="hover:text-[#3eaf7c] cursor-pointer" @click="$router.push(path)">{{ info.data.title }}</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </main>
     </template>
@@ -14,25 +23,71 @@
 <script setup lang="ts">
 import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 import ParentLayout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
-import BlogItem from '../components/Blog/BlogItem.vue'
-import { computed, reactive } from 'vue'
+import { computed } from 'vue'
+import { dateFormat } from '../utils'
 const timelines = useBlogType('timeline')
-console.log(timelines)
-const pages = reactive({
-  pageTotal: timelines.value.items?.length || 0,
-  pageNumber: 1,
-  pageSize: 10
+const timelineData: any = computed(() => {
+  const items = timelines.value.items
+  const objData: Record<string, Array<unknown>> = {}
+  let objArray: Array<Record<string, unknown>> = []
+  items.forEach((item: any) => {
+    const date = item.info.data.frontmatter?.date
+    if (date) {
+      const year = dateFormat(date, 'year')
+      objData[year] ? objData[year].push(item) : (objData[year] = [item])
+    }
+  })
+  Object.keys(objData).forEach((item) => {
+    objArray.unshift({ year: item, value: objData[item] })
+  })
+  return objArray
 })
-const blogData = computed(() => timelines.value.items?.slice((pages.pageNumber - 1) * pages.pageSize, pages.pageNumber * pages.pageSize))
-const getBack = (value: { page: number; pageSize: number }) => {
-  const { page, pageSize } = value
-  pages.pageNumber = page
-  pages.pageSize = pageSize
-}
+console.log(timelineData.value)
 </script>
-<style lang="scss">
-.timeline-title {
-  padding: 0;
-  text-align: center;
+<style lang="css" scoped>
+ul {
+  list-style: none;
+}
+li {
+  border-bottom: 1px dashed #e4e0e0a3;
+}
+.ul-item::after {
+  content: ' ';
+  position: absolute;
+  top: 14px;
+  left: 0;
+  z-index: -1;
+  margin-left: -2px;
+  width: 2px;
+  height: 100%;
+  background: #eee;
+}
+.title:before {
+  content: ' ';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  margin-left: -6px;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  left: 0px;
+}
+.point::before {
+  content: ' ';
+  position: absolute;
+  z-index: 2;
+  left: -20px;
+  top: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 </style>

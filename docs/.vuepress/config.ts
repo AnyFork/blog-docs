@@ -43,7 +43,7 @@ export default defineUserConfig({
     //是否启用 贡献者列表
     contributors: true,
     //贡献者列表 标签的文字
-    contributorsText: '小紫念沁',
+    contributorsText: '贡献者',
     //信息栏展示社交信息
     socialLinks: [
       { icon: 'GithubOutlined', link: 'https://anyFork.github.io/blog-docs/' },
@@ -82,11 +82,5 @@ export default defineUserConfig({
   }),
   //注册插件
   plugins: plugins,
-  //定义全局常量
-  define: (app) => {
-    return {
-      POSTS: app.pages,
-    };
-  },
   clientConfigFile: path.resolve(__dirname, './client.ts'),
 });

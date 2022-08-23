@@ -34,15 +34,4 @@ declare namespace Blog {
         /**是否显示首页气泡 */
         bubbles: boolean
     }
-
-    /**分类*/
-    interface category {
-        name: string
-        path: Array<Page>
-    }
-    /**标签*/
-    interface tag {
-        name: string
-        path: Array<Page>
-    }
 }

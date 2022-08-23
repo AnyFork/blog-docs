@@ -9,6 +9,9 @@
         <BlogItemInfo :page="page"></BlogItemInfo>
       </div>
     </template>
+    <template #page-bottom>
+      <CommentService />
+    </template>
   </ParentLayout>
 </template>
 
