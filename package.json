@@ -4,7 +4,7 @@
   "description": "基于vuepress2.X开发的博客系统",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build"
+    "build": "vuepress build docs"
   },
   "keywords": [],
   "author": "",
