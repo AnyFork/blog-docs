@@ -75,6 +75,18 @@ body {
   margin: 0px auto;
 }
 
+//所有段落下面的图片居中
+p > img {
+  display: block;
+  margin: 0px auto;
+}
+//page页面增加box-shadow
+.page .theme-default-content {
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
 //左侧sider激活样式
 .active {
   background-color: #3eaf7c1a;
@@ -137,3 +149,4 @@ h1:focus {
 }
 @import 'common';
 @import 'tailwind';
+@import 'container';

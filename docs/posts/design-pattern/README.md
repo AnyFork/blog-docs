@@ -1,5 +1,5 @@
 ---
-title: 'Java 23种设计模式'
+title: Java 23种设计模式
 description: 'Java 23种设计模式,设计模式，Java'
 date: 2022-8-19 21:55:00
 sidebar: 'auto'
@@ -7,6 +7,7 @@ tag:
   - 设计模式
 category:
   - java
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208242030437.jpg
 ---
 
 软件设计模式（Software Design Pattern），又称设计模式，是一套被反复使用、多数人知晓的、经过分类编目的、代码设计经验的总结。它描述了在软件设计过程中的一些不断重复发生的问题，以及该问题的解决方案。也就是说，它是解决特定问题的一系列套路，是前辈们的代码设计经验的总结，具有一定的普遍性，可以反复使用。

@@ -1,12 +1,15 @@
 ---
 title: 朋友圈
 date: 2022-02-14 15:34:34
+description: 收集vuepress搭建的博客链接形成朋友圈
 lang: zh-CN
 tag:
   - 其他
 category:
   - 其他
 ---
+
+本栏目只要收集一些基于 vuepress 搭建的高质量的博客友情站点链接，用于相互参考，借鉴和学习，部分网站需要翻墙才能访问，同时也欢迎新朋友加入。
 
 <!-- more -->
 
@@ -82,7 +85,7 @@ category:
   textColor: 'rgb(102 48 72)'
 - name: 山海以南
   link: https://mu-yan.cn/
-  avatar: https://cdn.jsdelivr.net/gh/Mu-Yan/Mu-Yan.github.io/avatar.jpg
+  avatar: https://cdn.staticaly.com/gh/Mu-Yan/Mu-Yan.github.io/avatar.jpg
   desc: 己所不欲勿施于人
   bgColor: rgb(213 136 216);
   textColor: 'rgb(102 48 72)'
@@ -106,7 +109,7 @@ category:
   textColor: 'rgb(102 48 72)'
 - name: 小紫念沁
   desc: 不积跬步,无以至千里.不积小流,无以成江海
-  avatar: https://anyfork.gitee.io/blog-docs/images/user.jpg
+  avatar: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208241822713.png
   link: https://anyfork.gitee.io/blog-docs/
   bgColor: rgb(218 88 88 / 62%)
   textColor: rgb(5 41 14 / 75%)

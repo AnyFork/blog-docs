@@ -5,7 +5,7 @@ description: html绕开防盗链方法
 tag:
   - 其他
 category:
-  - 其他
+  - 盗链
 image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021637553.jpg
 ---
 

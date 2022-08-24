@@ -50,9 +50,9 @@
       <div class="w-full">
         <Icon icon="TagsOutlined" text="标签列表" :textSize="15" class="dark:hover:text-[#fff]" />
       </div>
-      <RouterLink v-for="({ items, path }, name) in tag.map" :key="name" :to="path" class="shadow-item flex items-center text-[#666] px-[14px] my-[5px] font-normal h-[30px] bg-[#fff] hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]">
-        <span class="text-[13px]">{{ name }}</span>
-        <span class="ml-[10px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ items.length }}</span>
+      <RouterLink v-for="({ items, path }, name) in tag.map" :key="name" :to="path" class="shadow-item flex items-center text-[#666] px-[8px] my-[5px] font-normal h-[30px] bg-[#fff] hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]">
+        <span class="text-[11px]">{{ name }}</span>
+        <span class="ml-[5px] w-[1rem] h-[1rem] leading-[1rem] text-center text-[9px] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ items.length }}</span>
       </RouterLink>
     </div>
     <!--友情链接-->

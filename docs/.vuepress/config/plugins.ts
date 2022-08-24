@@ -16,6 +16,8 @@ import { sakura } from '@anyfork/vuepress-plugin-sakura-next'
 import { blogPlugin } from "vuepress-plugin-blog2";
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { commentPlugin } from "vuepress-plugin-comment2";
+import { containerPlugin } from '@vuepress/plugin-container'
+import { resolveContainerOptions } from './container'
 import { path } from '@vuepress/utils'
 
 export const plugins = [
@@ -224,7 +226,11 @@ export const plugins = [
     //markdown 增强插件，https://vuepress-theme-hope.github.io/v2/md-enhance/zh/guide/
     mdEnhancePlugin({
         // 启用自定义容器
-        container: true
+        container: true,
+        // 启用导入支持
+        include: true,
+        // 启用代码演示
+        demo: true,
     }),
     //giscus评论插件,https://vuepress-theme-hope.github.io/v2/comment/zh/config/giscus.html
     commentPlugin({
@@ -240,5 +246,9 @@ export const plugins = [
         categoryId: 'DIC_kwDOG0MPtM4CQ_kf',
         //页面 ↔️ discussion 映射关系
         mapping: 'og:title'
-    })
+    }),
+    //自定义容器cardList
+    containerPlugin(resolveContainerOptions('cardList')),
+    //自定义容器cardImgList
+    containerPlugin(resolveContainerOptions('cardImgList'))
 ]

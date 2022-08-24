@@ -1,20 +1,22 @@
 ---
 title: 工具资源网站
 date: 2022-02-12 22:07:35
+description: 公共资源链接，工具资源网站
 tag:
   - 其他
 category:
-  - 其他
+  - 网络资源
 image: https://pic.netbian.com/uploads/allimg/211120/005250-1637340770973a.jpg
 ---
 
-&emsp;收集了各种网络资源和在线工具链接，包含 4k 高清图片,音乐,美文，网站链接等资源链接信息,以备日后使用方便查询！👍
+&emsp;本栏目主要收集了各种网络资源和在线工具链接，包含 4k 高清图片,音乐,美文，网站链接等资源链接信息,以备日后使用方便快速查询查询！👍
 
 <!-- more -->
 
 ## 工具类
 
-- [SCSS 在线转 CSS](https://www.sassmeister.com/): 在线 scss 转 css 网站。
+- [SCSS 在线转 CSS](https://www.sassmeister.com/): 在线 Scss 转 css 网站。
+- [Stylus 在线转 CSS](https://www.cssportal.com/stylus-to-css/): 在线 Stylus 转 css 网站。
 - [100 素材网](http://www.100sucai.com/): 各种在线素材资源，css3 动画特效，swiper 幻灯片以及各种前端特效模板。
 
 ## 图片类
@@ -47,6 +49,9 @@ image: https://pic.netbian.com/uploads/allimg/211120/005250-1637340770973a.jpg
 - [爱客来博客](https://coder.itclan.cn/):一款综合性博客。
 - [TypeScript 中文手册](https://bosens-china.github.io/Typescript-manual/): TypeScript 中文手册
 - [CSS Tricks](https://qishaoxuan.github.io/css_tricks/): 一款前端特效及其 css 文档。
+- [vuepress-theme-hope@2.X](https://vuepress-theme-hope.github.io/v2/zh/guide/): vuepress-theme-hope主题中文官网地址。
+- [vuepress-plugin-hope](https://vuepress-theme-hope.github.io/v2/zh/config/plugins/intro.html): vuepress-plugin-hope插件地址。
+- [vuepress-theme-hope](https://mrhope.site/): vuepress-theme-home主题网站示例地址。
 
 ## 系统类
 
