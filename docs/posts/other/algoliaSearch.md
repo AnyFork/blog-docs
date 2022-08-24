@@ -1,6 +1,6 @@
 ---
 title: VuePress博客优化之开启Algolia全文搜索
-date: 2022-07-21 9:07:35
+date: 2022-07-22 9:07:35
 description: VuePress博客优化之开启Algolia全文搜索
 tag:
   - Algolia
