@@ -1,1 +1,0 @@
-import{_ as t,f as n,g as o}from"./app.5b1b97da.js";const r=n({__name:"404",setup(s){return o(()=>{const e=document.createElement("script");e.setAttribute("src","//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"),document.body.append(e)}),(e,c)=>null}});var a=t(r,[["__file","404.vue"]]);export{a as default};
