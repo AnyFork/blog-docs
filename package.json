@@ -26,6 +26,7 @@
     "js-yaml": "^4.1.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
+    "vite-plugin-compression": "^0.5.1",
     "vuepress": "2.0.0-beta.49",
     "vuepress-plugin-blog2": "^2.0.0-beta.91",
     "vuepress-plugin-comment2": "^2.0.0-beta.91",
