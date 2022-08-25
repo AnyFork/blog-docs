@@ -84,23 +84,7 @@ export default defineUserConfig({
       //打包配置
       build: {
         //配置超过1000kb经过提醒
-        chunkSizeWarningLimit: 3000,
-        rollupOptions: {
-          output: {
-            chunkFileNames: 'static/js/[name]-[hash].js',
-            entryFileNames: 'static/js/[name]-[hash].js',
-            assetFileNames: 'static/[ext]/[name]-[hash].[ext]',
-          }
-        },
-        minify: 'terser',
-        terserOptions: {
-          compress: {
-            //禁用debugger
-            drop_debugger: true,
-            //禁用console
-            drop_console: true
-          }
-        }
+        chunkSizeWarningLimit: 3000
       }
     }
   }),
