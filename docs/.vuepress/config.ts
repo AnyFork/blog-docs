@@ -4,7 +4,6 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { navbar, plugins, sidebar, firendLink } from './config/index'
 import { AnyForkThemeOptions } from "./theme/types/theme";
 import { path } from '@vuepress/utils'
-import viteCompression from 'vite-plugin-compression'
 export default defineUserConfig({
   //站点根路径,默认配置/
   base: "/blog-docs/",
@@ -74,13 +73,6 @@ export default defineUserConfig({
           plugins: [require("tailwindcss")({}), require("autoprefixer")({})],
         },
       },
-      plugins: [viteCompression({
-        verbose: true,
-        disable: false,
-        threshold: 10240,
-        algorithm: 'gzip',
-        ext: '.gz'
-      })],
       //打包配置
       build: {
         //配置超过1000kb经过提醒
