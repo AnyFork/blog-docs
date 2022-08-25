@@ -76,7 +76,13 @@ export default defineUserConfig({
       //打包配置
       build: {
         //配置超过1000kb经过提醒
-        chunkSizeWarningLimit: 3000
+        chunkSizeWarningLimit: 3000,
+        rollupOptions: {
+          output: {
+            chunkFileNames: 'assets/js/[name].js',
+            entryFileNames: 'assets/js/[name].js',
+          }
+        }
       }
     }
   }),
