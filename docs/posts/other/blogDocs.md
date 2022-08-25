@@ -5,7 +5,7 @@ description: 从零开始搭建一个基于vuepress2.X版本的Markdown博客文
 lang: zh-CN
 tag:
   - 博客
-categoy:
+category:
   - 运维
 image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208231513291.png
 sidebar: 'auto'
@@ -524,8 +524,7 @@ npm run docs:dev
 
   3、`cardList`配置
 
-  ```md
-
+  ````md
   ::: cardList 3
 
       ```yaml
@@ -550,12 +549,11 @@ npm run docs:dev
       ```
 
   :::
-  ```
+  ````
 
   4、`cardImgList`配置方式
 
-  ```md
-
+  ````md
   ::: cardImgList 2
 
       ```yaml
@@ -576,9 +574,9 @@ npm run docs:dev
         name: VuePress 官方社区
         desc: 官网更多优秀的插件
       ```
-  :::
 
-  ```
+  :::
+  ````
 
 ## 三 插件安装
 
@@ -1412,6 +1410,56 @@ module.exports = {
 
 ## 四 项目部署
 
+`vuepress`项目和普通 vue 都属于单页面应用，项目打包部署方式也一致，可以采用本地部署，也可以采用云服务器进行部署。下面总结 2 种部署方式：
+- 1 本地 nginx 部署静态文件 。
+- 2 通过`Gitee Actions`实现自动部署到`Github Pages`和`Gitee Pages`。
+
+::: warning
+1、如果项目设置了`base`,不可直接在本地开启一个服务器(eg:http-server)进行部署，需要通过 nginx 服务器进行反向代理。
+
+2、如果项目没有设置`base`,可以通过本地静态服务器或 nginx 服务器进行代理。
+
+3、`base`类型: string,默认值: /,部署站点的基础路径，如果你想让你的网站部署到一个子路径下，你将需要设置它。如 Github pages，如果你想将你的网站部署到 https://foo.github.io/bar/，那么 base 应该被设置成 “/bar/”，它的值应当总是以斜杠开始，并以斜杠结束。base 将会自动地作为前缀插入到所有以 / 开始的其他选项的链接中，所以你只需要指定一次。
+:::
+
+### 1 nginx 服务器部署
+
+- `base`为`/`时，相应的 nginx 配置十分简单，直接指定端口如下面示例的 8080，并指定 root 路径（即 build 后放在服务器的路径）nginx.conf 配置如下：
+
+  ```conf
+  server {
+    listen 8080;
+    location / {
+        root /root/doc/dist;
+        try_files $uri $uri/ /index.html;
+        index index.html index.htm;
+      }
+  }
+  ```
+- `base`为`/blog-docs`时，比如本站，配置的为/blog-docs，配置也很简单，只需要上面的location由/改为/blog-docs/，注意最后一个斜杠。nginx.conf 配置如下：
+  ```conf
+  server {
+    listen 80;
+    server_name localhost;    
+    client_max_body_size 20m;
+    charset utf-8;		
+      #配置了转发
+    location /blog-docs/ {
+      proxy_pass http://localhost:8081/;
+    }          
+  }
+  #在8081上起了vuepress
+  server {
+    listen 8081;
+    location / {
+        root /root/doc/dist;
+        try_files $uri $uri/ /index.html;
+        index index.html index.htm;
+    }
+  }
+  ```
+### 2 部署在`Github Pages`和`Gitee Pages`
+
 &emsp;项目采用`Github Pages`和`Gitee Pages`方式进行代理部署，依靠`Github`强大的工作流机制实现自动编译打包部署。大致部署流程：本地通过 git 提交源代码，`Github Actions`触发工作流`workflows`实现分支代码检出，依赖安装，打包编译，创建`gh-pages`分支，上传`dist`编译后代码到`gh-pages`，`gh-pages`分支部署到``Github Pages`，同步`Github`仓库代码至`Giee`,`Gitee Pages`部署。上述流程实现了自动编译部署和`github`代码同步部署至`gitee`。
 
-具体实现方式，请参考[GitHub Actions 自动部署 GitHub Pages 并同步 Gitee Pages](./githubPages.md)
+具体实现方式，请参考：[GitHub Actions 自动部署 GitHub Pages 并同步 Gitee Pages](./githubPages.md)

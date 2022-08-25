@@ -1,9 +1,15 @@
 <template>
-  <a :href="link" :target="target" v-if="link || text" class="inline-flex items-center !text-[color:var(--c-text)]">
+  <div class="icon-link inline-flex items-center !text-[color:var(--c-text)]" v-if="!type">
+    <a :href="link" :target="target" v-if="link || text" class="inline-flex items-center !text-[color:var(--c-text)]">
+      <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+      <span class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </span>
+    </a>
+    <component v-else :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+  </div>
+  <span v-else class="icon-router-link inline-flex items-center !text-[color:var(--c-text)]">
     <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
-    <span class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </span>
-  </a>
-  <component v-else :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+    <router-link :to="transformPath(item)" class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </router-link>
+  </span>
 </template>
 
 <script setup lang="ts">
@@ -20,6 +26,7 @@ const props = withDefaults(
     textSize?: number
     link?: string
     target?: string
+    type?: string
   }>(),
   {
     iconColor: 'inherit',
@@ -37,4 +44,9 @@ const textStyle = computed(() => {
   return { color: textColor.value, fontSize: `${textSize.value}px` }
 })
 const textRef = computed(() => (typeof props.text == 'string' ? [props.text] : props.text))
+//路径转换
+const transformPath=(text:string) =>{
+  const newPath=text.toLowerCase().split(' ').join('-')
+  return `/${props.type}/${newPath}`
+}
 </script>

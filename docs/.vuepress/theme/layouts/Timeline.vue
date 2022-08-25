@@ -42,7 +42,6 @@ const timelineData: any = computed(() => {
   })
   return objArray
 })
-console.log(timelineData.value)
 </script>
 <style lang="css" scoped>
 ul {

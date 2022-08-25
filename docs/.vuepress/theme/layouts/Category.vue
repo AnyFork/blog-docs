@@ -32,7 +32,6 @@ import { useRoute, useRouter } from 'vue-router'
 const categoryMap = useBlogCategory('category')
 const route = useRoute()
 const router = useRouter()
-console.log(route)
 const pages = reactive({
   pageTotal: categoryMap.value.currentItems?.length || 0,
   pageNumber: 1,
