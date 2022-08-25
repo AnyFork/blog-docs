@@ -18,6 +18,7 @@ import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 import { commentPlugin } from "vuepress-plugin-comment2";
 import { containerPlugin } from '@vuepress/plugin-container'
 import { resolveContainerOptions } from './container'
+import { loadingPage } from '@anyfork/vuepress-plugin-loading-page-next'
 import { path } from '@vuepress/utils'
 
 export const plugins = [
@@ -250,5 +251,7 @@ export const plugins = [
     //自定义容器cardList
     containerPlugin(resolveContainerOptions('cardList')),
     //自定义容器cardImgList
-    containerPlugin(resolveContainerOptions('cardImgList'))
+    containerPlugin(resolveContainerOptions('cardImgList')),
+    //loading插件
+    loadingPage()
 ]
