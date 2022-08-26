@@ -49,3 +49,9 @@ watch(
   { immediate: true }
 )
 </script>
+<style scoped>
+.router-link-exact-active {
+  background: #3eaf7c;
+}
+</style>
+

@@ -17,7 +17,7 @@ export const AnyForkTheme = (options: AnyForkThemeOptions): Theme => {
       Category: path.resolve(__dirname, "./layouts/Category.vue"),
       Tag: path.resolve(__dirname, "./layouts/Tag.vue"),
       Timeline: path.resolve(__dirname, "./layouts/Timeline.vue"),
-      404: path.resolve(__dirname,'./layouts/404.vue')
+      404: path.resolve(__dirname, './layouts/404.vue')
     }
   }
 }

@@ -1,14 +1,14 @@
 <template>
   <ParentLayout>
     <template #page>
-      <main class="page">
+      <main class="page h-screen">
         <div class="mt-[40px] w-[var(--content-width)] my-0 mx-auto relative ul-item">
           <h3 class="title relative pl-[1.2rem]">时间轴</h3>
           <ul class="relative mt-[50px]">
-            <li v-for="(item, index) in timelineData" :key="index" class="leading-[40px]">
+            <li v-for="(item, index) in timelineData" :key="index" class="leading-[50px]">
               <h3 class="point relative">{{ item.year }}</h3>
               <ul class="pl-0">
-                <li v-for="{ info, path } in item.value" class="relative leading-[40px]">
+                <li v-for="{ info, path } in item.value" class="relative leading-[50px]">
                   <span class="point mr-[10px]">{{ dateFormat(info.data.frontmatter.date) }}</span>
                   <span class="hover:text-[#3eaf7c] cursor-pointer" @click="$router.push(path)">{{ info.data.title }}</span>
                 </li>

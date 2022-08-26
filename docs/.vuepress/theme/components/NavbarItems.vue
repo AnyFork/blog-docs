@@ -140,7 +140,7 @@ const navbarLinks: any = computed(() => [...navbarConfig.value, ...navbarSelectL
                     <Icon :icon="item.icon" iconColor="#000"></Icon>
                 </template>
             </AutoLink>
-            <AutoLink v-else :item="item"></AutoLink>
+            <AutoLink v-else :item="item" class="!text-[#000]"></AutoLink>
         </div>
     </nav>
 </template>

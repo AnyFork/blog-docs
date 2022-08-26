@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full pb-[100px] rounded px-[15px] dark:bg-[#181818] bg-[#fff] shadow-box cursor-pointer border-box">
+  <div class="w-full pb-[100px] rounded px-[15px] dark:bg-[#181818] bg-[#fff] shadow-box cursor-pointer border-box sticky top-[70px]">
     <div class="w-full flex flex-wrap items-center justify-center">
       <img class="rounded-[50%] h-[6rem] w-[6rem] mt-[2rem] mb-[1rem] inline-block" v-if="themeData.authorAvatar" :src="withBase(themeData.authorAvatar)" alt="author-avatar" />
       <h3 class="block w-full text-center m-0 font-[500]" v-if="themeData.author">{{ themeData.author }}</h3>

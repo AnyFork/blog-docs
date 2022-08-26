@@ -9,7 +9,7 @@
               v-for="({ items, path }, name) in categoryMap.map"
               :key="name"
               :to="path"
-              class="shadow-item flex items-center text-[#666] px-[14px] font-normal h-[50px] bg-[#fff] hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]"
+              class="shadow-item flex items-center text-[#666] px-[14px] font-normal h-[50px]  hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]"
             >
               <span>{{ name }}</span>
               <span class="ml-[10px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ items.length }}</span>
@@ -54,3 +54,8 @@ watch(
   { immediate: true }
 )
 </script>
+<style scoped>
+.router-link-exact-active {
+  background: #3eaf7c;
+}
+</style>

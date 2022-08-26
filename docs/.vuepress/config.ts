@@ -79,6 +79,7 @@ export default defineUserConfig({
         chunkSizeWarningLimit: 3000,
         rollupOptions: {
           output: {
+            //处理gh-pages因hash打包存在旧文件问题。
             chunkFileNames: 'assets/js/[name].js',
             entryFileNames: 'assets/js/[name].js',
           }
