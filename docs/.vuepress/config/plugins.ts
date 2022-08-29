@@ -233,20 +233,12 @@ export const plugins = [
         // 启用代码演示
         demo: true,
     }),
-    //giscus评论插件,https://vuepress-theme-hope.github.io/v2/comment/zh/config/giscus.html
+    //Waline评论插件,https://vuepress-theme-hope.github.io/v2/comment/zh/config/giscus.html
     commentPlugin({
-        provider: 'Giscus',
-        comment: true,
-        //仓库名称
-        repo: 'AnyFork/blog-docs',
-        //仓库id
-        repoId: 'R_kgDOG0MPtA',
-        //分类类型
-        category: 'Announcements',
-        //分类id
-        categoryId: 'DIC_kwDOG0MPtM4CQ_kf',
-        //页面 ↔️ discussion 映射关系
-        mapping: 'og:title'
+        provider: 'Waline',
+        serverURL: 'https://blog-comment-g01ppb2pa-anyfork.vercel.app',
+        //是否开启访问量
+        pageview: true
     }),
     //自定义容器cardList
     containerPlugin(resolveContainerOptions('cardList')),

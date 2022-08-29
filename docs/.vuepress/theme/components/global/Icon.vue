@@ -5,6 +5,7 @@
       <span class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </span>
     </a>
     <component v-else :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+    <slot></slot>
   </div>
   <span v-else class="icon-router-link inline-flex items-center !text-[color:var(--c-text)]">
     <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
@@ -45,8 +46,8 @@ const textStyle = computed(() => {
 })
 const textRef = computed(() => (typeof props.text == 'string' ? [props.text] : props.text))
 //路径转换
-const transformPath=(text:string) =>{
-  const newPath=text.toLowerCase().split(' ').join('-')
+const transformPath = (text: string) => {
+  const newPath = text.toLowerCase().split(' ').join('-')
   return `/${props.type}/${newPath}`
 }
 </script>

@@ -15,6 +15,7 @@ import BlogItem from '../components/Blog/BlogItem.vue'
 import BlogSider from '../components/Blog/BlogSider.vue'
 import { useBlogType } from 'vuepress-plugin-blog2/lib/client'
 import { computed, reactive } from 'vue'
+import { useCount } from '../composables'
 const articles = useBlogType('article')
 const pages = reactive({
   pageTotal: articles.value.items.length,
@@ -27,4 +28,6 @@ const getBack = (value: { page: number; pageSize: number }) => {
   pages.pageNumber = page
   pages.pageSize = pageSize
 }
+//触发首页浏览量统计
+useCount(false)
 </script>

@@ -12,6 +12,10 @@
     <Icon icon="ReadOutlined" :text="timeAndWord.words" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="timeAndWord.words"></Icon>
     <!-- 阅读时间 -->
     <Icon icon="HourglassOutlined" :text="timeAndWord.minutes" class="text-[#7F7F7F] text-[13px] mr-[1rem]" v-if="timeAndWord.minutes"></Icon>
+    <!-- 浏览量-->
+    <Icon icon="FireOutlined" class="text-[#7F7F7F] text-[13px] mr-[1rem]">
+      <span class="waline-pageview-count" :data-path="page.path" style="padding-left: 5px"></span>
+    </Icon>
   </div>
 </template>
 <script setup lang="ts">
