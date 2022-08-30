@@ -4,7 +4,7 @@ export const useCount = (updateFlag: boolean = true): void => {
     onMounted(() => {
         setTimeout(() => {
             pageviewCount({
-                serverURL: 'https://blog-comment-g01ppb2pa-anyfork.vercel.app',
+                serverURL: 'https://blog-comment-h7jb2h47f-anyfork.vercel.app',
                 update: updateFlag
             });
         }, 500);
