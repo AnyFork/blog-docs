@@ -13,7 +13,7 @@
     "@anyfork/vuepress-plugin-bgm-player-next": "^0.1.3",
     "@anyfork/vuepress-plugin-cursor-effects-next": "^0.1.2",
     "@anyfork/vuepress-plugin-dynamic-title-next": "^0.1.4",
-    "@anyfork/vuepress-plugin-kan-ban-niang-next": "^0.1.2",
+    "@anyfork/vuepress-plugin-kan-ban-niang-next": "^0.1.3",
     "@anyfork/vuepress-plugin-loading-page-next": "^0.1.3",
     "@anyfork/vuepress-plugin-ribbon-next": "^0.1.2",
     "@anyfork/vuepress-plugin-sakura-next": "^0.1.2",

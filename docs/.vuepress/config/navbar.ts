@@ -30,9 +30,9 @@ export const navbar: (NavbarItems | NavbarGroup | string)[] = [
         children: [
             {
                 text: 'Java设计模式',
-                link: '/design-pattern/',
+                link: '/posts/design-pattern/',
                 //该元素将一直处于激活状态
-                activeMatch: '/design-pattern/',
+                activeMatch: '/posts/design-pattern/',
             }
         ],
     },

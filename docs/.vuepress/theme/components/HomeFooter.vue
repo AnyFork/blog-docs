@@ -4,8 +4,8 @@
     <Icon icon="SafetyCertificateOutlined" text="陕ICP备17067667号-1" :textSize="15" class="mr-[30px]" />
     <Icon icon="CopyrightCircleOutlined" text="小紫念沁 2022" :textSize="15" class="mr-[30px]" />
     <!-- 浏览量-->
-    <Icon icon="EyeOutlined" class="text-[#7F7F7F] text-[13px] mr-[1rem]">
-      <span class="waline-pageview-count" data-path="/blog-docs/"></span>
+    <Icon icon="FireOutlined" class="text-[#7F7F7F] text-[13px] mr-[1rem]">
+      <span class="waline-pageview-count" data-path="/" style="padding-left: 5px"></span>
     </Icon>
   </div>
 </template>

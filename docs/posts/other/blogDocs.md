@@ -960,17 +960,19 @@ module.exports = {
 
 - 更多详细配置，请参考[copyCode](https://vuepress-theme-hope.github.io/v2/copy-code/zh/config.html)官网配置。
 
-### 8 Giscus 评论插件<Badge type="tip" text="Hope插件" vertical="top" />
+### 8 Waline 评论插件<Badge type="tip" text="Hope插件" vertical="top" />
 
 ::: tip
 1、`Hope插件`指`vuepress-theme-hope`主题作者开发的插件库。
 
 2、`Hope插件`官网地址：<https://vuepress-theme-hope.github.io/v2/zh/config/plugins/intro.html>
 
-3、`Giscus插件`Giscus 是一个基于 GitHub Discussion 的评论系统，启用简便。详情参考：<https://vuepress-theme-hope.github.io/v2/comment/zh/guide/giscus.html>
+3、`Giscus插件`Giscus 是一个基于 GitHub Discussion 的评论系统，启用简便。详情参考：<https://vuepress-theme-hope.github.io/v2/comment/zh/guide/giscus.html>,原本博主采用的是`Giscus`作为评论插件，但发现其没有浏览量统计功能，后采用`Waline`插件，不仅具有评论功能，还能进行浏览量统计。
+
+4、`Waline插件`是对`valine插件`的封装，增加了服务端功能，解决了`valine`数据不安全问题，同时也具备`valine`一切功能。可以使用 hope 插件用法，单页面集成好了浏览量功能，通过寻找默认类选择器`waline-pageview-count`进行数据自动填充，但对于首页列表未实现浏览量功能，如果需要，自行实现即可。插件配置地址：<https://vuepress-theme-hope.github.io/v2/comment/zh/config/waline.html>,亦可单独使用，详见[waline 官网](https://waline.js.org/guide/get-started.html)。
 :::
 
-- [Giscus](https://vuepress-theme-hope.github.io/v2/comment/zh/guide/giscus.html)插件依赖安装和插件配置：
+- [Waline](https://vuepress-theme-hope.github.io/v2/comment/zh/config/waline.html)插件依赖安装和插件配置：
 - 安装依赖
 
 <CodeGroup>
@@ -998,41 +1000,32 @@ pnpm add -D vuepress-plugin-comment2@next
 
 </CodeGroup>
 
-- 准备工作
-
-  - 1 你需要创建一个公开仓库，并开启评论区，以作为评论存放的地点
-  - 2 你需要安装[Giscus App](https://github.com/apps/giscus)，使其有权限访问对应仓库。
-  - 3 在完成以上步骤后，请前往[Giscus](https://giscus.app/zh-CN) 页面 获得你的设置。
-    你只需要填写仓库和 Discussion 分类，之后滚动到页面下部的 “启用 giscus” 部分，获取 data-repo, data-repo-id, data-category 和 data-category-id 这四个属性。
-
 - 插件配置
 
-  请将 `data-repo`, `data-repo-id`, `data-category` 和 `data-category-id` 作为插件选项传入 `repo`, `repoId`, `category categoryId`
+:::tip
+1、可以按照`hope`插件配置流程进行配置，采用`waline`官方默认的`LeanCloud `数据库和`Vercel`服务端部署方式。博主尝试过国内效果不太好，不开梯子情况下`Vercel`服务端地址无法访问，于是便放弃了。
+
+2、按照[waline 官网](https://waline.js.org/guide/get-started.html#leancloud-%E8%AE%BE%E7%BD%AE-%E6%95%B0%E6%8D%AE%E5%BA%93)服务端部署方式进行服务端部署。各种方式都尝试了一下,结果如下：1 腾讯云云函数计算今年 8 月开始收费，最低每月 19.9，放弃了。2 百度云按照官网流程部署，程序报错，依赖版本问题，便放弃了。3 阿里云部署成功了，云函数计算每月 100 万免费次数，可以尝试，但服务 url 需要自定义域名进行映射，不然没法直接使用，会直接下载 html，需要有阿里云域名或者说阿里云服务器，博主没有阿里云服务器便放弃了。上面的方式阿里云最合适，有条件的小伙伴可以尝试。
+
+3、博主推荐通过自己部署`waline`服务器的方式，主要原因是：部署简单，灵活，访问速度更快，还能自定义数据库，前提是自己要有云服务器和域名。详细部署方式参考官网[独立部署](https://waline.js.org/guide/server/vps-deploy.html)或者[Waline 服务端独立部署解决方案](https://www.tj520.top/views/articles/back-end/waline-service.html)。按照上述操作即可，只需要配置好数据库环境变量，上线部署即可。
+:::
 
 ```js
 import { commentPlugin } from 'vuepress-plugin-comment2'
 module.exports = {
   plugins: [
-    //giscus评论插件,https://vuepress-theme-hope.github.io/v2/comment/zh/config/giscus.html
     commentPlugin({
-      provider: 'Giscus',
-      comment: true,
-      //仓库名称
-      repo: 'AnyFork/blog-docs',
-      //仓库id
-      repoId: 'R_kgDOG0MPtA',
-      //分类类型
-      category: 'Announcements',
-      //分类id
-      categoryId: 'DIC_kwDOG0MPtM4CQ_kf',
-      //页面 ↔️ discussion 映射关系
-      mapping: 'og:title'
+      provider: 'Waline',
+      //独立部署的waline服务器访问地址
+      serverURL: 'XXXX',
+      //是否开启访问量
+      pageview: true
     })
   ]
 }
 ```
 
-- 更多详细配置，请参考[Giscus](https://vuepress-theme-hope.github.io/v2/comment/zh/config/giscus.html)官网配置。
+- 更多详细配置，请参考[Waline](https://waline.js.org/guide/get-started.html#leancloud-%E8%AE%BE%E7%BD%AE-%E6%95%B0%E6%8D%AE%E5%BA%93)官网配置。
 
 ### 9 Markdown 语法扩展插件<Badge type="tip" text="Hope插件" vertical="top" />
 
@@ -1411,6 +1404,7 @@ module.exports = {
 ## 四 项目部署
 
 `vuepress`项目和普通 vue 都属于单页面应用，项目打包部署方式也一致，可以采用本地部署，也可以采用云服务器进行部署。下面总结 2 种部署方式：
+
 - 1 本地 nginx 部署静态文件 。
 - 2 通过`Gitee Actions`实现自动部署到`Github Pages`和`Gitee Pages`。
 
@@ -1436,17 +1430,18 @@ module.exports = {
       }
   }
   ```
-- `base`为`/blog-docs`时，比如本站，配置的为/blog-docs，配置也很简单，只需要上面的location由/改为/blog-docs/，注意最后一个斜杠。nginx.conf 配置如下：
+
+- `base`为`/blog-docs`时，比如本站，配置的为/blog-docs，配置也很简单，只需要上面的 location 由/改为/blog-docs/，注意最后一个斜杠。nginx.conf 配置如下：
   ```conf
   server {
     listen 80;
-    server_name localhost;    
+    server_name localhost;
     client_max_body_size 20m;
-    charset utf-8;		
+    charset utf-8;
       #配置了转发
     location /blog-docs/ {
       proxy_pass http://localhost:8081/;
-    }          
+    }
   }
   #在8081上起了vuepress
   server {
@@ -1458,6 +1453,7 @@ module.exports = {
     }
   }
   ```
+
 ### 2 部署在`Github Pages`和`Gitee Pages`
 
 &emsp;项目采用`Github Pages`和`Gitee Pages`方式进行代理部署，依靠`Github`强大的工作流机制实现自动编译打包部署。大致部署流程：本地通过 git 提交源代码，`Github Actions`触发工作流`workflows`实现分支代码检出，依赖安装，打包编译，创建`gh-pages`分支，上传`dist`编译后代码到`gh-pages`，`gh-pages`分支部署到``Github Pages`，同步`Github`仓库代码至`Giee`,`Gitee Pages`部署。上述流程实现了自动编译部署和`github`代码同步部署至`gitee`。
