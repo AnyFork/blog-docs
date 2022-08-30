@@ -48,7 +48,7 @@ export default defineUserConfig({
     socialLinks: [
       { icon: 'GithubOutlined', link: 'https://anyFork.github.io/blog-docs/' },
       { icon: 'GoogleCircleFilled', link: 'https://anyFork.gitee.io/blog-docs/' },
-      { icon: 'CloudOutlined', link: 'https://www.anyfrok.top/' },
+      { icon: 'CloudOutlined', link: 'https://www.anyfork.top/' },
     ],
     //友情链接
     friendLink: firendLink,
