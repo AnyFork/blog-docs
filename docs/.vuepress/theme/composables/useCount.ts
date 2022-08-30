@@ -4,7 +4,7 @@ export const useCount = (updateFlag: boolean = true): void => {
     onMounted(() => {
         setTimeout(() => {
             pageviewCount({
-                serverURL: 'http://43.143.18.120:8848/',
+                serverURL: 'https://anyfork.top/',
                 update: updateFlag
             });
         }, 500);
