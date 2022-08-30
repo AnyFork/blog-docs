@@ -58,16 +58,16 @@ export const plugins = [
     readingTimePlugin({}),
     // seo插件，https://vuepress-theme-hope.github.io/v2/seo/
     seoPlugin({
-        hostname: 'https://anyfork.github.io/',
+        hostname: 'https://www.anyfork.top',
         author: {
             name: '小紫念沁',
-            url: 'https://anyfork.github.io/blog-docs/'
+            url: 'https://www.anyfork.top'
         }
     }),
     // siteMap站点地图插件，https://vuepress-theme-hope.github.io/v2/sitemap/zh/config.html
     sitemapPlugin({
-        hostname: 'https://anyfork.github.io/blog-docs/',
-        extraUrls: ['https://anyfork.gitee.io/blog-docs/']
+        hostname: 'https://www.anyfork.top',
+        extraUrls: ['https://anyfork.gitee.io/blog-docs/', 'https://anyfork.github.io/blog-docs/']
     }),
     //代码复制插件，https://vuepress-theme-hope.github.io/v2/copy-code/zh/
     copyCodePlugin({
@@ -81,7 +81,7 @@ export const plugins = [
     }),
     //复制加版权插件，https://vuepress-theme-hope.github.io/v2/copyright/zh/config.html
     copyrightPlugin({
-        hostname: 'https://anyfork.github.io/blog-docs/',
+        hostname: 'https://www.anyfork.top',
         author: "小紫念沁",
         global: true
     }),
@@ -91,20 +91,20 @@ export const plugins = [
             {
                 name: '卡农',
                 artist: '卡农钢琴版',
-                url: '/blog-docs/music/canon/canon.mp3',
-                cover: '/blog-docs/music/canon/canon.jpg'
+                url: '/music/canon/canon.mp3',
+                cover: '/music/canon/canon.jpg'
             },
             {
                 name: '风居住的街道',
                 artist: '风居住的街道 钢琴版 - 钢琴曲',
-                url: '/blog-docs/music/wind/wind.mp3',
-                cover: '/blog-docs/music/wind/wind.jpg'
+                url: '/music/wind/wind.mp3',
+                cover: '/music/wind/wind.jpg'
             },
             {
                 name: '夜的钢琴曲',
                 artist: '夜的钢琴曲五 - 石进',
-                url: '/blog-docs/music/night/night.mp3',
-                cover: '/blog-docs/music/night/night.jpg'
+                url: '/music/night/night.mp3',
+                cover: '/music/night/night.jpg'
             }
         ],
         autoShrink: true,
@@ -154,7 +154,7 @@ export const plugins = [
     //樱花特效
     sakura({
         sakura_zindex: 1,
-        sakura_img: '/blog-docs/images/blue.png'
+        sakura_img: '/images/blue.png'
     }),
     //博客插件,https://vuepress-theme-hope.github.io/v2/blog/zh/guide.html
     blogPlugin({
@@ -236,7 +236,7 @@ export const plugins = [
     //Waline评论插件,https://vuepress-theme-hope.github.io/v2/comment/zh/config/giscus.html
     commentPlugin({
         provider: 'Waline',
-        serverURL: 'https://blog-comment-h7jb2h47f-anyfork.vercel.app',
+        serverURL: 'http://43.143.18.120:8848/',
         //是否开启访问量
         pageview: true
     }),

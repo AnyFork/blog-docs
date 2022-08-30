@@ -4,9 +4,9 @@ export const useCount = (updateFlag: boolean = true): void => {
     onMounted(() => {
         setTimeout(() => {
             pageviewCount({
-                serverURL: 'https://blog-comment-h7jb2h47f-anyfork.vercel.app',
+                serverURL: 'http://43.143.18.120:8848/',
                 update: updateFlag
             });
         }, 500);
     })
-}
+}  
