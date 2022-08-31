@@ -1007,7 +1007,7 @@ pnpm add -D vuepress-plugin-comment2@next
 
 2、按照[waline 官网](https://waline.js.org/guide/get-started.html#leancloud-%E8%AE%BE%E7%BD%AE-%E6%95%B0%E6%8D%AE%E5%BA%93)服务端部署方式进行服务端部署。各种方式都尝试了一下,结果如下：1 腾讯云云函数计算今年 8 月开始收费，最低每月 19.9，放弃了。2 百度云按照官网流程部署，程序报错，依赖版本问题，便放弃了。3 阿里云部署成功了，云函数计算每月 100 万免费次数，可以尝试，但服务 url 需要自定义域名进行映射，不然没法直接使用，会直接下载 html，需要有阿里云域名或者说阿里云服务器，博主没有阿里云服务器便放弃了。上面的方式阿里云最合适，有条件的小伙伴可以尝试。
 
-3、博主推荐通过自己部署`waline`服务器的方式，主要原因是：部署简单，灵活，访问速度更快，还能自定义数据库，前提是自己要有云服务器和域名。详细部署方式参考官网[独立部署](https://waline.js.org/guide/server/vps-deploy.html)或者[Waline 服务端独立部署解决方案](https://www.tj520.top/views/articles/back-end/waline-service.html)。按照上述操作即可，只需要配置好数据库环境变量，上线部署即可。
+3、博主推荐通过自己部署`waline`服务器的方式，主要原因是：部署简单，灵活，访问速度更快，还能自定义数据库，前提是自己要有云服务器和域名。详细部署方式参考官网[独立部署](https://waline.js.org/guide/server/vps-deploy.html)或者[Waline 服务端独立部署解决方案](./walineServer.md)。按照上述操作即可，只需要配置好数据库环境变量，上线部署即可。
 :::
 
 ```js

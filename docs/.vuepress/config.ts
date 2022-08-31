@@ -15,8 +15,6 @@ export default defineUserConfig({
   head: [
     ["link", { rel: "shortcut icon", type: "image/x-icon", href: "/blog-docs/favicon.ico" }],
     ["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
-    //关闭referrer,防止第三方图片因防盗链无法显示问题。
-    ["meta", { name: "referrer", content: "never" }],
     ["link", { rel: "manifest", href: "/blog-docs/manifest.json" }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/blog-docs/js/jquery.min.js' }],
