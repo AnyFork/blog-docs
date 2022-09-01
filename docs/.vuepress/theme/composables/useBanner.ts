@@ -1,6 +1,7 @@
 const modules = import.meta.glob("../../public/images/index/*.jpg");
 import { usePageFrontmatter, PageFrontmatterRef, withBase } from "@vuepress/client";
-import { onMounted, onUnmounted, nextTick } from 'vue';
+import { onMounted, onUnmounted, nextTick, reactive, watch } from 'vue';
+import { isMobile } from '../utils'
 export const useBanner = () => {
     const frontmatter = usePageFrontmatter() as PageFrontmatterRef<Blog.Home>;
     let fx: any
@@ -11,12 +12,12 @@ export const useBanner = () => {
         needDefaultImages = true,
         heroText,
         tagline,
-        bgImageStyle = { height: '550px', color: '#fff' },
+        bgImageStyle,
         showArrow = true,
         bubbles = true,
     } = frontmatter.value;
     /**banner组件参数 */
-    const bannerOptions = {
+    const bannerOptions = reactive({
         bgImageSec,
         isBgImagetrigger,
         showArrow,
@@ -24,7 +25,7 @@ export const useBanner = () => {
         heroText,
         bgImageStyle,
         bubbles
-    };
+    });
     /**获取指定文件夹下面的图片 */
     const getPublicImages = () => {
         const imageArray: Array<string> = [];
@@ -56,6 +57,10 @@ export const useBanner = () => {
             ? Array.from(new Set(imageArray.concat(mixImageArray)))
             : imageArray;
     };
+    //监听页面宽度变化，动态调整banner高度
+    watch(isMobile, (newValue, oldValue) => {
+        bannerOptions.bgImageStyle = newValue ? { color: '#fff' } : { height: '550px', color: '#fff' }
+    }, { immediate: true })
 
     onMounted(() => {
         nextTick(() => {

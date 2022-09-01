@@ -1,61 +1,19 @@
 body {
   background-image: url('/images/bg.gif') !important;
 }
+.theme-container {
+  .sidebar {
+    z-index: 200;
+  }
+}
 
-.typed-cursor {
-  font-size: 2.3rem;
-}
-.anchor-down {
-  display: block;
-  width: 15px;
-  height: 15px;
-  font-size: 30px;
-  text-align: center;
-  animation: bounce-in 5s 3s infinite;
-  position: absolute;
-  left: 50%;
-  bottom: -50%;
-  margin-left: -10px;
-  cursor: pointer;
-  z-index: 10000;
-}
-@-webkit-keyframes bounce-in {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  80% {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(0);
+//手机隐藏雪花效果
+@media (max-width: 640px) {
+  .Sakura {
+    display: none;
   }
 }
-.anchor-down::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-  transform: rotate(135deg);
-  position: absolute;
-  bottom: 10px;
-}
-.anchor-down::after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-  transform: rotate(135deg);
-}
+
 .navbar {
   backdrop-filter: saturate(180%) blur(5px);
   background: rgba(255, 255, 255, 0.6);
