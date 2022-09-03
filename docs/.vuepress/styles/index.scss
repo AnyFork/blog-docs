@@ -14,15 +14,6 @@ body {
     display: none;
   }
 }
-.anchor-down::after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-  transform: rotate(135deg);
-}
 
 .navbar {
   backdrop-filter: saturate(180%) blur(5px);

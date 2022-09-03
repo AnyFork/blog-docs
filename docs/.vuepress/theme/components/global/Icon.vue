@@ -1,17 +1,17 @@
 <template>
-  <div class="icon-link inline-flex items-center !text-[color:var(--c-text)]" v-if="!type">
-    <a :href="link" :target="target" v-if="link || text" class="inline-flex items-center !text-[color:var(--c-text)]">
+  <div class="icon-link inline-flex items-center" v-if="!type">
+    <a :href="link" :target="target" v-if="link || text" class="inline-flex items-center" style="color: inherit">
       <client-only>
         <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
       </client-only>
-      <span class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </span>
+      <span class="sm:ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </span>
     </a>
     <client-only v-else>
       <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
     </client-only>
     <slot></slot>
   </div>
-  <span v-else class="icon-router-link inline-flex items-center !text-[color:var(--c-text)]">
+  <span v-else class="icon-router-link inline-flex items-center">
     <client-only>
       <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
     </client-only>
