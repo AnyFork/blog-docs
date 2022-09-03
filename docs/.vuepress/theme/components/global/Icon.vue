@@ -1,14 +1,20 @@
 <template>
   <div class="icon-link inline-flex items-center !text-[color:var(--c-text)]" v-if="!type">
     <a :href="link" :target="target" v-if="link || text" class="inline-flex items-center !text-[color:var(--c-text)]">
-      <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+      <client-only>
+        <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+      </client-only>
       <span class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </span>
     </a>
-    <component v-else :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+    <client-only v-else>
+      <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+    </client-only>
     <slot></slot>
   </div>
   <span v-else class="icon-router-link inline-flex items-center !text-[color:var(--c-text)]">
-    <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+    <client-only>
+      <component :is="icons[icon]" :key="icon" :style="iconStyle"></component>
+    </client-only>
     <router-link :to="transformPath(item)" class="ml-[5px]" v-if="text && text.length > 0" v-for="(item, index) in textRef" :key="index" :style="textStyle">{{ item }} </router-link>
   </span>
 </template>

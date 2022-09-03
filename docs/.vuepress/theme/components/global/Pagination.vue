@@ -1,33 +1,33 @@
 <template>
-    <div class="w-full flex items-center justify-center" v-if="pageTotal > 10">
-        <Paginate v-model="pageNumber" :page-count="pageCount" :prev-text="'上一页'" :next-text="'下一页'"
-            :container-class="'pagination'" :page-class="'page-item'" :page-range="3" :margin-pages="3"
-            :hide-prev-next="true">
-        </Paginate>
-        <div class="my-[20px] flex ml-[50px]">
+  <div class="w-full flex items-center justify-center flex-wrap" v-if="pageTotal > props.pageSize">
+    <Paginate v-model="pageNumber" :page-count="pageTotal" :prev-text="!isMobile ? '上一页' : 'pre'" :next-text="!isMobile ? '下一页' : 'last'" :container-class="'pagination'" :page-class="'page-item'" :page-range="3" :margin-pages="3" :hide-prev-next="true"> </Paginate>
+    <div class="sm:my-[20px] flex items-center sm:ml-[50px]" :style="isMobile ? { fontSize: '10px' } : ''">
             <span>跳至: <input type="text" v-model="jumpPageNumber" class="w-5 h-[20px]" /></span>
-            <span>每页:
+      <span
+        >每页:
                 <select v-model="pageSize" class="h-[25px]">
                     <option :value="10">10</option>
                     <option :value="15">15</option>
                     <option :value="20">20</option>
                 </select>
-                条</span>
-            <span>共: {{ props.pageTotal }}条</span>
+        条</span
+      >
+      <span>共:{{ props.pageTotal }}条</span>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
-import Paginate from "vuejs-paginate-next";
+import { computed, ref, watch } from 'vue'
+import Paginate from 'vuejs-paginate-next'
+import { isMobile } from '../../utils'
 const props = defineProps<{
-    pageTotal: number,
-    pageNumber: number,
+  pageTotal: number
+  pageNumber: number
     pageSize: number
 }>()
 const emit = defineEmits<{
-    (e: 'click', value: { page: number, pageSize: number }): void
+  (e: 'click', value: { page: number; pageSize: number }): void
 }>()
 const clickEvent = (pageNumber: number, pageSize: number) => {
     emit('click', { page: pageNumber, pageSize: pageSize })
@@ -43,16 +43,23 @@ watch(jumpPageNumber, (newVal) => {
         }
     }
 })
-watch(() => props.pageNumber, (newVal) => {
-    (newVal + "") != jumpPageNumber.value ? jumpPageNumber.value = undefined : ''
+watch(
+  () => props.pageNumber,
+  (newVal) => {
+    newVal + '' != jumpPageNumber.value ? (jumpPageNumber.value = undefined) : ''
     newVal ? clickEvent(newVal, props.pageSize) : ''
-})
-watch(() => props.pageSize, (newVal) => {
+  }
+)
+watch(
+  () => props.pageSize,
+  (newVal) => {
     clickEvent(1, newVal)
-})
+  }
+)
 </script>
 
 <style lang="css">
+@media (min-width: 640px) {
 .pagination {
     display: inline-flex;
     padding-left: 0;
@@ -77,7 +84,33 @@ watch(() => props.pageSize, (newVal) => {
     padding: 0px 5px;
     outline: none;
 }
+}
+@media (max-width: 640px) {
+  .pagination {
+    display: inline-flex;
+    padding-left: 0;
+    border-radius: 4px;
+    list-style: none;
+    justify-content: center;
+    line-height: inherit;
+  }
 
+  .page-item {
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(175, 174, 174);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .page-link {
+    color: var(--c-text) !important;
+    padding: 0px 5px;
+    outline: none;
+  }
+}
 .active {
     background-color: var(--c-text-accent);
 }

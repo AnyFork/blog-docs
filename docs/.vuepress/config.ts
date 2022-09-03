@@ -4,6 +4,10 @@ import { viteBundler } from "@vuepress/bundler-vite";
 import { navbar, plugins, sidebar, firendLink } from './config/index'
 import { AnyForkThemeOptions } from "./theme/types/theme";
 import { path } from '@vuepress/utils'
+//打包文件大小分析插件
+import { visualizer } from 'rollup-plugin-visualizer';
+//打包压缩插件
+import viteCompression from 'vite-plugin-compression';
 export default defineUserConfig({
   //站点根路径,默认配置/
   base: "/blog-docs/",
@@ -16,6 +20,8 @@ export default defineUserConfig({
     ["link", { rel: "shortcut icon", type: "image/x-icon", href: "/blog-docs/favicon.ico" }],
     ["meta", { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
     ["link", { rel: "manifest", href: "/blog-docs/manifest.json" }],
+    //关闭referrer,防止第三方图片因防盗链无法显示问题。
+    ["meta", { name: "referrer", content: "never" }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/blog-docs/js/jquery.min.js' }],
     ['script', { language: 'javascript', type: 'text/javascript', src: '/blog-docs/js/flux.min.js' }],
@@ -46,7 +52,7 @@ export default defineUserConfig({
     socialLinks: [
       { icon: 'GithubOutlined', link: 'https://anyFork.github.io/blog-docs/' },
       { icon: 'GoogleCircleFilled', link: 'https://anyFork.gitee.io/blog-docs/' },
-      { icon: 'CloudOutlined', link: 'https://www.anyfork.top' }
+      { icon: 'CloudOutlined', link: 'https://www.anyfork.top/' }
     ],
     //友情链接
     friendLink: firendLink,
@@ -72,15 +78,44 @@ export default defineUserConfig({
           plugins: [require("tailwindcss")({}), require("autoprefixer")({})],
         },
       },
+      plugins: [
+        visualizer({
+          open: false,
+          gzipSize: true,
+          brotliSize: true
+        }) as any,
+        viteCompression({
+          ext: ".gz",
+          algorithm: "gzip",
+          deleteOriginFile: false
+        })
+      ],
       //打包配置
       build: {
         //配置超过1000kb经过提醒
-        chunkSizeWarningLimit: 3000,
+        chunkSizeWarningLimit: 2000,
+        //如果设置为false，整个项目中的所有 CSS 将被提取到一个 CSS 文件中
+        cssCodeSplit: true,
         rollupOptions: {
           output: {
             //处理gh-pages因hash打包存在旧文件问题。
             chunkFileNames: 'assets/js/[name].js',
             entryFileNames: 'assets/js/[name].js',
+            inlineDynamicImports: false,
+            manualChunks(id) {
+              //vicons额外打包
+              if (id.includes('@vicons')) {
+                return "vicons";
+              }
+              //anyfork插件额外打包
+              if (id.includes('@anyfork')) {
+                return "anyfork";
+              }
+              //pagesRoutes 额外打包
+              if (id.endsWith('pagesRoutes.js')) {
+                return "pagesRoutes"
+              }
+            }
           }
         }
       }

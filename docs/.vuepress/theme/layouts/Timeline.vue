@@ -2,7 +2,7 @@
   <ParentLayout>
     <template #page>
       <main class="page h-screen">
-        <div class="mt-[40px] w-[var(--content-width)] my-0 mx-auto relative ul-item">
+        <div class="mt-[40px] sm:w-[var(--content-width)] my-0 relative ul-item mx-[15px] sm:mx-auto">
           <h3 class="title relative pl-[1.2rem]">时间轴</h3>
           <ul class="relative mt-[50px]">
             <li v-for="(item, index) in timelineData" :key="index" class="leading-[50px]">

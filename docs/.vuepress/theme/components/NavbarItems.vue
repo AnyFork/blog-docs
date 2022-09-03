@@ -134,13 +134,13 @@ const navbarLinks: any = computed(() => [...navbarConfig.value, ...navbarSelectL
 <template>
     <nav v-if="navbarLinks.length" class="navbar-items inline-flex items-center">
         <div v-for="item in navbarLinks" :key="item.text" class="navbar-item">
-            <NavbarDropdown v-if="item.children" :item="item" class="!flex !items-center"/>
-            <AutoLink v-else-if="item.icon" :item="item" class="!flex !items-center !text-[#000]">
+      <NavbarDropdown v-if="item.children" :item="item" class="!flex !items-center" />
+      <AutoLink v-else-if="item.icon" :item="item" class="!flex !items-center sm:!text-[#000]">
                 <template #before>
-                    <Icon :icon="item.icon" iconColor="#000"></Icon>
+          <Icon :icon="item.icon"></Icon>
                 </template>
             </AutoLink>
-            <AutoLink v-else :item="item" class="!text-[#000]"></AutoLink>
+      <AutoLink v-else :item="item" class="sm:!text-[#000]"></AutoLink>
         </div>
     </nav>
 </template>

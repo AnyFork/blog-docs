@@ -1,51 +1,18 @@
 body {
-  background-image: url('/blog-docs/images/bg.gif') !important;
+  background-image: url('/images/bg.gif') !important;
 }
 
-.typed-cursor {
-  font-size: 2.3rem;
-}
-.anchor-down {
-  display: block;
-  width: 15px;
-  height: 15px;
-  font-size: 30px;
-  text-align: center;
-  animation: bounce-in 5s 3s infinite;
-  position: absolute;
-  left: 50%;
-  bottom: -50%;
-  margin-left: -10px;
-  cursor: pointer;
-  z-index: 10000;
-}
-@-webkit-keyframes bounce-in {
-  0% {
-    transform: translateY(0);
-  }
-  20% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  80% {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(0);
+.theme-container {
+  .sidebar {
+    z-index: 200;
   }
 }
-.anchor-down::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  display: block;
-  border-right: 3px solid #fff;
-  border-top: 3px solid #fff;
-  transform: rotate(135deg);
-  position: absolute;
-  bottom: 10px;
+
+//手机隐藏雪花效果
+@media (max-width: 640px) {
+  .Sakura {
+    display: none;
+  }
 }
 .anchor-down::after {
   content: '';
@@ -56,6 +23,7 @@ body {
   border-top: 3px solid #fff;
   transform: rotate(135deg);
 }
+
 .navbar {
   backdrop-filter: saturate(180%) blur(5px);
   background: rgba(255, 255, 255, 0.6);
@@ -80,11 +48,14 @@ p > img {
   display: block;
   margin: 0px auto;
 }
+
 //page页面增加box-shadow
 .page .theme-default-content {
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 1rem 1.5rem;
   border-radius: 0.25rem;
+
+  //markdown中table居中
   & table {
     display: table;
     margin: 0px auto;
@@ -124,21 +95,26 @@ h1:focus {
     font-weight: 400;
     color: #000;
   }
+
   .navbar-dropdown-title {
     .title {
       color: #000;
     }
+
     .down {
       border-top: 6px solid #000;
     }
   }
+
   .toggle-color-mode-button {
     color: #000;
   }
 }
+
 .back-to-top {
   bottom: 4rem;
 }
+
 //复制插件图标颜色
 .copy-code-button {
   background: var(--c-text-accent) !important;
@@ -149,6 +125,7 @@ h1:focus {
   z-index: 10;
   width: 100%;
 }
+
 #bgCanvas {
   z-index: auto !important;
   background-color: initial !important;

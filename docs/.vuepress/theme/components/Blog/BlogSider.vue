@@ -31,7 +31,11 @@
     <div v-if="themeData.socialLinks" style="margin-top: 5px">
       <Icon icon="FolderOpenOutlined" text="博客地址" :textSize="15"></Icon>
       <div class="pt-2">
-        <Icon v-for="(item, index) in themeData.socialLinks" :key="index" :icon="item.icon" :iconSize="25" :iconColor="useRandomColor()" :link="item.link" target="_target" class="mx-2 hover:scale-110"></Icon>
+        <span v-for="(item, index) in themeData.socialLinks" :key="index">
+          <client-only>
+            <Icon :icon="item.icon" :link="item.link" target="_target" :iconSize="25" :iconColor="useRandomColor()" class="mx-2 hover:scale-110"></Icon>
+          </client-only>
+        </span>
       </div>
     </div>
     <hr />
@@ -40,7 +44,12 @@
       <div class="w-full">
         <Icon icon="AppstoreTwotone" text="分类列表" :textSize="15" class="dark:hover:text-[#fff]" />
       </div>
-      <RouterLink v-for="({ items, path }, name) in category.map" :key="name" :to="path" class="shadow-item w-full flex items-center justify-between text-[#666] px-[14px] my-[5px] font-normal h-[40px] bg-[#fff] hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]">
+      <RouterLink
+        v-for="({ items, path }, name) in category.map"
+        :key="name"
+        :to="path"
+        class="shadow-item w-full flex items-center justify-between text-[#666] px-[14px] my-[5px] font-normal h-[40px] bg-[#fff] hover:bg-[#3eaf7c] hover:text-[#fff] dark:bg-[#181818] dark:hover:bg-[#3eaf7c] dark:text-[#fff] rounded mx-[5px]"
+      >
         <span class="text-[13px]">{{ name }}</span>
         <span class="ml-[10px] w-[1.2rem] h-[1.2rem] leading-[1.2rem] text-center text-[.7rem] text-[#fff]" :style="{ 'background-color': useRandomColor() }"> {{ items.length }}</span>
       </RouterLink>
