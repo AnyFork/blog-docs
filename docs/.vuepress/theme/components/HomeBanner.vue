@@ -25,8 +25,8 @@
 <script setup lang="ts">
 import { useTyped, useBanner, useCircleMagic } from '../composables'
 const homeBanner = useBanner()
-const typed = useTyped()
-const circleMagic = useCircleMagic()
+useTyped()
+useCircleMagic()
 const mixImage = homeBanner.getRandomImage()
 const scrollFn = () => {
   // 获取窗口高度

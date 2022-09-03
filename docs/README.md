@@ -6,6 +6,9 @@ heroText:
   - 学习要有三心，一信心，二决心，三恒心
 #副标题
 tagline: 不积跬步,无以至千里.不积小流,无以成江海.
+#背景图片，可以为数组,可以为远程背景图片，图片资源网：https://pic.netbian.com/4kmeinv/
+bgImage:
+  - /images/index/bg8.jpg
 #背景图片切换时间间隔：默认4秒，单位毫秒
 bgImageSec: 10000
 #背景图片是否动态切换,默认true，false每次刷新会更换图片
