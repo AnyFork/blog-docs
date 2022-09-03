@@ -83,7 +83,6 @@ import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
 import { usePageFrontmatter, withBase } from '@vuepress/client'
 import { useRandomColor } from '../../utils/useColor'
 import { useBlogCategory, useBlogType } from 'vuepress-plugin-blog2/lib/client'
-import { onMounted } from 'vue'
 const themeData: any = useThemeData()
 const frontmatter = usePageFrontmatter()
 const category = useBlogCategory('category')

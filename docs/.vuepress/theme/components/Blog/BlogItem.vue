@@ -3,7 +3,7 @@
     <div v-if="!isMobile">
       <div class="left-box flex mt-[15px] items-center z-[300]" v-if="position == 'left'">
         <div class="img h-[200px] rounded-[8px] overflow-hidden flex-[0_0_50%]">
-          <img :src="page.data.frontmatter.image ? page.data.frontmatter.image : withBase('/images/index/bg1.jpg')" class="w-full h-full scale-100 transition-transform duration-[.6s]" />
+          <img :src="page.data.frontmatter.image ? page.data.frontmatter.image : withBase('/images/index/bg1.jpg')" class="w-full h-full scale-100 transition-transform duration-[.6s] sm:hover:scale-[1.5]" />
         </div>
         <div class="content flex-1 pl-[40px] flex flex-wrap m-0 px-[0.2rem] overflow-hidden">
           <div class="title w-full text-[1.28rem]">
@@ -20,7 +20,7 @@
           <div class="abstract w-full h-[180px] font-normal indent-6" v-html="page.data.excerpt"></div>
         </div>
         <div class="img h-[200px] rounded-[8px] overflow-hidden flex-[0_0_50%] mr-[1rem]">
-          <img :src="page.data.frontmatter.image ? page.data.frontmatter.image : withBase('/images/index/bg1.jpg')" class="w-full h-full scale-100 transition-transform duration-[.6s]" />
+          <img :src="page.data.frontmatter.image ? page.data.frontmatter.image : withBase('/images/index/bg1.jpg')" class="w-full h-full scale-100 transition-transform duration-[.6s] sm:hover:scale-[1.5]" />
         </div>
       </div>
     </div>
@@ -54,10 +54,6 @@ const props = defineProps<{
 
 <style lang="scss" scoped>
 .blog-item {
-  &:hover img {
-    transform: scale(1.5);
-  }
-
   .abstract {
     /**对象作为伸缩盒子模型展示**/
     display: -webkit-box;
