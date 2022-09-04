@@ -1,18 +1,18 @@
 <template>
   <div class="w-full flex items-center justify-center flex-wrap" v-if="pageTotal > props.pageSize">
-    <Paginate v-model="pageNumber" :page-count="pageTotal" :prev-text="!isMobile ? '上一页' : 'pre'" :next-text="!isMobile ? '下一页' : 'last'" :container-class="'pagination'" :page-class="'page-item'" :page-range="3" :margin-pages="3" :hide-prev-next="true"> </Paginate>
-    <div class="sm:my-[20px] flex items-center sm:ml-[50px]" :style="isMobile ? { fontSize: '10px' } : ''">
-      <span>跳至: <input type="text" v-model="jumpPageNumber" class="w-5 h-[20px]" /></span>
-      <span
-        >每页:
-        <select v-model="pageSize" class="h-[25px]">
+    <Paginate v-model="pageNumber" :page-count="pageCount" :prev-text="!isMobile ? '上一页' : 'Pre'" :next-text="!isMobile ? '下一页' : 'Next'" :container-class="'pagination'" :page-class="'page-item'" :page-range="3" :margin-pages="3" :hide-prev-next="true"> </Paginate>
+    <div class="sm:my-[20px] flex items-center sm:ml-[50px] leading-[25px]" :style="isMobile ? { fontSize: '10px' } : ''">
+      <div class="h-full pr-[5px]">跳至: <input type="text" v-model="jumpPageNumber" class="w-5 h-[15px]" /></div>
+      <div class="h-full pr-[5px]">
+        <span>每页：</span>
+        <select v-model="pageSize" class="h-[21px]">
           <option :value="10">10</option>
           <option :value="15">15</option>
           <option :value="20">20</option>
         </select>
-        条</span
-      >
-      <span>共:{{ props.pageTotal }}条</span>
+        <span>条</span>
+      </div>
+      <div class="h-full pr-[5px]">共：{{ props.pageTotal }}条</div>
     </div>
   </div>
 </template>
