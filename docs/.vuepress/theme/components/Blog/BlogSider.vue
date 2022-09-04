@@ -33,7 +33,7 @@
       <div class="pt-2">
         <span v-for="(item, index) in themeData.socialLinks" :key="index">
           <client-only>
-            <Icon :icon="item.icon" :link="item.link" target="_target" :iconSize="25" :iconColor="useRandomColor()" class="mx-2 hover:scale-110"></Icon>
+            <Icon :icon="item.icon" :link="item.link" target="_blank" :iconSize="25" :iconColor="useRandomColor()" class="mx-2 hover:scale-110"></Icon>
           </client-only>
         </span>
       </div>
