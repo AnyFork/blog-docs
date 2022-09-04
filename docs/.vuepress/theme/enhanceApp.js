@@ -17,4 +17,5 @@ export default ({ Vue, siteData, isServer, router }) => {
   Vue.component(Reward.name, Reward)
   interceptRouterError(router)
   fixRouterError404(router)
+  console.log(router)
 }

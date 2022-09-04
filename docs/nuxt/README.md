@@ -1,6 +1,6 @@
 ---
 title: Nuxt项目创建以及常见配置
-date: 2022-04-06 09:44:16
+date: 2019-04-06 09:44:16
 tags:
   - Nuxt
 categories:
