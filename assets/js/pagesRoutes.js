@@ -1,6 +1,6 @@
-const n=[["v-8daa1a0e","/",{title:""},["/index.html","/README.md"]],["v-db9b3b8e","/posts/design-pattern/",{_blog:{data:{key:"v-db9b3b8e",path:"/posts/design-pattern/",title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",lang:"zh-CN",frontmatter:{title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",description:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava",date:"2022-08-19T21:55:00.000Z",sidebar:"auto",tag:["\u8BBE\u8BA1\u6A21\u5F0F"],category:["java"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208242030437.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/design-pattern/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"og:description",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"article:published_time",content:"2022-08-19T21:55:00.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\uFF08Software Design Pattern\uFF09\uFF0C\u53C8\u79F0\u8BBE\u8BA1\u6A21\u5F0F\uFF0C\u662F\u4E00\u5957\u88AB\u53CD\u590D\u4F7F\u7528\u3001\u591A\u6570\u4EBA\u77E5\u6653\u7684\u3001\u7ECF\u8FC7\u5206\u7C7B\u7F16\u76EE\u7684\u3001\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\u3002\u5B83\u63CF\u8FF0\u4E86\u5728\u8F6F\u4EF6\u8BBE\u8BA1\u8FC7\u7A0B\u4E2D\u7684\u4E00\u4E9B\u4E0D\u65AD\u91CD\u590D\u53D1\u751F\u7684\u95EE\u9898\uFF0C\u4EE5\u53CA\u8BE5\u95EE\u9898\u7684\u89E3\u51B3\u65B9\u6848\u3002\u4E5F\u5C31\u662F\u8BF4\uFF0C\u5B83\u662F\u89E3\u51B3\u7279\u5B9A\u95EE\u9898\u7684\u4E00\u7CFB\u5217\u5957\u8DEF\uFF0C\u662F\u524D\u8F88\u4EEC\u7684\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\uFF0C\u5177\u6709\u4E00\u5B9A\u7684\u666E\u904D\u6027\uFF0C\u53EF\u4EE5\u53CD\u590D\u4F7F\u7528\u3002</p>
-`,headers:[{level:1,title:"1\uFF0C\u8BBE\u8BA1\u6A21\u5F0F\u6982\u8FF0",slug:"_1-\u8BBE\u8BA1\u6A21\u5F0F\u6982\u8FF0",children:[{level:2,title:"1.1 \u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u4EA7\u751F\u80CC\u666F",slug:"_1-1-\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u4EA7\u751F\u80CC\u666F",children:[]},{level:2,title:"1.2 \u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u6982\u5FF5",slug:"_1-2-\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u6982\u5FF5",children:[]},{level:2,title:"1.3 \u5B66\u4E60\u8BBE\u8BA1\u6A21\u5F0F\u7684\u5FC5\u8981\u6027",slug:"_1-3-\u5B66\u4E60\u8BBE\u8BA1\u6A21\u5F0F\u7684\u5FC5\u8981\u6027",children:[]},{level:2,title:"1.4 \u8BBE\u8BA1\u6A21\u5F0F\u5206\u7C7B",slug:"_1-4-\u8BBE\u8BA1\u6A21\u5F0F\u5206\u7C7B",children:[]}]},{level:1,title:"2\uFF0CUML \u56FE",slug:"_2-uml-\u56FE",children:[{level:2,title:"2.1 \u7C7B\u56FE\u6982\u8FF0",slug:"_2-1-\u7C7B\u56FE\u6982\u8FF0",children:[]},{level:2,title:"2.2 \u7C7B\u56FE\u7684\u4F5C\u7528",slug:"_2-2-\u7C7B\u56FE\u7684\u4F5C\u7528",children:[]},{level:2,title:"2.3 \u7C7B\u56FE\u8868\u793A\u6CD5",slug:"_2-3-\u7C7B\u56FE\u8868\u793A\u6CD5",children:[{level:3,title:"2.3.1 \u7C7B\u7684\u8868\u793A\u65B9\u5F0F",slug:"_2-3-1-\u7C7B\u7684\u8868\u793A\u65B9\u5F0F",children:[]},{level:3,title:"2.3.2 \u7C7B\u4E0E\u7C7B\u4E4B\u95F4\u5173\u7CFB\u7684\u8868\u793A\u65B9\u5F0F",slug:"_2-3-2-\u7C7B\u4E0E\u7C7B\u4E4B\u95F4\u5173\u7CFB\u7684\u8868\u793A\u65B9\u5F0F",children:[{level:4,title:"2.3.2.1 \u5173\u8054\u5173\u7CFB",slug:"_2-3-2-1-\u5173\u8054\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.2 \u805A\u5408\u5173\u7CFB",slug:"_2-3-2-2-\u805A\u5408\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.3 \u7EC4\u5408\u5173\u7CFB",slug:"_2-3-2-3-\u7EC4\u5408\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.4 \u4F9D\u8D56\u5173\u7CFB",slug:"_2-3-2-4-\u4F9D\u8D56\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.5 \u7EE7\u627F\u5173\u7CFB",slug:"_2-3-2-5-\u7EE7\u627F\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.6 \u5B9E\u73B0\u5173\u7CFB",slug:"_2-3-2-6-\u5B9E\u73B0\u5173\u7CFB",children:[]}]}]}]},{level:1,title:"3\uFF0C\u8F6F\u4EF6\u8BBE\u8BA1\u539F\u5219",slug:"_3-\u8F6F\u4EF6\u8BBE\u8BA1\u539F\u5219",children:[{level:2,title:"3.1 \u5F00\u95ED\u539F\u5219",slug:"_3-1-\u5F00\u95ED\u539F\u5219",children:[]},{level:2,title:"3.2 \u91CC\u6C0F\u4EE3\u6362\u539F\u5219",slug:"_3-2-\u91CC\u6C0F\u4EE3\u6362\u539F\u5219",children:[]},{level:2,title:"3.3 \u4F9D\u8D56\u5012\u8F6C\u539F\u5219",slug:"_3-3-\u4F9D\u8D56\u5012\u8F6C\u539F\u5219",children:[]},{level:2,title:"3.4 \u63A5\u53E3\u9694\u79BB\u539F\u5219",slug:"_3-4-\u63A5\u53E3\u9694\u79BB\u539F\u5219",children:[]},{level:2,title:"3.5 \u8FEA\u7C73\u7279\u6CD5\u5219",slug:"_3-5-\u8FEA\u7C73\u7279\u6CD5\u5219",children:[]},{level:2,title:"3.6 \u5408\u6210\u590D\u7528\u539F\u5219",slug:"_3-6-\u5408\u6210\u590D\u7528\u539F\u5219",children:[]}]},{level:1,title:"4\uFF0C\u521B\u5EFA\u8005\u6A21\u5F0F",slug:"_4-\u521B\u5EFA\u8005\u6A21\u5F0F",children:[{level:2,title:"4.1 \u5355\u4F8B\u8BBE\u8BA1\u6A21\u5F0F",slug:"_4-1-\u5355\u4F8B\u8BBE\u8BA1\u6A21\u5F0F",children:[{level:3,title:"4.1.1 \u5355\u4F8B\u6A21\u5F0F\u7684\u7ED3\u6784",slug:"_4-1-1-\u5355\u4F8B\u6A21\u5F0F\u7684\u7ED3\u6784",children:[]},{level:3,title:"4.1.2 \u5355\u4F8B\u6A21\u5F0F\u7684\u5B9E\u73B0",slug:"_4-1-2-\u5355\u4F8B\u6A21\u5F0F\u7684\u5B9E\u73B0",children:[]},{level:3,title:"4.1.3 \u5355\u4F8B\u6A21\u5F0F\u5B58\u5728\u7684\u95EE\u9898",slug:"_4-1-3-\u5355\u4F8B\u6A21\u5F0F\u5B58\u5728\u7684\u95EE\u9898",children:[{level:4,title:"4.1.3.1 \u95EE\u9898\u6F14\u793A",slug:"_4-1-3-1-\u95EE\u9898\u6F14\u793A",children:[]},{level:4,title:"4.1.3.2 \u95EE\u9898\u7684\u89E3\u51B3",slug:"_4-1-3-2-\u95EE\u9898\u7684\u89E3\u51B3",children:[]}]},{level:3,title:"4.1.4 JDK \u6E90\u7801\u89E3\u6790-Runtime \u7C7B",slug:"_4-1-4-jdk-\u6E90\u7801\u89E3\u6790-runtime-\u7C7B",children:[]}]},{level:2,title:"4.2 \u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-\u5DE5\u5382\u6A21\u5F0F",children:[{level:3,title:"4.2.1 \u6982\u8FF0",slug:"_4-2-1-\u6982\u8FF0",children:[]},{level:3,title:"4.2.2 \u7B80\u5355\u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-2-\u7B80\u5355\u5DE5\u5382\u6A21\u5F0F",children:[{level:4,title:"4.2.2.1 \u7ED3\u6784",slug:"_4-2-2-1-\u7ED3\u6784",children:[]},{level:4,title:"4.2.2.2 \u5B9E\u73B0",slug:"_4-2-2-2-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.2.4 \u4F18\u7F3A\u70B9",slug:"_4-2-2-4-\u4F18\u7F3A\u70B9",children:[]},{level:4,title:"4.2.2.3 \u6269\u5C55",slug:"_4-2-2-3-\u6269\u5C55",children:[]}]},{level:3,title:"4.2.3 \u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F",slug:"_4-2-3-\u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F",children:[{level:4,title:"4.2.3.1 \u6982\u5FF5",slug:"_4-2-3-1-\u6982\u5FF5",children:[]},{level:4,title:"4.2.3.2 \u7ED3\u6784",slug:"_4-2-3-2-\u7ED3\u6784",children:[]},{level:4,title:"4.2.3.3 \u5B9E\u73B0",slug:"_4-2-3-3-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.3.4 \u4F18\u7F3A\u70B9",slug:"_4-2-3-4-\u4F18\u7F3A\u70B9",children:[]}]},{level:3,title:"4.2.4 \u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-4-\u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F",children:[{level:4,title:"4.2.4.1 \u6982\u5FF5",slug:"_4-2-4-1-\u6982\u5FF5",children:[]},{level:4,title:"4.2.4.2 \u7ED3\u6784",slug:"_4-2-4-2-\u7ED3\u6784",children:[]},{level:4,title:"4.2.4.2 \u5B9E\u73B0",slug:"_4-2-4-2-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.4.3 \u4F18\u7F3A\u70B9",slug:"_4-2-4-3-\u4F18\u7F3A\u70B9",children:[]},{level:4,title:"4.2.4.4 \u4F7F\u7528\u573A\u666F",slug:"_4-2-4-4-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:3,title:"4.2.5 \u6A21\u5F0F\u6269\u5C55",slug:"_4-2-5-\u6A21\u5F0F\u6269\u5C55",children:[]},{level:3,title:"4.2.6 JDK \u6E90\u7801\u89E3\u6790-Collection.iterator \u65B9\u6CD5",slug:"_4-2-6-jdk-\u6E90\u7801\u89E3\u6790-collection-iterator-\u65B9\u6CD5",children:[]}]},{level:2,title:"4.3 \u539F\u578B\u6A21\u5F0F",slug:"_4-3-\u539F\u578B\u6A21\u5F0F",children:[{level:3,title:"4.3.1 \u6982\u8FF0",slug:"_4-3-1-\u6982\u8FF0",children:[]},{level:3,title:"4.3.2 \u7ED3\u6784",slug:"_4-3-2-\u7ED3\u6784",children:[]},{level:3,title:"4.3.3 \u5B9E\u73B0",slug:"_4-3-3-\u5B9E\u73B0",children:[]},{level:3,title:"4.3.4 \u6848\u4F8B",slug:"_4-3-4-\u6848\u4F8B",children:[]},{level:3,title:"4.3.5 \u4F7F\u7528\u573A\u666F",slug:"_4-3-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"4.3.6 \u6269\u5C55\uFF08\u6DF1\u514B\u9686\uFF09",slug:"_4-3-6-\u6269\u5C55-\u6DF1\u514B\u9686",children:[]}]},{level:2,title:"4.5 \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-5-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[{level:3,title:"4.4.1 \u6982\u8FF0",slug:"_4-4-1-\u6982\u8FF0",children:[]},{level:3,title:"4.4.2 \u7ED3\u6784",slug:"_4-4-2-\u7ED3\u6784",children:[]},{level:3,title:"4.4.3 \u5B9E\u4F8B",slug:"_4-4-3-\u5B9E\u4F8B",children:[]},{level:3,title:"4.4.4 \u4F18\u7F3A\u70B9",slug:"_4-4-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"4.4.5 \u4F7F\u7528\u573A\u666F",slug:"_4-4-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"4.4.6 \u6A21\u5F0F\u6269\u5C55",slug:"_4-4-6-\u6A21\u5F0F\u6269\u5C55",children:[]}]},{level:2,title:"4.6 \u521B\u5EFA\u8005\u6A21\u5F0F\u5BF9\u6BD4",slug:"_4-6-\u521B\u5EFA\u8005\u6A21\u5F0F\u5BF9\u6BD4",children:[{level:3,title:"4.6.1 \u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F VS \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-6-1-\u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F-vs-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[]},{level:3,title:"4.6.2 \u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F VS \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-6-2-\u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F-vs-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[]}]}]},{level:1,title:"5\uFF0C\u7ED3\u6784\u578B\u6A21\u5F0F",slug:"_5-\u7ED3\u6784\u578B\u6A21\u5F0F",children:[{level:2,title:"5.1 \u4EE3\u7406\u6A21\u5F0F",slug:"_5-1-\u4EE3\u7406\u6A21\u5F0F",children:[{level:3,title:"5.1.1 \u6982\u8FF0",slug:"_5-1-1-\u6982\u8FF0",children:[]},{level:3,title:"5.1.2 \u7ED3\u6784",slug:"_5-1-2-\u7ED3\u6784",children:[]},{level:3,title:"5.1.3 \u9759\u6001\u4EE3\u7406",slug:"_5-1-3-\u9759\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.4 JDK \u52A8\u6001\u4EE3\u7406",slug:"_5-1-4-jdk-\u52A8\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.5 CGLIB \u52A8\u6001\u4EE3\u7406",slug:"_5-1-5-cglib-\u52A8\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.6 \u4E09\u79CD\u4EE3\u7406\u7684\u5BF9\u6BD4",slug:"_5-1-6-\u4E09\u79CD\u4EE3\u7406\u7684\u5BF9\u6BD4",children:[]},{level:3,title:"5.1.7 \u4F18\u7F3A\u70B9",slug:"_5-1-7-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"5.1.8 \u4F7F\u7528\u573A\u666F",slug:"_5-1-8-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.2 \u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-\u9002\u914D\u5668\u6A21\u5F0F",children:[{level:3,title:"5.2.1 \u6982\u8FF0",slug:"_5-2-1-\u6982\u8FF0",children:[]},{level:3,title:"5.2.2 \u7ED3\u6784",slug:"_5-2-2-\u7ED3\u6784",children:[]},{level:3,title:"5.2.3 \u7C7B\u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-3-\u7C7B\u9002\u914D\u5668\u6A21\u5F0F",children:[]},{level:3,title:"5.2.4 \u5BF9\u8C61\u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-4-\u5BF9\u8C61\u9002\u914D\u5668\u6A21\u5F0F",children:[]},{level:3,title:"5.2.5 \u5E94\u7528\u573A\u666F",slug:"_5-2-5-\u5E94\u7528\u573A\u666F",children:[]},{level:3,title:"5.2.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-2-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"5.3 \u88C5\u9970\u8005\u6A21\u5F0F",slug:"_5-3-\u88C5\u9970\u8005\u6A21\u5F0F",children:[{level:3,title:"5.3.1 \u6982\u8FF0",slug:"_5-3-1-\u6982\u8FF0",children:[]},{level:3,title:"5.3.2 \u7ED3\u6784",slug:"_5-3-2-\u7ED3\u6784",children:[]},{level:3,title:"5.3.3 \u6848\u4F8B",slug:"_5-3-3-\u6848\u4F8B",children:[]},{level:3,title:"5.3.4 \u4F7F\u7528\u573A\u666F",slug:"_5-3-4-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.3.5 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-3-5-jdk-\u6E90\u7801\u89E3\u6790",children:[]},{level:3,title:"5.3.6 \u4EE3\u7406\u548C\u88C5\u9970\u8005\u7684\u533A\u522B",slug:"_5-3-6-\u4EE3\u7406\u548C\u88C5\u9970\u8005\u7684\u533A\u522B",children:[]}]},{level:2,title:"5.4 \u6865\u63A5\u6A21\u5F0F",slug:"_5-4-\u6865\u63A5\u6A21\u5F0F",children:[{level:3,title:"5.4.1 \u6982\u8FF0",slug:"_5-4-1-\u6982\u8FF0",children:[]},{level:3,title:"5.4.2 \u7ED3\u6784",slug:"_5-4-2-\u7ED3\u6784",children:[]},{level:3,title:"5.4.3 \u6848\u4F8B",slug:"_5-4-3-\u6848\u4F8B",children:[]},{level:3,title:"5.4.4 \u4F7F\u7528\u573A\u666F",slug:"_5-4-4-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.5 \u5916\u89C2\u6A21\u5F0F",slug:"_5-5-\u5916\u89C2\u6A21\u5F0F",children:[{level:3,title:"5.5.1 \u6982\u8FF0",slug:"_5-5-1-\u6982\u8FF0",children:[]},{level:3,title:"5.5.2 \u7ED3\u6784",slug:"_5-5-2-\u7ED3\u6784",children:[]},{level:3,title:"5.5.3 \u6848\u4F8B",slug:"_5-5-3-\u6848\u4F8B",children:[]},{level:3,title:"5.5.4 \u4F7F\u7528\u573A\u666F",slug:"_5-5-4-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.5.5 \u6E90\u7801\u89E3\u6790",slug:"_5-5-5-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"5.6 \u7EC4\u5408\u6A21\u5F0F",slug:"_5-6-\u7EC4\u5408\u6A21\u5F0F",children:[{level:3,title:"5.6.1 \u6982\u8FF0",slug:"_5-6-1-\u6982\u8FF0",children:[]},{level:3,title:"5.6.2 \u7ED3\u6784",slug:"_5-6-2-\u7ED3\u6784",children:[]},{level:3,title:"5.6.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_5-6-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"5.6.4 \u7EC4\u5408\u6A21\u5F0F\u7684\u5206\u7C7B",slug:"_5-6-4-\u7EC4\u5408\u6A21\u5F0F\u7684\u5206\u7C7B",children:[]},{level:3,title:"5.6.5 \u4F18\u70B9",slug:"_5-6-5-\u4F18\u70B9",children:[]},{level:3,title:"5.6.6 \u4F7F\u7528\u573A\u666F",slug:"_5-6-6-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.7 \u4EAB\u5143\u6A21\u5F0F",slug:"_5-7-\u4EAB\u5143\u6A21\u5F0F",children:[{level:3,title:"5.7.1 \u6982\u8FF0",slug:"_5-7-1-\u6982\u8FF0",children:[]},{level:3,title:"5.7.2 \u7ED3\u6784",slug:"_5-7-2-\u7ED3\u6784",children:[]},{level:3,title:"5.7.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_5-7-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"5.7.5 \u4F18\u7F3A\u70B9\u548C\u4F7F\u7528\u573A\u666F",slug:"_5-7-5-\u4F18\u7F3A\u70B9\u548C\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.7.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-7-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]}]},{level:1,title:"6\uFF0C\u884C\u4E3A\u578B\u6A21\u5F0F",slug:"_6-\u884C\u4E3A\u578B\u6A21\u5F0F",children:[{level:2,title:"6.1 \u6A21\u677F\u65B9\u6CD5\u6A21\u5F0F",slug:"_6-1-\u6A21\u677F\u65B9\u6CD5\u6A21\u5F0F",children:[{level:3,title:"6.1.1 \u6982\u8FF0",slug:"_6-1-1-\u6982\u8FF0",children:[]},{level:3,title:"6.1.2 \u7ED3\u6784",slug:"_6-1-2-\u7ED3\u6784",children:[]},{level:3,title:"6.1.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-1-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.1.3 \u4F18\u7F3A\u70B9",slug:"_6-1-3-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.1.4 \u9002\u7528\u573A\u666F",slug:"_6-1-4-\u9002\u7528\u573A\u666F",children:[]},{level:3,title:"6.1.5 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-1-5-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.2 \u7B56\u7565\u6A21\u5F0F",slug:"_6-2-\u7B56\u7565\u6A21\u5F0F",children:[{level:3,title:"6.2.1 \u6982\u8FF0",slug:"_6-2-1-\u6982\u8FF0",children:[]},{level:3,title:"6.2.2 \u7ED3\u6784",slug:"_6-2-2-\u7ED3\u6784",children:[]},{level:3,title:"6.2.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-2-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.2.4 \u4F18\u7F3A\u70B9",slug:"_6-2-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.2.5 \u4F7F\u7528\u573A\u666F",slug:"_6-2-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.2.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-2-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.3 \u547D\u4EE4\u6A21\u5F0F",slug:"_6-3-\u547D\u4EE4\u6A21\u5F0F",children:[{level:3,title:"6.3.1 \u6982\u8FF0",slug:"_6-3-1-\u6982\u8FF0",children:[]},{level:3,title:"6.3.2 \u7ED3\u6784",slug:"_6-3-2-\u7ED3\u6784",children:[]},{level:3,title:"6.3.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-3-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.3.4 \u4F18\u7F3A\u70B9",slug:"_6-3-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.3.5 \u4F7F\u7528\u573A\u666F",slug:"_6-3-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.3.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-3-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.4 \u8D23\u4EFB\u94FE\u6A21\u5F0F",slug:"_6-4-\u8D23\u4EFB\u94FE\u6A21\u5F0F",children:[{level:3,title:"6.4.1 \u6982\u8FF0",slug:"_6-4-1-\u6982\u8FF0",children:[]},{level:3,title:"6.4.2 \u7ED3\u6784",slug:"_6-4-2-\u7ED3\u6784",children:[]},{level:3,title:"6.4.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-4-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.4.4 \u4F18\u7F3A\u70B9",slug:"_6-4-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.4.5 \u6E90\u7801\u89E3\u6790",slug:"_6-4-5-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.5 \u72B6\u6001\u6A21\u5F0F",slug:"_6-5-\u72B6\u6001\u6A21\u5F0F",children:[{level:3,title:"6.5.1 \u6982\u8FF0",slug:"_6-5-1-\u6982\u8FF0",children:[]},{level:3,title:"6.5.2 \u7ED3\u6784",slug:"_6-5-2-\u7ED3\u6784",children:[]},{level:3,title:"6.5.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-5-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.5.4 \u4F18\u7F3A\u70B9",slug:"_6-5-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.5.5 \u4F7F\u7528\u573A\u666F",slug:"_6-5-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.6 \u89C2\u5BDF\u8005\u6A21\u5F0F",slug:"_6-6-\u89C2\u5BDF\u8005\u6A21\u5F0F",children:[{level:3,title:"6.6.1 \u6982\u8FF0",slug:"_6-6-1-\u6982\u8FF0",children:[]},{level:3,title:"6.6.2 \u7ED3\u6784",slug:"_6-6-2-\u7ED3\u6784",children:[]},{level:3,title:"6.6.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-6-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.6.4 \u4F18\u7F3A\u70B9",slug:"_6-6-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.6.5 \u4F7F\u7528\u573A\u666F",slug:"_6-6-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.6.6 JDK \u4E2D\u63D0\u4F9B\u7684\u5B9E\u73B0",slug:"_6-6-6-jdk-\u4E2D\u63D0\u4F9B\u7684\u5B9E\u73B0",children:[]}]},{level:2,title:"6.7 \u4E2D\u4ECB\u8005\u6A21\u5F0F",slug:"_6-7-\u4E2D\u4ECB\u8005\u6A21\u5F0F",children:[{level:3,title:"6.7.1 \u6982\u8FF0",slug:"_6-7-1-\u6982\u8FF0",children:[]},{level:3,title:"6.7.2 \u7ED3\u6784",slug:"_6-7-2-\u7ED3\u6784",children:[]},{level:3,title:"6.7.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-7-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.7.4 \u4F18\u7F3A\u70B9",slug:"_6-7-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.7.5 \u4F7F\u7528\u573A\u666F",slug:"_6-7-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.8 \u8FED\u4EE3\u5668\u6A21\u5F0F",slug:"_6-8-\u8FED\u4EE3\u5668\u6A21\u5F0F",children:[{level:3,title:"6.8.1 \u6982\u8FF0",slug:"_6-8-1-\u6982\u8FF0",children:[]},{level:3,title:"6.8.2 \u7ED3\u6784",slug:"_6-8-2-\u7ED3\u6784",children:[]},{level:3,title:"6.8.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-8-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.8.4 \u4F18\u7F3A\u70B9",slug:"_6-8-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.8.5 \u4F7F\u7528\u573A\u666F",slug:"_6-8-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.8.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-8-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.9 \u8BBF\u95EE\u8005\u6A21\u5F0F",slug:"_6-9-\u8BBF\u95EE\u8005\u6A21\u5F0F",children:[{level:3,title:"6.9.1 \u6982\u8FF0",slug:"_6-9-1-\u6982\u8FF0",children:[]},{level:3,title:"6.9.2 \u7ED3\u6784",slug:"_6-9-2-\u7ED3\u6784",children:[]},{level:3,title:"6.9.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-9-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.9.4 \u4F18\u7F3A\u70B9",slug:"_6-9-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.9.5 \u4F7F\u7528\u573A\u666F",slug:"_6-9-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.9.6 \u6269\u5C55",slug:"_6-9-6-\u6269\u5C55",children:[]}]},{level:2,title:"6.10 \u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[{level:3,title:"6.10.1 \u6982\u8FF0",slug:"_6-10-1-\u6982\u8FF0",children:[]},{level:3,title:"6.10.2 \u7ED3\u6784",slug:"_6-10-2-\u7ED3\u6784",children:[]},{level:3,title:"6.10.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-10-3-\u6848\u4F8B\u5B9E\u73B0",children:[{level:4,title:"6.10.3.1 \u201C\u767D\u7BB1\u201D\u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-3-1-\u767D\u7BB1-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[]},{level:4,title:"6.10.3.2 \u201C\u9ED1\u7BB1\u201D\u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-3-2-\u9ED1\u7BB1-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[]}]},{level:3,title:"6.10.4 \u4F18\u7F3A\u70B9",slug:"_6-10-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.10.5 \u4F7F\u7528\u573A\u666F",slug:"_6-10-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.11 \u89E3\u91CA\u5668\u6A21\u5F0F",slug:"_6-11-\u89E3\u91CA\u5668\u6A21\u5F0F",children:[{level:3,title:"6.11.1 \u6982\u8FF0",slug:"_6-11-1-\u6982\u8FF0",children:[]},{level:3,title:"6.11.2 \u7ED3\u6784",slug:"_6-11-2-\u7ED3\u6784",children:[]},{level:3,title:"6.11.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-11-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.11.4 \u4F18\u7F3A\u70B9",slug:"_6-11-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.11.5 \u4F7F\u7528\u573A\u666F",slug:"_6-11-5-\u4F7F\u7528\u573A\u666F",children:[]}]}]},{level:1,title:"7\uFF0C\u81EA\u5B9A\u4E49 Spring \u6846\u67B6",slug:"_7-\u81EA\u5B9A\u4E49-spring-\u6846\u67B6",children:[{level:2,title:"7.1 spring \u4F7F\u7528\u56DE\u987E",slug:"_7-1-spring-\u4F7F\u7528\u56DE\u987E",children:[]},{level:2,title:"7.2 spring \u6838\u5FC3\u529F\u80FD\u7ED3\u6784",slug:"_7-2-spring-\u6838\u5FC3\u529F\u80FD\u7ED3\u6784",children:[{level:3,title:"7.1.1 bean \u6982\u8FF0",slug:"_7-1-1-bean-\u6982\u8FF0",children:[]}]},{level:2,title:"7.3 Spring IOC \u76F8\u5173\u63A5\u53E3\u5206\u6790",slug:"_7-3-spring-ioc-\u76F8\u5173\u63A5\u53E3\u5206\u6790",children:[{level:3,title:"7.3.1 BeanFactory \u89E3\u6790",slug:"_7-3-1-beanfactory-\u89E3\u6790",children:[]},{level:3,title:"7.3.2 BeanDefinition \u89E3\u6790",slug:"_7-3-2-beandefinition-\u89E3\u6790",children:[]},{level:3,title:"7.3.3 BeanDefinitionReader \u89E3\u6790",slug:"_7-3-3-beandefinitionreader-\u89E3\u6790",children:[]},{level:3,title:"7.3.4 BeanDefinitionRegistry \u89E3\u6790",slug:"_7-3-4-beandefinitionregistry-\u89E3\u6790",children:[]},{level:3,title:"7.3.5 \u521B\u5EFA\u5BB9\u5668",slug:"_7-3-5-\u521B\u5EFA\u5BB9\u5668",children:[]}]},{level:2,title:"7.4 \u81EA\u5B9A\u4E49 SpringIOC",slug:"_7-4-\u81EA\u5B9A\u4E49-springioc",children:[{level:3,title:"7.4.1 \u5B9A\u4E49 bean \u76F8\u5173\u7684 pojo \u7C7B",slug:"_7-4-1-\u5B9A\u4E49-bean-\u76F8\u5173\u7684-pojo-\u7C7B",children:[{level:4,title:"7.4.1.1 PropertyValue \u7C7B",slug:"_7-4-1-1-propertyvalue-\u7C7B",children:[]},{level:4,title:"7.4.1.2 MutablePropertyValues \u7C7B",slug:"_7-4-1-2-mutablepropertyvalues-\u7C7B",children:[]},{level:4,title:"7.4.1.3 BeanDefinition \u7C7B",slug:"_7-4-1-3-beandefinition-\u7C7B",children:[]}]},{level:3,title:"7.4.2 \u5B9A\u4E49\u6CE8\u518C\u8868\u76F8\u5173\u7C7B",slug:"_7-4-2-\u5B9A\u4E49\u6CE8\u518C\u8868\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.2.1 BeanDefinitionRegistry \u63A5\u53E3",slug:"_7-4-2-1-beandefinitionregistry-\u63A5\u53E3",children:[]},{level:4,title:"7.4.2.2 SimpleBeanDefinitionRegistry \u7C7B",slug:"_7-4-2-2-simplebeandefinitionregistry-\u7C7B",children:[]}]},{level:3,title:"7.4.3 \u5B9A\u4E49\u89E3\u6790\u5668\u76F8\u5173\u7C7B",slug:"_7-4-3-\u5B9A\u4E49\u89E3\u6790\u5668\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.3.1 BeanDefinitionReader \u63A5\u53E3",slug:"_7-4-3-1-beandefinitionreader-\u63A5\u53E3",children:[]},{level:4,title:"7.4.3.2 XmlBeanDefinitionReader \u7C7B",slug:"_7-4-3-2-xmlbeandefinitionreader-\u7C7B",children:[]}]},{level:3,title:"7.4.4 IOC \u5BB9\u5668\u76F8\u5173\u7C7B",slug:"_7-4-4-ioc-\u5BB9\u5668\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.4.1 BeanFactory \u63A5\u53E3",slug:"_7-4-4-1-beanfactory-\u63A5\u53E3",children:[]},{level:4,title:"7.4.4.2 ApplicationContext \u63A5\u53E3",slug:"_7-4-4-2-applicationcontext-\u63A5\u53E3",children:[]},{level:4,title:"7.4.4.3 AbstractApplicationContext \u7C7B",slug:"_7-4-4-3-abstractapplicationcontext-\u7C7B",children:[]},{level:4,title:"7.4.4.4 ClassPathXmlApplicationContext \u7C7B",slug:"_7-4-4-4-classpathxmlapplicationcontext-\u7C7B",children:[]}]},{level:3,title:"7.4.5 \u81EA\u5B9A\u4E49 Spring IOC \u603B\u7ED3",slug:"_7-4-5-\u81EA\u5B9A\u4E49-spring-ioc-\u603B\u7ED3",children:[{level:4,title:"7.4.5.1 \u4F7F\u7528\u5230\u7684\u8BBE\u8BA1\u6A21\u5F0F",slug:"_7-4-5-1-\u4F7F\u7528\u5230\u7684\u8BBE\u8BA1\u6A21\u5F0F",children:[]},{level:4,title:"7.4.5.2 \u7B26\u5408\u5927\u90E8\u5206\u8BBE\u8BA1\u539F\u5219",slug:"_7-4-5-2-\u7B26\u5408\u5927\u90E8\u5206\u8BBE\u8BA1\u539F\u5219",children:[]},{level:4,title:"7.4.5.3 \u6574\u4E2A\u8BBE\u8BA1\u548C Spring \u7684\u8BBE\u8BA1\u8FD8\u662F\u6709\u4E00\u5B9A\u7684\u51FA\u5165",slug:"_7-4-5-3-\u6574\u4E2A\u8BBE\u8BA1\u548C-spring-\u7684\u8BBE\u8BA1\u8FD8\u662F\u6709\u4E00\u5B9A\u7684\u51FA\u5165",children:[]}]}]}]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/design-pattern/README.md",readingTime:{minutes:164.7,words:49409},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/design-pattern/`},key:"v-db9b3b8e",path:"/posts/design-pattern/",title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",lang:"zh-CN",frontmatter:{title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",description:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava",date:"2022-08-19T21:55:00.000Z",sidebar:"auto",tag:["\u8BBE\u8BA1\u6A21\u5F0F"],category:["java"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208242030437.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/design-pattern/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"og:description",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"article:published_time",content:"2022-08-19T21:55:00.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\uFF08Software Design Pattern\uFF09\uFF0C\u53C8\u79F0\u8BBE\u8BA1\u6A21\u5F0F\uFF0C\u662F\u4E00\u5957\u88AB\u53CD\u590D\u4F7F\u7528\u3001\u591A\u6570\u4EBA\u77E5\u6653\u7684\u3001\u7ECF\u8FC7\u5206\u7C7B\u7F16\u76EE\u7684\u3001\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\u3002\u5B83\u63CF\u8FF0\u4E86\u5728\u8F6F\u4EF6\u8BBE\u8BA1\u8FC7\u7A0B\u4E2D\u7684\u4E00\u4E9B\u4E0D\u65AD\u91CD\u590D\u53D1\u751F\u7684\u95EE\u9898\uFF0C\u4EE5\u53CA\u8BE5\u95EE\u9898\u7684\u89E3\u51B3\u65B9\u6848\u3002\u4E5F\u5C31\u662F\u8BF4\uFF0C\u5B83\u662F\u89E3\u51B3\u7279\u5B9A\u95EE\u9898\u7684\u4E00\u7CFB\u5217\u5957\u8DEF\uFF0C\u662F\u524D\u8F88\u4EEC\u7684\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\uFF0C\u5177\u6709\u4E00\u5B9A\u7684\u666E\u904D\u6027\uFF0C\u53EF\u4EE5\u53CD\u590D\u4F7F\u7528\u3002</p>
+const n=[["v-8daa1a0e","/",{title:""},["/index.html","/README.md"]],["v-db9b3b8e","/posts/design-pattern/",{_blog:{data:{key:"v-db9b3b8e",path:"/posts/design-pattern/",title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",lang:"zh-CN",frontmatter:{title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",description:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava",date:"2022-08-19T21:55:00.000Z",sidebar:"auto",tag:["\u8BBE\u8BA1\u6A21\u5F0F"],category:["java"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208242030437.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/design-pattern/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"og:description",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"article:published_time",content:"2022-08-19T21:55:00.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\uFF08Software Design Pattern\uFF09\uFF0C\u53C8\u79F0\u8BBE\u8BA1\u6A21\u5F0F\uFF0C\u662F\u4E00\u5957\u88AB\u53CD\u590D\u4F7F\u7528\u3001\u591A\u6570\u4EBA\u77E5\u6653\u7684\u3001\u7ECF\u8FC7\u5206\u7C7B\u7F16\u76EE\u7684\u3001\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\u3002\u5B83\u63CF\u8FF0\u4E86\u5728\u8F6F\u4EF6\u8BBE\u8BA1\u8FC7\u7A0B\u4E2D\u7684\u4E00\u4E9B\u4E0D\u65AD\u91CD\u590D\u53D1\u751F\u7684\u95EE\u9898\uFF0C\u4EE5\u53CA\u8BE5\u95EE\u9898\u7684\u89E3\u51B3\u65B9\u6848\u3002\u4E5F\u5C31\u662F\u8BF4\uFF0C\u5B83\u662F\u89E3\u51B3\u7279\u5B9A\u95EE\u9898\u7684\u4E00\u7CFB\u5217\u5957\u8DEF\uFF0C\u662F\u524D\u8F88\u4EEC\u7684\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\uFF0C\u5177\u6709\u4E00\u5B9A\u7684\u666E\u904D\u6027\uFF0C\u53EF\u4EE5\u53CD\u590D\u4F7F\u7528\u3002</p>
+`,headers:[{level:1,title:"1\uFF0C\u8BBE\u8BA1\u6A21\u5F0F\u6982\u8FF0",slug:"_1-\u8BBE\u8BA1\u6A21\u5F0F\u6982\u8FF0",children:[{level:2,title:"1.1 \u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u4EA7\u751F\u80CC\u666F",slug:"_1-1-\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u4EA7\u751F\u80CC\u666F",children:[]},{level:2,title:"1.2 \u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u6982\u5FF5",slug:"_1-2-\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u6982\u5FF5",children:[]},{level:2,title:"1.3 \u5B66\u4E60\u8BBE\u8BA1\u6A21\u5F0F\u7684\u5FC5\u8981\u6027",slug:"_1-3-\u5B66\u4E60\u8BBE\u8BA1\u6A21\u5F0F\u7684\u5FC5\u8981\u6027",children:[]},{level:2,title:"1.4 \u8BBE\u8BA1\u6A21\u5F0F\u5206\u7C7B",slug:"_1-4-\u8BBE\u8BA1\u6A21\u5F0F\u5206\u7C7B",children:[]}]},{level:1,title:"2\uFF0CUML \u56FE",slug:"_2-uml-\u56FE",children:[{level:2,title:"2.1 \u7C7B\u56FE\u6982\u8FF0",slug:"_2-1-\u7C7B\u56FE\u6982\u8FF0",children:[]},{level:2,title:"2.2 \u7C7B\u56FE\u7684\u4F5C\u7528",slug:"_2-2-\u7C7B\u56FE\u7684\u4F5C\u7528",children:[]},{level:2,title:"2.3 \u7C7B\u56FE\u8868\u793A\u6CD5",slug:"_2-3-\u7C7B\u56FE\u8868\u793A\u6CD5",children:[{level:3,title:"2.3.1 \u7C7B\u7684\u8868\u793A\u65B9\u5F0F",slug:"_2-3-1-\u7C7B\u7684\u8868\u793A\u65B9\u5F0F",children:[]},{level:3,title:"2.3.2 \u7C7B\u4E0E\u7C7B\u4E4B\u95F4\u5173\u7CFB\u7684\u8868\u793A\u65B9\u5F0F",slug:"_2-3-2-\u7C7B\u4E0E\u7C7B\u4E4B\u95F4\u5173\u7CFB\u7684\u8868\u793A\u65B9\u5F0F",children:[{level:4,title:"2.3.2.1 \u5173\u8054\u5173\u7CFB",slug:"_2-3-2-1-\u5173\u8054\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.2 \u805A\u5408\u5173\u7CFB",slug:"_2-3-2-2-\u805A\u5408\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.3 \u7EC4\u5408\u5173\u7CFB",slug:"_2-3-2-3-\u7EC4\u5408\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.4 \u4F9D\u8D56\u5173\u7CFB",slug:"_2-3-2-4-\u4F9D\u8D56\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.5 \u7EE7\u627F\u5173\u7CFB",slug:"_2-3-2-5-\u7EE7\u627F\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.6 \u5B9E\u73B0\u5173\u7CFB",slug:"_2-3-2-6-\u5B9E\u73B0\u5173\u7CFB",children:[]}]}]}]},{level:1,title:"3\uFF0C\u8F6F\u4EF6\u8BBE\u8BA1\u539F\u5219",slug:"_3-\u8F6F\u4EF6\u8BBE\u8BA1\u539F\u5219",children:[{level:2,title:"3.1 \u5F00\u95ED\u539F\u5219",slug:"_3-1-\u5F00\u95ED\u539F\u5219",children:[]},{level:2,title:"3.2 \u91CC\u6C0F\u4EE3\u6362\u539F\u5219",slug:"_3-2-\u91CC\u6C0F\u4EE3\u6362\u539F\u5219",children:[]},{level:2,title:"3.3 \u4F9D\u8D56\u5012\u8F6C\u539F\u5219",slug:"_3-3-\u4F9D\u8D56\u5012\u8F6C\u539F\u5219",children:[]},{level:2,title:"3.4 \u63A5\u53E3\u9694\u79BB\u539F\u5219",slug:"_3-4-\u63A5\u53E3\u9694\u79BB\u539F\u5219",children:[]},{level:2,title:"3.5 \u8FEA\u7C73\u7279\u6CD5\u5219",slug:"_3-5-\u8FEA\u7C73\u7279\u6CD5\u5219",children:[]},{level:2,title:"3.6 \u5408\u6210\u590D\u7528\u539F\u5219",slug:"_3-6-\u5408\u6210\u590D\u7528\u539F\u5219",children:[]}]},{level:1,title:"4\uFF0C\u521B\u5EFA\u8005\u6A21\u5F0F",slug:"_4-\u521B\u5EFA\u8005\u6A21\u5F0F",children:[{level:2,title:"4.1 \u5355\u4F8B\u8BBE\u8BA1\u6A21\u5F0F",slug:"_4-1-\u5355\u4F8B\u8BBE\u8BA1\u6A21\u5F0F",children:[{level:3,title:"4.1.1 \u5355\u4F8B\u6A21\u5F0F\u7684\u7ED3\u6784",slug:"_4-1-1-\u5355\u4F8B\u6A21\u5F0F\u7684\u7ED3\u6784",children:[]},{level:3,title:"4.1.2 \u5355\u4F8B\u6A21\u5F0F\u7684\u5B9E\u73B0",slug:"_4-1-2-\u5355\u4F8B\u6A21\u5F0F\u7684\u5B9E\u73B0",children:[]},{level:3,title:"4.1.3 \u5355\u4F8B\u6A21\u5F0F\u5B58\u5728\u7684\u95EE\u9898",slug:"_4-1-3-\u5355\u4F8B\u6A21\u5F0F\u5B58\u5728\u7684\u95EE\u9898",children:[{level:4,title:"4.1.3.1 \u95EE\u9898\u6F14\u793A",slug:"_4-1-3-1-\u95EE\u9898\u6F14\u793A",children:[]},{level:4,title:"4.1.3.2 \u95EE\u9898\u7684\u89E3\u51B3",slug:"_4-1-3-2-\u95EE\u9898\u7684\u89E3\u51B3",children:[]}]},{level:3,title:"4.1.4 JDK \u6E90\u7801\u89E3\u6790-Runtime \u7C7B",slug:"_4-1-4-jdk-\u6E90\u7801\u89E3\u6790-runtime-\u7C7B",children:[]}]},{level:2,title:"4.2 \u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-\u5DE5\u5382\u6A21\u5F0F",children:[{level:3,title:"4.2.1 \u6982\u8FF0",slug:"_4-2-1-\u6982\u8FF0",children:[]},{level:3,title:"4.2.2 \u7B80\u5355\u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-2-\u7B80\u5355\u5DE5\u5382\u6A21\u5F0F",children:[{level:4,title:"4.2.2.1 \u7ED3\u6784",slug:"_4-2-2-1-\u7ED3\u6784",children:[]},{level:4,title:"4.2.2.2 \u5B9E\u73B0",slug:"_4-2-2-2-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.2.4 \u4F18\u7F3A\u70B9",slug:"_4-2-2-4-\u4F18\u7F3A\u70B9",children:[]},{level:4,title:"4.2.2.3 \u6269\u5C55",slug:"_4-2-2-3-\u6269\u5C55",children:[]}]},{level:3,title:"4.2.3 \u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F",slug:"_4-2-3-\u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F",children:[{level:4,title:"4.2.3.1 \u6982\u5FF5",slug:"_4-2-3-1-\u6982\u5FF5",children:[]},{level:4,title:"4.2.3.2 \u7ED3\u6784",slug:"_4-2-3-2-\u7ED3\u6784",children:[]},{level:4,title:"4.2.3.3 \u5B9E\u73B0",slug:"_4-2-3-3-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.3.4 \u4F18\u7F3A\u70B9",slug:"_4-2-3-4-\u4F18\u7F3A\u70B9",children:[]}]},{level:3,title:"4.2.4 \u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-4-\u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F",children:[{level:4,title:"4.2.4.1 \u6982\u5FF5",slug:"_4-2-4-1-\u6982\u5FF5",children:[]},{level:4,title:"4.2.4.2 \u7ED3\u6784",slug:"_4-2-4-2-\u7ED3\u6784",children:[]},{level:4,title:"4.2.4.2 \u5B9E\u73B0",slug:"_4-2-4-2-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.4.3 \u4F18\u7F3A\u70B9",slug:"_4-2-4-3-\u4F18\u7F3A\u70B9",children:[]},{level:4,title:"4.2.4.4 \u4F7F\u7528\u573A\u666F",slug:"_4-2-4-4-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:3,title:"4.2.5 \u6A21\u5F0F\u6269\u5C55",slug:"_4-2-5-\u6A21\u5F0F\u6269\u5C55",children:[]},{level:3,title:"4.2.6 JDK \u6E90\u7801\u89E3\u6790-Collection.iterator \u65B9\u6CD5",slug:"_4-2-6-jdk-\u6E90\u7801\u89E3\u6790-collection-iterator-\u65B9\u6CD5",children:[]}]},{level:2,title:"4.3 \u539F\u578B\u6A21\u5F0F",slug:"_4-3-\u539F\u578B\u6A21\u5F0F",children:[{level:3,title:"4.3.1 \u6982\u8FF0",slug:"_4-3-1-\u6982\u8FF0",children:[]},{level:3,title:"4.3.2 \u7ED3\u6784",slug:"_4-3-2-\u7ED3\u6784",children:[]},{level:3,title:"4.3.3 \u5B9E\u73B0",slug:"_4-3-3-\u5B9E\u73B0",children:[]},{level:3,title:"4.3.4 \u6848\u4F8B",slug:"_4-3-4-\u6848\u4F8B",children:[]},{level:3,title:"4.3.5 \u4F7F\u7528\u573A\u666F",slug:"_4-3-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"4.3.6 \u6269\u5C55\uFF08\u6DF1\u514B\u9686\uFF09",slug:"_4-3-6-\u6269\u5C55-\u6DF1\u514B\u9686",children:[]}]},{level:2,title:"4.5 \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-5-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[{level:3,title:"4.4.1 \u6982\u8FF0",slug:"_4-4-1-\u6982\u8FF0",children:[]},{level:3,title:"4.4.2 \u7ED3\u6784",slug:"_4-4-2-\u7ED3\u6784",children:[]},{level:3,title:"4.4.3 \u5B9E\u4F8B",slug:"_4-4-3-\u5B9E\u4F8B",children:[]},{level:3,title:"4.4.4 \u4F18\u7F3A\u70B9",slug:"_4-4-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"4.4.5 \u4F7F\u7528\u573A\u666F",slug:"_4-4-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"4.4.6 \u6A21\u5F0F\u6269\u5C55",slug:"_4-4-6-\u6A21\u5F0F\u6269\u5C55",children:[]}]},{level:2,title:"4.6 \u521B\u5EFA\u8005\u6A21\u5F0F\u5BF9\u6BD4",slug:"_4-6-\u521B\u5EFA\u8005\u6A21\u5F0F\u5BF9\u6BD4",children:[{level:3,title:"4.6.1 \u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F VS \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-6-1-\u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F-vs-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[]},{level:3,title:"4.6.2 \u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F VS \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-6-2-\u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F-vs-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[]}]}]},{level:1,title:"5\uFF0C\u7ED3\u6784\u578B\u6A21\u5F0F",slug:"_5-\u7ED3\u6784\u578B\u6A21\u5F0F",children:[{level:2,title:"5.1 \u4EE3\u7406\u6A21\u5F0F",slug:"_5-1-\u4EE3\u7406\u6A21\u5F0F",children:[{level:3,title:"5.1.1 \u6982\u8FF0",slug:"_5-1-1-\u6982\u8FF0",children:[]},{level:3,title:"5.1.2 \u7ED3\u6784",slug:"_5-1-2-\u7ED3\u6784",children:[]},{level:3,title:"5.1.3 \u9759\u6001\u4EE3\u7406",slug:"_5-1-3-\u9759\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.4 JDK \u52A8\u6001\u4EE3\u7406",slug:"_5-1-4-jdk-\u52A8\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.5 CGLIB \u52A8\u6001\u4EE3\u7406",slug:"_5-1-5-cglib-\u52A8\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.6 \u4E09\u79CD\u4EE3\u7406\u7684\u5BF9\u6BD4",slug:"_5-1-6-\u4E09\u79CD\u4EE3\u7406\u7684\u5BF9\u6BD4",children:[]},{level:3,title:"5.1.7 \u4F18\u7F3A\u70B9",slug:"_5-1-7-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"5.1.8 \u4F7F\u7528\u573A\u666F",slug:"_5-1-8-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.2 \u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-\u9002\u914D\u5668\u6A21\u5F0F",children:[{level:3,title:"5.2.1 \u6982\u8FF0",slug:"_5-2-1-\u6982\u8FF0",children:[]},{level:3,title:"5.2.2 \u7ED3\u6784",slug:"_5-2-2-\u7ED3\u6784",children:[]},{level:3,title:"5.2.3 \u7C7B\u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-3-\u7C7B\u9002\u914D\u5668\u6A21\u5F0F",children:[]},{level:3,title:"5.2.4 \u5BF9\u8C61\u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-4-\u5BF9\u8C61\u9002\u914D\u5668\u6A21\u5F0F",children:[]},{level:3,title:"5.2.5 \u5E94\u7528\u573A\u666F",slug:"_5-2-5-\u5E94\u7528\u573A\u666F",children:[]},{level:3,title:"5.2.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-2-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"5.3 \u88C5\u9970\u8005\u6A21\u5F0F",slug:"_5-3-\u88C5\u9970\u8005\u6A21\u5F0F",children:[{level:3,title:"5.3.1 \u6982\u8FF0",slug:"_5-3-1-\u6982\u8FF0",children:[]},{level:3,title:"5.3.2 \u7ED3\u6784",slug:"_5-3-2-\u7ED3\u6784",children:[]},{level:3,title:"5.3.3 \u6848\u4F8B",slug:"_5-3-3-\u6848\u4F8B",children:[]},{level:3,title:"5.3.4 \u4F7F\u7528\u573A\u666F",slug:"_5-3-4-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.3.5 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-3-5-jdk-\u6E90\u7801\u89E3\u6790",children:[]},{level:3,title:"5.3.6 \u4EE3\u7406\u548C\u88C5\u9970\u8005\u7684\u533A\u522B",slug:"_5-3-6-\u4EE3\u7406\u548C\u88C5\u9970\u8005\u7684\u533A\u522B",children:[]}]},{level:2,title:"5.4 \u6865\u63A5\u6A21\u5F0F",slug:"_5-4-\u6865\u63A5\u6A21\u5F0F",children:[{level:3,title:"5.4.1 \u6982\u8FF0",slug:"_5-4-1-\u6982\u8FF0",children:[]},{level:3,title:"5.4.2 \u7ED3\u6784",slug:"_5-4-2-\u7ED3\u6784",children:[]},{level:3,title:"5.4.3 \u6848\u4F8B",slug:"_5-4-3-\u6848\u4F8B",children:[]},{level:3,title:"5.4.4 \u4F7F\u7528\u573A\u666F",slug:"_5-4-4-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.5 \u5916\u89C2\u6A21\u5F0F",slug:"_5-5-\u5916\u89C2\u6A21\u5F0F",children:[{level:3,title:"5.5.1 \u6982\u8FF0",slug:"_5-5-1-\u6982\u8FF0",children:[]},{level:3,title:"5.5.2 \u7ED3\u6784",slug:"_5-5-2-\u7ED3\u6784",children:[]},{level:3,title:"5.5.3 \u6848\u4F8B",slug:"_5-5-3-\u6848\u4F8B",children:[]},{level:3,title:"5.5.4 \u4F7F\u7528\u573A\u666F",slug:"_5-5-4-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.5.5 \u6E90\u7801\u89E3\u6790",slug:"_5-5-5-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"5.6 \u7EC4\u5408\u6A21\u5F0F",slug:"_5-6-\u7EC4\u5408\u6A21\u5F0F",children:[{level:3,title:"5.6.1 \u6982\u8FF0",slug:"_5-6-1-\u6982\u8FF0",children:[]},{level:3,title:"5.6.2 \u7ED3\u6784",slug:"_5-6-2-\u7ED3\u6784",children:[]},{level:3,title:"5.6.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_5-6-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"5.6.4 \u7EC4\u5408\u6A21\u5F0F\u7684\u5206\u7C7B",slug:"_5-6-4-\u7EC4\u5408\u6A21\u5F0F\u7684\u5206\u7C7B",children:[]},{level:3,title:"5.6.5 \u4F18\u70B9",slug:"_5-6-5-\u4F18\u70B9",children:[]},{level:3,title:"5.6.6 \u4F7F\u7528\u573A\u666F",slug:"_5-6-6-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.7 \u4EAB\u5143\u6A21\u5F0F",slug:"_5-7-\u4EAB\u5143\u6A21\u5F0F",children:[{level:3,title:"5.7.1 \u6982\u8FF0",slug:"_5-7-1-\u6982\u8FF0",children:[]},{level:3,title:"5.7.2 \u7ED3\u6784",slug:"_5-7-2-\u7ED3\u6784",children:[]},{level:3,title:"5.7.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_5-7-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"5.7.5 \u4F18\u7F3A\u70B9\u548C\u4F7F\u7528\u573A\u666F",slug:"_5-7-5-\u4F18\u7F3A\u70B9\u548C\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.7.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-7-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]}]},{level:1,title:"6\uFF0C\u884C\u4E3A\u578B\u6A21\u5F0F",slug:"_6-\u884C\u4E3A\u578B\u6A21\u5F0F",children:[{level:2,title:"6.1 \u6A21\u677F\u65B9\u6CD5\u6A21\u5F0F",slug:"_6-1-\u6A21\u677F\u65B9\u6CD5\u6A21\u5F0F",children:[{level:3,title:"6.1.1 \u6982\u8FF0",slug:"_6-1-1-\u6982\u8FF0",children:[]},{level:3,title:"6.1.2 \u7ED3\u6784",slug:"_6-1-2-\u7ED3\u6784",children:[]},{level:3,title:"6.1.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-1-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.1.3 \u4F18\u7F3A\u70B9",slug:"_6-1-3-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.1.4 \u9002\u7528\u573A\u666F",slug:"_6-1-4-\u9002\u7528\u573A\u666F",children:[]},{level:3,title:"6.1.5 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-1-5-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.2 \u7B56\u7565\u6A21\u5F0F",slug:"_6-2-\u7B56\u7565\u6A21\u5F0F",children:[{level:3,title:"6.2.1 \u6982\u8FF0",slug:"_6-2-1-\u6982\u8FF0",children:[]},{level:3,title:"6.2.2 \u7ED3\u6784",slug:"_6-2-2-\u7ED3\u6784",children:[]},{level:3,title:"6.2.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-2-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.2.4 \u4F18\u7F3A\u70B9",slug:"_6-2-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.2.5 \u4F7F\u7528\u573A\u666F",slug:"_6-2-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.2.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-2-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.3 \u547D\u4EE4\u6A21\u5F0F",slug:"_6-3-\u547D\u4EE4\u6A21\u5F0F",children:[{level:3,title:"6.3.1 \u6982\u8FF0",slug:"_6-3-1-\u6982\u8FF0",children:[]},{level:3,title:"6.3.2 \u7ED3\u6784",slug:"_6-3-2-\u7ED3\u6784",children:[]},{level:3,title:"6.3.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-3-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.3.4 \u4F18\u7F3A\u70B9",slug:"_6-3-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.3.5 \u4F7F\u7528\u573A\u666F",slug:"_6-3-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.3.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-3-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.4 \u8D23\u4EFB\u94FE\u6A21\u5F0F",slug:"_6-4-\u8D23\u4EFB\u94FE\u6A21\u5F0F",children:[{level:3,title:"6.4.1 \u6982\u8FF0",slug:"_6-4-1-\u6982\u8FF0",children:[]},{level:3,title:"6.4.2 \u7ED3\u6784",slug:"_6-4-2-\u7ED3\u6784",children:[]},{level:3,title:"6.4.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-4-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.4.4 \u4F18\u7F3A\u70B9",slug:"_6-4-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.4.5 \u6E90\u7801\u89E3\u6790",slug:"_6-4-5-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.5 \u72B6\u6001\u6A21\u5F0F",slug:"_6-5-\u72B6\u6001\u6A21\u5F0F",children:[{level:3,title:"6.5.1 \u6982\u8FF0",slug:"_6-5-1-\u6982\u8FF0",children:[]},{level:3,title:"6.5.2 \u7ED3\u6784",slug:"_6-5-2-\u7ED3\u6784",children:[]},{level:3,title:"6.5.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-5-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.5.4 \u4F18\u7F3A\u70B9",slug:"_6-5-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.5.5 \u4F7F\u7528\u573A\u666F",slug:"_6-5-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.6 \u89C2\u5BDF\u8005\u6A21\u5F0F",slug:"_6-6-\u89C2\u5BDF\u8005\u6A21\u5F0F",children:[{level:3,title:"6.6.1 \u6982\u8FF0",slug:"_6-6-1-\u6982\u8FF0",children:[]},{level:3,title:"6.6.2 \u7ED3\u6784",slug:"_6-6-2-\u7ED3\u6784",children:[]},{level:3,title:"6.6.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-6-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.6.4 \u4F18\u7F3A\u70B9",slug:"_6-6-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.6.5 \u4F7F\u7528\u573A\u666F",slug:"_6-6-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.6.6 JDK \u4E2D\u63D0\u4F9B\u7684\u5B9E\u73B0",slug:"_6-6-6-jdk-\u4E2D\u63D0\u4F9B\u7684\u5B9E\u73B0",children:[]}]},{level:2,title:"6.7 \u4E2D\u4ECB\u8005\u6A21\u5F0F",slug:"_6-7-\u4E2D\u4ECB\u8005\u6A21\u5F0F",children:[{level:3,title:"6.7.1 \u6982\u8FF0",slug:"_6-7-1-\u6982\u8FF0",children:[]},{level:3,title:"6.7.2 \u7ED3\u6784",slug:"_6-7-2-\u7ED3\u6784",children:[]},{level:3,title:"6.7.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-7-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.7.4 \u4F18\u7F3A\u70B9",slug:"_6-7-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.7.5 \u4F7F\u7528\u573A\u666F",slug:"_6-7-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.8 \u8FED\u4EE3\u5668\u6A21\u5F0F",slug:"_6-8-\u8FED\u4EE3\u5668\u6A21\u5F0F",children:[{level:3,title:"6.8.1 \u6982\u8FF0",slug:"_6-8-1-\u6982\u8FF0",children:[]},{level:3,title:"6.8.2 \u7ED3\u6784",slug:"_6-8-2-\u7ED3\u6784",children:[]},{level:3,title:"6.8.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-8-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.8.4 \u4F18\u7F3A\u70B9",slug:"_6-8-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.8.5 \u4F7F\u7528\u573A\u666F",slug:"_6-8-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.8.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-8-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.9 \u8BBF\u95EE\u8005\u6A21\u5F0F",slug:"_6-9-\u8BBF\u95EE\u8005\u6A21\u5F0F",children:[{level:3,title:"6.9.1 \u6982\u8FF0",slug:"_6-9-1-\u6982\u8FF0",children:[]},{level:3,title:"6.9.2 \u7ED3\u6784",slug:"_6-9-2-\u7ED3\u6784",children:[]},{level:3,title:"6.9.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-9-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.9.4 \u4F18\u7F3A\u70B9",slug:"_6-9-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.9.5 \u4F7F\u7528\u573A\u666F",slug:"_6-9-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.9.6 \u6269\u5C55",slug:"_6-9-6-\u6269\u5C55",children:[]}]},{level:2,title:"6.10 \u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[{level:3,title:"6.10.1 \u6982\u8FF0",slug:"_6-10-1-\u6982\u8FF0",children:[]},{level:3,title:"6.10.2 \u7ED3\u6784",slug:"_6-10-2-\u7ED3\u6784",children:[]},{level:3,title:"6.10.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-10-3-\u6848\u4F8B\u5B9E\u73B0",children:[{level:4,title:"6.10.3.1 \u201C\u767D\u7BB1\u201D\u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-3-1-\u767D\u7BB1-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[]},{level:4,title:"6.10.3.2 \u201C\u9ED1\u7BB1\u201D\u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-3-2-\u9ED1\u7BB1-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[]}]},{level:3,title:"6.10.4 \u4F18\u7F3A\u70B9",slug:"_6-10-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.10.5 \u4F7F\u7528\u573A\u666F",slug:"_6-10-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.11 \u89E3\u91CA\u5668\u6A21\u5F0F",slug:"_6-11-\u89E3\u91CA\u5668\u6A21\u5F0F",children:[{level:3,title:"6.11.1 \u6982\u8FF0",slug:"_6-11-1-\u6982\u8FF0",children:[]},{level:3,title:"6.11.2 \u7ED3\u6784",slug:"_6-11-2-\u7ED3\u6784",children:[]},{level:3,title:"6.11.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-11-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.11.4 \u4F18\u7F3A\u70B9",slug:"_6-11-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.11.5 \u4F7F\u7528\u573A\u666F",slug:"_6-11-5-\u4F7F\u7528\u573A\u666F",children:[]}]}]},{level:1,title:"7\uFF0C\u81EA\u5B9A\u4E49 Spring \u6846\u67B6",slug:"_7-\u81EA\u5B9A\u4E49-spring-\u6846\u67B6",children:[{level:2,title:"7.1 spring \u4F7F\u7528\u56DE\u987E",slug:"_7-1-spring-\u4F7F\u7528\u56DE\u987E",children:[]},{level:2,title:"7.2 spring \u6838\u5FC3\u529F\u80FD\u7ED3\u6784",slug:"_7-2-spring-\u6838\u5FC3\u529F\u80FD\u7ED3\u6784",children:[{level:3,title:"7.1.1 bean \u6982\u8FF0",slug:"_7-1-1-bean-\u6982\u8FF0",children:[]}]},{level:2,title:"7.3 Spring IOC \u76F8\u5173\u63A5\u53E3\u5206\u6790",slug:"_7-3-spring-ioc-\u76F8\u5173\u63A5\u53E3\u5206\u6790",children:[{level:3,title:"7.3.1 BeanFactory \u89E3\u6790",slug:"_7-3-1-beanfactory-\u89E3\u6790",children:[]},{level:3,title:"7.3.2 BeanDefinition \u89E3\u6790",slug:"_7-3-2-beandefinition-\u89E3\u6790",children:[]},{level:3,title:"7.3.3 BeanDefinitionReader \u89E3\u6790",slug:"_7-3-3-beandefinitionreader-\u89E3\u6790",children:[]},{level:3,title:"7.3.4 BeanDefinitionRegistry \u89E3\u6790",slug:"_7-3-4-beandefinitionregistry-\u89E3\u6790",children:[]},{level:3,title:"7.3.5 \u521B\u5EFA\u5BB9\u5668",slug:"_7-3-5-\u521B\u5EFA\u5BB9\u5668",children:[]}]},{level:2,title:"7.4 \u81EA\u5B9A\u4E49 SpringIOC",slug:"_7-4-\u81EA\u5B9A\u4E49-springioc",children:[{level:3,title:"7.4.1 \u5B9A\u4E49 bean \u76F8\u5173\u7684 pojo \u7C7B",slug:"_7-4-1-\u5B9A\u4E49-bean-\u76F8\u5173\u7684-pojo-\u7C7B",children:[{level:4,title:"7.4.1.1 PropertyValue \u7C7B",slug:"_7-4-1-1-propertyvalue-\u7C7B",children:[]},{level:4,title:"7.4.1.2 MutablePropertyValues \u7C7B",slug:"_7-4-1-2-mutablepropertyvalues-\u7C7B",children:[]},{level:4,title:"7.4.1.3 BeanDefinition \u7C7B",slug:"_7-4-1-3-beandefinition-\u7C7B",children:[]}]},{level:3,title:"7.4.2 \u5B9A\u4E49\u6CE8\u518C\u8868\u76F8\u5173\u7C7B",slug:"_7-4-2-\u5B9A\u4E49\u6CE8\u518C\u8868\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.2.1 BeanDefinitionRegistry \u63A5\u53E3",slug:"_7-4-2-1-beandefinitionregistry-\u63A5\u53E3",children:[]},{level:4,title:"7.4.2.2 SimpleBeanDefinitionRegistry \u7C7B",slug:"_7-4-2-2-simplebeandefinitionregistry-\u7C7B",children:[]}]},{level:3,title:"7.4.3 \u5B9A\u4E49\u89E3\u6790\u5668\u76F8\u5173\u7C7B",slug:"_7-4-3-\u5B9A\u4E49\u89E3\u6790\u5668\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.3.1 BeanDefinitionReader \u63A5\u53E3",slug:"_7-4-3-1-beandefinitionreader-\u63A5\u53E3",children:[]},{level:4,title:"7.4.3.2 XmlBeanDefinitionReader \u7C7B",slug:"_7-4-3-2-xmlbeandefinitionreader-\u7C7B",children:[]}]},{level:3,title:"7.4.4 IOC \u5BB9\u5668\u76F8\u5173\u7C7B",slug:"_7-4-4-ioc-\u5BB9\u5668\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.4.1 BeanFactory \u63A5\u53E3",slug:"_7-4-4-1-beanfactory-\u63A5\u53E3",children:[]},{level:4,title:"7.4.4.2 ApplicationContext \u63A5\u53E3",slug:"_7-4-4-2-applicationcontext-\u63A5\u53E3",children:[]},{level:4,title:"7.4.4.3 AbstractApplicationContext \u7C7B",slug:"_7-4-4-3-abstractapplicationcontext-\u7C7B",children:[]},{level:4,title:"7.4.4.4 ClassPathXmlApplicationContext \u7C7B",slug:"_7-4-4-4-classpathxmlapplicationcontext-\u7C7B",children:[]}]},{level:3,title:"7.4.5 \u81EA\u5B9A\u4E49 Spring IOC \u603B\u7ED3",slug:"_7-4-5-\u81EA\u5B9A\u4E49-spring-ioc-\u603B\u7ED3",children:[{level:4,title:"7.4.5.1 \u4F7F\u7528\u5230\u7684\u8BBE\u8BA1\u6A21\u5F0F",slug:"_7-4-5-1-\u4F7F\u7528\u5230\u7684\u8BBE\u8BA1\u6A21\u5F0F",children:[]},{level:4,title:"7.4.5.2 \u7B26\u5408\u5927\u90E8\u5206\u8BBE\u8BA1\u539F\u5219",slug:"_7-4-5-2-\u7B26\u5408\u5927\u90E8\u5206\u8BBE\u8BA1\u539F\u5219",children:[]},{level:4,title:"7.4.5.3 \u6574\u4E2A\u8BBE\u8BA1\u548C Spring \u7684\u8BBE\u8BA1\u8FD8\u662F\u6709\u4E00\u5B9A\u7684\u51FA\u5165",slug:"_7-4-5-3-\u6574\u4E2A\u8BBE\u8BA1\u548C-spring-\u7684\u8BBE\u8BA1\u8FD8\u662F\u6709\u4E00\u5B9A\u7684\u51FA\u5165",children:[]}]}]}]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/design-pattern/README.md",readingTime:{minutes:164.7,words:49409},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/design-pattern/`},key:"v-db9b3b8e",path:"/posts/design-pattern/",title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",lang:"zh-CN",frontmatter:{title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F",description:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava",date:"2022-08-19T21:55:00.000Z",sidebar:"auto",tag:["\u8BBE\u8BA1\u6A21\u5F0F"],category:["java"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208242030437.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/design-pattern/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"og:description",content:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u8BBE\u8BA1\u6A21\u5F0F"}],["meta",{property:"article:published_time",content:"2022-08-19T21:55:00.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\uFF08Software Design Pattern\uFF09\uFF0C\u53C8\u79F0\u8BBE\u8BA1\u6A21\u5F0F\uFF0C\u662F\u4E00\u5957\u88AB\u53CD\u590D\u4F7F\u7528\u3001\u591A\u6570\u4EBA\u77E5\u6653\u7684\u3001\u7ECF\u8FC7\u5206\u7C7B\u7F16\u76EE\u7684\u3001\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\u3002\u5B83\u63CF\u8FF0\u4E86\u5728\u8F6F\u4EF6\u8BBE\u8BA1\u8FC7\u7A0B\u4E2D\u7684\u4E00\u4E9B\u4E0D\u65AD\u91CD\u590D\u53D1\u751F\u7684\u95EE\u9898\uFF0C\u4EE5\u53CA\u8BE5\u95EE\u9898\u7684\u89E3\u51B3\u65B9\u6848\u3002\u4E5F\u5C31\u662F\u8BF4\uFF0C\u5B83\u662F\u89E3\u51B3\u7279\u5B9A\u95EE\u9898\u7684\u4E00\u7CFB\u5217\u5957\u8DEF\uFF0C\u662F\u524D\u8F88\u4EEC\u7684\u4EE3\u7801\u8BBE\u8BA1\u7ECF\u9A8C\u7684\u603B\u7ED3\uFF0C\u5177\u6709\u4E00\u5B9A\u7684\u666E\u904D\u6027\uFF0C\u53EF\u4EE5\u53CD\u590D\u4F7F\u7528\u3002</p>
 `,headers:[{level:1,title:"1\uFF0C\u8BBE\u8BA1\u6A21\u5F0F\u6982\u8FF0",slug:"_1-\u8BBE\u8BA1\u6A21\u5F0F\u6982\u8FF0",children:[{level:2,title:"1.1 \u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u4EA7\u751F\u80CC\u666F",slug:"_1-1-\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u4EA7\u751F\u80CC\u666F",children:[]},{level:2,title:"1.2 \u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u6982\u5FF5",slug:"_1-2-\u8F6F\u4EF6\u8BBE\u8BA1\u6A21\u5F0F\u7684\u6982\u5FF5",children:[]},{level:2,title:"1.3 \u5B66\u4E60\u8BBE\u8BA1\u6A21\u5F0F\u7684\u5FC5\u8981\u6027",slug:"_1-3-\u5B66\u4E60\u8BBE\u8BA1\u6A21\u5F0F\u7684\u5FC5\u8981\u6027",children:[]},{level:2,title:"1.4 \u8BBE\u8BA1\u6A21\u5F0F\u5206\u7C7B",slug:"_1-4-\u8BBE\u8BA1\u6A21\u5F0F\u5206\u7C7B",children:[]}]},{level:1,title:"2\uFF0CUML \u56FE",slug:"_2-uml-\u56FE",children:[{level:2,title:"2.1 \u7C7B\u56FE\u6982\u8FF0",slug:"_2-1-\u7C7B\u56FE\u6982\u8FF0",children:[]},{level:2,title:"2.2 \u7C7B\u56FE\u7684\u4F5C\u7528",slug:"_2-2-\u7C7B\u56FE\u7684\u4F5C\u7528",children:[]},{level:2,title:"2.3 \u7C7B\u56FE\u8868\u793A\u6CD5",slug:"_2-3-\u7C7B\u56FE\u8868\u793A\u6CD5",children:[{level:3,title:"2.3.1 \u7C7B\u7684\u8868\u793A\u65B9\u5F0F",slug:"_2-3-1-\u7C7B\u7684\u8868\u793A\u65B9\u5F0F",children:[]},{level:3,title:"2.3.2 \u7C7B\u4E0E\u7C7B\u4E4B\u95F4\u5173\u7CFB\u7684\u8868\u793A\u65B9\u5F0F",slug:"_2-3-2-\u7C7B\u4E0E\u7C7B\u4E4B\u95F4\u5173\u7CFB\u7684\u8868\u793A\u65B9\u5F0F",children:[{level:4,title:"2.3.2.1 \u5173\u8054\u5173\u7CFB",slug:"_2-3-2-1-\u5173\u8054\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.2 \u805A\u5408\u5173\u7CFB",slug:"_2-3-2-2-\u805A\u5408\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.3 \u7EC4\u5408\u5173\u7CFB",slug:"_2-3-2-3-\u7EC4\u5408\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.4 \u4F9D\u8D56\u5173\u7CFB",slug:"_2-3-2-4-\u4F9D\u8D56\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.5 \u7EE7\u627F\u5173\u7CFB",slug:"_2-3-2-5-\u7EE7\u627F\u5173\u7CFB",children:[]},{level:4,title:"2.3.2.6 \u5B9E\u73B0\u5173\u7CFB",slug:"_2-3-2-6-\u5B9E\u73B0\u5173\u7CFB",children:[]}]}]}]},{level:1,title:"3\uFF0C\u8F6F\u4EF6\u8BBE\u8BA1\u539F\u5219",slug:"_3-\u8F6F\u4EF6\u8BBE\u8BA1\u539F\u5219",children:[{level:2,title:"3.1 \u5F00\u95ED\u539F\u5219",slug:"_3-1-\u5F00\u95ED\u539F\u5219",children:[]},{level:2,title:"3.2 \u91CC\u6C0F\u4EE3\u6362\u539F\u5219",slug:"_3-2-\u91CC\u6C0F\u4EE3\u6362\u539F\u5219",children:[]},{level:2,title:"3.3 \u4F9D\u8D56\u5012\u8F6C\u539F\u5219",slug:"_3-3-\u4F9D\u8D56\u5012\u8F6C\u539F\u5219",children:[]},{level:2,title:"3.4 \u63A5\u53E3\u9694\u79BB\u539F\u5219",slug:"_3-4-\u63A5\u53E3\u9694\u79BB\u539F\u5219",children:[]},{level:2,title:"3.5 \u8FEA\u7C73\u7279\u6CD5\u5219",slug:"_3-5-\u8FEA\u7C73\u7279\u6CD5\u5219",children:[]},{level:2,title:"3.6 \u5408\u6210\u590D\u7528\u539F\u5219",slug:"_3-6-\u5408\u6210\u590D\u7528\u539F\u5219",children:[]}]},{level:1,title:"4\uFF0C\u521B\u5EFA\u8005\u6A21\u5F0F",slug:"_4-\u521B\u5EFA\u8005\u6A21\u5F0F",children:[{level:2,title:"4.1 \u5355\u4F8B\u8BBE\u8BA1\u6A21\u5F0F",slug:"_4-1-\u5355\u4F8B\u8BBE\u8BA1\u6A21\u5F0F",children:[{level:3,title:"4.1.1 \u5355\u4F8B\u6A21\u5F0F\u7684\u7ED3\u6784",slug:"_4-1-1-\u5355\u4F8B\u6A21\u5F0F\u7684\u7ED3\u6784",children:[]},{level:3,title:"4.1.2 \u5355\u4F8B\u6A21\u5F0F\u7684\u5B9E\u73B0",slug:"_4-1-2-\u5355\u4F8B\u6A21\u5F0F\u7684\u5B9E\u73B0",children:[]},{level:3,title:"4.1.3 \u5355\u4F8B\u6A21\u5F0F\u5B58\u5728\u7684\u95EE\u9898",slug:"_4-1-3-\u5355\u4F8B\u6A21\u5F0F\u5B58\u5728\u7684\u95EE\u9898",children:[{level:4,title:"4.1.3.1 \u95EE\u9898\u6F14\u793A",slug:"_4-1-3-1-\u95EE\u9898\u6F14\u793A",children:[]},{level:4,title:"4.1.3.2 \u95EE\u9898\u7684\u89E3\u51B3",slug:"_4-1-3-2-\u95EE\u9898\u7684\u89E3\u51B3",children:[]}]},{level:3,title:"4.1.4 JDK \u6E90\u7801\u89E3\u6790-Runtime \u7C7B",slug:"_4-1-4-jdk-\u6E90\u7801\u89E3\u6790-runtime-\u7C7B",children:[]}]},{level:2,title:"4.2 \u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-\u5DE5\u5382\u6A21\u5F0F",children:[{level:3,title:"4.2.1 \u6982\u8FF0",slug:"_4-2-1-\u6982\u8FF0",children:[]},{level:3,title:"4.2.2 \u7B80\u5355\u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-2-\u7B80\u5355\u5DE5\u5382\u6A21\u5F0F",children:[{level:4,title:"4.2.2.1 \u7ED3\u6784",slug:"_4-2-2-1-\u7ED3\u6784",children:[]},{level:4,title:"4.2.2.2 \u5B9E\u73B0",slug:"_4-2-2-2-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.2.4 \u4F18\u7F3A\u70B9",slug:"_4-2-2-4-\u4F18\u7F3A\u70B9",children:[]},{level:4,title:"4.2.2.3 \u6269\u5C55",slug:"_4-2-2-3-\u6269\u5C55",children:[]}]},{level:3,title:"4.2.3 \u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F",slug:"_4-2-3-\u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F",children:[{level:4,title:"4.2.3.1 \u6982\u5FF5",slug:"_4-2-3-1-\u6982\u5FF5",children:[]},{level:4,title:"4.2.3.2 \u7ED3\u6784",slug:"_4-2-3-2-\u7ED3\u6784",children:[]},{level:4,title:"4.2.3.3 \u5B9E\u73B0",slug:"_4-2-3-3-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.3.4 \u4F18\u7F3A\u70B9",slug:"_4-2-3-4-\u4F18\u7F3A\u70B9",children:[]}]},{level:3,title:"4.2.4 \u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F",slug:"_4-2-4-\u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F",children:[{level:4,title:"4.2.4.1 \u6982\u5FF5",slug:"_4-2-4-1-\u6982\u5FF5",children:[]},{level:4,title:"4.2.4.2 \u7ED3\u6784",slug:"_4-2-4-2-\u7ED3\u6784",children:[]},{level:4,title:"4.2.4.2 \u5B9E\u73B0",slug:"_4-2-4-2-\u5B9E\u73B0",children:[]},{level:4,title:"4.2.4.3 \u4F18\u7F3A\u70B9",slug:"_4-2-4-3-\u4F18\u7F3A\u70B9",children:[]},{level:4,title:"4.2.4.4 \u4F7F\u7528\u573A\u666F",slug:"_4-2-4-4-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:3,title:"4.2.5 \u6A21\u5F0F\u6269\u5C55",slug:"_4-2-5-\u6A21\u5F0F\u6269\u5C55",children:[]},{level:3,title:"4.2.6 JDK \u6E90\u7801\u89E3\u6790-Collection.iterator \u65B9\u6CD5",slug:"_4-2-6-jdk-\u6E90\u7801\u89E3\u6790-collection-iterator-\u65B9\u6CD5",children:[]}]},{level:2,title:"4.3 \u539F\u578B\u6A21\u5F0F",slug:"_4-3-\u539F\u578B\u6A21\u5F0F",children:[{level:3,title:"4.3.1 \u6982\u8FF0",slug:"_4-3-1-\u6982\u8FF0",children:[]},{level:3,title:"4.3.2 \u7ED3\u6784",slug:"_4-3-2-\u7ED3\u6784",children:[]},{level:3,title:"4.3.3 \u5B9E\u73B0",slug:"_4-3-3-\u5B9E\u73B0",children:[]},{level:3,title:"4.3.4 \u6848\u4F8B",slug:"_4-3-4-\u6848\u4F8B",children:[]},{level:3,title:"4.3.5 \u4F7F\u7528\u573A\u666F",slug:"_4-3-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"4.3.6 \u6269\u5C55\uFF08\u6DF1\u514B\u9686\uFF09",slug:"_4-3-6-\u6269\u5C55-\u6DF1\u514B\u9686",children:[]}]},{level:2,title:"4.5 \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-5-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[{level:3,title:"4.4.1 \u6982\u8FF0",slug:"_4-4-1-\u6982\u8FF0",children:[]},{level:3,title:"4.4.2 \u7ED3\u6784",slug:"_4-4-2-\u7ED3\u6784",children:[]},{level:3,title:"4.4.3 \u5B9E\u4F8B",slug:"_4-4-3-\u5B9E\u4F8B",children:[]},{level:3,title:"4.4.4 \u4F18\u7F3A\u70B9",slug:"_4-4-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"4.4.5 \u4F7F\u7528\u573A\u666F",slug:"_4-4-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"4.4.6 \u6A21\u5F0F\u6269\u5C55",slug:"_4-4-6-\u6A21\u5F0F\u6269\u5C55",children:[]}]},{level:2,title:"4.6 \u521B\u5EFA\u8005\u6A21\u5F0F\u5BF9\u6BD4",slug:"_4-6-\u521B\u5EFA\u8005\u6A21\u5F0F\u5BF9\u6BD4",children:[{level:3,title:"4.6.1 \u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F VS \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-6-1-\u5DE5\u5382\u65B9\u6CD5\u6A21\u5F0F-vs-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[]},{level:3,title:"4.6.2 \u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F VS \u5EFA\u9020\u8005\u6A21\u5F0F",slug:"_4-6-2-\u62BD\u8C61\u5DE5\u5382\u6A21\u5F0F-vs-\u5EFA\u9020\u8005\u6A21\u5F0F",children:[]}]}]},{level:1,title:"5\uFF0C\u7ED3\u6784\u578B\u6A21\u5F0F",slug:"_5-\u7ED3\u6784\u578B\u6A21\u5F0F",children:[{level:2,title:"5.1 \u4EE3\u7406\u6A21\u5F0F",slug:"_5-1-\u4EE3\u7406\u6A21\u5F0F",children:[{level:3,title:"5.1.1 \u6982\u8FF0",slug:"_5-1-1-\u6982\u8FF0",children:[]},{level:3,title:"5.1.2 \u7ED3\u6784",slug:"_5-1-2-\u7ED3\u6784",children:[]},{level:3,title:"5.1.3 \u9759\u6001\u4EE3\u7406",slug:"_5-1-3-\u9759\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.4 JDK \u52A8\u6001\u4EE3\u7406",slug:"_5-1-4-jdk-\u52A8\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.5 CGLIB \u52A8\u6001\u4EE3\u7406",slug:"_5-1-5-cglib-\u52A8\u6001\u4EE3\u7406",children:[]},{level:3,title:"5.1.6 \u4E09\u79CD\u4EE3\u7406\u7684\u5BF9\u6BD4",slug:"_5-1-6-\u4E09\u79CD\u4EE3\u7406\u7684\u5BF9\u6BD4",children:[]},{level:3,title:"5.1.7 \u4F18\u7F3A\u70B9",slug:"_5-1-7-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"5.1.8 \u4F7F\u7528\u573A\u666F",slug:"_5-1-8-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.2 \u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-\u9002\u914D\u5668\u6A21\u5F0F",children:[{level:3,title:"5.2.1 \u6982\u8FF0",slug:"_5-2-1-\u6982\u8FF0",children:[]},{level:3,title:"5.2.2 \u7ED3\u6784",slug:"_5-2-2-\u7ED3\u6784",children:[]},{level:3,title:"5.2.3 \u7C7B\u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-3-\u7C7B\u9002\u914D\u5668\u6A21\u5F0F",children:[]},{level:3,title:"5.2.4 \u5BF9\u8C61\u9002\u914D\u5668\u6A21\u5F0F",slug:"_5-2-4-\u5BF9\u8C61\u9002\u914D\u5668\u6A21\u5F0F",children:[]},{level:3,title:"5.2.5 \u5E94\u7528\u573A\u666F",slug:"_5-2-5-\u5E94\u7528\u573A\u666F",children:[]},{level:3,title:"5.2.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-2-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"5.3 \u88C5\u9970\u8005\u6A21\u5F0F",slug:"_5-3-\u88C5\u9970\u8005\u6A21\u5F0F",children:[{level:3,title:"5.3.1 \u6982\u8FF0",slug:"_5-3-1-\u6982\u8FF0",children:[]},{level:3,title:"5.3.2 \u7ED3\u6784",slug:"_5-3-2-\u7ED3\u6784",children:[]},{level:3,title:"5.3.3 \u6848\u4F8B",slug:"_5-3-3-\u6848\u4F8B",children:[]},{level:3,title:"5.3.4 \u4F7F\u7528\u573A\u666F",slug:"_5-3-4-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.3.5 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-3-5-jdk-\u6E90\u7801\u89E3\u6790",children:[]},{level:3,title:"5.3.6 \u4EE3\u7406\u548C\u88C5\u9970\u8005\u7684\u533A\u522B",slug:"_5-3-6-\u4EE3\u7406\u548C\u88C5\u9970\u8005\u7684\u533A\u522B",children:[]}]},{level:2,title:"5.4 \u6865\u63A5\u6A21\u5F0F",slug:"_5-4-\u6865\u63A5\u6A21\u5F0F",children:[{level:3,title:"5.4.1 \u6982\u8FF0",slug:"_5-4-1-\u6982\u8FF0",children:[]},{level:3,title:"5.4.2 \u7ED3\u6784",slug:"_5-4-2-\u7ED3\u6784",children:[]},{level:3,title:"5.4.3 \u6848\u4F8B",slug:"_5-4-3-\u6848\u4F8B",children:[]},{level:3,title:"5.4.4 \u4F7F\u7528\u573A\u666F",slug:"_5-4-4-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.5 \u5916\u89C2\u6A21\u5F0F",slug:"_5-5-\u5916\u89C2\u6A21\u5F0F",children:[{level:3,title:"5.5.1 \u6982\u8FF0",slug:"_5-5-1-\u6982\u8FF0",children:[]},{level:3,title:"5.5.2 \u7ED3\u6784",slug:"_5-5-2-\u7ED3\u6784",children:[]},{level:3,title:"5.5.3 \u6848\u4F8B",slug:"_5-5-3-\u6848\u4F8B",children:[]},{level:3,title:"5.5.4 \u4F7F\u7528\u573A\u666F",slug:"_5-5-4-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.5.5 \u6E90\u7801\u89E3\u6790",slug:"_5-5-5-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"5.6 \u7EC4\u5408\u6A21\u5F0F",slug:"_5-6-\u7EC4\u5408\u6A21\u5F0F",children:[{level:3,title:"5.6.1 \u6982\u8FF0",slug:"_5-6-1-\u6982\u8FF0",children:[]},{level:3,title:"5.6.2 \u7ED3\u6784",slug:"_5-6-2-\u7ED3\u6784",children:[]},{level:3,title:"5.6.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_5-6-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"5.6.4 \u7EC4\u5408\u6A21\u5F0F\u7684\u5206\u7C7B",slug:"_5-6-4-\u7EC4\u5408\u6A21\u5F0F\u7684\u5206\u7C7B",children:[]},{level:3,title:"5.6.5 \u4F18\u70B9",slug:"_5-6-5-\u4F18\u70B9",children:[]},{level:3,title:"5.6.6 \u4F7F\u7528\u573A\u666F",slug:"_5-6-6-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"5.7 \u4EAB\u5143\u6A21\u5F0F",slug:"_5-7-\u4EAB\u5143\u6A21\u5F0F",children:[{level:3,title:"5.7.1 \u6982\u8FF0",slug:"_5-7-1-\u6982\u8FF0",children:[]},{level:3,title:"5.7.2 \u7ED3\u6784",slug:"_5-7-2-\u7ED3\u6784",children:[]},{level:3,title:"5.7.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_5-7-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"5.7.5 \u4F18\u7F3A\u70B9\u548C\u4F7F\u7528\u573A\u666F",slug:"_5-7-5-\u4F18\u7F3A\u70B9\u548C\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"5.7.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_5-7-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]}]},{level:1,title:"6\uFF0C\u884C\u4E3A\u578B\u6A21\u5F0F",slug:"_6-\u884C\u4E3A\u578B\u6A21\u5F0F",children:[{level:2,title:"6.1 \u6A21\u677F\u65B9\u6CD5\u6A21\u5F0F",slug:"_6-1-\u6A21\u677F\u65B9\u6CD5\u6A21\u5F0F",children:[{level:3,title:"6.1.1 \u6982\u8FF0",slug:"_6-1-1-\u6982\u8FF0",children:[]},{level:3,title:"6.1.2 \u7ED3\u6784",slug:"_6-1-2-\u7ED3\u6784",children:[]},{level:3,title:"6.1.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-1-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.1.3 \u4F18\u7F3A\u70B9",slug:"_6-1-3-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.1.4 \u9002\u7528\u573A\u666F",slug:"_6-1-4-\u9002\u7528\u573A\u666F",children:[]},{level:3,title:"6.1.5 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-1-5-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.2 \u7B56\u7565\u6A21\u5F0F",slug:"_6-2-\u7B56\u7565\u6A21\u5F0F",children:[{level:3,title:"6.2.1 \u6982\u8FF0",slug:"_6-2-1-\u6982\u8FF0",children:[]},{level:3,title:"6.2.2 \u7ED3\u6784",slug:"_6-2-2-\u7ED3\u6784",children:[]},{level:3,title:"6.2.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-2-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.2.4 \u4F18\u7F3A\u70B9",slug:"_6-2-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.2.5 \u4F7F\u7528\u573A\u666F",slug:"_6-2-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.2.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-2-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.3 \u547D\u4EE4\u6A21\u5F0F",slug:"_6-3-\u547D\u4EE4\u6A21\u5F0F",children:[{level:3,title:"6.3.1 \u6982\u8FF0",slug:"_6-3-1-\u6982\u8FF0",children:[]},{level:3,title:"6.3.2 \u7ED3\u6784",slug:"_6-3-2-\u7ED3\u6784",children:[]},{level:3,title:"6.3.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-3-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.3.4 \u4F18\u7F3A\u70B9",slug:"_6-3-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.3.5 \u4F7F\u7528\u573A\u666F",slug:"_6-3-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.3.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-3-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.4 \u8D23\u4EFB\u94FE\u6A21\u5F0F",slug:"_6-4-\u8D23\u4EFB\u94FE\u6A21\u5F0F",children:[{level:3,title:"6.4.1 \u6982\u8FF0",slug:"_6-4-1-\u6982\u8FF0",children:[]},{level:3,title:"6.4.2 \u7ED3\u6784",slug:"_6-4-2-\u7ED3\u6784",children:[]},{level:3,title:"6.4.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-4-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.4.4 \u4F18\u7F3A\u70B9",slug:"_6-4-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.4.5 \u6E90\u7801\u89E3\u6790",slug:"_6-4-5-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.5 \u72B6\u6001\u6A21\u5F0F",slug:"_6-5-\u72B6\u6001\u6A21\u5F0F",children:[{level:3,title:"6.5.1 \u6982\u8FF0",slug:"_6-5-1-\u6982\u8FF0",children:[]},{level:3,title:"6.5.2 \u7ED3\u6784",slug:"_6-5-2-\u7ED3\u6784",children:[]},{level:3,title:"6.5.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-5-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.5.4 \u4F18\u7F3A\u70B9",slug:"_6-5-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.5.5 \u4F7F\u7528\u573A\u666F",slug:"_6-5-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.6 \u89C2\u5BDF\u8005\u6A21\u5F0F",slug:"_6-6-\u89C2\u5BDF\u8005\u6A21\u5F0F",children:[{level:3,title:"6.6.1 \u6982\u8FF0",slug:"_6-6-1-\u6982\u8FF0",children:[]},{level:3,title:"6.6.2 \u7ED3\u6784",slug:"_6-6-2-\u7ED3\u6784",children:[]},{level:3,title:"6.6.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-6-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.6.4 \u4F18\u7F3A\u70B9",slug:"_6-6-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.6.5 \u4F7F\u7528\u573A\u666F",slug:"_6-6-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.6.6 JDK \u4E2D\u63D0\u4F9B\u7684\u5B9E\u73B0",slug:"_6-6-6-jdk-\u4E2D\u63D0\u4F9B\u7684\u5B9E\u73B0",children:[]}]},{level:2,title:"6.7 \u4E2D\u4ECB\u8005\u6A21\u5F0F",slug:"_6-7-\u4E2D\u4ECB\u8005\u6A21\u5F0F",children:[{level:3,title:"6.7.1 \u6982\u8FF0",slug:"_6-7-1-\u6982\u8FF0",children:[]},{level:3,title:"6.7.2 \u7ED3\u6784",slug:"_6-7-2-\u7ED3\u6784",children:[]},{level:3,title:"6.7.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-7-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.7.4 \u4F18\u7F3A\u70B9",slug:"_6-7-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.7.5 \u4F7F\u7528\u573A\u666F",slug:"_6-7-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.8 \u8FED\u4EE3\u5668\u6A21\u5F0F",slug:"_6-8-\u8FED\u4EE3\u5668\u6A21\u5F0F",children:[{level:3,title:"6.8.1 \u6982\u8FF0",slug:"_6-8-1-\u6982\u8FF0",children:[]},{level:3,title:"6.8.2 \u7ED3\u6784",slug:"_6-8-2-\u7ED3\u6784",children:[]},{level:3,title:"6.8.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-8-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.8.4 \u4F18\u7F3A\u70B9",slug:"_6-8-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.8.5 \u4F7F\u7528\u573A\u666F",slug:"_6-8-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.8.6 JDK \u6E90\u7801\u89E3\u6790",slug:"_6-8-6-jdk-\u6E90\u7801\u89E3\u6790",children:[]}]},{level:2,title:"6.9 \u8BBF\u95EE\u8005\u6A21\u5F0F",slug:"_6-9-\u8BBF\u95EE\u8005\u6A21\u5F0F",children:[{level:3,title:"6.9.1 \u6982\u8FF0",slug:"_6-9-1-\u6982\u8FF0",children:[]},{level:3,title:"6.9.2 \u7ED3\u6784",slug:"_6-9-2-\u7ED3\u6784",children:[]},{level:3,title:"6.9.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-9-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.9.4 \u4F18\u7F3A\u70B9",slug:"_6-9-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.9.5 \u4F7F\u7528\u573A\u666F",slug:"_6-9-5-\u4F7F\u7528\u573A\u666F",children:[]},{level:3,title:"6.9.6 \u6269\u5C55",slug:"_6-9-6-\u6269\u5C55",children:[]}]},{level:2,title:"6.10 \u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[{level:3,title:"6.10.1 \u6982\u8FF0",slug:"_6-10-1-\u6982\u8FF0",children:[]},{level:3,title:"6.10.2 \u7ED3\u6784",slug:"_6-10-2-\u7ED3\u6784",children:[]},{level:3,title:"6.10.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-10-3-\u6848\u4F8B\u5B9E\u73B0",children:[{level:4,title:"6.10.3.1 \u201C\u767D\u7BB1\u201D\u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-3-1-\u767D\u7BB1-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[]},{level:4,title:"6.10.3.2 \u201C\u9ED1\u7BB1\u201D\u5907\u5FD8\u5F55\u6A21\u5F0F",slug:"_6-10-3-2-\u9ED1\u7BB1-\u5907\u5FD8\u5F55\u6A21\u5F0F",children:[]}]},{level:3,title:"6.10.4 \u4F18\u7F3A\u70B9",slug:"_6-10-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.10.5 \u4F7F\u7528\u573A\u666F",slug:"_6-10-5-\u4F7F\u7528\u573A\u666F",children:[]}]},{level:2,title:"6.11 \u89E3\u91CA\u5668\u6A21\u5F0F",slug:"_6-11-\u89E3\u91CA\u5668\u6A21\u5F0F",children:[{level:3,title:"6.11.1 \u6982\u8FF0",slug:"_6-11-1-\u6982\u8FF0",children:[]},{level:3,title:"6.11.2 \u7ED3\u6784",slug:"_6-11-2-\u7ED3\u6784",children:[]},{level:3,title:"6.11.3 \u6848\u4F8B\u5B9E\u73B0",slug:"_6-11-3-\u6848\u4F8B\u5B9E\u73B0",children:[]},{level:3,title:"6.11.4 \u4F18\u7F3A\u70B9",slug:"_6-11-4-\u4F18\u7F3A\u70B9",children:[]},{level:3,title:"6.11.5 \u4F7F\u7528\u573A\u666F",slug:"_6-11-5-\u4F7F\u7528\u573A\u666F",children:[]}]}]},{level:1,title:"7\uFF0C\u81EA\u5B9A\u4E49 Spring \u6846\u67B6",slug:"_7-\u81EA\u5B9A\u4E49-spring-\u6846\u67B6",children:[{level:2,title:"7.1 spring \u4F7F\u7528\u56DE\u987E",slug:"_7-1-spring-\u4F7F\u7528\u56DE\u987E",children:[]},{level:2,title:"7.2 spring \u6838\u5FC3\u529F\u80FD\u7ED3\u6784",slug:"_7-2-spring-\u6838\u5FC3\u529F\u80FD\u7ED3\u6784",children:[{level:3,title:"7.1.1 bean \u6982\u8FF0",slug:"_7-1-1-bean-\u6982\u8FF0",children:[]}]},{level:2,title:"7.3 Spring IOC \u76F8\u5173\u63A5\u53E3\u5206\u6790",slug:"_7-3-spring-ioc-\u76F8\u5173\u63A5\u53E3\u5206\u6790",children:[{level:3,title:"7.3.1 BeanFactory \u89E3\u6790",slug:"_7-3-1-beanfactory-\u89E3\u6790",children:[]},{level:3,title:"7.3.2 BeanDefinition \u89E3\u6790",slug:"_7-3-2-beandefinition-\u89E3\u6790",children:[]},{level:3,title:"7.3.3 BeanDefinitionReader \u89E3\u6790",slug:"_7-3-3-beandefinitionreader-\u89E3\u6790",children:[]},{level:3,title:"7.3.4 BeanDefinitionRegistry \u89E3\u6790",slug:"_7-3-4-beandefinitionregistry-\u89E3\u6790",children:[]},{level:3,title:"7.3.5 \u521B\u5EFA\u5BB9\u5668",slug:"_7-3-5-\u521B\u5EFA\u5BB9\u5668",children:[]}]},{level:2,title:"7.4 \u81EA\u5B9A\u4E49 SpringIOC",slug:"_7-4-\u81EA\u5B9A\u4E49-springioc",children:[{level:3,title:"7.4.1 \u5B9A\u4E49 bean \u76F8\u5173\u7684 pojo \u7C7B",slug:"_7-4-1-\u5B9A\u4E49-bean-\u76F8\u5173\u7684-pojo-\u7C7B",children:[{level:4,title:"7.4.1.1 PropertyValue \u7C7B",slug:"_7-4-1-1-propertyvalue-\u7C7B",children:[]},{level:4,title:"7.4.1.2 MutablePropertyValues \u7C7B",slug:"_7-4-1-2-mutablepropertyvalues-\u7C7B",children:[]},{level:4,title:"7.4.1.3 BeanDefinition \u7C7B",slug:"_7-4-1-3-beandefinition-\u7C7B",children:[]}]},{level:3,title:"7.4.2 \u5B9A\u4E49\u6CE8\u518C\u8868\u76F8\u5173\u7C7B",slug:"_7-4-2-\u5B9A\u4E49\u6CE8\u518C\u8868\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.2.1 BeanDefinitionRegistry \u63A5\u53E3",slug:"_7-4-2-1-beandefinitionregistry-\u63A5\u53E3",children:[]},{level:4,title:"7.4.2.2 SimpleBeanDefinitionRegistry \u7C7B",slug:"_7-4-2-2-simplebeandefinitionregistry-\u7C7B",children:[]}]},{level:3,title:"7.4.3 \u5B9A\u4E49\u89E3\u6790\u5668\u76F8\u5173\u7C7B",slug:"_7-4-3-\u5B9A\u4E49\u89E3\u6790\u5668\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.3.1 BeanDefinitionReader \u63A5\u53E3",slug:"_7-4-3-1-beandefinitionreader-\u63A5\u53E3",children:[]},{level:4,title:"7.4.3.2 XmlBeanDefinitionReader \u7C7B",slug:"_7-4-3-2-xmlbeandefinitionreader-\u7C7B",children:[]}]},{level:3,title:"7.4.4 IOC \u5BB9\u5668\u76F8\u5173\u7C7B",slug:"_7-4-4-ioc-\u5BB9\u5668\u76F8\u5173\u7C7B",children:[{level:4,title:"7.4.4.1 BeanFactory \u63A5\u53E3",slug:"_7-4-4-1-beanfactory-\u63A5\u53E3",children:[]},{level:4,title:"7.4.4.2 ApplicationContext \u63A5\u53E3",slug:"_7-4-4-2-applicationcontext-\u63A5\u53E3",children:[]},{level:4,title:"7.4.4.3 AbstractApplicationContext \u7C7B",slug:"_7-4-4-3-abstractapplicationcontext-\u7C7B",children:[]},{level:4,title:"7.4.4.4 ClassPathXmlApplicationContext \u7C7B",slug:"_7-4-4-4-classpathxmlapplicationcontext-\u7C7B",children:[]}]},{level:3,title:"7.4.5 \u81EA\u5B9A\u4E49 Spring IOC \u603B\u7ED3",slug:"_7-4-5-\u81EA\u5B9A\u4E49-spring-ioc-\u603B\u7ED3",children:[{level:4,title:"7.4.5.1 \u4F7F\u7528\u5230\u7684\u8BBE\u8BA1\u6A21\u5F0F",slug:"_7-4-5-1-\u4F7F\u7528\u5230\u7684\u8BBE\u8BA1\u6A21\u5F0F",children:[]},{level:4,title:"7.4.5.2 \u7B26\u5408\u5927\u90E8\u5206\u8BBE\u8BA1\u539F\u5219",slug:"_7-4-5-2-\u7B26\u5408\u5927\u90E8\u5206\u8BBE\u8BA1\u539F\u5219",children:[]},{level:4,title:"7.4.5.3 \u6574\u4E2A\u8BBE\u8BA1\u548C Spring \u7684\u8BBE\u8BA1\u8FD8\u662F\u6709\u4E00\u5B9A\u7684\u51FA\u5165",slug:"_7-4-5-3-\u6574\u4E2A\u8BBE\u8BA1\u548C-spring-\u7684\u8BBE\u8BA1\u8FD8\u662F\u6709\u4E00\u5B9A\u7684\u51FA\u5165",children:[]}]}]}]}],content:`---
 title: Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F
 description: 'Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F,\u8BBE\u8BA1\u6A21\u5F0F\uFF0CJava'
@@ -13480,9 +13480,2294 @@ bean\u6807\u7B7E\u8FD8\u6709\u5F88\u591A\u5C5E\u6027\uFF1A
 <li>\u4E86\u89E3\u8BBE\u8BA1\u6A21\u5F0F\u5728\u5177\u4F53\u7684\u5F00\u53D1\u4E2D\u7684\u4F7F\u7528\u3002</li>
 <li>\u4EE5\u540E\u5B66\u4E60 spring \u6E90\u7801\uFF0C\u901A\u8FC7\u8BE5\u6848\u4F8B\u7684\u5B9E\u73B0\uFF0C\u53EF\u4EE5\u964D\u4F4E spring \u5B66\u4E60\u7684\u5165\u95E8\u6210\u672C\u3002</li>
 </ul>
-`,date:"2022-08-19",deps:[],links:[],pathInferred:"/posts/design-pattern/",pathLocale:"/",permalink:null,routeMeta:{title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"},sfcBlocks:[],slug:"README",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/design-pattern/README.md",filePathRelative:"posts/design-pattern/README.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/design-pattern/index.html.vue",componentFilePathRelative:"pages/posts/design-pattern/index.html.vue",componentFileChunkName:"v-db9b3b8e",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/design-pattern/index.html.js",dataFilePathRelative:"pages/posts/design-pattern/index.html.js",dataFileChunkName:"v-db9b3b8e",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/design-pattern/index.html",htmlFilePathRelative:"posts/design-pattern/index.html"},title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"},["/posts/design-pattern/index.html","/posts/design-pattern/README.md"]],["v-cc63cd18","/posts/other/algoliaSearch.html",{_blog:{data:{key:"v-cc63cd18",path:"/posts/other/algoliaSearch.html",title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",date:"2022-07-22T09:07:35.000Z",description:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",tag:["Algolia"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207210908451.jpg",sticky:3,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/algoliaSearch.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:description",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Algolia"}],["meta",{property:"article:published_time",content:"2022-07-22T09:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003Algolia \u662F\u4E00\u4E2A\u6570\u636E\u5E93\u5B9E\u65F6\u641C\u7D22\u670D\u52A1\uFF0C\u80FD\u591F\u63D0\u4F9B\u6BEB\u79D2\u7EA7\u7684\u6570\u636E\u5E93\u641C\u7D22\u670D\u52A1\uFF0C\u5E76\u4E14\u5176\u670D\u52A1\u80FD\u4EE5 API \u7684\u5F62\u5F0F\u65B9\u4FBF\u5730\u5E03\u5C40\u5230\u7F51\u9875\u3001\u5BA2\u6237\u7AEF\u3001APP \u7B49\u591A\u79CD\u573A\u666F\u3002Algolia \u7684\u670D\u52A1\u652F\u6301\u591A\u79CD\u8BED\u8A00\u652F\u6301 Ruby\u3001Rails\u3001Python\u3001PHP\u3001JS\u3001Java\u3001Android\u3001Objective-C \u7B49\u591A\u79CD\u8BED\u8A00\uFF0C\u5177\u5907\u5173\u952E\u5B57\u8F93\u5165\u667A\u80FD\u5BB9\u9519\u529F\u80FD\uFF0C\u5E76\u63D0\u4F9B\u6709\u641C\u7D22\u6392\u540D\u914D\u7F6E\uFF0C\u5E76\u5177\u6709\u5B9E\u65F6\u5FEB\u901F\u7684\u7279\u70B9\uFF08Algolia \u5728\u5168\u7403 12 \u4E2A\u6570\u636E\u4E2D\u5FC3\u5747\u6709\u90E8\u7F72\uFF09\u3002Algolia \u8FD8\u4E3A\u79FB\u52A8\u8BBE\u5907\u63D0\u4F9B\u4E86\u79BB\u7EBF\u641C\u7D22\u5F15\u64CE\uFF0C\u5176 C++ SDK \u53EF\u4EE5\u5D4C\u5165\u5230\u5E94\u7528\u670D\u52A1\u5668\u7AEF\uFF0C\u8FD9\u6837\u5373\u4FBF\u6CA1\u6709\u7F51\u7EDC\u8FDE\u63A5\u5E94\u7528\u4E5F\u80FD\u63D0\u4F9B\u641C\u7D22\u529F\u80FD\u3002</p>
-`,headers:[{level:2,title:"\u4E3A\u4EC0\u4E48\u5728\u4F7F\u7528 Algolia?",slug:"\u4E3A\u4EC0\u4E48\u5728\u4F7F\u7528-algolia",children:[]},{level:2,title:"\u5982\u4F55\u4F7F\u7528 Algolia?",slug:"\u5982\u4F55\u4F7F\u7528-algolia",children:[]},{level:2,title:"\u6570\u636E\u722C\u53D6",slug:"\u6570\u636E\u722C\u53D6",children:[]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/algoliaSearch.md",readingTime:{minutes:6.14,words:1841},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/algoliaSearch.html`},key:"v-cc63cd18",path:"/posts/other/algoliaSearch.html",title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",date:"2022-07-22T09:07:35.000Z",description:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",tag:["Algolia"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207210908451.jpg",sticky:3,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/algoliaSearch.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:description",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Algolia"}],["meta",{property:"article:published_time",content:"2022-07-22T09:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003Algolia \u662F\u4E00\u4E2A\u6570\u636E\u5E93\u5B9E\u65F6\u641C\u7D22\u670D\u52A1\uFF0C\u80FD\u591F\u63D0\u4F9B\u6BEB\u79D2\u7EA7\u7684\u6570\u636E\u5E93\u641C\u7D22\u670D\u52A1\uFF0C\u5E76\u4E14\u5176\u670D\u52A1\u80FD\u4EE5 API \u7684\u5F62\u5F0F\u65B9\u4FBF\u5730\u5E03\u5C40\u5230\u7F51\u9875\u3001\u5BA2\u6237\u7AEF\u3001APP \u7B49\u591A\u79CD\u573A\u666F\u3002Algolia \u7684\u670D\u52A1\u652F\u6301\u591A\u79CD\u8BED\u8A00\u652F\u6301 Ruby\u3001Rails\u3001Python\u3001PHP\u3001JS\u3001Java\u3001Android\u3001Objective-C \u7B49\u591A\u79CD\u8BED\u8A00\uFF0C\u5177\u5907\u5173\u952E\u5B57\u8F93\u5165\u667A\u80FD\u5BB9\u9519\u529F\u80FD\uFF0C\u5E76\u63D0\u4F9B\u6709\u641C\u7D22\u6392\u540D\u914D\u7F6E\uFF0C\u5E76\u5177\u6709\u5B9E\u65F6\u5FEB\u901F\u7684\u7279\u70B9\uFF08Algolia \u5728\u5168\u7403 12 \u4E2A\u6570\u636E\u4E2D\u5FC3\u5747\u6709\u90E8\u7F72\uFF09\u3002Algolia \u8FD8\u4E3A\u79FB\u52A8\u8BBE\u5907\u63D0\u4F9B\u4E86\u79BB\u7EBF\u641C\u7D22\u5F15\u64CE\uFF0C\u5176 C++ SDK \u53EF\u4EE5\u5D4C\u5165\u5230\u5E94\u7528\u670D\u52A1\u5668\u7AEF\uFF0C\u8FD9\u6837\u5373\u4FBF\u6CA1\u6709\u7F51\u7EDC\u8FDE\u63A5\u5E94\u7528\u4E5F\u80FD\u63D0\u4F9B\u641C\u7D22\u529F\u80FD\u3002</p>
+`,date:"2022-08-19",deps:[],links:[],pathInferred:"/posts/design-pattern/",pathLocale:"/",permalink:null,routeMeta:{title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"},sfcBlocks:[],slug:"README",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/design-pattern/README.md",filePathRelative:"posts/design-pattern/README.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/design-pattern/index.html.vue",componentFilePathRelative:"pages/posts/design-pattern/index.html.vue",componentFileChunkName:"v-db9b3b8e",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/design-pattern/index.html.js",dataFilePathRelative:"pages/posts/design-pattern/index.html.js",dataFileChunkName:"v-db9b3b8e",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/design-pattern/index.html",htmlFilePathRelative:"posts/design-pattern/index.html"},title:"Java 23\u79CD\u8BBE\u8BA1\u6A21\u5F0F"},["/posts/design-pattern/index.html","/posts/design-pattern/README.md"]],["v-1390655e","/posts/linux/command.html",{_blog:{data:{key:"v-1390655e",path:"/posts/linux/command.html",title:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4",lang:"zh-CN",frontmatter:{title:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4",date:"2022-03-10T10:48:07.000Z",tag:["linux"],category:["linux"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207241420511.jpg",summary:`\u2003Linux\u7CFB\u7EDF\u547D\u4EE4\u6BD4\u8F83\u7E41\u6742\uFF0C\u867D\u7136\u5BB9\u6613\u4E0A\u624B\uFF0C\u4F46\u5728\u4F7F\u7528\u65F6\u5BB9\u6613\u9057\u5FD8\u5177\u4F53\u53C2\u6570\u7684\u542B\u4E49\uFF0C\u5F88\u662F\u8BA9\u4EBA\u82E6\u607C\uFF0C\u56E0\u6B64\u672C\u7BC7\u6587\u7AE0\u6536\u96C6\u4E00\u4E9B\u5E38\u7528\u7684Limux\u547D\u4EE4\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u8FC7\u7A0B\u4E2D\u8FDB\u884C\u67E5\u9605\u548C\u590D\u4E60\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/linux/command.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"linux"}],["meta",{property:"article:published_time",content:"2022-03-10T10:48:07.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Linux\u7CFB\u7EDF\u547D\u4EE4\u6BD4\u8F83\u7E41\u6742\uFF0C\u867D\u7136\u5BB9\u6613\u4E0A\u624B\uFF0C\u4F46\u5728\u4F7F\u7528\u65F6\u5BB9\u6613\u9057\u5FD8\u5177\u4F53\u53C2\u6570\u7684\u542B\u4E49\uFF0C\u5F88\u662F\u8BA9\u4EBA\u82E6\u607C\uFF0C\u56E0\u6B64\u672C\u7BC7\u6587\u7AE0\u6536\u96C6\u4E00\u4E9B\u5E38\u7528\u7684Limux\u547D\u4EE4\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u8FC7\u7A0B\u4E2D\u8FDB\u884C\u67E5\u9605\u548C\u590D\u4E60\u3002</p>
+`,headers:[{level:1,title:"\u4E00\u3001\u5E38\u7528\u547D\u4EE4",slug:"\u4E00\u3001\u5E38\u7528\u547D\u4EE4",children:[{level:2,title:"1 cpu,\u5185\u5B58,\u786C\u76D8,\u7CFB\u7EDF\u7B49\u4FE1\u606F",slug:"_1-cpu-\u5185\u5B58-\u786C\u76D8-\u7CFB\u7EDF\u7B49\u4FE1\u606F",children:[]},{level:2,title:"2 \u6587\u4EF6\u641C\u7D22\u547D\u4EE4",slug:"_2-\u6587\u4EF6\u641C\u7D22\u547D\u4EE4",children:[]},{level:2,title:"3 \u8FDB\u7A0B\u547D\u4EE4",slug:"_3-\u8FDB\u7A0B\u547D\u4EE4",children:[]},{level:2,title:"4 \u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528",slug:"_4-\u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528",children:[]},{level:2,title:"5 \u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D",slug:"_5-\u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D",children:[]},{level:2,title:"6 \u7AEF\u53E3\u547D\u4EE4",slug:"_6-\u7AEF\u53E3\u547D\u4EE4",children:[]},{level:2,title:"7 Docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4",slug:"_7-docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4",children:[]},{level:2,title:"8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4",slug:"_8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4",children:[]}]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/linux/command.md",readingTime:{minutes:5.74,words:1723},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/linux/command.html`},key:"v-1390655e",path:"/posts/linux/command.html",title:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4",lang:"zh-CN",frontmatter:{title:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4",date:"2022-03-10T10:48:07.000Z",tag:["linux"],category:["linux"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207241420511.jpg",summary:`\u2003Linux\u7CFB\u7EDF\u547D\u4EE4\u6BD4\u8F83\u7E41\u6742\uFF0C\u867D\u7136\u5BB9\u6613\u4E0A\u624B\uFF0C\u4F46\u5728\u4F7F\u7528\u65F6\u5BB9\u6613\u9057\u5FD8\u5177\u4F53\u53C2\u6570\u7684\u542B\u4E49\uFF0C\u5F88\u662F\u8BA9\u4EBA\u82E6\u607C\uFF0C\u56E0\u6B64\u672C\u7BC7\u6587\u7AE0\u6536\u96C6\u4E00\u4E9B\u5E38\u7528\u7684Limux\u547D\u4EE4\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u8FC7\u7A0B\u4E2D\u8FDB\u884C\u67E5\u9605\u548C\u590D\u4E60\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/linux/command.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"linux"}],["meta",{property:"article:published_time",content:"2022-03-10T10:48:07.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Linux\u7CFB\u7EDF\u547D\u4EE4\u6BD4\u8F83\u7E41\u6742\uFF0C\u867D\u7136\u5BB9\u6613\u4E0A\u624B\uFF0C\u4F46\u5728\u4F7F\u7528\u65F6\u5BB9\u6613\u9057\u5FD8\u5177\u4F53\u53C2\u6570\u7684\u542B\u4E49\uFF0C\u5F88\u662F\u8BA9\u4EBA\u82E6\u607C\uFF0C\u56E0\u6B64\u672C\u7BC7\u6587\u7AE0\u6536\u96C6\u4E00\u4E9B\u5E38\u7528\u7684Limux\u547D\u4EE4\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u8FC7\u7A0B\u4E2D\u8FDB\u884C\u67E5\u9605\u548C\u590D\u4E60\u3002</p>
+`,headers:[{level:1,title:"\u4E00\u3001\u5E38\u7528\u547D\u4EE4",slug:"\u4E00\u3001\u5E38\u7528\u547D\u4EE4",children:[{level:2,title:"1 cpu,\u5185\u5B58,\u786C\u76D8,\u7CFB\u7EDF\u7B49\u4FE1\u606F",slug:"_1-cpu-\u5185\u5B58-\u786C\u76D8-\u7CFB\u7EDF\u7B49\u4FE1\u606F",children:[]},{level:2,title:"2 \u6587\u4EF6\u641C\u7D22\u547D\u4EE4",slug:"_2-\u6587\u4EF6\u641C\u7D22\u547D\u4EE4",children:[]},{level:2,title:"3 \u8FDB\u7A0B\u547D\u4EE4",slug:"_3-\u8FDB\u7A0B\u547D\u4EE4",children:[]},{level:2,title:"4 \u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528",slug:"_4-\u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528",children:[]},{level:2,title:"5 \u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D",slug:"_5-\u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D",children:[]},{level:2,title:"6 \u7AEF\u53E3\u547D\u4EE4",slug:"_6-\u7AEF\u53E3\u547D\u4EE4",children:[]},{level:2,title:"7 Docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4",slug:"_7-docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4",children:[]},{level:2,title:"8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4",slug:"_8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4",children:[]}]}],content:`---
+title: linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4
+date: 2022-03-10 10:48:07
+tag:
+  - linux
+category:
+  - linux
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207241420511.jpg
+---
+
+&emsp;Linux\u7CFB\u7EDF\u547D\u4EE4\u6BD4\u8F83\u7E41\u6742\uFF0C\u867D\u7136\u5BB9\u6613\u4E0A\u624B\uFF0C\u4F46\u5728\u4F7F\u7528\u65F6\u5BB9\u6613\u9057\u5FD8\u5177\u4F53\u53C2\u6570\u7684\u542B\u4E49\uFF0C\u5F88\u662F\u8BA9\u4EBA\u82E6\u607C\uFF0C\u56E0\u6B64\u672C\u7BC7\u6587\u7AE0\u6536\u96C6\u4E00\u4E9B\u5E38\u7528\u7684Limux\u547D\u4EE4\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u8FC7\u7A0B\u4E2D\u8FDB\u884C\u67E5\u9605\u548C\u590D\u4E60\u3002
+<!-- more -->
+
+# \u4E00\u3001\u5E38\u7528\u547D\u4EE4
+
+## 1 cpu,\u5185\u5B58,\u786C\u76D8,\u7CFB\u7EDF\u7B49\u4FE1\u606F
+
+\`\`\`bash
+#\u903B\u8F91CPU\u4E2A\u6570
+cat /proc/cpuinfo | grep "processor" | wc -l
+#\u903B\u8F91cpu\u4E2A\u6570
+cat /proc/cpuinfo | grep "physical id" | sort | uniq | wc -l
+#cpu\u5168\u90E8\u4FE1\u606F
+cat /proc/cpuinfo
+#cpu\u578B\u53F7\u4FE1\u606F
+cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
+#\u5185\u5B58\u4FE1\u606F
+cat /proc/meminfo
+#\u786C\u76D8\u4FE1\u606F
+fdisk -l    # \u7B2C\u4E00\u79CD
+free -h    # \u4EE5g\u5355\u4F4D
+free -m    # \u4EE5M\u5355\u4F4D
+#\u7CFB\u7EDF\u5185\u6838\u4FE1\u606F
+uname -a
+#\u673A\u5668\u578B\u53F7
+dmidecode | grep "Product Name"
+\`\`\`
+
+## 2 \u6587\u4EF6\u641C\u7D22\u547D\u4EE4
+
+**\u6839\u636E\u6587\u4EF6\u6216\u76EE\u5F55\u540D\u79F0\u641C\u7D22\uFF1A find \u3010\u641C\u7D22\u76EE\u5F55\u3011\u3010-name \u6216\u8005-iname\u3011\u3010\u641C\u7D22\u5B57\u7B26\u3011\uFF1A-name \u548C-iname \u7684\u533A\u522B\u4E00\u4E2A\u533A\u5206\u5927\u5C0F\u5199\uFF0C\u4E00\u4E2A\u4E0D\u533A\u5206\u5927\u5C0F\u5199**
+
+\`\`\`bash
+#\u7CBE\u51C6\u641C\u7D22\uFF0C\u540D\u5B57\u5FC5\u987B\u4E3A init \u624D\u80FD\u641C\u7D22\u7684\u5230
+find /etc -name init
+#\u7CBE\u51C6\u641C\u7D22\uFF0C\u540D\u5B57\u5FC5\u987B\u4E3A init\u6216\u8005\u6709\u5B57\u6BCD\u5927\u5199\u4E5F\u80FD\u641C\u7D22\u7684\u5230
+find /etc -iname init
+#\u6A21\u7CCA\u641C\u7D22\uFF0C\u4EE5 init \u7ED3\u5C3E\u7684\u6587\u4EF6\u6216\u76EE\u5F55\u540D
+find /etc -name *init
+#\u6A21\u7CCA\u641C\u7D22\uFF0C\uFF1F \u8868\u793A\u5355\u4E2A\u5B57\u7B26\uFF0C\u5373\u641C\u7D22\u5230 init___
+find /etc -name init???
+\`\`\`
+
+**\u6839\u636E\u6587\u4EF6\u5927\u5C0F\u8FDB\u884C\u641C\u7D22\uFF1A\`find [\u641C\u7D22\u8303\u56F4] [-size] [n]\`**
+
+\`\`\`bash
+#\u5728\u6839\u76EE\u5F55\u4E0B\u67E5\u627E\u5927\u4E8E 100M \u7684\u6587\u4EF6,\u8FD9\u91CC +n \u8868\u793A\u5927\u4E8E\uFF0C-n \u8868\u793A\u5C0F\u4E8E\uFF0Cn \u8868\u793A\u7B49\u4E8E
+find / -size +204800\u3000\u3000
+\`\`\`
+
+**\u6839\u636E\u6587\u4EF6\u7C7B\u578B\u8FDB\u884C\u641C\u7D22\uFF1A\`find [\u641C\u7D22\u8303\u56F4] [-type]\`**
+
+\`\`\`bash
+#\u67E5\u627E/home\u76EE\u5F55\u4E0B\u6587\u4EF6\u7C7B\u578B\u662F\u76EE\u5F55\u7684\u6587\u4EF6\uFF0C-type \u6839\u636E\u6587\u4EF6\u7C7B\u578B\u67E5\u627E\uFF1Af\u8868\u793A\u6587\u4EF6\uFF0Cd\u8868\u793A\u76EE\u5F55\uFF0Cl\u8868\u793A\u8F6F\u94FE\u63A5
+find /home -type l\u3000\u3000
+\`\`\`
+
+**\u6839\u636E\u7EC4\u5408\u547D\u4EE4\u8FDB\u884C\u641C\u7D22**
+
+\`\`\`bash
+#\u8FD9\u91CC\u6709\u4E24\u4E2A\u53C2\u6570\uFF1A\u2460\u3001-a  \u8868\u793A\u4E24\u4E2A\u6761\u4EF6\u540C\u65F6\u6EE1\u8DB3\uFF08and\uFF09\u2461\u3001-o  \u8868\u793A\u4E24\u4E2A\u6761\u4EF6\u6EE1\u8DB3\u4EFB\u610F\u4E00\u4E2A\u5373\u53EF\uFF08or\uFF09
+#\u8303\u4F8B\uFF1A\u67E5\u627E/etc\u76EE\u5F55\u4E0B\u5927\u4E8E80MB\u540C\u65F6\u5C0F\u4E8E100MB\u7684\u6587\u4EF6
+find /etc -size +163840 -a -size -204800\u3000
+\`\`\`
+
+## 3 \u8FDB\u7A0B\u547D\u4EE4
+
+**ps \u547D\u4EE4**
+
+\`\`\`bash
+#\u67E5\u627Enginx\u5E94\u7528\u7684\u8FDB\u7A0B\u4FE1\u606F
+ps -ef | grep nginx
+#\u6216
+ps aux | grep nginx
+#\u4E24\u8005\u7684\u8F93\u51FA\u7ED3\u679C\u5DEE\u522B\u4E0D\u5927\uFF0C\u4F46\u5C55\u793A\u98CE\u683C\u4E0D\u540C\u3002aux\u662FBSD\u98CE\u683C\uFF0C-ef\u662FSystem V\u98CE\u683C\u3002\u8FD9\u662F\u6B21\u8981\u7684\u533A\u522B\uFF0C\u4E00\u4E2A\u5F71\u54CD\u4F7F\u7528\u7684\u533A\u522B\u662Faux\u4F1A\u622A\u65ADcommand\u5217\uFF0C\u800C-ef\u4E0D\u4F1A
+#\u67E5\u770B\u8FDB\u7A0B\u5E94\u7528\u542F\u52A8\u8DEF\u5F84
+cd /proc/pid
+ls -l
+#cwd\u7B26\u53F7\u94FE\u63A5\u7684\u662F\u8FDB\u7A0B\u8FD0\u884C\u76EE\u5F55\uFF1Bexe\u7B26\u53F7\u8FDE\u63A5\u5C31\u662F\u6267\u884C\u7A0B\u5E8F\u7684\u7EDD\u5BF9\u8DEF\u5F84\uFF1Bcmdline\u5C31\u662F\u7A0B\u5E8F\u8FD0\u884C\u65F6\u8F93\u5165\u7684\u547D\u4EE4\u884C\u547D\u4EE4\uFF1Benviron\u8BB0\u5F55\u4E86\u8FDB\u7A0B\u8FD0\u884C\u65F6\u7684\u73AF\u5883\u53D8\u91CF\uFF1Bfd\u76EE\u5F55\u4E0B\u662F\u8FDB\u7A0B\u6253\u5F00\u6216\u4F7F\u7528\u7684\u6587\u4EF6\u7684\u7B26\u53F7\u8FDE\u63A5\u3002
+#\u6740\u6389\u8FDB\u7A0B
+kill pid
+\`\`\`
+
+## 4 \u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528
+
+**netstat \u547D\u4EE4**
+
+\`\`\`bash
+netstat -tunlp | grep 8080
+#\u5982\u679C\u547D\u4EE4\u4E0D\u5B58\u5728\uFF0C\u8BF7\u5B89\u88C5\uFF1A
+yum install net-tools
+\`\`\`
+
+**losf \u547D\u4EE4**
+
+\`\`\`bash
+losf -i:8080
+#\u5982\u679C\u547D\u4EE4\u4E0D\u5B58\u5728\uFF0C\u8BF7\u5B89\u88C5\uFF1A
+yum install losf
+\`\`\`
+
+## 5 \u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D
+
+**\u6B65\u9AA4\u4E00\uFF1Aroot \u6743\u9650\u4E0B\uFF0C\u5B89\u88C5 lrzsz \u8F6F\u4EF6**
+
+\`\`\`bash
+#Centos\u7CFB\u7EDF
+yum -y install lrzsz
+\`\`\`
+
+**\u6B65\u9AA4\u4E8C\uFF1A\u4E0A\u4F20\u6587\u4EF6\u3002\u8FDB\u5EA6\u9700\u8981\u4E0A\u4F20\u6587\u4EF6\u76EE\u5F55\uFF0C\u4F7F\u7528 rz \u547D\u4EE4\uFF0C\u628A\u6587\u4EF6\u4ECE windows \u7CFB\u7EDF\u4E0A\u4F20\u5230 linux \u7CFB\u7EDF\u4E2D**
+
+\`\`\`bash
+cd \`\u6587\u4EF6\u4E0A\u4F20\u76EE\u5F55\`
+rz
+\`\`\`
+
+**\u6B65\u9AA4\u4E09\uFF1A\u4E0B\u8F7D\u6587\u4EF6\u3002\u4F7F\u7528 sz \u547D\u4EE4\uFF0C\u628A\u6587\u4EF6\u4ECE linux \u7CFB\u7EDF\u4E0B\u8F7D\u5230 windows \u7CFB\u7EDF\u4E2D**
+
+\`\`\`bash
+cd \`\u6587\u4EF6\u76EE\u5F55\`
+sz \`filename\`
+\`\`\`
+
+## 6 \u7AEF\u53E3\u547D\u4EE4
+
+**1 \u5F00\u653E\u7AEF\u53E3**
+
+\`\`\`bash
+#\u6C38\u4E45\u5F00\u653E5672\u7AEF\u53E3
+firewall-cmd --zone=public --add-port=5672/tcp --permanent
+#\u5173\u95ED5672\u7AEF\u53E3
+firewall-cmd --zone=public --remove-port=5672/tcp --permanent
+#\u914D\u7F6E\u7ACB\u5373\u751F\u6548
+firewall-cmd --reload
+\`\`\`
+
+**2 \u67E5\u770B\u9632\u706B\u5899\u6240\u6709\u5F00\u653E\u7684\u7AEF\u53E3**
+
+\`\`\`bash
+firewall-cmd --zone=public --list-ports
+\`\`\`
+
+**3 \u67E5\u770B\u9632\u706B\u5899\u6240\u6709\u5F00\u653E\u7684\u7AEF\u53E3**
+\u5982\u679C\u8981\u5F00\u653E\u7684\u7AEF\u53E3\u592A\u591A\uFF0C\u5ACC\u9EBB\u70E6\uFF0C\u53EF\u4EE5\u5173\u95ED\u9632\u706B\u5899\uFF0C\u5B89\u5168\u6027\u81EA\u884C\u8BC4\u4F30
+
+\`\`\`bash
+systemctl stop firewalld.service
+\`\`\`
+
+**4 \u67E5\u770B\u9632\u706B\u5899\u72B6\u6001**
+
+\`\`\`bash
+systemctl status firewalld.service
+#\u6216
+firewall-cmd --state
+\`\`\`
+
+**5 \u67E5\u770B\u76D1\u542C\u7684\u7AEF\u53E3**
+
+\`\`\`bash
+netstat -lnpt
+\`\`\`
+
+PS:centos7 \u9ED8\u8BA4\u6CA1\u6709 netstat \u547D\u4EE4\uFF0C\u9700\u8981\u5B89\u88C5 net-tools \u5DE5\u5177\uFF0Cyum install -y net-tools
+**6 \u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528\u547D\u4EE4**
+
+\`\`\`bash
+netstat -lnpt | grep 5672
+\`\`\`
+
+**7 \u67E5\u770B\u8FDB\u7A0B\u7684\u8BE6\u7EC6\u4FE1\u606F**
+
+\`\`\`bash
+ps 6832
+\`\`\`
+
+**8 \u4E2D\u6B62\u8FDB\u7A0B**
+
+\`\`\`bash
+kill -9 6832
+\`\`\`
+## 7 Docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4
+
+\u901A\u8FC7docker logs\u547D\u4EE4\u53EF\u4EE5\u67E5\u770B\u5BB9\u5668\u7684\u65E5\u5FD7\uFF1A\`docker logs -f -t --tail 100 datacenter\`
+
+\`\`\`bash
+# \u8BED\u6CD5\u683C\u5F0F
+$ docker logs [OPTIONS] CONTAINER
+  Options:
+        --details        \u663E\u793A\u66F4\u591A\u7684\u4FE1\u606F
+    -f, --follow         \u8DDF\u8E2A\u5B9E\u65F6\u65E5\u5FD7
+        --since string   \u663E\u793A\u81EA\u67D0\u4E2Atimestamp\u4E4B\u540E\u7684\u65E5\u5FD7\uFF0C\u6216\u76F8\u5BF9\u65F6\u95F4\uFF0C\u598242m\uFF08\u537342\u5206\u949F\uFF09
+        --tail string    \u4ECE\u65E5\u5FD7\u672B\u5C3E\u663E\u793A\u591A\u5C11\u884C\u65E5\u5FD7\uFF0C \u9ED8\u8BA4\u662Fall
+    -t, --timestamps     \u663E\u793A\u65F6\u95F4\u6233
+        --until string   \u663E\u793A\u81EA\u67D0\u4E2Atimestamp\u4E4B\u524D\u7684\u65E5\u5FD7\uFF0C\u6216\u76F8\u5BF9\u65F6\u95F4\uFF0C\u598242m\uFF08\u537342\u5206\u949F\uFF09
+\`\`\`
+\u4E3E\u4F8B\u8BF4\u660E\uFF1A
+\`\`\`bash
+#\u67E5\u770B\u6307\u5B9A\u65F6\u95F4\u540E\u7684\u65E5\u5FD7\uFF0C\u53EA\u663E\u793A\u6700\u540E100\u884C
+docker logs -f -t --since="2018-02-08" --tail=100 CONTAINER_ID
+#\u67E5\u770B\u6700\u8FD130\u5206\u949F\u7684\u65E5\u5FD7:
+docker logs --since 30m CONTAINER_ID
+#\u67E5\u770B\u67D0\u65F6\u95F4\u4E4B\u540E\u7684\u65E5\u5FD7\uFF1A
+docker logs -t --since="2018-02-08T13:23:37" CONTAINER_ID
+#\u67E5\u770B\u67D0\u65F6\u95F4\u6BB5\u65E5\u5FD7\uFF1A
+docker logs -t --since="2018-02-08T13:23:37" --until "2018-02-09T12:23:37" CONTAINER_ID
+\`\`\`
+## 8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4
+
+1\u3001\u67E5\u770B\u5F53\u524D\u6587\u4EF6\u5939\u53CA\u6587\u4EF6\u5939\u4E0B\u5927\u5C0F\uFF0Ch:\u4EE5K,M,G\u4E3A\u5355\u4F4D\u663E\u793A\uFF0Cmax-depth\u6807\u8BC6\u76EE\u5F55\u7684\u6DF1\u5EA6
+\`\`\`bash
+du -ah --max-depth=1
+\`\`\`
+2\u3001\u67E5\u770B\u5F53\u524D\u6587\u4EF6\u5939\u603B\u5927\u5C0F
+\`\`\`bash
+du -sh
+\`\`\`
+3\u3001\u67E5\u770B\u6307\u5B9A\u6587\u4EF6\u5939\u603B\u5927\u5C0F
+\`\`\`bash
+du -sh ./data
+\`\`\`
+4\u3001\u663E\u793A\u76EE\u5F55\u6216\u6240\u6709\u6587\u4EF6\u6240\u5360\u7A7A\u95F4
+\`\`\`bash
+du 
+\`\`\`
+5\u3001\u6587\u4EF6\u4ECE\u5927\u5230\u5C0F\u6392\u5E8F
+\`\`\`bash
+du -sh  * | sort -rh
+\`\`\`
+6\u3001\u53C2\u6570\u8BF4\u660E
+
+- -a\u6216-all \u663E\u793A\u76EE\u5F55\u4E2D\u4E2A\u522B\u6587\u4EF6\u7684\u5927\u5C0F\u3002
+- -b\u6216-bytes \u663E\u793A\u76EE\u5F55\u6216\u6587\u4EF6\u5927\u5C0F\u65F6\uFF0C\u4EE5byte\u4E3A\u5355\u4F4D\u3002
+- -c\u6216--total \u9664\u4E86\u663E\u793A\u4E2A\u522B\u76EE\u5F55\u6216\u6587\u4EF6\u7684\u5927\u5C0F\u5916\uFF0C\u540C\u65F6\u4E5F\u663E\u793A\u6240\u6709\u76EE\u5F55\u6216\u6587\u4EF6\u7684\u603B\u548C\u3002
+- -D\u6216--dereference-args \u663E\u793A\u6307\u5B9A\u7B26\u53F7\u8FDE\u63A5\u7684\u6E90\u6587\u4EF6\u5927\u5C0F\u3002
+- -h\u6216--human-readable \u4EE5K\uFF0CM\uFF0CG\u4E3A\u5355\u4F4D\uFF0C\u63D0\u9AD8\u4FE1\u606F\u7684\u53EF\u8BFB\u6027\u3002
+- -H\u6216--si \u4E0E-h\u53C2\u6570\u76F8\u540C\uFF0C\u4F46\u662FK\uFF0CM\uFF0CG\u662F\u4EE51000\u4E3A\u6362\u7B97\u5355\u4F4D\u3002
+- -k\u6216--kilobytes \u4EE51024 bytes\u4E3A\u5355\u4F4D\u3002
+- -l\u6216--count-links \u91CD\u590D\u8BA1\u7B97\u786C\u4EF6\u8FDE\u63A5\u7684\u6587\u4EF6\u3002
+- -L<\u7B26\u53F7\u8FDE\u63A5>\u6216--dereference<\u7B26\u53F7\u8FDE\u63A5> \u663E\u793A\u9009\u9879\u4E2D\u6240\u6307\u5B9A\u7B26\u53F7\u8FDE\u63A5\u7684\u6E90\u6587\u4EF6\u5927\u5C0F\u3002
+- -m\u6216--megabytes \u4EE51MB\u4E3A\u5355\u4F4D\u3002
+- -s\u6216--summarize \u4EC5\u663E\u793A\u603B\u8BA1\u3002
+- -S\u6216--separate-dirs \u663E\u793A\u4E2A\u522B\u76EE\u5F55\u7684\u5927\u5C0F\u65F6\uFF0C\u5E76\u4E0D\u542B\u5176\u5B50\u76EE\u5F55\u7684\u5927\u5C0F\u3002
+- -x\u6216--one-file-xystem \u4EE5\u4E00\u5F00\u59CB\u5904\u7406\u65F6\u7684\u6587\u4EF6\u7CFB\u7EDF\u4E3A\u51C6\uFF0C\u82E5\u9047\u4E0A\u5176\u5B83\u4E0D\u540C\u7684\u6587\u4EF6\u7CFB\u7EDF\u76EE\u5F55\u5219\u7565\u8FC7\u3002
+- -X<\u6587\u4EF6>\u6216--exclude-from=<\u6587\u4EF6> \u5728<\u6587\u4EF6>\u6307\u5B9A\u76EE\u5F55\u6216\u6587\u4EF6\u3002
+- --exclude=<\u76EE\u5F55\u6216\u6587\u4EF6> \u7565\u8FC7\u6307\u5B9A\u7684\u76EE\u5F55\u6216\u6587\u4EF6\u3002
+- --max-depth=<\u76EE\u5F55\u5C42\u6570> \u8D85\u8FC7\u6307\u5B9A\u5C42\u6570\u7684\u76EE\u5F55\u540E\uFF0C\u4E88\u4EE5\u5FFD\u7565\u3002
+`,contentRendered:`<p>\u2003Linux\u7CFB\u7EDF\u547D\u4EE4\u6BD4\u8F83\u7E41\u6742\uFF0C\u867D\u7136\u5BB9\u6613\u4E0A\u624B\uFF0C\u4F46\u5728\u4F7F\u7528\u65F6\u5BB9\u6613\u9057\u5FD8\u5177\u4F53\u53C2\u6570\u7684\u542B\u4E49\uFF0C\u5F88\u662F\u8BA9\u4EBA\u82E6\u607C\uFF0C\u56E0\u6B64\u672C\u7BC7\u6587\u7AE0\u6536\u96C6\u4E00\u4E9B\u5E38\u7528\u7684Limux\u547D\u4EE4\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u8FC7\u7A0B\u4E2D\u8FDB\u884C\u67E5\u9605\u548C\u590D\u4E60\u3002</p>
+<!-- more -->
+<h1 id="\u4E00\u3001\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> \u4E00\u3001\u5E38\u7528\u547D\u4EE4</h1>
+<h2 id="_1-cpu-\u5185\u5B58-\u786C\u76D8-\u7CFB\u7EDF\u7B49\u4FE1\u606F" tabindex="-1"><a class="header-anchor" href="#_1-cpu-\u5185\u5B58-\u786C\u76D8-\u7CFB\u7EDF\u7B49\u4FE1\u606F" aria-hidden="true">#</a> 1 cpu,\u5185\u5B58,\u786C\u76D8,\u7CFB\u7EDF\u7B49\u4FE1\u606F</h2>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u903B\u8F91CPU\u4E2A\u6570</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"processor"</span> <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span>
+<span class="token comment">#\u903B\u8F91cpu\u4E2A\u6570</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"physical id"</span> <span class="token operator">|</span> <span class="token function">sort</span> <span class="token operator">|</span> <span class="token function">uniq</span> <span class="token operator">|</span> <span class="token function">wc</span> <span class="token parameter variable">-l</span>
+<span class="token comment">#cpu\u5168\u90E8\u4FE1\u606F</span>
+<span class="token function">cat</span> /proc/cpuinfo
+<span class="token comment">#cpu\u578B\u53F7\u4FE1\u606F</span>
+<span class="token function">cat</span> /proc/cpuinfo <span class="token operator">|</span> <span class="token function">grep</span> name <span class="token operator">|</span> <span class="token function">cut</span> <span class="token parameter variable">-f2</span> -d: <span class="token operator">|</span> <span class="token function">uniq</span> <span class="token parameter variable">-c</span>
+<span class="token comment">#\u5185\u5B58\u4FE1\u606F</span>
+<span class="token function">cat</span> /proc/meminfo
+<span class="token comment">#\u786C\u76D8\u4FE1\u606F</span>
+<span class="token function">fdisk</span> <span class="token parameter variable">-l</span>    <span class="token comment"># \u7B2C\u4E00\u79CD</span>
+<span class="token function">free</span> <span class="token parameter variable">-h</span>    <span class="token comment"># \u4EE5g\u5355\u4F4D</span>
+<span class="token function">free</span> <span class="token parameter variable">-m</span>    <span class="token comment"># \u4EE5M\u5355\u4F4D</span>
+<span class="token comment">#\u7CFB\u7EDF\u5185\u6838\u4FE1\u606F</span>
+<span class="token function">uname</span> <span class="token parameter variable">-a</span>
+<span class="token comment">#\u673A\u5668\u578B\u53F7</span>
+dmidecode <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"Product Name"</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_2-\u6587\u4EF6\u641C\u7D22\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_2-\u6587\u4EF6\u641C\u7D22\u547D\u4EE4" aria-hidden="true">#</a> 2 \u6587\u4EF6\u641C\u7D22\u547D\u4EE4</h2>
+<p><strong>\u6839\u636E\u6587\u4EF6\u6216\u76EE\u5F55\u540D\u79F0\u641C\u7D22\uFF1A find \u3010\u641C\u7D22\u76EE\u5F55\u3011\u3010-name \u6216\u8005-iname\u3011\u3010\u641C\u7D22\u5B57\u7B26\u3011\uFF1A-name \u548C-iname \u7684\u533A\u522B\u4E00\u4E2A\u533A\u5206\u5927\u5C0F\u5199\uFF0C\u4E00\u4E2A\u4E0D\u533A\u5206\u5927\u5C0F\u5199</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u7CBE\u51C6\u641C\u7D22\uFF0C\u540D\u5B57\u5FC5\u987B\u4E3A init \u624D\u80FD\u641C\u7D22\u7684\u5230</span>
+<span class="token function">find</span> /etc <span class="token parameter variable">-name</span> init
+<span class="token comment">#\u7CBE\u51C6\u641C\u7D22\uFF0C\u540D\u5B57\u5FC5\u987B\u4E3A init\u6216\u8005\u6709\u5B57\u6BCD\u5927\u5199\u4E5F\u80FD\u641C\u7D22\u7684\u5230</span>
+<span class="token function">find</span> /etc <span class="token parameter variable">-iname</span> init
+<span class="token comment">#\u6A21\u7CCA\u641C\u7D22\uFF0C\u4EE5 init \u7ED3\u5C3E\u7684\u6587\u4EF6\u6216\u76EE\u5F55\u540D</span>
+<span class="token function">find</span> /etc <span class="token parameter variable">-name</span> *init
+<span class="token comment">#\u6A21\u7CCA\u641C\u7D22\uFF0C\uFF1F \u8868\u793A\u5355\u4E2A\u5B57\u7B26\uFF0C\u5373\u641C\u7D22\u5230 init___</span>
+<span class="token function">find</span> /etc <span class="token parameter variable">-name</span> init???
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u6839\u636E\u6587\u4EF6\u5927\u5C0F\u8FDB\u884C\u641C\u7D22\uFF1A<code v-pre>find [\u641C\u7D22\u8303\u56F4] [-size] [n]</code></strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5728\u6839\u76EE\u5F55\u4E0B\u67E5\u627E\u5927\u4E8E 100M \u7684\u6587\u4EF6,\u8FD9\u91CC +n \u8868\u793A\u5927\u4E8E\uFF0C-n \u8868\u793A\u5C0F\u4E8E\uFF0Cn \u8868\u793A\u7B49\u4E8E</span>
+<span class="token function">find</span> / <span class="token parameter variable">-size</span> +204800\u3000\u3000
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u6839\u636E\u6587\u4EF6\u7C7B\u578B\u8FDB\u884C\u641C\u7D22\uFF1A<code v-pre>find [\u641C\u7D22\u8303\u56F4] [-type]</code></strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u627E/home\u76EE\u5F55\u4E0B\u6587\u4EF6\u7C7B\u578B\u662F\u76EE\u5F55\u7684\u6587\u4EF6\uFF0C-type \u6839\u636E\u6587\u4EF6\u7C7B\u578B\u67E5\u627E\uFF1Af\u8868\u793A\u6587\u4EF6\uFF0Cd\u8868\u793A\u76EE\u5F55\uFF0Cl\u8868\u793A\u8F6F\u94FE\u63A5</span>
+<span class="token function">find</span> /home <span class="token parameter variable">-type</span> l\u3000\u3000
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u6839\u636E\u7EC4\u5408\u547D\u4EE4\u8FDB\u884C\u641C\u7D22</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u8FD9\u91CC\u6709\u4E24\u4E2A\u53C2\u6570\uFF1A\u2460\u3001-a  \u8868\u793A\u4E24\u4E2A\u6761\u4EF6\u540C\u65F6\u6EE1\u8DB3\uFF08and\uFF09\u2461\u3001-o  \u8868\u793A\u4E24\u4E2A\u6761\u4EF6\u6EE1\u8DB3\u4EFB\u610F\u4E00\u4E2A\u5373\u53EF\uFF08or\uFF09</span>
+<span class="token comment">#\u8303\u4F8B\uFF1A\u67E5\u627E/etc\u76EE\u5F55\u4E0B\u5927\u4E8E80MB\u540C\u65F6\u5C0F\u4E8E100MB\u7684\u6587\u4EF6</span>
+<span class="token function">find</span> /etc <span class="token parameter variable">-size</span> +163840 <span class="token parameter variable">-a</span> <span class="token parameter variable">-size</span> <span class="token parameter variable">-204800</span>\u3000
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-\u8FDB\u7A0B\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_3-\u8FDB\u7A0B\u547D\u4EE4" aria-hidden="true">#</a> 3 \u8FDB\u7A0B\u547D\u4EE4</h2>
+<p><strong>ps \u547D\u4EE4</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u627Enginx\u5E94\u7528\u7684\u8FDB\u7A0B\u4FE1\u606F</span>
+<span class="token function">ps</span> <span class="token parameter variable">-ef</span> <span class="token operator">|</span> <span class="token function">grep</span> nginx
+<span class="token comment">#\u6216</span>
+<span class="token function">ps</span> aux <span class="token operator">|</span> <span class="token function">grep</span> nginx
+<span class="token comment">#\u4E24\u8005\u7684\u8F93\u51FA\u7ED3\u679C\u5DEE\u522B\u4E0D\u5927\uFF0C\u4F46\u5C55\u793A\u98CE\u683C\u4E0D\u540C\u3002aux\u662FBSD\u98CE\u683C\uFF0C-ef\u662FSystem V\u98CE\u683C\u3002\u8FD9\u662F\u6B21\u8981\u7684\u533A\u522B\uFF0C\u4E00\u4E2A\u5F71\u54CD\u4F7F\u7528\u7684\u533A\u522B\u662Faux\u4F1A\u622A\u65ADcommand\u5217\uFF0C\u800C-ef\u4E0D\u4F1A</span>
+<span class="token comment">#\u67E5\u770B\u8FDB\u7A0B\u5E94\u7528\u542F\u52A8\u8DEF\u5F84</span>
+<span class="token builtin class-name">cd</span> /proc/pid
+<span class="token function">ls</span> <span class="token parameter variable">-l</span>
+<span class="token comment">#cwd\u7B26\u53F7\u94FE\u63A5\u7684\u662F\u8FDB\u7A0B\u8FD0\u884C\u76EE\u5F55\uFF1Bexe\u7B26\u53F7\u8FDE\u63A5\u5C31\u662F\u6267\u884C\u7A0B\u5E8F\u7684\u7EDD\u5BF9\u8DEF\u5F84\uFF1Bcmdline\u5C31\u662F\u7A0B\u5E8F\u8FD0\u884C\u65F6\u8F93\u5165\u7684\u547D\u4EE4\u884C\u547D\u4EE4\uFF1Benviron\u8BB0\u5F55\u4E86\u8FDB\u7A0B\u8FD0\u884C\u65F6\u7684\u73AF\u5883\u53D8\u91CF\uFF1Bfd\u76EE\u5F55\u4E0B\u662F\u8FDB\u7A0B\u6253\u5F00\u6216\u4F7F\u7528\u7684\u6587\u4EF6\u7684\u7B26\u53F7\u8FDE\u63A5\u3002</span>
+<span class="token comment">#\u6740\u6389\u8FDB\u7A0B</span>
+<span class="token function">kill</span> pid
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_4-\u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528" tabindex="-1"><a class="header-anchor" href="#_4-\u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528" aria-hidden="true">#</a> 4 \u67E5\u770B\u6307\u5B9A\u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528</h2>
+<p><strong>netstat \u547D\u4EE4</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">netstat</span> <span class="token parameter variable">-tunlp</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token number">8080</span>
+<span class="token comment">#\u5982\u679C\u547D\u4EE4\u4E0D\u5B58\u5728\uFF0C\u8BF7\u5B89\u88C5\uFF1A</span>
+yum <span class="token function">install</span> net-tools
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>losf \u547D\u4EE4</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>losf <span class="token parameter variable">-i:8080</span>
+<span class="token comment">#\u5982\u679C\u547D\u4EE4\u4E0D\u5B58\u5728\uFF0C\u8BF7\u5B89\u88C5\uFF1A</span>
+yum <span class="token function">install</span> losf
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_5-\u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D" tabindex="-1"><a class="header-anchor" href="#_5-\u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D" aria-hidden="true">#</a> 5 \u6587\u4EF6\u4E0A\u4F20\u548C\u4E0B\u8F7D</h2>
+<p><strong>\u6B65\u9AA4\u4E00\uFF1Aroot \u6743\u9650\u4E0B\uFF0C\u5B89\u88C5 lrzsz \u8F6F\u4EF6</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#Centos\u7CFB\u7EDF</span>
+yum <span class="token parameter variable">-y</span> <span class="token function">install</span> lrzsz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u6B65\u9AA4\u4E8C\uFF1A\u4E0A\u4F20\u6587\u4EF6\u3002\u8FDB\u5EA6\u9700\u8981\u4E0A\u4F20\u6587\u4EF6\u76EE\u5F55\uFF0C\u4F7F\u7528 rz \u547D\u4EE4\uFF0C\u628A\u6587\u4EF6\u4ECE windows \u7CFB\u7EDF\u4E0A\u4F20\u5230 linux \u7CFB\u7EDF\u4E2D</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">cd</span> <span class="token variable"><span class="token variable">\`</span>\u6587\u4EF6\u4E0A\u4F20\u76EE\u5F55<span class="token variable">\`</span></span>
+rz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u6B65\u9AA4\u4E09\uFF1A\u4E0B\u8F7D\u6587\u4EF6\u3002\u4F7F\u7528 sz \u547D\u4EE4\uFF0C\u628A\u6587\u4EF6\u4ECE linux \u7CFB\u7EDF\u4E0B\u8F7D\u5230 windows \u7CFB\u7EDF\u4E2D</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">cd</span> <span class="token variable"><span class="token variable">\`</span>\u6587\u4EF6\u76EE\u5F55<span class="token variable">\`</span></span>
+sz <span class="token variable"><span class="token variable">\`</span>filename<span class="token variable">\`</span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_6-\u7AEF\u53E3\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_6-\u7AEF\u53E3\u547D\u4EE4" aria-hidden="true">#</a> 6 \u7AEF\u53E3\u547D\u4EE4</h2>
+<p><strong>1 \u5F00\u653E\u7AEF\u53E3</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u6C38\u4E45\u5F00\u653E5672\u7AEF\u53E3</span>
+firewall-cmd <span class="token parameter variable">--zone</span><span class="token operator">=</span>public --add-port<span class="token operator">=</span><span class="token number">5672</span>/tcp <span class="token parameter variable">--permanent</span>
+<span class="token comment">#\u5173\u95ED5672\u7AEF\u53E3</span>
+firewall-cmd <span class="token parameter variable">--zone</span><span class="token operator">=</span>public --remove-port<span class="token operator">=</span><span class="token number">5672</span>/tcp <span class="token parameter variable">--permanent</span>
+<span class="token comment">#\u914D\u7F6E\u7ACB\u5373\u751F\u6548</span>
+firewall-cmd <span class="token parameter variable">--reload</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>2 \u67E5\u770B\u9632\u706B\u5899\u6240\u6709\u5F00\u653E\u7684\u7AEF\u53E3</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>firewall-cmd <span class="token parameter variable">--zone</span><span class="token operator">=</span>public --list-ports
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>3 \u67E5\u770B\u9632\u706B\u5899\u6240\u6709\u5F00\u653E\u7684\u7AEF\u53E3</strong>
+\u5982\u679C\u8981\u5F00\u653E\u7684\u7AEF\u53E3\u592A\u591A\uFF0C\u5ACC\u9EBB\u70E6\uFF0C\u53EF\u4EE5\u5173\u95ED\u9632\u706B\u5899\uFF0C\u5B89\u5168\u6027\u81EA\u884C\u8BC4\u4F30</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>systemctl stop firewalld.service
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>4 \u67E5\u770B\u9632\u706B\u5899\u72B6\u6001</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>systemctl status firewalld.service
+<span class="token comment">#\u6216</span>
+firewall-cmd <span class="token parameter variable">--state</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>5 \u67E5\u770B\u76D1\u542C\u7684\u7AEF\u53E3</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">netstat</span> <span class="token parameter variable">-lnpt</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>PS:centos7 \u9ED8\u8BA4\u6CA1\u6709 netstat \u547D\u4EE4\uFF0C\u9700\u8981\u5B89\u88C5 net-tools \u5DE5\u5177\uFF0Cyum install -y net-tools
+<strong>6 \u7AEF\u53E3\u8FDB\u7A0B\u5360\u7528\u547D\u4EE4</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">netstat</span> <span class="token parameter variable">-lnpt</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token number">5672</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>7 \u67E5\u770B\u8FDB\u7A0B\u7684\u8BE6\u7EC6\u4FE1\u606F</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">ps</span> <span class="token number">6832</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>8 \u4E2D\u6B62\u8FDB\u7A0B</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">kill</span> <span class="token parameter variable">-9</span> <span class="token number">6832</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="_7-docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_7-docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4" aria-hidden="true">#</a> 7 Docker\u5BB9\u5668\u8FD0\u884C\u65E5\u5FD7\u547D\u4EE4</h2>
+<p>\u901A\u8FC7docker logs\u547D\u4EE4\u53EF\u4EE5\u67E5\u770B\u5BB9\u5668\u7684\u65E5\u5FD7\uFF1A<code v-pre>docker logs -f -t --tail 100 datacenter</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u8BED\u6CD5\u683C\u5F0F</span>
+$ <span class="token function">docker</span> logs <span class="token punctuation">[</span>OPTIONS<span class="token punctuation">]</span> CONTAINER
+  Options:
+        <span class="token parameter variable">--details</span>        \u663E\u793A\u66F4\u591A\u7684\u4FE1\u606F
+    -f, <span class="token parameter variable">--follow</span>         \u8DDF\u8E2A\u5B9E\u65F6\u65E5\u5FD7
+        <span class="token parameter variable">--since</span> string   \u663E\u793A\u81EA\u67D0\u4E2Atimestamp\u4E4B\u540E\u7684\u65E5\u5FD7\uFF0C\u6216\u76F8\u5BF9\u65F6\u95F4\uFF0C\u598242m\uFF08\u537342\u5206\u949F\uFF09
+        <span class="token parameter variable">--tail</span> string    \u4ECE\u65E5\u5FD7\u672B\u5C3E\u663E\u793A\u591A\u5C11\u884C\u65E5\u5FD7\uFF0C \u9ED8\u8BA4\u662Fall
+    -t, <span class="token parameter variable">--timestamps</span>     \u663E\u793A\u65F6\u95F4\u6233
+        <span class="token parameter variable">--until</span> string   \u663E\u793A\u81EA\u67D0\u4E2Atimestamp\u4E4B\u524D\u7684\u65E5\u5FD7\uFF0C\u6216\u76F8\u5BF9\u65F6\u95F4\uFF0C\u598242m\uFF08\u537342\u5206\u949F\uFF09
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u4E3E\u4F8B\u8BF4\u660E\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u770B\u6307\u5B9A\u65F6\u95F4\u540E\u7684\u65E5\u5FD7\uFF0C\u53EA\u663E\u793A\u6700\u540E100\u884C</span>
+<span class="token function">docker</span> logs <span class="token parameter variable">-f</span> <span class="token parameter variable">-t</span> <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">"2018-02-08"</span> <span class="token parameter variable">--tail</span><span class="token operator">=</span><span class="token number">100</span> CONTAINER_ID
+<span class="token comment">#\u67E5\u770B\u6700\u8FD130\u5206\u949F\u7684\u65E5\u5FD7:</span>
+<span class="token function">docker</span> logs <span class="token parameter variable">--since</span> 30m CONTAINER_ID
+<span class="token comment">#\u67E5\u770B\u67D0\u65F6\u95F4\u4E4B\u540E\u7684\u65E5\u5FD7\uFF1A</span>
+<span class="token function">docker</span> logs <span class="token parameter variable">-t</span> <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">"2018-02-08T13:23:37"</span> CONTAINER_ID
+<span class="token comment">#\u67E5\u770B\u67D0\u65F6\u95F4\u6BB5\u65E5\u5FD7\uFF1A</span>
+<span class="token function">docker</span> logs <span class="token parameter variable">-t</span> <span class="token parameter variable">--since</span><span class="token operator">=</span><span class="token string">"2018-02-08T13:23:37"</span> <span class="token parameter variable">--until</span> <span class="token string">"2018-02-09T12:23:37"</span> CONTAINER_ID
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4" aria-hidden="true">#</a> 8\u6587\u4EF6\u5927\u5C0F\u67E5\u770B\u547D\u4EE4</h2>
+<p>1\u3001\u67E5\u770B\u5F53\u524D\u6587\u4EF6\u5939\u53CA\u6587\u4EF6\u5939\u4E0B\u5927\u5C0F\uFF0Ch:\u4EE5K,M,G\u4E3A\u5355\u4F4D\u663E\u793A\uFF0Cmax-depth\u6807\u8BC6\u76EE\u5F55\u7684\u6DF1\u5EA6</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">du</span> <span class="token parameter variable">-ah</span> --max-depth<span class="token operator">=</span><span class="token number">1</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2\u3001\u67E5\u770B\u5F53\u524D\u6587\u4EF6\u5939\u603B\u5927\u5C0F</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">du</span> <span class="token parameter variable">-sh</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>3\u3001\u67E5\u770B\u6307\u5B9A\u6587\u4EF6\u5939\u603B\u5927\u5C0F</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">du</span> <span class="token parameter variable">-sh</span> ./data
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>4\u3001\u663E\u793A\u76EE\u5F55\u6216\u6240\u6709\u6587\u4EF6\u6240\u5360\u7A7A\u95F4</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">du</span> 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>5\u3001\u6587\u4EF6\u4ECE\u5927\u5230\u5C0F\u6392\u5E8F</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">du</span> <span class="token parameter variable">-sh</span>  * <span class="token operator">|</span> <span class="token function">sort</span> <span class="token parameter variable">-rh</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>6\u3001\u53C2\u6570\u8BF4\u660E</p>
+<ul>
+<li>-a\u6216-all \u663E\u793A\u76EE\u5F55\u4E2D\u4E2A\u522B\u6587\u4EF6\u7684\u5927\u5C0F\u3002</li>
+<li>-b\u6216-bytes \u663E\u793A\u76EE\u5F55\u6216\u6587\u4EF6\u5927\u5C0F\u65F6\uFF0C\u4EE5byte\u4E3A\u5355\u4F4D\u3002</li>
+<li>-c\u6216--total \u9664\u4E86\u663E\u793A\u4E2A\u522B\u76EE\u5F55\u6216\u6587\u4EF6\u7684\u5927\u5C0F\u5916\uFF0C\u540C\u65F6\u4E5F\u663E\u793A\u6240\u6709\u76EE\u5F55\u6216\u6587\u4EF6\u7684\u603B\u548C\u3002</li>
+<li>-D\u6216--dereference-args \u663E\u793A\u6307\u5B9A\u7B26\u53F7\u8FDE\u63A5\u7684\u6E90\u6587\u4EF6\u5927\u5C0F\u3002</li>
+<li>-h\u6216--human-readable \u4EE5K\uFF0CM\uFF0CG\u4E3A\u5355\u4F4D\uFF0C\u63D0\u9AD8\u4FE1\u606F\u7684\u53EF\u8BFB\u6027\u3002</li>
+<li>-H\u6216--si \u4E0E-h\u53C2\u6570\u76F8\u540C\uFF0C\u4F46\u662FK\uFF0CM\uFF0CG\u662F\u4EE51000\u4E3A\u6362\u7B97\u5355\u4F4D\u3002</li>
+<li>-k\u6216--kilobytes \u4EE51024 bytes\u4E3A\u5355\u4F4D\u3002</li>
+<li>-l\u6216--count-links \u91CD\u590D\u8BA1\u7B97\u786C\u4EF6\u8FDE\u63A5\u7684\u6587\u4EF6\u3002</li>
+<li>-L&lt;\u7B26\u53F7\u8FDE\u63A5&gt;\u6216--dereference&lt;\u7B26\u53F7\u8FDE\u63A5&gt; \u663E\u793A\u9009\u9879\u4E2D\u6240\u6307\u5B9A\u7B26\u53F7\u8FDE\u63A5\u7684\u6E90\u6587\u4EF6\u5927\u5C0F\u3002</li>
+<li>-m\u6216--megabytes \u4EE51MB\u4E3A\u5355\u4F4D\u3002</li>
+<li>-s\u6216--summarize \u4EC5\u663E\u793A\u603B\u8BA1\u3002</li>
+<li>-S\u6216--separate-dirs \u663E\u793A\u4E2A\u522B\u76EE\u5F55\u7684\u5927\u5C0F\u65F6\uFF0C\u5E76\u4E0D\u542B\u5176\u5B50\u76EE\u5F55\u7684\u5927\u5C0F\u3002</li>
+<li>-x\u6216--one-file-xystem \u4EE5\u4E00\u5F00\u59CB\u5904\u7406\u65F6\u7684\u6587\u4EF6\u7CFB\u7EDF\u4E3A\u51C6\uFF0C\u82E5\u9047\u4E0A\u5176\u5B83\u4E0D\u540C\u7684\u6587\u4EF6\u7CFB\u7EDF\u76EE\u5F55\u5219\u7565\u8FC7\u3002</li>
+<li>-X&lt;\u6587\u4EF6&gt;\u6216--exclude-from=&lt;\u6587\u4EF6&gt; \u5728&lt;\u6587\u4EF6&gt;\u6307\u5B9A\u76EE\u5F55\u6216\u6587\u4EF6\u3002</li>
+<li>--exclude=&lt;\u76EE\u5F55\u6216\u6587\u4EF6&gt; \u7565\u8FC7\u6307\u5B9A\u7684\u76EE\u5F55\u6216\u6587\u4EF6\u3002</li>
+<li>--max-depth=&lt;\u76EE\u5F55\u5C42\u6570&gt; \u8D85\u8FC7\u6307\u5B9A\u5C42\u6570\u7684\u76EE\u5F55\u540E\uFF0C\u4E88\u4EE5\u5FFD\u7565\u3002</li>
+</ul>
+`,date:"2022-03-10",deps:[],links:[],pathInferred:"/posts/linux/command.html",pathLocale:"/",permalink:null,routeMeta:{title:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4"},sfcBlocks:[],slug:"command",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/linux/command.md",filePathRelative:"posts/linux/command.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/linux/command.html.vue",componentFilePathRelative:"pages/posts/linux/command.html.vue",componentFileChunkName:"v-1390655e",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/linux/command.html.js",dataFilePathRelative:"pages/posts/linux/command.html.js",dataFileChunkName:"v-1390655e",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/linux/command.html",htmlFilePathRelative:"posts/linux/command.html"},title:"linux\u7CFB\u7EDF\u5E38\u7528\u547D\u4EE4"},["/posts/linux/command","/posts/linux/command.md"]],["v-3ffabb67","/posts/linux/nohup.html",{_blog:{data:{key:"v-3ffabb67",path:"/posts/linux/nohup.html",title:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6",lang:"zh-CN",frontmatter:{title:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6",date:"2022-04-07T17:08:16.000Z",tag:["linux"],category:["linux"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201006898.jpg",summary:`\u2003nohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002\u2003 \u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E \u2003 \u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/linux/nohup.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"linux"}],["meta",{property:"article:published_time",content:"2022-04-07T17:08:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003nohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002\u2003 \u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E \u2003 \u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001nohup \u547D\u4EE4",slug:"\u4E00\u3001nohup-\u547D\u4EE4",children:[]},{level:2,title:"\u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A",slug:"\u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A",children:[]},{level:2,title:"\u4E09\u3001Tomcat \u6E05\u9664 catalina.out \u65E5\u5FD7",slug:"\u4E09\u3001tomcat-\u6E05\u9664-catalina-out-\u65E5\u5FD7",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/linux/nohup.md",readingTime:{minutes:6.02,words:1807},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/linux/nohup.html`},key:"v-3ffabb67",path:"/posts/linux/nohup.html",title:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6",lang:"zh-CN",frontmatter:{title:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6",date:"2022-04-07T17:08:16.000Z",tag:["linux"],category:["linux"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201006898.jpg",summary:`\u2003nohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002\u2003 \u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E \u2003 \u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/linux/nohup.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"linux"}],["meta",{property:"article:published_time",content:"2022-04-07T17:08:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003nohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002\u2003 \u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E \u2003 \u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001nohup \u547D\u4EE4",slug:"\u4E00\u3001nohup-\u547D\u4EE4",children:[]},{level:2,title:"\u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A",slug:"\u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A",children:[]},{level:2,title:"\u4E09\u3001Tomcat \u6E05\u9664 catalina.out \u65E5\u5FD7",slug:"\u4E09\u3001tomcat-\u6E05\u9664-catalina-out-\u65E5\u5FD7",children:[]}],content:`---
+title: nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6
+date: 2022-04-07 17:08:16
+tag:
+  - linux
+category:
+  - linux
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201006898.jpg
+---
+
+&emsp;nohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002\u2003 \u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E \u2003 \u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002
+
+<!-- more -->
+
+## \u4E00\u3001nohup \u547D\u4EE4
+
+**1\u3001nohup \u547D\u4EE4\u683C\u5F0F\uFF1A\`nohup Command [ Arg \u2026 ] [ & ]\`, Command\uFF1A\u542F\u52A8\u5BF9\u8C61\u547D\u4EE4,\u53EF\u4EE5\u8DDF\u8BE5\u547D\u4EE4\u9700\u8981\u7684\u5404\u79CD\u53C2\u6570\u3002**
+
+&emsp;nohup \u547D\u4EE4\u8FD0\u884C\u7531 Command \u53C2\u6570\u548C\u4EFB\u4F55\u76F8\u5173\u7684 Arg \u53C2\u6570\u6307\u5B9A\u7684\u547D\u4EE4\uFF0C\u5FFD\u7565\u6240\u6709\u6302\u65AD\uFF08SIGHUP\uFF09\u4FE1\u53F7\u3002\u5728\u6CE8\u9500\u540E\u4F7F\u7528 nohup \u547D\u4EE4\u8FD0\u884C\u540E\u53F0\u4E2D\u7684\u7A0B\u5E8F\u3002\u8981\u8FD0\u884C\u540E\u53F0\u4E2D\u7684 nohup \u547D\u4EE4\uFF0C\u6DFB\u52A0 & \uFF08 \u8868\u793A\u201Cand\u201D\u7684\u7B26\u53F7\uFF09\u5230\u547D\u4EE4\u7684\u5C3E\u90E8\u3002\u5E26 \u2003 \u7684\u547D\u4EE4\u884C\uFF0C\u5373\u4F7F terminal \u5173\u95ED\uFF0C\u6216\u8005\u7535\u8111\u6B7B\u673A\u7A0B\u5E8F\u4F9D\u7136\u8FD0\u884C\uFF08\u524D\u63D0\u662F\u4F60\u628A\u7A0B\u5E8F\u9012\u4EA4\u5230\u670D\u52A1\u5668\u4E0A)\u3002  
+**2\u3001\u5B9E\u73B0\u5C4F\u5E55\u8F93\u51FA\u8BB0\u5F55\u5230\u65E5\u5FD7\u6587\u4EF6**
+
+\`\`\`bash
+nohup yourcommand 2>&1 &
+\`\`\`
+
+\u5982\u679C\u4E0D\u6307\u5B9A\u91CD\u5B9A\u5411\uFF0C\u5219\u65E5\u5FD7\u9ED8\u8BA4\u8F93\u51FA\u5230\u5F53\u524D\u76EE\u5F55\u4E0B nohup.out \u6587\u4EF6\u4E2D\u3002  
+\u64CD\u4F5C\u7CFB\u7EDF\u4E2D\u6709\u4E09\u4E2A\u5E38\u7528\u7684\u6D41\uFF1A
+
+- 0\uFF1Astdin \u6807\u51C6\u8F93\u5165, 1\uFF1A\u4EE3\u8868 stdout \u6807\u51C6\u8F93\u51FA, 2\uFF1A\u4EE3\u8868 stderr \u6807\u51C6\u9519\u8BEF\u3002
+
+<div color="red">\u4E00\u822C\u5F53\u6211\u4EEC\u7528 > console.txt\uFF0C\u5B9E\u9645\u662F 1>console.txt \u7684\u7701\u7565\u7528\u6CD5\uFF1B&lt; console.txt \uFF0C\u5B9E\u9645\u662F 0 &lt; console.txt \u7684\u7701\u7565\u7528\u6CD5\u3002</div>
+
+- 2>&1 \u4F5C\u7528\uFF1A
+
+<div color="red">\u628A\u6807\u51C6\u9519\u8BEF\uFF082\uFF09\u91CD\u5B9A\u5411\u5230\u6807\u51C6\u8F93\u51FA\u4E2D\uFF081\uFF09\uFF0C\u800C\u6807\u51C6\u8F93\u51FA\u53C8\u5BFC\u5165\u6587\u4EF6 output \u91CC\u9762\uFF0C\u6240\u4EE5\u7ED3\u679C\u662F\u6807\u51C6\u9519\u8BEF\u548C\u6807\u51C6\u8F93\u51FA\u90FD\u5BFC\u5165\u6587\u4EF6 output \u91CC\u9762\u4E86\u3002 \u81F3\u4E8E\u4E3A\u4EC0\u4E48\u9700\u8981\u5C06\u6807\u51C6\u9519\u8BEF\u91CD\u5B9A\u5411\u5230\u6807\u51C6\u8F93\u51FA\u7684\u539F\u56E0\uFF0C\u90A3\u5C31\u5F52\u7ED3\u4E3A\u6807\u51C6\u9519\u8BEF\u6CA1\u6709\u7F13\u51B2\u533A\uFF0C\u800C stdout \u6709\u3002</div>
+
+\u6700\u540E\u8C08\u4E00\u4E0B/dev/null \u6587\u4EF6\u7684\u4F5C\u7528\uFF0C\u8FD9\u662F\u4E00\u4E2A\u65E0\u5E95\u6D1E\uFF0C\u4EFB\u4F55\u4E1C\u897F\u90FD\u53EF\u4EE5\u5B9A\u5411\u5230\u8FD9\u91CC\uFF0C\u4F46\u662F\u5374\u65E0\u6CD5\u6253\u5F00\u3002 \u6240\u4EE5\u4E00\u822C\u5F88\u5927\u7684 stdou \u548C stderr \u5F53\u4F60\u4E0D\u5173\u5FC3\u7684\u65F6\u5019\u53EF\u4EE5\u5229\u7528 stdout \u548C stderr \u5B9A\u5411\u5230\u8FD9\u91CC>./command.sh >/dev/null 2>&1\uFF0C\u4EE3\u8868\u4E0D\u8F93\u51FA\u65E5\u5FD7\u3002
+
+**3\u3001\u5982\u679C\u5E0C\u671B\u5C06\u65E5\u5FD7\u8F93\u51FA\u5230\u522B\u7684\u6587\u4EF6\u4E2D\uFF0C\u53EF\u4EE5\u589E\u52A0\u4E00\u4E2A\u6587\u4EF6\u8DEF\u5F84\u53C2\u6570\u3002\u5982\u4E0B\uFF1A**
+
+\`\`\`bash
+nohup yourcommand > myout.log 2>&1 &
+\`\`\`
+
+\u5176\u4E2D myout.log \u662F\u4FDD\u5B58\u8F93\u51FA\u7684\u6587\u4EF6\u540D\u79F0\u3002  
+**4\u3001\u5B9E\u65F6\u76D1\u6D4B\u65E5\u5FD7\u8F93\u51FA\u5185\u5BB9\u547D\u4EE4**  
+&emsp;tail \u547D\u4EE4\u662F nohup \u547D\u4EE4\u7684\u597D\u642D\u6863\u3002\u914D\u5408-f \u53C2\u6570\uFF0C\u53EF\u4EE5\u5B9E\u65F6\u76D1\u89C6\u5411\u65E5\u5FD7\u6587\u4EF6\u589E\u52A0\u7684\u4FE1\u606F\u3002tail -f \u7B49\u540C\u4E8E\u2013follow=descriptor\uFF0C\u6839\u636E\u6587\u4EF6\u63CF\u8FF0\u7B26\u8FDB\u884C\u8FFD\u8E2A\uFF0C\u5F53\u6587\u4EF6\u6539\u540D\u6216\u88AB\u5220\u9664\uFF0C\u8FFD\u8E2A\u505C\u6B62\u3002tail -F \u7B49\u540C\u4E8E\u2013follow=name --retry\uFF0C\u6839\u636E\u6587\u4EF6\u540D\u8FDB\u884C\u8FFD\u8E2A\uFF0C\u5E76\u4FDD\u6301\u91CD\u8BD5\uFF0C\u5373\u8BE5\u6587\u4EF6\u88AB\u5220\u9664\u6216\u6539\u540D\u540E\uFF0C\u5982\u679C\u518D\u6B21\u521B\u5EFA\u76F8\u540C\u7684\u6587\u4EF6\u540D\uFF0C\u4F1A\u7EE7\u7EED\u8FFD\u8E2A\u3002  
+&emsp;tailf \u7B49\u540C\u4E8E tail -f -n 10\uFF0C\u4E0E tail -f \u4E0D\u540C\u7684\u662F\uFF0C\u5982\u679C\u6587\u4EF6\u4E0D\u589E\u957F\uFF0C\u5B83\u4E0D\u4F1A\u53BB\u8BBF\u95EE\u78C1\u76D8\u6587\u4EF6\uFF0C\u6240\u4EE5 tailf \u7279\u522B\u9002\u5408\u90A3\u4E9B\u4FBF\u643A\u673A\u4E0A\u8DDF\u8E2A\u65E5\u5FD7\u6587\u4EF6\uFF0C\u56E0\u4E3A\u5B83\u51CF\u5C11\u4E86\u78C1\u76D8\u8BBF\u95EE\uFF0C\u53EF\u4EE5\u7701\u7535\u3002
+
+**5\u3001\u6807\u51C6\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8986\u76D6**
+
+\`\`\`bash
+command > output.txt
+command 1> output.txt
+\`\`\`
+
+\u4EE5\u4E0A\u4E24\u53E5\u7B49\u4EF7\u3002\u5C06\u547D\u4EE4\u7684 stdout \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstdout \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u5C06\u4F1A\u8986\u76D6\u3002
+
+**6\u3001\u6807\u51C6\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8FFD\u52A0**
+
+\`\`\`bash
+command >> output.txt
+command 1>> output.txt
+\`\`\`
+
+\u4EE5\u4E0A\u4E24\u53E5\u7B49\u4EF7\u3002\u5C06\u547D\u4EE4\u7684 stdout \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstdout \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u65B0\u6570\u636E\u5C06\u4F1A\u6DFB\u52A0\u81F3\u6587\u4EF6\u672B\u5C3E\u3002
+
+**7\u3001\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8986\u76D6**
+
+\`\`\`bash
+command 2> output.txt
+\`\`\`
+
+\u5C06\u547D\u4EE4\u7684 stderr \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstderr \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u5C06\u4F1A\u8986\u76D6\u3002
+
+**8\u3001\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8FFD\u52A0**
+
+\`\`\`bash
+command 2>> output.txt
+\`\`\`
+
+\u5C06\u547D\u4EE4\u7684 stderr \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstderr \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u65B0\u6570\u636E\u5C06\u4F1A\u6DFB\u52A0\u81F3\u6587\u4EF6\u672B\u5C3E\u3002
+
+**9\u3001\u6807\u51C6\u8F93\u51FA+\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8986\u76D6**
+
+\`\`\`bash
+command &> output.txt
+command >output.txt 2>&1
+\`\`\`
+
+\u4EE5\u4E0A\u4E24\u53E5\u7B49\u4EF7\u3002\u5C06\u547D\u4EE4\u7684 stdout \u4E0E stderr \u90FD\u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0C\u6B64\u65F6\u7EC8\u7AEF\u5C06\u6CA1\u6709\u4EFB\u4F55\u8F93\u51FA\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u5C06\u4F1A\u8986\u76D6\u3002
+
+**10\u3001\u6807\u51C6\u8F93\u51FA+\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8FFD\u52A0**
+
+\`\`\`bash
+command &>> output.txt
+command >>output.txt 2>&1
+\`\`\`
+
+\u5C06\u547D\u4EE4\u7684 stdout \u4E0E stderr \u90FD\u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0C\u6B64\u65F6\u7EC8\u7AEF\u5C06\u6CA1\u6709\u4EFB\u4F55\u8F93\u51FA\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u65B0\u6570\u636E\u5C06\u4F1A\u6DFB\u52A0\u81F3\u6587\u4EF6\u672B\u5C3E\u3002
+
+## \u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A
+
+\`\`\`bash
+#\u4EE3\u8868\u4E0D\u8F93\u51FA,/dev/null\u50CF\u662F\u4E2A\u9ED1\u6D1E\uFF0C\u5438\u7EB3\u6240\u6709
+nohup sh test.sh > /dev/null &
+
+#\u6807\u51C6\u8F93\u51FA,\u4EE5\u4E0B\u4E24\u53E5\u7B49\u4EF7
+nohup sh test.sh > /home/dir1/dir2/my1.log &
+nohup sh test.sh 1> /home/dir1/dir2/my1.log &
+
+#\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u8FD9\u4E2A\u5728\u5F53\u524D\u76EE\u5F55\u4E0B\u4F1A\u4EA7\u751Fnohup.out\uFF08\u6807\u51C6\u8F93\u51FA\uFF09\uFF0C\u7136\u540E\u5728/home/dir1/dir2\u4E0B\u4EA7\u751Fmy1.log\uFF08\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF09
+nohup sh test.sh 2> /home/dir1/dir2/my1.log &
+
+# \u6807\u51C6\u8F93\u51FA+\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u5C06\u6807\u51C6\u9519\u8BEF 2 \u91CD\u5B9A\u5411\u5230\u6807\u51C6\u8F93\u51FA &1 \uFF0C\u6807\u51C6\u8F93\u51FA &1 \u518D\u88AB\u91CD\u5B9A\u5411\u8F93\u5165\u5230 my1.log \u6587\u4EF6\u4E2D
+nohup sh test.sh > /home/dir1/dir2/my1.log 2>&1 &
+nohup sh test.sh &> /home/dir1/dir2/my1.log &
+\`\`\`
+
+## \u4E09\u3001Tomcat \u6E05\u9664 catalina.out \u65E5\u5FD7
+
+**\u4E00\u3001\u91CD\u5B9A\u5411\u65B9\u6CD5\u6E05\u7A7A\u6587\u4EF6\uFF1A**
+
+- \u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:
+- \u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+- \u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Acatalina.out
+- \u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+
+**\u4E8C\u3001\u4F7F\u7528 true \u547D\u4EE4\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1A**
+
+- \u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:
+- \u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+- \u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Atrue>catalina.out
+- \u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+
+**\u4E09\u3001\u4F7F\u7528 cat/cp/dd \u547D\u4EE4\u53CA/dev/null \u8BBE\u5907\u6765\u6E05\u7A7A\u6587\u4EF6**
+
+\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B: 1.\u4F7F\u7528 cat /dev/null \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A
+
+- \u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+- \u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Acat /dev/null>catalina.out
+- \u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+
+  2.\u4F7F\u7528 cp /dev/null \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A
+
+- \u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+- \u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Acp /dev/null catalina.out
+- \u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+
+  3.\u4F7F\u7528 dd if=/dev/null of=catalina.out \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A
+
+- \u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+- \u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Add if=/dev/null of=catalina.out
+- \u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+
+**\u56DB\u3001\u4F7F\u7528 echo \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A**
+
+\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:
+
+- echo -n "">catalina.out \u2014\u2014>\u52A0\u4E0A\u201C-n\u201D\u53C2\u6570\uFF0C\u9ED8\u8BA4\u60C5\u51B5\u4E0B\u4F1A\u201C\\n",
+- \u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+- \u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Aecho -n "\u53C2\u6570">catalina.out
+- \u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+
+**\u4E94\u3001\u4F7F\u7528 truecate \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A**
+
+\`\`\`bash
+# -s\u53C2\u6570\u662F\u8BBE\u7F6E\u6587\u4EF6\u7684\u5927\u5C0F\uFF0C\u6E05\u7A7A\u6587\u4EF6\u7684\u8BDD\uFF0C\u5C31\u8BBE\u5B9A\u4E3A0
+truncate -s 0 catalina.out
+\`\`\`
+
+\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:
+- \u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+- \u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Atruncate -s 0 catalina.out
+- \u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out
+`,contentRendered:`<p>\u2003nohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002\u2003 \u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E \u2003 \u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001nohup-\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001nohup-\u547D\u4EE4" aria-hidden="true">#</a> \u4E00\u3001nohup \u547D\u4EE4</h2>
+<p><strong>1\u3001nohup \u547D\u4EE4\u683C\u5F0F\uFF1A<code v-pre>nohup Command [ Arg \u2026 ] [ &amp; ]</code>, Command\uFF1A\u542F\u52A8\u5BF9\u8C61\u547D\u4EE4,\u53EF\u4EE5\u8DDF\u8BE5\u547D\u4EE4\u9700\u8981\u7684\u5404\u79CD\u53C2\u6570\u3002</strong></p>
+<p>\u2003nohup \u547D\u4EE4\u8FD0\u884C\u7531 Command \u53C2\u6570\u548C\u4EFB\u4F55\u76F8\u5173\u7684 Arg \u53C2\u6570\u6307\u5B9A\u7684\u547D\u4EE4\uFF0C\u5FFD\u7565\u6240\u6709\u6302\u65AD\uFF08SIGHUP\uFF09\u4FE1\u53F7\u3002\u5728\u6CE8\u9500\u540E\u4F7F\u7528 nohup \u547D\u4EE4\u8FD0\u884C\u540E\u53F0\u4E2D\u7684\u7A0B\u5E8F\u3002\u8981\u8FD0\u884C\u540E\u53F0\u4E2D\u7684 nohup \u547D\u4EE4\uFF0C\u6DFB\u52A0 &amp; \uFF08 \u8868\u793A\u201Cand\u201D\u7684\u7B26\u53F7\uFF09\u5230\u547D\u4EE4\u7684\u5C3E\u90E8\u3002\u5E26 \u2003 \u7684\u547D\u4EE4\u884C\uFF0C\u5373\u4F7F terminal \u5173\u95ED\uFF0C\u6216\u8005\u7535\u8111\u6B7B\u673A\u7A0B\u5E8F\u4F9D\u7136\u8FD0\u884C\uFF08\u524D\u63D0\u662F\u4F60\u628A\u7A0B\u5E8F\u9012\u4EA4\u5230\u670D\u52A1\u5668\u4E0A)\u3002<br>
+<strong>2\u3001\u5B9E\u73B0\u5C4F\u5E55\u8F93\u51FA\u8BB0\u5F55\u5230\u65E5\u5FD7\u6587\u4EF6</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">nohup</span> yourcommand <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u5982\u679C\u4E0D\u6307\u5B9A\u91CD\u5B9A\u5411\uFF0C\u5219\u65E5\u5FD7\u9ED8\u8BA4\u8F93\u51FA\u5230\u5F53\u524D\u76EE\u5F55\u4E0B nohup.out \u6587\u4EF6\u4E2D\u3002<br>
+\u64CD\u4F5C\u7CFB\u7EDF\u4E2D\u6709\u4E09\u4E2A\u5E38\u7528\u7684\u6D41\uFF1A</p>
+<ul>
+<li>0\uFF1Astdin \u6807\u51C6\u8F93\u5165, 1\uFF1A\u4EE3\u8868 stdout \u6807\u51C6\u8F93\u51FA, 2\uFF1A\u4EE3\u8868 stderr \u6807\u51C6\u9519\u8BEF\u3002</li>
+</ul>
+<div color="red">\u4E00\u822C\u5F53\u6211\u4EEC\u7528 > console.txt\uFF0C\u5B9E\u9645\u662F 1>console.txt \u7684\u7701\u7565\u7528\u6CD5\uFF1B&lt; console.txt \uFF0C\u5B9E\u9645\u662F 0 &lt; console.txt \u7684\u7701\u7565\u7528\u6CD5\u3002</div>
+<ul>
+<li>2&gt;&amp;1 \u4F5C\u7528\uFF1A</li>
+</ul>
+<div color="red">\u628A\u6807\u51C6\u9519\u8BEF\uFF082\uFF09\u91CD\u5B9A\u5411\u5230\u6807\u51C6\u8F93\u51FA\u4E2D\uFF081\uFF09\uFF0C\u800C\u6807\u51C6\u8F93\u51FA\u53C8\u5BFC\u5165\u6587\u4EF6 output \u91CC\u9762\uFF0C\u6240\u4EE5\u7ED3\u679C\u662F\u6807\u51C6\u9519\u8BEF\u548C\u6807\u51C6\u8F93\u51FA\u90FD\u5BFC\u5165\u6587\u4EF6 output \u91CC\u9762\u4E86\u3002 \u81F3\u4E8E\u4E3A\u4EC0\u4E48\u9700\u8981\u5C06\u6807\u51C6\u9519\u8BEF\u91CD\u5B9A\u5411\u5230\u6807\u51C6\u8F93\u51FA\u7684\u539F\u56E0\uFF0C\u90A3\u5C31\u5F52\u7ED3\u4E3A\u6807\u51C6\u9519\u8BEF\u6CA1\u6709\u7F13\u51B2\u533A\uFF0C\u800C stdout \u6709\u3002</div>
+<p>\u6700\u540E\u8C08\u4E00\u4E0B/dev/null \u6587\u4EF6\u7684\u4F5C\u7528\uFF0C\u8FD9\u662F\u4E00\u4E2A\u65E0\u5E95\u6D1E\uFF0C\u4EFB\u4F55\u4E1C\u897F\u90FD\u53EF\u4EE5\u5B9A\u5411\u5230\u8FD9\u91CC\uFF0C\u4F46\u662F\u5374\u65E0\u6CD5\u6253\u5F00\u3002 \u6240\u4EE5\u4E00\u822C\u5F88\u5927\u7684 stdou \u548C stderr \u5F53\u4F60\u4E0D\u5173\u5FC3\u7684\u65F6\u5019\u53EF\u4EE5\u5229\u7528 stdout \u548C stderr \u5B9A\u5411\u5230\u8FD9\u91CC&gt;./command.sh &gt;/dev/null 2&gt;&amp;1\uFF0C\u4EE3\u8868\u4E0D\u8F93\u51FA\u65E5\u5FD7\u3002</p>
+<p><strong>3\u3001\u5982\u679C\u5E0C\u671B\u5C06\u65E5\u5FD7\u8F93\u51FA\u5230\u522B\u7684\u6587\u4EF6\u4E2D\uFF0C\u53EF\u4EE5\u589E\u52A0\u4E00\u4E2A\u6587\u4EF6\u8DEF\u5F84\u53C2\u6570\u3002\u5982\u4E0B\uFF1A</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">nohup</span> yourcommand <span class="token operator">></span> myout.log <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u5176\u4E2D myout.log \u662F\u4FDD\u5B58\u8F93\u51FA\u7684\u6587\u4EF6\u540D\u79F0\u3002<br>
+<strong>4\u3001\u5B9E\u65F6\u76D1\u6D4B\u65E5\u5FD7\u8F93\u51FA\u5185\u5BB9\u547D\u4EE4</strong><br>
+\u2003tail \u547D\u4EE4\u662F nohup \u547D\u4EE4\u7684\u597D\u642D\u6863\u3002\u914D\u5408-f \u53C2\u6570\uFF0C\u53EF\u4EE5\u5B9E\u65F6\u76D1\u89C6\u5411\u65E5\u5FD7\u6587\u4EF6\u589E\u52A0\u7684\u4FE1\u606F\u3002tail -f \u7B49\u540C\u4E8E\u2013follow=descriptor\uFF0C\u6839\u636E\u6587\u4EF6\u63CF\u8FF0\u7B26\u8FDB\u884C\u8FFD\u8E2A\uFF0C\u5F53\u6587\u4EF6\u6539\u540D\u6216\u88AB\u5220\u9664\uFF0C\u8FFD\u8E2A\u505C\u6B62\u3002tail -F \u7B49\u540C\u4E8E\u2013follow=name --retry\uFF0C\u6839\u636E\u6587\u4EF6\u540D\u8FDB\u884C\u8FFD\u8E2A\uFF0C\u5E76\u4FDD\u6301\u91CD\u8BD5\uFF0C\u5373\u8BE5\u6587\u4EF6\u88AB\u5220\u9664\u6216\u6539\u540D\u540E\uFF0C\u5982\u679C\u518D\u6B21\u521B\u5EFA\u76F8\u540C\u7684\u6587\u4EF6\u540D\uFF0C\u4F1A\u7EE7\u7EED\u8FFD\u8E2A\u3002<br>
+\u2003tailf \u7B49\u540C\u4E8E tail -f -n 10\uFF0C\u4E0E tail -f \u4E0D\u540C\u7684\u662F\uFF0C\u5982\u679C\u6587\u4EF6\u4E0D\u589E\u957F\uFF0C\u5B83\u4E0D\u4F1A\u53BB\u8BBF\u95EE\u78C1\u76D8\u6587\u4EF6\uFF0C\u6240\u4EE5 tailf \u7279\u522B\u9002\u5408\u90A3\u4E9B\u4FBF\u643A\u673A\u4E0A\u8DDF\u8E2A\u65E5\u5FD7\u6587\u4EF6\uFF0C\u56E0\u4E3A\u5B83\u51CF\u5C11\u4E86\u78C1\u76D8\u8BBF\u95EE\uFF0C\u53EF\u4EE5\u7701\u7535\u3002</p>
+<p><strong>5\u3001\u6807\u51C6\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8986\u76D6</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">command</span> <span class="token operator">></span> output.txt
+<span class="token builtin class-name">command</span> <span class="token operator"><span class="token file-descriptor important">1</span>></span> output.txt
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u4EE5\u4E0A\u4E24\u53E5\u7B49\u4EF7\u3002\u5C06\u547D\u4EE4\u7684 stdout \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstdout \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u5C06\u4F1A\u8986\u76D6\u3002</p>
+<p><strong>6\u3001\u6807\u51C6\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8FFD\u52A0</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">command</span> <span class="token operator">>></span> output.txt
+<span class="token builtin class-name">command</span> <span class="token operator"><span class="token file-descriptor important">1</span>>></span> output.txt
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u4EE5\u4E0A\u4E24\u53E5\u7B49\u4EF7\u3002\u5C06\u547D\u4EE4\u7684 stdout \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstdout \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u65B0\u6570\u636E\u5C06\u4F1A\u6DFB\u52A0\u81F3\u6587\u4EF6\u672B\u5C3E\u3002</p>
+<p><strong>7\u3001\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8986\u76D6</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">command</span> <span class="token operator"><span class="token file-descriptor important">2</span>></span> output.txt
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u5C06\u547D\u4EE4\u7684 stderr \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstderr \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u5C06\u4F1A\u8986\u76D6\u3002</p>
+<p><strong>8\u3001\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8FFD\u52A0</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">command</span> <span class="token operator"><span class="token file-descriptor important">2</span>>></span> output.txt
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u5C06\u547D\u4EE4\u7684 stderr \u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0Cstderr \u5C06\u4E0D\u4F1A\u51FA\u73B0\u5728\u7EC8\u7AEF\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u65B0\u6570\u636E\u5C06\u4F1A\u6DFB\u52A0\u81F3\u6587\u4EF6\u672B\u5C3E\u3002</p>
+<p><strong>9\u3001\u6807\u51C6\u8F93\u51FA+\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8986\u76D6</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">command</span> <span class="token operator">&amp;></span> output.txt
+<span class="token builtin class-name">command</span> <span class="token operator">></span>output.txt <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&amp;1</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u4EE5\u4E0A\u4E24\u53E5\u7B49\u4EF7\u3002\u5C06\u547D\u4EE4\u7684 stdout \u4E0E stderr \u90FD\u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0C\u6B64\u65F6\u7EC8\u7AEF\u5C06\u6CA1\u6709\u4EFB\u4F55\u8F93\u51FA\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u5C06\u4F1A\u8986\u76D6\u3002</p>
+<p><strong>10\u3001\u6807\u51C6\u8F93\u51FA+\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u65E5\u5FD7\u6587\u4EF6\u8FFD\u52A0</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">command</span> <span class="token operator">&amp;>></span> output.txt
+<span class="token builtin class-name">command</span> <span class="token operator">>></span>output.txt <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&amp;1</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5C06\u547D\u4EE4\u7684 stdout \u4E0E stderr \u90FD\u91CD\u5B9A\u5411\u81F3\u6587\u4EF6\uFF0C\u6B64\u65F6\u7EC8\u7AEF\u5C06\u6CA1\u6709\u4EFB\u4F55\u8F93\u51FA\u3002\u5982\u679C\u6587\u4EF6\u5DF2\u7ECF\u5B58\u5728\uFF0C\u65B0\u6570\u636E\u5C06\u4F1A\u6DFB\u52A0\u81F3\u6587\u4EF6\u672B\u5C3E\u3002</p>
+<h2 id="\u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A" aria-hidden="true">#</a> \u4E8C\u3001\u5B9E\u4F8B\u5C55\u793A</h2>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u4EE3\u8868\u4E0D\u8F93\u51FA,/dev/null\u50CF\u662F\u4E2A\u9ED1\u6D1E\uFF0C\u5438\u7EB3\u6240\u6709</span>
+<span class="token function">nohup</span> <span class="token function">sh</span> test.sh <span class="token operator">></span> /dev/null <span class="token operator">&amp;</span>
+
+<span class="token comment">#\u6807\u51C6\u8F93\u51FA,\u4EE5\u4E0B\u4E24\u53E5\u7B49\u4EF7</span>
+<span class="token function">nohup</span> <span class="token function">sh</span> test.sh <span class="token operator">></span> /home/dir1/dir2/my1.log <span class="token operator">&amp;</span>
+<span class="token function">nohup</span> <span class="token function">sh</span> test.sh <span class="token operator"><span class="token file-descriptor important">1</span>></span> /home/dir1/dir2/my1.log <span class="token operator">&amp;</span>
+
+<span class="token comment">#\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u8FD9\u4E2A\u5728\u5F53\u524D\u76EE\u5F55\u4E0B\u4F1A\u4EA7\u751Fnohup.out\uFF08\u6807\u51C6\u8F93\u51FA\uFF09\uFF0C\u7136\u540E\u5728/home/dir1/dir2\u4E0B\u4EA7\u751Fmy1.log\uFF08\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF09</span>
+<span class="token function">nohup</span> <span class="token function">sh</span> test.sh <span class="token operator"><span class="token file-descriptor important">2</span>></span> /home/dir1/dir2/my1.log <span class="token operator">&amp;</span>
+
+<span class="token comment"># \u6807\u51C6\u8F93\u51FA+\u6807\u51C6\u9519\u8BEF\u8F93\u51FA\uFF0C\u5C06\u6807\u51C6\u9519\u8BEF 2 \u91CD\u5B9A\u5411\u5230\u6807\u51C6\u8F93\u51FA &amp;1 \uFF0C\u6807\u51C6\u8F93\u51FA &amp;1 \u518D\u88AB\u91CD\u5B9A\u5411\u8F93\u5165\u5230 my1.log \u6587\u4EF6\u4E2D</span>
+<span class="token function">nohup</span> <span class="token function">sh</span> test.sh <span class="token operator">></span> /home/dir1/dir2/my1.log <span class="token operator"><span class="token file-descriptor important">2</span>></span><span class="token file-descriptor important">&amp;1</span> <span class="token operator">&amp;</span>
+<span class="token function">nohup</span> <span class="token function">sh</span> test.sh <span class="token operator">&amp;></span> /home/dir1/dir2/my1.log <span class="token operator">&amp;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u4E09\u3001tomcat-\u6E05\u9664-catalina-out-\u65E5\u5FD7" tabindex="-1"><a class="header-anchor" href="#\u4E09\u3001tomcat-\u6E05\u9664-catalina-out-\u65E5\u5FD7" aria-hidden="true">#</a> \u4E09\u3001Tomcat \u6E05\u9664 catalina.out \u65E5\u5FD7</h2>
+<p><strong>\u4E00\u3001\u91CD\u5B9A\u5411\u65B9\u6CD5\u6E05\u7A7A\u6587\u4EF6\uFF1A</strong></p>
+<ul>
+<li>\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:</li>
+<li>\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+<li>\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Acatalina.out</li>
+<li>\u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+</ul>
+<p><strong>\u4E8C\u3001\u4F7F\u7528 true \u547D\u4EE4\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1A</strong></p>
+<ul>
+<li>\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:</li>
+<li>\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+<li>\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Atrue&gt;catalina.out</li>
+<li>\u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+</ul>
+<p><strong>\u4E09\u3001\u4F7F\u7528 cat/cp/dd \u547D\u4EE4\u53CA/dev/null \u8BBE\u5907\u6765\u6E05\u7A7A\u6587\u4EF6</strong></p>
+<p>\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B: 1.\u4F7F\u7528 cat /dev/null \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A</p>
+<ul>
+<li>
+<p>\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</p>
+</li>
+<li>
+<p>\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Acat /dev/null&gt;catalina.out</p>
+</li>
+<li>
+<p>\u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</p>
+<p>2.\u4F7F\u7528 cp /dev/null \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A</p>
+</li>
+<li>
+<p>\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</p>
+</li>
+<li>
+<p>\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Acp /dev/null catalina.out</p>
+</li>
+<li>
+<p>\u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</p>
+<p>3.\u4F7F\u7528 dd if=/dev/null of=catalina.out \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A</p>
+</li>
+<li>
+<p>\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</p>
+</li>
+<li>
+<p>\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Add if=/dev/null of=catalina.out</p>
+</li>
+<li>
+<p>\u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</p>
+</li>
+</ul>
+<p><strong>\u56DB\u3001\u4F7F\u7528 echo \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A</strong></p>
+<p>\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:</p>
+<ul>
+<li>echo -n &quot;&quot;&gt;catalina.out \u2014\u2014&gt;\u52A0\u4E0A\u201C-n\u201D\u53C2\u6570\uFF0C\u9ED8\u8BA4\u60C5\u51B5\u4E0B\u4F1A\u201C\\n&quot;,</li>
+<li>\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+<li>\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Aecho -n &quot;\u53C2\u6570&quot;&gt;catalina.out</li>
+<li>\u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+</ul>
+<p><strong>\u4E94\u3001\u4F7F\u7528 truecate \u547D\u4EE4\u6E05\u7A7A\u6587\u4EF6\uFF1A</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># -s\u53C2\u6570\u662F\u8BBE\u7F6E\u6587\u4EF6\u7684\u5927\u5C0F\uFF0C\u6E05\u7A7A\u6587\u4EF6\u7684\u8BDD\uFF0C\u5C31\u8BBE\u5B9A\u4E3A0</span>
+truncate <span class="token parameter variable">-s</span> <span class="token number">0</span> catalina.out
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u8FDB\u5165 tomcat \u7684 logs \u6587\u4EF6\u5939\u4E0B:</p>
+<ul>
+<li>\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+<li>\u91CD\u5B9A\u5411\u6E05\u7A7A\u6587\u4EF6\uFF1Atruncate -s 0 catalina.out</li>
+<li>\u518D\u6B21\u67E5\u770B\u65E5\u5FD7\u6587\u4EF6\u5927\u5C0F\uFF1Adu -h catalina.out</li>
+</ul>
+`,date:"2022-04-07",deps:[],links:[],pathInferred:"/posts/linux/nohup.html",pathLocale:"/",permalink:null,routeMeta:{title:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6"},sfcBlocks:[],slug:"nohup",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/linux/nohup.md",filePathRelative:"posts/linux/nohup.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/linux/nohup.html.vue",componentFilePathRelative:"pages/posts/linux/nohup.html.vue",componentFileChunkName:"v-3ffabb67",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/linux/nohup.html.js",dataFilePathRelative:"pages/posts/linux/nohup.html.js",dataFileChunkName:"v-3ffabb67",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/linux/nohup.html",htmlFilePathRelative:"posts/linux/nohup.html"},title:"nohup\u540E\u53F0\u8FD0\u884C\u5E76\u8F93\u51FA\u65E5\u5FD7\u5230\u6307\u5B9A\u6587\u4EF6"},["/posts/linux/nohup","/posts/linux/nohup.md"]],["v-517d8c20","/posts/mysql/install.html",{_blog:{data:{key:"v-517d8c20",path:"/posts/mysql/install.html",title:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",lang:"zh-CN",frontmatter:{title:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",date:"2022-03-14T15:34:59.000Z",tag:["MySql"],category:["\u6570\u636E\u5E93"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203141729266.gif",summary:`\u2003MySQL \u662F\u6700\u6D41\u884C\u7684\u5173\u7CFB\u578B\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF\uFF0C\u5728 WEB \u5E94\u7528\u65B9\u9762 MySQL \u662F\u6700\u597D\u7684 RDBMS(Relational Database Management System\uFF1A\u5173\u7CFB\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF)\u5E94\u7528\u8F6F\u4EF6\u4E4B\u4E00\u3002
+\u5728\u672C\u4E13\u9898\u4E2D\uFF0C\u4F1A\u8BA9\u5927\u5BB6\u5FEB\u901F\u638C\u63E1 MySQL \u7684\u57FA\u672C\u77E5\u8BC6\uFF0C\u5E76\u8F7B\u677E\u4F7F\u7528 MySQL \u6570\u636E\u5E93\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/mysql/install.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"MySql"}],["meta",{property:"article:published_time",content:"2022-03-14T15:34:59.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003MySQL \u662F\u6700\u6D41\u884C\u7684\u5173\u7CFB\u578B\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF\uFF0C\u5728 WEB \u5E94\u7528\u65B9\u9762 MySQL \u662F\u6700\u597D\u7684 RDBMS(Relational Database Management System\uFF1A\u5173\u7CFB\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF)\u5E94\u7528\u8F6F\u4EF6\u4E4B\u4E00\u3002
+\u5728\u672C\u4E13\u9898\u4E2D\uFF0C\u4F1A\u8BA9\u5927\u5BB6\u5FEB\u901F\u638C\u63E1 MySQL \u7684\u57FA\u672C\u77E5\u8BC6\uFF0C\u5E76\u8F7B\u677E\u4F7F\u7528 MySQL \u6570\u636E\u5E93\u3002</p>
+`,headers:[{level:2,title:"1 docker \u5B89\u88C5 MySql8.x \u7248\u672C",slug:"_1-docker-\u5B89\u88C5-mysql8-x-\u7248\u672C",children:[{level:3,title:"\u62C9\u53D6\u6700\u65B0\u955C\u50CF",slug:"\u62C9\u53D6\u6700\u65B0\u955C\u50CF",children:[]},{level:3,title:"\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",slug:"\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",children:[]},{level:3,title:"\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6",slug:"\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6",children:[]},{level:3,title:"\u521B\u5EFA\u5BB9\u5668",slug:"\u521B\u5EFA\u5BB9\u5668",children:[]},{level:3,title:"\u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE",slug:"\u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE",children:[]},{level:3,title:"\u7AEF\u53E3\u5F00\u653E",slug:"\u7AEF\u53E3\u5F00\u653E",children:[]}]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/mysql/install.md",readingTime:{minutes:1.79,words:538},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/mysql/install.html`},key:"v-517d8c20",path:"/posts/mysql/install.html",title:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",lang:"zh-CN",frontmatter:{title:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",date:"2022-03-14T15:34:59.000Z",tag:["MySql"],category:["\u6570\u636E\u5E93"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203141729266.gif",summary:`\u2003MySQL \u662F\u6700\u6D41\u884C\u7684\u5173\u7CFB\u578B\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF\uFF0C\u5728 WEB \u5E94\u7528\u65B9\u9762 MySQL \u662F\u6700\u597D\u7684 RDBMS(Relational Database Management System\uFF1A\u5173\u7CFB\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF)\u5E94\u7528\u8F6F\u4EF6\u4E4B\u4E00\u3002
+\u5728\u672C\u4E13\u9898\u4E2D\uFF0C\u4F1A\u8BA9\u5927\u5BB6\u5FEB\u901F\u638C\u63E1 MySQL \u7684\u57FA\u672C\u77E5\u8BC6\uFF0C\u5E76\u8F7B\u677E\u4F7F\u7528 MySQL \u6570\u636E\u5E93\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/mysql/install.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"MySql"}],["meta",{property:"article:published_time",content:"2022-03-14T15:34:59.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003MySQL \u662F\u6700\u6D41\u884C\u7684\u5173\u7CFB\u578B\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF\uFF0C\u5728 WEB \u5E94\u7528\u65B9\u9762 MySQL \u662F\u6700\u597D\u7684 RDBMS(Relational Database Management System\uFF1A\u5173\u7CFB\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF)\u5E94\u7528\u8F6F\u4EF6\u4E4B\u4E00\u3002
+\u5728\u672C\u4E13\u9898\u4E2D\uFF0C\u4F1A\u8BA9\u5927\u5BB6\u5FEB\u901F\u638C\u63E1 MySQL \u7684\u57FA\u672C\u77E5\u8BC6\uFF0C\u5E76\u8F7B\u677E\u4F7F\u7528 MySQL \u6570\u636E\u5E93\u3002</p>
+`,headers:[{level:2,title:"1 docker \u5B89\u88C5 MySql8.x \u7248\u672C",slug:"_1-docker-\u5B89\u88C5-mysql8-x-\u7248\u672C",children:[{level:3,title:"\u62C9\u53D6\u6700\u65B0\u955C\u50CF",slug:"\u62C9\u53D6\u6700\u65B0\u955C\u50CF",children:[]},{level:3,title:"\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",slug:"\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",children:[]},{level:3,title:"\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6",slug:"\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6",children:[]},{level:3,title:"\u521B\u5EFA\u5BB9\u5668",slug:"\u521B\u5EFA\u5BB9\u5668",children:[]},{level:3,title:"\u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE",slug:"\u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE",children:[]},{level:3,title:"\u7AEF\u53E3\u5F00\u653E",slug:"\u7AEF\u53E3\u5F00\u653E",children:[]}]}],content:`---
+title: MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F
+date: 2022-03-14 15:34:59
+tag:
+  - MySql
+category:
+  - \u6570\u636E\u5E93
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203141729266.gif
+---
+
+&emsp;MySQL \u662F\u6700\u6D41\u884C\u7684\u5173\u7CFB\u578B\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF\uFF0C\u5728 WEB \u5E94\u7528\u65B9\u9762 MySQL \u662F\u6700\u597D\u7684 RDBMS(Relational Database Management System\uFF1A\u5173\u7CFB\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF)\u5E94\u7528\u8F6F\u4EF6\u4E4B\u4E00\u3002
+\u5728\u672C\u4E13\u9898\u4E2D\uFF0C\u4F1A\u8BA9\u5927\u5BB6\u5FEB\u901F\u638C\u63E1 MySQL \u7684\u57FA\u672C\u77E5\u8BC6\uFF0C\u5E76\u8F7B\u677E\u4F7F\u7528 MySQL \u6570\u636E\u5E93\u3002
+
+<!-- more -->
+
+## 1 docker \u5B89\u88C5 MySql8.x \u7248\u672C
+
+### \u62C9\u53D6\u6700\u65B0\u955C\u50CF
+
+\`\`\`bash
+#\u67E5\u8BE2\u955C\u50CF\u4FE1\u606F
+docker search mysql
+#\u62C9\u53D6\u955C\u50CF
+docker pull mysql:latest
+#\u6216\u62C9\u53D6\u6307\u5B9A\u7248\u672C
+docker pull mysql:8.0.28
+\`\`\`
+
+### \u521B\u5EFA\u6302\u8F7D\u76EE\u5F55
+
+\`\`\`bash
+# \u521B\u5EFA\u914D\u7F6E\u6587\u4EF6\u76EE\u5F55\uFF1A/opt/mysql/conf\uFF0C\u6570\u636E\u6302\u8F7D\u76EE\u5F55\uFF1A/opt/mysql/data\uFF0C\u65E5\u5FD7\u76EE\u5F55\uFF1A/var/log/mysql
+mkdir -p /opt/mysql/conf /opt/mysql/data /opt/mysql/log
+# \u6587\u4EF6\u76EE\u5F55\u6388\u6743
+chmod -R 755 /opt/mysql/
+\`\`\`
+
+### \u521B\u5EFA\u914D\u7F6E\u6587\u4EF6
+
+\`\`\`bash
+# \u65B9\u5F0F\u4E00\uFF1A\u521B\u5EFAmysql\u4E34\u65F6\u5BB9\u5668\uFF0C\u901A\u8FC7\u547D\u4EE4\u590D\u5236\u5BB9\u5668\u539F\u59CB\u914D\u7F6E\u6587\u4EF6\uFF0C\u8FDB\u884C\u4FEE\u6539
+docker run -p 3306:3306 --name mysql -d mysql
+docker cp mysql:/etc/mysql/my.cnf /opt/mysql/conf
+# \u65B9\u5F0F\u4E8C\uFF1A\u81EA\u5DF1\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6
+vim /opt/mysql/conf/my.cnf
+#\u6DFB\u52A0\u4EE5\u4E0B\u5185\u5BB9\u5230\u4E0A\u8FF0\u521B\u5EFA\u7684\u914D\u7F6E\u6587\u4EF6\u4E2D
+[mysqld]
+pid-file        = /var/run/mysqld/mysqld.pid
+socket          = /var/run/mysqld/mysqld.sock
+#\u6570\u636E\u5B58\u50A8\u76EE\u5F55
+datadir         = /var/lib/mysql
+pid-file = /usr/mysql/mysqld.pid
+#\u65E5\u5FD7\u8DEF\u5F84
+general_log = 1
+general_log_file = /var/log/mysql/access.log
+log-error = /var/log/mysql/error.log
+
+character_set_server = utf8mb4
+collation_server = utf8mb4_bin
+secure-file-priv= NULL
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+# Custom config should go here
+!includedir /etc/mysql/conf.d/
+\`\`\`
+
+### \u521B\u5EFA\u5BB9\u5668
+
+\`\`\`bash
+docker run -p 3306:3306 --name mysql8 -v /opt/mysql/conf/my.cnf:/etc/mysql/my.cnf  -v /opt/mysql/data:/var/lib/mysql \\
+-v /opt/mysql/log:/var/log/mysql -e MYSQL_ROOT_PASSWORD=123456 -e TZ=Asia/Shanghai  --restart=always -d mysql
+\`\`\`
+
+### \u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE
+
+\`\`\`bash
+#\u8FDB\u5165mysql\u5BB9\u5668
+docker exec -it mysql8 /bin/bash
+#\u767B\u5F55mysql
+mysql -uroot -p123456
+#\u5F00\u653E\u8FDC\u7A0B\u767B\u5F55\u8BBF\u95EE
+ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+#\u5237\u65B0\u6743\u9650
+flush privileges;
+\`\`\`
+
+\u81F3\u6B64\u53EF\u4EE5\u6D4B\u8BD5\u8FDC\u7A0B\u8FDE\u63A5\u662F\u5426\u6B63\u5E38\u8BBF\u95EE
+
+### \u7AEF\u53E3\u5F00\u653E
+
+\u5982\u679C\u9632\u706B\u5899\u5DF2\u5173\u95ED\uFF0C\u65E0\u9700\u5F00\u653E\u6570\u636E\u5BF9\u5916\u7AEF\u53E3\uFF0C\u5982\u679C\u9632\u706B\u5899\u5F00\u542F\uFF0C\u9700\u8981\u5F00\u653E\u7AEF\u53E3\uFF0C\u547D\u4EE4\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+#\u6C38\u4E45\u5F00\u653E3306\u7AEF\u53E3
+firewall-cmd --zone=public --add-port=3306/tcp --permanent
+#\u914D\u7F6E\u7ACB\u5373\u751F\u6548
+firewall-cmd --reload
+\`\`\`
+`,contentRendered:`<p>\u2003MySQL \u662F\u6700\u6D41\u884C\u7684\u5173\u7CFB\u578B\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF\uFF0C\u5728 WEB \u5E94\u7528\u65B9\u9762 MySQL \u662F\u6700\u597D\u7684 RDBMS(Relational Database Management System\uFF1A\u5173\u7CFB\u6570\u636E\u5E93\u7BA1\u7406\u7CFB\u7EDF)\u5E94\u7528\u8F6F\u4EF6\u4E4B\u4E00\u3002
+\u5728\u672C\u4E13\u9898\u4E2D\uFF0C\u4F1A\u8BA9\u5927\u5BB6\u5FEB\u901F\u638C\u63E1 MySQL \u7684\u57FA\u672C\u77E5\u8BC6\uFF0C\u5E76\u8F7B\u677E\u4F7F\u7528 MySQL \u6570\u636E\u5E93\u3002</p>
+<!-- more -->
+<h2 id="_1-docker-\u5B89\u88C5-mysql8-x-\u7248\u672C" tabindex="-1"><a class="header-anchor" href="#_1-docker-\u5B89\u88C5-mysql8-x-\u7248\u672C" aria-hidden="true">#</a> 1 docker \u5B89\u88C5 MySql8.x \u7248\u672C</h2>
+<h3 id="\u62C9\u53D6\u6700\u65B0\u955C\u50CF" tabindex="-1"><a class="header-anchor" href="#\u62C9\u53D6\u6700\u65B0\u955C\u50CF" aria-hidden="true">#</a> \u62C9\u53D6\u6700\u65B0\u955C\u50CF</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u8BE2\u955C\u50CF\u4FE1\u606F</span>
+<span class="token function">docker</span> search mysql
+<span class="token comment">#\u62C9\u53D6\u955C\u50CF</span>
+<span class="token function">docker</span> pull mysql:latest
+<span class="token comment">#\u6216\u62C9\u53D6\u6307\u5B9A\u7248\u672C</span>
+<span class="token function">docker</span> pull mysql:8.0.28
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55" aria-hidden="true">#</a> \u521B\u5EFA\u6302\u8F7D\u76EE\u5F55</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u521B\u5EFA\u914D\u7F6E\u6587\u4EF6\u76EE\u5F55\uFF1A/opt/mysql/conf\uFF0C\u6570\u636E\u6302\u8F7D\u76EE\u5F55\uFF1A/opt/mysql/data\uFF0C\u65E5\u5FD7\u76EE\u5F55\uFF1A/var/log/mysql</span>
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /opt/mysql/conf /opt/mysql/data /opt/mysql/log
+<span class="token comment"># \u6587\u4EF6\u76EE\u5F55\u6388\u6743</span>
+<span class="token function">chmod</span> <span class="token parameter variable">-R</span> <span class="token number">755</span> /opt/mysql/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6" aria-hidden="true">#</a> \u521B\u5EFA\u914D\u7F6E\u6587\u4EF6</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u65B9\u5F0F\u4E00\uFF1A\u521B\u5EFAmysql\u4E34\u65F6\u5BB9\u5668\uFF0C\u901A\u8FC7\u547D\u4EE4\u590D\u5236\u5BB9\u5668\u539F\u59CB\u914D\u7F6E\u6587\u4EF6\uFF0C\u8FDB\u884C\u4FEE\u6539</span>
+<span class="token function">docker</span> run <span class="token parameter variable">-p</span> <span class="token number">3306</span>:3306 <span class="token parameter variable">--name</span> mysql <span class="token parameter variable">-d</span> mysql
+<span class="token function">docker</span> <span class="token function">cp</span> mysql:/etc/mysql/my.cnf /opt/mysql/conf
+<span class="token comment"># \u65B9\u5F0F\u4E8C\uFF1A\u81EA\u5DF1\u521B\u5EFA\u914D\u7F6E\u6587\u4EF6</span>
+<span class="token function">vim</span> /opt/mysql/conf/my.cnf
+<span class="token comment">#\u6DFB\u52A0\u4EE5\u4E0B\u5185\u5BB9\u5230\u4E0A\u8FF0\u521B\u5EFA\u7684\u914D\u7F6E\u6587\u4EF6\u4E2D</span>
+<span class="token punctuation">[</span>mysqld<span class="token punctuation">]</span>
+pid-file        <span class="token operator">=</span> /var/run/mysqld/mysqld.pid
+socket          <span class="token operator">=</span> /var/run/mysqld/mysqld.sock
+<span class="token comment">#\u6570\u636E\u5B58\u50A8\u76EE\u5F55</span>
+datadir         <span class="token operator">=</span> /var/lib/mysql
+pid-file <span class="token operator">=</span> /usr/mysql/mysqld.pid
+<span class="token comment">#\u65E5\u5FD7\u8DEF\u5F84</span>
+general_log <span class="token operator">=</span> <span class="token number">1</span>
+general_log_file <span class="token operator">=</span> /var/log/mysql/access.log
+log-error <span class="token operator">=</span> /var/log/mysql/error.log
+
+character_set_server <span class="token operator">=</span> utf8mb4
+collation_server <span class="token operator">=</span> utf8mb4_bin
+secure-file-priv<span class="token operator">=</span> NULL
+<span class="token comment"># Disabling symbolic-links is recommended to prevent assorted security risks</span>
+symbolic-links<span class="token operator">=</span><span class="token number">0</span>
+<span class="token comment"># Custom config should go here</span>
+<span class="token operator">!</span>includedir /etc/mysql/conf.d/
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="\u521B\u5EFA\u5BB9\u5668" tabindex="-1"><a class="header-anchor" href="#\u521B\u5EFA\u5BB9\u5668" aria-hidden="true">#</a> \u521B\u5EFA\u5BB9\u5668</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-p</span> <span class="token number">3306</span>:3306 <span class="token parameter variable">--name</span> mysql8 <span class="token parameter variable">-v</span> /opt/mysql/conf/my.cnf:/etc/mysql/my.cnf  <span class="token parameter variable">-v</span> /opt/mysql/data:/var/lib/mysql <span class="token punctuation">\\</span>
+<span class="token parameter variable">-v</span> /opt/mysql/log:/var/log/mysql <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token number">123456</span> <span class="token parameter variable">-e</span> <span class="token assign-left variable">TZ</span><span class="token operator">=</span>Asia/Shanghai  <span class="token parameter variable">--restart</span><span class="token operator">=</span>always <span class="token parameter variable">-d</span> mysql
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="\u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE" tabindex="-1"><a class="header-anchor" href="#\u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE" aria-hidden="true">#</a> \u914D\u7F6E\u8FDC\u7A0B\u8BBF\u95EE</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u8FDB\u5165mysql\u5BB9\u5668</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> <span class="token parameter variable">-it</span> mysql8 /bin/bash
+<span class="token comment">#\u767B\u5F55mysql</span>
+mysql <span class="token parameter variable">-uroot</span> <span class="token parameter variable">-p123456</span>
+<span class="token comment">#\u5F00\u653E\u8FDC\u7A0B\u767B\u5F55\u8BBF\u95EE</span>
+ALTER <span class="token environment constant">USER</span> <span class="token string">'root'</span>@<span class="token string">'%'</span> IDENTIFIED WITH mysql_native_password BY <span class="token string">'123456'</span><span class="token punctuation">;</span>
+<span class="token comment">#\u5237\u65B0\u6743\u9650</span>
+flush privileges<span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u81F3\u6B64\u53EF\u4EE5\u6D4B\u8BD5\u8FDC\u7A0B\u8FDE\u63A5\u662F\u5426\u6B63\u5E38\u8BBF\u95EE</p>
+<h3 id="\u7AEF\u53E3\u5F00\u653E" tabindex="-1"><a class="header-anchor" href="#\u7AEF\u53E3\u5F00\u653E" aria-hidden="true">#</a> \u7AEF\u53E3\u5F00\u653E</h3>
+<p>\u5982\u679C\u9632\u706B\u5899\u5DF2\u5173\u95ED\uFF0C\u65E0\u9700\u5F00\u653E\u6570\u636E\u5BF9\u5916\u7AEF\u53E3\uFF0C\u5982\u679C\u9632\u706B\u5899\u5F00\u542F\uFF0C\u9700\u8981\u5F00\u653E\u7AEF\u53E3\uFF0C\u547D\u4EE4\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u6C38\u4E45\u5F00\u653E3306\u7AEF\u53E3</span>
+firewall-cmd <span class="token parameter variable">--zone</span><span class="token operator">=</span>public --add-port<span class="token operator">=</span><span class="token number">3306</span>/tcp <span class="token parameter variable">--permanent</span>
+<span class="token comment">#\u914D\u7F6E\u7ACB\u5373\u751F\u6548</span>
+firewall-cmd <span class="token parameter variable">--reload</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-03-14",deps:[],links:[],pathInferred:"/posts/mysql/install.html",pathLocale:"/",permalink:null,routeMeta:{title:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"},sfcBlocks:[],slug:"install",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/mysql/install.md",filePathRelative:"posts/mysql/install.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/mysql/install.html.vue",componentFilePathRelative:"pages/posts/mysql/install.html.vue",componentFileChunkName:"v-517d8c20",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/mysql/install.html.js",dataFilePathRelative:"pages/posts/mysql/install.html.js",dataFileChunkName:"v-517d8c20",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/mysql/install.html",htmlFilePathRelative:"posts/mysql/install.html"},title:"MySql\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"},["/posts/mysql/install","/posts/mysql/install.md"]],["v-09429098","/posts/node/",{_blog:{data:{key:"v-09429098",path:"/posts/node/",title:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",lang:"zh-CN",frontmatter:{title:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",date:"2022-04-07T11:56:16.000Z",tag:["Node"],category:["Node"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204071154296.jpg",sticky:5,summary:`\u2003Node.js \u53D1\u5E03\u4E8E 2009 \u5E74 5 \u6708\uFF0C\u7531 Ryan Dahl \u5F00\u53D1\uFF0C\u662F\u4E00\u4E2A\u57FA\u4E8E Chrome V8 \u5F15\u64CE\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u4F7F\u7528\u4E86\u4E00\u4E2A\u4E8B\u4EF6\u9A71\u52A8\u3001\u975E\u963B\u585E\u5F0F I/O \u6A21\u578B\uFF0C\u8BA9 JavaScript \u8FD0\u884C\u5728\u670D\u52A1\u7AEF\u7684\u5F00\u53D1\u5E73\u53F0\uFF0CJavaScript \u6210\u4E3A\u4E0E PHP\u3001Python\u3001Perl\u3001Ruby \u7B49\u670D\u52A1\u7AEF\u8BED\u8A00\u5E73\u8D77\u5E73\u5750\u7684\u811A\u672C\u8BED\u8A00\u3002Node.js \u5BF9\u4E00\u4E9B\u7279\u6B8A\u7528\u4F8B\u8FDB\u884C\u4F18\u5316\uFF0C\u63D0\u4F9B\u66FF\u4EE3\u7684 API\uFF0C\u4F7F\u5F97 V8 \u5728\u975E\u6D4F\u89C8\u5668\u73AF\u5883\u4E0B\u8FD0\u884C\u5F97\u66F4\u597D\uFF0CV8 \u5F15\u64CE\u6267\u884C Javascript \u7684\u901F\u5EA6\u975E\u5E38\u5FEB\uFF0C\u6027\u80FD\u975E\u5E38\u597D\uFF0C\u57FA\u4E8E Chrome JavaScript \u8FD0\u884C\u65F6\u5EFA\u7ACB\u7684\u5E73\u53F0\uFF0C \u7528\u4E8E\u65B9\u4FBF\u5730\u642D\u5EFA\u54CD\u5E94\u901F\u5EA6\u5FEB\u3001\u6613\u4E8E\u6269\u5C55\u7684\u7F51\u7EDC\u5E94\u7528\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/node/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Node"}],["meta",{property:"article:published_time",content:"2022-04-07T11:56:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Node.js \u53D1\u5E03\u4E8E 2009 \u5E74 5 \u6708\uFF0C\u7531 Ryan Dahl \u5F00\u53D1\uFF0C\u662F\u4E00\u4E2A\u57FA\u4E8E Chrome V8 \u5F15\u64CE\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u4F7F\u7528\u4E86\u4E00\u4E2A\u4E8B\u4EF6\u9A71\u52A8\u3001\u975E\u963B\u585E\u5F0F I/O \u6A21\u578B\uFF0C\u8BA9 JavaScript \u8FD0\u884C\u5728\u670D\u52A1\u7AEF\u7684\u5F00\u53D1\u5E73\u53F0\uFF0CJavaScript \u6210\u4E3A\u4E0E PHP\u3001Python\u3001Perl\u3001Ruby \u7B49\u670D\u52A1\u7AEF\u8BED\u8A00\u5E73\u8D77\u5E73\u5750\u7684\u811A\u672C\u8BED\u8A00\u3002Node.js \u5BF9\u4E00\u4E9B\u7279\u6B8A\u7528\u4F8B\u8FDB\u884C\u4F18\u5316\uFF0C\u63D0\u4F9B\u66FF\u4EE3\u7684 API\uFF0C\u4F7F\u5F97 V8 \u5728\u975E\u6D4F\u89C8\u5668\u73AF\u5883\u4E0B\u8FD0\u884C\u5F97\u66F4\u597D\uFF0CV8 \u5F15\u64CE\u6267\u884C Javascript \u7684\u901F\u5EA6\u975E\u5E38\u5FEB\uFF0C\u6027\u80FD\u975E\u5E38\u597D\uFF0C\u57FA\u4E8E Chrome JavaScript \u8FD0\u884C\u65F6\u5EFA\u7ACB\u7684\u5E73\u53F0\uFF0C \u7528\u4E8E\u65B9\u4FBF\u5730\u642D\u5EFA\u54CD\u5E94\u901F\u5EA6\u5FEB\u3001\u6613\u4E8E\u6269\u5C55\u7684\u7F51\u7EDC\u5E94\u7528\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001Node.js \u5B98\u7F51\u5730\u5740",slug:"\u4E00\u3001node-js-\u5B98\u7F51\u5730\u5740",children:[]},{level:2,title:"\u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5 Node.js",slug:"\u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5-node-js",children:[]},{level:2,title:"\u4E09\u3001Nvm \u5B89\u88C5 Node",slug:"\u4E09\u3001nvm-\u5B89\u88C5-node",children:[]},{level:2,title:"\u56DB\u3001Npm \u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879",slug:"\u56DB\u3001npm-\u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/node/README.md",readingTime:{minutes:5.96,words:1789},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/node/`},key:"v-09429098",path:"/posts/node/",title:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",lang:"zh-CN",frontmatter:{title:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",date:"2022-04-07T11:56:16.000Z",tag:["Node"],category:["Node"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204071154296.jpg",sticky:5,summary:`\u2003Node.js \u53D1\u5E03\u4E8E 2009 \u5E74 5 \u6708\uFF0C\u7531 Ryan Dahl \u5F00\u53D1\uFF0C\u662F\u4E00\u4E2A\u57FA\u4E8E Chrome V8 \u5F15\u64CE\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u4F7F\u7528\u4E86\u4E00\u4E2A\u4E8B\u4EF6\u9A71\u52A8\u3001\u975E\u963B\u585E\u5F0F I/O \u6A21\u578B\uFF0C\u8BA9 JavaScript \u8FD0\u884C\u5728\u670D\u52A1\u7AEF\u7684\u5F00\u53D1\u5E73\u53F0\uFF0CJavaScript \u6210\u4E3A\u4E0E PHP\u3001Python\u3001Perl\u3001Ruby \u7B49\u670D\u52A1\u7AEF\u8BED\u8A00\u5E73\u8D77\u5E73\u5750\u7684\u811A\u672C\u8BED\u8A00\u3002Node.js \u5BF9\u4E00\u4E9B\u7279\u6B8A\u7528\u4F8B\u8FDB\u884C\u4F18\u5316\uFF0C\u63D0\u4F9B\u66FF\u4EE3\u7684 API\uFF0C\u4F7F\u5F97 V8 \u5728\u975E\u6D4F\u89C8\u5668\u73AF\u5883\u4E0B\u8FD0\u884C\u5F97\u66F4\u597D\uFF0CV8 \u5F15\u64CE\u6267\u884C Javascript \u7684\u901F\u5EA6\u975E\u5E38\u5FEB\uFF0C\u6027\u80FD\u975E\u5E38\u597D\uFF0C\u57FA\u4E8E Chrome JavaScript \u8FD0\u884C\u65F6\u5EFA\u7ACB\u7684\u5E73\u53F0\uFF0C \u7528\u4E8E\u65B9\u4FBF\u5730\u642D\u5EFA\u54CD\u5E94\u901F\u5EA6\u5FEB\u3001\u6613\u4E8E\u6269\u5C55\u7684\u7F51\u7EDC\u5E94\u7528\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/node/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Node"}],["meta",{property:"article:published_time",content:"2022-04-07T11:56:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Node.js \u53D1\u5E03\u4E8E 2009 \u5E74 5 \u6708\uFF0C\u7531 Ryan Dahl \u5F00\u53D1\uFF0C\u662F\u4E00\u4E2A\u57FA\u4E8E Chrome V8 \u5F15\u64CE\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u4F7F\u7528\u4E86\u4E00\u4E2A\u4E8B\u4EF6\u9A71\u52A8\u3001\u975E\u963B\u585E\u5F0F I/O \u6A21\u578B\uFF0C\u8BA9 JavaScript \u8FD0\u884C\u5728\u670D\u52A1\u7AEF\u7684\u5F00\u53D1\u5E73\u53F0\uFF0CJavaScript \u6210\u4E3A\u4E0E PHP\u3001Python\u3001Perl\u3001Ruby \u7B49\u670D\u52A1\u7AEF\u8BED\u8A00\u5E73\u8D77\u5E73\u5750\u7684\u811A\u672C\u8BED\u8A00\u3002Node.js \u5BF9\u4E00\u4E9B\u7279\u6B8A\u7528\u4F8B\u8FDB\u884C\u4F18\u5316\uFF0C\u63D0\u4F9B\u66FF\u4EE3\u7684 API\uFF0C\u4F7F\u5F97 V8 \u5728\u975E\u6D4F\u89C8\u5668\u73AF\u5883\u4E0B\u8FD0\u884C\u5F97\u66F4\u597D\uFF0CV8 \u5F15\u64CE\u6267\u884C Javascript \u7684\u901F\u5EA6\u975E\u5E38\u5FEB\uFF0C\u6027\u80FD\u975E\u5E38\u597D\uFF0C\u57FA\u4E8E Chrome JavaScript \u8FD0\u884C\u65F6\u5EFA\u7ACB\u7684\u5E73\u53F0\uFF0C \u7528\u4E8E\u65B9\u4FBF\u5730\u642D\u5EFA\u54CD\u5E94\u901F\u5EA6\u5FEB\u3001\u6613\u4E8E\u6269\u5C55\u7684\u7F51\u7EDC\u5E94\u7528\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001Node.js \u5B98\u7F51\u5730\u5740",slug:"\u4E00\u3001node-js-\u5B98\u7F51\u5730\u5740",children:[]},{level:2,title:"\u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5 Node.js",slug:"\u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5-node-js",children:[]},{level:2,title:"\u4E09\u3001Nvm \u5B89\u88C5 Node",slug:"\u4E09\u3001nvm-\u5B89\u88C5-node",children:[]},{level:2,title:"\u56DB\u3001Npm \u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879",slug:"\u56DB\u3001npm-\u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879",children:[]}],content:`---
+title: Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F
+date: 2022-04-07 11:56:16
+tag:
+  - Node
+category:
+  - Node
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204071154296.jpg
+sticky: 5
+---
+
+&emsp;Node.js \u53D1\u5E03\u4E8E 2009 \u5E74 5 \u6708\uFF0C\u7531 Ryan Dahl \u5F00\u53D1\uFF0C\u662F\u4E00\u4E2A\u57FA\u4E8E Chrome V8 \u5F15\u64CE\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u4F7F\u7528\u4E86\u4E00\u4E2A\u4E8B\u4EF6\u9A71\u52A8\u3001\u975E\u963B\u585E\u5F0F I/O \u6A21\u578B\uFF0C\u8BA9 JavaScript \u8FD0\u884C\u5728\u670D\u52A1\u7AEF\u7684\u5F00\u53D1\u5E73\u53F0\uFF0CJavaScript \u6210\u4E3A\u4E0E PHP\u3001Python\u3001Perl\u3001Ruby \u7B49\u670D\u52A1\u7AEF\u8BED\u8A00\u5E73\u8D77\u5E73\u5750\u7684\u811A\u672C\u8BED\u8A00\u3002Node.js \u5BF9\u4E00\u4E9B\u7279\u6B8A\u7528\u4F8B\u8FDB\u884C\u4F18\u5316\uFF0C\u63D0\u4F9B\u66FF\u4EE3\u7684 API\uFF0C\u4F7F\u5F97 V8 \u5728\u975E\u6D4F\u89C8\u5668\u73AF\u5883\u4E0B\u8FD0\u884C\u5F97\u66F4\u597D\uFF0CV8 \u5F15\u64CE\u6267\u884C Javascript \u7684\u901F\u5EA6\u975E\u5E38\u5FEB\uFF0C\u6027\u80FD\u975E\u5E38\u597D\uFF0C\u57FA\u4E8E Chrome JavaScript \u8FD0\u884C\u65F6\u5EFA\u7ACB\u7684\u5E73\u53F0\uFF0C \u7528\u4E8E\u65B9\u4FBF\u5730\u642D\u5EFA\u54CD\u5E94\u901F\u5EA6\u5FEB\u3001\u6613\u4E8E\u6269\u5C55\u7684\u7F51\u7EDC\u5E94\u7528\u3002
+
+<!-- more -->
+
+## \u4E00\u3001Node.js \u5B98\u7F51\u5730\u5740
+
+1\u3001Node.js \u56FD\u5185\u4E09\u65B9\u4E2D\u6587\u7F51\u7AD9\uFF1A<http://nodejs.cn/>  
+2\u3001Node.js \u5B98\u65B9\u4E2D\u6587\u7F51\u7AD9\uFF1A<https://nodejs.org/zh-cn/>  
+3\u3001Node.js \u5B98\u65B9\u82F1\u6587\u7F51\u7AD9\uFF1A<https://nodejs.org/en/>
+
+## \u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5 Node.js
+
+1\u3001\u8FDB\u5165 Node \u5B98\u7F51\u4E0B\u8F7D\u5730\u5740\uFF1A<https://nodejs.org/zh-cn/download/>\uFF0C\u4E0B\u8F7D Linux \u4E8C\u8FDB\u5236\u6587\u4EF6(x64)\u7F16\u8BD1\u5305\uFF0C\u590D\u5236\u4E0B\u8F7D\u94FE\u63A5:\`https://nodejs.org/dist/v16.14.2/node-v16.14.2-linux-x64.tar.xz\`
+2\u3001\u8FDB\u5165 Node \u9884\u8BBE\u7684\u5B89\u88C5\u76EE\u5F55\uFF1A
+
+\`\`\`bash
+cd /usr/local/node
+\`\`\`
+
+3\u3001\u4E0B\u8F7D\u5B89\u88C5\u5305\uFF0C\u5982\u679C\u6CA1\u6709 wget \u547D\u4EE4\uFF0C\u4F7F\u7528\uFF1A\`yum install -y wget\`
+
+\`\`\`bash
+wget https://nodejs.org/dist/v16.14.2/node-v16.14.2-linux-x64.tar.xz
+\`\`\`
+
+4\u3001\u89E3\u538B\u5B89\u88C5\u5305
+
+\`\`\`bash
+tar -zxvf node-v16.14.2-linux-x64.tar.xz
+\`\`\`
+
+5\u3001\u91CD\u547D\u540D
+
+\`\`\`bash
+mv  node-v16.14.2-linux-x64 node
+\`\`\`
+
+6\u3001\u914D\u7F6E\u8F6F\u94FE\u63A5
+\u4E3A\u4E86\u4F7F nodejs \u80FD\u591F\u5168\u5C40\u4F7F\u7528\uFF0C\u6211\u4EEC\u9700\u8981\u914D\u7F6E\u4E00\u4E0B\u8F6F\u94FE\u63A5\uFF08\u7C7B\u4F3C\u4E8E\u5FEB\u6377\u65B9\u5F0F\uFF0C\u5982\u679C\u5B89\u88C5\u7684\u8DEF\u5F84\u5728/usr/local/bin/\u4E0B\u4E0D\u9700\u8981\u8FD9\u4E00\u6B65\u64CD\u4F5C\uFF09\uFF0C\u5F53\u7136\u4E5F\u662F\u8F6F\u8FDE\u63A5\u5230\u7528\u6237\u76EE\u5F55\u4E0B/usr/local/bin/
+
+\`\`\`bash
+ln -s /usr/local/node/bin/node /usr/local/bin/node
+ln -s /usr/local/node/bin/npm /usr/local/bin/npm
+\`\`\`
+
+7\u3001\u914D\u7F6E node \u6587\u4EF6\u5B89\u88C5\u8DEF\u5F84
+
+\`\`\`bash
+cd /usr/local/node/
+mkdir node_global
+mkdir node_cache
+npm config set prefix "/usr/local/node/node_global"
+npm config set cache "/usr/local/node/node_cache"
+\`\`\`
+
+8\u3001\u914D\u7F6E\u6DD8\u5B9D\u955C\u50CF
+
+\`\`\`bash
+npm config set registry https://registry.npm.taobao.org
+\`\`\`
+
+9\u3001\u7248\u672C\u9A8C\u8BC1
+
+\`\`\`bash
+node -v
+npm -v
+\`\`\`
+
+10\u3001\u67E5\u770B npm \u5185\u90E8\u7684\u914D\u7F6E\u53C2\u6570
+
+\`\`\`bash
+npm config ls -l
+\`\`\`
+
+## \u4E09\u3001Nvm \u5B89\u88C5 Node
+
+&emsp;nvm \u662F node \u7684\u5305\u7BA1\u7406\u5DE5\u5177\u3002\u7531\u4E8E\u5728\u6253\u5F00\u4E0D\u540C\u7684\u9879\u76EE\u65F6\uFF0C\u4E0D\u540C\u7684\u9879\u76EE\u5728\u5B89\u88C5\u4F9D\u8D56\u65F6\u53EF\u80FD\u4F1A\u548C node \u7248\u672C\u6709\u5173\uFF0C\u6240\u4EE5\u8FD9\u5C31\u9700\u8981\u6211\u4EEC\u5728\u4E0D\u540C\u7684\u9879\u76EE\u4E0B\u4F7F\u7528\u4E0D\u540C\u7684 node \u7248\u672C\u3002
+nvm \u5C31\u662F\u4E00\u4E2A\u6BD4\u8F83\u597D\u7528 node \u7BA1\u7406\u5DE5\u5177\uFF0C\u65B9\u4FBF\u5FEB\u901F\u5B89\u88C5\u548C\u5207\u6362 node \u7248\u672C\u3002nvm \u5B98\u7F51\u5730\u5740\uFF1A<https://github.com/nvm-sh/nvm>
+
+1\u3001\u524D\u5F80[nvm \u5B98\u7F51](https://github.com/nvm-sh/nvm),\u83B7\u53D6 nvm \u6700\u65B0\u7248\u672C\uFF0C\u4F8B\u5982\uFF1A\`https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh\`  
+2\u3001\u4E0B\u8F7D\u5B89\u88C5\u5305
+
+\`\`\`bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+\`\`\`
+
+3\u3001\u73AF\u5883\u53D8\u91CF\u53C2\u6570\u914D\u7F6E
+\u5C06\u7B2C\u4E8C\u6B65\u5B89\u88C5\u7ED3\u675F\u540E\u7684\u4E00\u6BB5\u4EE3\u7801\u590D\u5236\u51FA\u6765\uFF0C\u7C98\u8D34\u5728\u6587\u4EF6\`bash_profile\`\u6700\u540E\u3002\u590D\u5236\u4EE3\u7801\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \\. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+\`\`\`
+
+\u7F16\u8F91\`bash_profile\`\u6587\u4EF6
+
+\`\`\`bash
+vi ~/.bash_profile
+#\u91CD\u65B0\u52A0\u8F7D\u914D\u7F6E\u6587\u4EF6\uFF0C\u4F7F\u914D\u7F6E\u53C2\u6570\u751F\u6548
+source ~/.bash_profile
+\`\`\`
+
+4\u3001\u5173\u95ED\u5F53\u524D shell \u7A97\u53E3\uFF0C\u91CD\u65B0\u6253\u5F00\uFF0C\u67E5\u770B nvm \u7248\u672C
+
+\`\`\`bash
+nvm -v
+\`\`\`
+
+\u81F3\u6B64 nvm \u5B89\u88C5\u6210\u529F
+
+5\u3001nvm \u5E38\u7528\u547D\u4EE4
+
+\`\`\`bash
+#\u5B89\u88C5\u6700\u65B0\u7A33\u5B9A\u7248 node
+nvm install stable
+#\u5B89\u88C5\u6307\u5B9A\u7248\u672C
+nvm install <version>
+#\u5220\u9664\u5DF2\u5B89\u88C5\u7684\u6307\u5B9A\u7248\u672C
+nvm uninstall <version>
+#\u5207\u6362\u4F7F\u7528\u6307\u5B9A\u7684\u7248\u672Cnode
+nvm use <version>
+#\u5217\u51FA\u6240\u6709\u5B89\u88C5\u7684\u7248\u672C
+nvm ls
+#\u5217\u51FA\u6240\u6709\u8FDC\u7A0B\u670D\u52A1\u5668\u7684\u7248\u672C
+nvm ls-remote
+#\u663E\u793A\u5F53\u524D\u7684\u7248\u672C
+nvm current
+#\u7ED9\u4E0D\u540C\u7684\u7248\u672C\u53F7\u6DFB\u52A0\u522B\u540D
+nvm alias <name> <version>
+#\u5220\u9664\u5DF2\u5B9A\u4E49\u7684\u522B\u540D
+nvm unalias <name>
+#\u5728\u5F53\u524D\u7248\u672C node \u73AF\u5883\u4E0B\uFF0C\u91CD\u65B0\u5168\u5C40\u5B89\u88C5\u6307\u5B9A\u7248\u672C\u53F7\u7684 npm \u5305
+nvm reinstall-packages <version>
+#\u8BBE\u7F6E\u9ED8\u8BA4\u7248\u672C
+nvm alias default [node\u7248\u672C\u53F7]
+#\u6253\u5F00node.js\u7248\u672C\u63A7\u5236
+nvm on
+#\u5173\u95EDnode.js\u7248\u672C\u63A7\u5236
+nvm off
+#\u6E05\u7A7Anvm\u7F13\u5B58\u76EE\u5F55
+nvm cache clear
+\`\`\`
+
+6\u3001\u5378\u8F7D nvm
+
+\`\`\`bash
+#1\u68C0\u67E5\u73AF\u5883\u53D8\u91CF
+echo $PATH
+#2\u6839\u636E$PATH\u5220\u9664 nvm \u76F8\u5173\u73AF\u5883\u8DEF\u5F84
+#3\u5220\u9664 nvm \u76F8\u5173\u76EE\u5F55
+rm -rf $NVM_DIR ~/.npm ~/.bower && unset NVM_DIR
+#4\u4ECE shell \u914D\u7F6E (\u4F8B\u5982\uFF1A.bash_profile) \u4E2D\u5220\u9664\u4EE5\u4E0B nvm \u76F8\u5173\u73AF\u5883\u53D8\u91CF
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \\. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \\. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#5\u91CD\u542Fshell,\u5173\u95ED\u5F53\u524Dshell\u7A97\u53E3\uFF0C\u6253\u5F00\u65B0\u7684shell\u7A97\u53E3
+\`\`\`
+
+## \u56DB\u3001Npm \u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879
+
+**1\u3001\u67E5\u770B npm \u5B58\u50A8\u5E93\u4E0A\u8F6F\u4EF6\u5305\u7684\u6700\u65B0\u53EF\u7528\u7248\u672C**
+
+\`\`\`bash
+#\u67E5\u770B\u6700\u65B0\u7248\u672C
+npm view jquery version
+#\u67E5\u770B\u6240\u6709\u7248\u672C
+npm view jquery versions
+\`\`\`
+
+**2\u3001\u67E5\u770B\u672C\u5730\u5DF2\u5B89\u88C5\u5305\u7248\u672C\u53CA\u5176\u4F9D\u8D56\u4FE1\u606F**
+
+\`\`\`bash
+#\u67E5\u770B\u5DF2\u5B89\u88C5\u5305\u7248\u672C\u53CA\u5176\u4F9D\u8D56\u4FE1\u606F
+npm list
+#\u67E5\u770B\u5DF2\u5B89\u88C5\u7684\u7279\u5B9A\u5305\u7248\u672C\u53CA\u5176\u4F9D\u8D56\u4FE1\u606F
+npm list dayjs
+\`\`\`
+
+**3\u3001\u5B89\u88C5\u6307\u5B9A\u7248\u672C**
+
+\`\`\`bash
+#1\u5728package.json\u91CC\u4FEE\u6539\u597D\u6307\u5B9A\u7248\u672C\u53F7\uFF0C\u7136\u540E\u8F93\u5165:
+npm update jquery
+#2\u66F4\u65B0\u81F3\u6307\u5B9A\u7248\u672C\uFF0C\u4F46\u662F\u4E0D\u4F1A\u5199\u5230package.json\u6587\u4EF6\u91CC
+npm update jquery@3.3.1
+#3\u66F4\u65B0\u81F3\u6307\u5B9A\u7248\u672C\uFF0C\u5E76\u5199\u5230package.json\u6587\u4EF6\u91CC
+npm update jquery@3.3.1 --save
+\u6216
+npm update jquery@3.3.1 -S
+\`\`\`
+
+**4\u3001npm \u5305 ^,@\u548C~\u7684\u533A\u522B**
+:::warning
+~\u4F1A\u5339\u914D\u6700\u8FD1\u7684\u5C0F\u7248\u672C\u4F9D\u8D56\u5305\uFF0C\u6BD4\u5982~1.2.3 \u4F1A\u5339\u914D\u6240\u6709 1.2.x \u7248\u672C\uFF0C\u4F46\u662F\u4E0D\u5305\u62EC 1.3.0,\u5982\uFF1A~1.1.2\uFF0C\u8868\u793A>=1.1.2 <1.2.0\u3002  
+^\u4F1A\u5339\u914D\u6700\u65B0\u7684\u5927\u7248\u672C\u4F9D\u8D56\u5305\uFF0C\u6BD4\u5982^1.2.3 \u4F1A\u5339\u914D\u6240\u6709 1.x.x \u7684\u5305\uFF0C\u5305\u62EC 1.3.0\uFF0C\u4F46\u662F\u4E0D\u5305\u62EC 2.0.0\uFF0C\u5982\uFF1A^1.1.2 \uFF0C\u8868\u793A>=1.1.2 <2.0.0\u3002
+:::
+&emsp;\u90A3\u4E48\u8BE5\u5982\u4F55\u9009\u62E9\u5462\uFF1F\u5F53\u7136\u4F60\u53EF\u4EE5\u6307\u5B9A\u7279\u5B9A\u7684\u7248\u672C\u53F7\uFF0C\u76F4\u63A5\u5199 1.2.3\uFF0C\u524D\u9762\u4EC0\u4E48\u524D\u7F00\u90FD\u6CA1\u6709\uFF0C\u8FD9\u6837\u56FA\u7136\u6CA1\u95EE\u9898\uFF0C\u4F46\u662F\u5982\u679C\u4F9D\u8D56\u5305\u53D1\u5E03\u65B0\u7248\u672C\u4FEE\u590D\u4E86\u4E00\u4E9B\u5C0F bug\uFF0C\u90A3\u4E48\u9700\u8981\u624B\u52A8\u4FEE\u6539 package.json \u6587\u4EF6\uFF1B~\u548C^\u5219\u53EF\u4EE5\u89E3\u51B3\u8FD9\u4E2A\u95EE\u9898\u3002\u4F46\u662F\u9700\u8981\u6CE8\u610F^\u7248\u672C\u66F4\u65B0\u53EF\u80FD\u6BD4\u8F83\u5927\uFF0C\u4F1A\u9020\u6210\u9879\u76EE\u4EE3\u7801\u9519\u8BEF\uFF0C\u6BD4\u5982\u8FD9\u7BC7\u6587\u7AE0\uFF08http://blog.csdn.net/u014291497/article/details/54427103\uFF09\u7684\u95EE\u9898\u5C31\u662F\u56E0\u4E3Apackage.json\u4F7F\u7528^1.5.7\u9020\u6210\u7684\uFF0C1.6\u7248\u672C\u7684\u5305\u4E0E\u73B0\u6709\u4EE3\u7801\u4E0D\u517C\u5BB9\u3002\u6240\u4EE5\u5EFA\u8BAE\u4F7F\u7528~\u6765\u6807\u8BB0\u7248\u672C\u53F7\uFF0C\u8FD9\u6837\u53EF\u4EE5\u4FDD\u8BC1\u9879\u76EE\u4E0D\u4F1A\u51FA\u73B0\u5927\u7684\u95EE\u9898\uFF0C\u4E5F\u80FD\u4FDD\u8BC1\u5305\u4E2D\u7684\u5C0Fbug\u53EF\u4EE5\u5F97\u5230\u4FEE\u590D\u3002
+
+**5\u3001npm i \u4E0E npm install \u4E4B\u95F4\u7684\u7EC6\u5C0F\u533A\u522B**
+
+- 1\u3001\u7528 npm i \u5B89\u88C5\u7684\u6A21\u5757\u65E0\u6CD5\u7528 npm uninstall \u5378\u8F7D\uFF0C\u9700\u8981\u7528 npm uninstall i \u547D\u4EE4
+
+- 2\u3001npm i \u4F1A\u5E2E\u52A9\u68C0\u6D4B\u4E0E\u5F53\u524D node \u7248\u672C\u6700\u5339\u914D\u7684 npm \u5305 \u7248\u672C\u53F7\uFF0C\u5E76\u5339\u914D\u51FA\u6765\u76F8\u4E92\u4F9D\u8D56\u7684 npm \u5305\u5E94\u8BE5\u63D0\u5347\u7684\u7248\u672C\u53F7
+
+- 3\u3001\u90E8\u5206 npm \u5305\u5728\u5F53\u524D node \u7248\u672C\u4E0B\u65E0\u6CD5\u4F7F\u7528\uFF0C\u5FC5\u987B\u4F7F\u7528\u5EFA\u8BAE\u7248\u672C
+
+- 4\u3001\u5B89\u88C5\u62A5\u9519\u65F6 intall \u80AF\u5B9A\u4F1A\u51FA\u73B0 npm-debug.log \u6587\u4EF6\uFF0Cnpm i \u4E0D\u4E00\u5B9A
+
+**6\u3001--save \u548C --save-dev \u7684\u4F5C\u7528\u548C\u533A\u522B**
+
+- 1\u3001\u4F7F\u7528\u547D\u4EE4 --save \u6216\u8005\u8BF4\u4E0D\u5199\u547D\u4EE4 --save,\u90FD\u4F1A\u628A\u4FE1\u606F\u8BB0\u5F55\u5230 dependencies \u4E2D,dependencies \u4E2D\u8BB0\u5F55\u7684\u90FD\u662F\u9879\u76EE\u5728\u8FD0\u884C\u65F6\u9700\u8981\u7684\u6587\u4EF6\u3002
+- 2\u3001\u4F7F\u7528\u547D\u4EE4 --save-dev \u5219\u4F1A\u628A\u4FE1\u606F\u8BB0\u5F55\u5230 devDependencies \u4E2D\uFF0C devDependencies \u4E2D\u8BB0\u5F55\u7684\u662F\u9879\u76EE\u5728\u5F00\u53D1\u8FC7\u7A0B\u4E2D\u9700\u8981\u4F7F\u7528\u7684\u4E00\u4E9B\u6587\u4EF6\uFF0C\u5728\u9879\u76EE\u6700\u7EC8\u8FD0\u884C\u65F6\u662F\u4E0D\u9700\u8981\u7684\u3002
+- 3\u3001--save \u7B80\u5199\uFF1A\`-S\`,--save-dev \u7B80\u5199\uFF1A\`-D\`
+- 4\u3001\u4E3A\u4F8B\u907F\u514D\u6DF7\u6DC6\uFF0C\u751F\u4EA7\u73AF\u5883\u7528\`-S\`\uFF0C\u5F00\u53D1\u73AF\u5883\u7528\uFF1A\`-D\`
+`,contentRendered:`<p>\u2003Node.js \u53D1\u5E03\u4E8E 2009 \u5E74 5 \u6708\uFF0C\u7531 Ryan Dahl \u5F00\u53D1\uFF0C\u662F\u4E00\u4E2A\u57FA\u4E8E Chrome V8 \u5F15\u64CE\u7684 JavaScript \u8FD0\u884C\u73AF\u5883\uFF0C\u4F7F\u7528\u4E86\u4E00\u4E2A\u4E8B\u4EF6\u9A71\u52A8\u3001\u975E\u963B\u585E\u5F0F I/O \u6A21\u578B\uFF0C\u8BA9 JavaScript \u8FD0\u884C\u5728\u670D\u52A1\u7AEF\u7684\u5F00\u53D1\u5E73\u53F0\uFF0CJavaScript \u6210\u4E3A\u4E0E PHP\u3001Python\u3001Perl\u3001Ruby \u7B49\u670D\u52A1\u7AEF\u8BED\u8A00\u5E73\u8D77\u5E73\u5750\u7684\u811A\u672C\u8BED\u8A00\u3002Node.js \u5BF9\u4E00\u4E9B\u7279\u6B8A\u7528\u4F8B\u8FDB\u884C\u4F18\u5316\uFF0C\u63D0\u4F9B\u66FF\u4EE3\u7684 API\uFF0C\u4F7F\u5F97 V8 \u5728\u975E\u6D4F\u89C8\u5668\u73AF\u5883\u4E0B\u8FD0\u884C\u5F97\u66F4\u597D\uFF0CV8 \u5F15\u64CE\u6267\u884C Javascript \u7684\u901F\u5EA6\u975E\u5E38\u5FEB\uFF0C\u6027\u80FD\u975E\u5E38\u597D\uFF0C\u57FA\u4E8E Chrome JavaScript \u8FD0\u884C\u65F6\u5EFA\u7ACB\u7684\u5E73\u53F0\uFF0C \u7528\u4E8E\u65B9\u4FBF\u5730\u642D\u5EFA\u54CD\u5E94\u901F\u5EA6\u5FEB\u3001\u6613\u4E8E\u6269\u5C55\u7684\u7F51\u7EDC\u5E94\u7528\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001node-js-\u5B98\u7F51\u5730\u5740" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001node-js-\u5B98\u7F51\u5730\u5740" aria-hidden="true">#</a> \u4E00\u3001Node.js \u5B98\u7F51\u5730\u5740</h2>
+<p>1\u3001Node.js \u56FD\u5185\u4E09\u65B9\u4E2D\u6587\u7F51\u7AD9\uFF1A<a href="http://nodejs.cn/" target="_blank" rel="noopener noreferrer">http://nodejs.cn/<ExternalLinkIcon/></a><br>
+2\u3001Node.js \u5B98\u65B9\u4E2D\u6587\u7F51\u7AD9\uFF1A<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener noreferrer">https://nodejs.org/zh-cn/<ExternalLinkIcon/></a><br>
+3\u3001Node.js \u5B98\u65B9\u82F1\u6587\u7F51\u7AD9\uFF1A<a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">https://nodejs.org/en/<ExternalLinkIcon/></a></p>
+<h2 id="\u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5-node-js" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5-node-js" aria-hidden="true">#</a> \u4E8C\u3001\u5B89\u88C5\u5305\u5B89\u88C5 Node.js</h2>
+<p>1\u3001\u8FDB\u5165 Node \u5B98\u7F51\u4E0B\u8F7D\u5730\u5740\uFF1A<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener noreferrer">https://nodejs.org/zh-cn/download/<ExternalLinkIcon/></a>\uFF0C\u4E0B\u8F7D Linux \u4E8C\u8FDB\u5236\u6587\u4EF6(x64)\u7F16\u8BD1\u5305\uFF0C\u590D\u5236\u4E0B\u8F7D\u94FE\u63A5:<code v-pre>https://nodejs.org/dist/v16.14.2/node-v16.14.2-linux-x64.tar.xz</code>
+2\u3001\u8FDB\u5165 Node \u9884\u8BBE\u7684\u5B89\u88C5\u76EE\u5F55\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">cd</span> /usr/local/node
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>3\u3001\u4E0B\u8F7D\u5B89\u88C5\u5305\uFF0C\u5982\u679C\u6CA1\u6709 wget \u547D\u4EE4\uFF0C\u4F7F\u7528\uFF1A<code v-pre>yum install -y wget</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">wget</span> https://nodejs.org/dist/v16.14.2/node-v16.14.2-linux-x64.tar.xz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>4\u3001\u89E3\u538B\u5B89\u88C5\u5305</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> node-v16.14.2-linux-x64.tar.xz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>5\u3001\u91CD\u547D\u540D</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">mv</span>  node-v16.14.2-linux-x64 <span class="token function">node</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>6\u3001\u914D\u7F6E\u8F6F\u94FE\u63A5
+\u4E3A\u4E86\u4F7F nodejs \u80FD\u591F\u5168\u5C40\u4F7F\u7528\uFF0C\u6211\u4EEC\u9700\u8981\u914D\u7F6E\u4E00\u4E0B\u8F6F\u94FE\u63A5\uFF08\u7C7B\u4F3C\u4E8E\u5FEB\u6377\u65B9\u5F0F\uFF0C\u5982\u679C\u5B89\u88C5\u7684\u8DEF\u5F84\u5728/usr/local/bin/\u4E0B\u4E0D\u9700\u8981\u8FD9\u4E00\u6B65\u64CD\u4F5C\uFF09\uFF0C\u5F53\u7136\u4E5F\u662F\u8F6F\u8FDE\u63A5\u5230\u7528\u6237\u76EE\u5F55\u4E0B/usr/local/bin/</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">ln</span> <span class="token parameter variable">-s</span> /usr/local/node/bin/node /usr/local/bin/node
+<span class="token function">ln</span> <span class="token parameter variable">-s</span> /usr/local/node/bin/npm /usr/local/bin/npm
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>7\u3001\u914D\u7F6E node \u6587\u4EF6\u5B89\u88C5\u8DEF\u5F84</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">cd</span> /usr/local/node/
+<span class="token function">mkdir</span> node_global
+<span class="token function">mkdir</span> node_cache
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> prefix <span class="token string">"/usr/local/node/node_global"</span>
+<span class="token function">npm</span> config <span class="token builtin class-name">set</span> cache <span class="token string">"/usr/local/node/node_cache"</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>8\u3001\u914D\u7F6E\u6DD8\u5B9D\u955C\u50CF</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>9\u3001\u7248\u672C\u9A8C\u8BC1</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">node</span> <span class="token parameter variable">-v</span>
+<span class="token function">npm</span> <span class="token parameter variable">-v</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>10\u3001\u67E5\u770B npm \u5185\u90E8\u7684\u914D\u7F6E\u53C2\u6570</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">npm</span> config <span class="token function">ls</span> <span class="token parameter variable">-l</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="\u4E09\u3001nvm-\u5B89\u88C5-node" tabindex="-1"><a class="header-anchor" href="#\u4E09\u3001nvm-\u5B89\u88C5-node" aria-hidden="true">#</a> \u4E09\u3001Nvm \u5B89\u88C5 Node</h2>
+<p>\u2003nvm \u662F node \u7684\u5305\u7BA1\u7406\u5DE5\u5177\u3002\u7531\u4E8E\u5728\u6253\u5F00\u4E0D\u540C\u7684\u9879\u76EE\u65F6\uFF0C\u4E0D\u540C\u7684\u9879\u76EE\u5728\u5B89\u88C5\u4F9D\u8D56\u65F6\u53EF\u80FD\u4F1A\u548C node \u7248\u672C\u6709\u5173\uFF0C\u6240\u4EE5\u8FD9\u5C31\u9700\u8981\u6211\u4EEC\u5728\u4E0D\u540C\u7684\u9879\u76EE\u4E0B\u4F7F\u7528\u4E0D\u540C\u7684 node \u7248\u672C\u3002
+nvm \u5C31\u662F\u4E00\u4E2A\u6BD4\u8F83\u597D\u7528 node \u7BA1\u7406\u5DE5\u5177\uFF0C\u65B9\u4FBF\u5FEB\u901F\u5B89\u88C5\u548C\u5207\u6362 node \u7248\u672C\u3002nvm \u5B98\u7F51\u5730\u5740\uFF1A<a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">https://github.com/nvm-sh/nvm<ExternalLinkIcon/></a></p>
+<p>1\u3001\u524D\u5F80<a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">nvm \u5B98\u7F51<ExternalLinkIcon/></a>,\u83B7\u53D6 nvm \u6700\u65B0\u7248\u672C\uFF0C\u4F8B\u5982\uFF1A<code v-pre>https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh</code><br>
+2\u3001\u4E0B\u8F7D\u5B89\u88C5\u5305</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">curl</span> -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh <span class="token operator">|</span> <span class="token function">bash</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>3\u3001\u73AF\u5883\u53D8\u91CF\u53C2\u6570\u914D\u7F6E
+\u5C06\u7B2C\u4E8C\u6B65\u5B89\u88C5\u7ED3\u675F\u540E\u7684\u4E00\u6BB5\u4EE3\u7801\u590D\u5236\u51FA\u6765\uFF0C\u7C98\u8D34\u5728\u6587\u4EF6<code v-pre>bash_profile</code>\u6700\u540E\u3002\u590D\u5236\u4EE3\u7801\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">export</span> <span class="token assign-left variable">NVM_DIR</span><span class="token operator">=</span><span class="token string">"<span class="token environment constant">$HOME</span>/.nvm"</span>
+<span class="token punctuation">[</span> <span class="token parameter variable">-s</span> <span class="token string">"<span class="token variable">$NVM_DIR</span>/nvm.sh"</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\\</span>. <span class="token string">"<span class="token variable">$NVM_DIR</span>/nvm.sh"</span>  <span class="token comment"># This loads nvm</span>
+<span class="token punctuation">[</span> <span class="token parameter variable">-s</span> <span class="token string">"<span class="token variable">$NVM_DIR</span>/bash_completion"</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\\</span>. <span class="token string">"<span class="token variable">$NVM_DIR</span>/bash_completion"</span>  <span class="token comment"># This loads nvm bash_completion</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u7F16\u8F91<code v-pre>bash_profile</code>\u6587\u4EF6</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">vi</span> ~/.bash_profile
+<span class="token comment">#\u91CD\u65B0\u52A0\u8F7D\u914D\u7F6E\u6587\u4EF6\uFF0C\u4F7F\u914D\u7F6E\u53C2\u6570\u751F\u6548</span>
+<span class="token builtin class-name">source</span> ~/.bash_profile
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>4\u3001\u5173\u95ED\u5F53\u524D shell \u7A97\u53E3\uFF0C\u91CD\u65B0\u6253\u5F00\uFF0C\u67E5\u770B nvm \u7248\u672C</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>nvm <span class="token parameter variable">-v</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u81F3\u6B64 nvm \u5B89\u88C5\u6210\u529F</p>
+<p>5\u3001nvm \u5E38\u7528\u547D\u4EE4</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5B89\u88C5\u6700\u65B0\u7A33\u5B9A\u7248 node</span>
+nvm <span class="token function">install</span> stable
+<span class="token comment">#\u5B89\u88C5\u6307\u5B9A\u7248\u672C</span>
+nvm <span class="token function">install</span> <span class="token operator">&lt;</span>version<span class="token operator">></span>
+<span class="token comment">#\u5220\u9664\u5DF2\u5B89\u88C5\u7684\u6307\u5B9A\u7248\u672C</span>
+nvm uninstall <span class="token operator">&lt;</span>version<span class="token operator">></span>
+<span class="token comment">#\u5207\u6362\u4F7F\u7528\u6307\u5B9A\u7684\u7248\u672Cnode</span>
+nvm use <span class="token operator">&lt;</span>version<span class="token operator">></span>
+<span class="token comment">#\u5217\u51FA\u6240\u6709\u5B89\u88C5\u7684\u7248\u672C</span>
+nvm <span class="token function">ls</span>
+<span class="token comment">#\u5217\u51FA\u6240\u6709\u8FDC\u7A0B\u670D\u52A1\u5668\u7684\u7248\u672C</span>
+nvm ls-remote
+<span class="token comment">#\u663E\u793A\u5F53\u524D\u7684\u7248\u672C</span>
+nvm current
+<span class="token comment">#\u7ED9\u4E0D\u540C\u7684\u7248\u672C\u53F7\u6DFB\u52A0\u522B\u540D</span>
+nvm <span class="token builtin class-name">alias</span> <span class="token operator">&lt;</span>name<span class="token operator">></span> <span class="token operator">&lt;</span>version<span class="token operator">></span>
+<span class="token comment">#\u5220\u9664\u5DF2\u5B9A\u4E49\u7684\u522B\u540D</span>
+nvm <span class="token builtin class-name">unalias</span> <span class="token operator">&lt;</span>name<span class="token operator">></span>
+<span class="token comment">#\u5728\u5F53\u524D\u7248\u672C node \u73AF\u5883\u4E0B\uFF0C\u91CD\u65B0\u5168\u5C40\u5B89\u88C5\u6307\u5B9A\u7248\u672C\u53F7\u7684 npm \u5305</span>
+nvm reinstall-packages <span class="token operator">&lt;</span>version<span class="token operator">></span>
+<span class="token comment">#\u8BBE\u7F6E\u9ED8\u8BA4\u7248\u672C</span>
+nvm <span class="token builtin class-name">alias</span> default <span class="token punctuation">[</span>node\u7248\u672C\u53F7<span class="token punctuation">]</span>
+<span class="token comment">#\u6253\u5F00node.js\u7248\u672C\u63A7\u5236</span>
+nvm on
+<span class="token comment">#\u5173\u95EDnode.js\u7248\u672C\u63A7\u5236</span>
+nvm off
+<span class="token comment">#\u6E05\u7A7Anvm\u7F13\u5B58\u76EE\u5F55</span>
+nvm cache <span class="token function">clear</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>6\u3001\u5378\u8F7D nvm</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#1\u68C0\u67E5\u73AF\u5883\u53D8\u91CF</span>
+<span class="token builtin class-name">echo</span> <span class="token environment constant">$PATH</span>
+<span class="token comment">#2\u6839\u636E$PATH\u5220\u9664 nvm \u76F8\u5173\u73AF\u5883\u8DEF\u5F84</span>
+<span class="token comment">#3\u5220\u9664 nvm \u76F8\u5173\u76EE\u5F55</span>
+<span class="token function">rm</span> <span class="token parameter variable">-rf</span> <span class="token variable">$NVM_DIR</span> ~/.npm ~/.bower <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">unset</span> NVM_DIR
+<span class="token comment">#4\u4ECE shell \u914D\u7F6E (\u4F8B\u5982\uFF1A.bash_profile) \u4E2D\u5220\u9664\u4EE5\u4E0B nvm \u76F8\u5173\u73AF\u5883\u53D8\u91CF</span>
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">NVM_DIR</span><span class="token operator">=</span><span class="token string">"<span class="token environment constant">$HOME</span>/.nvm"</span>
+<span class="token punctuation">[</span> <span class="token parameter variable">-s</span> <span class="token string">"<span class="token variable">$NVM_DIR</span>/nvm.sh"</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\\</span>. <span class="token string">"<span class="token variable">$NVM_DIR</span>/nvm.sh"</span>  <span class="token comment"># This loads nvm</span>
+<span class="token punctuation">[</span> <span class="token parameter variable">-s</span> <span class="token string">"<span class="token variable">$NVM_DIR</span>/bash_completion"</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">\\</span>. <span class="token string">"<span class="token variable">$NVM_DIR</span>/bash_completion"</span>  <span class="token comment"># This loads nvm bash_completion</span>
+<span class="token comment">#5\u91CD\u542Fshell,\u5173\u95ED\u5F53\u524Dshell\u7A97\u53E3\uFF0C\u6253\u5F00\u65B0\u7684shell\u7A97\u53E3</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u56DB\u3001npm-\u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879" tabindex="-1"><a class="header-anchor" href="#\u56DB\u3001npm-\u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879" aria-hidden="true">#</a> \u56DB\u3001Npm \u76F8\u5173\u64CD\u4F5C\u547D\u4EE4\u53CA\u5176\u6CE8\u610F\u4E8B\u9879</h2>
+<p><strong>1\u3001\u67E5\u770B npm \u5B58\u50A8\u5E93\u4E0A\u8F6F\u4EF6\u5305\u7684\u6700\u65B0\u53EF\u7528\u7248\u672C</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u770B\u6700\u65B0\u7248\u672C</span>
+<span class="token function">npm</span> view jquery version
+<span class="token comment">#\u67E5\u770B\u6240\u6709\u7248\u672C</span>
+<span class="token function">npm</span> view jquery versions
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>2\u3001\u67E5\u770B\u672C\u5730\u5DF2\u5B89\u88C5\u5305\u7248\u672C\u53CA\u5176\u4F9D\u8D56\u4FE1\u606F</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u770B\u5DF2\u5B89\u88C5\u5305\u7248\u672C\u53CA\u5176\u4F9D\u8D56\u4FE1\u606F</span>
+<span class="token function">npm</span> list
+<span class="token comment">#\u67E5\u770B\u5DF2\u5B89\u88C5\u7684\u7279\u5B9A\u5305\u7248\u672C\u53CA\u5176\u4F9D\u8D56\u4FE1\u606F</span>
+<span class="token function">npm</span> list dayjs
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>3\u3001\u5B89\u88C5\u6307\u5B9A\u7248\u672C</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#1\u5728package.json\u91CC\u4FEE\u6539\u597D\u6307\u5B9A\u7248\u672C\u53F7\uFF0C\u7136\u540E\u8F93\u5165:</span>
+<span class="token function">npm</span> update jquery
+<span class="token comment">#2\u66F4\u65B0\u81F3\u6307\u5B9A\u7248\u672C\uFF0C\u4F46\u662F\u4E0D\u4F1A\u5199\u5230package.json\u6587\u4EF6\u91CC</span>
+<span class="token function">npm</span> update jquery@3.3.1
+<span class="token comment">#3\u66F4\u65B0\u81F3\u6307\u5B9A\u7248\u672C\uFF0C\u5E76\u5199\u5230package.json\u6587\u4EF6\u91CC</span>
+<span class="token function">npm</span> update jquery@3.3.1 <span class="token parameter variable">--save</span>
+\u6216
+<span class="token function">npm</span> update jquery@3.3.1 <span class="token parameter variable">-S</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>4\u3001npm \u5305 ^,@\u548C~\u7684\u533A\u522B</strong></p>
+<div class="custom-container warning"><p class="custom-container-title">\u6CE8\u610F</p>
+<p>~\u4F1A\u5339\u914D\u6700\u8FD1\u7684\u5C0F\u7248\u672C\u4F9D\u8D56\u5305\uFF0C\u6BD4\u5982~1.2.3 \u4F1A\u5339\u914D\u6240\u6709 1.2.x \u7248\u672C\uFF0C\u4F46\u662F\u4E0D\u5305\u62EC 1.3.0,\u5982\uFF1A~1.1.2\uFF0C\u8868\u793A&gt;=1.1.2 &lt;1.2.0\u3002<br>
+^\u4F1A\u5339\u914D\u6700\u65B0\u7684\u5927\u7248\u672C\u4F9D\u8D56\u5305\uFF0C\u6BD4\u5982^1.2.3 \u4F1A\u5339\u914D\u6240\u6709 1.x.x \u7684\u5305\uFF0C\u5305\u62EC 1.3.0\uFF0C\u4F46\u662F\u4E0D\u5305\u62EC 2.0.0\uFF0C\u5982\uFF1A^1.1.2 \uFF0C\u8868\u793A&gt;=1.1.2 &lt;2.0.0\u3002</p>
+</div>
+<p>\u2003\u90A3\u4E48\u8BE5\u5982\u4F55\u9009\u62E9\u5462\uFF1F\u5F53\u7136\u4F60\u53EF\u4EE5\u6307\u5B9A\u7279\u5B9A\u7684\u7248\u672C\u53F7\uFF0C\u76F4\u63A5\u5199 1.2.3\uFF0C\u524D\u9762\u4EC0\u4E48\u524D\u7F00\u90FD\u6CA1\u6709\uFF0C\u8FD9\u6837\u56FA\u7136\u6CA1\u95EE\u9898\uFF0C\u4F46\u662F\u5982\u679C\u4F9D\u8D56\u5305\u53D1\u5E03\u65B0\u7248\u672C\u4FEE\u590D\u4E86\u4E00\u4E9B\u5C0F bug\uFF0C\u90A3\u4E48\u9700\u8981\u624B\u52A8\u4FEE\u6539 package.json \u6587\u4EF6\uFF1B~\u548C^\u5219\u53EF\u4EE5\u89E3\u51B3\u8FD9\u4E2A\u95EE\u9898\u3002\u4F46\u662F\u9700\u8981\u6CE8\u610F^\u7248\u672C\u66F4\u65B0\u53EF\u80FD\u6BD4\u8F83\u5927\uFF0C\u4F1A\u9020\u6210\u9879\u76EE\u4EE3\u7801\u9519\u8BEF\uFF0C\u6BD4\u5982\u8FD9\u7BC7\u6587\u7AE0\uFF08http://blog.csdn.net/u014291497/article/details/54427103\uFF09\u7684\u95EE\u9898\u5C31\u662F\u56E0\u4E3Apackage.json\u4F7F\u7528^1.5.7\u9020\u6210\u7684\uFF0C1.6\u7248\u672C\u7684\u5305\u4E0E\u73B0\u6709\u4EE3\u7801\u4E0D\u517C\u5BB9\u3002\u6240\u4EE5\u5EFA\u8BAE\u4F7F\u7528~\u6765\u6807\u8BB0\u7248\u672C\u53F7\uFF0C\u8FD9\u6837\u53EF\u4EE5\u4FDD\u8BC1\u9879\u76EE\u4E0D\u4F1A\u51FA\u73B0\u5927\u7684\u95EE\u9898\uFF0C\u4E5F\u80FD\u4FDD\u8BC1\u5305\u4E2D\u7684\u5C0Fbug\u53EF\u4EE5\u5F97\u5230\u4FEE\u590D\u3002</p>
+<p><strong>5\u3001npm i \u4E0E npm install \u4E4B\u95F4\u7684\u7EC6\u5C0F\u533A\u522B</strong></p>
+<ul>
+<li>
+<p>1\u3001\u7528 npm i \u5B89\u88C5\u7684\u6A21\u5757\u65E0\u6CD5\u7528 npm uninstall \u5378\u8F7D\uFF0C\u9700\u8981\u7528 npm uninstall i \u547D\u4EE4</p>
+</li>
+<li>
+<p>2\u3001npm i \u4F1A\u5E2E\u52A9\u68C0\u6D4B\u4E0E\u5F53\u524D node \u7248\u672C\u6700\u5339\u914D\u7684 npm \u5305 \u7248\u672C\u53F7\uFF0C\u5E76\u5339\u914D\u51FA\u6765\u76F8\u4E92\u4F9D\u8D56\u7684 npm \u5305\u5E94\u8BE5\u63D0\u5347\u7684\u7248\u672C\u53F7</p>
+</li>
+<li>
+<p>3\u3001\u90E8\u5206 npm \u5305\u5728\u5F53\u524D node \u7248\u672C\u4E0B\u65E0\u6CD5\u4F7F\u7528\uFF0C\u5FC5\u987B\u4F7F\u7528\u5EFA\u8BAE\u7248\u672C</p>
+</li>
+<li>
+<p>4\u3001\u5B89\u88C5\u62A5\u9519\u65F6 intall \u80AF\u5B9A\u4F1A\u51FA\u73B0 npm-debug.log \u6587\u4EF6\uFF0Cnpm i \u4E0D\u4E00\u5B9A</p>
+</li>
+</ul>
+<p><strong>6\u3001--save \u548C --save-dev \u7684\u4F5C\u7528\u548C\u533A\u522B</strong></p>
+<ul>
+<li>1\u3001\u4F7F\u7528\u547D\u4EE4 --save \u6216\u8005\u8BF4\u4E0D\u5199\u547D\u4EE4 --save,\u90FD\u4F1A\u628A\u4FE1\u606F\u8BB0\u5F55\u5230 dependencies \u4E2D,dependencies \u4E2D\u8BB0\u5F55\u7684\u90FD\u662F\u9879\u76EE\u5728\u8FD0\u884C\u65F6\u9700\u8981\u7684\u6587\u4EF6\u3002</li>
+<li>2\u3001\u4F7F\u7528\u547D\u4EE4 --save-dev \u5219\u4F1A\u628A\u4FE1\u606F\u8BB0\u5F55\u5230 devDependencies \u4E2D\uFF0C devDependencies \u4E2D\u8BB0\u5F55\u7684\u662F\u9879\u76EE\u5728\u5F00\u53D1\u8FC7\u7A0B\u4E2D\u9700\u8981\u4F7F\u7528\u7684\u4E00\u4E9B\u6587\u4EF6\uFF0C\u5728\u9879\u76EE\u6700\u7EC8\u8FD0\u884C\u65F6\u662F\u4E0D\u9700\u8981\u7684\u3002</li>
+<li>3\u3001--save \u7B80\u5199\uFF1A<code v-pre>-S</code>,--save-dev \u7B80\u5199\uFF1A<code v-pre>-D</code></li>
+<li>4\u3001\u4E3A\u4F8B\u907F\u514D\u6DF7\u6DC6\uFF0C\u751F\u4EA7\u73AF\u5883\u7528<code v-pre>-S</code>\uFF0C\u5F00\u53D1\u73AF\u5883\u7528\uFF1A<code v-pre>-D</code></li>
+</ul>
+`,date:"2022-04-07",deps:[],links:[],pathInferred:"/posts/node/",pathLocale:"/",permalink:null,routeMeta:{title:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"},sfcBlocks:[],slug:"README",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/node/README.md",filePathRelative:"posts/node/README.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/node/index.html.vue",componentFilePathRelative:"pages/posts/node/index.html.vue",componentFileChunkName:"v-09429098",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/node/index.html.js",dataFilePathRelative:"pages/posts/node/index.html.js",dataFileChunkName:"v-09429098",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/node/index.html",htmlFilePathRelative:"posts/node/index.html"},title:"Node\u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"},["/posts/node/index.html","/posts/node/README.md"]],["v-7eeae4bc","/posts/node/pm2.html",{_blog:{data:{key:"v-7eeae4bc",path:"/posts/node/pm2.html",title:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4",lang:"zh-CN",frontmatter:{title:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4",date:"2022-04-07T16:31:16.000Z",tags:["pm2"],categories:["Node","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200951285.jpg",summary:`\u2003pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/node/pm2.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"pm2"}],["meta",{property:"article:published_time",content:"2022-04-07T16:31:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001pm2 \u5B98\u7F51\u4FE1\u606F",slug:"\u4E00\u3001pm2-\u5B98\u7F51\u4FE1\u606F",children:[]},{level:2,title:"\u4E8C\u3001pm2 \u5B89\u88C5\u6B65\u9AA4",slug:"\u4E8C\u3001pm2-\u5B89\u88C5\u6B65\u9AA4",children:[]},{level:2,title:"\u4E09\u3001pm2 \u5E38\u7528\u547D\u4EE4",slug:"\u4E09\u3001pm2-\u5E38\u7528\u547D\u4EE4",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/node/pm2.md",readingTime:{minutes:3.91,words:1172},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/node/pm2.html`},key:"v-7eeae4bc",path:"/posts/node/pm2.html",title:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4",lang:"zh-CN",frontmatter:{title:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4",date:"2022-04-07T16:31:16.000Z",tags:["pm2"],categories:["Node","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200951285.jpg",summary:`\u2003pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/node/pm2.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"pm2"}],["meta",{property:"article:published_time",content:"2022-04-07T16:31:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001pm2 \u5B98\u7F51\u4FE1\u606F",slug:"\u4E00\u3001pm2-\u5B98\u7F51\u4FE1\u606F",children:[]},{level:2,title:"\u4E8C\u3001pm2 \u5B89\u88C5\u6B65\u9AA4",slug:"\u4E8C\u3001pm2-\u5B89\u88C5\u6B65\u9AA4",children:[]},{level:2,title:"\u4E09\u3001pm2 \u5E38\u7528\u547D\u4EE4",slug:"\u4E09\u3001pm2-\u5E38\u7528\u547D\u4EE4",children:[]}],content:`---
+title: PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4
+date: 2022-04-07 16:31:16
+tags:
+  - pm2
+categories:
+  - Node
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200951285.jpg
+---
+
+&emsp;pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002
+
+<!-- more -->
+
+## \u4E00\u3001pm2 \u5B98\u7F51\u4FE1\u606F
+
+1\u3001pm2 \u5B98\u7F51\u5730\u5740\uFF1A<https://pm2.keymetrics.io/>  
+2\u3001pm2 \u5B98\u65B9\u6587\u6863\uFF1A<https://pm2.keymetrics.io/docs/usage/quick-start/>  
+3\u3001pm2 github \u5730\u5740\uFF1A<https://github.com/Unitech/pm2>
+
+## \u4E8C\u3001pm2 \u5B89\u88C5\u6B65\u9AA4
+
+1\u3001pm2 \u5B89\u88C5\u9700\u8981\u4F9D\u8D56\`Node\`\u73AF\u5883\uFF0C\u5E76\u4E14\`Node\`\u7248\u672C\u9700\u8981\u9AD8\u4E8E 12\uFF0C\u5982\u679C\u4E3A\u5B89\u88C5\`Node\`,\u8BF7\u53C2\u8003\uFF1A[Node \u73AF\u5883\u5B89\u88C5\u65B9\u5F0F](/node/)  
+2\u3001pm2 \u5B89\u88C5\u547D\u4EE4
+
+\`\`\`bash
+# \u5168\u5C40\u5B89\u88C5pm2
+$ npm install pm2 -g
+\`\`\`
+
+3\u3001\u5F00\u59CB\u542F\u52A8\u4E00\u4E2A\u5E94\u7528
+
+\u914D\u7F6E pm2 \u5E94\u7528\u5B9E\u4F8B\u914D\u7F6E\u6587\u4EF6\`ecosystem.config.js\`,\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+#pm2\u5B9E\u4F8B\u914D\u7F6E\uFF1Aecosystem.config.js
+module.exports = {
+  apps: [
+    {
+      #\u5B9E\u4F8B\u540D\u79F0
+      name: 'NuxtRmbRate',
+      #\u90E8\u7F72\u6A21\u5F0F\uFF0C\u5355\u673A\uFF1A'fork',\u96C6\u7FA4\uFF1A'cluster'
+      exec_mode: 'fork',
+      #\u5B9E\u4F8B\u6570\u76EE
+      instances: '1',
+      #\u9700\u8981\u6267\u884C\u7684\u811A\u672C\u6587\u4EF6\uFF0C\u5BF9\u4E8E\u666E\u901A\u7684nuxt\u9879\u76EE(\u6CA1\u6709server)\uFF0C\u4E00\u822C\u91C7\u7528nuxt start\u547D\u4EE4\uFF0C\u7528pm2\u6267\u884C\u65F6\u9700\u8981\u4FEE\u6539\u6210./node-modules/nuxt/dist/bin/nuxt.js,\u5426\u5219\u62A5\u9519
+      script: 'server/index.js',
+      #\u5E94\u7528\u7A0B\u5E8F\u6240\u5728\u7684\u76EE\u5F55
+      cwd: '',
+      # \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF0C\u4F8B\u5982nuxt start\u547D\u4EE4\uFF0C\u53C2\u6570\u4E3Astart
+      args: '',
+      # \u5B8C\u6574\u65E5\u5FD7\u8DEF\u5F84
+      output: 'log/output.log',
+      # \u9519\u8BEF\u65E5\u5FD7\u8DEF\u5F84
+      error: 'log/error.log',
+      # \u8BBF\u95EE\u65E5\u5FD7\u8DEF\u5F84
+      log: 'log/access.log',
+      # \u65E5\u5FD7\u683C\u5F0F
+      log_type: 'json',
+      # \u5408\u5E76\u65E5\u5FD7
+      merge_logs: true,
+      # \u65E5\u5FD7\u65E5\u671F\u683C\u5F0F
+      log_date_format: 'YYYY-MM-DD HH:mm:ss',
+       # \u6700\u5C0F\u8FD0\u884C\u65F6\u95F4\uFF0C\u8FD9\u91CC\u8BBE\u7F6E\u7684\u662F60s\u5373\u5982\u679C\u5E94\u7528\u7A0B\u5E8F\u5728* 60s\u5185\u9000\u51FA\uFF0Cpm2\u4F1A\u8BA4\u4E3A\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\uFF0C\u6B64\u65F6\u89E6\u53D1\u91CD\u542F* max_restarts\u8BBE\u7F6E\u6570\u91CF\uFF0C\u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8
+      min_uptime: '60s',
+      # \u8BBE\u7F6E\u5E94\u7528\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\u91CD\u542F\u7684\u6B21\u6570\uFF0C\u9ED8\u8BA415\u6B21\uFF08\u4ECE0\u5F00\u59CB\u8BA1\u6570\uFF09,\u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8Emin_uptime\u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B
+      max_restarts: 10,
+      # \u542F\u7528/\u7981\u7528\u5E94\u7528\u7A0B\u5E8F\u5D29\u6E83\u6216\u9000\u51FA\u65F6\u81EA\u52A8\u91CD\u542F\uFF0C\u9ED8\u8BA4\u4E3Atrue, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F
+      autorestart: true,
+      # \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4
+      restart_delay: 30,
+      #\u751F\u4EA7\u73AF\u5883\u914D\u7F6E
+      env_prod: {
+        # \u73AF\u5883\u53C2\u6570\uFF0C\u5F53\u524D\u6307\u5B9A\u4E3A\u751F\u4EA7\u73AF\u5883
+        NODE_ENV: 'production'
+      }
+    }
+  ]
+}
+\`\`\`
+
+\u5176\u4ED6\u914D\u7F6E\u9879\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+name \u5E94\u7528\u8FDB\u7A0B\u540D\u79F0\uFF1B
+
+script \u542F\u52A8\u811A\u672C\u8DEF\u5F84\uFF1B
+
+cwd \u5E94\u7528\u542F\u52A8\u7684\u8DEF\u5F84\uFF0C\u5173\u4E8E script \u4E0E cwd \u7684\u533A\u522B\u4E3E\u4F8B\u8BF4\u660E\uFF1A\u5728/home/polo/\u76EE\u5F55\u4E0B\u8FD0\u884C/data/release/node/index.js\uFF0C\u6B64\u5904 script \u4E3A/data/release/node/index.js\uFF0Ccwd \u4E3A/home/polo/\uFF1B
+
+args \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF1B
+
+interpreter \u6307\u5B9A\u7684\u811A\u672C\u89E3\u91CA\u5668\uFF1B
+
+interpreter_args \u4F20\u9012\u7ED9\u89E3\u91CA\u5668\u7684\u53C2\u6570\uFF1B
+
+instances \u5E94\u7528\u542F\u52A8\u5B9E\u4F8B\u4E2A\u6570\uFF0C\u4EC5\u5728 cluster \u6A21\u5F0F\u6709\u6548\uFF0C\u9ED8\u8BA4\u4E3A fork\uFF1B
+
+exec_mode \u5E94\u7528\u542F\u52A8\u6A21\u5F0F\uFF0C\u652F\u6301 fork \u548C cluster \u6A21\u5F0F\uFF1B
+
+watch \u76D1\u542C\u91CD\u542F\uFF0C\u542F\u7528\u60C5\u51B5\u4E0B\uFF0C\u6587\u4EF6\u5939\u6216\u5B50\u6587\u4EF6\u5939\u4E0B\u53D8\u5316\u5E94\u7528\u81EA\u52A8\u91CD\u542F\uFF1B
+
+ignore_watch \u5FFD\u7565\u76D1\u542C\u7684\u6587\u4EF6\u5939\uFF0C\u652F\u6301\u6B63\u5219\u8868\u8FBE\u5F0F\uFF1B
+
+max_memory_restart \u6700\u5927\u5185\u5B58\u9650\u5236\u6570\uFF0C\u8D85\u51FA\u81EA\u52A8\u91CD\u542F\uFF1B
+
+env \u73AF\u5883\u53D8\u91CF\uFF0Cobject \u7C7B\u578B\uFF0C\u5982{"NODE_ENV":"production", "ID": "42"}\uFF1B
+
+log_date_format \u6307\u5B9A\u65E5\u5FD7\u65E5\u671F\u683C\u5F0F\uFF0C\u5982 YYYY-MM-DD HH:mm:ss\uFF1B
+
+error_file \u8BB0\u5F55\u6807\u51C6\u9519\u8BEF\u6D41\uFF0C$HOME/.pm2/logs/XXXerr.log)\uFF0C\u4EE3\u7801\u9519\u8BEF\u53EF\u5728\u6B64\u6587\u4EF6\u67E5\u627E\uFF1B
+
+out_file \u8BB0\u5F55\u6807\u51C6\u8F93\u51FA\u6D41\uFF0C$HOME/.pm2/logs/XXXout.log)\uFF0C\u5982\u5E94\u7528\u6253\u5370\u5927\u91CF\u7684\u6807\u51C6\u8F93\u51FA\uFF0C\u4F1A\u5BFC\u81F4 pm2 \u65E5\u5FD7\u8FC7\u5927\uFF1B
+
+min_uptime \u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8\uFF1B
+
+max_restarts \u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8E min_uptime \u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B
+
+autorestart \u9ED8\u8BA4\u4E3A true, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F\uFF1B
+
+cron_restart crontab \u65F6\u95F4\u683C\u5F0F\u91CD\u542F\u5E94\u7528\uFF0C\u76EE\u524D\u53EA\u652F\u6301 cluster \u6A21\u5F0F\uFF1B
+
+force \u9ED8\u8BA4 false\uFF0C\u5982\u679C true\uFF0C\u53EF\u4EE5\u91CD\u590D\u542F\u52A8\u4E00\u4E2A\u811A\u672C\u3002pm2 \u4E0D\u5EFA\u8BAE\u8FD9\u4E48\u505A\uFF1B
+
+restart_delay \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4\uFF1B
+\`\`\`
+
+**\u6CE8\u610F\uFF1A** \u8BBE\u7F6E\u73AF\u5883\u53D8\u91CF\u65F6\u9700\u8981\u4EE5\`env_\`\u5F00\u5934\uFF0C\u8BE6\u7EC6\u53C2\u8003\uFF1A<https:#pm2.keymetrics.io/docs/usage/environment/>\u3002\u4F8B\u5982\u8BBE\u7F6E\u4E86\u73AF\u5883\u53D8\u91CF\`env_production\`\uFF0C\u91C7\u7528 pm2 \u542F\u52A8\u65F6\u5982\u4E0B\uFF1A\`pm2 start ecosystem.config.js --env production\`
+
+\u542F\u52A8\u9879\u76EE\u5B9E\u4F8B
+
+\`\`\`bash
+pm2 start ecosystem.config.js
+\`\`\`
+
+## \u4E09\u3001pm2 \u5E38\u7528\u547D\u4EE4
+
+\`\`\`bash
+# \u663E\u793A\u6240\u6709\u8FDB\u7A0B\u72B6\u6001
+pm2 list
+# \u76D1\u89C6\u6240\u6709\u8FDB\u7A0B
+pm2 monit
+# \u663E\u793A\u6240\u6709\u8FDB\u7A0B\u65E5\u5FD7
+pm2 logs
+# \u663E\u793Aid=0\u7684\u8FDB\u7A0B\u65E5\u5FD7
+pm2 logs 0
+# \u505C\u6B62\u6240\u6709\u8FDB\u7A0B
+pm2 stop all
+# \u91CD\u542F\u6240\u6709\u8FDB\u7A0B
+pm2 restart all
+# 0\u79D2\u505C\u673A\u91CD\u8F7D\u8FDB\u7A0B (\u7528\u4E8E NETWORKED \u8FDB\u7A0B)
+pm2 reload all
+# \u505C\u6B62\u6307\u5B9A\u7684\u8FDB\u7A0B
+pm2 stop 0
+# \u91CD\u542F\u6307\u5B9A\u7684\u8FDB\u7A0B
+pm2 restart 0
+# \u4EA7\u751F init \u811A\u672C \u4FDD\u6301\u8FDB\u7A0B\u6D3B\u7740
+pm2 startup
+# \u8FD0\u884C\u5065\u58EE\u7684 computer API endpoint ([http://localhost:9615](http://localhost:9615/))
+pm2 web
+# \u6740\u6B7B\u6307\u5B9A\u7684\u8FDB\u7A0B
+pm2 delete 0
+# \u6740\u6B7B\u5168\u90E8\u8FDB\u7A0B
+pm2 delete all
+# \u67E5\u770B\u8FDB\u7A0B\u8BE6\u7EC6\u4FE1\u606F
+pm2 describe 0
+\`\`\`
+`,contentRendered:`<p>\u2003pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001pm2-\u5B98\u7F51\u4FE1\u606F" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001pm2-\u5B98\u7F51\u4FE1\u606F" aria-hidden="true">#</a> \u4E00\u3001pm2 \u5B98\u7F51\u4FE1\u606F</h2>
+<p>1\u3001pm2 \u5B98\u7F51\u5730\u5740\uFF1A<a href="https://pm2.keymetrics.io/" target="_blank" rel="noopener noreferrer">https://pm2.keymetrics.io/<ExternalLinkIcon/></a><br>
+2\u3001pm2 \u5B98\u65B9\u6587\u6863\uFF1A<a href="https://pm2.keymetrics.io/docs/usage/quick-start/" target="_blank" rel="noopener noreferrer">https://pm2.keymetrics.io/docs/usage/quick-start/<ExternalLinkIcon/></a><br>
+3\u3001pm2 github \u5730\u5740\uFF1A<a href="https://github.com/Unitech/pm2" target="_blank" rel="noopener noreferrer">https://github.com/Unitech/pm2<ExternalLinkIcon/></a></p>
+<h2 id="\u4E8C\u3001pm2-\u5B89\u88C5\u6B65\u9AA4" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001pm2-\u5B89\u88C5\u6B65\u9AA4" aria-hidden="true">#</a> \u4E8C\u3001pm2 \u5B89\u88C5\u6B65\u9AA4</h2>
+<p>1\u3001pm2 \u5B89\u88C5\u9700\u8981\u4F9D\u8D56<code v-pre>Node</code>\u73AF\u5883\uFF0C\u5E76\u4E14<code v-pre>Node</code>\u7248\u672C\u9700\u8981\u9AD8\u4E8E 12\uFF0C\u5982\u679C\u4E3A\u5B89\u88C5<code v-pre>Node</code>,\u8BF7\u53C2\u8003\uFF1A<a href="/node/" target="_blank" rel="noopener noreferrer">Node \u73AF\u5883\u5B89\u88C5\u65B9\u5F0F<ExternalLinkIcon/></a><br>
+2\u3001pm2 \u5B89\u88C5\u547D\u4EE4</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u5168\u5C40\u5B89\u88C5pm2</span>
+$ <span class="token function">npm</span> <span class="token function">install</span> pm2 <span class="token parameter variable">-g</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>3\u3001\u5F00\u59CB\u542F\u52A8\u4E00\u4E2A\u5E94\u7528</p>
+<p>\u914D\u7F6E pm2 \u5E94\u7528\u5B9E\u4F8B\u914D\u7F6E\u6587\u4EF6<code v-pre>ecosystem.config.js</code>,\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#pm2\u5B9E\u4F8B\u914D\u7F6E\uFF1Aecosystem.config.js</span>
+module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  apps: <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">#\u5B9E\u4F8B\u540D\u79F0</span>
+      name: <span class="token string">'NuxtRmbRate'</span>,
+      <span class="token comment">#\u90E8\u7F72\u6A21\u5F0F\uFF0C\u5355\u673A\uFF1A'fork',\u96C6\u7FA4\uFF1A'cluster'</span>
+      exec_mode: <span class="token string">'fork'</span>,
+      <span class="token comment">#\u5B9E\u4F8B\u6570\u76EE</span>
+      instances: <span class="token string">'1'</span>,
+      <span class="token comment">#\u9700\u8981\u6267\u884C\u7684\u811A\u672C\u6587\u4EF6\uFF0C\u5BF9\u4E8E\u666E\u901A\u7684nuxt\u9879\u76EE(\u6CA1\u6709server)\uFF0C\u4E00\u822C\u91C7\u7528nuxt start\u547D\u4EE4\uFF0C\u7528pm2\u6267\u884C\u65F6\u9700\u8981\u4FEE\u6539\u6210./node-modules/nuxt/dist/bin/nuxt.js,\u5426\u5219\u62A5\u9519</span>
+      script: <span class="token string">'server/index.js'</span>,
+      <span class="token comment">#\u5E94\u7528\u7A0B\u5E8F\u6240\u5728\u7684\u76EE\u5F55</span>
+      cwd: <span class="token string">''</span>,
+      <span class="token comment"># \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF0C\u4F8B\u5982nuxt start\u547D\u4EE4\uFF0C\u53C2\u6570\u4E3Astart</span>
+      args: <span class="token string">''</span>,
+      <span class="token comment"># \u5B8C\u6574\u65E5\u5FD7\u8DEF\u5F84</span>
+      output: <span class="token string">'log/output.log'</span>,
+      <span class="token comment"># \u9519\u8BEF\u65E5\u5FD7\u8DEF\u5F84</span>
+      error: <span class="token string">'log/error.log'</span>,
+      <span class="token comment"># \u8BBF\u95EE\u65E5\u5FD7\u8DEF\u5F84</span>
+      log: <span class="token string">'log/access.log'</span>,
+      <span class="token comment"># \u65E5\u5FD7\u683C\u5F0F</span>
+      log_type: <span class="token string">'json'</span>,
+      <span class="token comment"># \u5408\u5E76\u65E5\u5FD7</span>
+      merge_logs: true,
+      <span class="token comment"># \u65E5\u5FD7\u65E5\u671F\u683C\u5F0F</span>
+      log_date_format: <span class="token string">'YYYY-MM-DD HH:mm:ss'</span>,
+       <span class="token comment"># \u6700\u5C0F\u8FD0\u884C\u65F6\u95F4\uFF0C\u8FD9\u91CC\u8BBE\u7F6E\u7684\u662F60s\u5373\u5982\u679C\u5E94\u7528\u7A0B\u5E8F\u5728* 60s\u5185\u9000\u51FA\uFF0Cpm2\u4F1A\u8BA4\u4E3A\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\uFF0C\u6B64\u65F6\u89E6\u53D1\u91CD\u542F* max_restarts\u8BBE\u7F6E\u6570\u91CF\uFF0C\u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8</span>
+      min_uptime: <span class="token string">'60s'</span>,
+      <span class="token comment"># \u8BBE\u7F6E\u5E94\u7528\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\u91CD\u542F\u7684\u6B21\u6570\uFF0C\u9ED8\u8BA415\u6B21\uFF08\u4ECE0\u5F00\u59CB\u8BA1\u6570\uFF09,\u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8Emin_uptime\u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B</span>
+      max_restarts: <span class="token number">10</span>,
+      <span class="token comment"># \u542F\u7528/\u7981\u7528\u5E94\u7528\u7A0B\u5E8F\u5D29\u6E83\u6216\u9000\u51FA\u65F6\u81EA\u52A8\u91CD\u542F\uFF0C\u9ED8\u8BA4\u4E3Atrue, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F</span>
+      autorestart: true,
+      <span class="token comment"># \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4</span>
+      restart_delay: <span class="token number">30</span>,
+      <span class="token comment">#\u751F\u4EA7\u73AF\u5883\u914D\u7F6E</span>
+      env_prod: <span class="token punctuation">{</span>
+        <span class="token comment"># \u73AF\u5883\u53C2\u6570\uFF0C\u5F53\u524D\u6307\u5B9A\u4E3A\u751F\u4EA7\u73AF\u5883</span>
+        NODE_ENV: <span class="token string">'production'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5176\u4ED6\u914D\u7F6E\u9879\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>name \u5E94\u7528\u8FDB\u7A0B\u540D\u79F0\uFF1B
+
+script \u542F\u52A8\u811A\u672C\u8DEF\u5F84\uFF1B
+
+cwd \u5E94\u7528\u542F\u52A8\u7684\u8DEF\u5F84\uFF0C\u5173\u4E8E script \u4E0E cwd \u7684\u533A\u522B\u4E3E\u4F8B\u8BF4\u660E\uFF1A\u5728/home/polo/\u76EE\u5F55\u4E0B\u8FD0\u884C/data/release/node/index.js\uFF0C\u6B64\u5904 script \u4E3A/data/release/node/index.js\uFF0Ccwd \u4E3A/home/polo/\uFF1B
+
+args \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF1B
+
+interpreter \u6307\u5B9A\u7684\u811A\u672C\u89E3\u91CA\u5668\uFF1B
+
+interpreter_args \u4F20\u9012\u7ED9\u89E3\u91CA\u5668\u7684\u53C2\u6570\uFF1B
+
+instances \u5E94\u7528\u542F\u52A8\u5B9E\u4F8B\u4E2A\u6570\uFF0C\u4EC5\u5728 cluster \u6A21\u5F0F\u6709\u6548\uFF0C\u9ED8\u8BA4\u4E3A fork\uFF1B
+
+exec_mode \u5E94\u7528\u542F\u52A8\u6A21\u5F0F\uFF0C\u652F\u6301 fork \u548C cluster \u6A21\u5F0F\uFF1B
+
+<span class="token function">watch</span> \u76D1\u542C\u91CD\u542F\uFF0C\u542F\u7528\u60C5\u51B5\u4E0B\uFF0C\u6587\u4EF6\u5939\u6216\u5B50\u6587\u4EF6\u5939\u4E0B\u53D8\u5316\u5E94\u7528\u81EA\u52A8\u91CD\u542F\uFF1B
+
+ignore_watch \u5FFD\u7565\u76D1\u542C\u7684\u6587\u4EF6\u5939\uFF0C\u652F\u6301\u6B63\u5219\u8868\u8FBE\u5F0F\uFF1B
+
+max_memory_restart \u6700\u5927\u5185\u5B58\u9650\u5236\u6570\uFF0C\u8D85\u51FA\u81EA\u52A8\u91CD\u542F\uFF1B
+
+<span class="token function">env</span> \u73AF\u5883\u53D8\u91CF\uFF0Cobject \u7C7B\u578B\uFF0C\u5982<span class="token punctuation">{</span><span class="token string">"NODE_ENV"</span><span class="token builtin class-name">:</span><span class="token string">"production"</span>, <span class="token string">"ID"</span><span class="token builtin class-name">:</span> <span class="token string">"42"</span><span class="token punctuation">}</span>\uFF1B
+
+log_date_format \u6307\u5B9A\u65E5\u5FD7\u65E5\u671F\u683C\u5F0F\uFF0C\u5982 YYYY-MM-DD HH:mm:ss\uFF1B
+
+error_file \u8BB0\u5F55\u6807\u51C6\u9519\u8BEF\u6D41\uFF0C<span class="token environment constant">$HOME</span>/.pm2/logs/XXXerr.log<span class="token punctuation">)</span>\uFF0C\u4EE3\u7801\u9519\u8BEF\u53EF\u5728\u6B64\u6587\u4EF6\u67E5\u627E\uFF1B
+
+out_file \u8BB0\u5F55\u6807\u51C6\u8F93\u51FA\u6D41\uFF0C<span class="token environment constant">$HOME</span>/.pm2/logs/XXXout.log<span class="token punctuation">)</span>\uFF0C\u5982\u5E94\u7528\u6253\u5370\u5927\u91CF\u7684\u6807\u51C6\u8F93\u51FA\uFF0C\u4F1A\u5BFC\u81F4 pm2 \u65E5\u5FD7\u8FC7\u5927\uFF1B
+
+min_uptime \u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8\uFF1B
+
+max_restarts \u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8E min_uptime \u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B
+
+autorestart \u9ED8\u8BA4\u4E3A true, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F\uFF1B
+
+cron_restart <span class="token function">crontab</span> \u65F6\u95F4\u683C\u5F0F\u91CD\u542F\u5E94\u7528\uFF0C\u76EE\u524D\u53EA\u652F\u6301 cluster \u6A21\u5F0F\uFF1B
+
+force \u9ED8\u8BA4 false\uFF0C\u5982\u679C true\uFF0C\u53EF\u4EE5\u91CD\u590D\u542F\u52A8\u4E00\u4E2A\u811A\u672C\u3002pm2 \u4E0D\u5EFA\u8BAE\u8FD9\u4E48\u505A\uFF1B
+
+restart_delay \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4\uFF1B
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u6CE8\u610F\uFF1A</strong> \u8BBE\u7F6E\u73AF\u5883\u53D8\u91CF\u65F6\u9700\u8981\u4EE5<code v-pre>env_</code>\u5F00\u5934\uFF0C\u8BE6\u7EC6\u53C2\u8003\uFF1A<RouterLink to="/posts/node/https:#pm2.keymetrics.io/docs/usage/environment/">https:#pm2.keymetrics.io/docs/usage/environment/</RouterLink>\u3002\u4F8B\u5982\u8BBE\u7F6E\u4E86\u73AF\u5883\u53D8\u91CF<code v-pre>env_production</code>\uFF0C\u91C7\u7528 pm2 \u542F\u52A8\u65F6\u5982\u4E0B\uFF1A<code v-pre>pm2 start ecosystem.config.js --env production</code></p>
+<p>\u542F\u52A8\u9879\u76EE\u5B9E\u4F8B</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>pm2 start ecosystem.config.js
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="\u4E09\u3001pm2-\u5E38\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#\u4E09\u3001pm2-\u5E38\u7528\u547D\u4EE4" aria-hidden="true">#</a> \u4E09\u3001pm2 \u5E38\u7528\u547D\u4EE4</h2>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u663E\u793A\u6240\u6709\u8FDB\u7A0B\u72B6\u6001</span>
+pm2 list
+<span class="token comment"># \u76D1\u89C6\u6240\u6709\u8FDB\u7A0B</span>
+pm2 monit
+<span class="token comment"># \u663E\u793A\u6240\u6709\u8FDB\u7A0B\u65E5\u5FD7</span>
+pm2 logs
+<span class="token comment"># \u663E\u793Aid=0\u7684\u8FDB\u7A0B\u65E5\u5FD7</span>
+pm2 logs <span class="token number">0</span>
+<span class="token comment"># \u505C\u6B62\u6240\u6709\u8FDB\u7A0B</span>
+pm2 stop all
+<span class="token comment"># \u91CD\u542F\u6240\u6709\u8FDB\u7A0B</span>
+pm2 restart all
+<span class="token comment"># 0\u79D2\u505C\u673A\u91CD\u8F7D\u8FDB\u7A0B (\u7528\u4E8E NETWORKED \u8FDB\u7A0B)</span>
+pm2 reload all
+<span class="token comment"># \u505C\u6B62\u6307\u5B9A\u7684\u8FDB\u7A0B</span>
+pm2 stop <span class="token number">0</span>
+<span class="token comment"># \u91CD\u542F\u6307\u5B9A\u7684\u8FDB\u7A0B</span>
+pm2 restart <span class="token number">0</span>
+<span class="token comment"># \u4EA7\u751F init \u811A\u672C \u4FDD\u6301\u8FDB\u7A0B\u6D3B\u7740</span>
+pm2 startup
+<span class="token comment"># \u8FD0\u884C\u5065\u58EE\u7684 computer API endpoint ([http://localhost:9615](http://localhost:9615/))</span>
+pm2 web
+<span class="token comment"># \u6740\u6B7B\u6307\u5B9A\u7684\u8FDB\u7A0B</span>
+pm2 delete <span class="token number">0</span>
+<span class="token comment"># \u6740\u6B7B\u5168\u90E8\u8FDB\u7A0B</span>
+pm2 delete all
+<span class="token comment"># \u67E5\u770B\u8FDB\u7A0B\u8BE6\u7EC6\u4FE1\u606F</span>
+pm2 describe <span class="token number">0</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-04-07",deps:[],links:[{raw:"https:#pm2.keymetrics.io/docs/usage/environment/",relative:"posts/node/https:#pm2.keymetrics.io/docs/usage/environment/",absolute:"/blog-docs/posts/node/https:#pm2.keymetrics.io/docs/usage/environment/"}],pathInferred:"/posts/node/pm2.html",pathLocale:"/",permalink:null,routeMeta:{title:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4"},sfcBlocks:[],slug:"pm2",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/node/pm2.md",filePathRelative:"posts/node/pm2.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/node/pm2.html.vue",componentFilePathRelative:"pages/posts/node/pm2.html.vue",componentFileChunkName:"v-7eeae4bc",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/node/pm2.html.js",dataFilePathRelative:"pages/posts/node/pm2.html.js",dataFileChunkName:"v-7eeae4bc",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/node/pm2.html",htmlFilePathRelative:"posts/node/pm2.html"},title:"PM2\u9879\u76EE\u90E8\u7F72\u6D41\u7A0B\u548C\u5E38\u7528\u547D\u4EE4"},["/posts/node/pm2","/posts/node/pm2.md"]],["v-08c61a76","/posts/node/tools.html",{_blog:{data:{key:"v-08c61a76",path:"/posts/node/tools.html",title:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5",date:"2022-04-19T16:31:16.000Z",tag:["Node"],category:["Node"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200955471.jpg",summary:`\u2003\u6536\u96C6\u4E00\u4E9BNodeJs\u4E2D\u7ECF\u5E38\u4F7F\u7528\u5230\u7684\u4E00\u4E9B\u5DE5\u5177\u7C7B\u6216\u8005\u65B9\u6CD5\uFF0C\u65B9\u4FBF\u4EE5\u540E\u4F7F\u7528\u65F6\u907F\u5751\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/node/tools.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Node"}],["meta",{property:"article:published_time",content:"2022-04-19T16:31:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u6536\u96C6\u4E00\u4E9BNodeJs\u4E2D\u7ECF\u5E38\u4F7F\u7528\u5230\u7684\u4E00\u4E9B\u5DE5\u5177\u7C7B\u6216\u8005\u65B9\u6CD5\uFF0C\u65B9\u4FBF\u4EE5\u540E\u4F7F\u7528\u65F6\u907F\u5751\u3002</p>
+`,headers:[{level:2,title:'\u4E00\u3001JS\u3001NodeJs \u659C\u6760"/"\u6216\u53CD\u659C\u6760""\u66FF\u6362\u6216\u8F6C\u6362',slug:"\u4E00\u3001js\u3001nodejs-\u659C\u6760-\u6216\u53CD\u659C\u6760-\u66FF\u6362\u6216\u8F6C\u6362",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/node/tools.md",readingTime:{minutes:.94,words:283},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/node/tools.html`},key:"v-08c61a76",path:"/posts/node/tools.html",title:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5",date:"2022-04-19T16:31:16.000Z",tag:["Node"],category:["Node"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200955471.jpg",summary:`\u2003\u6536\u96C6\u4E00\u4E9BNodeJs\u4E2D\u7ECF\u5E38\u4F7F\u7528\u5230\u7684\u4E00\u4E9B\u5DE5\u5177\u7C7B\u6216\u8005\u65B9\u6CD5\uFF0C\u65B9\u4FBF\u4EE5\u540E\u4F7F\u7528\u65F6\u907F\u5751\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/node/tools.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Node"}],["meta",{property:"article:published_time",content:"2022-04-19T16:31:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u6536\u96C6\u4E00\u4E9BNodeJs\u4E2D\u7ECF\u5E38\u4F7F\u7528\u5230\u7684\u4E00\u4E9B\u5DE5\u5177\u7C7B\u6216\u8005\u65B9\u6CD5\uFF0C\u65B9\u4FBF\u4EE5\u540E\u4F7F\u7528\u65F6\u907F\u5751\u3002</p>
+`,headers:[{level:2,title:'\u4E00\u3001JS\u3001NodeJs \u659C\u6760"/"\u6216\u53CD\u659C\u6760""\u66FF\u6362\u6216\u8F6C\u6362',slug:"\u4E00\u3001js\u3001nodejs-\u659C\u6760-\u6216\u53CD\u659C\u6760-\u66FF\u6362\u6216\u8F6C\u6362",children:[]}],content:`---
+title: NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5
+date: 2022-04-19 16:31:16
+tag:
+  - Node
+category:
+  - Node
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200955471.jpg
+---
+
+&emsp;\u6536\u96C6\u4E00\u4E9BNodeJs\u4E2D\u7ECF\u5E38\u4F7F\u7528\u5230\u7684\u4E00\u4E9B\u5DE5\u5177\u7C7B\u6216\u8005\u65B9\u6CD5\uFF0C\u65B9\u4FBF\u4EE5\u540E\u4F7F\u7528\u65F6\u907F\u5751\u3002
+
+<!-- more -->
+
+## \u4E00\u3001JS\u3001NodeJs \u659C\u6760"/"\u6216\u53CD\u659C\u6760"\\"\u66FF\u6362\u6216\u8F6C\u6362
+
+&emsp;JS\u3001NodeJs \u73AF\u5883\u4E0B\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7\`replace\`\u5BF9\u5B57\u7B26\u4E32\u8FDB\u884C\u66FF\u6362\u6216\u8F6C\u6362\uFF0C\u4F46\u6709\u4E2A\u7F3A\u70B9\u53EA\u80FD\u66FF\u6362\u6216\u8F6C\u6362\u7B2C\u4E00\u4E2A\u76EE\u6807\u5B57\u7B26\uFF0CJS \u53EF\u4EE5\u901A\u8FC7\`replaceAll\`\u8FDB\u884C\u5168\u90E8\u66FF\u6362\uFF0CNodeJs \u73AF\u5883\u4E0B\u6CA1\u6709\`replaceAll\`\u65B9\u6CD5\u3002\u56E0\u6B64\u6700\u6709\u6548\u7684\u65B9\u6CD5\u5C31\u662F\u901A\u8FC7\u6B63\u5219\u8868\u8FBE\u5F0F\u8FDB\u884C\u66FF\u6362\u6216\u8F6C\u6362\u3002
+
+1\u3001\u659C\u6760\u8F6C\u53CD\u659C\u6760\u3001\u659C\u6760\u66FF\u6362
+
+\`\`\`bash
+#---------- \u659C\u6760\u8F6C\u53CD\u659C\u6760 Slash to backslash --------
+let slash = 'C:/Users/JasonSong/\u6210\u957F\u7684\u5C0F\u732A/NodeJs';
+
+#\u65B9\u6CD51\uFF1A
+let result = slash.replace(/\\//g, '\\\\');
+console.log('[Option 1] slash: ', result);
+
+#\u65B9\u6CD52\uFF1A
+result = String.raw\`\${slash}\`.split('/').join('\\\\');
+console.log('[Option 2] slash: ', result);
+\`\`\`
+
+2\u3001\u53CD\u659C\u6760\u8F6C\u659C\u6760\u3001\u53CD\u659C\u6760\u66FF\u6362
+
+\`\`\`bash
+#---------- \u53CD\u659C\u6760\u8F6C\u659C\u6760 Backslash to slash --------
+let backslash = 'C:\\\\Users\\\\JasonSong\\\\\u6210\u957F\u7684\u5C0F\u732A\\\\NodeJs';
+
+#\u65B9\u6CD51\uFF1A
+result = backslash.replace(/\\\\/g,"/");
+console.log('[Option 1] backslash: ', result);
+
+#\u65B9\u6CD52\uFF1A
+result = String.raw\`\${backslash}\`.split('\\\\').join('/');
+console.log('[Option 2] backslash: ', result);
+\`\`\`
+`,contentRendered:`<p>\u2003\u6536\u96C6\u4E00\u4E9BNodeJs\u4E2D\u7ECF\u5E38\u4F7F\u7528\u5230\u7684\u4E00\u4E9B\u5DE5\u5177\u7C7B\u6216\u8005\u65B9\u6CD5\uFF0C\u65B9\u4FBF\u4EE5\u540E\u4F7F\u7528\u65F6\u907F\u5751\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001js\u3001nodejs-\u659C\u6760-\u6216\u53CD\u659C\u6760-\u66FF\u6362\u6216\u8F6C\u6362" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001js\u3001nodejs-\u659C\u6760-\u6216\u53CD\u659C\u6760-\u66FF\u6362\u6216\u8F6C\u6362" aria-hidden="true">#</a> \u4E00\u3001JS\u3001NodeJs \u659C\u6760&quot;/&quot;\u6216\u53CD\u659C\u6760&quot;&quot;\u66FF\u6362\u6216\u8F6C\u6362</h2>
+<p>\u2003JS\u3001NodeJs \u73AF\u5883\u4E0B\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7<code v-pre>replace</code>\u5BF9\u5B57\u7B26\u4E32\u8FDB\u884C\u66FF\u6362\u6216\u8F6C\u6362\uFF0C\u4F46\u6709\u4E2A\u7F3A\u70B9\u53EA\u80FD\u66FF\u6362\u6216\u8F6C\u6362\u7B2C\u4E00\u4E2A\u76EE\u6807\u5B57\u7B26\uFF0CJS \u53EF\u4EE5\u901A\u8FC7<code v-pre>replaceAll</code>\u8FDB\u884C\u5168\u90E8\u66FF\u6362\uFF0CNodeJs \u73AF\u5883\u4E0B\u6CA1\u6709<code v-pre>replaceAll</code>\u65B9\u6CD5\u3002\u56E0\u6B64\u6700\u6709\u6548\u7684\u65B9\u6CD5\u5C31\u662F\u901A\u8FC7\u6B63\u5219\u8868\u8FBE\u5F0F\u8FDB\u884C\u66FF\u6362\u6216\u8F6C\u6362\u3002</p>
+<p>1\u3001\u659C\u6760\u8F6C\u53CD\u659C\u6760\u3001\u659C\u6760\u66FF\u6362</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#---------- \u659C\u6760\u8F6C\u53CD\u659C\u6760 Slash to backslash --------</span>
+<span class="token builtin class-name">let</span> slash <span class="token operator">=</span> <span class="token string">'C:/Users/JasonSong/\u6210\u957F\u7684\u5C0F\u732A/NodeJs'</span><span class="token punctuation">;</span>
+
+<span class="token comment">#\u65B9\u6CD51\uFF1A</span>
+<span class="token builtin class-name">let</span> result <span class="token operator">=</span> slash.replace<span class="token punctuation">(</span>/<span class="token punctuation">\\</span>//g, <span class="token string">'\\\\'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console.log<span class="token punctuation">(</span><span class="token string">'[Option 1] slash: '</span>, result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">#\u65B9\u6CD52\uFF1A</span>
+result <span class="token operator">=</span> String.raw<span class="token variable"><span class="token variable">\`</span>$<span class="token punctuation">{</span>slash<span class="token punctuation">}</span><span class="token variable">\`</span></span>.split<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>.join<span class="token punctuation">(</span><span class="token string">'\\\\'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console.log<span class="token punctuation">(</span><span class="token string">'[Option 2] slash: '</span>, result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2\u3001\u53CD\u659C\u6760\u8F6C\u659C\u6760\u3001\u53CD\u659C\u6760\u66FF\u6362</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#---------- \u53CD\u659C\u6760\u8F6C\u659C\u6760 Backslash to slash --------</span>
+<span class="token builtin class-name">let</span> backslash <span class="token operator">=</span> <span class="token string">'C:\\\\Users\\\\JasonSong\\\\\u6210\u957F\u7684\u5C0F\u732A\\\\NodeJs'</span><span class="token punctuation">;</span>
+
+<span class="token comment">#\u65B9\u6CD51\uFF1A</span>
+result <span class="token operator">=</span> backslash.replace<span class="token punctuation">(</span>/<span class="token punctuation">\\</span><span class="token punctuation">\\</span>/g,<span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console.log<span class="token punctuation">(</span><span class="token string">'[Option 1] backslash: '</span>, result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">#\u65B9\u6CD52\uFF1A</span>
+result <span class="token operator">=</span> String.raw<span class="token variable"><span class="token variable">\`</span>$<span class="token punctuation">{</span>backslash<span class="token punctuation">}</span><span class="token variable">\`</span></span>.split<span class="token punctuation">(</span><span class="token string">'\\\\'</span><span class="token punctuation">)</span>.join<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console.log<span class="token punctuation">(</span><span class="token string">'[Option 2] backslash: '</span>, result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-04-19",deps:[],links:[],pathInferred:"/posts/node/tools.html",pathLocale:"/",permalink:null,routeMeta:{title:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5"},sfcBlocks:[],slug:"tools",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/node/tools.md",filePathRelative:"posts/node/tools.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/node/tools.html.vue",componentFilePathRelative:"pages/posts/node/tools.html.vue",componentFileChunkName:"v-08c61a76",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/node/tools.html.js",dataFilePathRelative:"pages/posts/node/tools.html.js",dataFileChunkName:"v-08c61a76",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/node/tools.html",htmlFilePathRelative:"posts/node/tools.html"},title:"NodeJs \u5E38\u7528\u7684\u5DE5\u5177\u548C\u65B9\u6CD5"},["/posts/node/tools","/posts/node/tools.md"]],["v-094597b7","/posts/nuxt/",{_blog:{data:{key:"v-094597b7",path:"/posts/nuxt/",title:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E",lang:"zh-CN",frontmatter:{title:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E",date:"2019-04-06T09:44:16.000Z",tag:["Nuxt"],category:["Nuxt"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204060942130.jpg",sticky:5,summary:`\u2003Nuxt.js \u662F\u4E00\u4E2A\u57FA\u4E8E Vue.js \u7684\u901A\u7528\u5E94\u7528\u6846\u67B6\uFF0C\u4E00\u4E2A\u7528\u4E8E Vue.js \u5F00\u53D1 SSR \u5E94\u7528\u7684\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848\uFF0C\u5BF9\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u57FA\u7840\u67B6\u6784\u8FDB\u884C\u4E86\u62BD\u8C61\uFF0C\u4E3B\u8981\u5173\u6CE8\u7684\u662F\u5E94\u7528\u7684 UI \u6E32\u67D3\u3002NuxtJs \u53EF\u4EE5\u5B9E\u73B0\u57FA\u4E8E vuejs \u7684\u591A\u9875\u9762\u5E94\u7528\uFF0C\u652F\u6301 SSR(\u670D\u52A1\u5668\u7AEF\u6E32\u67D3)\uFF0C\u7B80\u5316\u4E86 SSR \u7684\u5F00\u53D1\u96BE\u5EA6\uFF0C\u53D7\u5230\u4E86 React SSR \u6846\u67B6 Next.js \u7684\u542F\u53D1\uFF0C\u4F7F\u7528 Webpack \u548C Node.js \u8FDB\u884C\u5C01\u88C5\u7684\u57FA\u4E8E Vue \u7684 SSR \u6846\u67B6\uFF0C\u9884\u8BBE\u4E86\u5229\u7528 Vue.js \u5F00\u53D1\u670D\u52A1\u7AEF\u6E32\u67D3\u7684\u5E94\u7528\u6240\u9700\u8981\u7684\u5404\u79CD\u914D\u7F6E\uFF0C\u800C\u4E14\u8FD8\u53EF\u4EE5\u76F4\u63A5\u7528\u547D\u4EE4\u628A\u6211\u4EEC\u5236\u4F5C\u7684 vue \u9879\u76EE\u751F\u6210\u9759\u6001 html\u3002\u4F5C\u4E3A\u6846\u67B6\uFF0CNuxt.js \u4E3A\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u8FD9\u79CD\u5178\u578B\u7684\u5E94\u7528\u67B6\u6784\u6A21\u5F0F\u63D0\u4F9B\u4E86\u8BB8\u591A\u6709\u7528\u7684\u7279\u6027\uFF0C\u4F8B\u5982\u5F02\u6B65\u6570\u636E\u52A0\u8F7D\u3001\u4E2D\u95F4\u4EF6\u652F\u6301\u3001\u5E03\u5C40\u652F\u6301\u7B49\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/nuxt/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Nuxt"}],["meta",{property:"article:published_time",content:"2019-04-06T09:44:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nuxt.js \u662F\u4E00\u4E2A\u57FA\u4E8E Vue.js \u7684\u901A\u7528\u5E94\u7528\u6846\u67B6\uFF0C\u4E00\u4E2A\u7528\u4E8E Vue.js \u5F00\u53D1 SSR \u5E94\u7528\u7684\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848\uFF0C\u5BF9\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u57FA\u7840\u67B6\u6784\u8FDB\u884C\u4E86\u62BD\u8C61\uFF0C\u4E3B\u8981\u5173\u6CE8\u7684\u662F\u5E94\u7528\u7684 UI \u6E32\u67D3\u3002NuxtJs \u53EF\u4EE5\u5B9E\u73B0\u57FA\u4E8E vuejs \u7684\u591A\u9875\u9762\u5E94\u7528\uFF0C\u652F\u6301 SSR(\u670D\u52A1\u5668\u7AEF\u6E32\u67D3)\uFF0C\u7B80\u5316\u4E86 SSR \u7684\u5F00\u53D1\u96BE\u5EA6\uFF0C\u53D7\u5230\u4E86 React SSR \u6846\u67B6 Next.js \u7684\u542F\u53D1\uFF0C\u4F7F\u7528 Webpack \u548C Node.js \u8FDB\u884C\u5C01\u88C5\u7684\u57FA\u4E8E Vue \u7684 SSR \u6846\u67B6\uFF0C\u9884\u8BBE\u4E86\u5229\u7528 Vue.js \u5F00\u53D1\u670D\u52A1\u7AEF\u6E32\u67D3\u7684\u5E94\u7528\u6240\u9700\u8981\u7684\u5404\u79CD\u914D\u7F6E\uFF0C\u800C\u4E14\u8FD8\u53EF\u4EE5\u76F4\u63A5\u7528\u547D\u4EE4\u628A\u6211\u4EEC\u5236\u4F5C\u7684 vue \u9879\u76EE\u751F\u6210\u9759\u6001 html\u3002\u4F5C\u4E3A\u6846\u67B6\uFF0CNuxt.js \u4E3A\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u8FD9\u79CD\u5178\u578B\u7684\u5E94\u7528\u67B6\u6784\u6A21\u5F0F\u63D0\u4F9B\u4E86\u8BB8\u591A\u6709\u7528\u7684\u7279\u6027\uFF0C\u4F8B\u5982\u5F02\u6B65\u6570\u636E\u52A0\u8F7D\u3001\u4E2D\u95F4\u4EF6\u652F\u6301\u3001\u5E03\u5C40\u652F\u6301\u7B49\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001Nuxt.js \u5B98\u7F51\u5730\u5740",slug:"\u4E00\u3001nuxt-js-\u5B98\u7F51\u5730\u5740",children:[]},{level:2,title:"\u4E8C\u3001SSR(\u670D\u52A1\u7AEF\u6E32\u67D3)",slug:"\u4E8C\u3001ssr-\u670D\u52A1\u7AEF\u6E32\u67D3",children:[]},{level:2,title:"\u4E09\u3001NUXT.JS \u7279\u6027",slug:"\u4E09\u3001nuxt-js-\u7279\u6027",children:[]},{level:2,title:"\u56DB\u3001\u5F00\u59CB Nuxt \u9879\u76EE\u7684\u642D\u5EFA",slug:"\u56DB\u3001\u5F00\u59CB-nuxt-\u9879\u76EE\u7684\u642D\u5EFA",children:[]},{level:2,title:"\u4E94\u3001Nuxt \u8DE8\u57DF\u5904\u7406",slug:"\u4E94\u3001nuxt-\u8DE8\u57DF\u5904\u7406",children:[]},{level:2,title:"\u516D\u3001styleResources \u914D\u7F6E",slug:"\u516D\u3001styleresources-\u914D\u7F6E",children:[]},{level:2,title:"\u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E",slug:"\u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E",children:[]},{level:2,title:"\u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E",slug:"\u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E",children:[]},{level:2,title:"\u4E5D\u3001Nuxt \u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40console\u529F\u80FD",slug:"\u4E5D\u3001nuxt-\u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40console\u529F\u80FD",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/nuxt/README.md",readingTime:{minutes:5.54,words:1662},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/nuxt/`},key:"v-094597b7",path:"/posts/nuxt/",title:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E",lang:"zh-CN",frontmatter:{title:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E",date:"2019-04-06T09:44:16.000Z",tag:["Nuxt"],category:["Nuxt"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204060942130.jpg",sticky:5,summary:`\u2003Nuxt.js \u662F\u4E00\u4E2A\u57FA\u4E8E Vue.js \u7684\u901A\u7528\u5E94\u7528\u6846\u67B6\uFF0C\u4E00\u4E2A\u7528\u4E8E Vue.js \u5F00\u53D1 SSR \u5E94\u7528\u7684\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848\uFF0C\u5BF9\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u57FA\u7840\u67B6\u6784\u8FDB\u884C\u4E86\u62BD\u8C61\uFF0C\u4E3B\u8981\u5173\u6CE8\u7684\u662F\u5E94\u7528\u7684 UI \u6E32\u67D3\u3002NuxtJs \u53EF\u4EE5\u5B9E\u73B0\u57FA\u4E8E vuejs \u7684\u591A\u9875\u9762\u5E94\u7528\uFF0C\u652F\u6301 SSR(\u670D\u52A1\u5668\u7AEF\u6E32\u67D3)\uFF0C\u7B80\u5316\u4E86 SSR \u7684\u5F00\u53D1\u96BE\u5EA6\uFF0C\u53D7\u5230\u4E86 React SSR \u6846\u67B6 Next.js \u7684\u542F\u53D1\uFF0C\u4F7F\u7528 Webpack \u548C Node.js \u8FDB\u884C\u5C01\u88C5\u7684\u57FA\u4E8E Vue \u7684 SSR \u6846\u67B6\uFF0C\u9884\u8BBE\u4E86\u5229\u7528 Vue.js \u5F00\u53D1\u670D\u52A1\u7AEF\u6E32\u67D3\u7684\u5E94\u7528\u6240\u9700\u8981\u7684\u5404\u79CD\u914D\u7F6E\uFF0C\u800C\u4E14\u8FD8\u53EF\u4EE5\u76F4\u63A5\u7528\u547D\u4EE4\u628A\u6211\u4EEC\u5236\u4F5C\u7684 vue \u9879\u76EE\u751F\u6210\u9759\u6001 html\u3002\u4F5C\u4E3A\u6846\u67B6\uFF0CNuxt.js \u4E3A\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u8FD9\u79CD\u5178\u578B\u7684\u5E94\u7528\u67B6\u6784\u6A21\u5F0F\u63D0\u4F9B\u4E86\u8BB8\u591A\u6709\u7528\u7684\u7279\u6027\uFF0C\u4F8B\u5982\u5F02\u6B65\u6570\u636E\u52A0\u8F7D\u3001\u4E2D\u95F4\u4EF6\u652F\u6301\u3001\u5E03\u5C40\u652F\u6301\u7B49\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/nuxt/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Nuxt"}],["meta",{property:"article:published_time",content:"2019-04-06T09:44:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nuxt.js \u662F\u4E00\u4E2A\u57FA\u4E8E Vue.js \u7684\u901A\u7528\u5E94\u7528\u6846\u67B6\uFF0C\u4E00\u4E2A\u7528\u4E8E Vue.js \u5F00\u53D1 SSR \u5E94\u7528\u7684\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848\uFF0C\u5BF9\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u57FA\u7840\u67B6\u6784\u8FDB\u884C\u4E86\u62BD\u8C61\uFF0C\u4E3B\u8981\u5173\u6CE8\u7684\u662F\u5E94\u7528\u7684 UI \u6E32\u67D3\u3002NuxtJs \u53EF\u4EE5\u5B9E\u73B0\u57FA\u4E8E vuejs \u7684\u591A\u9875\u9762\u5E94\u7528\uFF0C\u652F\u6301 SSR(\u670D\u52A1\u5668\u7AEF\u6E32\u67D3)\uFF0C\u7B80\u5316\u4E86 SSR \u7684\u5F00\u53D1\u96BE\u5EA6\uFF0C\u53D7\u5230\u4E86 React SSR \u6846\u67B6 Next.js \u7684\u542F\u53D1\uFF0C\u4F7F\u7528 Webpack \u548C Node.js \u8FDB\u884C\u5C01\u88C5\u7684\u57FA\u4E8E Vue \u7684 SSR \u6846\u67B6\uFF0C\u9884\u8BBE\u4E86\u5229\u7528 Vue.js \u5F00\u53D1\u670D\u52A1\u7AEF\u6E32\u67D3\u7684\u5E94\u7528\u6240\u9700\u8981\u7684\u5404\u79CD\u914D\u7F6E\uFF0C\u800C\u4E14\u8FD8\u53EF\u4EE5\u76F4\u63A5\u7528\u547D\u4EE4\u628A\u6211\u4EEC\u5236\u4F5C\u7684 vue \u9879\u76EE\u751F\u6210\u9759\u6001 html\u3002\u4F5C\u4E3A\u6846\u67B6\uFF0CNuxt.js \u4E3A\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u8FD9\u79CD\u5178\u578B\u7684\u5E94\u7528\u67B6\u6784\u6A21\u5F0F\u63D0\u4F9B\u4E86\u8BB8\u591A\u6709\u7528\u7684\u7279\u6027\uFF0C\u4F8B\u5982\u5F02\u6B65\u6570\u636E\u52A0\u8F7D\u3001\u4E2D\u95F4\u4EF6\u652F\u6301\u3001\u5E03\u5C40\u652F\u6301\u7B49\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001Nuxt.js \u5B98\u7F51\u5730\u5740",slug:"\u4E00\u3001nuxt-js-\u5B98\u7F51\u5730\u5740",children:[]},{level:2,title:"\u4E8C\u3001SSR(\u670D\u52A1\u7AEF\u6E32\u67D3)",slug:"\u4E8C\u3001ssr-\u670D\u52A1\u7AEF\u6E32\u67D3",children:[]},{level:2,title:"\u4E09\u3001NUXT.JS \u7279\u6027",slug:"\u4E09\u3001nuxt-js-\u7279\u6027",children:[]},{level:2,title:"\u56DB\u3001\u5F00\u59CB Nuxt \u9879\u76EE\u7684\u642D\u5EFA",slug:"\u56DB\u3001\u5F00\u59CB-nuxt-\u9879\u76EE\u7684\u642D\u5EFA",children:[]},{level:2,title:"\u4E94\u3001Nuxt \u8DE8\u57DF\u5904\u7406",slug:"\u4E94\u3001nuxt-\u8DE8\u57DF\u5904\u7406",children:[]},{level:2,title:"\u516D\u3001styleResources \u914D\u7F6E",slug:"\u516D\u3001styleresources-\u914D\u7F6E",children:[]},{level:2,title:"\u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E",slug:"\u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E",children:[]},{level:2,title:"\u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E",slug:"\u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E",children:[]},{level:2,title:"\u4E5D\u3001Nuxt \u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40console\u529F\u80FD",slug:"\u4E5D\u3001nuxt-\u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40console\u529F\u80FD",children:[]}],content:`---
+title: Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E
+date: 2019-04-06 09:44:16
+tag:
+  - Nuxt
+category:
+  - Nuxt
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204060942130.jpg
+sticky: 5
+---
+
+&emsp;Nuxt.js \u662F\u4E00\u4E2A\u57FA\u4E8E Vue.js \u7684\u901A\u7528\u5E94\u7528\u6846\u67B6\uFF0C\u4E00\u4E2A\u7528\u4E8E Vue.js \u5F00\u53D1 SSR \u5E94\u7528\u7684\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848\uFF0C\u5BF9\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u57FA\u7840\u67B6\u6784\u8FDB\u884C\u4E86\u62BD\u8C61\uFF0C\u4E3B\u8981\u5173\u6CE8\u7684\u662F\u5E94\u7528\u7684 UI \u6E32\u67D3\u3002NuxtJs \u53EF\u4EE5\u5B9E\u73B0\u57FA\u4E8E vuejs \u7684\u591A\u9875\u9762\u5E94\u7528\uFF0C\u652F\u6301 SSR(\u670D\u52A1\u5668\u7AEF\u6E32\u67D3)\uFF0C\u7B80\u5316\u4E86 SSR \u7684\u5F00\u53D1\u96BE\u5EA6\uFF0C\u53D7\u5230\u4E86 React SSR \u6846\u67B6 Next.js \u7684\u542F\u53D1\uFF0C\u4F7F\u7528 Webpack \u548C Node.js \u8FDB\u884C\u5C01\u88C5\u7684\u57FA\u4E8E Vue \u7684 SSR \u6846\u67B6\uFF0C\u9884\u8BBE\u4E86\u5229\u7528 Vue.js \u5F00\u53D1\u670D\u52A1\u7AEF\u6E32\u67D3\u7684\u5E94\u7528\u6240\u9700\u8981\u7684\u5404\u79CD\u914D\u7F6E\uFF0C\u800C\u4E14\u8FD8\u53EF\u4EE5\u76F4\u63A5\u7528\u547D\u4EE4\u628A\u6211\u4EEC\u5236\u4F5C\u7684 vue \u9879\u76EE\u751F\u6210\u9759\u6001 html\u3002\u4F5C\u4E3A\u6846\u67B6\uFF0CNuxt.js \u4E3A\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u8FD9\u79CD\u5178\u578B\u7684\u5E94\u7528\u67B6\u6784\u6A21\u5F0F\u63D0\u4F9B\u4E86\u8BB8\u591A\u6709\u7528\u7684\u7279\u6027\uFF0C\u4F8B\u5982\u5F02\u6B65\u6570\u636E\u52A0\u8F7D\u3001\u4E2D\u95F4\u4EF6\u652F\u6301\u3001\u5E03\u5C40\u652F\u6301\u7B49\u3002
+
+<!-- more -->
+
+## \u4E00\u3001Nuxt.js \u5B98\u7F51\u5730\u5740
+
+1 Nuxt.js 2.x \u7248\u672C\u4E2D\u6587\u7F51\u7AD9\uFF1A<https://www.nuxtjs.cn/>  
+2 Nuxt.js 2.x \u7248\u672C\u82F1\u6587\u7F51\u7AD9\uFF1A<https://nuxtjs.org/>  
+3 Nuxt.js 2.x \u7248\u672C\u751F\u547D\u5468\u671F\uFF1A<https://nuxtjs.org/docs/concepts/nuxt-lifecycle/>  
+4 Nuxt.js 2.x \u7248\u672C\u914D\u7F6E\u6587\u6863\uFF1A<https://nuxtjs.org/docs/get-started/installation>  
+5 Nuxt.js 3.x \u7248\u672C\u82F1\u6587\u7F51\u7AD9\uFF1A<https://v3.nuxtjs.org/>  
+\u622A\u6B62\u76EE\u524D\`2022\u5E744\u67086\u65E510:25:01\`\u4E3A\u6B62\uFF0CNuxtJs3.x \u5DF2\u53D1\u5E03\u4E86 beta \u7248\u672C\uFF0CNuxtJs3.x \u8FD8\u5728\u5F00\u53D1\u5B8C\u5584\u4E2D\uFF0C\u4E0D\u63A8\u8350\u5728\u751F\u4EA7\u73AF\u5883\u4E2D\u4F7F\u7528\u3002\u5EFA\u8BAE\u4F7F\u7528 NuxtJS 2.x \u7248\u672C\uFF0C\u76F8\u5BF9\u6BD4\u8F83\u7A33\u5B9A\u3002
+
+## \u4E8C\u3001SSR(\u670D\u52A1\u7AEF\u6E32\u67D3)
+
+SSR\uFF0C\u5373\u670D\u52A1\u7AEF\u6E32\u67D3(Server Side Render)\uFF0C\u5C31\u662F\u5728\u670D\u52A1\u5668\u7AEF\u5C06\u5BF9 Vue \u9875\u9762\u8FDB\u884C\u6E32\u67D3\u751F\u6210 html \u6587\u4EF6\uFF0C\u5C06 html \u9875\u9762\u4F20\u9012\u7ED9\u6D4F\u89C8\u5668\u3002
+\u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528 SSR?  
+1\u3001**\u964D\u4F4E SPA(Single Page Application)\u9996\u5C4F\u6E32\u67D3\u7684\u65F6\u95F4\uFF1A** SPA \u5F15\u7528\u662F\u5C06 bundle.js \u4ECE\u670D\u52A1\u5668\u83B7\u53D6\uFF0C\u7136\u540E\u5728\u5BA2\u6237\u7AEF\u89E3\u6790\u5E76\u6302\u8F7D\u5230 dom\u3002\u800C SSR \u76F4\u63A5\u5C06 HTML \u5B57\u7B26\u4E32\u4F20\u9012\u7ED9\u6D4F\u89C8\u5668\u3002\u5927\u5927\u52A0\u5FEB\u4E86\u9996\u5C4F\u52A0\u8F7D\u65F6\u95F4\u3002  
+2\u3001**\u89E3\u51B3 SPA \u4E0D\u5229\u4E8E SEO(Search Engine Optimization)\u7684\u4F18\u5316\uFF1A** SPA \u7684 HTML \u53EA\u6709\u4E00\u4E2A\u65E0\u5B9E\u9645\u5185\u5BB9\u7684 HTML \u548C\u4E00\u4E2A app.js\uFF0CSSR \u751F\u6210\u7684 HTML \u662F\u6709\u5185\u5BB9\u7684\uFF0C\u8FD9\u8BA9\u641C\u7D22\u5F15\u64CE\u80FD\u7D22\u5F15\u5230\u9875\u9762\u5185\u5BB9\u3002
+
+## \u4E09\u3001NUXT.JS \u7279\u6027
+
+- \u57FA\u4E8E Vue.js
+- SSR \u670D\u52A1\u7AEF\u6E32\u67D3
+- \u5F3A\u5927\u7684\u8DEF\u7531\u529F\u80FD\uFF0C\u652F\u6301\u5F02\u6B65\u6570\u636E
+- \u9759\u6001\u6587\u4EF6\u670D\u52A1
+- ES2015+\u8BED\u6CD5\u652F\u6301
+- \u6253\u5305\u548C\u538B\u7F29 JS \u548C CSS
+- HTML \u5934\u90E8\u6807\u7B7E\u7BA1\u7406
+- \u672C\u5730\u5F00\u53D1\u652F\u6301\u70ED\u52A0\u8F7D
+- \u652F\u6301\u5404\u79CD\u6837\u5F0F\u9884\u5904\u7406\u5668\uFF1ASASS\u3001LESS\u3001Stulus \u7B49\u7B49
+- \u652F\u6301 HTTP/2 \u63A8\u9001
+- \u652F\u6301\u591A\u9875\u9762\u5E94\u7528
+- \u652F\u6301\u9875\u9762\u81EA\u5B9A\u4E49\u5E03\u5C40
+- \u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165
+
+## \u56DB\u3001\u5F00\u59CB Nuxt \u9879\u76EE\u7684\u642D\u5EFA
+
+\u4E3A\u4E86\u5FEB\u901F\u5165\u95E8\uFF0CNuxt.js \u56E2\u961F\u521B\u5EFA\u4E86\u811A\u624B\u67B6\u5DE5\u5177 \`create-nuxt-app\`\u3002\u786E\u4FDD\u5B89\u88C5\u4E86 npx(npx \u5728 NPM \u7248\u672C 5.2.0 \u9ED8\u8BA4\u5B89\u88C5\u4E86)
+
+\`\`\`bash
+$ npx create-nuxt-app <\u9879\u76EE\u540D>
+\u6216
+$ yarn create nuxt-app <\u9879\u76EE\u540D>
+\`\`\`
+
+\u8BE6\u7EC6\u5B89\u88C5\u6B65\u9AA4\u53C2\u8003\u5B98\u7F51\uFF1A<https://www.nuxtjs.cn/guide/installation>
+
+## \u4E94\u3001Nuxt \u8DE8\u57DF\u5904\u7406
+
+&emsp;\u4F7F\u7528\u8FC7 vue \u7684\u540C\u5B66\uFF0C\u80AF\u5B9A\u77E5\u9053\u5BF9\u4E8E\u9879\u76EE\u4E2D\u7684\u8DE8\u57DF\uFF0Cvue-cli \u5BF9 webpack \u4E2D\u7684 proxy \u9009\u9879\u8FDB\u884C\u4E86\u4E00\u5C42\u5C01\u88C5\u3002\u5B83\u66B4\u9732\u51FA\u6765\u7684\u662F\u4E00\u4E2A\u53EB proxyTable \u7684\u9009\u9879\uFF0C\u662F\u5BF9 webpack \u4E2D\u7684 proxy \u548C\u5176\u4E09\u65B9\u63D2\u4EF6 http-proxy-middleware \u7684\u4E00\u4E2A\u6574\u5408\u3002\u4E0D\u5E78\u7684 Nuxt \u4E2D\u6CA1\u6709 proxyTable \u8FD9\u4E48\u4E00\u4E2A\u914D\u7F6E\u9879\u6765\u8FDB\u884C\u8DE8\u57DF\u7684\u914D\u7F6E\u3002\u5F53\u7136\u5E78\u8FD0\u7684\u662F\uFF0C\u5728 Nuxt \u4E2D\u4F60\u53EF\u4EE5\u76F4\u63A5\u901A\u8FC7\u914D\u7F6E http-proxy-middleware \u6765\u5904\u7406\u8DE8\u57DF\u3002\u66F4\u5E78\u8FD0\u7684\u662F Nuxt \u5B98\u65B9\u63D0\u4F9B\u4E86\u4E24\u4E2A\u5305\u6765\u5904\u7406 axios \u8DE8\u57DF\u95EE\u9898\u3002
+
+- [@nuxtjs/axios](https://www.npmjs.com/package/@nuxtjs/axios)\uFF1ASecure and easy Axios integration for Nuxt.
+- [@nuxtjs/proxy](https://www.npmjs.com/package/@nuxtjs/proxy)\uFF1AProxy support for nuxt server
+
+\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A
+
+\`\`\`bash
+npm i @nuxtjs/axios @nuxtjs/proxy -D
+\`\`\`
+
+\u7136\u540E\u5728 nuxt.config.js \u6587\u4EF6\u91CC\u8FDB\u884C\u914D\u7F6E
+
+\`\`\`bash
+#Modules: https://go.nuxtjs.dev/config-modules
+modules: ['@nuxtjs/axios', '@nuxtjs/proxy'],
+
+#Axios module configuration: https://go.nuxtjs.dev/config-axios
+axios: {
+  proxy: true,
+  prefix: '/api',
+  progress: true,
+  withCredentials: true
+},
+#https://www.npmjs.com/package/@nuxtjs/proxy\u6216https://github.com/nuxt-community/proxy-module
+proxy: {
+  '/api': {
+    target: 'https://route.showapi.com/',
+    changeOrigin: true,
+    pathRewrite: {
+      '^/api': '/'
+    }
+  }
+}
+\`\`\`
+
+\u8BE6\u7EC6\u914D\u7F6E\u53C2\u8003\u4E0A\u8FF0\u94FE\u63A5\u5730\u5740\u3002
+
+## \u516D\u3001styleResources \u914D\u7F6E
+
+\u5F53\u60A8\u9700\u8981\u5728\u9875\u9762\u4E2D\u6CE8\u5165\u4E00\u4E9B\u53D8\u91CF\u548C mixin \u800C\u4E0D\u5FC5\u6BCF\u6B21\u90FD\u5BFC\u5165\u5B83\u4EEC\u65F6\uFF0C\u8FD9\u975E\u5E38\u6709\u7528\u3002Nuxt.js \u4F7F\u7528 https://github.com/nuxt-community/style-resources-module \u6765\u5B9E\u73B0\u8FD9\u79CD\u884C\u4E3A\u3002\u60A8\u9700\u8981\u4E3A css \u9884\u5904\u7406\u5668\u6307\u5B9A\u8981\u5305\u542B\u7684 \u6A21\u5F0F / \u8DEF\u5F84 \uFF1A less, sass, scss \u6216 stylus\u3002\u60A8\u4E0D\u80FD\u5728\u6B64\u5904\u4F7F\u7528\u8DEF\u5F84\u522B\u540D(~ \u548C @)\uFF0C\u4F60\u9700\u8981\u4F7F\u7528\u76F8\u5BF9\u6216\u7EDD\u5BF9\u8DEF\u5F84\u3002
+
+\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A
+
+\`\`\`bash
+npm i @nuxtjs/style-resources -D
+\`\`\`
+
+\u6839\u636E\u9700\u8981\u5B89\u88C5\uFF1A
+
+- SASS: npm i sass-loader node-sass -D
+- LESS: npm i less-loader less -D
+- Stylus: npm i stylus-loader stylus -D
+
+\u5982\u679C\u4F7F\u7528\u7684 npm,\u5219\u53D8\u4E3A npm install less-loader less -D
+\u4FEE\u6539 nuxt.config.js:
+
+\`\`\`bash
+modules: [
+   '@nuxtjs/style-resources'
+  ],
+styleResources:{
+ less:'./assets/common.less'
+ }
+\`\`\`
+
+\u8BE6\u7EC6\u914D\u7F6E\u8BF7\u53C2\u8003\uFF1A<https://github.com/nuxt-community/style-resources-module>
+
+## \u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E
+
+Nuxt \u8DEF\u7531\u867D\u7136\u6309\u7167\`pages\`\u6587\u4EF6\u76EE\u5F55\u5C42\u7EA7\u548C\u5185\u7F6E\u7684\u89C4\u5219\u81EA\u52A8\u751F\u6210\u8DEF\u7531\uFF0C\u4F46\u751F\u6210\u7684\u8DEF\u7531\u6CA1\u6709\`.html\`\u540E\u7F00\uFF0C\u5982\u679C\u9700\u8981\u914D\u7F6E\u8DEF\u7531\u4F2A\u9759\u6001(\u8DEF\u7531\u540E\u7F00\u52A0\`.html\`),\u9700\u8981\u5728\`nuxt.config.js\`\u8FDB\u884C\u5982\u4E0B\u914D\u7F6E
+
+\`\`\`bash
+ router: {
+    extendRoutes(routes) {
+      routes.forEach((item) => {
+        if (item.path != '/') {
+          item.path = item.path + '.html'
+        }
+      })
+    }
+  }
+\`\`\`
+
+\u8BE6\u7EC6\u914D\u7F6E\u8BF7\u53C2\u8003\uFF1A<https://www.nuxtjs.cn/api/configuration-router>
+
+## \u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E
+
+Nuxt.js 2.13+ \u652F\u6301\u7EC4\u4EF6\u81EA\u52A8\u626B\u63CF\u548C\u81EA\u52A8\u5BFC\u5165,\u76F8\u5173\u914D\u7F6E\u53C2\u8003\uFF1A<https://go.nuxtjs.dev/config-components>,\u9700\u8981\u5728\`nuxt.config.js\`\u8FDB\u884C\u914D\u7F6E\` components: true\`,\u9ED8\u8BA4 false\u3002
+\u5982\u679C\`components\`\u7EC4\u4EF6\u5B58\u653E\u76EE\u5F55\u4E0B\u6CA1\u6709\u591A\u7EA7\u7EC4\u4EF6\u76EE\u5F55\uFF0C\u81EA\u52A8\u5BFC\u5165\u7684\u7EC4\u4EF6\u540D\u79F0\u548C\u7EC4\u4EF6\u6587\u4EF6\u540D\u4E00\u81F4\uFF0C\u5982\u679C\u5B58\u5728\u591A\u7EA7\u6587\u4EF6\u76EE\u5F55\uFF0C\u81EA\u52A8\u5BFC\u5165\u7684\u7EC4\u4EF6\u540D\u9ED8\u8BA4\u4F1A\u52A0\u4E0A\u6587\u4EF6\u5C42\u7EA7\u76EE\u5F55\uFF0C\u4E3A\u4E86\u4FDD\u8BC1\u6BCF\u4E2A\u7EC4\u4EF6\u540D\u79F0\u81EA\u52A8\u5BFC\u5165\u540E\u7EC4\u4EF6\u540D\u79F0\u4E0D\u53D8\uFF0C\u9700\u8981\u7EC4\u4E2A\u5BF9\u76EE\u524D\u5C42\u7EA7\u8FDB\u884C\u524D\u7F00\u914D\u7F6E\uFF0C\u914D\u7F6E\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+# Auto import components: https://go.nuxtjs.dev/config-components
+components: [
+  { path: '~/components', prefix: '', extensions: ['vue'] },
+  { path: '~/components/Layouts/', prefix: '', extensions: ['vue'] },
+  { path: '~/components/LinkItem/', prefix: '', extensions: ['vue'] },
+  { path: '~/components/RateItem/', prefix: '', extensions: ['vue'] }
+]
+\`\`\`
+
+\u8BE6\u7EC6\u914D\u7F6E\u8BF7\u53C2\u8003\uFF1A<https://go.nuxtjs.dev/config-components>
+
+## \u4E5D\u3001Nuxt \u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40\`console\`\u529F\u80FD
+
+&emsp;\u51FA\u4E8E\u5B89\u5168\u8003\u8651\uFF0C\u7EBF\u4E0A\u73AF\u5883\u4E00\u822C\u4E0D\u5141\u8BB8\u6D4F\u89C8\u5668\u63A7\u5236\u53F0\u6253\u5370\u4EFB\u4F55\u4FE1\u606F\uFF0C\u6240\u4EE5\u6211\u4EEC\u6253\u5305\u4E0A\u7EBF\u65F6\uFF0C\u5C31\u9700\u8981\u5C4F\u853D console \u529F\u80FD\u3002\u5BF9\u4E8E Nuxt \u9879\u76EE\u53EF\u4EE5\u901A\u8FC7\u914D\u7F6E\u63D2\u4EF6\u7684\u65B9\u5F0F\uFF0C\u5728\u6253\u5305\u65F6\u7981\u7528 console \u529F\u80FD\u3002\u8BBE\u7F6E\u5982\u4E0B\uFF1A
+
+1\u3001\u5B89\u88C5\u4F9D\u8D56\u5305\u3002
+
+\`\`\`bash
+yarn add  babel-plugin-transform-remove-console --save-dev
+or
+npm install babel-plugin-transform-remove-console --save-dev
+
+\`\`\`
+
+2\u3001\u5728\`nuxt.config.js\`\u8FDB\u884C\u5982\u4E0B\u914D\u7F6E\uFF1A  
+\u56E0\u4E3A\u9700\u8981\u5224\u65AD\u73AF\u5883 \u6240\u4EE5\u9700\u8981\u5728\u5934\u90E8\u58F0\u660E\u53D8\u91CF\u4F7F\u7528\u63D2\u4EF6\uFF0C\u82E5\u4E0D\u9700\u8981\u53EF\u4EE5\u76F4\u63A5\u5728 build > babel > plugins \u4E2D\u4F7F\u7528
+
+\`\`\`bash
+# build\u8FDB\u884C\u914D\u7F6E
+build: {
+    analyze: true,
+    babel: {
+      #\u5728\u8FD9\u91CC\u4F7F\u7528
+      plugins:plugins
+    }
+  }
+}
+\`\`\`
+`,contentRendered:`<p>\u2003Nuxt.js \u662F\u4E00\u4E2A\u57FA\u4E8E Vue.js \u7684\u901A\u7528\u5E94\u7528\u6846\u67B6\uFF0C\u4E00\u4E2A\u7528\u4E8E Vue.js \u5F00\u53D1 SSR \u5E94\u7528\u7684\u4E00\u7AD9\u5F0F\u89E3\u51B3\u65B9\u6848\uFF0C\u5BF9\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u57FA\u7840\u67B6\u6784\u8FDB\u884C\u4E86\u62BD\u8C61\uFF0C\u4E3B\u8981\u5173\u6CE8\u7684\u662F\u5E94\u7528\u7684 UI \u6E32\u67D3\u3002NuxtJs \u53EF\u4EE5\u5B9E\u73B0\u57FA\u4E8E vuejs \u7684\u591A\u9875\u9762\u5E94\u7528\uFF0C\u652F\u6301 SSR(\u670D\u52A1\u5668\u7AEF\u6E32\u67D3)\uFF0C\u7B80\u5316\u4E86 SSR \u7684\u5F00\u53D1\u96BE\u5EA6\uFF0C\u53D7\u5230\u4E86 React SSR \u6846\u67B6 Next.js \u7684\u542F\u53D1\uFF0C\u4F7F\u7528 Webpack \u548C Node.js \u8FDB\u884C\u5C01\u88C5\u7684\u57FA\u4E8E Vue \u7684 SSR \u6846\u67B6\uFF0C\u9884\u8BBE\u4E86\u5229\u7528 Vue.js \u5F00\u53D1\u670D\u52A1\u7AEF\u6E32\u67D3\u7684\u5E94\u7528\u6240\u9700\u8981\u7684\u5404\u79CD\u914D\u7F6E\uFF0C\u800C\u4E14\u8FD8\u53EF\u4EE5\u76F4\u63A5\u7528\u547D\u4EE4\u628A\u6211\u4EEC\u5236\u4F5C\u7684 vue \u9879\u76EE\u751F\u6210\u9759\u6001 html\u3002\u4F5C\u4E3A\u6846\u67B6\uFF0CNuxt.js \u4E3A\u5BA2\u6237\u7AEF/\u670D\u52A1\u7AEF\u8FD9\u79CD\u5178\u578B\u7684\u5E94\u7528\u67B6\u6784\u6A21\u5F0F\u63D0\u4F9B\u4E86\u8BB8\u591A\u6709\u7528\u7684\u7279\u6027\uFF0C\u4F8B\u5982\u5F02\u6B65\u6570\u636E\u52A0\u8F7D\u3001\u4E2D\u95F4\u4EF6\u652F\u6301\u3001\u5E03\u5C40\u652F\u6301\u7B49\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001nuxt-js-\u5B98\u7F51\u5730\u5740" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001nuxt-js-\u5B98\u7F51\u5730\u5740" aria-hidden="true">#</a> \u4E00\u3001Nuxt.js \u5B98\u7F51\u5730\u5740</h2>
+<p>1 Nuxt.js 2.x \u7248\u672C\u4E2D\u6587\u7F51\u7AD9\uFF1A<a href="https://www.nuxtjs.cn/" target="_blank" rel="noopener noreferrer">https://www.nuxtjs.cn/<ExternalLinkIcon/></a><br>
+2 Nuxt.js 2.x \u7248\u672C\u82F1\u6587\u7F51\u7AD9\uFF1A<a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">https://nuxtjs.org/<ExternalLinkIcon/></a><br>
+3 Nuxt.js 2.x \u7248\u672C\u751F\u547D\u5468\u671F\uFF1A<a href="https://nuxtjs.org/docs/concepts/nuxt-lifecycle/" target="_blank" rel="noopener noreferrer">https://nuxtjs.org/docs/concepts/nuxt-lifecycle/<ExternalLinkIcon/></a><br>
+4 Nuxt.js 2.x \u7248\u672C\u914D\u7F6E\u6587\u6863\uFF1A<a href="https://nuxtjs.org/docs/get-started/installation" target="_blank" rel="noopener noreferrer">https://nuxtjs.org/docs/get-started/installation<ExternalLinkIcon/></a><br>
+5 Nuxt.js 3.x \u7248\u672C\u82F1\u6587\u7F51\u7AD9\uFF1A<a href="https://v3.nuxtjs.org/" target="_blank" rel="noopener noreferrer">https://v3.nuxtjs.org/<ExternalLinkIcon/></a><br>
+\u622A\u6B62\u76EE\u524D<code v-pre>2022\u5E744\u67086\u65E510:25:01</code>\u4E3A\u6B62\uFF0CNuxtJs3.x \u5DF2\u53D1\u5E03\u4E86 beta \u7248\u672C\uFF0CNuxtJs3.x \u8FD8\u5728\u5F00\u53D1\u5B8C\u5584\u4E2D\uFF0C\u4E0D\u63A8\u8350\u5728\u751F\u4EA7\u73AF\u5883\u4E2D\u4F7F\u7528\u3002\u5EFA\u8BAE\u4F7F\u7528 NuxtJS 2.x \u7248\u672C\uFF0C\u76F8\u5BF9\u6BD4\u8F83\u7A33\u5B9A\u3002</p>
+<h2 id="\u4E8C\u3001ssr-\u670D\u52A1\u7AEF\u6E32\u67D3" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001ssr-\u670D\u52A1\u7AEF\u6E32\u67D3" aria-hidden="true">#</a> \u4E8C\u3001SSR(\u670D\u52A1\u7AEF\u6E32\u67D3)</h2>
+<p>SSR\uFF0C\u5373\u670D\u52A1\u7AEF\u6E32\u67D3(Server Side Render)\uFF0C\u5C31\u662F\u5728\u670D\u52A1\u5668\u7AEF\u5C06\u5BF9 Vue \u9875\u9762\u8FDB\u884C\u6E32\u67D3\u751F\u6210 html \u6587\u4EF6\uFF0C\u5C06 html \u9875\u9762\u4F20\u9012\u7ED9\u6D4F\u89C8\u5668\u3002
+\u4E3A\u4EC0\u4E48\u8981\u4F7F\u7528 SSR?<br>
+1\u3001<strong>\u964D\u4F4E SPA(Single Page Application)\u9996\u5C4F\u6E32\u67D3\u7684\u65F6\u95F4\uFF1A</strong> SPA \u5F15\u7528\u662F\u5C06 bundle.js \u4ECE\u670D\u52A1\u5668\u83B7\u53D6\uFF0C\u7136\u540E\u5728\u5BA2\u6237\u7AEF\u89E3\u6790\u5E76\u6302\u8F7D\u5230 dom\u3002\u800C SSR \u76F4\u63A5\u5C06 HTML \u5B57\u7B26\u4E32\u4F20\u9012\u7ED9\u6D4F\u89C8\u5668\u3002\u5927\u5927\u52A0\u5FEB\u4E86\u9996\u5C4F\u52A0\u8F7D\u65F6\u95F4\u3002<br>
+2\u3001<strong>\u89E3\u51B3 SPA \u4E0D\u5229\u4E8E SEO(Search Engine Optimization)\u7684\u4F18\u5316\uFF1A</strong> SPA \u7684 HTML \u53EA\u6709\u4E00\u4E2A\u65E0\u5B9E\u9645\u5185\u5BB9\u7684 HTML \u548C\u4E00\u4E2A app.js\uFF0CSSR \u751F\u6210\u7684 HTML \u662F\u6709\u5185\u5BB9\u7684\uFF0C\u8FD9\u8BA9\u641C\u7D22\u5F15\u64CE\u80FD\u7D22\u5F15\u5230\u9875\u9762\u5185\u5BB9\u3002</p>
+<h2 id="\u4E09\u3001nuxt-js-\u7279\u6027" tabindex="-1"><a class="header-anchor" href="#\u4E09\u3001nuxt-js-\u7279\u6027" aria-hidden="true">#</a> \u4E09\u3001NUXT.JS \u7279\u6027</h2>
+<ul>
+<li>\u57FA\u4E8E Vue.js</li>
+<li>SSR \u670D\u52A1\u7AEF\u6E32\u67D3</li>
+<li>\u5F3A\u5927\u7684\u8DEF\u7531\u529F\u80FD\uFF0C\u652F\u6301\u5F02\u6B65\u6570\u636E</li>
+<li>\u9759\u6001\u6587\u4EF6\u670D\u52A1</li>
+<li>ES2015+\u8BED\u6CD5\u652F\u6301</li>
+<li>\u6253\u5305\u548C\u538B\u7F29 JS \u548C CSS</li>
+<li>HTML \u5934\u90E8\u6807\u7B7E\u7BA1\u7406</li>
+<li>\u672C\u5730\u5F00\u53D1\u652F\u6301\u70ED\u52A0\u8F7D</li>
+<li>\u652F\u6301\u5404\u79CD\u6837\u5F0F\u9884\u5904\u7406\u5668\uFF1ASASS\u3001LESS\u3001Stulus \u7B49\u7B49</li>
+<li>\u652F\u6301 HTTP/2 \u63A8\u9001</li>
+<li>\u652F\u6301\u591A\u9875\u9762\u5E94\u7528</li>
+<li>\u652F\u6301\u9875\u9762\u81EA\u5B9A\u4E49\u5E03\u5C40</li>
+<li>\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165</li>
+</ul>
+<h2 id="\u56DB\u3001\u5F00\u59CB-nuxt-\u9879\u76EE\u7684\u642D\u5EFA" tabindex="-1"><a class="header-anchor" href="#\u56DB\u3001\u5F00\u59CB-nuxt-\u9879\u76EE\u7684\u642D\u5EFA" aria-hidden="true">#</a> \u56DB\u3001\u5F00\u59CB Nuxt \u9879\u76EE\u7684\u642D\u5EFA</h2>
+<p>\u4E3A\u4E86\u5FEB\u901F\u5165\u95E8\uFF0CNuxt.js \u56E2\u961F\u521B\u5EFA\u4E86\u811A\u624B\u67B6\u5DE5\u5177 <code v-pre>create-nuxt-app</code>\u3002\u786E\u4FDD\u5B89\u88C5\u4E86 npx(npx \u5728 NPM \u7248\u672C 5.2.0 \u9ED8\u8BA4\u5B89\u88C5\u4E86)</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>$ npx create-nuxt-app <span class="token operator">&lt;</span>\u9879\u76EE\u540D<span class="token operator">></span>
+\u6216
+$ <span class="token function">yarn</span> create nuxt-app <span class="token operator">&lt;</span>\u9879\u76EE\u540D<span class="token operator">></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u8BE6\u7EC6\u5B89\u88C5\u6B65\u9AA4\u53C2\u8003\u5B98\u7F51\uFF1A<a href="https://www.nuxtjs.cn/guide/installation" target="_blank" rel="noopener noreferrer">https://www.nuxtjs.cn/guide/installation<ExternalLinkIcon/></a></p>
+<h2 id="\u4E94\u3001nuxt-\u8DE8\u57DF\u5904\u7406" tabindex="-1"><a class="header-anchor" href="#\u4E94\u3001nuxt-\u8DE8\u57DF\u5904\u7406" aria-hidden="true">#</a> \u4E94\u3001Nuxt \u8DE8\u57DF\u5904\u7406</h2>
+<p>\u2003\u4F7F\u7528\u8FC7 vue \u7684\u540C\u5B66\uFF0C\u80AF\u5B9A\u77E5\u9053\u5BF9\u4E8E\u9879\u76EE\u4E2D\u7684\u8DE8\u57DF\uFF0Cvue-cli \u5BF9 webpack \u4E2D\u7684 proxy \u9009\u9879\u8FDB\u884C\u4E86\u4E00\u5C42\u5C01\u88C5\u3002\u5B83\u66B4\u9732\u51FA\u6765\u7684\u662F\u4E00\u4E2A\u53EB proxyTable \u7684\u9009\u9879\uFF0C\u662F\u5BF9 webpack \u4E2D\u7684 proxy \u548C\u5176\u4E09\u65B9\u63D2\u4EF6 http-proxy-middleware \u7684\u4E00\u4E2A\u6574\u5408\u3002\u4E0D\u5E78\u7684 Nuxt \u4E2D\u6CA1\u6709 proxyTable \u8FD9\u4E48\u4E00\u4E2A\u914D\u7F6E\u9879\u6765\u8FDB\u884C\u8DE8\u57DF\u7684\u914D\u7F6E\u3002\u5F53\u7136\u5E78\u8FD0\u7684\u662F\uFF0C\u5728 Nuxt \u4E2D\u4F60\u53EF\u4EE5\u76F4\u63A5\u901A\u8FC7\u914D\u7F6E http-proxy-middleware \u6765\u5904\u7406\u8DE8\u57DF\u3002\u66F4\u5E78\u8FD0\u7684\u662F Nuxt \u5B98\u65B9\u63D0\u4F9B\u4E86\u4E24\u4E2A\u5305\u6765\u5904\u7406 axios \u8DE8\u57DF\u95EE\u9898\u3002</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/@nuxtjs/axios" target="_blank" rel="noopener noreferrer">@nuxtjs/axios<ExternalLinkIcon/></a>\uFF1ASecure and easy Axios integration for Nuxt.</li>
+<li><a href="https://www.npmjs.com/package/@nuxtjs/proxy" target="_blank" rel="noopener noreferrer">@nuxtjs/proxy<ExternalLinkIcon/></a>\uFF1AProxy support for nuxt server</li>
+</ul>
+<p>\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">npm</span> i @nuxtjs/axios @nuxtjs/proxy <span class="token parameter variable">-D</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u7136\u540E\u5728 nuxt.config.js \u6587\u4EF6\u91CC\u8FDB\u884C\u914D\u7F6E</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#Modules: https://go.nuxtjs.dev/config-modules</span>
+modules: <span class="token punctuation">[</span><span class="token string">'@nuxtjs/axios'</span>, <span class="token string">'@nuxtjs/proxy'</span><span class="token punctuation">]</span>,
+
+<span class="token comment">#Axios module configuration: https://go.nuxtjs.dev/config-axios</span>
+axios: <span class="token punctuation">{</span>
+  proxy: true,
+  prefix: <span class="token string">'/api'</span>,
+  progress: true,
+  withCredentials: <span class="token boolean">true</span>
+<span class="token punctuation">}</span>,
+<span class="token comment">#https://www.npmjs.com/package/@nuxtjs/proxy\u6216https://github.com/nuxt-community/proxy-module</span>
+proxy: <span class="token punctuation">{</span>
+  <span class="token string">'/api'</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    target: <span class="token string">'https://route.showapi.com/'</span>,
+    changeOrigin: true,
+    pathRewrite: <span class="token punctuation">{</span>
+      <span class="token string">'^/api'</span><span class="token builtin class-name">:</span> <span class="token string">'/'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u8BE6\u7EC6\u914D\u7F6E\u53C2\u8003\u4E0A\u8FF0\u94FE\u63A5\u5730\u5740\u3002</p>
+<h2 id="\u516D\u3001styleresources-\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u516D\u3001styleresources-\u914D\u7F6E" aria-hidden="true">#</a> \u516D\u3001styleResources \u914D\u7F6E</h2>
+<p>\u5F53\u60A8\u9700\u8981\u5728\u9875\u9762\u4E2D\u6CE8\u5165\u4E00\u4E9B\u53D8\u91CF\u548C mixin \u800C\u4E0D\u5FC5\u6BCF\u6B21\u90FD\u5BFC\u5165\u5B83\u4EEC\u65F6\uFF0C\u8FD9\u975E\u5E38\u6709\u7528\u3002Nuxt.js \u4F7F\u7528 https://github.com/nuxt-community/style-resources-module \u6765\u5B9E\u73B0\u8FD9\u79CD\u884C\u4E3A\u3002\u60A8\u9700\u8981\u4E3A css \u9884\u5904\u7406\u5668\u6307\u5B9A\u8981\u5305\u542B\u7684 \u6A21\u5F0F / \u8DEF\u5F84 \uFF1A less, sass, scss \u6216 stylus\u3002\u60A8\u4E0D\u80FD\u5728\u6B64\u5904\u4F7F\u7528\u8DEF\u5F84\u522B\u540D(~ \u548C @)\uFF0C\u4F60\u9700\u8981\u4F7F\u7528\u76F8\u5BF9\u6216\u7EDD\u5BF9\u8DEF\u5F84\u3002</p>
+<p>\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">npm</span> i @nuxtjs/style-resources <span class="token parameter variable">-D</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u6839\u636E\u9700\u8981\u5B89\u88C5\uFF1A</p>
+<ul>
+<li>SASS: npm i sass-loader node-sass -D</li>
+<li>LESS: npm i less-loader less -D</li>
+<li>Stylus: npm i stylus-loader stylus -D</li>
+</ul>
+<p>\u5982\u679C\u4F7F\u7528\u7684 npm,\u5219\u53D8\u4E3A npm install less-loader less -D
+\u4FEE\u6539 nuxt.config.js:</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>modules: <span class="token punctuation">[</span>
+   <span class="token string">'@nuxtjs/style-resources'</span>
+  <span class="token punctuation">]</span>,
+styleResources:<span class="token punctuation">{</span>
+ less:<span class="token string">'./assets/common.less'</span>
+ <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u8BE6\u7EC6\u914D\u7F6E\u8BF7\u53C2\u8003\uFF1A<a href="https://github.com/nuxt-community/style-resources-module" target="_blank" rel="noopener noreferrer">https://github.com/nuxt-community/style-resources-module<ExternalLinkIcon/></a></p>
+<h2 id="\u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E" aria-hidden="true">#</a> \u4E03\u3001\u4F2A\u9759\u6001\u914D\u7F6E</h2>
+<p>Nuxt \u8DEF\u7531\u867D\u7136\u6309\u7167<code v-pre>pages</code>\u6587\u4EF6\u76EE\u5F55\u5C42\u7EA7\u548C\u5185\u7F6E\u7684\u89C4\u5219\u81EA\u52A8\u751F\u6210\u8DEF\u7531\uFF0C\u4F46\u751F\u6210\u7684\u8DEF\u7531\u6CA1\u6709<code v-pre>.html</code>\u540E\u7F00\uFF0C\u5982\u679C\u9700\u8981\u914D\u7F6E\u8DEF\u7531\u4F2A\u9759\u6001(\u8DEF\u7531\u540E\u7F00\u52A0<code v-pre>.html</code>),\u9700\u8981\u5728<code v-pre>nuxt.config.js</code>\u8FDB\u884C\u5982\u4E0B\u914D\u7F6E</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code> router: <span class="token punctuation">{</span>
+    extendRoutes<span class="token punctuation">(</span>routes<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      routes.forEach<span class="token punctuation">((</span>item<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>item.path <span class="token operator">!=</span> <span class="token string">'/'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          item.path <span class="token operator">=</span> item.path + <span class="token string">'.html'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u8BE6\u7EC6\u914D\u7F6E\u8BF7\u53C2\u8003\uFF1A<a href="https://www.nuxtjs.cn/api/configuration-router" target="_blank" rel="noopener noreferrer">https://www.nuxtjs.cn/api/configuration-router<ExternalLinkIcon/></a></p>
+<h2 id="\u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E" aria-hidden="true">#</a> \u516B\u3001\u7EC4\u4EF6\u81EA\u52A8\u5BFC\u5165\u914D\u7F6E</h2>
+<p>Nuxt.js 2.13+ \u652F\u6301\u7EC4\u4EF6\u81EA\u52A8\u626B\u63CF\u548C\u81EA\u52A8\u5BFC\u5165,\u76F8\u5173\u914D\u7F6E\u53C2\u8003\uFF1A<a href="https://go.nuxtjs.dev/config-components" target="_blank" rel="noopener noreferrer">https://go.nuxtjs.dev/config-components<ExternalLinkIcon/></a>,\u9700\u8981\u5728<code v-pre>nuxt.config.js</code>\u8FDB\u884C\u914D\u7F6E<code v-pre> components: true</code>,\u9ED8\u8BA4 false\u3002
+\u5982\u679C<code v-pre>components</code>\u7EC4\u4EF6\u5B58\u653E\u76EE\u5F55\u4E0B\u6CA1\u6709\u591A\u7EA7\u7EC4\u4EF6\u76EE\u5F55\uFF0C\u81EA\u52A8\u5BFC\u5165\u7684\u7EC4\u4EF6\u540D\u79F0\u548C\u7EC4\u4EF6\u6587\u4EF6\u540D\u4E00\u81F4\uFF0C\u5982\u679C\u5B58\u5728\u591A\u7EA7\u6587\u4EF6\u76EE\u5F55\uFF0C\u81EA\u52A8\u5BFC\u5165\u7684\u7EC4\u4EF6\u540D\u9ED8\u8BA4\u4F1A\u52A0\u4E0A\u6587\u4EF6\u5C42\u7EA7\u76EE\u5F55\uFF0C\u4E3A\u4E86\u4FDD\u8BC1\u6BCF\u4E2A\u7EC4\u4EF6\u540D\u79F0\u81EA\u52A8\u5BFC\u5165\u540E\u7EC4\u4EF6\u540D\u79F0\u4E0D\u53D8\uFF0C\u9700\u8981\u7EC4\u4E2A\u5BF9\u76EE\u524D\u5C42\u7EA7\u8FDB\u884C\u524D\u7F00\u914D\u7F6E\uFF0C\u914D\u7F6E\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># Auto import components: https://go.nuxtjs.dev/config-components</span>
+components: <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> path: <span class="token string">'~/components'</span>, prefix: <span class="token string">''</span>, extensions: <span class="token punctuation">[</span><span class="token string">'vue'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>,
+  <span class="token punctuation">{</span> path: <span class="token string">'~/components/Layouts/'</span>, prefix: <span class="token string">''</span>, extensions: <span class="token punctuation">[</span><span class="token string">'vue'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>,
+  <span class="token punctuation">{</span> path: <span class="token string">'~/components/LinkItem/'</span>, prefix: <span class="token string">''</span>, extensions: <span class="token punctuation">[</span><span class="token string">'vue'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>,
+  <span class="token punctuation">{</span> path: <span class="token string">'~/components/RateItem/'</span>, prefix: <span class="token string">''</span>, extensions: <span class="token punctuation">[</span><span class="token string">'vue'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u8BE6\u7EC6\u914D\u7F6E\u8BF7\u53C2\u8003\uFF1A<a href="https://go.nuxtjs.dev/config-components" target="_blank" rel="noopener noreferrer">https://go.nuxtjs.dev/config-components<ExternalLinkIcon/></a></p>
+<h2 id="\u4E5D\u3001nuxt-\u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40console\u529F\u80FD" tabindex="-1"><a class="header-anchor" href="#\u4E5D\u3001nuxt-\u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40console\u529F\u80FD" aria-hidden="true">#</a> \u4E5D\u3001Nuxt \u6253\u5305\u5C4F\u853D\u6389\u5168\u5C40<code v-pre>console</code>\u529F\u80FD</h2>
+<p>\u2003\u51FA\u4E8E\u5B89\u5168\u8003\u8651\uFF0C\u7EBF\u4E0A\u73AF\u5883\u4E00\u822C\u4E0D\u5141\u8BB8\u6D4F\u89C8\u5668\u63A7\u5236\u53F0\u6253\u5370\u4EFB\u4F55\u4FE1\u606F\uFF0C\u6240\u4EE5\u6211\u4EEC\u6253\u5305\u4E0A\u7EBF\u65F6\uFF0C\u5C31\u9700\u8981\u5C4F\u853D console \u529F\u80FD\u3002\u5BF9\u4E8E Nuxt \u9879\u76EE\u53EF\u4EE5\u901A\u8FC7\u914D\u7F6E\u63D2\u4EF6\u7684\u65B9\u5F0F\uFF0C\u5728\u6253\u5305\u65F6\u7981\u7528 console \u529F\u80FD\u3002\u8BBE\u7F6E\u5982\u4E0B\uFF1A</p>
+<p>1\u3001\u5B89\u88C5\u4F9D\u8D56\u5305\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">yarn</span> <span class="token function">add</span>  babel-plugin-transform-remove-console --save-dev
+or
+<span class="token function">npm</span> <span class="token function">install</span> babel-plugin-transform-remove-console --save-dev
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2\u3001\u5728<code v-pre>nuxt.config.js</code>\u8FDB\u884C\u5982\u4E0B\u914D\u7F6E\uFF1A<br>
+\u56E0\u4E3A\u9700\u8981\u5224\u65AD\u73AF\u5883 \u6240\u4EE5\u9700\u8981\u5728\u5934\u90E8\u58F0\u660E\u53D8\u91CF\u4F7F\u7528\u63D2\u4EF6\uFF0C\u82E5\u4E0D\u9700\u8981\u53EF\u4EE5\u76F4\u63A5\u5728 build &gt; babel &gt; plugins \u4E2D\u4F7F\u7528</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># build\u8FDB\u884C\u914D\u7F6E</span>
+build: <span class="token punctuation">{</span>
+    analyze: true,
+    babel: <span class="token punctuation">{</span>
+      <span class="token comment">#\u5728\u8FD9\u91CC\u4F7F\u7528</span>
+      plugins:plugins
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2019-04-06",deps:[],links:[],pathInferred:"/posts/nuxt/",pathLocale:"/",permalink:null,routeMeta:{title:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E"},sfcBlocks:[],slug:"README",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/nuxt/README.md",filePathRelative:"posts/nuxt/README.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/nuxt/index.html.vue",componentFilePathRelative:"pages/posts/nuxt/index.html.vue",componentFileChunkName:"v-094597b7",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/nuxt/index.html.js",dataFilePathRelative:"pages/posts/nuxt/index.html.js",dataFileChunkName:"v-094597b7",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/nuxt/index.html",htmlFilePathRelative:"posts/nuxt/index.html"},title:"Nuxt\u9879\u76EE\u521B\u5EFA\u4EE5\u53CA\u5E38\u89C1\u914D\u7F6E"},["/posts/nuxt/index.html","/posts/nuxt/README.md"]],["v-2e69883b","/posts/nuxt/deploy.html",{_blog:{data:{key:"v-2e69883b",path:"/posts/nuxt/deploy.html",title:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848",lang:"zh-CN",frontmatter:{title:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848",date:"2022-04-07T10:07:16.000Z",tag:["Nuxt"],category:["\u8FD0\u7EF4","Nuxt"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200942246.png",summary:`\u2003Nust.js \u901A\u8FC7\u5728nuxt.config.js\u6587\u4EF6\u914D\u7F6E ssr\uFF1Atrue,\u5F00\u542F SSR \u652F\u6301\uFF0Cssr\uFF1Afalse \u5173\u95ED SSR \u652F\u6301,\u5373\u652F\u6301 SPA\uFF08\u539F\u5C5E\u6027mode\u5DF2\u8FC7\u671F\uFF09\uFF0C\u53EF\u4EE5\u6839\u636E\u9879\u76EE\u5B9E\u9645\u60C5\u51B5\u5F00\u542F ssr \u6216\u5173\u95ED ssr\u3002\u5982\u679C\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u9700\u8981\u670D\u52A1\u7AEF\u73AF\u5883\u652F\u6301\uFF0C\u5982\u679C\u6CA1\u6709\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u548C\u666E\u901A\u7684 vue \u9879\u76EE\u90E8\u7F72\u65B9\u5F0F\u4E00\u81F4\u3002\u5F53\u7136 nuxt \u53EF\u4EE5\u901A\u8FC7 npm run generate \u547D\u4EE4\u6253\u5305\u6210\u9759\u6001\u9875\u9762\uFF0C\u652F\u6301\u9759\u6001\u7AD9\u70B9\u90E8\u7F72\uFF0C\u4F46\u9759\u6001\u7AD9\u70B9\u4E0D\u652F\u6301 SSR\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/nuxt/deploy.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Nuxt"}],["meta",{property:"article:published_time",content:"2022-04-07T10:07:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nust.js \u901A\u8FC7\u5728<code v-pre>nuxt.config.js</code>\u6587\u4EF6\u914D\u7F6E ssr\uFF1Atrue,\u5F00\u542F SSR \u652F\u6301\uFF0Cssr\uFF1Afalse \u5173\u95ED SSR \u652F\u6301,\u5373\u652F\u6301 SPA\uFF08\u539F\u5C5E\u6027<code v-pre>mode</code>\u5DF2\u8FC7\u671F\uFF09\uFF0C\u53EF\u4EE5\u6839\u636E\u9879\u76EE\u5B9E\u9645\u60C5\u51B5\u5F00\u542F ssr \u6216\u5173\u95ED ssr\u3002\u5982\u679C\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u9700\u8981\u670D\u52A1\u7AEF\u73AF\u5883\u652F\u6301\uFF0C\u5982\u679C\u6CA1\u6709\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u548C\u666E\u901A\u7684 vue \u9879\u76EE\u90E8\u7F72\u65B9\u5F0F\u4E00\u81F4\u3002\u5F53\u7136 nuxt \u53EF\u4EE5\u901A\u8FC7 npm run generate \u547D\u4EE4\u6253\u5305\u6210\u9759\u6001\u9875\u9762\uFF0C\u652F\u6301\u9759\u6001\u7AD9\u70B9\u90E8\u7F72\uFF0C\u4F46\u9759\u6001\u7AD9\u70B9\u4E0D\u652F\u6301 SSR\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001nohup \u65B9\u5F0F\u540E\u53F0\u8FD0\u884C",slug:"\u4E00\u3001nohup-\u65B9\u5F0F\u540E\u53F0\u8FD0\u884C",children:[]},{level:2,title:"\u4E8C\u3001pm2 \u65B9\u5F0F\u90E8\u7F72",slug:"\u4E8C\u3001pm2-\u65B9\u5F0F\u90E8\u7F72",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/nuxt/deploy.md",readingTime:{minutes:6.05,words:1816},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/nuxt/deploy.html`},key:"v-2e69883b",path:"/posts/nuxt/deploy.html",title:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848",lang:"zh-CN",frontmatter:{title:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848",date:"2022-04-07T10:07:16.000Z",tag:["Nuxt"],category:["\u8FD0\u7EF4","Nuxt"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200942246.png",summary:`\u2003Nust.js \u901A\u8FC7\u5728nuxt.config.js\u6587\u4EF6\u914D\u7F6E ssr\uFF1Atrue,\u5F00\u542F SSR \u652F\u6301\uFF0Cssr\uFF1Afalse \u5173\u95ED SSR \u652F\u6301,\u5373\u652F\u6301 SPA\uFF08\u539F\u5C5E\u6027mode\u5DF2\u8FC7\u671F\uFF09\uFF0C\u53EF\u4EE5\u6839\u636E\u9879\u76EE\u5B9E\u9645\u60C5\u51B5\u5F00\u542F ssr \u6216\u5173\u95ED ssr\u3002\u5982\u679C\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u9700\u8981\u670D\u52A1\u7AEF\u73AF\u5883\u652F\u6301\uFF0C\u5982\u679C\u6CA1\u6709\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u548C\u666E\u901A\u7684 vue \u9879\u76EE\u90E8\u7F72\u65B9\u5F0F\u4E00\u81F4\u3002\u5F53\u7136 nuxt \u53EF\u4EE5\u901A\u8FC7 npm run generate \u547D\u4EE4\u6253\u5305\u6210\u9759\u6001\u9875\u9762\uFF0C\u652F\u6301\u9759\u6001\u7AD9\u70B9\u90E8\u7F72\uFF0C\u4F46\u9759\u6001\u7AD9\u70B9\u4E0D\u652F\u6301 SSR\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/nuxt/deploy.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Nuxt"}],["meta",{property:"article:published_time",content:"2022-04-07T10:07:16.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nust.js \u901A\u8FC7\u5728<code v-pre>nuxt.config.js</code>\u6587\u4EF6\u914D\u7F6E ssr\uFF1Atrue,\u5F00\u542F SSR \u652F\u6301\uFF0Cssr\uFF1Afalse \u5173\u95ED SSR \u652F\u6301,\u5373\u652F\u6301 SPA\uFF08\u539F\u5C5E\u6027<code v-pre>mode</code>\u5DF2\u8FC7\u671F\uFF09\uFF0C\u53EF\u4EE5\u6839\u636E\u9879\u76EE\u5B9E\u9645\u60C5\u51B5\u5F00\u542F ssr \u6216\u5173\u95ED ssr\u3002\u5982\u679C\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u9700\u8981\u670D\u52A1\u7AEF\u73AF\u5883\u652F\u6301\uFF0C\u5982\u679C\u6CA1\u6709\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u548C\u666E\u901A\u7684 vue \u9879\u76EE\u90E8\u7F72\u65B9\u5F0F\u4E00\u81F4\u3002\u5F53\u7136 nuxt \u53EF\u4EE5\u901A\u8FC7 npm run generate \u547D\u4EE4\u6253\u5305\u6210\u9759\u6001\u9875\u9762\uFF0C\u652F\u6301\u9759\u6001\u7AD9\u70B9\u90E8\u7F72\uFF0C\u4F46\u9759\u6001\u7AD9\u70B9\u4E0D\u652F\u6301 SSR\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001nohup \u65B9\u5F0F\u540E\u53F0\u8FD0\u884C",slug:"\u4E00\u3001nohup-\u65B9\u5F0F\u540E\u53F0\u8FD0\u884C",children:[]},{level:2,title:"\u4E8C\u3001pm2 \u65B9\u5F0F\u90E8\u7F72",slug:"\u4E8C\u3001pm2-\u65B9\u5F0F\u90E8\u7F72",children:[]}],content:`---
+title: Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848
+date: 2022-04-07 10:07:16
+tag:
+  - Nuxt
+category:
+  - \u8FD0\u7EF4
+  - Nuxt
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207200942246.png
+---
+
+&emsp;Nust.js \u901A\u8FC7\u5728\`nuxt.config.js\`\u6587\u4EF6\u914D\u7F6E ssr\uFF1Atrue,\u5F00\u542F SSR \u652F\u6301\uFF0Cssr\uFF1Afalse \u5173\u95ED SSR \u652F\u6301,\u5373\u652F\u6301 SPA\uFF08\u539F\u5C5E\u6027\`mode\`\u5DF2\u8FC7\u671F\uFF09\uFF0C\u53EF\u4EE5\u6839\u636E\u9879\u76EE\u5B9E\u9645\u60C5\u51B5\u5F00\u542F ssr \u6216\u5173\u95ED ssr\u3002\u5982\u679C\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u9700\u8981\u670D\u52A1\u7AEF\u73AF\u5883\u652F\u6301\uFF0C\u5982\u679C\u6CA1\u6709\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u548C\u666E\u901A\u7684 vue \u9879\u76EE\u90E8\u7F72\u65B9\u5F0F\u4E00\u81F4\u3002\u5F53\u7136 nuxt \u53EF\u4EE5\u901A\u8FC7 npm run generate \u547D\u4EE4\u6253\u5305\u6210\u9759\u6001\u9875\u9762\uFF0C\u652F\u6301\u9759\u6001\u7AD9\u70B9\u90E8\u7F72\uFF0C\u4F46\u9759\u6001\u7AD9\u70B9\u4E0D\u652F\u6301 SSR\u3002
+
+<!-- more -->
+
+&emsp;Nuxt.js \u9879\u76EE\u6253\u5305\u5B8C\u6210\u540E\uFF0C\u53EF\u4EE5\u901A\u8FC7\u547D\u4EE4\`npm run start\`\u8FDB\u884C\u542F\u52A8\u8FD0\u884C\uFF0C\u8FDB\u7A0B\u662F\u524D\u53F0\u8FD0\u884C\uFF0C\u4F1A\u5360\u7528\u5F53\u524D\u547D\u4EE4\u7A97\u53E3\uFF0C\u4F46\u5F53\u6211\u4EEC\u901A\u8FC7\`Ctrl+C\`\u5173\u95ED\u65F6\uFF0C\u5F53\u524D\u7A0B\u5E8F\u8FDB\u7A0B\u4F1A\u88AB\u5173\u95ED\uFF0C\u7A0B\u5E8F\u7EC8\u6B62\u8FD0\u884C\uFF0C\u6240\u4EE5\u9700\u8981\u540E\u53F0\u8FDB\u884C\u8FD0\u884C\u8FDB\u7A0B\u3002\u672C\u6587\u4E3B\u8981\u8BB2\u8FF0 Nuxt SSR \u9879\u76EE\u5E38\u7528\u7684 2 \u4E2D\u90E8\u7F72\u65B9\u5F0F\uFF1A**nohup &** \u548C**pm2**\u3002\u5F53\u7136\u524D\u63D0\u662F\u9700\u8981\u5B89\u88C5 Node \u73AF\u5883\uFF0C\u5982\u679C\u672A\u5B89\u88C5 Node \u73AF\u5883\uFF0C\u8BF7\u53C2\u8003\uFF1A[Node \u73AF\u5883\u5B89\u88C5](/node/)\u3002\u65E0\u8BBA\u90A3\u79CD\u65B9\u5F0F\u5747\u9700\u8981\u4E0A\u4F20\u4EE5\u4E0B\u6587\u4EF6\u81F3\u670D\u52A1\u5668\uFF1A\`.nuxt,static,package.json,package-lock.json,nuxt.config.js\`
+
+## \u4E00\u3001nohup \u65B9\u5F0F\u540E\u53F0\u8FD0\u884C
+
+&emsp;nohup \u547D\u4EE4\u7684\u4E00\u822C\u683C\u5F0F\u4E3A:\`nohup yourcommand &\`,\u6211\u4EEC\u901A\u8FC7\u542F\u52A8\u547D\u4EE4\uFF1A\`nohup npm run start &\`\u6765\u540E\u53F0\u8FD0\u884C nuxt ssr \u9879\u76EE\u3002ohup \u547D\u4EE4\uFF1Anohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002&\u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E&\u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002\u76F8\u5173\`nohup\`\u547D\u4EE4\u7528\u6CD5\uFF0C\u8BF7\u53C2\u8003\uFF1A[nohup \u4E0D\u6302\u65AD\u8FD0\u884C](/node/nohup.html)
+
+1\u3001\u901A\u8FC7\`npm run build\`\u547D\u4EE4\u7F16\u8BD1\u6253\u5305\u3002  
+2\u3001\u5C06\u6253\u5305\u540E\u7684\u6587\u4EF6\`.nuxt,static,package.json,package-lock.json,nuxt.config.js\`\u4E0A\u4F20\u81F3\u670D\u52A1\u5668\u9884\u8BBE\u76EE\u5F55\u4E0B\u3002**\u6CE8\u610F\uFF1A** \u5982\u679C\u5F00\u53D1\u4E86\`server\`(\u670D\u52A1\u7AEF)\u4EE3\u7801\uFF0C\u90E8\u7F72\u662F\`server\`\u6587\u4EF6\u76EE\u5F55\u4E5F\u9700\u8981\u4E0A\u4F20  
+3\u3001\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A\`npm install\`  
+5\u3001\u542F\u52A8\u9879\u76EE\uFF1A\`nohup npm run start &\`
+
+\`\`\`bash
+nohup npm run start &
+\`\`\`
+
+6\u3001\u67E5\u770B\u540E\u53F0\u8FD0\u884C\u8FDB\u7A0B
+
+\`\`\`bash
+# \u67E5\u770B\u540E\u53F0\u8FD0\u884C\u7684\u6240\u6709\u8FDB\u7A0B
+jobs
+# \u67E5\u770B\u540E\u53F0\u8FD0\u884C\u7684\u6240\u6709\u8FDB\u7A0B\uFF0C\u5305\u542B\u8FDB\u7A0Bpid
+jobs -l
+\u6216\u8005
+ps -ef | grep npm
+ps -ef | grep node
+\`\`\`
+
+\u540E\u53F0\u8FDB\u7A0B\u6B63\u5E38\u8FD0\u884C\u8868\u793A\u7A0B\u5E8F\u5DF2\u542F\u52A8\uFF0Cnohup \u9ED8\u8BA4\u65E5\u5FD7\u6587\u4EF6\u540D\u4E3A\`nohup.out\`,\u53EF\u4EE5\u901A\u8FC7\u6B64\u6587\u4EF6\u67E5\u770B\u9879\u76EE\u662F\u5426\u8FD0\u884C\u6B63\u5E38\uFF0C\u6216\u8005\u901A\u8FC7\`tail\`\u547D\u4EE4\u8DDF\u8E2A\u8FD0\u884C\u65E5\u5FD7\uFF0C\u8BE6\u60C5\u53C2\u8003\uFF1A
+
+## \u4E8C\u3001pm2 \u65B9\u5F0F\u90E8\u7F72
+
+pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002\u8BE6\u60C5\u53C2\u8003\uFF1A[pm2 \u5B98\u7F51](https:#pm2.keymetrics.io/)
+
+1\u3001\u5728\u9879\u76EE\u6839\u76EE\u5F55\u4E0B\u521B\u5EFA\u6587\u4EF6\`ecosystem.config.js\`,\u5E76\u6839\u636E\u81EA\u5DF1\u9879\u76EE\u60C5\u51B5\u8FDB\u884C\u914D\u7F6E\uFF1A
+
+\`\`\`bash
+#pm2\u5B9E\u4F8B\u914D\u7F6E\uFF1Aecosystem.config.js
+module.exports = {
+  apps: [
+    {
+      #\u5B9E\u4F8B\u540D\u79F0
+      name: 'NuxtRmbRate',
+      #\u90E8\u7F72\u6A21\u5F0F\uFF0C\u5355\u673A\uFF1A'fork',\u96C6\u7FA4\uFF1A'cluster'
+      exec_mode: 'fork',
+      #\u5B9E\u4F8B\u6570\u76EE
+      instances: '1',
+      #\u9700\u8981\u6267\u884C\u7684\u811A\u672C\u6587\u4EF6\uFF0C\u5BF9\u4E8E\u666E\u901A\u7684nuxt\u9879\u76EE(\u6CA1\u6709server)\uFF0C\u4E00\u822C\u91C7\u7528nuxt start\u547D\u4EE4\uFF0C\u7528pm2\u6267\u884C\u65F6\u9700\u8981\u4FEE\u6539\u6210./node-modules/nuxt/dist/bin/nuxt.js,\u5426\u5219\u62A5\u9519
+      script: 'server/index.js',
+      #\u5E94\u7528\u7A0B\u5E8F\u6240\u5728\u7684\u76EE\u5F55
+      cwd: '',
+      # \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF0C\u4F8B\u5982nuxt start\u547D\u4EE4\uFF0C\u53C2\u6570\u4E3Astart
+      args: '',
+      # \u5B8C\u6574\u65E5\u5FD7\u8DEF\u5F84
+      output: 'log/output.log',
+      # \u9519\u8BEF\u65E5\u5FD7\u8DEF\u5F84
+      error: 'log/error.log',
+      # \u8BBF\u95EE\u65E5\u5FD7\u8DEF\u5F84
+      log: 'log/access.log',
+      # \u65E5\u5FD7\u683C\u5F0F
+      log_type: 'json',
+      # \u5408\u5E76\u65E5\u5FD7
+      merge_logs: true,
+      # \u65E5\u5FD7\u65E5\u671F\u683C\u5F0F
+      log_date_format: 'YYYY-MM-DD HH:mm:ss',
+       # \u6700\u5C0F\u8FD0\u884C\u65F6\u95F4\uFF0C\u8FD9\u91CC\u8BBE\u7F6E\u7684\u662F60s\u5373\u5982\u679C\u5E94\u7528\u7A0B\u5E8F\u5728* 60s\u5185\u9000\u51FA\uFF0Cpm2\u4F1A\u8BA4\u4E3A\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\uFF0C\u6B64\u65F6\u89E6\u53D1\u91CD\u542F* max_restarts\u8BBE\u7F6E\u6570\u91CF\uFF0C\u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8
+      min_uptime: '60s',
+      # \u8BBE\u7F6E\u5E94\u7528\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\u91CD\u542F\u7684\u6B21\u6570\uFF0C\u9ED8\u8BA415\u6B21\uFF08\u4ECE0\u5F00\u59CB\u8BA1\u6570\uFF09,\u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8Emin_uptime\u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B
+      max_restarts: 10,
+      # \u542F\u7528/\u7981\u7528\u5E94\u7528\u7A0B\u5E8F\u5D29\u6E83\u6216\u9000\u51FA\u65F6\u81EA\u52A8\u91CD\u542F\uFF0C\u9ED8\u8BA4\u4E3Atrue, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F
+      autorestart: true,
+      # \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4
+      restart_delay: 30,
+      #\u751F\u4EA7\u73AF\u5883\u914D\u7F6E
+      env_prod: {
+        # \u73AF\u5883\u53C2\u6570\uFF0C\u5F53\u524D\u6307\u5B9A\u4E3A\u751F\u4EA7\u73AF\u5883
+        NODE_ENV: 'production'
+      }
+    }
+  ]
+}
+\`\`\`
+
+\u5176\u4ED6\u914D\u7F6E\u9879\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+name \u5E94\u7528\u8FDB\u7A0B\u540D\u79F0\uFF1B
+
+script \u542F\u52A8\u811A\u672C\u8DEF\u5F84\uFF1B
+
+cwd \u5E94\u7528\u542F\u52A8\u7684\u8DEF\u5F84\uFF0C\u5173\u4E8E script \u4E0E cwd \u7684\u533A\u522B\u4E3E\u4F8B\u8BF4\u660E\uFF1A\u5728/home/polo/\u76EE\u5F55\u4E0B\u8FD0\u884C/data/release/node/index.js\uFF0C\u6B64\u5904 script \u4E3A/data/release/node/index.js\uFF0Ccwd \u4E3A/home/polo/\uFF1B
+
+args \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF1B
+
+interpreter \u6307\u5B9A\u7684\u811A\u672C\u89E3\u91CA\u5668\uFF1B
+
+interpreter_args \u4F20\u9012\u7ED9\u89E3\u91CA\u5668\u7684\u53C2\u6570\uFF1B
+
+instances \u5E94\u7528\u542F\u52A8\u5B9E\u4F8B\u4E2A\u6570\uFF0C\u4EC5\u5728 cluster \u6A21\u5F0F\u6709\u6548\uFF0C\u9ED8\u8BA4\u4E3A fork\uFF1B
+
+exec_mode \u5E94\u7528\u542F\u52A8\u6A21\u5F0F\uFF0C\u652F\u6301 fork \u548C cluster \u6A21\u5F0F\uFF1B
+
+watch \u76D1\u542C\u91CD\u542F\uFF0C\u542F\u7528\u60C5\u51B5\u4E0B\uFF0C\u6587\u4EF6\u5939\u6216\u5B50\u6587\u4EF6\u5939\u4E0B\u53D8\u5316\u5E94\u7528\u81EA\u52A8\u91CD\u542F\uFF1B
+
+ignore_watch \u5FFD\u7565\u76D1\u542C\u7684\u6587\u4EF6\u5939\uFF0C\u652F\u6301\u6B63\u5219\u8868\u8FBE\u5F0F\uFF1B
+
+max_memory_restart \u6700\u5927\u5185\u5B58\u9650\u5236\u6570\uFF0C\u8D85\u51FA\u81EA\u52A8\u91CD\u542F\uFF1B
+
+env \u73AF\u5883\u53D8\u91CF\uFF0Cobject \u7C7B\u578B\uFF0C\u5982{"NODE_ENV":"production", "ID": "42"}\uFF1B
+
+log_date_format \u6307\u5B9A\u65E5\u5FD7\u65E5\u671F\u683C\u5F0F\uFF0C\u5982 YYYY-MM-DD HH:mm:ss\uFF1B
+
+error_file \u8BB0\u5F55\u6807\u51C6\u9519\u8BEF\u6D41\uFF0C$HOME/.pm2/logs/XXXerr.log)\uFF0C\u4EE3\u7801\u9519\u8BEF\u53EF\u5728\u6B64\u6587\u4EF6\u67E5\u627E\uFF1B
+
+out_file \u8BB0\u5F55\u6807\u51C6\u8F93\u51FA\u6D41\uFF0C$HOME/.pm2/logs/XXXout.log)\uFF0C\u5982\u5E94\u7528\u6253\u5370\u5927\u91CF\u7684\u6807\u51C6\u8F93\u51FA\uFF0C\u4F1A\u5BFC\u81F4 pm2 \u65E5\u5FD7\u8FC7\u5927\uFF1B
+
+min_uptime \u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8\uFF1B
+
+max_restarts \u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8E min_uptime \u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B
+
+autorestart \u9ED8\u8BA4\u4E3A true, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F\uFF1B
+
+cron_restart crontab \u65F6\u95F4\u683C\u5F0F\u91CD\u542F\u5E94\u7528\uFF0C\u76EE\u524D\u53EA\u652F\u6301 cluster \u6A21\u5F0F\uFF1B
+
+force \u9ED8\u8BA4 false\uFF0C\u5982\u679C true\uFF0C\u53EF\u4EE5\u91CD\u590D\u542F\u52A8\u4E00\u4E2A\u811A\u672C\u3002pm2 \u4E0D\u5EFA\u8BAE\u8FD9\u4E48\u505A\uFF1B
+
+restart_delay \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4\uFF1B
+\`\`\`
+
+**\u6CE8\u610F\uFF1A** \u8BBE\u7F6E\u73AF\u5883\u53D8\u91CF\u65F6\u9700\u8981\u4EE5\`env_\`\u5F00\u5934\uFF0C\u8BE6\u7EC6\u53C2\u8003\uFF1A<https:#pm2.keymetrics.io/docs/usage/environment/>\u3002\u4F8B\u5982\u8BBE\u7F6E\u4E86\u73AF\u5883\u53D8\u91CF\`env_production\`\uFF0C\u91C7\u7528 pm2 \u542F\u52A8\u65F6\u5982\u4E0B\uFF1A\`pm2 start ecosystem.config.js --env production\`
+
+2\u3001\u9879\u76EE\u6253\u5305\uFF1A\`npm run build\`
+
+\`\`\`bash
+npm run build
+\`\`\`
+
+3\u3001\u5C06\u6253\u5305\u540E\u7684\u6587\u4EF6\`.nuxt,static,package.json,package-lock.json,nuxt.config.js,ecosystem.config.js\`\u4E0A\u4F20\u81F3\u670D\u52A1\u5668\u9884\u8BBE\u76EE\u5F55\u4E0B,\u4F8B\u5982\uFF1A/opt/pm2\u3002 \u5982\u679C\u5F00\u53D1\u4E86\`server\`(\u670D\u52A1\u7AEF)\u4EE3\u7801\uFF0C\u90E8\u7F72\u662F\`server\`\u6587\u4EF6\u76EE\u5F55\u4E5F\u9700\u8981\u4E0A\u4F20  
+4\u3001\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A\`npm install\`
+
+\`\`\`bash
+npm install
+\`\`\`
+
+5\u3001\u542F\u52A8\u9879\u76EE\uFF1A\`pm2 start ecosystem.config.js\`
+
+\`\`\`bash
+pm2 start ecosystem.config.js
+\`\`\`
+
+6\u3001\u67E5\u770B pm2 \u9879\u76EE\u5B9E\u4F8B\u5217\u8868\uFF1A\`pm2 list\`
+
+\`\`\`bash
+pm2 list
+\`\`\`
+
+\u7ED3\u679C\u5982\u4E0B\u56FE\uFF0Cstatus:online \u8868\u793A\u9879\u76EE\u6B63\u5728\u8FD0\u884C\u3002
+![](https:#cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202204071138505.png)
+
+7\u3001\u67E5\u770B\u9879\u76EE\u8FD0\u884C\u65E5\u5FD7\uFF1A\`pm2 logs id\` \u6216\u8005\u67E5\u770B logs \u65E5\u5FD7\u6587\u4EF6\u67E5\u770B\u65E5\u5FD7\u3002
+
+\`\`\`bash
+pm2 logs 0
+\`\`\`
+
+8\u3001\u5176\u4ED6\u547D\u4EE4
+
+\`\`\`bash
+#\u505C\u6B62\u5B9E\u4F8B
+pm2 stop id/\u5B9E\u4F8B\u540D\u79F0
+#\u5220\u9664\u5B9E\u4F8B
+pm2 delete id/\u5B9E\u4F8B\u540D\u79F0
+#\u91CD\u542F\u5B9E\u4F8B
+pm2 restart id/\u5B9E\u4F8B\u540D\u79F0
+\`\`\`
+
+\u5176\u4ED6\`pm2\`\u547D\u4EE4\u8BF7\u53C2\u8003\uFF1A[pm2 \u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177](/node/pm2.html)
+`,contentRendered:`<p>\u2003Nust.js \u901A\u8FC7\u5728<code v-pre>nuxt.config.js</code>\u6587\u4EF6\u914D\u7F6E ssr\uFF1Atrue,\u5F00\u542F SSR \u652F\u6301\uFF0Cssr\uFF1Afalse \u5173\u95ED SSR \u652F\u6301,\u5373\u652F\u6301 SPA\uFF08\u539F\u5C5E\u6027<code v-pre>mode</code>\u5DF2\u8FC7\u671F\uFF09\uFF0C\u53EF\u4EE5\u6839\u636E\u9879\u76EE\u5B9E\u9645\u60C5\u51B5\u5F00\u542F ssr \u6216\u5173\u95ED ssr\u3002\u5982\u679C\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u9700\u8981\u670D\u52A1\u7AEF\u73AF\u5883\u652F\u6301\uFF0C\u5982\u679C\u6CA1\u6709\u5F00\u901A SSR \u529F\u80FD\uFF0C\u901A\u8FC7 npm run build \u8FDB\u884C\u6253\u5305\u540E\uFF0C\u9879\u76EE\u90E8\u7F72\u548C\u666E\u901A\u7684 vue \u9879\u76EE\u90E8\u7F72\u65B9\u5F0F\u4E00\u81F4\u3002\u5F53\u7136 nuxt \u53EF\u4EE5\u901A\u8FC7 npm run generate \u547D\u4EE4\u6253\u5305\u6210\u9759\u6001\u9875\u9762\uFF0C\u652F\u6301\u9759\u6001\u7AD9\u70B9\u90E8\u7F72\uFF0C\u4F46\u9759\u6001\u7AD9\u70B9\u4E0D\u652F\u6301 SSR\u3002</p>
+<!-- more -->
+<p>\u2003Nuxt.js \u9879\u76EE\u6253\u5305\u5B8C\u6210\u540E\uFF0C\u53EF\u4EE5\u901A\u8FC7\u547D\u4EE4<code v-pre>npm run start</code>\u8FDB\u884C\u542F\u52A8\u8FD0\u884C\uFF0C\u8FDB\u7A0B\u662F\u524D\u53F0\u8FD0\u884C\uFF0C\u4F1A\u5360\u7528\u5F53\u524D\u547D\u4EE4\u7A97\u53E3\uFF0C\u4F46\u5F53\u6211\u4EEC\u901A\u8FC7<code v-pre>Ctrl+C</code>\u5173\u95ED\u65F6\uFF0C\u5F53\u524D\u7A0B\u5E8F\u8FDB\u7A0B\u4F1A\u88AB\u5173\u95ED\uFF0C\u7A0B\u5E8F\u7EC8\u6B62\u8FD0\u884C\uFF0C\u6240\u4EE5\u9700\u8981\u540E\u53F0\u8FDB\u884C\u8FD0\u884C\u8FDB\u7A0B\u3002\u672C\u6587\u4E3B\u8981\u8BB2\u8FF0 Nuxt SSR \u9879\u76EE\u5E38\u7528\u7684 2 \u4E2D\u90E8\u7F72\u65B9\u5F0F\uFF1A<strong>nohup &amp;</strong> \u548C<strong>pm2</strong>\u3002\u5F53\u7136\u524D\u63D0\u662F\u9700\u8981\u5B89\u88C5 Node \u73AF\u5883\uFF0C\u5982\u679C\u672A\u5B89\u88C5 Node \u73AF\u5883\uFF0C\u8BF7\u53C2\u8003\uFF1A<a href="/node/" target="_blank" rel="noopener noreferrer">Node \u73AF\u5883\u5B89\u88C5<ExternalLinkIcon/></a>\u3002\u65E0\u8BBA\u90A3\u79CD\u65B9\u5F0F\u5747\u9700\u8981\u4E0A\u4F20\u4EE5\u4E0B\u6587\u4EF6\u81F3\u670D\u52A1\u5668\uFF1A<code v-pre>.nuxt,static,package.json,package-lock.json,nuxt.config.js</code></p>
+<h2 id="\u4E00\u3001nohup-\u65B9\u5F0F\u540E\u53F0\u8FD0\u884C" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001nohup-\u65B9\u5F0F\u540E\u53F0\u8FD0\u884C" aria-hidden="true">#</a> \u4E00\u3001nohup \u65B9\u5F0F\u540E\u53F0\u8FD0\u884C</h2>
+<p>\u2003nohup \u547D\u4EE4\u7684\u4E00\u822C\u683C\u5F0F\u4E3A:<code v-pre>nohup yourcommand &amp;</code>,\u6211\u4EEC\u901A\u8FC7\u542F\u52A8\u547D\u4EE4\uFF1A<code v-pre>nohup npm run start &amp;</code>\u6765\u540E\u53F0\u8FD0\u884C nuxt ssr \u9879\u76EE\u3002ohup \u547D\u4EE4\uFF1Anohup \u662F\u4E0D\u6302\u65AD\u7684\u610F\u601D( no hang up)\u3002\u5982\u679C\u4F60\u6B63\u5728\u8FD0\u884C\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C\u4E14\u4F60\u89C9\u5F97\u5728\u9000\u51FA\u5E10\u6237\u65F6\u8BE5\u8FDB\u7A0B\u8FD8\u4E0D\u4F1A\u7ED3\u675F\uFF0C\u90A3\u4E48\u53EF\u4EE5\u4F7F\u7528 nohup \u547D\u4EE4\u3002\u8BE5\u547D\u4EE4\u5FFD\u7565\u6240\u6709\u6302\uFF08SIGHUP\uFF09\u4FE1\u53F7\uFF0C\u53EF\u4EE5\u5728\u4F60\u9000\u51FA\u5E10\u6237/\u5173\u95ED\u7EC8\u7AEF\u4E4B\u540E\u7EE7\u7EED\u8FD0\u884C\u76F8\u5E94\u7684\u8FDB\u7A0B\u3002&amp;\u662F\u6307\u5728\u540E\u53F0\u8FD0\u884C\uFF0C\u4F46\u5F53\u7528\u6237\u63A8\u51FA(\u6302\u8D77)\u7684\u65F6\u5019\uFF0C\u547D\u4EE4\u81EA\u52A8\u4E5F\u8DDF\u7740\u9000\u51FA. nohup \u4E0E&amp;\u7ED3\u5408\u8D77\u6765\uFF0C\u53EF\u4EE5\u5B9E\u73B0\u4E0D\u6302\u65AD\u7684\u540E\u53F0\u8FD0\u884C\u3002\u76F8\u5173<code v-pre>nohup</code>\u547D\u4EE4\u7528\u6CD5\uFF0C\u8BF7\u53C2\u8003\uFF1A<a href="/node/nohup.html" target="_blank" rel="noopener noreferrer">nohup \u4E0D\u6302\u65AD\u8FD0\u884C<ExternalLinkIcon/></a></p>
+<p>1\u3001\u901A\u8FC7<code v-pre>npm run build</code>\u547D\u4EE4\u7F16\u8BD1\u6253\u5305\u3002<br>
+2\u3001\u5C06\u6253\u5305\u540E\u7684\u6587\u4EF6<code v-pre>.nuxt,static,package.json,package-lock.json,nuxt.config.js</code>\u4E0A\u4F20\u81F3\u670D\u52A1\u5668\u9884\u8BBE\u76EE\u5F55\u4E0B\u3002<strong>\u6CE8\u610F\uFF1A</strong> \u5982\u679C\u5F00\u53D1\u4E86<code v-pre>server</code>(\u670D\u52A1\u7AEF)\u4EE3\u7801\uFF0C\u90E8\u7F72\u662F<code v-pre>server</code>\u6587\u4EF6\u76EE\u5F55\u4E5F\u9700\u8981\u4E0A\u4F20<br>
+3\u3001\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A<code v-pre>npm install</code><br>
+5\u3001\u542F\u52A8\u9879\u76EE\uFF1A<code v-pre>nohup npm run start &amp;</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">nohup</span> <span class="token function">npm</span> run start <span class="token operator">&amp;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>6\u3001\u67E5\u770B\u540E\u53F0\u8FD0\u884C\u8FDB\u7A0B</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u67E5\u770B\u540E\u53F0\u8FD0\u884C\u7684\u6240\u6709\u8FDB\u7A0B</span>
+<span class="token function">jobs</span>
+<span class="token comment"># \u67E5\u770B\u540E\u53F0\u8FD0\u884C\u7684\u6240\u6709\u8FDB\u7A0B\uFF0C\u5305\u542B\u8FDB\u7A0Bpid</span>
+<span class="token function">jobs</span> <span class="token parameter variable">-l</span>
+\u6216\u8005
+<span class="token function">ps</span> <span class="token parameter variable">-ef</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">npm</span>
+<span class="token function">ps</span> <span class="token parameter variable">-ef</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token function">node</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u540E\u53F0\u8FDB\u7A0B\u6B63\u5E38\u8FD0\u884C\u8868\u793A\u7A0B\u5E8F\u5DF2\u542F\u52A8\uFF0Cnohup \u9ED8\u8BA4\u65E5\u5FD7\u6587\u4EF6\u540D\u4E3A<code v-pre>nohup.out</code>,\u53EF\u4EE5\u901A\u8FC7\u6B64\u6587\u4EF6\u67E5\u770B\u9879\u76EE\u662F\u5426\u8FD0\u884C\u6B63\u5E38\uFF0C\u6216\u8005\u901A\u8FC7<code v-pre>tail</code>\u547D\u4EE4\u8DDF\u8E2A\u8FD0\u884C\u65E5\u5FD7\uFF0C\u8BE6\u60C5\u53C2\u8003\uFF1A</p>
+<h2 id="\u4E8C\u3001pm2-\u65B9\u5F0F\u90E8\u7F72" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001pm2-\u65B9\u5F0F\u90E8\u7F72" aria-hidden="true">#</a> \u4E8C\u3001pm2 \u65B9\u5F0F\u90E8\u7F72</h2>
+<p>pm2 \u662F\u4E00\u4E2A\u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177,\u53EF\u4EE5\u7528\u5B83\u6765\u7BA1\u7406\u4F60\u7684 node \u8FDB\u7A0B\uFF0C\u5E76\u67E5\u770B node \u8FDB\u7A0B\u7684\u72B6\u6001\uFF0C\u5F53\u7136\u4E5F\u652F\u6301\u6027\u80FD\u76D1\u63A7\uFF0C\u8FDB\u7A0B\u5B88\u62A4\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002\u8BE6\u60C5\u53C2\u8003\uFF1A<RouterLink to="/posts/nuxt/https:#pm2.keymetrics.io/">pm2 \u5B98\u7F51</RouterLink></p>
+<p>1\u3001\u5728\u9879\u76EE\u6839\u76EE\u5F55\u4E0B\u521B\u5EFA\u6587\u4EF6<code v-pre>ecosystem.config.js</code>,\u5E76\u6839\u636E\u81EA\u5DF1\u9879\u76EE\u60C5\u51B5\u8FDB\u884C\u914D\u7F6E\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#pm2\u5B9E\u4F8B\u914D\u7F6E\uFF1Aecosystem.config.js</span>
+module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  apps: <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token comment">#\u5B9E\u4F8B\u540D\u79F0</span>
+      name: <span class="token string">'NuxtRmbRate'</span>,
+      <span class="token comment">#\u90E8\u7F72\u6A21\u5F0F\uFF0C\u5355\u673A\uFF1A'fork',\u96C6\u7FA4\uFF1A'cluster'</span>
+      exec_mode: <span class="token string">'fork'</span>,
+      <span class="token comment">#\u5B9E\u4F8B\u6570\u76EE</span>
+      instances: <span class="token string">'1'</span>,
+      <span class="token comment">#\u9700\u8981\u6267\u884C\u7684\u811A\u672C\u6587\u4EF6\uFF0C\u5BF9\u4E8E\u666E\u901A\u7684nuxt\u9879\u76EE(\u6CA1\u6709server)\uFF0C\u4E00\u822C\u91C7\u7528nuxt start\u547D\u4EE4\uFF0C\u7528pm2\u6267\u884C\u65F6\u9700\u8981\u4FEE\u6539\u6210./node-modules/nuxt/dist/bin/nuxt.js,\u5426\u5219\u62A5\u9519</span>
+      script: <span class="token string">'server/index.js'</span>,
+      <span class="token comment">#\u5E94\u7528\u7A0B\u5E8F\u6240\u5728\u7684\u76EE\u5F55</span>
+      cwd: <span class="token string">''</span>,
+      <span class="token comment"># \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF0C\u4F8B\u5982nuxt start\u547D\u4EE4\uFF0C\u53C2\u6570\u4E3Astart</span>
+      args: <span class="token string">''</span>,
+      <span class="token comment"># \u5B8C\u6574\u65E5\u5FD7\u8DEF\u5F84</span>
+      output: <span class="token string">'log/output.log'</span>,
+      <span class="token comment"># \u9519\u8BEF\u65E5\u5FD7\u8DEF\u5F84</span>
+      error: <span class="token string">'log/error.log'</span>,
+      <span class="token comment"># \u8BBF\u95EE\u65E5\u5FD7\u8DEF\u5F84</span>
+      log: <span class="token string">'log/access.log'</span>,
+      <span class="token comment"># \u65E5\u5FD7\u683C\u5F0F</span>
+      log_type: <span class="token string">'json'</span>,
+      <span class="token comment"># \u5408\u5E76\u65E5\u5FD7</span>
+      merge_logs: true,
+      <span class="token comment"># \u65E5\u5FD7\u65E5\u671F\u683C\u5F0F</span>
+      log_date_format: <span class="token string">'YYYY-MM-DD HH:mm:ss'</span>,
+       <span class="token comment"># \u6700\u5C0F\u8FD0\u884C\u65F6\u95F4\uFF0C\u8FD9\u91CC\u8BBE\u7F6E\u7684\u662F60s\u5373\u5982\u679C\u5E94\u7528\u7A0B\u5E8F\u5728* 60s\u5185\u9000\u51FA\uFF0Cpm2\u4F1A\u8BA4\u4E3A\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\uFF0C\u6B64\u65F6\u89E6\u53D1\u91CD\u542F* max_restarts\u8BBE\u7F6E\u6570\u91CF\uFF0C\u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8</span>
+      min_uptime: <span class="token string">'60s'</span>,
+      <span class="token comment"># \u8BBE\u7F6E\u5E94\u7528\u7A0B\u5E8F\u5F02\u5E38\u9000\u51FA\u91CD\u542F\u7684\u6B21\u6570\uFF0C\u9ED8\u8BA415\u6B21\uFF08\u4ECE0\u5F00\u59CB\u8BA1\u6570\uFF09,\u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8Emin_uptime\u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B</span>
+      max_restarts: <span class="token number">10</span>,
+      <span class="token comment"># \u542F\u7528/\u7981\u7528\u5E94\u7528\u7A0B\u5E8F\u5D29\u6E83\u6216\u9000\u51FA\u65F6\u81EA\u52A8\u91CD\u542F\uFF0C\u9ED8\u8BA4\u4E3Atrue, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F</span>
+      autorestart: true,
+      <span class="token comment"># \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4</span>
+      restart_delay: <span class="token number">30</span>,
+      <span class="token comment">#\u751F\u4EA7\u73AF\u5883\u914D\u7F6E</span>
+      env_prod: <span class="token punctuation">{</span>
+        <span class="token comment"># \u73AF\u5883\u53C2\u6570\uFF0C\u5F53\u524D\u6307\u5B9A\u4E3A\u751F\u4EA7\u73AF\u5883</span>
+        NODE_ENV: <span class="token string">'production'</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5176\u4ED6\u914D\u7F6E\u9879\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>name \u5E94\u7528\u8FDB\u7A0B\u540D\u79F0\uFF1B
+
+script \u542F\u52A8\u811A\u672C\u8DEF\u5F84\uFF1B
+
+cwd \u5E94\u7528\u542F\u52A8\u7684\u8DEF\u5F84\uFF0C\u5173\u4E8E script \u4E0E cwd \u7684\u533A\u522B\u4E3E\u4F8B\u8BF4\u660E\uFF1A\u5728/home/polo/\u76EE\u5F55\u4E0B\u8FD0\u884C/data/release/node/index.js\uFF0C\u6B64\u5904 script \u4E3A/data/release/node/index.js\uFF0Ccwd \u4E3A/home/polo/\uFF1B
+
+args \u4F20\u9012\u7ED9\u811A\u672C\u7684\u53C2\u6570\uFF1B
+
+interpreter \u6307\u5B9A\u7684\u811A\u672C\u89E3\u91CA\u5668\uFF1B
+
+interpreter_args \u4F20\u9012\u7ED9\u89E3\u91CA\u5668\u7684\u53C2\u6570\uFF1B
+
+instances \u5E94\u7528\u542F\u52A8\u5B9E\u4F8B\u4E2A\u6570\uFF0C\u4EC5\u5728 cluster \u6A21\u5F0F\u6709\u6548\uFF0C\u9ED8\u8BA4\u4E3A fork\uFF1B
+
+exec_mode \u5E94\u7528\u542F\u52A8\u6A21\u5F0F\uFF0C\u652F\u6301 fork \u548C cluster \u6A21\u5F0F\uFF1B
+
+<span class="token function">watch</span> \u76D1\u542C\u91CD\u542F\uFF0C\u542F\u7528\u60C5\u51B5\u4E0B\uFF0C\u6587\u4EF6\u5939\u6216\u5B50\u6587\u4EF6\u5939\u4E0B\u53D8\u5316\u5E94\u7528\u81EA\u52A8\u91CD\u542F\uFF1B
+
+ignore_watch \u5FFD\u7565\u76D1\u542C\u7684\u6587\u4EF6\u5939\uFF0C\u652F\u6301\u6B63\u5219\u8868\u8FBE\u5F0F\uFF1B
+
+max_memory_restart \u6700\u5927\u5185\u5B58\u9650\u5236\u6570\uFF0C\u8D85\u51FA\u81EA\u52A8\u91CD\u542F\uFF1B
+
+<span class="token function">env</span> \u73AF\u5883\u53D8\u91CF\uFF0Cobject \u7C7B\u578B\uFF0C\u5982<span class="token punctuation">{</span><span class="token string">"NODE_ENV"</span><span class="token builtin class-name">:</span><span class="token string">"production"</span>, <span class="token string">"ID"</span><span class="token builtin class-name">:</span> <span class="token string">"42"</span><span class="token punctuation">}</span>\uFF1B
+
+log_date_format \u6307\u5B9A\u65E5\u5FD7\u65E5\u671F\u683C\u5F0F\uFF0C\u5982 YYYY-MM-DD HH:mm:ss\uFF1B
+
+error_file \u8BB0\u5F55\u6807\u51C6\u9519\u8BEF\u6D41\uFF0C<span class="token environment constant">$HOME</span>/.pm2/logs/XXXerr.log<span class="token punctuation">)</span>\uFF0C\u4EE3\u7801\u9519\u8BEF\u53EF\u5728\u6B64\u6587\u4EF6\u67E5\u627E\uFF1B
+
+out_file \u8BB0\u5F55\u6807\u51C6\u8F93\u51FA\u6D41\uFF0C<span class="token environment constant">$HOME</span>/.pm2/logs/XXXout.log<span class="token punctuation">)</span>\uFF0C\u5982\u5E94\u7528\u6253\u5370\u5927\u91CF\u7684\u6807\u51C6\u8F93\u51FA\uFF0C\u4F1A\u5BFC\u81F4 pm2 \u65E5\u5FD7\u8FC7\u5927\uFF1B
+
+min_uptime \u5E94\u7528\u8FD0\u884C\u5C11\u4E8E\u65F6\u95F4\u88AB\u8BA4\u4E3A\u662F\u5F02\u5E38\u542F\u52A8\uFF1B
+
+max_restarts \u6700\u5927\u5F02\u5E38\u91CD\u542F\u6B21\u6570\uFF0C\u5373\u5C0F\u4E8E min_uptime \u8FD0\u884C\u65F6\u95F4\u91CD\u542F\u6B21\u6570\uFF1B
+
+autorestart \u9ED8\u8BA4\u4E3A true, \u53D1\u751F\u5F02\u5E38\u7684\u60C5\u51B5\u4E0B\u81EA\u52A8\u91CD\u542F\uFF1B
+
+cron_restart <span class="token function">crontab</span> \u65F6\u95F4\u683C\u5F0F\u91CD\u542F\u5E94\u7528\uFF0C\u76EE\u524D\u53EA\u652F\u6301 cluster \u6A21\u5F0F\uFF1B
+
+force \u9ED8\u8BA4 false\uFF0C\u5982\u679C true\uFF0C\u53EF\u4EE5\u91CD\u590D\u542F\u52A8\u4E00\u4E2A\u811A\u672C\u3002pm2 \u4E0D\u5EFA\u8BAE\u8FD9\u4E48\u505A\uFF1B
+
+restart_delay \u5F02\u5E38\u91CD\u542F\u60C5\u51B5\u4E0B\uFF0C\u5EF6\u65F6\u91CD\u542F\u65F6\u95F4\uFF1B
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u6CE8\u610F\uFF1A</strong> \u8BBE\u7F6E\u73AF\u5883\u53D8\u91CF\u65F6\u9700\u8981\u4EE5<code v-pre>env_</code>\u5F00\u5934\uFF0C\u8BE6\u7EC6\u53C2\u8003\uFF1A<RouterLink to="/posts/nuxt/https:#pm2.keymetrics.io/docs/usage/environment/">https:#pm2.keymetrics.io/docs/usage/environment/</RouterLink>\u3002\u4F8B\u5982\u8BBE\u7F6E\u4E86\u73AF\u5883\u53D8\u91CF<code v-pre>env_production</code>\uFF0C\u91C7\u7528 pm2 \u542F\u52A8\u65F6\u5982\u4E0B\uFF1A<code v-pre>pm2 start ecosystem.config.js --env production</code></p>
+<p>2\u3001\u9879\u76EE\u6253\u5305\uFF1A<code v-pre>npm run build</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">npm</span> run build
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>3\u3001\u5C06\u6253\u5305\u540E\u7684\u6587\u4EF6<code v-pre>.nuxt,static,package.json,package-lock.json,nuxt.config.js,ecosystem.config.js</code>\u4E0A\u4F20\u81F3\u670D\u52A1\u5668\u9884\u8BBE\u76EE\u5F55\u4E0B,\u4F8B\u5982\uFF1A/opt/pm2\u3002 \u5982\u679C\u5F00\u53D1\u4E86<code v-pre>server</code>(\u670D\u52A1\u7AEF)\u4EE3\u7801\uFF0C\u90E8\u7F72\u662F<code v-pre>server</code>\u6587\u4EF6\u76EE\u5F55\u4E5F\u9700\u8981\u4E0A\u4F20<br>
+4\u3001\u5B89\u88C5\u4F9D\u8D56\u5305\uFF1A<code v-pre>npm install</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>5\u3001\u542F\u52A8\u9879\u76EE\uFF1A<code v-pre>pm2 start ecosystem.config.js</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>pm2 start ecosystem.config.js
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>6\u3001\u67E5\u770B pm2 \u9879\u76EE\u5B9E\u4F8B\u5217\u8868\uFF1A<code v-pre>pm2 list</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>pm2 list
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u7ED3\u679C\u5982\u4E0B\u56FE\uFF0Cstatus:online \u8868\u793A\u9879\u76EE\u6B63\u5728\u8FD0\u884C\u3002
+<img src="https:#cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202204071138505.png" alt=""></p>
+<p>7\u3001\u67E5\u770B\u9879\u76EE\u8FD0\u884C\u65E5\u5FD7\uFF1A<code v-pre>pm2 logs id</code> \u6216\u8005\u67E5\u770B logs \u65E5\u5FD7\u6587\u4EF6\u67E5\u770B\u65E5\u5FD7\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>pm2 logs <span class="token number">0</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>8\u3001\u5176\u4ED6\u547D\u4EE4</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u505C\u6B62\u5B9E\u4F8B</span>
+pm2 stop id/\u5B9E\u4F8B\u540D\u79F0
+<span class="token comment">#\u5220\u9664\u5B9E\u4F8B</span>
+pm2 delete id/\u5B9E\u4F8B\u540D\u79F0
+<span class="token comment">#\u91CD\u542F\u5B9E\u4F8B</span>
+pm2 restart id/\u5B9E\u4F8B\u540D\u79F0
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5176\u4ED6<code v-pre>pm2</code>\u547D\u4EE4\u8BF7\u53C2\u8003\uFF1A<a href="/node/pm2.html" target="_blank" rel="noopener noreferrer">pm2 \u8FDB\u7A0B\u7BA1\u7406\u5DE5\u5177<ExternalLinkIcon/></a></p>
+`,date:"2022-04-07",deps:[],links:[{raw:"https:#pm2.keymetrics.io/",relative:"posts/nuxt/https:#pm2.keymetrics.io/",absolute:"/blog-docs/posts/nuxt/https:#pm2.keymetrics.io/"},{raw:"https:#pm2.keymetrics.io/docs/usage/environment/",relative:"posts/nuxt/https:#pm2.keymetrics.io/docs/usage/environment/",absolute:"/blog-docs/posts/nuxt/https:#pm2.keymetrics.io/docs/usage/environment/"}],pathInferred:"/posts/nuxt/deploy.html",pathLocale:"/",permalink:null,routeMeta:{title:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848"},sfcBlocks:[],slug:"deploy",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/nuxt/deploy.md",filePathRelative:"posts/nuxt/deploy.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/nuxt/deploy.html.vue",componentFilePathRelative:"pages/posts/nuxt/deploy.html.vue",componentFileChunkName:"v-2e69883b",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/nuxt/deploy.html.js",dataFilePathRelative:"pages/posts/nuxt/deploy.html.js",dataFileChunkName:"v-2e69883b",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/nuxt/deploy.html",htmlFilePathRelative:"posts/nuxt/deploy.html"},title:"Nuxt\u9879\u76EE\u90E8\u7F72\u65B9\u6848"},["/posts/nuxt/deploy","/posts/nuxt/deploy.md"]],["v-cc63cd18","/posts/other/algoliaSearch.html",{_blog:{data:{key:"v-cc63cd18",path:"/posts/other/algoliaSearch.html",title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",date:"2022-07-22T09:07:35.000Z",description:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",tag:["Algolia"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207210908451.jpg",sticky:3,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/algoliaSearch.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:description",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Algolia"}],["meta",{property:"article:published_time",content:"2022-07-22T09:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Algolia \u662F\u4E00\u4E2A\u6570\u636E\u5E93\u5B9E\u65F6\u641C\u7D22\u670D\u52A1\uFF0C\u80FD\u591F\u63D0\u4F9B\u6BEB\u79D2\u7EA7\u7684\u6570\u636E\u5E93\u641C\u7D22\u670D\u52A1\uFF0C\u5E76\u4E14\u5176\u670D\u52A1\u80FD\u4EE5 API \u7684\u5F62\u5F0F\u65B9\u4FBF\u5730\u5E03\u5C40\u5230\u7F51\u9875\u3001\u5BA2\u6237\u7AEF\u3001APP \u7B49\u591A\u79CD\u573A\u666F\u3002Algolia \u7684\u670D\u52A1\u652F\u6301\u591A\u79CD\u8BED\u8A00\u652F\u6301 Ruby\u3001Rails\u3001Python\u3001PHP\u3001JS\u3001Java\u3001Android\u3001Objective-C \u7B49\u591A\u79CD\u8BED\u8A00\uFF0C\u5177\u5907\u5173\u952E\u5B57\u8F93\u5165\u667A\u80FD\u5BB9\u9519\u529F\u80FD\uFF0C\u5E76\u63D0\u4F9B\u6709\u641C\u7D22\u6392\u540D\u914D\u7F6E\uFF0C\u5E76\u5177\u6709\u5B9E\u65F6\u5FEB\u901F\u7684\u7279\u70B9\uFF08Algolia \u5728\u5168\u7403 12 \u4E2A\u6570\u636E\u4E2D\u5FC3\u5747\u6709\u90E8\u7F72\uFF09\u3002Algolia \u8FD8\u4E3A\u79FB\u52A8\u8BBE\u5907\u63D0\u4F9B\u4E86\u79BB\u7EBF\u641C\u7D22\u5F15\u64CE\uFF0C\u5176 C++ SDK \u53EF\u4EE5\u5D4C\u5165\u5230\u5E94\u7528\u670D\u52A1\u5668\u7AEF\uFF0C\u8FD9\u6837\u5373\u4FBF\u6CA1\u6709\u7F51\u7EDC\u8FDE\u63A5\u5E94\u7528\u4E5F\u80FD\u63D0\u4F9B\u641C\u7D22\u529F\u80FD\u3002</p>
+`,headers:[{level:2,title:"\u4E3A\u4EC0\u4E48\u5728\u4F7F\u7528 Algolia?",slug:"\u4E3A\u4EC0\u4E48\u5728\u4F7F\u7528-algolia",children:[]},{level:2,title:"\u5982\u4F55\u4F7F\u7528 Algolia?",slug:"\u5982\u4F55\u4F7F\u7528-algolia",children:[]},{level:2,title:"\u6570\u636E\u722C\u53D6",slug:"\u6570\u636E\u722C\u53D6",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/algoliaSearch.md",readingTime:{minutes:6.14,words:1841},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/algoliaSearch.html`},key:"v-cc63cd18",path:"/posts/other/algoliaSearch.html",title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",date:"2022-07-22T09:07:35.000Z",description:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22",tag:["Algolia"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207210908451.jpg",sticky:3,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/algoliaSearch.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:description",content:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Algolia"}],["meta",{property:"article:published_time",content:"2022-07-22T09:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Algolia \u662F\u4E00\u4E2A\u6570\u636E\u5E93\u5B9E\u65F6\u641C\u7D22\u670D\u52A1\uFF0C\u80FD\u591F\u63D0\u4F9B\u6BEB\u79D2\u7EA7\u7684\u6570\u636E\u5E93\u641C\u7D22\u670D\u52A1\uFF0C\u5E76\u4E14\u5176\u670D\u52A1\u80FD\u4EE5 API \u7684\u5F62\u5F0F\u65B9\u4FBF\u5730\u5E03\u5C40\u5230\u7F51\u9875\u3001\u5BA2\u6237\u7AEF\u3001APP \u7B49\u591A\u79CD\u573A\u666F\u3002Algolia \u7684\u670D\u52A1\u652F\u6301\u591A\u79CD\u8BED\u8A00\u652F\u6301 Ruby\u3001Rails\u3001Python\u3001PHP\u3001JS\u3001Java\u3001Android\u3001Objective-C \u7B49\u591A\u79CD\u8BED\u8A00\uFF0C\u5177\u5907\u5173\u952E\u5B57\u8F93\u5165\u667A\u80FD\u5BB9\u9519\u529F\u80FD\uFF0C\u5E76\u63D0\u4F9B\u6709\u641C\u7D22\u6392\u540D\u914D\u7F6E\uFF0C\u5E76\u5177\u6709\u5B9E\u65F6\u5FEB\u901F\u7684\u7279\u70B9\uFF08Algolia \u5728\u5168\u7403 12 \u4E2A\u6570\u636E\u4E2D\u5FC3\u5747\u6709\u90E8\u7F72\uFF09\u3002Algolia \u8FD8\u4E3A\u79FB\u52A8\u8BBE\u5907\u63D0\u4F9B\u4E86\u79BB\u7EBF\u641C\u7D22\u5F15\u64CE\uFF0C\u5176 C++ SDK \u53EF\u4EE5\u5D4C\u5165\u5230\u5E94\u7528\u670D\u52A1\u5668\u7AEF\uFF0C\u8FD9\u6837\u5373\u4FBF\u6CA1\u6709\u7F51\u7EDC\u8FDE\u63A5\u5E94\u7528\u4E5F\u80FD\u63D0\u4F9B\u641C\u7D22\u529F\u80FD\u3002</p>
 `,headers:[{level:2,title:"\u4E3A\u4EC0\u4E48\u5728\u4F7F\u7528 Algolia?",slug:"\u4E3A\u4EC0\u4E48\u5728\u4F7F\u7528-algolia",children:[]},{level:2,title:"\u5982\u4F55\u4F7F\u7528 Algolia?",slug:"\u5982\u4F55\u4F7F\u7528-algolia",children:[]},{level:2,title:"\u6570\u636E\u722C\u53D6",slug:"\u6570\u636E\u722C\u53D6",children:[]}],content:`---
 title: VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22
 date: 2022-07-22 9:07:35
@@ -13875,9 +16160,9 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207211115127.png" alt="\u56FE\u793A">\u5982\u679C\u663E\u793A\u6210\u529F\u722C\u53D6\uFF0C\u4E5F\u6709 Monitoring Success \u7684\u6570\u636E\uFF0C\u4F46 Records \u4E3A 0\uFF0C\u90A3\u5927\u6982\u662F\u722C\u866B\u63D0\u53D6\u6570\u636E\u7684\u903B\u8F91\u6709\u95EE\u9898\uFF0C\u70B9\u51FB\u5DE6\u4FA7\u9009\u9879\u680F\u4E2D\u7684 Editor\uFF0C\u67E5\u770B\u5177\u4F53\u7684\u722C\u866B\u903B\u8F91\uFF1A<img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207211119981.png" alt="\u56FE\u793A">\u50CF pathsToMatch \u8FD9\u91CC\u5982\u679C\u662F'<a href="https://anyfork.github.io/blog-docs/docs/" target="_blank" rel="noopener noreferrer">https://anyfork.github.io/blog-docs/docs/<ExternalLinkIcon/></a>**'\uFF0C\u4F46\u4F60\u7684\u7F51\u5740\u90FD\u662F <a href="https://anyfork.github.io/blog-docs/**" target="_blank" rel="noopener noreferrer">https://anyfork.github.io/blog-docs/**<ExternalLinkIcon/></a>\u5F00\u5934\u7684\uFF0C\u90A3\u8FD9\u91CC\u5927\u6982\u5C31\u662F\u4F1A\u63D0\u53D6\u9519\u8BEF\uFF0C\u4FEE\u6539\u4E00\u4E0B\uFF0C\u7136\u540E\u70B9\u51FB\u53F3\u4FA7\u7684\u6570\u636E\u8FDB\u884C\u6D4B\u8BD5\uFF1A<img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207211126112.png" alt="\u56FE\u793A">\u5982\u679C\u80FD\u50CF\u8FD9\u6837\u63D0\u53D6\u5230\u6570\u636E\uFF0C\u5C31\u8BF4\u660E\u6CA1\u6709\u4EC0\u4E48\u95EE\u9898\u4E86\uFF0C\u70B9\u51FB\u53F3\u4E0A\u89D2\u7684 Save\uFF0C\u7136\u540E\u5207\u6362\u56DE Overview\uFF0C\u70B9\u51FB\u53F3\u4E0A\u89D2\u7684 Restart crawling\uFF0C\u6211\u4EEC\u91CD\u65B0\u722C\u53D6\u4E00\u4E0B\u6570\u636E\uFF1A<img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207211128410.png" alt="\u56FE\u793A">\u9664\u4E86\u624B\u52A8\u8FDB\u884C\u722C\u53D6\u4E4B\u5916\uFF0C<code v-pre>Algolia</code>\u722C\u866B\u540E\u53F0\u4F1A\u5B9A\u65F6\u722C\u53D6\u6570\u636E\u3002\u81F3\u6B64\uFF0C VuePress \u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542F Algolia \u5168\u6587\u641C\u7D22\u5C31\u914D\u7F6E\u5B8C\u4E86\uFF0C\u5C0F\u4F19\u4F34\u8D76\u7D27\u5F00\u59CB\u5427\uFF01</li>
 </ul>
 <p><strong>\u53C2\u8003\u6587\u7AE0</strong>\uFF1A<a href="https://blog.csdn.net/weixin_55475226/article/details/123363042" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/weixin_55475226/article/details/123363042<ExternalLinkIcon/></a></p>
-`,date:"2022-07-22",deps:[],links:[],pathInferred:"/posts/other/algoliaSearch.html",pathLocale:"/",permalink:null,routeMeta:{title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"},sfcBlocks:[],slug:"algoliaSearch",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/algoliaSearch.md",filePathRelative:"posts/other/algoliaSearch.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/algoliaSearch.html.vue",componentFilePathRelative:"pages/posts/other/algoliaSearch.html.vue",componentFileChunkName:"v-cc63cd18",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/algoliaSearch.html.js",dataFilePathRelative:"pages/posts/other/algoliaSearch.html.js",dataFileChunkName:"v-cc63cd18",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/algoliaSearch.html",htmlFilePathRelative:"posts/other/algoliaSearch.html"},title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"},["/posts/other/algoliaSearch","/posts/other/algoliaSearch.md"]],["v-65bd7028","/posts/other/blogDocs.html",{_blog:{data:{key:"v-65bd7028",path:"/posts/other/blogDocs.html",title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",date:"2022-08-23T15:30:27.000Z",description:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002",lang:"zh-CN",tag:["\u535A\u5BA2"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208231513291.png",sidebar:"auto",sticky:1,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/blogDocs.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"}],["meta",{property:"og:description",content:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u535A\u5BA2"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u8FC7\u4E00\u6BB5\u65F6\u95F4\u7684\u6478\u7D22\uFF0C\u8E29\u8FC7\u4E86\u65E0\u6570\u7684\u5751\uFF0C\u7EC8\u4E8E\u642D\u5EFA\u597D\u4E86\u4E00\u4E2A\u5C5E\u4E8E\u81EA\u5DF1\u7684\u535A\u5BA2\u3002\u5728\u6B64\u8BB0\u5F55\u4E00\u4E0B\u8E29\u5751\u8FC7\u7A0B\uFF0C\u8BA9\u4EE5\u540E\u7684\u5C0F\u4F19\u4F34\u4EEC\u642D\u5EFA\u81EA\u5DF1\u535A\u5BA2\u7684\u65F6\u5019\u5C11\u8D70\u5F2F\u8DEF\u3002\u535A\u5BA2\u91C7\u7528\u4E86<code v-pre>vuepress@2.x</code>\u7248\u672C\u8FDB\u884C\u6784\u5EFA\uFF0C\u540C\u65F6\u5BF9\u9ED8\u8BA4\u4E3B\u9898\u8FDB\u884C\u4E86\u672C\u5730\u5316\u7EE7\u627F\u4FEE\u6539\uFF0C\u6574\u4E2A\u4E3B\u9898\u5927\u7684\u5E03\u5C40\u672A\u6539\u52A8\uFF0C\u53EA\u662F\u5BF9\u9996\u9875\u548C\u5C55\u793A\u9875\u9762\u8FDB\u884C\u4E86\u5E03\u5C40\u8C03\u6574\uFF0C\u6700\u7EC8\u6548\u679C\u4E3A\u5F53\u524D\u535A\u5BA2\u663E\u793A\u6548\u679C\u3002\u5C0F\u4F19\u4F34\u4EEC\u8FD8\u7B49\u4EC0\u4E48\uFF0C\u8D76\u5FEB\u5F00\u59CB\u5427\uFF01\u{1F44D}</p>
-`,headers:[{level:2,title:"\u4E00 \u521D\u59CB\u5316\u9879\u76EE",slug:"\u4E00-\u521D\u59CB\u5316\u9879\u76EE",children:[{level:3,title:"1 \u73AF\u5883\u4F9D\u8D56",slug:"_1-\u73AF\u5883\u4F9D\u8D56",children:[]},{level:3,title:"2 \u5FEB\u901F\u5F00\u59CB",slug:"_2-\u5FEB\u901F\u5F00\u59CB",children:[]},{level:3,title:"3 \u9879\u76EE\u542F\u52A8",slug:"_3-\u9879\u76EE\u542F\u52A8",children:[]}]},{level:2,title:"\u4E8C \u529F\u80FD\u914D\u7F6E",slug:"\u4E8C-\u529F\u80FD\u914D\u7F6E",children:[{level:3,title:"1 \u5E03\u5C40\u63D2\u69FD",slug:"_1-\u5E03\u5C40\u63D2\u69FD",children:[]},{level:3,title:"2 \u7EC4\u4EF6\u66FF\u6362",slug:"_2-\u7EC4\u4EF6\u66FF\u6362",children:[]},{level:3,title:"3 \u535A\u5BA2\u63D2\u4EF6",slug:"_3-\u535A\u5BA2\u63D2\u4EF6",children:[]},{level:3,title:"4 \u81EA\u5B9A\u4E49\u5BB9\u5668",slug:"_4-\u81EA\u5B9A\u4E49\u5BB9\u5668",children:[]}]},{level:2,title:"\u4E09 \u63D2\u4EF6\u5B89\u88C5",slug:"\u4E09-\u63D2\u4EF6\u5B89\u88C5",children:[{level:3,title:"1 PWA \u63D2\u4EF6",slug:"_1-pwa-\u63D2\u4EF6",children:[]},{level:3,title:"2 DocSearch \u63D2\u4EF6",slug:"_2-docsearch-\u63D2\u4EF6",children:[]},{level:3,title:"3 ReadingTime \u63D2\u4EF6",slug:"_3-readingtime-\u63D2\u4EF6",children:[]},{level:3,title:"4 SEO \u63D2\u4EF6",slug:"_4-seo-\u63D2\u4EF6",children:[]},{level:3,title:"5 SiteMap \u63D2\u4EF6",slug:"_5-sitemap-\u63D2\u4EF6",children:[]},{level:3,title:"6 Copyright \u63D2\u4EF6",slug:"_6-copyright-\u63D2\u4EF6",children:[]},{level:3,title:"7 CopyCode \u63D2\u4EF6",slug:"_7-copycode-\u63D2\u4EF6",children:[]},{level:3,title:"8 Waline \u8BC4\u8BBA\u63D2\u4EF6",slug:"_8-waline-\u8BC4\u8BBA\u63D2\u4EF6",children:[]},{level:3,title:"9 Markdown \u8BED\u6CD5\u6269\u5C55\u63D2\u4EF6",slug:"_9-markdown-\u8BED\u6CD5\u6269\u5C55\u63D2\u4EF6",children:[]},{level:3,title:"10 \u97F3\u4E50\u64AD\u653E\u5668\u63D2\u4EF6",slug:"_10-\u97F3\u4E50\u64AD\u653E\u5668\u63D2\u4EF6",children:[]},{level:3,title:"11 \u9F20\u6807\u70B9\u51FB\u7279\u6548\u63D2\u4EF6",slug:"_11-\u9F20\u6807\u70B9\u51FB\u7279\u6548\u63D2\u4EF6",children:[]},{level:3,title:"12 \u52A8\u6001\u6807\u9898\u7279\u6548\u63D2\u4EF6",slug:"_12-\u52A8\u6001\u6807\u9898\u7279\u6548\u63D2\u4EF6",children:[]},{level:3,title:"13 \u770B\u677F\u5A18\u63D2\u4EF6",slug:"_13-\u770B\u677F\u5A18\u63D2\u4EF6",children:[]},{level:3,title:"14 \u80CC\u666F\u5F69\u5E26\u63D2\u4EF6",slug:"_14-\u80CC\u666F\u5F69\u5E26\u63D2\u4EF6",children:[]},{level:3,title:"15 \u6A31\u82B1\u7279\u6548\u63D2\u4EF6",slug:"_15-\u6A31\u82B1\u7279\u6548\u63D2\u4EF6",children:[]}]},{level:2,title:"\u56DB \u9879\u76EE\u90E8\u7F72",slug:"\u56DB-\u9879\u76EE\u90E8\u7F72",children:[{level:3,title:"1 nginx \u670D\u52A1\u5668\u90E8\u7F72",slug:"_1-nginx-\u670D\u52A1\u5668\u90E8\u7F72",children:[]},{level:3,title:"2 \u90E8\u7F72\u5728Github Pages\u548CGitee Pages",slug:"_2-\u90E8\u7F72\u5728github-pages\u548Cgitee-pages",children:[]}]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/blogDocs.md",readingTime:{minutes:28.12,words:8437},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/blogDocs.html`},key:"v-65bd7028",path:"/posts/other/blogDocs.html",title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",date:"2022-08-23T15:30:27.000Z",description:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002",lang:"zh-CN",tag:["\u535A\u5BA2"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208231513291.png",sidebar:"auto",sticky:1,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/blogDocs.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"}],["meta",{property:"og:description",content:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u535A\u5BA2"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u8FC7\u4E00\u6BB5\u65F6\u95F4\u7684\u6478\u7D22\uFF0C\u8E29\u8FC7\u4E86\u65E0\u6570\u7684\u5751\uFF0C\u7EC8\u4E8E\u642D\u5EFA\u597D\u4E86\u4E00\u4E2A\u5C5E\u4E8E\u81EA\u5DF1\u7684\u535A\u5BA2\u3002\u5728\u6B64\u8BB0\u5F55\u4E00\u4E0B\u8E29\u5751\u8FC7\u7A0B\uFF0C\u8BA9\u4EE5\u540E\u7684\u5C0F\u4F19\u4F34\u4EEC\u642D\u5EFA\u81EA\u5DF1\u535A\u5BA2\u7684\u65F6\u5019\u5C11\u8D70\u5F2F\u8DEF\u3002\u535A\u5BA2\u91C7\u7528\u4E86<code v-pre>vuepress@2.x</code>\u7248\u672C\u8FDB\u884C\u6784\u5EFA\uFF0C\u540C\u65F6\u5BF9\u9ED8\u8BA4\u4E3B\u9898\u8FDB\u884C\u4E86\u672C\u5730\u5316\u7EE7\u627F\u4FEE\u6539\uFF0C\u6574\u4E2A\u4E3B\u9898\u5927\u7684\u5E03\u5C40\u672A\u6539\u52A8\uFF0C\u53EA\u662F\u5BF9\u9996\u9875\u548C\u5C55\u793A\u9875\u9762\u8FDB\u884C\u4E86\u5E03\u5C40\u8C03\u6574\uFF0C\u6700\u7EC8\u6548\u679C\u4E3A\u5F53\u524D\u535A\u5BA2\u663E\u793A\u6548\u679C\u3002\u5C0F\u4F19\u4F34\u4EEC\u8FD8\u7B49\u4EC0\u4E48\uFF0C\u8D76\u5FEB\u5F00\u59CB\u5427\uFF01\u{1F44D}</p>
+`,date:"2022-07-22",deps:[],links:[],pathInferred:"/posts/other/algoliaSearch.html",pathLocale:"/",permalink:null,routeMeta:{title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"},sfcBlocks:[],slug:"algoliaSearch",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/algoliaSearch.md",filePathRelative:"posts/other/algoliaSearch.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/algoliaSearch.html.vue",componentFilePathRelative:"pages/posts/other/algoliaSearch.html.vue",componentFileChunkName:"v-cc63cd18",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/algoliaSearch.html.js",dataFilePathRelative:"pages/posts/other/algoliaSearch.html.js",dataFileChunkName:"v-cc63cd18",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/algoliaSearch.html",htmlFilePathRelative:"posts/other/algoliaSearch.html"},title:"VuePress\u535A\u5BA2\u4F18\u5316\u4E4B\u5F00\u542FAlgolia\u5168\u6587\u641C\u7D22"},["/posts/other/algoliaSearch","/posts/other/algoliaSearch.md"]],["v-65bd7028","/posts/other/blogDocs.html",{_blog:{data:{key:"v-65bd7028",path:"/posts/other/blogDocs.html",title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",date:"2022-08-23T15:30:27.000Z",description:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002",lang:"zh-CN",tag:["\u535A\u5BA2"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208231513291.png",sidebar:"auto",sticky:1,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/blogDocs.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"}],["meta",{property:"og:description",content:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u535A\u5BA2"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u8FC7\u4E00\u6BB5\u65F6\u95F4\u7684\u6478\u7D22\uFF0C\u8E29\u8FC7\u4E86\u65E0\u6570\u7684\u5751\uFF0C\u7EC8\u4E8E\u642D\u5EFA\u597D\u4E86\u4E00\u4E2A\u5C5E\u4E8E\u81EA\u5DF1\u7684\u535A\u5BA2\u3002\u5728\u6B64\u8BB0\u5F55\u4E00\u4E0B\u8E29\u5751\u8FC7\u7A0B\uFF0C\u8BA9\u4EE5\u540E\u7684\u5C0F\u4F19\u4F34\u4EEC\u642D\u5EFA\u81EA\u5DF1\u535A\u5BA2\u7684\u65F6\u5019\u5C11\u8D70\u5F2F\u8DEF\u3002\u535A\u5BA2\u91C7\u7528\u4E86<code v-pre>vuepress@2.x</code>\u7248\u672C\u8FDB\u884C\u6784\u5EFA\uFF0C\u540C\u65F6\u5BF9\u9ED8\u8BA4\u4E3B\u9898\u8FDB\u884C\u4E86\u672C\u5730\u5316\u7EE7\u627F\u4FEE\u6539\uFF0C\u6574\u4E2A\u4E3B\u9898\u5927\u7684\u5E03\u5C40\u672A\u6539\u52A8\uFF0C\u53EA\u662F\u5BF9\u9996\u9875\u548C\u5C55\u793A\u9875\u9762\u8FDB\u884C\u4E86\u5E03\u5C40\u8C03\u6574\uFF0C\u6700\u7EC8\u6548\u679C\u4E3A\u5F53\u524D\u535A\u5BA2\u663E\u793A\u6548\u679C\u3002\u5C0F\u4F19\u4F34\u4EEC\u8FD8\u7B49\u4EC0\u4E48\uFF0C\u8D76\u5FEB\u5F00\u59CB\u5427\uFF01\u{1F44D}</p>
+`,headers:[{level:2,title:"\u4E00 \u521D\u59CB\u5316\u9879\u76EE",slug:"\u4E00-\u521D\u59CB\u5316\u9879\u76EE",children:[{level:3,title:"1 \u73AF\u5883\u4F9D\u8D56",slug:"_1-\u73AF\u5883\u4F9D\u8D56",children:[]},{level:3,title:"2 \u5FEB\u901F\u5F00\u59CB",slug:"_2-\u5FEB\u901F\u5F00\u59CB",children:[]},{level:3,title:"3 \u9879\u76EE\u542F\u52A8",slug:"_3-\u9879\u76EE\u542F\u52A8",children:[]}]},{level:2,title:"\u4E8C \u529F\u80FD\u914D\u7F6E",slug:"\u4E8C-\u529F\u80FD\u914D\u7F6E",children:[{level:3,title:"1 \u5E03\u5C40\u63D2\u69FD",slug:"_1-\u5E03\u5C40\u63D2\u69FD",children:[]},{level:3,title:"2 \u7EC4\u4EF6\u66FF\u6362",slug:"_2-\u7EC4\u4EF6\u66FF\u6362",children:[]},{level:3,title:"3 \u535A\u5BA2\u63D2\u4EF6",slug:"_3-\u535A\u5BA2\u63D2\u4EF6",children:[]},{level:3,title:"4 \u81EA\u5B9A\u4E49\u5BB9\u5668",slug:"_4-\u81EA\u5B9A\u4E49\u5BB9\u5668",children:[]}]},{level:2,title:"\u4E09 \u63D2\u4EF6\u5B89\u88C5",slug:"\u4E09-\u63D2\u4EF6\u5B89\u88C5",children:[{level:3,title:"1 PWA \u63D2\u4EF6",slug:"_1-pwa-\u63D2\u4EF6",children:[]},{level:3,title:"2 DocSearch \u63D2\u4EF6",slug:"_2-docsearch-\u63D2\u4EF6",children:[]},{level:3,title:"3 ReadingTime \u63D2\u4EF6",slug:"_3-readingtime-\u63D2\u4EF6",children:[]},{level:3,title:"4 SEO \u63D2\u4EF6",slug:"_4-seo-\u63D2\u4EF6",children:[]},{level:3,title:"5 SiteMap \u63D2\u4EF6",slug:"_5-sitemap-\u63D2\u4EF6",children:[]},{level:3,title:"6 Copyright \u63D2\u4EF6",slug:"_6-copyright-\u63D2\u4EF6",children:[]},{level:3,title:"7 CopyCode \u63D2\u4EF6",slug:"_7-copycode-\u63D2\u4EF6",children:[]},{level:3,title:"8 Waline \u8BC4\u8BBA\u63D2\u4EF6",slug:"_8-waline-\u8BC4\u8BBA\u63D2\u4EF6",children:[]},{level:3,title:"9 Markdown \u8BED\u6CD5\u6269\u5C55\u63D2\u4EF6",slug:"_9-markdown-\u8BED\u6CD5\u6269\u5C55\u63D2\u4EF6",children:[]},{level:3,title:"10 \u97F3\u4E50\u64AD\u653E\u5668\u63D2\u4EF6",slug:"_10-\u97F3\u4E50\u64AD\u653E\u5668\u63D2\u4EF6",children:[]},{level:3,title:"11 \u9F20\u6807\u70B9\u51FB\u7279\u6548\u63D2\u4EF6",slug:"_11-\u9F20\u6807\u70B9\u51FB\u7279\u6548\u63D2\u4EF6",children:[]},{level:3,title:"12 \u52A8\u6001\u6807\u9898\u7279\u6548\u63D2\u4EF6",slug:"_12-\u52A8\u6001\u6807\u9898\u7279\u6548\u63D2\u4EF6",children:[]},{level:3,title:"13 \u770B\u677F\u5A18\u63D2\u4EF6",slug:"_13-\u770B\u677F\u5A18\u63D2\u4EF6",children:[]},{level:3,title:"14 \u80CC\u666F\u5F69\u5E26\u63D2\u4EF6",slug:"_14-\u80CC\u666F\u5F69\u5E26\u63D2\u4EF6",children:[]},{level:3,title:"15 \u6A31\u82B1\u7279\u6548\u63D2\u4EF6",slug:"_15-\u6A31\u82B1\u7279\u6548\u63D2\u4EF6",children:[]}]},{level:2,title:"\u56DB \u9879\u76EE\u90E8\u7F72",slug:"\u56DB-\u9879\u76EE\u90E8\u7F72",children:[{level:3,title:"1 nginx \u670D\u52A1\u5668\u90E8\u7F72",slug:"_1-nginx-\u670D\u52A1\u5668\u90E8\u7F72",children:[]},{level:3,title:"2 \u90E8\u7F72\u5728Github Pages\u548CGitee Pages",slug:"_2-\u90E8\u7F72\u5728github-pages\u548Cgitee-pages",children:[]}]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/blogDocs.md",readingTime:{minutes:28.12,words:8437},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/blogDocs.html`},key:"v-65bd7028",path:"/posts/other/blogDocs.html",title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",lang:"zh-CN",frontmatter:{title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863",date:"2022-08-23T15:30:27.000Z",description:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002",lang:"zh-CN",tag:["\u535A\u5BA2"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208231513291.png",sidebar:"auto",sticky:1,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/blogDocs.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"}],["meta",{property:"og:description",content:"\u4ECE\u96F6\u5F00\u59CB\u642D\u5EFA\u4E00\u4E2A\u57FA\u4E8Evuepress2.X\u7248\u672C\u7684Markdown\u535A\u5BA2\u6587\u6863\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u535A\u5BA2"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u8FC7\u4E00\u6BB5\u65F6\u95F4\u7684\u6478\u7D22\uFF0C\u8E29\u8FC7\u4E86\u65E0\u6570\u7684\u5751\uFF0C\u7EC8\u4E8E\u642D\u5EFA\u597D\u4E86\u4E00\u4E2A\u5C5E\u4E8E\u81EA\u5DF1\u7684\u535A\u5BA2\u3002\u5728\u6B64\u8BB0\u5F55\u4E00\u4E0B\u8E29\u5751\u8FC7\u7A0B\uFF0C\u8BA9\u4EE5\u540E\u7684\u5C0F\u4F19\u4F34\u4EEC\u642D\u5EFA\u81EA\u5DF1\u535A\u5BA2\u7684\u65F6\u5019\u5C11\u8D70\u5F2F\u8DEF\u3002\u535A\u5BA2\u91C7\u7528\u4E86<code v-pre>vuepress@2.x</code>\u7248\u672C\u8FDB\u884C\u6784\u5EFA\uFF0C\u540C\u65F6\u5BF9\u9ED8\u8BA4\u4E3B\u9898\u8FDB\u884C\u4E86\u672C\u5730\u5316\u7EE7\u627F\u4FEE\u6539\uFF0C\u6574\u4E2A\u4E3B\u9898\u5927\u7684\u5E03\u5C40\u672A\u6539\u52A8\uFF0C\u53EA\u662F\u5BF9\u9996\u9875\u548C\u5C55\u793A\u9875\u9762\u8FDB\u884C\u4E86\u5E03\u5C40\u8C03\u6574\uFF0C\u6700\u7EC8\u6548\u679C\u4E3A\u5F53\u524D\u535A\u5BA2\u663E\u793A\u6548\u679C\u3002\u5C0F\u4F19\u4F34\u4EEC\u8FD8\u7B49\u4EC0\u4E48\uFF0C\u8D76\u5FEB\u5F00\u59CB\u5427\uFF01\u{1F44D}</p>
 `,headers:[{level:2,title:"\u4E00 \u521D\u59CB\u5316\u9879\u76EE",slug:"\u4E00-\u521D\u59CB\u5316\u9879\u76EE",children:[{level:3,title:"1 \u73AF\u5883\u4F9D\u8D56",slug:"_1-\u73AF\u5883\u4F9D\u8D56",children:[]},{level:3,title:"2 \u5FEB\u901F\u5F00\u59CB",slug:"_2-\u5FEB\u901F\u5F00\u59CB",children:[]},{level:3,title:"3 \u9879\u76EE\u542F\u52A8",slug:"_3-\u9879\u76EE\u542F\u52A8",children:[]}]},{level:2,title:"\u4E8C \u529F\u80FD\u914D\u7F6E",slug:"\u4E8C-\u529F\u80FD\u914D\u7F6E",children:[{level:3,title:"1 \u5E03\u5C40\u63D2\u69FD",slug:"_1-\u5E03\u5C40\u63D2\u69FD",children:[]},{level:3,title:"2 \u7EC4\u4EF6\u66FF\u6362",slug:"_2-\u7EC4\u4EF6\u66FF\u6362",children:[]},{level:3,title:"3 \u535A\u5BA2\u63D2\u4EF6",slug:"_3-\u535A\u5BA2\u63D2\u4EF6",children:[]},{level:3,title:"4 \u81EA\u5B9A\u4E49\u5BB9\u5668",slug:"_4-\u81EA\u5B9A\u4E49\u5BB9\u5668",children:[]}]},{level:2,title:"\u4E09 \u63D2\u4EF6\u5B89\u88C5",slug:"\u4E09-\u63D2\u4EF6\u5B89\u88C5",children:[{level:3,title:"1 PWA \u63D2\u4EF6",slug:"_1-pwa-\u63D2\u4EF6",children:[]},{level:3,title:"2 DocSearch \u63D2\u4EF6",slug:"_2-docsearch-\u63D2\u4EF6",children:[]},{level:3,title:"3 ReadingTime \u63D2\u4EF6",slug:"_3-readingtime-\u63D2\u4EF6",children:[]},{level:3,title:"4 SEO \u63D2\u4EF6",slug:"_4-seo-\u63D2\u4EF6",children:[]},{level:3,title:"5 SiteMap \u63D2\u4EF6",slug:"_5-sitemap-\u63D2\u4EF6",children:[]},{level:3,title:"6 Copyright \u63D2\u4EF6",slug:"_6-copyright-\u63D2\u4EF6",children:[]},{level:3,title:"7 CopyCode \u63D2\u4EF6",slug:"_7-copycode-\u63D2\u4EF6",children:[]},{level:3,title:"8 Waline \u8BC4\u8BBA\u63D2\u4EF6",slug:"_8-waline-\u8BC4\u8BBA\u63D2\u4EF6",children:[]},{level:3,title:"9 Markdown \u8BED\u6CD5\u6269\u5C55\u63D2\u4EF6",slug:"_9-markdown-\u8BED\u6CD5\u6269\u5C55\u63D2\u4EF6",children:[]},{level:3,title:"10 \u97F3\u4E50\u64AD\u653E\u5668\u63D2\u4EF6",slug:"_10-\u97F3\u4E50\u64AD\u653E\u5668\u63D2\u4EF6",children:[]},{level:3,title:"11 \u9F20\u6807\u70B9\u51FB\u7279\u6548\u63D2\u4EF6",slug:"_11-\u9F20\u6807\u70B9\u51FB\u7279\u6548\u63D2\u4EF6",children:[]},{level:3,title:"12 \u52A8\u6001\u6807\u9898\u7279\u6548\u63D2\u4EF6",slug:"_12-\u52A8\u6001\u6807\u9898\u7279\u6548\u63D2\u4EF6",children:[]},{level:3,title:"13 \u770B\u677F\u5A18\u63D2\u4EF6",slug:"_13-\u770B\u677F\u5A18\u63D2\u4EF6",children:[]},{level:3,title:"14 \u80CC\u666F\u5F69\u5E26\u63D2\u4EF6",slug:"_14-\u80CC\u666F\u5F69\u5E26\u63D2\u4EF6",children:[]},{level:3,title:"15 \u6A31\u82B1\u7279\u6548\u63D2\u4EF6",slug:"_15-\u6A31\u82B1\u7279\u6548\u63D2\u4EF6",children:[]}]},{level:2,title:"\u56DB \u9879\u76EE\u90E8\u7F72",slug:"\u56DB-\u9879\u76EE\u90E8\u7F72",children:[{level:3,title:"1 nginx \u670D\u52A1\u5668\u90E8\u7F72",slug:"_1-nginx-\u670D\u52A1\u5668\u90E8\u7F72",children:[]},{level:3,title:"2 \u90E8\u7F72\u5728Github Pages\u548CGitee Pages",slug:"_2-\u90E8\u7F72\u5728github-pages\u548Cgitee-pages",children:[]}]}],content:`---
 title: VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863
 date: 2022-8-23 15:30:27
@@ -16556,9 +18841,9 @@ server {
 <h3 id="_2-\u90E8\u7F72\u5728github-pages\u548Cgitee-pages" tabindex="-1"><a class="header-anchor" href="#_2-\u90E8\u7F72\u5728github-pages\u548Cgitee-pages" aria-hidden="true">#</a> 2 \u90E8\u7F72\u5728<code v-pre>Github Pages</code>\u548C<code v-pre>Gitee Pages</code></h3>
 <p>\u2003\u9879\u76EE\u91C7\u7528<code v-pre>Github Pages</code>\u548C<code v-pre>Gitee Pages</code>\u65B9\u5F0F\u8FDB\u884C\u4EE3\u7406\u90E8\u7F72\uFF0C\u4F9D\u9760<code v-pre>Github</code>\u5F3A\u5927\u7684\u5DE5\u4F5C\u6D41\u673A\u5236\u5B9E\u73B0\u81EA\u52A8\u7F16\u8BD1\u6253\u5305\u90E8\u7F72\u3002\u5927\u81F4\u90E8\u7F72\u6D41\u7A0B\uFF1A\u672C\u5730\u901A\u8FC7 git \u63D0\u4EA4\u6E90\u4EE3\u7801\uFF0C<code v-pre>Github Actions</code>\u89E6\u53D1\u5DE5\u4F5C\u6D41<code v-pre>workflows</code>\u5B9E\u73B0\u5206\u652F\u4EE3\u7801\u68C0\u51FA\uFF0C\u4F9D\u8D56\u5B89\u88C5\uFF0C\u6253\u5305\u7F16\u8BD1\uFF0C\u521B\u5EFA<code v-pre>gh-pages</code>\u5206\u652F\uFF0C\u4E0A\u4F20<code v-pre>dist</code>\u7F16\u8BD1\u540E\u4EE3\u7801\u5230<code v-pre>gh-pages</code>\uFF0C<code v-pre>gh-pages</code>\u5206\u652F\u90E8\u7F72\u5230\`\`Github Pages<code v-pre>\uFF0C\u540C\u6B65</code>Github<code v-pre>\u4ED3\u5E93\u4EE3\u7801\u81F3</code>Giee<code v-pre>,</code>Gitee Pages<code v-pre>\u90E8\u7F72\u3002\u4E0A\u8FF0\u6D41\u7A0B\u5B9E\u73B0\u4E86\u81EA\u52A8\u7F16\u8BD1\u90E8\u7F72\u548C</code>github<code v-pre>\u4EE3\u7801\u540C\u6B65\u90E8\u7F72\u81F3</code>gitee\`\u3002</p>
 <p>\u5177\u4F53\u5B9E\u73B0\u65B9\u5F0F\uFF0C\u8BF7\u53C2\u8003\uFF1A<RouterLink to="/posts/other/githubPages.html">GitHub Actions \u81EA\u52A8\u90E8\u7F72 GitHub Pages \u5E76\u540C\u6B65 Gitee Pages</RouterLink></p>
-`,date:"2022-08-23",deps:[],links:[{raw:"./algoliaSearch.md",relative:"posts/other/algoliaSearch.md",absolute:"/blog-docs/posts/other/algoliaSearch.md"},{raw:"./walineServer.md",relative:"posts/other/walineServer.md",absolute:"/blog-docs/posts/other/walineServer.md"},{raw:"./githubPages.md",relative:"posts/other/githubPages.md",absolute:"/blog-docs/posts/other/githubPages.md"}],pathInferred:"/posts/other/blogDocs.html",pathLocale:"/",permalink:null,routeMeta:{title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"},sfcBlocks:[],slug:"blogDocs",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/blogDocs.md",filePathRelative:"posts/other/blogDocs.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/blogDocs.html.vue",componentFilePathRelative:"pages/posts/other/blogDocs.html.vue",componentFileChunkName:"v-65bd7028",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/blogDocs.html.js",dataFilePathRelative:"pages/posts/other/blogDocs.html.js",dataFileChunkName:"v-65bd7028",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/blogDocs.html",htmlFilePathRelative:"posts/other/blogDocs.html"},title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"},["/posts/other/blogDocs","/posts/other/blogDocs.md"]],["v-9b67abf4","/posts/other/firends.html",{_blog:{data:{key:"v-9b67abf4",path:"/posts/other/firends.html",title:"\u670B\u53CB\u5708",lang:"zh-CN",frontmatter:{title:"\u670B\u53CB\u5708",date:"2022-02-14T15:34:34.000Z",description:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708",lang:"zh-CN",tag:["\u5176\u4ED6"],category:["\u5176\u4ED6"],head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/firends.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u670B\u53CB\u5708"}],["meta",{property:"og:description",content:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-14T15:34:34.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u672C\u680F\u76EE\u53EA\u8981\u6536\u96C6\u4E00\u4E9B\u57FA\u4E8E vuepress \u642D\u5EFA\u7684\u9AD8\u8D28\u91CF\u7684\u535A\u5BA2\u53CB\u60C5\u7AD9\u70B9\u94FE\u63A5\uFF0C\u7528\u4E8E\u76F8\u4E92\u53C2\u8003\uFF0C\u501F\u9274\u548C\u5B66\u4E60\uFF0C\u90E8\u5206\u7F51\u7AD9\u9700\u8981\u7FFB\u5899\u624D\u80FD\u8BBF\u95EE\uFF0C\u540C\u65F6\u4E5F\u6B22\u8FCE\u65B0\u670B\u53CB\u52A0\u5165\u3002</p>
-`,headers:[{level:3,title:"\u670B\u53CB\u5708\u96C6\u9526",slug:"\u670B\u53CB\u5708\u96C6\u9526",children:[]},{level:3,title:"\u670B\u53CB\u5708\u4E92\u6362",slug:"\u670B\u53CB\u5708\u4E92\u6362",children:[]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/firends.md",readingTime:{minutes:3.07,words:922},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/firends.html`},key:"v-9b67abf4",path:"/posts/other/firends.html",title:"\u670B\u53CB\u5708",lang:"zh-CN",frontmatter:{title:"\u670B\u53CB\u5708",date:"2022-02-14T15:34:34.000Z",description:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708",lang:"zh-CN",tag:["\u5176\u4ED6"],category:["\u5176\u4ED6"],head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/firends.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u670B\u53CB\u5708"}],["meta",{property:"og:description",content:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-14T15:34:34.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u672C\u680F\u76EE\u53EA\u8981\u6536\u96C6\u4E00\u4E9B\u57FA\u4E8E vuepress \u642D\u5EFA\u7684\u9AD8\u8D28\u91CF\u7684\u535A\u5BA2\u53CB\u60C5\u7AD9\u70B9\u94FE\u63A5\uFF0C\u7528\u4E8E\u76F8\u4E92\u53C2\u8003\uFF0C\u501F\u9274\u548C\u5B66\u4E60\uFF0C\u90E8\u5206\u7F51\u7AD9\u9700\u8981\u7FFB\u5899\u624D\u80FD\u8BBF\u95EE\uFF0C\u540C\u65F6\u4E5F\u6B22\u8FCE\u65B0\u670B\u53CB\u52A0\u5165\u3002</p>
+`,date:"2022-08-23",deps:[],links:[{raw:"./algoliaSearch.md",relative:"posts/other/algoliaSearch.md",absolute:"/blog-docs/posts/other/algoliaSearch.md"},{raw:"./walineServer.md",relative:"posts/other/walineServer.md",absolute:"/blog-docs/posts/other/walineServer.md"},{raw:"./githubPages.md",relative:"posts/other/githubPages.md",absolute:"/blog-docs/posts/other/githubPages.md"}],pathInferred:"/posts/other/blogDocs.html",pathLocale:"/",permalink:null,routeMeta:{title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"},sfcBlocks:[],slug:"blogDocs",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/blogDocs.md",filePathRelative:"posts/other/blogDocs.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/blogDocs.html.vue",componentFilePathRelative:"pages/posts/other/blogDocs.html.vue",componentFileChunkName:"v-65bd7028",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/blogDocs.html.js",dataFilePathRelative:"pages/posts/other/blogDocs.html.js",dataFileChunkName:"v-65bd7028",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/blogDocs.html",htmlFilePathRelative:"posts/other/blogDocs.html"},title:"VuePress\u535A\u5BA2\u642D\u5EFA\u6587\u6863"},["/posts/other/blogDocs","/posts/other/blogDocs.md"]],["v-9b67abf4","/posts/other/firends.html",{_blog:{data:{key:"v-9b67abf4",path:"/posts/other/firends.html",title:"\u670B\u53CB\u5708",lang:"zh-CN",frontmatter:{title:"\u670B\u53CB\u5708",date:"2022-02-14T15:34:34.000Z",description:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708",lang:"zh-CN",tag:["\u5176\u4ED6"],category:["\u5176\u4ED6"],head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/firends.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u670B\u53CB\u5708"}],["meta",{property:"og:description",content:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-14T15:34:34.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u672C\u680F\u76EE\u53EA\u8981\u6536\u96C6\u4E00\u4E9B\u57FA\u4E8E vuepress \u642D\u5EFA\u7684\u9AD8\u8D28\u91CF\u7684\u535A\u5BA2\u53CB\u60C5\u7AD9\u70B9\u94FE\u63A5\uFF0C\u7528\u4E8E\u76F8\u4E92\u53C2\u8003\uFF0C\u501F\u9274\u548C\u5B66\u4E60\uFF0C\u90E8\u5206\u7F51\u7AD9\u9700\u8981\u7FFB\u5899\u624D\u80FD\u8BBF\u95EE\uFF0C\u540C\u65F6\u4E5F\u6B22\u8FCE\u65B0\u670B\u53CB\u52A0\u5165\u3002</p>
+`,headers:[{level:3,title:"\u670B\u53CB\u5708\u96C6\u9526",slug:"\u670B\u53CB\u5708\u96C6\u9526",children:[]},{level:3,title:"\u670B\u53CB\u5708\u4E92\u6362",slug:"\u670B\u53CB\u5708\u4E92\u6362",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/firends.md",readingTime:{minutes:3.07,words:922},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/firends.html`},key:"v-9b67abf4",path:"/posts/other/firends.html",title:"\u670B\u53CB\u5708",lang:"zh-CN",frontmatter:{title:"\u670B\u53CB\u5708",date:"2022-02-14T15:34:34.000Z",description:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708",lang:"zh-CN",tag:["\u5176\u4ED6"],category:["\u5176\u4ED6"],head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/firends.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u670B\u53CB\u5708"}],["meta",{property:"og:description",content:"\u6536\u96C6vuepress\u642D\u5EFA\u7684\u535A\u5BA2\u94FE\u63A5\u5F62\u6210\u670B\u53CB\u5708"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-14T15:34:34.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u672C\u680F\u76EE\u53EA\u8981\u6536\u96C6\u4E00\u4E9B\u57FA\u4E8E vuepress \u642D\u5EFA\u7684\u9AD8\u8D28\u91CF\u7684\u535A\u5BA2\u53CB\u60C5\u7AD9\u70B9\u94FE\u63A5\uFF0C\u7528\u4E8E\u76F8\u4E92\u53C2\u8003\uFF0C\u501F\u9274\u548C\u5B66\u4E60\uFF0C\u90E8\u5206\u7F51\u7AD9\u9700\u8981\u7FFB\u5899\u624D\u80FD\u8BBF\u95EE\uFF0C\u540C\u65F6\u4E5F\u6B22\u8FCE\u65B0\u670B\u53CB\u52A0\u5165\u3002</p>
 `,headers:[{level:3,title:"\u670B\u53CB\u5708\u96C6\u9526",slug:"\u670B\u53CB\u5708\u96C6\u9526",children:[]},{level:3,title:"\u670B\u53CB\u5708\u4E92\u6362",slug:"\u670B\u53CB\u5708\u4E92\u6362",children:[]}],content:`---
 title: \u670B\u53CB\u5708
 date: 2022-02-14 15:34:34
@@ -17050,9 +19335,9 @@ category:
   <span class="token key atrule">link</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//anyfork.gitee.io/blog<span class="token punctuation">-</span>docs/
   <span class="token key atrule">bgColor</span><span class="token punctuation">:</span> rgb(218 88 88 / 62%)
   <span class="token key atrule">textColor</span><span class="token punctuation">:</span> rgb(5 41 14 / 75%)
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-02-14",deps:[],links:[],pathInferred:"/posts/other/firends.html",pathLocale:"/",permalink:null,routeMeta:{title:"\u670B\u53CB\u5708"},sfcBlocks:[],slug:"firends",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/firends.md",filePathRelative:"posts/other/firends.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/firends.html.vue",componentFilePathRelative:"pages/posts/other/firends.html.vue",componentFileChunkName:"v-9b67abf4",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/firends.html.js",dataFilePathRelative:"pages/posts/other/firends.html.js",dataFileChunkName:"v-9b67abf4",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/firends.html",htmlFilePathRelative:"posts/other/firends.html"},title:"\u670B\u53CB\u5708"},["/posts/other/firends","/posts/other/firends.md"]],["v-22a1c62c","/posts/other/githubPages.html",{_blog:{data:{key:"v-22a1c62c",path:"/posts/other/githubPages.html",title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",frontmatter:{title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",date:"2022-07-20T14:07:35.000Z",description:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",tag:["Github Pages"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201555438.jpg",sticky:2,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/githubPages.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:description",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Github Pages"}],["meta",{property:"article:published_time",content:"2022-07-20T14:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003GitHub Pages \u548C Giee Pages \u4E00\u822C\u591A\u7528\u4E8E\u6258\u7BA1\u4E2A\u4EBA\u7684\u9759\u6001\u7F51\u7AD9\uFF0C\u73B0\u5728\u5F88\u591A\u4EBA\u4E5F\u7528\u6765\u5B83\u6765\u642D\u5EFA\u79C1\u4EBA\u535A\u5BA2\uFF0C\u4E5F\u7B97\u662F\u7701\u53BB\u4E86\u8D2D\u4E70\u670D\u52A1\u5668\u3001\u57DF\u540D\u4EE5\u53CA\u7F51\u7AD9\u5907\u6848\u7B49\u7B49\u4E00\u7CFB\u5217\u590D\u6742\u7684\u64CD\u4F5C\u3002GitHub \u53EF\u4EE5\u901A\u8FC7 Action \u5DE5\u4F5C\u6D41\u5B9E\u73B0\u81EA\u52A8\u90E8\u7F72\uFF0C\u90E8\u7F72\u7F51\u7AD9\u975E\u5E38\u65B9\u4FBF\uFF0C\u4F46\u662F GitHub \u6BD5\u7ADF\u662F\u56FD\u5916\u4ED3\u5E93\uFF0C\u6709\u65F6\u5019\u4F1A\u51FA\u73B0\u8BBF\u95EE\u901F\u5EA6\u6162\uFF0C\u52A0\u8F7D\u4E0D\u4E86\u56FE\u7247\u7B49\u95EE\u9898\u3002\u56E0\u6B64\uFF0C\u8BB8\u591A\u4EBA\u4FBF\u60F3\u5230 Gitee Pages \u6765\u90E8\u7F72\u7AD9\u70B9\uFF0C\u867D\u7136\u8BBF\u95EE\u901F\u5EA6\u5FEB, \u4F46\u5F0A\u7AEF\u4E5F\u5F88\u660E\u663E\uFF0C\u514D\u8D39\u7248\u7684 Gitee Pgaes \u4E0D\u652F\u6301\u81EA\u52A8\u90E8\u7F72\u65B9\u6848\uFF0C\u624B\u52A8\u90E8\u7F72\u53C8\u6BD4\u8F83\u9EBB\u70E6(Gitee Pages Pro \u867D\u7136\u4E5F\u5B9E\u73B0\u4E86\u81EA\u52A8\u5316\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\uFF0C\u4F46\u9700\u8981\u6536\u8D39)\u3002 \u4E0B\u9762\u5C31\u4ECB\u7ECD\u4E00\u79CD\u6709\u6548\u7684\u89E3\u51B3\u65B9\u6848\uFF1A\u5229\u7528 GitHub Actions \u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\uFF0C\u540C\u65F6\u63A8\u9001\u4EE3\u7801\u81F3 Giee,\u5E76\u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\u3002</p>
-`,headers:[{level:2,title:"\u51C6\u5907\u5DE5\u4F5C",slug:"\u51C6\u5907\u5DE5\u4F5C",children:[]},{level:2,title:"\u5DE5\u4F5C\u6D41\u7A0B\u811A\u672C\u7F16\u5199",slug:"\u5DE5\u4F5C\u6D41\u7A0B\u811A\u672C\u7F16\u5199",children:[]},{level:2,title:"\u63D0\u4EA4\u4EE3\u7801",slug:"\u63D0\u4EA4\u4EE3\u7801",children:[]},{level:2,title:"\u76F8\u5173 Aciton \u5730\u5740",slug:"\u76F8\u5173-aciton-\u5730\u5740",children:[]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/githubPages.md",readingTime:{minutes:4.21,words:1262},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/githubPages.html`},key:"v-22a1c62c",path:"/posts/other/githubPages.html",title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",frontmatter:{title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",date:"2022-07-20T14:07:35.000Z",description:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",tag:["Github Pages"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201555438.jpg",sticky:2,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/githubPages.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:description",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Github Pages"}],["meta",{property:"article:published_time",content:"2022-07-20T14:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003GitHub Pages \u548C Giee Pages \u4E00\u822C\u591A\u7528\u4E8E\u6258\u7BA1\u4E2A\u4EBA\u7684\u9759\u6001\u7F51\u7AD9\uFF0C\u73B0\u5728\u5F88\u591A\u4EBA\u4E5F\u7528\u6765\u5B83\u6765\u642D\u5EFA\u79C1\u4EBA\u535A\u5BA2\uFF0C\u4E5F\u7B97\u662F\u7701\u53BB\u4E86\u8D2D\u4E70\u670D\u52A1\u5668\u3001\u57DF\u540D\u4EE5\u53CA\u7F51\u7AD9\u5907\u6848\u7B49\u7B49\u4E00\u7CFB\u5217\u590D\u6742\u7684\u64CD\u4F5C\u3002GitHub \u53EF\u4EE5\u901A\u8FC7 Action \u5DE5\u4F5C\u6D41\u5B9E\u73B0\u81EA\u52A8\u90E8\u7F72\uFF0C\u90E8\u7F72\u7F51\u7AD9\u975E\u5E38\u65B9\u4FBF\uFF0C\u4F46\u662F GitHub \u6BD5\u7ADF\u662F\u56FD\u5916\u4ED3\u5E93\uFF0C\u6709\u65F6\u5019\u4F1A\u51FA\u73B0\u8BBF\u95EE\u901F\u5EA6\u6162\uFF0C\u52A0\u8F7D\u4E0D\u4E86\u56FE\u7247\u7B49\u95EE\u9898\u3002\u56E0\u6B64\uFF0C\u8BB8\u591A\u4EBA\u4FBF\u60F3\u5230 Gitee Pages \u6765\u90E8\u7F72\u7AD9\u70B9\uFF0C\u867D\u7136\u8BBF\u95EE\u901F\u5EA6\u5FEB, \u4F46\u5F0A\u7AEF\u4E5F\u5F88\u660E\u663E\uFF0C\u514D\u8D39\u7248\u7684 Gitee Pgaes \u4E0D\u652F\u6301\u81EA\u52A8\u90E8\u7F72\u65B9\u6848\uFF0C\u624B\u52A8\u90E8\u7F72\u53C8\u6BD4\u8F83\u9EBB\u70E6(Gitee Pages Pro \u867D\u7136\u4E5F\u5B9E\u73B0\u4E86\u81EA\u52A8\u5316\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\uFF0C\u4F46\u9700\u8981\u6536\u8D39)\u3002 \u4E0B\u9762\u5C31\u4ECB\u7ECD\u4E00\u79CD\u6709\u6548\u7684\u89E3\u51B3\u65B9\u6848\uFF1A\u5229\u7528 GitHub Actions \u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\uFF0C\u540C\u65F6\u63A8\u9001\u4EE3\u7801\u81F3 Giee,\u5E76\u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\u3002</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-02-14",deps:[],links:[],pathInferred:"/posts/other/firends.html",pathLocale:"/",permalink:null,routeMeta:{title:"\u670B\u53CB\u5708"},sfcBlocks:[],slug:"firends",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/firends.md",filePathRelative:"posts/other/firends.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/firends.html.vue",componentFilePathRelative:"pages/posts/other/firends.html.vue",componentFileChunkName:"v-9b67abf4",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/firends.html.js",dataFilePathRelative:"pages/posts/other/firends.html.js",dataFileChunkName:"v-9b67abf4",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/firends.html",htmlFilePathRelative:"posts/other/firends.html"},title:"\u670B\u53CB\u5708"},["/posts/other/firends","/posts/other/firends.md"]],["v-22a1c62c","/posts/other/githubPages.html",{_blog:{data:{key:"v-22a1c62c",path:"/posts/other/githubPages.html",title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",frontmatter:{title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",date:"2022-07-20T14:07:35.000Z",description:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",tag:["Github Pages"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201555438.jpg",sticky:2,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/githubPages.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:description",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Github Pages"}],["meta",{property:"article:published_time",content:"2022-07-20T14:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003GitHub Pages \u548C Giee Pages \u4E00\u822C\u591A\u7528\u4E8E\u6258\u7BA1\u4E2A\u4EBA\u7684\u9759\u6001\u7F51\u7AD9\uFF0C\u73B0\u5728\u5F88\u591A\u4EBA\u4E5F\u7528\u6765\u5B83\u6765\u642D\u5EFA\u79C1\u4EBA\u535A\u5BA2\uFF0C\u4E5F\u7B97\u662F\u7701\u53BB\u4E86\u8D2D\u4E70\u670D\u52A1\u5668\u3001\u57DF\u540D\u4EE5\u53CA\u7F51\u7AD9\u5907\u6848\u7B49\u7B49\u4E00\u7CFB\u5217\u590D\u6742\u7684\u64CD\u4F5C\u3002GitHub \u53EF\u4EE5\u901A\u8FC7 Action \u5DE5\u4F5C\u6D41\u5B9E\u73B0\u81EA\u52A8\u90E8\u7F72\uFF0C\u90E8\u7F72\u7F51\u7AD9\u975E\u5E38\u65B9\u4FBF\uFF0C\u4F46\u662F GitHub \u6BD5\u7ADF\u662F\u56FD\u5916\u4ED3\u5E93\uFF0C\u6709\u65F6\u5019\u4F1A\u51FA\u73B0\u8BBF\u95EE\u901F\u5EA6\u6162\uFF0C\u52A0\u8F7D\u4E0D\u4E86\u56FE\u7247\u7B49\u95EE\u9898\u3002\u56E0\u6B64\uFF0C\u8BB8\u591A\u4EBA\u4FBF\u60F3\u5230 Gitee Pages \u6765\u90E8\u7F72\u7AD9\u70B9\uFF0C\u867D\u7136\u8BBF\u95EE\u901F\u5EA6\u5FEB, \u4F46\u5F0A\u7AEF\u4E5F\u5F88\u660E\u663E\uFF0C\u514D\u8D39\u7248\u7684 Gitee Pgaes \u4E0D\u652F\u6301\u81EA\u52A8\u90E8\u7F72\u65B9\u6848\uFF0C\u624B\u52A8\u90E8\u7F72\u53C8\u6BD4\u8F83\u9EBB\u70E6(Gitee Pages Pro \u867D\u7136\u4E5F\u5B9E\u73B0\u4E86\u81EA\u52A8\u5316\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\uFF0C\u4F46\u9700\u8981\u6536\u8D39)\u3002 \u4E0B\u9762\u5C31\u4ECB\u7ECD\u4E00\u79CD\u6709\u6548\u7684\u89E3\u51B3\u65B9\u6848\uFF1A\u5229\u7528 GitHub Actions \u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\uFF0C\u540C\u65F6\u63A8\u9001\u4EE3\u7801\u81F3 Giee,\u5E76\u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\u3002</p>
+`,headers:[{level:2,title:"\u51C6\u5907\u5DE5\u4F5C",slug:"\u51C6\u5907\u5DE5\u4F5C",children:[]},{level:2,title:"\u5DE5\u4F5C\u6D41\u7A0B\u811A\u672C\u7F16\u5199",slug:"\u5DE5\u4F5C\u6D41\u7A0B\u811A\u672C\u7F16\u5199",children:[]},{level:2,title:"\u63D0\u4EA4\u4EE3\u7801",slug:"\u63D0\u4EA4\u4EE3\u7801",children:[]},{level:2,title:"\u76F8\u5173 Aciton \u5730\u5740",slug:"\u76F8\u5173-aciton-\u5730\u5740",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/githubPages.md",readingTime:{minutes:4.21,words:1262},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/githubPages.html`},key:"v-22a1c62c",path:"/posts/other/githubPages.html",title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",frontmatter:{title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",date:"2022-07-20T14:07:35.000Z",description:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages",lang:"zh-CN",tag:["Github Pages"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201555438.jpg",sticky:2,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/githubPages.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:description",content:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Github Pages"}],["meta",{property:"article:published_time",content:"2022-07-20T14:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003GitHub Pages \u548C Giee Pages \u4E00\u822C\u591A\u7528\u4E8E\u6258\u7BA1\u4E2A\u4EBA\u7684\u9759\u6001\u7F51\u7AD9\uFF0C\u73B0\u5728\u5F88\u591A\u4EBA\u4E5F\u7528\u6765\u5B83\u6765\u642D\u5EFA\u79C1\u4EBA\u535A\u5BA2\uFF0C\u4E5F\u7B97\u662F\u7701\u53BB\u4E86\u8D2D\u4E70\u670D\u52A1\u5668\u3001\u57DF\u540D\u4EE5\u53CA\u7F51\u7AD9\u5907\u6848\u7B49\u7B49\u4E00\u7CFB\u5217\u590D\u6742\u7684\u64CD\u4F5C\u3002GitHub \u53EF\u4EE5\u901A\u8FC7 Action \u5DE5\u4F5C\u6D41\u5B9E\u73B0\u81EA\u52A8\u90E8\u7F72\uFF0C\u90E8\u7F72\u7F51\u7AD9\u975E\u5E38\u65B9\u4FBF\uFF0C\u4F46\u662F GitHub \u6BD5\u7ADF\u662F\u56FD\u5916\u4ED3\u5E93\uFF0C\u6709\u65F6\u5019\u4F1A\u51FA\u73B0\u8BBF\u95EE\u901F\u5EA6\u6162\uFF0C\u52A0\u8F7D\u4E0D\u4E86\u56FE\u7247\u7B49\u95EE\u9898\u3002\u56E0\u6B64\uFF0C\u8BB8\u591A\u4EBA\u4FBF\u60F3\u5230 Gitee Pages \u6765\u90E8\u7F72\u7AD9\u70B9\uFF0C\u867D\u7136\u8BBF\u95EE\u901F\u5EA6\u5FEB, \u4F46\u5F0A\u7AEF\u4E5F\u5F88\u660E\u663E\uFF0C\u514D\u8D39\u7248\u7684 Gitee Pgaes \u4E0D\u652F\u6301\u81EA\u52A8\u90E8\u7F72\u65B9\u6848\uFF0C\u624B\u52A8\u90E8\u7F72\u53C8\u6BD4\u8F83\u9EBB\u70E6(Gitee Pages Pro \u867D\u7136\u4E5F\u5B9E\u73B0\u4E86\u81EA\u52A8\u5316\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\uFF0C\u4F46\u9700\u8981\u6536\u8D39)\u3002 \u4E0B\u9762\u5C31\u4ECB\u7ECD\u4E00\u79CD\u6709\u6548\u7684\u89E3\u51B3\u65B9\u6848\uFF1A\u5229\u7528 GitHub Actions \u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\uFF0C\u540C\u65F6\u63A8\u9001\u4EE3\u7801\u81F3 Giee,\u5E76\u5B9E\u73B0 Gitee Pages \u81EA\u52A8\u90E8\u7F72\u3002</p>
 `,headers:[{level:2,title:"\u51C6\u5907\u5DE5\u4F5C",slug:"\u51C6\u5907\u5DE5\u4F5C",children:[]},{level:2,title:"\u5DE5\u4F5C\u6D41\u7A0B\u811A\u672C\u7F16\u5199",slug:"\u5DE5\u4F5C\u6D41\u7A0B\u811A\u672C\u7F16\u5199",children:[]},{level:2,title:"\u63D0\u4EA4\u4EE3\u7801",slug:"\u63D0\u4EA4\u4EE3\u7801",children:[]},{level:2,title:"\u76F8\u5173 Aciton \u5730\u5740",slug:"\u76F8\u5173-aciton-\u5730\u5740",children:[]}],content:`---
 title: GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages
 date: 2022-07-20 14:07:35
@@ -17273,9 +19558,9 @@ jobs:
 <p><strong>wearerequired/git-mirror-action@master</strong>\uFF1A<a href="https://github.com/wearerequired/git-mirror-action/" target="_blank" rel="noopener noreferrer">https://github.com/wearerequired/git-mirror-action/<ExternalLinkIcon/></a></p>
 <p><strong>yanglbme/gitee-pages-action@main</strong>\uFF1A<a href="https://github.com/yanglbme/gitee-pages-action/" target="_blank" rel="noopener noreferrer">https://github.com/yanglbme/gitee-pages-action/<ExternalLinkIcon/></a></p>
 <p>\u81F3\u6B64\uFF0C\u901A\u8FC7 GitHub Actions \u5B9E\u73B0\u81EA\u52A8\u90E8\u7F72 GitHub Pages \u548C Gitee Pages \u6D41\u7A0B\u5C31\u5B8C\u4E86\uFF0C\u5C0F\u4F19\u4F34\u8D76\u7D27\u8BD5\u8BD5\u5427\u3002</p>
-`,date:"2022-07-20",deps:[],links:[],pathInferred:"/posts/other/githubPages.html",pathLocale:"/",permalink:null,routeMeta:{title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"},sfcBlocks:[],slug:"githubPages",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/githubPages.md",filePathRelative:"posts/other/githubPages.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/githubPages.html.vue",componentFilePathRelative:"pages/posts/other/githubPages.html.vue",componentFileChunkName:"v-22a1c62c",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/githubPages.html.js",dataFilePathRelative:"pages/posts/other/githubPages.html.js",dataFileChunkName:"v-22a1c62c",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/githubPages.html",htmlFilePathRelative:"posts/other/githubPages.html"},title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"},["/posts/other/githubPages","/posts/other/githubPages.md"]],["v-57fe6fac","/posts/other/hotlinking.html",{_blog:{data:{key:"v-57fe6fac",path:"/posts/other/hotlinking.html",title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",date:"2022-03-01T19:06:46.000Z",description:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",tag:["\u5176\u4ED6"],category:["\u76D7\u94FE"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021637553.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/hotlinking.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:description",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-01T19:06:46.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u73B0\u5728\u5F88\u591A\u7B2C\u4E09\u65B9\u7F51\u7AD9\u5BF9\u4E8E\u81EA\u8EAB\u8D44\u6E90\u8FDB\u884C\u4E86\u9632\u76D7\u94FE\u4FDD\u62A4\uFF0C\u60F3\u8981\u5F15\u7528\u4ED6\u4EEC\u7684\u8D44\u6E90\u94FE\u63A5\uFF0C\u4F1A\u76F4\u63A5\u8D44\u6E90\u8DF3\u8F6C\u6216\u8005 403 \u7981\u6B62\u8BBF\u95EE\u3002\u6B64\u7BC7\u6587\u7AE0\u4ECE html \u89D2\u5EA6\u8BB2\u8FF0\u5982\u4F55\u7ED5\u5F00\u91C7\u7528 referer \u65B9\u5F0F\u5B9E\u73B0\u7684\u8F6F\u9632\u76D7\u94FE\u7684\u65B9\u6CD5\u3002</p>
-`,headers:[{level:2,title:"\u76D7\u94FE",slug:"\u76D7\u94FE",children:[]},{level:2,title:"\u9632\u76D7\u94FE",slug:"\u9632\u76D7\u94FE",children:[]},{level:2,title:"\u5982\u4F55\u8BBE\u7F6E\u7F51\u7AD9\u9632\u76D7\u94FE",slug:"\u5982\u4F55\u8BBE\u7F6E\u7F51\u7AD9\u9632\u76D7\u94FE",children:[{level:3,title:"\u4E00 Nginx \u9632\u76D7\u94FE\u914D\u7F6E",slug:"\u4E00-nginx-\u9632\u76D7\u94FE\u914D\u7F6E",children:[{level:4,title:"1 referer \u5F15\u7528\u65B9\u5F0F",slug:"_1-referer-\u5F15\u7528\u65B9\u5F0F",children:[]},{level:4,title:"2 \u7B7E\u540D\u65B9\u5F0F",slug:"_2-\u7B7E\u540D\u65B9\u5F0F",children:[]}]}]},{level:2,title:"html \u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",slug:"html-\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",children:[]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/hotlinking.md",readingTime:{minutes:5.62,words:1687},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/hotlinking.html`},key:"v-57fe6fac",path:"/posts/other/hotlinking.html",title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",date:"2022-03-01T19:06:46.000Z",description:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",tag:["\u5176\u4ED6"],category:["\u76D7\u94FE"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021637553.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/hotlinking.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:description",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-01T19:06:46.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u73B0\u5728\u5F88\u591A\u7B2C\u4E09\u65B9\u7F51\u7AD9\u5BF9\u4E8E\u81EA\u8EAB\u8D44\u6E90\u8FDB\u884C\u4E86\u9632\u76D7\u94FE\u4FDD\u62A4\uFF0C\u60F3\u8981\u5F15\u7528\u4ED6\u4EEC\u7684\u8D44\u6E90\u94FE\u63A5\uFF0C\u4F1A\u76F4\u63A5\u8D44\u6E90\u8DF3\u8F6C\u6216\u8005 403 \u7981\u6B62\u8BBF\u95EE\u3002\u6B64\u7BC7\u6587\u7AE0\u4ECE html \u89D2\u5EA6\u8BB2\u8FF0\u5982\u4F55\u7ED5\u5F00\u91C7\u7528 referer \u65B9\u5F0F\u5B9E\u73B0\u7684\u8F6F\u9632\u76D7\u94FE\u7684\u65B9\u6CD5\u3002</p>
+`,date:"2022-07-20",deps:[],links:[],pathInferred:"/posts/other/githubPages.html",pathLocale:"/",permalink:null,routeMeta:{title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"},sfcBlocks:[],slug:"githubPages",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/githubPages.md",filePathRelative:"posts/other/githubPages.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/githubPages.html.vue",componentFilePathRelative:"pages/posts/other/githubPages.html.vue",componentFileChunkName:"v-22a1c62c",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/githubPages.html.js",dataFilePathRelative:"pages/posts/other/githubPages.html.js",dataFileChunkName:"v-22a1c62c",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/githubPages.html",htmlFilePathRelative:"posts/other/githubPages.html"},title:"GitHub Actions\u81EA\u52A8\u90E8\u7F72GitHub Pages\u5E76\u540C\u6B65Gitee Pages"},["/posts/other/githubPages","/posts/other/githubPages.md"]],["v-57fe6fac","/posts/other/hotlinking.html",{_blog:{data:{key:"v-57fe6fac",path:"/posts/other/hotlinking.html",title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",date:"2022-03-01T19:06:46.000Z",description:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",tag:["\u5176\u4ED6"],category:["\u76D7\u94FE"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021637553.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/hotlinking.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:description",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-01T19:06:46.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u73B0\u5728\u5F88\u591A\u7B2C\u4E09\u65B9\u7F51\u7AD9\u5BF9\u4E8E\u81EA\u8EAB\u8D44\u6E90\u8FDB\u884C\u4E86\u9632\u76D7\u94FE\u4FDD\u62A4\uFF0C\u60F3\u8981\u5F15\u7528\u4ED6\u4EEC\u7684\u8D44\u6E90\u94FE\u63A5\uFF0C\u4F1A\u76F4\u63A5\u8D44\u6E90\u8DF3\u8F6C\u6216\u8005 403 \u7981\u6B62\u8BBF\u95EE\u3002\u6B64\u7BC7\u6587\u7AE0\u4ECE html \u89D2\u5EA6\u8BB2\u8FF0\u5982\u4F55\u7ED5\u5F00\u91C7\u7528 referer \u65B9\u5F0F\u5B9E\u73B0\u7684\u8F6F\u9632\u76D7\u94FE\u7684\u65B9\u6CD5\u3002</p>
+`,headers:[{level:2,title:"\u76D7\u94FE",slug:"\u76D7\u94FE",children:[]},{level:2,title:"\u9632\u76D7\u94FE",slug:"\u9632\u76D7\u94FE",children:[]},{level:2,title:"\u5982\u4F55\u8BBE\u7F6E\u7F51\u7AD9\u9632\u76D7\u94FE",slug:"\u5982\u4F55\u8BBE\u7F6E\u7F51\u7AD9\u9632\u76D7\u94FE",children:[{level:3,title:"\u4E00 Nginx \u9632\u76D7\u94FE\u914D\u7F6E",slug:"\u4E00-nginx-\u9632\u76D7\u94FE\u914D\u7F6E",children:[{level:4,title:"1 referer \u5F15\u7528\u65B9\u5F0F",slug:"_1-referer-\u5F15\u7528\u65B9\u5F0F",children:[]},{level:4,title:"2 \u7B7E\u540D\u65B9\u5F0F",slug:"_2-\u7B7E\u540D\u65B9\u5F0F",children:[]}]}]},{level:2,title:"html \u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",slug:"html-\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/hotlinking.md",readingTime:{minutes:5.62,words:1687},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/hotlinking.html`},key:"v-57fe6fac",path:"/posts/other/hotlinking.html",title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",date:"2022-03-01T19:06:46.000Z",description:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",tag:["\u5176\u4ED6"],category:["\u76D7\u94FE"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021637553.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/hotlinking.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:description",content:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-01T19:06:46.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u73B0\u5728\u5F88\u591A\u7B2C\u4E09\u65B9\u7F51\u7AD9\u5BF9\u4E8E\u81EA\u8EAB\u8D44\u6E90\u8FDB\u884C\u4E86\u9632\u76D7\u94FE\u4FDD\u62A4\uFF0C\u60F3\u8981\u5F15\u7528\u4ED6\u4EEC\u7684\u8D44\u6E90\u94FE\u63A5\uFF0C\u4F1A\u76F4\u63A5\u8D44\u6E90\u8DF3\u8F6C\u6216\u8005 403 \u7981\u6B62\u8BBF\u95EE\u3002\u6B64\u7BC7\u6587\u7AE0\u4ECE html \u89D2\u5EA6\u8BB2\u8FF0\u5982\u4F55\u7ED5\u5F00\u91C7\u7528 referer \u65B9\u5F0F\u5B9E\u73B0\u7684\u8F6F\u9632\u76D7\u94FE\u7684\u65B9\u6CD5\u3002</p>
 `,headers:[{level:2,title:"\u76D7\u94FE",slug:"\u76D7\u94FE",children:[]},{level:2,title:"\u9632\u76D7\u94FE",slug:"\u9632\u76D7\u94FE",children:[]},{level:2,title:"\u5982\u4F55\u8BBE\u7F6E\u7F51\u7AD9\u9632\u76D7\u94FE",slug:"\u5982\u4F55\u8BBE\u7F6E\u7F51\u7AD9\u9632\u76D7\u94FE",children:[{level:3,title:"\u4E00 Nginx \u9632\u76D7\u94FE\u914D\u7F6E",slug:"\u4E00-nginx-\u9632\u76D7\u94FE\u914D\u7F6E",children:[{level:4,title:"1 referer \u5F15\u7528\u65B9\u5F0F",slug:"_1-referer-\u5F15\u7528\u65B9\u5F0F",children:[]},{level:4,title:"2 \u7B7E\u540D\u65B9\u5F0F",slug:"_2-\u7B7E\u540D\u65B9\u5F0F",children:[]}]}]},{level:2,title:"html \u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",slug:"html-\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5",children:[]}],content:`---
 title: html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5
 date: 2022-03-01 19:06:46
@@ -17490,9 +19775,9 @@ referer \u7684 metedata \u5C5E\u6027\u53EF\u8BBE\u7F6E content \u5C5E\u6027\u503
 <li>\u5982\u679C referer-policy \u7684\u503C origin\uFF1A\u53EA\u53D1\u9001 origin \u90E8\u5206\uFF1B</li>
 <li>\u5982\u679C referer-policy \u7684\u503C\u4E3A always\uFF1A\u4E0D\u6539\u53D8 http header \u4E2D\u7684 referer \u7684\u503C</li>
 </ul>
-`,date:"2022-03-01",deps:[],links:[],pathInferred:"/posts/other/hotlinking.html",pathLocale:"/",permalink:null,routeMeta:{title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"},sfcBlocks:[],slug:"hotlinking",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/hotlinking.md",filePathRelative:"posts/other/hotlinking.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/hotlinking.html.vue",componentFilePathRelative:"pages/posts/other/hotlinking.html.vue",componentFileChunkName:"v-57fe6fac",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/hotlinking.html.js",dataFilePathRelative:"pages/posts/other/hotlinking.html.js",dataFileChunkName:"v-57fe6fac",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/hotlinking.html",htmlFilePathRelative:"posts/other/hotlinking.html"},title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"},["/posts/other/hotlinking","/posts/other/hotlinking.md"]],["v-3ba2686a","/posts/other/imageHost.html",{_blog:{data:{key:"v-3ba2686a",path:"/posts/other/imageHost.html",title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",lang:"zh-CN",frontmatter:{title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",date:"2022-03-02T16:42:35.000Z",description:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",tag:["\u5176\u4ED6"],category:["\u56FE\u5E8A"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021636834.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/imageHost.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:description",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-02T16:42:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u5E38\u91C7\u7528 markdown \u7F16\u5199\u6587\u6863\u7684\u5C0F\u4F19\u4F34\u6DF1\u6709\u4F53\u4F1A\uFF0C\u5982\u4F55\u5C06\u56FE\u7247\u8D44\u6E90\u8FDB\u884C\u5B58\u50A8\uFF0C\u5E76\u5728 markdown \u6587\u6863\u4E2D\u4F7F\u7528\u5462\uFF1F\u91C7\u7528\u7B2C\u4E09\u65B9\u7684\u56FE\u7247\u8D44\u6E90\uFF0C\u6709\u7684\u8D44\u6E90\u6709\u9632\u76D7\u94FE\u9650\u5236\uFF0C\u6709\u7684\u8D44\u6E90\u53EF\u80FD\u4F1A\u8FC7\u671F\uFF0C\u90A3\u4E48\uFF0C\u4ECA\u5929\u5C31\u7ED9\u5C0F\u4F19\u4F34\u4ECB\u7ECD\u4E00\u4E2A\u514D\u8D39\u7684\uFF0C\u5FEB\u901F\u9AD8\u6548\u7684\uFF0C\u5C5E\u4E8E\u81EA\u5DF1\u7684\u56FE\u5E8A\u4ED3\u5E93\u3002</p>
-`,headers:[{level:2,title:"\u4EC0\u4E48\u662F\u56FE\u5E8A",slug:"\u4EC0\u4E48\u662F\u56FE\u5E8A",children:[]},{level:2,title:"\u4E3A\u4EC0\u4E48\u9700\u8981\u56FE\u5E8A",slug:"\u4E3A\u4EC0\u4E48\u9700\u8981\u56FE\u5E8A",children:[]},{level:2,title:"\u600E\u6837\u83B7\u5F97\u56FE\u5E8A",slug:"\u600E\u6837\u83B7\u5F97\u56FE\u5E8A",children:[]},{level:2,title:"\u56FE\u5E8A\u4ED3\u5E93\u521B\u5EFA",slug:"\u56FE\u5E8A\u4ED3\u5E93\u521B\u5EFA",children:[]},{level:2,title:"PicGO \u5DE5\u5177\u4E0B\u8F7D\u5B89\u88C5",slug:"picgo-\u5DE5\u5177\u4E0B\u8F7D\u5B89\u88C5",children:[]},{level:2,title:"PicGO \u914D\u7F6E github \u56FE\u5E8A",slug:"picgo-\u914D\u7F6E-github-\u56FE\u5E8A",children:[]},{level:2,title:"\u514D\u8D39\u7684 CDN \u52A0\u901F",slug:"\u514D\u8D39\u7684-cdn-\u52A0\u901F",children:[{level:3,title:"jsdelivr",slug:"jsdelivr",children:[]},{level:3,title:"staticaly",slug:"staticaly",children:[]},{level:3,title:"githack",slug:"githack",children:[]}]},{level:2,title:"\u5176\u4ED6\u56FE\u5E8A",slug:"\u5176\u4ED6\u56FE\u5E8A",children:[{level:3,title:"\u5BA2\u6765\u56FE\u5E8A",slug:"\u5BA2\u6765\u56FE\u5E8A",children:[]}]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/imageHost.md",readingTime:{minutes:7.46,words:2237},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/imageHost.html`},key:"v-3ba2686a",path:"/posts/other/imageHost.html",title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",lang:"zh-CN",frontmatter:{title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",date:"2022-03-02T16:42:35.000Z",description:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",tag:["\u5176\u4ED6"],category:["\u56FE\u5E8A"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021636834.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/imageHost.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:description",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-02T16:42:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u5E38\u91C7\u7528 markdown \u7F16\u5199\u6587\u6863\u7684\u5C0F\u4F19\u4F34\u6DF1\u6709\u4F53\u4F1A\uFF0C\u5982\u4F55\u5C06\u56FE\u7247\u8D44\u6E90\u8FDB\u884C\u5B58\u50A8\uFF0C\u5E76\u5728 markdown \u6587\u6863\u4E2D\u4F7F\u7528\u5462\uFF1F\u91C7\u7528\u7B2C\u4E09\u65B9\u7684\u56FE\u7247\u8D44\u6E90\uFF0C\u6709\u7684\u8D44\u6E90\u6709\u9632\u76D7\u94FE\u9650\u5236\uFF0C\u6709\u7684\u8D44\u6E90\u53EF\u80FD\u4F1A\u8FC7\u671F\uFF0C\u90A3\u4E48\uFF0C\u4ECA\u5929\u5C31\u7ED9\u5C0F\u4F19\u4F34\u4ECB\u7ECD\u4E00\u4E2A\u514D\u8D39\u7684\uFF0C\u5FEB\u901F\u9AD8\u6548\u7684\uFF0C\u5C5E\u4E8E\u81EA\u5DF1\u7684\u56FE\u5E8A\u4ED3\u5E93\u3002</p>
+`,date:"2022-03-01",deps:[],links:[],pathInferred:"/posts/other/hotlinking.html",pathLocale:"/",permalink:null,routeMeta:{title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"},sfcBlocks:[],slug:"hotlinking",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/hotlinking.md",filePathRelative:"posts/other/hotlinking.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/hotlinking.html.vue",componentFilePathRelative:"pages/posts/other/hotlinking.html.vue",componentFileChunkName:"v-57fe6fac",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/hotlinking.html.js",dataFilePathRelative:"pages/posts/other/hotlinking.html.js",dataFileChunkName:"v-57fe6fac",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/hotlinking.html",htmlFilePathRelative:"posts/other/hotlinking.html"},title:"html\u7ED5\u5F00\u9632\u76D7\u94FE\u65B9\u6CD5"},["/posts/other/hotlinking","/posts/other/hotlinking.md"]],["v-3ba2686a","/posts/other/imageHost.html",{_blog:{data:{key:"v-3ba2686a",path:"/posts/other/imageHost.html",title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",lang:"zh-CN",frontmatter:{title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",date:"2022-03-02T16:42:35.000Z",description:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",tag:["\u5176\u4ED6"],category:["\u56FE\u5E8A"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021636834.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/imageHost.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:description",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-02T16:42:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u5E38\u91C7\u7528 markdown \u7F16\u5199\u6587\u6863\u7684\u5C0F\u4F19\u4F34\u6DF1\u6709\u4F53\u4F1A\uFF0C\u5982\u4F55\u5C06\u56FE\u7247\u8D44\u6E90\u8FDB\u884C\u5B58\u50A8\uFF0C\u5E76\u5728 markdown \u6587\u6863\u4E2D\u4F7F\u7528\u5462\uFF1F\u91C7\u7528\u7B2C\u4E09\u65B9\u7684\u56FE\u7247\u8D44\u6E90\uFF0C\u6709\u7684\u8D44\u6E90\u6709\u9632\u76D7\u94FE\u9650\u5236\uFF0C\u6709\u7684\u8D44\u6E90\u53EF\u80FD\u4F1A\u8FC7\u671F\uFF0C\u90A3\u4E48\uFF0C\u4ECA\u5929\u5C31\u7ED9\u5C0F\u4F19\u4F34\u4ECB\u7ECD\u4E00\u4E2A\u514D\u8D39\u7684\uFF0C\u5FEB\u901F\u9AD8\u6548\u7684\uFF0C\u5C5E\u4E8E\u81EA\u5DF1\u7684\u56FE\u5E8A\u4ED3\u5E93\u3002</p>
+`,headers:[{level:2,title:"\u4EC0\u4E48\u662F\u56FE\u5E8A",slug:"\u4EC0\u4E48\u662F\u56FE\u5E8A",children:[]},{level:2,title:"\u4E3A\u4EC0\u4E48\u9700\u8981\u56FE\u5E8A",slug:"\u4E3A\u4EC0\u4E48\u9700\u8981\u56FE\u5E8A",children:[]},{level:2,title:"\u600E\u6837\u83B7\u5F97\u56FE\u5E8A",slug:"\u600E\u6837\u83B7\u5F97\u56FE\u5E8A",children:[]},{level:2,title:"\u56FE\u5E8A\u4ED3\u5E93\u521B\u5EFA",slug:"\u56FE\u5E8A\u4ED3\u5E93\u521B\u5EFA",children:[]},{level:2,title:"PicGO \u5DE5\u5177\u4E0B\u8F7D\u5B89\u88C5",slug:"picgo-\u5DE5\u5177\u4E0B\u8F7D\u5B89\u88C5",children:[]},{level:2,title:"PicGO \u914D\u7F6E github \u56FE\u5E8A",slug:"picgo-\u914D\u7F6E-github-\u56FE\u5E8A",children:[]},{level:2,title:"\u514D\u8D39\u7684 CDN \u52A0\u901F",slug:"\u514D\u8D39\u7684-cdn-\u52A0\u901F",children:[{level:3,title:"jsdelivr",slug:"jsdelivr",children:[]},{level:3,title:"staticaly",slug:"staticaly",children:[]},{level:3,title:"githack",slug:"githack",children:[]}]},{level:2,title:"\u5176\u4ED6\u56FE\u5E8A",slug:"\u5176\u4ED6\u56FE\u5E8A",children:[{level:3,title:"\u5BA2\u6765\u56FE\u5E8A",slug:"\u5BA2\u6765\u56FE\u5E8A",children:[]}]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/imageHost.md",readingTime:{minutes:7.46,words:2237},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/imageHost.html`},key:"v-3ba2686a",path:"/posts/other/imageHost.html",title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",lang:"zh-CN",frontmatter:{title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",date:"2022-03-02T16:42:35.000Z",description:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A",tag:["\u5176\u4ED6"],category:["\u56FE\u5E8A"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021636834.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/imageHost.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:description",content:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-03-02T16:42:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u7ECF\u5E38\u91C7\u7528 markdown \u7F16\u5199\u6587\u6863\u7684\u5C0F\u4F19\u4F34\u6DF1\u6709\u4F53\u4F1A\uFF0C\u5982\u4F55\u5C06\u56FE\u7247\u8D44\u6E90\u8FDB\u884C\u5B58\u50A8\uFF0C\u5E76\u5728 markdown \u6587\u6863\u4E2D\u4F7F\u7528\u5462\uFF1F\u91C7\u7528\u7B2C\u4E09\u65B9\u7684\u56FE\u7247\u8D44\u6E90\uFF0C\u6709\u7684\u8D44\u6E90\u6709\u9632\u76D7\u94FE\u9650\u5236\uFF0C\u6709\u7684\u8D44\u6E90\u53EF\u80FD\u4F1A\u8FC7\u671F\uFF0C\u90A3\u4E48\uFF0C\u4ECA\u5929\u5C31\u7ED9\u5C0F\u4F19\u4F34\u4ECB\u7ECD\u4E00\u4E2A\u514D\u8D39\u7684\uFF0C\u5FEB\u901F\u9AD8\u6548\u7684\uFF0C\u5C5E\u4E8E\u81EA\u5DF1\u7684\u56FE\u5E8A\u4ED3\u5E93\u3002</p>
 `,headers:[{level:2,title:"\u4EC0\u4E48\u662F\u56FE\u5E8A",slug:"\u4EC0\u4E48\u662F\u56FE\u5E8A",children:[]},{level:2,title:"\u4E3A\u4EC0\u4E48\u9700\u8981\u56FE\u5E8A",slug:"\u4E3A\u4EC0\u4E48\u9700\u8981\u56FE\u5E8A",children:[]},{level:2,title:"\u600E\u6837\u83B7\u5F97\u56FE\u5E8A",slug:"\u600E\u6837\u83B7\u5F97\u56FE\u5E8A",children:[]},{level:2,title:"\u56FE\u5E8A\u4ED3\u5E93\u521B\u5EFA",slug:"\u56FE\u5E8A\u4ED3\u5E93\u521B\u5EFA",children:[]},{level:2,title:"PicGO \u5DE5\u5177\u4E0B\u8F7D\u5B89\u88C5",slug:"picgo-\u5DE5\u5177\u4E0B\u8F7D\u5B89\u88C5",children:[]},{level:2,title:"PicGO \u914D\u7F6E github \u56FE\u5E8A",slug:"picgo-\u914D\u7F6E-github-\u56FE\u5E8A",children:[]},{level:2,title:"\u514D\u8D39\u7684 CDN \u52A0\u901F",slug:"\u514D\u8D39\u7684-cdn-\u52A0\u901F",children:[{level:3,title:"jsdelivr",slug:"jsdelivr",children:[]},{level:3,title:"staticaly",slug:"staticaly",children:[]},{level:3,title:"githack",slug:"githack",children:[]}]},{level:2,title:"\u5176\u4ED6\u56FE\u5E8A",slug:"\u5176\u4ED6\u56FE\u5E8A",children:[{level:3,title:"\u5BA2\u6765\u56FE\u5E8A",slug:"\u5BA2\u6765\u56FE\u5E8A",children:[]}]}],content:`---
 title: \u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A
 date: 2022-03-02 16:42:35
@@ -17741,9 +20026,9 @@ https://rawcdn.githack.com/liub1934/LB-Blog/8806f440d3f9a7cc3e6125d7d75564e40262
 <img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021749103.png" alt="\u914D\u7F6E"><br>
 \u7136\u540E\u70B9\u51FB\u4E0A\u4F20\u56FE\u7247\uFF0C\u4E0A\u4F20\u540E\u53EF\u4EE5\u7B5B\u9009\u4E0D\u540C\u76EE\u5F55\u4E0B\u7684\u56FE\u7247\uFF0C\u4E5F\u53EF\u4EE5\u9884\u89C8 PicGo \u4E0A\u4F20\u7684\u56FE\u7247\uFF0C\u540C\u65F6\u53EF\u4EE5\u83B7\u53D6 github \u5916\u7F51\u94FE\u63A5\u548C CND \u52A0\u901F\u94FE\u63A5\uFF0Cmarkdown \u683C\u5F0F\u7684\u94FE\u63A5\u76F4\u63A5\u4F7F\u7528\uFF0C\u5982\u4E0B\u56FE\uFF1A
 <img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203021750165.png" alt="\u56FE\u4F8B"></p>
-`,date:"2022-03-02",deps:[],links:[],pathInferred:"/posts/other/imageHost.html",pathLocale:"/",permalink:null,routeMeta:{title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"},sfcBlocks:[],slug:"imageHost",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/imageHost.md",filePathRelative:"posts/other/imageHost.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/imageHost.html.vue",componentFilePathRelative:"pages/posts/other/imageHost.html.vue",componentFileChunkName:"v-3ba2686a",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/imageHost.html.js",dataFilePathRelative:"pages/posts/other/imageHost.html.js",dataFileChunkName:"v-3ba2686a",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/imageHost.html",htmlFilePathRelative:"posts/other/imageHost.html"},title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"},["/posts/other/imageHost","/posts/other/imageHost.md"]],["v-a60cbc14","/posts/other/internetResource.html",{_blog:{data:{key:"v-a60cbc14",path:"/posts/other/internetResource.html",title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",lang:"zh-CN",frontmatter:{title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",date:"2022-02-12T22:07:35.000Z",description:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",tag:["\u5176\u4ED6"],category:["\u7F51\u7EDC\u8D44\u6E90"],image:"https://pic.netbian.com/uploads/allimg/211120/005250-1637340770973a.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/internetResource.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:description",content:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-12T22:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u672C\u680F\u76EE\u4E3B\u8981\u6536\u96C6\u4E86\u5404\u79CD\u7F51\u7EDC\u8D44\u6E90\u548C\u5728\u7EBF\u5DE5\u5177\u94FE\u63A5\uFF0C\u5305\u542B 4k \u9AD8\u6E05\u56FE\u7247,\u97F3\u4E50,\u7F8E\u6587\uFF0C\u7F51\u7AD9\u94FE\u63A5\u7B49\u8D44\u6E90\u94FE\u63A5\u4FE1\u606F,\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u65B9\u4FBF\u5FEB\u901F\u67E5\u8BE2\u67E5\u8BE2\uFF01\u{1F44D}</p>
-`,headers:[{level:2,title:"\u5DE5\u5177\u7C7B",slug:"\u5DE5\u5177\u7C7B",children:[]},{level:2,title:"\u56FE\u7247\u7C7B",slug:"\u56FE\u7247\u7C7B",children:[]},{level:2,title:"CSS \u7279\u6548",slug:"css-\u7279\u6548",children:[]},{level:2,title:"\u5E94\u7528\u7F51\u7AD9\u7C7B",slug:"\u5E94\u7528\u7F51\u7AD9\u7C7B",children:[]},{level:2,title:"\u7CFB\u7EDF\u7C7B",slug:"\u7CFB\u7EDF\u7C7B",children:[]},{level:2,title:"GitHub \u4ED3\u5E93",slug:"github-\u4ED3\u5E93",children:[]},{level:2,title:"\u4F18\u79C0\u535A\u5BA2\u7C7B",slug:"\u4F18\u79C0\u535A\u5BA2\u7C7B",children:[]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/internetResource.md",readingTime:{minutes:3.51,words:1054},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/internetResource.html`},key:"v-a60cbc14",path:"/posts/other/internetResource.html",title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",lang:"zh-CN",frontmatter:{title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",date:"2022-02-12T22:07:35.000Z",description:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",tag:["\u5176\u4ED6"],category:["\u7F51\u7EDC\u8D44\u6E90"],image:"https://pic.netbian.com/uploads/allimg/211120/005250-1637340770973a.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/internetResource.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:description",content:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-12T22:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003\u672C\u680F\u76EE\u4E3B\u8981\u6536\u96C6\u4E86\u5404\u79CD\u7F51\u7EDC\u8D44\u6E90\u548C\u5728\u7EBF\u5DE5\u5177\u94FE\u63A5\uFF0C\u5305\u542B 4k \u9AD8\u6E05\u56FE\u7247,\u97F3\u4E50,\u7F8E\u6587\uFF0C\u7F51\u7AD9\u94FE\u63A5\u7B49\u8D44\u6E90\u94FE\u63A5\u4FE1\u606F,\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u65B9\u4FBF\u5FEB\u901F\u67E5\u8BE2\u67E5\u8BE2\uFF01\u{1F44D}</p>
+`,date:"2022-03-02",deps:[],links:[],pathInferred:"/posts/other/imageHost.html",pathLocale:"/",permalink:null,routeMeta:{title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"},sfcBlocks:[],slug:"imageHost",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/imageHost.md",filePathRelative:"posts/other/imageHost.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/imageHost.html.vue",componentFilePathRelative:"pages/posts/other/imageHost.html.vue",componentFileChunkName:"v-3ba2686a",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/imageHost.html.js",dataFilePathRelative:"pages/posts/other/imageHost.html.js",dataFileChunkName:"v-3ba2686a",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/imageHost.html",htmlFilePathRelative:"posts/other/imageHost.html"},title:"\u4F7F\u7528github\u642D\u5EFA\u514D\u8D39\u7684\u56FE\u5E8A"},["/posts/other/imageHost","/posts/other/imageHost.md"]],["v-a60cbc14","/posts/other/internetResource.html",{_blog:{data:{key:"v-a60cbc14",path:"/posts/other/internetResource.html",title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",lang:"zh-CN",frontmatter:{title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",date:"2022-02-12T22:07:35.000Z",description:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",tag:["\u5176\u4ED6"],category:["\u7F51\u7EDC\u8D44\u6E90"],image:"https://pic.netbian.com/uploads/allimg/211120/005250-1637340770973a.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/internetResource.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:description",content:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-12T22:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u672C\u680F\u76EE\u4E3B\u8981\u6536\u96C6\u4E86\u5404\u79CD\u7F51\u7EDC\u8D44\u6E90\u548C\u5728\u7EBF\u5DE5\u5177\u94FE\u63A5\uFF0C\u5305\u542B 4k \u9AD8\u6E05\u56FE\u7247,\u97F3\u4E50,\u7F8E\u6587\uFF0C\u7F51\u7AD9\u94FE\u63A5\u7B49\u8D44\u6E90\u94FE\u63A5\u4FE1\u606F,\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u65B9\u4FBF\u5FEB\u901F\u67E5\u8BE2\u67E5\u8BE2\uFF01\u{1F44D}</p>
+`,headers:[{level:2,title:"\u5DE5\u5177\u7C7B",slug:"\u5DE5\u5177\u7C7B",children:[]},{level:2,title:"\u56FE\u7247\u7C7B",slug:"\u56FE\u7247\u7C7B",children:[]},{level:2,title:"CSS \u7279\u6548",slug:"css-\u7279\u6548",children:[]},{level:2,title:"\u5E94\u7528\u7F51\u7AD9\u7C7B",slug:"\u5E94\u7528\u7F51\u7AD9\u7C7B",children:[]},{level:2,title:"\u7CFB\u7EDF\u7C7B",slug:"\u7CFB\u7EDF\u7C7B",children:[]},{level:2,title:"GitHub \u4ED3\u5E93",slug:"github-\u4ED3\u5E93",children:[]},{level:2,title:"\u4F18\u79C0\u535A\u5BA2\u7C7B",slug:"\u4F18\u79C0\u535A\u5BA2\u7C7B",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/internetResource.md",readingTime:{minutes:3.51,words:1054},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/internetResource.html`},key:"v-a60cbc14",path:"/posts/other/internetResource.html",title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",lang:"zh-CN",frontmatter:{title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",date:"2022-02-12T22:07:35.000Z",description:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9",tag:["\u5176\u4ED6"],category:["\u7F51\u7EDC\u8D44\u6E90"],image:"https://pic.netbian.com/uploads/allimg/211120/005250-1637340770973a.jpg",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/internetResource.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:description",content:"\u516C\u5171\u8D44\u6E90\u94FE\u63A5\uFF0C\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"\u5176\u4ED6"}],["meta",{property:"article:published_time",content:"2022-02-12T22:07:35.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u672C\u680F\u76EE\u4E3B\u8981\u6536\u96C6\u4E86\u5404\u79CD\u7F51\u7EDC\u8D44\u6E90\u548C\u5728\u7EBF\u5DE5\u5177\u94FE\u63A5\uFF0C\u5305\u542B 4k \u9AD8\u6E05\u56FE\u7247,\u97F3\u4E50,\u7F8E\u6587\uFF0C\u7F51\u7AD9\u94FE\u63A5\u7B49\u8D44\u6E90\u94FE\u63A5\u4FE1\u606F,\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\u65B9\u4FBF\u5FEB\u901F\u67E5\u8BE2\u67E5\u8BE2\uFF01\u{1F44D}</p>
 `,headers:[{level:2,title:"\u5DE5\u5177\u7C7B",slug:"\u5DE5\u5177\u7C7B",children:[]},{level:2,title:"\u56FE\u7247\u7C7B",slug:"\u56FE\u7247\u7C7B",children:[]},{level:2,title:"CSS \u7279\u6548",slug:"css-\u7279\u6548",children:[]},{level:2,title:"\u5E94\u7528\u7F51\u7AD9\u7C7B",slug:"\u5E94\u7528\u7F51\u7AD9\u7C7B",children:[]},{level:2,title:"\u7CFB\u7EDF\u7C7B",slug:"\u7CFB\u7EDF\u7C7B",children:[]},{level:2,title:"GitHub \u4ED3\u5E93",slug:"github-\u4ED3\u5E93",children:[]},{level:2,title:"\u4F18\u79C0\u535A\u5BA2\u7C7B",slug:"\u4F18\u79C0\u535A\u5BA2\u7C7B",children:[]}],content:`---
 title: \u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9
 date: 2022-02-12 22:07:35
@@ -17899,9 +20184,9 @@ image: https://pic.netbian.com/uploads/allimg/211120/005250-1637340770973a.jpg
   <span class="token key atrule">link</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//xdr630.blog.csdn.net/<span class="token punctuation">?</span>type=blog
   <span class="token key atrule">bgColor</span><span class="token punctuation">:</span> <span class="token string">'rgb(165 216 243)'</span>
   <span class="token key atrule">textColor</span><span class="token punctuation">:</span> <span class="token string">'#6854A1'</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>`,date:"2022-02-12",deps:[],links:[],pathInferred:"/posts/other/internetResource.html",pathLocale:"/",permalink:null,routeMeta:{title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"},sfcBlocks:[],slug:"internetResource",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/internetResource.md",filePathRelative:"posts/other/internetResource.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/internetResource.html.vue",componentFilePathRelative:"pages/posts/other/internetResource.html.vue",componentFileChunkName:"v-a60cbc14",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/internetResource.html.js",dataFilePathRelative:"pages/posts/other/internetResource.html.js",dataFileChunkName:"v-a60cbc14",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/internetResource.html",htmlFilePathRelative:"posts/other/internetResource.html"},title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"},["/posts/other/internetResource","/posts/other/internetResource.md"]],["v-351c6704","/posts/other/walineServer.html",{_blog:{data:{key:"v-351c6704",path:"/posts/other/walineServer.html",title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",lang:"zh-CN",frontmatter:{title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",date:"2022-08-23T15:30:27.000Z",description:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002",lang:"zh-CN",tag:["waline"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208311312129.png",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/walineServer.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"}],["meta",{property:"og:description",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"waline"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003waline \u662F\u4E00\u6B3E\u7B80\u6D01\u3001\u5B89\u5168\u7684\u8BC4\u8BBA\u7CFB\u7EDF\uFF0C\u8BE5\u7CFB\u7EDF\u5305\u542B\u4E86\u5BA2\u6237\u7AEF\u4E0E\u670D\u52A1\u7AEF\uFF0C\u5C5E\u4E8E valine \u7684\u884D\u751F\u7248\u672C\uFF0C\u589E\u52A0\u4E86\u670D\u52A1\u7AEF\u529F\u80FD\uFF0C\u89E3\u51B3\u4E86 valine \u9605\u8BFB\u6570\u636E\u7BE1\u6539\uFF0CXSS \u5B89\u5168\uFF0C\u7528\u6237\u9690\u79C1\u6CC4\u9732\u7B49\u6570\u636E\u5B89\u5168\u95EE\u9898\u3002waline \u4E0D\u4EC5\u5177\u6709 valine \u529F\u80FD\uFF0C\u8FD8\u63D0\u4F9B\u4E86\u90AE\u4EF6\u901A\u77E5\u3001\u5FAE\u4FE1\u901A\u77E5\u3001\u8BC4\u8BBA\u540E\u53F0\u7BA1\u7406\u3001LeanCloud, MySQL, MongoDB, SQLite, PostgreSQL \u591A\u5B58\u50A8\u670D\u52A1\u652F\u6301\u7B49\u8BF8\u591A\u7279\u6027\u3002\u4E0D\u4EC5\u5982\u6B64\uFF0CWaline \u9ED8\u8BA4\u4F7F\u7528 Vercel \u90E8\u7F72\uFF0C\u5B9E\u73B0\u5B8C\u5168\u514D\u8D39\u90E8\u7F72\uFF01\u672C\u6587\u7740\u91CD\u8BB0\u5F55 waline \u670D\u52A1\u5668\u72EC\u7ACB\u90E8\u7F72\u7684\u8FC7\u7A0B\u3002</p>
-`,headers:[{level:2,title:"\u7B80\u8FF0",slug:"\u7B80\u8FF0",children:[]},{level:2,title:"\u51C6\u5907\u5DE5\u4F5C",slug:"\u51C6\u5907\u5DE5\u4F5C",children:[{level:3,title:"\u73AF\u5883\u53D8\u91CF\u914D\u7F6E",slug:"\u73AF\u5883\u53D8\u91CF\u914D\u7F6E",children:[{level:4,title:"\u65B9\u5F0F\u4E00\uFF1A",slug:"\u65B9\u5F0F\u4E00",children:[]},{level:4,title:"\u65B9\u6848\u4E8C\uFF1A",slug:"\u65B9\u6848\u4E8C",children:[]}]},{level:3,title:"\u9879\u76EE\u4F9D\u8D56\u5305\u914D\u7F6E",slug:"\u9879\u76EE\u4F9D\u8D56\u5305\u914D\u7F6E",children:[]},{level:3,title:"\u670D\u52A1\u5668\u90E8\u7F72",slug:"\u670D\u52A1\u5668\u90E8\u7F72",children:[]}]}],git:{updatedTime:166221405e4,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/walineServer.md",readingTime:{minutes:6.05,words:1815},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
-\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/walineServer.html`},key:"v-351c6704",path:"/posts/other/walineServer.html",title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",lang:"zh-CN",frontmatter:{title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",date:"2022-08-23T15:30:27.000Z",description:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002",lang:"zh-CN",tag:["waline"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208311312129.png",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/walineServer.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"}],["meta",{property:"og:description",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-03T14:07:30.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"waline"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-03T14:07:30.000Z"}]]},excerpt:`<p>\u2003waline \u662F\u4E00\u6B3E\u7B80\u6D01\u3001\u5B89\u5168\u7684\u8BC4\u8BBA\u7CFB\u7EDF\uFF0C\u8BE5\u7CFB\u7EDF\u5305\u542B\u4E86\u5BA2\u6237\u7AEF\u4E0E\u670D\u52A1\u7AEF\uFF0C\u5C5E\u4E8E valine \u7684\u884D\u751F\u7248\u672C\uFF0C\u589E\u52A0\u4E86\u670D\u52A1\u7AEF\u529F\u80FD\uFF0C\u89E3\u51B3\u4E86 valine \u9605\u8BFB\u6570\u636E\u7BE1\u6539\uFF0CXSS \u5B89\u5168\uFF0C\u7528\u6237\u9690\u79C1\u6CC4\u9732\u7B49\u6570\u636E\u5B89\u5168\u95EE\u9898\u3002waline \u4E0D\u4EC5\u5177\u6709 valine \u529F\u80FD\uFF0C\u8FD8\u63D0\u4F9B\u4E86\u90AE\u4EF6\u901A\u77E5\u3001\u5FAE\u4FE1\u901A\u77E5\u3001\u8BC4\u8BBA\u540E\u53F0\u7BA1\u7406\u3001LeanCloud, MySQL, MongoDB, SQLite, PostgreSQL \u591A\u5B58\u50A8\u670D\u52A1\u652F\u6301\u7B49\u8BF8\u591A\u7279\u6027\u3002\u4E0D\u4EC5\u5982\u6B64\uFF0CWaline \u9ED8\u8BA4\u4F7F\u7528 Vercel \u90E8\u7F72\uFF0C\u5B9E\u73B0\u5B8C\u5168\u514D\u8D39\u90E8\u7F72\uFF01\u672C\u6587\u7740\u91CD\u8BB0\u5F55 waline \u670D\u52A1\u5668\u72EC\u7ACB\u90E8\u7F72\u7684\u8FC7\u7A0B\u3002</p>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div>`,date:"2022-02-12",deps:[],links:[],pathInferred:"/posts/other/internetResource.html",pathLocale:"/",permalink:null,routeMeta:{title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"},sfcBlocks:[],slug:"internetResource",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/internetResource.md",filePathRelative:"posts/other/internetResource.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/internetResource.html.vue",componentFilePathRelative:"pages/posts/other/internetResource.html.vue",componentFileChunkName:"v-a60cbc14",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/internetResource.html.js",dataFilePathRelative:"pages/posts/other/internetResource.html.js",dataFileChunkName:"v-a60cbc14",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/internetResource.html",htmlFilePathRelative:"posts/other/internetResource.html"},title:"\u5DE5\u5177\u8D44\u6E90\u7F51\u7AD9"},["/posts/other/internetResource","/posts/other/internetResource.md"]],["v-351c6704","/posts/other/walineServer.html",{_blog:{data:{key:"v-351c6704",path:"/posts/other/walineServer.html",title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",lang:"zh-CN",frontmatter:{title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",date:"2022-08-23T15:30:27.000Z",description:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002",lang:"zh-CN",tag:["waline"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208311312129.png",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/walineServer.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"}],["meta",{property:"og:description",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"waline"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003waline \u662F\u4E00\u6B3E\u7B80\u6D01\u3001\u5B89\u5168\u7684\u8BC4\u8BBA\u7CFB\u7EDF\uFF0C\u8BE5\u7CFB\u7EDF\u5305\u542B\u4E86\u5BA2\u6237\u7AEF\u4E0E\u670D\u52A1\u7AEF\uFF0C\u5C5E\u4E8E valine \u7684\u884D\u751F\u7248\u672C\uFF0C\u589E\u52A0\u4E86\u670D\u52A1\u7AEF\u529F\u80FD\uFF0C\u89E3\u51B3\u4E86 valine \u9605\u8BFB\u6570\u636E\u7BE1\u6539\uFF0CXSS \u5B89\u5168\uFF0C\u7528\u6237\u9690\u79C1\u6CC4\u9732\u7B49\u6570\u636E\u5B89\u5168\u95EE\u9898\u3002waline \u4E0D\u4EC5\u5177\u6709 valine \u529F\u80FD\uFF0C\u8FD8\u63D0\u4F9B\u4E86\u90AE\u4EF6\u901A\u77E5\u3001\u5FAE\u4FE1\u901A\u77E5\u3001\u8BC4\u8BBA\u540E\u53F0\u7BA1\u7406\u3001LeanCloud, MySQL, MongoDB, SQLite, PostgreSQL \u591A\u5B58\u50A8\u670D\u52A1\u652F\u6301\u7B49\u8BF8\u591A\u7279\u6027\u3002\u4E0D\u4EC5\u5982\u6B64\uFF0CWaline \u9ED8\u8BA4\u4F7F\u7528 Vercel \u90E8\u7F72\uFF0C\u5B9E\u73B0\u5B8C\u5168\u514D\u8D39\u90E8\u7F72\uFF01\u672C\u6587\u7740\u91CD\u8BB0\u5F55 waline \u670D\u52A1\u5668\u72EC\u7ACB\u90E8\u7F72\u7684\u8FC7\u7A0B\u3002</p>
+`,headers:[{level:2,title:"\u7B80\u8FF0",slug:"\u7B80\u8FF0",children:[]},{level:2,title:"\u51C6\u5907\u5DE5\u4F5C",slug:"\u51C6\u5907\u5DE5\u4F5C",children:[{level:3,title:"\u73AF\u5883\u53D8\u91CF\u914D\u7F6E",slug:"\u73AF\u5883\u53D8\u91CF\u914D\u7F6E",children:[{level:4,title:"\u65B9\u5F0F\u4E00\uFF1A",slug:"\u65B9\u5F0F\u4E00",children:[]},{level:4,title:"\u65B9\u6848\u4E8C\uFF1A",slug:"\u65B9\u6848\u4E8C",children:[]}]},{level:3,title:"\u9879\u76EE\u4F9D\u8D56\u5305\u914D\u7F6E",slug:"\u9879\u76EE\u4F9D\u8D56\u5305\u914D\u7F6E",children:[]},{level:3,title:"\u670D\u52A1\u5668\u90E8\u7F72",slug:"\u670D\u52A1\u5668\u90E8\u7F72",children:[]}]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/other/walineServer.md",readingTime:{minutes:6.05,words:1815},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/other/walineServer.html`},key:"v-351c6704",path:"/posts/other/walineServer.html",title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",lang:"zh-CN",frontmatter:{title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848",date:"2022-08-23T15:30:27.000Z",description:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002",lang:"zh-CN",tag:["waline"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202208311312129.png",head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/other/walineServer.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"}],["meta",{property:"og:description",content:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848\u3002"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"waline"}],["meta",{property:"article:published_time",content:"2022-08-23T15:30:27.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003waline \u662F\u4E00\u6B3E\u7B80\u6D01\u3001\u5B89\u5168\u7684\u8BC4\u8BBA\u7CFB\u7EDF\uFF0C\u8BE5\u7CFB\u7EDF\u5305\u542B\u4E86\u5BA2\u6237\u7AEF\u4E0E\u670D\u52A1\u7AEF\uFF0C\u5C5E\u4E8E valine \u7684\u884D\u751F\u7248\u672C\uFF0C\u589E\u52A0\u4E86\u670D\u52A1\u7AEF\u529F\u80FD\uFF0C\u89E3\u51B3\u4E86 valine \u9605\u8BFB\u6570\u636E\u7BE1\u6539\uFF0CXSS \u5B89\u5168\uFF0C\u7528\u6237\u9690\u79C1\u6CC4\u9732\u7B49\u6570\u636E\u5B89\u5168\u95EE\u9898\u3002waline \u4E0D\u4EC5\u5177\u6709 valine \u529F\u80FD\uFF0C\u8FD8\u63D0\u4F9B\u4E86\u90AE\u4EF6\u901A\u77E5\u3001\u5FAE\u4FE1\u901A\u77E5\u3001\u8BC4\u8BBA\u540E\u53F0\u7BA1\u7406\u3001LeanCloud, MySQL, MongoDB, SQLite, PostgreSQL \u591A\u5B58\u50A8\u670D\u52A1\u652F\u6301\u7B49\u8BF8\u591A\u7279\u6027\u3002\u4E0D\u4EC5\u5982\u6B64\uFF0CWaline \u9ED8\u8BA4\u4F7F\u7528 Vercel \u90E8\u7F72\uFF0C\u5B9E\u73B0\u5B8C\u5168\u514D\u8D39\u90E8\u7F72\uFF01\u672C\u6587\u7740\u91CD\u8BB0\u5F55 waline \u670D\u52A1\u5668\u72EC\u7ACB\u90E8\u7F72\u7684\u8FC7\u7A0B\u3002</p>
 `,headers:[{level:2,title:"\u7B80\u8FF0",slug:"\u7B80\u8FF0",children:[]},{level:2,title:"\u51C6\u5907\u5DE5\u4F5C",slug:"\u51C6\u5907\u5DE5\u4F5C",children:[{level:3,title:"\u73AF\u5883\u53D8\u91CF\u914D\u7F6E",slug:"\u73AF\u5883\u53D8\u91CF\u914D\u7F6E",children:[{level:4,title:"\u65B9\u5F0F\u4E00\uFF1A",slug:"\u65B9\u5F0F\u4E00",children:[]},{level:4,title:"\u65B9\u6848\u4E8C\uFF1A",slug:"\u65B9\u6848\u4E8C",children:[]}]},{level:3,title:"\u9879\u76EE\u4F9D\u8D56\u5305\u914D\u7F6E",slug:"\u9879\u76EE\u4F9D\u8D56\u5305\u914D\u7F6E",children:[]},{level:3,title:"\u670D\u52A1\u5668\u90E8\u7F72",slug:"\u670D\u52A1\u5668\u90E8\u7F72",children:[]}]}],content:`---
 title: Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848
 date: 2022-8-23 15:30:27
@@ -18273,4 +20558,2236 @@ dotenv<span class="token punctuation">.</span><span class="token function">confi
     expires 12h<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-08-23",deps:[],links:[],pathInferred:"/posts/other/walineServer.html",pathLocale:"/",permalink:null,routeMeta:{title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"},sfcBlocks:[],slug:"walineServer",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/walineServer.md",filePathRelative:"posts/other/walineServer.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/walineServer.html.vue",componentFilePathRelative:"pages/posts/other/walineServer.html.vue",componentFileChunkName:"v-351c6704",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/walineServer.html.js",dataFilePathRelative:"pages/posts/other/walineServer.html.js",dataFileChunkName:"v-351c6704",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/walineServer.html",htmlFilePathRelative:"posts/other/walineServer.html"},title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"},["/posts/other/walineServer","/posts/other/walineServer.md"]],["v-3706649a","/404.html",{title:""},["/404"]],["v-5bc93818","/category/",{title:"Categories"},["/category/index.html"]],["v-744d024e","/tag/",{title:"Tags"},["/tag/index.html"]],["v-e52c881c","/article/",{title:"Articles"},["/article/index.html"]],["v-01560935","/timeline/",{title:"Timeline"},["/timeline/index.html"]],["v-5831b135","/category/java/",{title:"Category java"},["/category/java/index.html"]],["v-05b88e01","/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",{title:"Tag \u8BBE\u8BA1\u6A21\u5F0F"},["/tag/\u8BBE\u8BA1\u6A21\u5F0F/","/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html"]],["v-4110d7ce","/category/%E8%BF%90%E7%BB%B4/",{title:"Category \u8FD0\u7EF4"},["/category/\u8FD0\u7EF4/","/category/%E8%BF%90%E7%BB%B4/index.html"]],["v-1eec4968","/tag/algolia/",{title:"Tag Algolia"},["/tag/algolia/index.html"]],["v-13b66e9c","/category/%E5%85%B6%E4%BB%96/",{title:"Category \u5176\u4ED6"},["/category/\u5176\u4ED6/","/category/%E5%85%B6%E4%BB%96/index.html"]],["v-3a134560","/tag/%E5%8D%9A%E5%AE%A2/",{title:"Tag \u535A\u5BA2"},["/tag/\u535A\u5BA2/","/tag/%E5%8D%9A%E5%AE%A2/index.html"]],["v-9f17d77e","/category/%E7%9B%97%E9%93%BE/",{title:"Category \u76D7\u94FE"},["/category/\u76D7\u94FE/","/category/%E7%9B%97%E9%93%BE/index.html"]],["v-200bf6bc","/tag/%E5%85%B6%E4%BB%96/",{title:"Tag \u5176\u4ED6"},["/tag/\u5176\u4ED6/","/tag/%E5%85%B6%E4%BB%96/index.html"]],["v-2d060772","/category/%E5%9B%BE%E5%BA%8A/",{title:"Category \u56FE\u5E8A"},["/category/\u56FE\u5E8A/","/category/%E5%9B%BE%E5%BA%8A/index.html"]],["v-aac522f2","/tag/github-pages/",{title:"Tag Github Pages"},["/tag/github-pages/index.html"]],["v-726261d4","/category/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90/",{title:"Category \u7F51\u7EDC\u8D44\u6E90"},["/category/\u7F51\u7EDC\u8D44\u6E90/","/category/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90/index.html"]],["v-36b75823","/tag/waline/",{title:"Tag waline"},["/tag/waline/index.html"]]];export{n as p};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-08-23",deps:[],links:[],pathInferred:"/posts/other/walineServer.html",pathLocale:"/",permalink:null,routeMeta:{title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"},sfcBlocks:[],slug:"walineServer",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/other/walineServer.md",filePathRelative:"posts/other/walineServer.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/walineServer.html.vue",componentFilePathRelative:"pages/posts/other/walineServer.html.vue",componentFileChunkName:"v-351c6704",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/other/walineServer.html.js",dataFilePathRelative:"pages/posts/other/walineServer.html.js",dataFileChunkName:"v-351c6704",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/other/walineServer.html",htmlFilePathRelative:"posts/other/walineServer.html"},title:"Waline \u670D\u52A1\u7AEF\u72EC\u7ACB\u90E8\u7F72\u89E3\u51B3\u65B9\u6848"},["/posts/other/walineServer","/posts/other/walineServer.md"]],["v-4c41b060","/posts/devops/docker/install.html",{_blog:{data:{key:"v-4c41b060",path:"/posts/devops/docker/install.html",title:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4",lang:"zh-CN",frontmatter:{title:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4",date:"2022-02-19T15:53:03.000Z",lang:"zh-CN",tag:["docker"],category:["docker","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041529112.jpg",summary:`\u2003Docker \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u5E94\u7528\u5BB9\u5668\u5F15\u64CE\uFF0C\u8BA9\u5F00\u53D1\u8005\u53EF\u4EE5\u6253\u5305\u4ED6\u4EEC\u7684\u5E94\u7528\u4EE5\u53CA\u4F9D\u8D56\u5305\u5230\u4E00\u4E2A\u53EF\u79FB\u690D\u7684\u5BB9\u5668\u4E2D\uFF0C\u7136\u540E\u53D1\u5E03\u5230\u4EFB\u4F55\u6D41\u884C\u7684 Linux \u6216 Windows \u64CD\u4F5C\u7CFB\u7EDF\u7684\u673A\u5668\u4E0A\uFF0C\u4E5F\u53EF\u4EE5\u5B9E\u73B0\u865A\u62DF\u5316\uFF0C\u5BB9\u5668\u662F\u5B8C\u5168\u4F7F\u7528\u6C99\u7BB1\u673A\u5236\uFF0C\u76F8\u4E92\u4E4B\u95F4\u4E0D\u4F1A\u6709\u4EFB\u4F55\u63A5\u53E3\u3002\u7B80\u5316\u914D\u7F6E,\u955C\u50CF\u5B89\u88C5\uFF0C\u5BB9\u5668\u7684\u521B\u5EFA\u975E\u5E38\u7684\u65B9\u4FBF\uFF0C\u540C\u65F6\u53EF\u4EE5\u5F39\u6027\u6269\u5BB9\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/docker/install.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"docker"}],["meta",{property:"article:published_time",content:"2022-02-19T15:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Docker \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u5E94\u7528\u5BB9\u5668\u5F15\u64CE\uFF0C\u8BA9\u5F00\u53D1\u8005\u53EF\u4EE5\u6253\u5305\u4ED6\u4EEC\u7684\u5E94\u7528\u4EE5\u53CA\u4F9D\u8D56\u5305\u5230\u4E00\u4E2A\u53EF\u79FB\u690D\u7684\u5BB9\u5668\u4E2D\uFF0C\u7136\u540E\u53D1\u5E03\u5230\u4EFB\u4F55\u6D41\u884C\u7684 Linux \u6216 Windows \u64CD\u4F5C\u7CFB\u7EDF\u7684\u673A\u5668\u4E0A\uFF0C\u4E5F\u53EF\u4EE5\u5B9E\u73B0\u865A\u62DF\u5316\uFF0C\u5BB9\u5668\u662F\u5B8C\u5168\u4F7F\u7528\u6C99\u7BB1\u673A\u5236\uFF0C\u76F8\u4E92\u4E4B\u95F4\u4E0D\u4F1A\u6709\u4EFB\u4F55\u63A5\u53E3\u3002\u7B80\u5316\u914D\u7F6E,\u955C\u50CF\u5B89\u88C5\uFF0C\u5BB9\u5668\u7684\u521B\u5EFA\u975E\u5E38\u7684\u65B9\u4FBF\uFF0C\u540C\u65F6\u53EF\u4EE5\u5F39\u6027\u6269\u5BB9\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001docker \u5B89\u88C5",slug:"\u4E00\u3001docker-\u5B89\u88C5",children:[{level:3,title:"1\u3001\u5378\u8F7D\u65E7\u7684Docker\u5F15\u64CE",slug:"_1\u3001\u5378\u8F7D\u65E7\u7684docker\u5F15\u64CE",children:[]},{level:3,title:"2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker",slug:"_2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker",children:[]}]},{level:2,title:"\u4E8C\u3001docker \u5E38\u89C1\u4F7F\u7528\u547D\u4EE4",slug:"\u4E8C\u3001docker-\u5E38\u89C1\u4F7F\u7528\u547D\u4EE4",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/docker/install.md",readingTime:{minutes:2.7,words:809},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/docker/install.html`},key:"v-4c41b060",path:"/posts/devops/docker/install.html",title:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4",lang:"zh-CN",frontmatter:{title:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4",date:"2022-02-19T15:53:03.000Z",lang:"zh-CN",tag:["docker"],category:["docker","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041529112.jpg",summary:`\u2003Docker \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u5E94\u7528\u5BB9\u5668\u5F15\u64CE\uFF0C\u8BA9\u5F00\u53D1\u8005\u53EF\u4EE5\u6253\u5305\u4ED6\u4EEC\u7684\u5E94\u7528\u4EE5\u53CA\u4F9D\u8D56\u5305\u5230\u4E00\u4E2A\u53EF\u79FB\u690D\u7684\u5BB9\u5668\u4E2D\uFF0C\u7136\u540E\u53D1\u5E03\u5230\u4EFB\u4F55\u6D41\u884C\u7684 Linux \u6216 Windows \u64CD\u4F5C\u7CFB\u7EDF\u7684\u673A\u5668\u4E0A\uFF0C\u4E5F\u53EF\u4EE5\u5B9E\u73B0\u865A\u62DF\u5316\uFF0C\u5BB9\u5668\u662F\u5B8C\u5168\u4F7F\u7528\u6C99\u7BB1\u673A\u5236\uFF0C\u76F8\u4E92\u4E4B\u95F4\u4E0D\u4F1A\u6709\u4EFB\u4F55\u63A5\u53E3\u3002\u7B80\u5316\u914D\u7F6E,\u955C\u50CF\u5B89\u88C5\uFF0C\u5BB9\u5668\u7684\u521B\u5EFA\u975E\u5E38\u7684\u65B9\u4FBF\uFF0C\u540C\u65F6\u53EF\u4EE5\u5F39\u6027\u6269\u5BB9\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/docker/install.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"docker"}],["meta",{property:"article:published_time",content:"2022-02-19T15:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Docker \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u5E94\u7528\u5BB9\u5668\u5F15\u64CE\uFF0C\u8BA9\u5F00\u53D1\u8005\u53EF\u4EE5\u6253\u5305\u4ED6\u4EEC\u7684\u5E94\u7528\u4EE5\u53CA\u4F9D\u8D56\u5305\u5230\u4E00\u4E2A\u53EF\u79FB\u690D\u7684\u5BB9\u5668\u4E2D\uFF0C\u7136\u540E\u53D1\u5E03\u5230\u4EFB\u4F55\u6D41\u884C\u7684 Linux \u6216 Windows \u64CD\u4F5C\u7CFB\u7EDF\u7684\u673A\u5668\u4E0A\uFF0C\u4E5F\u53EF\u4EE5\u5B9E\u73B0\u865A\u62DF\u5316\uFF0C\u5BB9\u5668\u662F\u5B8C\u5168\u4F7F\u7528\u6C99\u7BB1\u673A\u5236\uFF0C\u76F8\u4E92\u4E4B\u95F4\u4E0D\u4F1A\u6709\u4EFB\u4F55\u63A5\u53E3\u3002\u7B80\u5316\u914D\u7F6E,\u955C\u50CF\u5B89\u88C5\uFF0C\u5BB9\u5668\u7684\u521B\u5EFA\u975E\u5E38\u7684\u65B9\u4FBF\uFF0C\u540C\u65F6\u53EF\u4EE5\u5F39\u6027\u6269\u5BB9\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001docker \u5B89\u88C5",slug:"\u4E00\u3001docker-\u5B89\u88C5",children:[{level:3,title:"1\u3001\u5378\u8F7D\u65E7\u7684Docker\u5F15\u64CE",slug:"_1\u3001\u5378\u8F7D\u65E7\u7684docker\u5F15\u64CE",children:[]},{level:3,title:"2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker",slug:"_2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker",children:[]}]},{level:2,title:"\u4E8C\u3001docker \u5E38\u89C1\u4F7F\u7528\u547D\u4EE4",slug:"\u4E8C\u3001docker-\u5E38\u89C1\u4F7F\u7528\u547D\u4EE4",children:[]}],content:`---
+title: Centos7\u5B89\u88C5Docker\u6B65\u9AA4
+date: 2022-02-19 15:53:03
+lang: zh-CN
+tag:
+  - docker
+category:
+  - docker
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041529112.jpg
+---
+
+&emsp;Docker \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u5E94\u7528\u5BB9\u5668\u5F15\u64CE\uFF0C\u8BA9\u5F00\u53D1\u8005\u53EF\u4EE5\u6253\u5305\u4ED6\u4EEC\u7684\u5E94\u7528\u4EE5\u53CA\u4F9D\u8D56\u5305\u5230\u4E00\u4E2A\u53EF\u79FB\u690D\u7684\u5BB9\u5668\u4E2D\uFF0C\u7136\u540E\u53D1\u5E03\u5230\u4EFB\u4F55\u6D41\u884C\u7684 Linux \u6216 Windows \u64CD\u4F5C\u7CFB\u7EDF\u7684\u673A\u5668\u4E0A\uFF0C\u4E5F\u53EF\u4EE5\u5B9E\u73B0\u865A\u62DF\u5316\uFF0C\u5BB9\u5668\u662F\u5B8C\u5168\u4F7F\u7528\u6C99\u7BB1\u673A\u5236\uFF0C\u76F8\u4E92\u4E4B\u95F4\u4E0D\u4F1A\u6709\u4EFB\u4F55\u63A5\u53E3\u3002\u7B80\u5316\u914D\u7F6E,\u955C\u50CF\u5B89\u88C5\uFF0C\u5BB9\u5668\u7684\u521B\u5EFA\u975E\u5E38\u7684\u65B9\u4FBF\uFF0C\u540C\u65F6\u53EF\u4EE5\u5F39\u6027\u6269\u5BB9\u3002
+
+<!-- more -->
+
+:::warning \u6E29\u99A8\u63D0\u793A
+Docker \u8981\u6C42 CentOS7 \u7CFB\u7EDF\u7684\u5185\u6838\u7248\u672C\u5728 3.10 \u4EE5\u4E0A\uFF0C\u5426\u5219\u65E0\u6CD5\u5B89\u88C5 Docker\u3002\u5C0F\u4F19\u4F34\u4EEC\u53EF\u4EE5\u901A\u8FC7\`uname -a\`\u67E5\u770B\u81EA\u5DF1 centos \u5185\u6838\u7248\u672C\uFF0C\u5982\u679C\u4F4E\u4E8E 3.10\uFF0C\u9700\u8981\u91CD\u65B0\u5B89\u88C5 centos \u955C\u50CF\u3002\u4EE5\u4E0B\u662F docker \u76F8\u5173\u7F51\u5740\uFF1A<br/>docker \u5B98\u7F51\uFF1A<https://www.docker.com/><br/>docker \u6587\u6863\u5B98\u7F51\uFF1A<https://docs.docker.com/><br/>\u5B89\u88C5\u6587\u6863\uFF1A<https://docs.docker.com/engine/install/centos/>
+:::
+
+## \u4E00\u3001docker \u5B89\u88C5
+
+### 1\u3001\u5378\u8F7D\u65E7\u7684Docker\u5F15\u64CE
+
+\u5982\u679C centos \u4E0A\u4EE5\u524D\u5B89\u88C5\u8FC7\u65E7\u7248\u7684 docker,\u9700\u8981\u6309\u7167\u4EE5\u4E0B\u6B65\u9AA4\u5148\u5220\u9664\u65E7\u7684\u7248\u672C\uFF0C\u518D\u8FDB\u884C\u5B89\u88C5:<br/>
+\u2460 \u5148\u5220\u9664\u4F9D\u8D56\u5305
+
+\`\`\`bash
+yum remove docker-ce docker-cd-cli containerd.io
+sudo yum remove docker docker-client docker-client-latest docker-common\\
+docker-latest docker-latest-logrotate docker-logrotate docker-engine
+\`\`\`
+
+\u2461 \u5220\u9664\u8D44\u6E90\u3002
+
+\u4E3B\u673A\u4E0A\u7684\u6620\u50CF\u3001\u5BB9\u5668\u3001\u5377\u6216\u81EA\u5B9A\u4E49\u914D\u7F6E\u6587\u4EF6\u4E0D\u4F1A\u81EA\u52A8\u5220\u9664\uFF0C\u5FC5\u987B\u624B\u52A8\u5220\u9664\u4EFB\u4F55\u5DF2\u7F16\u8F91\u7684\u914D\u7F6E\u6587\u4EF6\u3002Docker \u9ED8\u8BA4\u5DE5\u4F5C\u8DEF\u5F84/var/lib/docker
+
+\`\`\`bash
+rm -rf /var/lib/docker
+
+rm -rf /var/lib/containerd
+\`\`\`
+
+### 2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker
+
+:::tip
+\u4F7F\u7528 Docker \u7684\u5B58\u50A8\u5E93\u5E76\u5B89\u88C5\uFF0C\u4FBF\u4E8E\u5B89\u88C5\u548C\u5347\u7EA7\u4EFB\u52A1\uFF1B\u4E0B\u8F7D RPM \u5305\u5E76\u624B\u52A8\u5B89\u88C5\u5E76\u7BA1\u7406\uFF0C\u5B8C\u5168\u624B\u52A8\u5347\u7EA7\uFF1B
+:::
+\u2460 \u5B89\u88C5\u5FC5\u8981\u7684\u7CFB\u7EDF\u5DE5\u5177
+
+\`\`\`bash
+yum -y install yum-utils
+\`\`\`
+
+\u2461 \u8BBE\u7F6E\u8F6F\u4EF6\u6E90\u4FE1\u606F
+
+\`\`\`bash
+# \u8BBE\u7F6E\u963F\u91CC\u4E91\u955C\u50CF\uFF0C\u5B89\u88C5docker\u901F\u5EA6\u5FEB
+yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+\`\`\`
+
+\u2462 \u66F4\u65B0\u5E76\u5B89\u88C5 docker-ce(ce \u793E\u533A\u7248\uFF0Cee \u4F01\u4E1A\u7248)
+
+\`\`\`bash
+# \u66F4\u65B0\u7D22\u5F15
+yum makecache fast
+\`\`\`
+
+\u2463 \u5982\u9700\u6307\u5B9A docker \u5F15\u64CE\u7684\u7248\u672C\uFF0C\u901A\u8FC7\u4EE5\u4E0B\u547D\u4EE4\u83B7\u53D6\u53EF\u7528\u7248\u672C
+
+\`\`\`bash
+yum list docker-ce --showduplicates | sort -r
+\`\`\`
+
+\u2464 \u5B89\u88C5\u6307\u5B9A\u7248\u672C\u7684 docker
+
+\`\`\`bash
+yum install docker-ce-<\u7248\u672C\u53F7> docker-ce-cli-<\u7248\u672C\u53F7> containerd.io
+\`\`\`
+
+\u2465 \u542F\u52A8 docker
+
+\`\`\`bash
+systemctl start docker
+\`\`\`
+
+\u2466 \u5F00\u673A\u81EA\u542F\u52A8
+
+\`\`\`bash
+systemctl enable docker
+\`\`\`
+
+\u2467hello-world \u6D4B\u8BD5
+
+\`\`\`bash
+# \u8FD0\u884C\u5BB9\u5668
+docker run hello-world
+# \u67E5\u770B\u955C\u50CF
+docker images
+
+\`\`\`
+
+## \u4E8C\u3001docker \u5E38\u89C1\u4F7F\u7528\u547D\u4EE4
+
+:::tip
+docker \u5B98\u7F51\u547D\u4EE4\u53C2\u8003\u6587\u6863\uFF1A<https://docs.docker.com/engine/reference/builder/>
+:::
+
+1\u3001\u542F\u52A8docker\u5F15\u64CE\uFF1Asystemctl start docker
+
+2\u3001docker\u8BBE\u7F6E\u5F00\u673A\u81EA\u542F\u52A8\uFF1Asystemctl enable docker
+
+3\u3001docker\u7248\u672C\u4FE1\u606F\u67E5\u8BE2\uFF1Adocker version
+
+4\u3001docker\u6240\u6709\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker ps -a
+
+5\u3001docker\u6B63\u5728\u8FD0\u884C\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker ps
+
+6\u3001docker\u505C\u6B62\u8FD0\u884C\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker stop \u5BB9\u5668ID/\u5BB9\u5668\u540D\u79F0
+
+7\u3001docker\u5220\u9664\u505C\u6B62\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker rm \u5BB9\u5668ID/\u5BB9\u5668\u540D\u79F0
+
+8\u3001docker\u5F3A\u5236\u5220\u9664\u8FD0\u884C\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker rm -f \u5BB9\u5668ID/\u5BB9\u5668\u540D\u79F0
+
+9\u3001docker\u5220\u9664\u505C\u6B62\u7684\u5BB9\u5668\u5B9E\u4F8B\u955C\u50CF\uFF1Adocker rmi \u955C\u50CFID/\u955C\u50CF\u540D\u79F0
+
+10\u3001docker\u5F3A\u5236\u5220\u9664\u955C\u50CF\uFF1Adocker rmi -f \u955C\u50CFID/\u955C\u50CF\u540D\u79F0
+
+11\u3001docker\u5220\u9664\u6240\u7528\u5BB9\u5668: docker rm -f \`docker ps -a -q\`
+
+12\u3001docker\u5220\u9664\u6240\u6709\u955C\u50CF\uFF1Adocker rmi -f \`docker images -q\`
+
+`,contentRendered:`<p>\u2003Docker \u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u5E94\u7528\u5BB9\u5668\u5F15\u64CE\uFF0C\u8BA9\u5F00\u53D1\u8005\u53EF\u4EE5\u6253\u5305\u4ED6\u4EEC\u7684\u5E94\u7528\u4EE5\u53CA\u4F9D\u8D56\u5305\u5230\u4E00\u4E2A\u53EF\u79FB\u690D\u7684\u5BB9\u5668\u4E2D\uFF0C\u7136\u540E\u53D1\u5E03\u5230\u4EFB\u4F55\u6D41\u884C\u7684 Linux \u6216 Windows \u64CD\u4F5C\u7CFB\u7EDF\u7684\u673A\u5668\u4E0A\uFF0C\u4E5F\u53EF\u4EE5\u5B9E\u73B0\u865A\u62DF\u5316\uFF0C\u5BB9\u5668\u662F\u5B8C\u5168\u4F7F\u7528\u6C99\u7BB1\u673A\u5236\uFF0C\u76F8\u4E92\u4E4B\u95F4\u4E0D\u4F1A\u6709\u4EFB\u4F55\u63A5\u53E3\u3002\u7B80\u5316\u914D\u7F6E,\u955C\u50CF\u5B89\u88C5\uFF0C\u5BB9\u5668\u7684\u521B\u5EFA\u975E\u5E38\u7684\u65B9\u4FBF\uFF0C\u540C\u65F6\u53EF\u4EE5\u5F39\u6027\u6269\u5BB9\u3002</p>
+<!-- more -->
+<div class="custom-container warning"><p class="custom-container-title">\u6E29\u99A8\u63D0\u793A</p>
+<p>Docker \u8981\u6C42 CentOS7 \u7CFB\u7EDF\u7684\u5185\u6838\u7248\u672C\u5728 3.10 \u4EE5\u4E0A\uFF0C\u5426\u5219\u65E0\u6CD5\u5B89\u88C5 Docker\u3002\u5C0F\u4F19\u4F34\u4EEC\u53EF\u4EE5\u901A\u8FC7<code v-pre>uname -a</code>\u67E5\u770B\u81EA\u5DF1 centos \u5185\u6838\u7248\u672C\uFF0C\u5982\u679C\u4F4E\u4E8E 3.10\uFF0C\u9700\u8981\u91CD\u65B0\u5B89\u88C5 centos \u955C\u50CF\u3002\u4EE5\u4E0B\u662F docker \u76F8\u5173\u7F51\u5740\uFF1A<br/>docker \u5B98\u7F51\uFF1A<a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">https://www.docker.com/<ExternalLinkIcon/></a><br/>docker \u6587\u6863\u5B98\u7F51\uFF1A<a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">https://docs.docker.com/<ExternalLinkIcon/></a><br/>\u5B89\u88C5\u6587\u6863\uFF1A<a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener noreferrer">https://docs.docker.com/engine/install/centos/<ExternalLinkIcon/></a></p>
+</div>
+<h2 id="\u4E00\u3001docker-\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001docker-\u5B89\u88C5" aria-hidden="true">#</a> \u4E00\u3001docker \u5B89\u88C5</h2>
+<h3 id="_1\u3001\u5378\u8F7D\u65E7\u7684docker\u5F15\u64CE" tabindex="-1"><a class="header-anchor" href="#_1\u3001\u5378\u8F7D\u65E7\u7684docker\u5F15\u64CE" aria-hidden="true">#</a> 1\u3001\u5378\u8F7D\u65E7\u7684Docker\u5F15\u64CE</h3>
+<p>\u5982\u679C centos \u4E0A\u4EE5\u524D\u5B89\u88C5\u8FC7\u65E7\u7248\u7684 docker,\u9700\u8981\u6309\u7167\u4EE5\u4E0B\u6B65\u9AA4\u5148\u5220\u9664\u65E7\u7684\u7248\u672C\uFF0C\u518D\u8FDB\u884C\u5B89\u88C5:<br/>
+\u2460 \u5148\u5220\u9664\u4F9D\u8D56\u5305</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum remove docker-ce docker-cd-cli containerd.io
+<span class="token function">sudo</span> yum remove <span class="token function">docker</span> docker-client docker-client-latest docker-common<span class="token punctuation">\\</span>
+docker-latest docker-latest-logrotate docker-logrotate docker-engine
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u2461 \u5220\u9664\u8D44\u6E90\u3002</p>
+<p>\u4E3B\u673A\u4E0A\u7684\u6620\u50CF\u3001\u5BB9\u5668\u3001\u5377\u6216\u81EA\u5B9A\u4E49\u914D\u7F6E\u6587\u4EF6\u4E0D\u4F1A\u81EA\u52A8\u5220\u9664\uFF0C\u5FC5\u987B\u624B\u52A8\u5220\u9664\u4EFB\u4F55\u5DF2\u7F16\u8F91\u7684\u914D\u7F6E\u6587\u4EF6\u3002Docker \u9ED8\u8BA4\u5DE5\u4F5C\u8DEF\u5F84/var/lib/docker</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">rm</span> <span class="token parameter variable">-rf</span> /var/lib/docker
+
+<span class="token function">rm</span> <span class="token parameter variable">-rf</span> /var/lib/containerd
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker" tabindex="-1"><a class="header-anchor" href="#_2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker" aria-hidden="true">#</a> 2\u3001\u4F7F\u7528\u5B58\u50A8\u5E93\u5B89\u88C5docker</h3>
+<div class="custom-container tip"><p class="custom-container-title">\u63D0\u793A</p>
+<p>\u4F7F\u7528 Docker \u7684\u5B58\u50A8\u5E93\u5E76\u5B89\u88C5\uFF0C\u4FBF\u4E8E\u5B89\u88C5\u548C\u5347\u7EA7\u4EFB\u52A1\uFF1B\u4E0B\u8F7D RPM \u5305\u5E76\u624B\u52A8\u5B89\u88C5\u5E76\u7BA1\u7406\uFF0C\u5B8C\u5168\u624B\u52A8\u5347\u7EA7\uFF1B</p>
+</div>
+<p>\u2460 \u5B89\u88C5\u5FC5\u8981\u7684\u7CFB\u7EDF\u5DE5\u5177</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token parameter variable">-y</span> <span class="token function">install</span> yum-utils
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u2461 \u8BBE\u7F6E\u8F6F\u4EF6\u6E90\u4FE1\u606F</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u8BBE\u7F6E\u963F\u91CC\u4E91\u955C\u50CF\uFF0C\u5B89\u88C5docker\u901F\u5EA6\u5FEB</span>
+yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u2462 \u66F4\u65B0\u5E76\u5B89\u88C5 docker-ce(ce \u793E\u533A\u7248\uFF0Cee \u4F01\u4E1A\u7248)</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u66F4\u65B0\u7D22\u5F15</span>
+yum makecache fast
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>\u2463 \u5982\u9700\u6307\u5B9A docker \u5F15\u64CE\u7684\u7248\u672C\uFF0C\u901A\u8FC7\u4EE5\u4E0B\u547D\u4EE4\u83B7\u53D6\u53EF\u7528\u7248\u672C</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum list docker-ce <span class="token parameter variable">--showduplicates</span> <span class="token operator">|</span> <span class="token function">sort</span> <span class="token parameter variable">-r</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u2464 \u5B89\u88C5\u6307\u5B9A\u7248\u672C\u7684 docker</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token function">install</span> docker-ce-<span class="token operator">&lt;</span>\u7248\u672C\u53F7<span class="token operator">></span> docker-ce-cli-<span class="token operator">&lt;</span>\u7248\u672C\u53F7<span class="token operator">></span> containerd.io
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u2465 \u542F\u52A8 docker</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>systemctl start <span class="token function">docker</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u2466 \u5F00\u673A\u81EA\u542F\u52A8</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>systemctl <span class="token builtin class-name">enable</span> <span class="token function">docker</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u2467hello-world \u6D4B\u8BD5</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u8FD0\u884C\u5BB9\u5668</span>
+<span class="token function">docker</span> run hello-world
+<span class="token comment"># \u67E5\u770B\u955C\u50CF</span>
+<span class="token function">docker</span> images
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u4E8C\u3001docker-\u5E38\u89C1\u4F7F\u7528\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001docker-\u5E38\u89C1\u4F7F\u7528\u547D\u4EE4" aria-hidden="true">#</a> \u4E8C\u3001docker \u5E38\u89C1\u4F7F\u7528\u547D\u4EE4</h2>
+<div class="custom-container tip"><p class="custom-container-title">\u63D0\u793A</p>
+<p>docker \u5B98\u7F51\u547D\u4EE4\u53C2\u8003\u6587\u6863\uFF1A<a href="https://docs.docker.com/engine/reference/builder/" target="_blank" rel="noopener noreferrer">https://docs.docker.com/engine/reference/builder/<ExternalLinkIcon/></a></p>
+</div>
+<p>1\u3001\u542F\u52A8docker\u5F15\u64CE\uFF1Asystemctl start docker</p>
+<p>2\u3001docker\u8BBE\u7F6E\u5F00\u673A\u81EA\u542F\u52A8\uFF1Asystemctl enable docker</p>
+<p>3\u3001docker\u7248\u672C\u4FE1\u606F\u67E5\u8BE2\uFF1Adocker version</p>
+<p>4\u3001docker\u6240\u6709\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker ps -a</p>
+<p>5\u3001docker\u6B63\u5728\u8FD0\u884C\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker ps</p>
+<p>6\u3001docker\u505C\u6B62\u8FD0\u884C\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker stop \u5BB9\u5668ID/\u5BB9\u5668\u540D\u79F0</p>
+<p>7\u3001docker\u5220\u9664\u505C\u6B62\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker rm \u5BB9\u5668ID/\u5BB9\u5668\u540D\u79F0</p>
+<p>8\u3001docker\u5F3A\u5236\u5220\u9664\u8FD0\u884C\u7684\u5BB9\u5668\u5B9E\u4F8B\uFF1Adocker rm -f \u5BB9\u5668ID/\u5BB9\u5668\u540D\u79F0</p>
+<p>9\u3001docker\u5220\u9664\u505C\u6B62\u7684\u5BB9\u5668\u5B9E\u4F8B\u955C\u50CF\uFF1Adocker rmi \u955C\u50CFID/\u955C\u50CF\u540D\u79F0</p>
+<p>10\u3001docker\u5F3A\u5236\u5220\u9664\u955C\u50CF\uFF1Adocker rmi -f \u955C\u50CFID/\u955C\u50CF\u540D\u79F0</p>
+<p>11\u3001docker\u5220\u9664\u6240\u7528\u5BB9\u5668: docker rm -f <code v-pre>docker ps -a -q</code></p>
+<p>12\u3001docker\u5220\u9664\u6240\u6709\u955C\u50CF\uFF1Adocker rmi -f <code v-pre>docker images -q</code></p>
+`,date:"2022-02-19",deps:[],links:[],pathInferred:"/posts/devops/docker/install.html",pathLocale:"/",permalink:null,routeMeta:{title:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4"},sfcBlocks:[],slug:"install",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/docker/install.md",filePathRelative:"posts/devops/docker/install.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/docker/install.html.vue",componentFilePathRelative:"pages/posts/devops/docker/install.html.vue",componentFileChunkName:"v-4c41b060",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/docker/install.html.js",dataFilePathRelative:"pages/posts/devops/docker/install.html.js",dataFileChunkName:"v-4c41b060",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/docker/install.html",htmlFilePathRelative:"posts/devops/docker/install.html"},title:"Centos7\u5B89\u88C5Docker\u6B65\u9AA4"},["/posts/devops/docker/install","/posts/devops/docker/install.md"]],["v-ec046092","/posts/devops/gitlab/",{_blog:{data:{key:"v-ec046092",path:"/posts/devops/gitlab/",title:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4",lang:"zh-CN",frontmatter:{title:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4",date:"2022-06-22T18:53:03.000Z",tag:["Gitlab"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202206221855008.png",summary:`\u2003GitLab \u662F\u7531 GitLabInc.\u5F00\u53D1\uFF0C\u4F7F\u7528 MIT \u8BB8\u53EF\u8BC1\u7684\u57FA\u4E8E\u7F51\u7EDC\u7684 Git \u4ED3\u5E93\u7BA1\u7406\u5DE5\u5177\uFF0C\u4E14\u5177\u6709 wiki \u548C issue \u8DDF\u8E2A\u529F\u80FD\u3002\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 web \u670D\u52A1\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/gitlab/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Gitlab"}],["meta",{property:"article:published_time",content:"2022-06-22T18:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003GitLab \u662F\u7531 GitLabInc.\u5F00\u53D1\uFF0C\u4F7F\u7528 MIT \u8BB8\u53EF\u8BC1\u7684\u57FA\u4E8E\u7F51\u7EDC\u7684 Git \u4ED3\u5E93\u7BA1\u7406\u5DE5\u5177\uFF0C\u4E14\u5177\u6709 wiki \u548C issue \u8DDF\u8E2A\u529F\u80FD\u3002\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 web \u670D\u52A1\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001GitLab \u7B80\u4ECB",slug:"\u4E00\u3001gitlab-\u7B80\u4ECB",children:[]},{level:2,title:"\u4E8C\u3001GitLab\u3001GitLab\u3001GitHub\u3001Gitee",slug:"\u4E8C\u3001gitlab\u3001gitlab\u3001github\u3001gitee",children:[{level:3,title:"1\u3001\u53D1\u5C55\u80CC\u666F",slug:"_1\u3001\u53D1\u5C55\u80CC\u666F",children:[]},{level:3,title:"2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE",slug:"_2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE",children:[]}]},{level:2,title:"\u4E09\u3001GitLab \u4E25\u91CD\u6F0F\u6D1E",slug:"\u4E09\u3001gitlab-\u4E25\u91CD\u6F0F\u6D1E",children:[]},{level:2,title:"\u56DB\u3001GitLab \u76F8\u5173\u94FE\u63A5",slug:"\u56DB\u3001gitlab-\u76F8\u5173\u94FE\u63A5",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/gitlab/README.md",readingTime:{minutes:4.15,words:1245},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/gitlab/`},key:"v-ec046092",path:"/posts/devops/gitlab/",title:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4",lang:"zh-CN",frontmatter:{title:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4",date:"2022-06-22T18:53:03.000Z",tag:["Gitlab"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202206221855008.png",summary:`\u2003GitLab \u662F\u7531 GitLabInc.\u5F00\u53D1\uFF0C\u4F7F\u7528 MIT \u8BB8\u53EF\u8BC1\u7684\u57FA\u4E8E\u7F51\u7EDC\u7684 Git \u4ED3\u5E93\u7BA1\u7406\u5DE5\u5177\uFF0C\u4E14\u5177\u6709 wiki \u548C issue \u8DDF\u8E2A\u529F\u80FD\u3002\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 web \u670D\u52A1\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/gitlab/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Gitlab"}],["meta",{property:"article:published_time",content:"2022-06-22T18:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003GitLab \u662F\u7531 GitLabInc.\u5F00\u53D1\uFF0C\u4F7F\u7528 MIT \u8BB8\u53EF\u8BC1\u7684\u57FA\u4E8E\u7F51\u7EDC\u7684 Git \u4ED3\u5E93\u7BA1\u7406\u5DE5\u5177\uFF0C\u4E14\u5177\u6709 wiki \u548C issue \u8DDF\u8E2A\u529F\u80FD\u3002\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 web \u670D\u52A1\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001GitLab \u7B80\u4ECB",slug:"\u4E00\u3001gitlab-\u7B80\u4ECB",children:[]},{level:2,title:"\u4E8C\u3001GitLab\u3001GitLab\u3001GitHub\u3001Gitee",slug:"\u4E8C\u3001gitlab\u3001gitlab\u3001github\u3001gitee",children:[{level:3,title:"1\u3001\u53D1\u5C55\u80CC\u666F",slug:"_1\u3001\u53D1\u5C55\u80CC\u666F",children:[]},{level:3,title:"2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE",slug:"_2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE",children:[]}]},{level:2,title:"\u4E09\u3001GitLab \u4E25\u91CD\u6F0F\u6D1E",slug:"\u4E09\u3001gitlab-\u4E25\u91CD\u6F0F\u6D1E",children:[]},{level:2,title:"\u56DB\u3001GitLab \u76F8\u5173\u94FE\u63A5",slug:"\u56DB\u3001gitlab-\u76F8\u5173\u94FE\u63A5",children:[]}],content:`---
+title: GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4
+date: 2022-6-22 18:53:03
+tag:
+  - Gitlab
+category:
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202206221855008.png
+---
+
+&emsp;GitLab \u662F\u7531 GitLabInc.\u5F00\u53D1\uFF0C\u4F7F\u7528 MIT \u8BB8\u53EF\u8BC1\u7684\u57FA\u4E8E\u7F51\u7EDC\u7684 Git \u4ED3\u5E93\u7BA1\u7406\u5DE5\u5177\uFF0C\u4E14\u5177\u6709 wiki \u548C issue \u8DDF\u8E2A\u529F\u80FD\u3002\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 web \u670D\u52A1\u3002
+<!-- more -->
+
+## \u4E00\u3001GitLab \u7B80\u4ECB
+
+&emsp;GitLab \u662F\u4E00\u4E2A\u7528\u4E8E\u4ED3\u5E93\u7BA1\u7406\u7CFB\u7EDF\u7684\u5F00\u6E90\u9879\u76EE\uFF0C\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 Web \u670D\u52A1\u3002GitLab \u7531\u4E4C\u514B\u5170\u7A0B\u5E8F\u5458 DmitriyZaporozhets \u548C ValerySizov \u5F00\u53D1\uFF0C\u5B83\u4F7F\u7528 Ruby \u8BED\u8A00\u5199\u6210\u3002\u540E\u6765\uFF0C\u4E00\u4E9B\u90E8\u5206\u7528 Go \u8BED\u8A00\u91CD\u5199\u3002\u622A\u6B62 2018 \u5E74 5 \u6708\uFF0C\u8BE5\u516C\u53F8\u7EA6\u6709 290 \u540D\u56E2\u961F\u6210\u5458\uFF0C\u4EE5\u53CA 2000 \u591A\u540D\u5F00\u6E90\u8D21\u732E\u8005\u3002GitLab \u88AB IBM\uFF0CSony\uFF0CJ\xFClichResearchCenter\uFF0CNASA\uFF0CAlibaba\uFF0CInvincea\uFF0CO\u2019ReillyMedia\uFF0CLeibniz-Rechenzentrum(LRZ)\uFF0CCERN\uFF0CSpaceX \u7B49\u7EC4\u7EC7\u4F7F\u7528\u3002<br>
+&emsp;Gitlab \u4ECE 2011 \u5E74 10 \u6708 GitLab \u8FDB\u884C\u7B2C\u4E00\u6B21\u4EE3\u7801\u63D0\u4EA4\uFF0C\u5230 2021 \u5E74 10 \u6708\u6B63\u5F0F\u9646\u7EB3\u65AF\u8FBE\u514B\u4E0A\u5E02\uFF0CGitLab \u7684\u53D1\u5C55\u81F3\u4ECA\u5DF2\u6709\u6574\u6574\u5341\u5E74\u3002\u800C\u5728\u8FC7\u53BB\u7684\u53D1\u5C55\u4E2D\uFF0CGitLab \u5728\u4E2D\u56FD\u5E02\u573A\u4E00\u76F4\u9762\u4E34\u7740\u4E00\u4E2A\u95EE\u9898\u3002\u4F17\u6240\u5468\u77E5\uFF0C\u4E2D\u56FD\u662F\u76EE\u524D\u5168\u7403\u6700\u5927\u7684\u8F6F\u4EF6\u5F00\u53D1\u5E02\u573A\u4E4B\u4E00\uFF0CGitLab \u4E5F\u62E5\u6709\u7740\u6570\u767E\u4E07\u4E2D\u56FD\u7528\u6237\u548C\u8BF8\u591A\u77E5\u540D\u7684\u4E2D\u56FD\u672C\u571F\u4F01\u4E1A\u7528\u6237\u3002\u7136\u800C\uFF0C\u5728\u4EE5\u5F80\uFF0C\u4E2D\u56FD\u7528\u6237\u53EA\u80FD\u901A\u8FC7 GitLab \u7ECF\u9500\u5546\u548C\u7CFB\u7EDF\u96C6\u6210\u5546\u7F51\u7EDC\u83B7\u53D6 GitLab \u5E73\u53F0\u7684\u81EA\u52A9\u7BA1\u7406\u7248\u672C\uFF0C\u4E14\u65E0\u6CD5\u5F97\u5230\u5145\u5206\u7684\u672C\u571F\u6280\u672F\u652F\u6301\u3002
+\u6240\u4EE5\uFF0C\u4E3A\u4E86\u5E2E\u52A9\u4E2D\u56FD\u7528\u6237\u66F4\u597D\u5730\u4F7F\u7528 GitLab \u4EA4\u4ED8\u521B\u65B0\uFF0C\u5408\u8D44\u516C\u53F8\u6781\u72D0(GitLab)\u5E94\u8FD0\u800C\u751F\uFF0C\u8BE5\u516C\u53F8\u7531 GitLab Inc.\u4EE5\u6280\u672F\u6388\u6743\u7684\u5F62\u5F0F\u5165\u80A1\uFF0C\u4E0E\u72EC\u5BB6\u9886\u6295\u7EA2\u6749\u5BBD\u5E26\u8DE8\u5883\u6570\u5B57\u4EA7\u4E1A\u57FA\u91D1\uFF0C\u4EE5\u53CA\u9AD8\u6210\u8D44\u672C\u5408\u4F5C\u8BBE\u7ACB\uFF0C\u7531\u4E2D\u56FD\u7BA1\u7406\u56E2\u961F\u5728\u56FD\u5185\u72EC\u7ACB\u8FD0\u8425\u3002\u5728\u6388\u6743\u65B9\u9762\uFF0C\u6781\u72D0(GitLab) \u62E5\u6709 GitLab \u72EC\u5BB6\u4E14\u4E0D\u53EF\u64A4\u9500\u7684\u6280\u672F\u548C\u54C1\u724C\u6388\u6743\uFF0C\u5168\u9762\u670D\u52A1\u4E8E\u4E2D\u56FD\u5927\u9646\u3001\u9999\u6E2F\u548C\u6FB3\u95E8\u7684\u4F01\u4E1A\u548C\u7528\u6237\uFF0C\u5E76\u6839\u636E\u4E2D\u56FD\u5E02\u573A\u9700\u6C42\u63A8\u51FA\u7279\u5B9A\u7684\u8F6F\u4EF6\u529F\u80FD\u548C\u670D\u52A1\u652F\u6301\u30022022 \u5E74\uFF0C\u6781\u72D0(GitLab)\u6B63\u5F0F\u5BA3\u5E03\u63A8\u51FA\u6781\u72D0 GitLab SaaS \uFF0C\u4E3A\u4E2D\u56FD\u7528\u6237\u63D0\u4F9B\u4ECE\u6E90\u4EE3\u7801\u6258\u7BA1\u5230\u5F00\u53D1\u8FD0\u7EF4\u7684\u5168\u6808\u5F0F\u4E00\u4F53\u5316 DevOps SaaS \u5E73\u53F0\u4E0E\u4F01\u4E1A\u7EA7\u4E13\u5BB6\u54A8\u8BE2\u670D\u52A1\u3002<br />
+&emsp;\u5728\u4EA7\u54C1\u65B9\u9762\uFF0CGitLab \u5728\u5168\u7403\u8303\u56F4\u5185\u6709\u4E09\u4E2A\u7248\u672C\uFF1A\u793E\u533A\u7248\uFF08CE\uFF09\u3001\u4F01\u4E1A\u7248\uFF08EE\uFF09\u3001\u6781\u72D0\u7248 (JH)\uFF0C\u6781\u72D0 GitLab \u662F\u5728\u4E2D\u56FD\u5927\u9646\u548C\u6E2F\u6FB3\u5730\u533A\u53D1\u884C\u7684\u4F01\u4E1A\u7EA7 GitLab \u7248\u672C\uFF0C\u62E5\u6709 GitLab \u6280\u672F\u548C\u54C1\u724C\u72EC\u5BB6\u6388\u6743\uFF0C\u57FA\u4E8E GitLab EE \u548C\u6781\u72D0(GitLab)\u6301\u6709\u72EC\u7ACB\u77E5\u8BC6\u4EA7\u6743\u7684\u2014\u2014JH \u4EE3\u7801\u4ED3\u5E93\u6784\u5EFA\uFF0C\u7531\u6781\u72D0(GitLab)\u516C\u53F8\u5728\u56FD\u5185\u72EC\u7ACB\u8FD0\u8425\u3002\u540C\u65F6\uFF0C\u6781\u72D0 GitLab \u652F\u6301\u79C1\u6709\u5316\u90E8\u7F72\uFF08self-managed\uFF09\u7248\u672C\u548C SaaS \u670D\u52A1\u3002\u6781\u72D0 GitLab \u7684\u4F01\u4E1A\u7EA7\u8BA2\u9605\u8BB8\u53EF\u8BC1\u3001\u6E90\u4EE3\u7801\u7BA1\u7406\u3001\u652F\u4ED8\u7CFB\u7EDF\u7B49\u5747\u5728\u4E2D\u56FD\u5883\u5185\u7BA1\u7406\uFF0C\u53D7\u4E2D\u56FD\u6CD5\u5F8B\u4FDD\u62A4\u3002
+
+## \u4E8C\u3001GitLab\u3001GitLab\u3001GitHub\u3001Gitee
+
+&emsp;\u6781\u72D0 GitLab\u3001GitLab\u3001GitHub\u3001Gitee \u90FD\u662F\u5E02\u9762\u4E0A\u5E38\u89C1\u7684\u4E0E\u4EE3\u7801\u6258\u7BA1\u6709\u5173\u7684\u5E73\u53F0\uFF0C\u4F46\u662F\u8FD9\u56DB\u79CD\u4EA7\u54C1\u8FD8\u662F\u6709\u6240\u5DEE\u5F02\u7684\u3002
+
+### 1\u3001\u53D1\u5C55\u80CC\u666F
+
+\u8FD9\u56DB\u4E2A Giter \u7684\u53D1\u5C55\u5386\u53F2\u5404\u4E0D\u76F8\u540C\uFF0CGitHub \u5386\u53F2\u6700\u957F\uFF0C\u5728 2008 \u5E74\u4E0A\u7EBF\uFF1BGitLab \u5176\u6B21\uFF0CGitLab \u5728 2011 \u5E74\u4E0A\u7EBF \uFF1B\u63A5\u4E0B\u6765\u662F Gitee\uFF0C\u5728 2013 \u5E74\u63A8\u51FA\uFF1B\u6700\u540E\u662F\u6781\u72D0 GitLab\uFF0C\u6210\u7ACB\u4E8E 2021 \u5E74 3 \u6708 18 \u65E5\u3002\u56DB\u79CD\u4EA7\u54C1\u7684\u53D1\u5C55\u7B80\u53F2\u5982\u4E0B\u56FE\u6240\u793A\uFF1A
+![](https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202206222015231.png)
+
+### 2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE
+
+![](https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202206222015511.png)
+
+## \u4E09\u3001GitLab \u4E25\u91CD\u6F0F\u6D1E
+
+&emsp;\u8FD1\u65E5\uFF0C\u5FAE\u6B65\u5728\u7EBF\u65D7\u4E0B\u5FAE\u6B65\u60C5\u62A5\u5C40\u5229\u7528\u514D\u8D39\u793E\u533A\u871C\u7F50 HFish \u6355\u83B7\u5230 GitLab \u672A\u6388\u6743\u8FDC\u7A0B\u547D\u4EE4\u6267\u884C\u6F0F\u6D1E\uFF08CVE-2021-22205\uFF09\u5728\u91CE\u5229\u7528\uFF0C\u653B\u51FB\u6210\u529F\u540E\u653B\u51FB\u8005\u4F1A\u690D\u5165\u6316\u77FF\u6728\u9A6C\u8FDB\u884C\u6316\u77FF\u3002\u8BE5\u6F0F\u6D1E\u65E0\u9700\u8FDB\u884C\u8EAB\u4EFD\u9A8C\u8BC1\u5373\u53EF\u8FDB\u5229\u7528\uFF0C\u5371\u5BB3\u6781\u5927\u3002\u5728 2021 \u5E74\u201C\u53CC 11\u201D\u524D\u591C\uFF0C HFish \u871C\u7F50\u4E0E OneEDR \u8054\u5408\u884C\u52A8\uFF0C\u6355\u83B7\u5E76\u5904\u7F6E\u4E86\u4E00\u8D77\u771F\u5B9E\u5229\u7528 GitLab \u672A\u6388\u6743\u8FDC\u7A0B\u547D\u4EE4\u6267\u884C\u6F0F\u6D1E\uFF08CVE-2021-22205\uFF09\u5728\u91CE\u6F0F\u6D1E\u8FDB\u884C\u6316\u77FF\u7684\u653B\u51FB\u3002\u6839\u636E\u90E8\u7F72\u5728\u4E92\u8054\u7F51\u7684 GitLab \u670D\u52A1\u6A21\u62DF\u871C\u7F50\u663E\u793A\uFF0C\u8BE5\u653B\u51FB\u53D1\u751F\u5728 11 \u6708 10 \u65E5\u665A\u4E0A 21 \u70B9\uFF0C\u67D0\u56FD\u5185 IP \u7ECF\u8FC7\u7B80\u5355\u626B\u63CF\u8E29\u70B9\u540E\uFF0C\u53D1\u9001\u53EF\u7591 HTTP POST \u8BF7\u6C42\uFF0C\u7ECF\u8FC7\u5206\u6790\u786E\u8BA4\u8BE5\u6F0F\u6D1E\u4E3A\u5229\u7528 ExifTool \u89E3\u6790\u56FE\u7247\u5F02\u5E38\u5BFC\u81F4\u547D\u4EE4\u6267\u884C\u7684 CVE-2021-22205\uFF0C\u5E76\u63D0\u53D6\u884C\u4E3A\u7279\u5F81\u63A8\u9001\u7ED9 OneEDR \u5BA2\u6237\u3002\u8BE6\u7EC6\u60C5\u51B5\u53C2\u8003\uFF1A<https://blog.csdn.net/HFish2021/article/details/122050063>\u3002
+
+&emsp;\u8FD1\u671F\uFF0C\u6211\u4EEC\u516C\u53F8\u7684 gitlab \u670D\u52A1\u5668\u4E5F\u88AB\u6CE8\u5165\u6316\u77FF\u7A0B\u5E8F\uFF0C\u7ECF\u8FC7\u6392\u67E5 GitLab \u7248\u672C\u5904\u7406\u6F0F\u6D1E\u7248\u672C\u8303\u56F4\uFF0C\u56E0\u6B64\u4E0D\u5F97\u4E0D\u8FDB\u884C\u7248\u672C\u5347\u7EA7\u3002\u76EE\u524D\u5F71\u54CD\u7684\u7248\u672C\u8303\u56F4\u5982\u4E0B\uFF1A
+11.9 <= GitLab\uFF08CE/EE\uFF09< 13.8.8
+13.9 <= GitLab\uFF08CE/EE\uFF09< 13.9.6
+13.10 <= GitLab\uFF08CE/EE\uFF09< 13.10.3
+
+## \u56DB\u3001GitLab \u76F8\u5173\u94FE\u63A5
+
+GitLab \u5B98\u7F51\uFF1A<https://about.gitlab.com/>  
+GitLab \u6E05\u534E\u955C\u50CF\u6E90\uFF1A<https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/>
+`,contentRendered:`<p>\u2003GitLab \u662F\u7531 GitLabInc.\u5F00\u53D1\uFF0C\u4F7F\u7528 MIT \u8BB8\u53EF\u8BC1\u7684\u57FA\u4E8E\u7F51\u7EDC\u7684 Git \u4ED3\u5E93\u7BA1\u7406\u5DE5\u5177\uFF0C\u4E14\u5177\u6709 wiki \u548C issue \u8DDF\u8E2A\u529F\u80FD\u3002\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 web \u670D\u52A1\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001gitlab-\u7B80\u4ECB" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001gitlab-\u7B80\u4ECB" aria-hidden="true">#</a> \u4E00\u3001GitLab \u7B80\u4ECB</h2>
+<p>\u2003GitLab \u662F\u4E00\u4E2A\u7528\u4E8E\u4ED3\u5E93\u7BA1\u7406\u7CFB\u7EDF\u7684\u5F00\u6E90\u9879\u76EE\uFF0C\u4F7F\u7528 Git \u4F5C\u4E3A\u4EE3\u7801\u7BA1\u7406\u5DE5\u5177\uFF0C\u5E76\u5728\u6B64\u57FA\u7840\u4E0A\u642D\u5EFA\u8D77\u6765\u7684 Web \u670D\u52A1\u3002GitLab \u7531\u4E4C\u514B\u5170\u7A0B\u5E8F\u5458 DmitriyZaporozhets \u548C ValerySizov \u5F00\u53D1\uFF0C\u5B83\u4F7F\u7528 Ruby \u8BED\u8A00\u5199\u6210\u3002\u540E\u6765\uFF0C\u4E00\u4E9B\u90E8\u5206\u7528 Go \u8BED\u8A00\u91CD\u5199\u3002\u622A\u6B62 2018 \u5E74 5 \u6708\uFF0C\u8BE5\u516C\u53F8\u7EA6\u6709 290 \u540D\u56E2\u961F\u6210\u5458\uFF0C\u4EE5\u53CA 2000 \u591A\u540D\u5F00\u6E90\u8D21\u732E\u8005\u3002GitLab \u88AB IBM\uFF0CSony\uFF0CJ\xFClichResearchCenter\uFF0CNASA\uFF0CAlibaba\uFF0CInvincea\uFF0CO\u2019ReillyMedia\uFF0CLeibniz-Rechenzentrum(LRZ)\uFF0CCERN\uFF0CSpaceX \u7B49\u7EC4\u7EC7\u4F7F\u7528\u3002<br>
+\u2003Gitlab \u4ECE 2011 \u5E74 10 \u6708 GitLab \u8FDB\u884C\u7B2C\u4E00\u6B21\u4EE3\u7801\u63D0\u4EA4\uFF0C\u5230 2021 \u5E74 10 \u6708\u6B63\u5F0F\u9646\u7EB3\u65AF\u8FBE\u514B\u4E0A\u5E02\uFF0CGitLab \u7684\u53D1\u5C55\u81F3\u4ECA\u5DF2\u6709\u6574\u6574\u5341\u5E74\u3002\u800C\u5728\u8FC7\u53BB\u7684\u53D1\u5C55\u4E2D\uFF0CGitLab \u5728\u4E2D\u56FD\u5E02\u573A\u4E00\u76F4\u9762\u4E34\u7740\u4E00\u4E2A\u95EE\u9898\u3002\u4F17\u6240\u5468\u77E5\uFF0C\u4E2D\u56FD\u662F\u76EE\u524D\u5168\u7403\u6700\u5927\u7684\u8F6F\u4EF6\u5F00\u53D1\u5E02\u573A\u4E4B\u4E00\uFF0CGitLab \u4E5F\u62E5\u6709\u7740\u6570\u767E\u4E07\u4E2D\u56FD\u7528\u6237\u548C\u8BF8\u591A\u77E5\u540D\u7684\u4E2D\u56FD\u672C\u571F\u4F01\u4E1A\u7528\u6237\u3002\u7136\u800C\uFF0C\u5728\u4EE5\u5F80\uFF0C\u4E2D\u56FD\u7528\u6237\u53EA\u80FD\u901A\u8FC7 GitLab \u7ECF\u9500\u5546\u548C\u7CFB\u7EDF\u96C6\u6210\u5546\u7F51\u7EDC\u83B7\u53D6 GitLab \u5E73\u53F0\u7684\u81EA\u52A9\u7BA1\u7406\u7248\u672C\uFF0C\u4E14\u65E0\u6CD5\u5F97\u5230\u5145\u5206\u7684\u672C\u571F\u6280\u672F\u652F\u6301\u3002
+\u6240\u4EE5\uFF0C\u4E3A\u4E86\u5E2E\u52A9\u4E2D\u56FD\u7528\u6237\u66F4\u597D\u5730\u4F7F\u7528 GitLab \u4EA4\u4ED8\u521B\u65B0\uFF0C\u5408\u8D44\u516C\u53F8\u6781\u72D0(GitLab)\u5E94\u8FD0\u800C\u751F\uFF0C\u8BE5\u516C\u53F8\u7531 GitLab Inc.\u4EE5\u6280\u672F\u6388\u6743\u7684\u5F62\u5F0F\u5165\u80A1\uFF0C\u4E0E\u72EC\u5BB6\u9886\u6295\u7EA2\u6749\u5BBD\u5E26\u8DE8\u5883\u6570\u5B57\u4EA7\u4E1A\u57FA\u91D1\uFF0C\u4EE5\u53CA\u9AD8\u6210\u8D44\u672C\u5408\u4F5C\u8BBE\u7ACB\uFF0C\u7531\u4E2D\u56FD\u7BA1\u7406\u56E2\u961F\u5728\u56FD\u5185\u72EC\u7ACB\u8FD0\u8425\u3002\u5728\u6388\u6743\u65B9\u9762\uFF0C\u6781\u72D0(GitLab) \u62E5\u6709 GitLab \u72EC\u5BB6\u4E14\u4E0D\u53EF\u64A4\u9500\u7684\u6280\u672F\u548C\u54C1\u724C\u6388\u6743\uFF0C\u5168\u9762\u670D\u52A1\u4E8E\u4E2D\u56FD\u5927\u9646\u3001\u9999\u6E2F\u548C\u6FB3\u95E8\u7684\u4F01\u4E1A\u548C\u7528\u6237\uFF0C\u5E76\u6839\u636E\u4E2D\u56FD\u5E02\u573A\u9700\u6C42\u63A8\u51FA\u7279\u5B9A\u7684\u8F6F\u4EF6\u529F\u80FD\u548C\u670D\u52A1\u652F\u6301\u30022022 \u5E74\uFF0C\u6781\u72D0(GitLab)\u6B63\u5F0F\u5BA3\u5E03\u63A8\u51FA\u6781\u72D0 GitLab SaaS \uFF0C\u4E3A\u4E2D\u56FD\u7528\u6237\u63D0\u4F9B\u4ECE\u6E90\u4EE3\u7801\u6258\u7BA1\u5230\u5F00\u53D1\u8FD0\u7EF4\u7684\u5168\u6808\u5F0F\u4E00\u4F53\u5316 DevOps SaaS \u5E73\u53F0\u4E0E\u4F01\u4E1A\u7EA7\u4E13\u5BB6\u54A8\u8BE2\u670D\u52A1\u3002<br />
+\u2003\u5728\u4EA7\u54C1\u65B9\u9762\uFF0CGitLab \u5728\u5168\u7403\u8303\u56F4\u5185\u6709\u4E09\u4E2A\u7248\u672C\uFF1A\u793E\u533A\u7248\uFF08CE\uFF09\u3001\u4F01\u4E1A\u7248\uFF08EE\uFF09\u3001\u6781\u72D0\u7248 (JH)\uFF0C\u6781\u72D0 GitLab \u662F\u5728\u4E2D\u56FD\u5927\u9646\u548C\u6E2F\u6FB3\u5730\u533A\u53D1\u884C\u7684\u4F01\u4E1A\u7EA7 GitLab \u7248\u672C\uFF0C\u62E5\u6709 GitLab \u6280\u672F\u548C\u54C1\u724C\u72EC\u5BB6\u6388\u6743\uFF0C\u57FA\u4E8E GitLab EE \u548C\u6781\u72D0(GitLab)\u6301\u6709\u72EC\u7ACB\u77E5\u8BC6\u4EA7\u6743\u7684\u2014\u2014JH \u4EE3\u7801\u4ED3\u5E93\u6784\u5EFA\uFF0C\u7531\u6781\u72D0(GitLab)\u516C\u53F8\u5728\u56FD\u5185\u72EC\u7ACB\u8FD0\u8425\u3002\u540C\u65F6\uFF0C\u6781\u72D0 GitLab \u652F\u6301\u79C1\u6709\u5316\u90E8\u7F72\uFF08self-managed\uFF09\u7248\u672C\u548C SaaS \u670D\u52A1\u3002\u6781\u72D0 GitLab \u7684\u4F01\u4E1A\u7EA7\u8BA2\u9605\u8BB8\u53EF\u8BC1\u3001\u6E90\u4EE3\u7801\u7BA1\u7406\u3001\u652F\u4ED8\u7CFB\u7EDF\u7B49\u5747\u5728\u4E2D\u56FD\u5883\u5185\u7BA1\u7406\uFF0C\u53D7\u4E2D\u56FD\u6CD5\u5F8B\u4FDD\u62A4\u3002</p>
+<h2 id="\u4E8C\u3001gitlab\u3001gitlab\u3001github\u3001gitee" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001gitlab\u3001gitlab\u3001github\u3001gitee" aria-hidden="true">#</a> \u4E8C\u3001GitLab\u3001GitLab\u3001GitHub\u3001Gitee</h2>
+<p>\u2003\u6781\u72D0 GitLab\u3001GitLab\u3001GitHub\u3001Gitee \u90FD\u662F\u5E02\u9762\u4E0A\u5E38\u89C1\u7684\u4E0E\u4EE3\u7801\u6258\u7BA1\u6709\u5173\u7684\u5E73\u53F0\uFF0C\u4F46\u662F\u8FD9\u56DB\u79CD\u4EA7\u54C1\u8FD8\u662F\u6709\u6240\u5DEE\u5F02\u7684\u3002</p>
+<h3 id="_1\u3001\u53D1\u5C55\u80CC\u666F" tabindex="-1"><a class="header-anchor" href="#_1\u3001\u53D1\u5C55\u80CC\u666F" aria-hidden="true">#</a> 1\u3001\u53D1\u5C55\u80CC\u666F</h3>
+<p>\u8FD9\u56DB\u4E2A Giter \u7684\u53D1\u5C55\u5386\u53F2\u5404\u4E0D\u76F8\u540C\uFF0CGitHub \u5386\u53F2\u6700\u957F\uFF0C\u5728 2008 \u5E74\u4E0A\u7EBF\uFF1BGitLab \u5176\u6B21\uFF0CGitLab \u5728 2011 \u5E74\u4E0A\u7EBF \uFF1B\u63A5\u4E0B\u6765\u662F Gitee\uFF0C\u5728 2013 \u5E74\u63A8\u51FA\uFF1B\u6700\u540E\u662F\u6781\u72D0 GitLab\uFF0C\u6210\u7ACB\u4E8E 2021 \u5E74 3 \u6708 18 \u65E5\u3002\u56DB\u79CD\u4EA7\u54C1\u7684\u53D1\u5C55\u7B80\u53F2\u5982\u4E0B\u56FE\u6240\u793A\uFF1A
+<img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202206222015231.png" alt=""></p>
+<h3 id="_2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE" tabindex="-1"><a class="header-anchor" href="#_2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE" aria-hidden="true">#</a> 2\u3001\u603B\u7ED3\u5BF9\u6BD4\u56FE</h3>
+<p><img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202206222015511.png" alt=""></p>
+<h2 id="\u4E09\u3001gitlab-\u4E25\u91CD\u6F0F\u6D1E" tabindex="-1"><a class="header-anchor" href="#\u4E09\u3001gitlab-\u4E25\u91CD\u6F0F\u6D1E" aria-hidden="true">#</a> \u4E09\u3001GitLab \u4E25\u91CD\u6F0F\u6D1E</h2>
+<p>\u2003\u8FD1\u65E5\uFF0C\u5FAE\u6B65\u5728\u7EBF\u65D7\u4E0B\u5FAE\u6B65\u60C5\u62A5\u5C40\u5229\u7528\u514D\u8D39\u793E\u533A\u871C\u7F50 HFish \u6355\u83B7\u5230 GitLab \u672A\u6388\u6743\u8FDC\u7A0B\u547D\u4EE4\u6267\u884C\u6F0F\u6D1E\uFF08CVE-2021-22205\uFF09\u5728\u91CE\u5229\u7528\uFF0C\u653B\u51FB\u6210\u529F\u540E\u653B\u51FB\u8005\u4F1A\u690D\u5165\u6316\u77FF\u6728\u9A6C\u8FDB\u884C\u6316\u77FF\u3002\u8BE5\u6F0F\u6D1E\u65E0\u9700\u8FDB\u884C\u8EAB\u4EFD\u9A8C\u8BC1\u5373\u53EF\u8FDB\u5229\u7528\uFF0C\u5371\u5BB3\u6781\u5927\u3002\u5728 2021 \u5E74\u201C\u53CC 11\u201D\u524D\u591C\uFF0C HFish \u871C\u7F50\u4E0E OneEDR \u8054\u5408\u884C\u52A8\uFF0C\u6355\u83B7\u5E76\u5904\u7F6E\u4E86\u4E00\u8D77\u771F\u5B9E\u5229\u7528 GitLab \u672A\u6388\u6743\u8FDC\u7A0B\u547D\u4EE4\u6267\u884C\u6F0F\u6D1E\uFF08CVE-2021-22205\uFF09\u5728\u91CE\u6F0F\u6D1E\u8FDB\u884C\u6316\u77FF\u7684\u653B\u51FB\u3002\u6839\u636E\u90E8\u7F72\u5728\u4E92\u8054\u7F51\u7684 GitLab \u670D\u52A1\u6A21\u62DF\u871C\u7F50\u663E\u793A\uFF0C\u8BE5\u653B\u51FB\u53D1\u751F\u5728 11 \u6708 10 \u65E5\u665A\u4E0A 21 \u70B9\uFF0C\u67D0\u56FD\u5185 IP \u7ECF\u8FC7\u7B80\u5355\u626B\u63CF\u8E29\u70B9\u540E\uFF0C\u53D1\u9001\u53EF\u7591 HTTP POST \u8BF7\u6C42\uFF0C\u7ECF\u8FC7\u5206\u6790\u786E\u8BA4\u8BE5\u6F0F\u6D1E\u4E3A\u5229\u7528 ExifTool \u89E3\u6790\u56FE\u7247\u5F02\u5E38\u5BFC\u81F4\u547D\u4EE4\u6267\u884C\u7684 CVE-2021-22205\uFF0C\u5E76\u63D0\u53D6\u884C\u4E3A\u7279\u5F81\u63A8\u9001\u7ED9 OneEDR \u5BA2\u6237\u3002\u8BE6\u7EC6\u60C5\u51B5\u53C2\u8003\uFF1A<a href="https://blog.csdn.net/HFish2021/article/details/122050063" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/HFish2021/article/details/122050063<ExternalLinkIcon/></a>\u3002</p>
+<p>\u2003\u8FD1\u671F\uFF0C\u6211\u4EEC\u516C\u53F8\u7684 gitlab \u670D\u52A1\u5668\u4E5F\u88AB\u6CE8\u5165\u6316\u77FF\u7A0B\u5E8F\uFF0C\u7ECF\u8FC7\u6392\u67E5 GitLab \u7248\u672C\u5904\u7406\u6F0F\u6D1E\u7248\u672C\u8303\u56F4\uFF0C\u56E0\u6B64\u4E0D\u5F97\u4E0D\u8FDB\u884C\u7248\u672C\u5347\u7EA7\u3002\u76EE\u524D\u5F71\u54CD\u7684\u7248\u672C\u8303\u56F4\u5982\u4E0B\uFF1A
+11.9 &lt;= GitLab\uFF08CE/EE\uFF09&lt; 13.8.8
+13.9 &lt;= GitLab\uFF08CE/EE\uFF09&lt; 13.9.6
+13.10 &lt;= GitLab\uFF08CE/EE\uFF09&lt; 13.10.3</p>
+<h2 id="\u56DB\u3001gitlab-\u76F8\u5173\u94FE\u63A5" tabindex="-1"><a class="header-anchor" href="#\u56DB\u3001gitlab-\u76F8\u5173\u94FE\u63A5" aria-hidden="true">#</a> \u56DB\u3001GitLab \u76F8\u5173\u94FE\u63A5</h2>
+<p>GitLab \u5B98\u7F51\uFF1A<a href="https://about.gitlab.com/" target="_blank" rel="noopener noreferrer">https://about.gitlab.com/<ExternalLinkIcon/></a><br>
+GitLab \u6E05\u534E\u955C\u50CF\u6E90\uFF1A<a href="https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/" target="_blank" rel="noopener noreferrer">https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/<ExternalLinkIcon/></a></p>
+`,date:"2022-06-22",deps:[],links:[],pathInferred:"/posts/devops/gitlab/",pathLocale:"/",permalink:null,routeMeta:{title:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4"},sfcBlocks:[],slug:"README",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/gitlab/README.md",filePathRelative:"posts/devops/gitlab/README.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/gitlab/index.html.vue",componentFilePathRelative:"pages/posts/devops/gitlab/index.html.vue",componentFileChunkName:"v-ec046092",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/gitlab/index.html.js",dataFilePathRelative:"pages/posts/devops/gitlab/index.html.js",dataFileChunkName:"v-ec046092",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/gitlab/index.html",htmlFilePathRelative:"posts/devops/gitlab/index.html"},title:"GitLab\u3001GitLab\u3001GitHub\u3001Gitee\u5BF9\u6BD4"},["/posts/devops/gitlab/index.html","/posts/devops/gitlab/README.md"]],["v-5a96e6d2","/posts/devops/nginx/",{_blog:{data:{key:"v-5a96e6d2",path:"/posts/devops/nginx/",title:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790",lang:"zh-CN",frontmatter:{title:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790",date:"2022-02-19T15:53:03.000Z",lang:"zh-CN",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041530281.png",sticky:5,summary:`\u2003Nginx\u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86IMAP/POP3/SMTP \u670D\u52A1\u3002\u9002\u5408\u505A\u9759\u6001\u6587\u4EF6\u5904\u7406\u548C\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u8F7B\u91CF\u7EA7,\u975E\u963B\u585E\uFF0C\u652F\u6301\u9AD8\u5E76\u53D1\uFF0C\u9AD8\u6297\u538B\uFF0C\u8017\u8D39\u5185\u5B58\u5C11\u3002\u540C\u65F6\u652F\u6301\u6545\u969C\u8F6C\u79FB\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-02-19T15:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx\u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86IMAP/POP3/SMTP \u670D\u52A1\u3002\u9002\u5408\u505A\u9759\u6001\u6587\u4EF6\u5904\u7406\u548C\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u8F7B\u91CF\u7EA7,\u975E\u963B\u585E\uFF0C\u652F\u6301\u9AD8\u5E76\u53D1\uFF0C\u9AD8\u6297\u538B\uFF0C\u8017\u8D39\u5185\u5B58\u5C11\u3002\u540C\u65F6\u652F\u6301\u6545\u969C\u8F6C\u79FB\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001nginx \u7B80\u4ECB",slug:"\u4E00\u3001nginx-\u7B80\u4ECB",children:[]},{level:2,title:"\u4E8C\u3001Nginx \u7684\u4F18\u70B9",slug:"\u4E8C\u3001nginx-\u7684\u4F18\u70B9",children:[]},{level:2,title:"\u4E09\u3001Nginx \u7684\u7F3A\u70B9",slug:"\u4E09\u3001nginx-\u7684\u7F3A\u70B9",children:[]},{level:2,title:"\u56DB\u3001\u529F\u80FD\u5BF9\u6BD4",slug:"\u56DB\u3001\u529F\u80FD\u5BF9\u6BD4",children:[{level:3,title:"Nginx \u548C tomcat \u7684\u533A\u522B",slug:"nginx-\u548C-tomcat-\u7684\u533A\u522B",children:[]},{level:3,title:"Nginx \u548C Apache \u7684\u533A\u522B",slug:"nginx-\u548C-apache-\u7684\u533A\u522B",children:[]}]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/nginx/README.md",readingTime:{minutes:6.1,words:1829},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/nginx/`},key:"v-5a96e6d2",path:"/posts/devops/nginx/",title:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790",lang:"zh-CN",frontmatter:{title:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790",date:"2022-02-19T15:53:03.000Z",lang:"zh-CN",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041530281.png",sticky:5,summary:`\u2003Nginx\u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86IMAP/POP3/SMTP \u670D\u52A1\u3002\u9002\u5408\u505A\u9759\u6001\u6587\u4EF6\u5904\u7406\u548C\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u8F7B\u91CF\u7EA7,\u975E\u963B\u585E\uFF0C\u652F\u6301\u9AD8\u5E76\u53D1\uFF0C\u9AD8\u6297\u538B\uFF0C\u8017\u8D39\u5185\u5B58\u5C11\u3002\u540C\u65F6\u652F\u6301\u6545\u969C\u8F6C\u79FB\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-02-19T15:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx\u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86IMAP/POP3/SMTP \u670D\u52A1\u3002\u9002\u5408\u505A\u9759\u6001\u6587\u4EF6\u5904\u7406\u548C\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u8F7B\u91CF\u7EA7,\u975E\u963B\u585E\uFF0C\u652F\u6301\u9AD8\u5E76\u53D1\uFF0C\u9AD8\u6297\u538B\uFF0C\u8017\u8D39\u5185\u5B58\u5C11\u3002\u540C\u65F6\u652F\u6301\u6545\u969C\u8F6C\u79FB\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001nginx \u7B80\u4ECB",slug:"\u4E00\u3001nginx-\u7B80\u4ECB",children:[]},{level:2,title:"\u4E8C\u3001Nginx \u7684\u4F18\u70B9",slug:"\u4E8C\u3001nginx-\u7684\u4F18\u70B9",children:[]},{level:2,title:"\u4E09\u3001Nginx \u7684\u7F3A\u70B9",slug:"\u4E09\u3001nginx-\u7684\u7F3A\u70B9",children:[]},{level:2,title:"\u56DB\u3001\u529F\u80FD\u5BF9\u6BD4",slug:"\u56DB\u3001\u529F\u80FD\u5BF9\u6BD4",children:[{level:3,title:"Nginx \u548C tomcat \u7684\u533A\u522B",slug:"nginx-\u548C-tomcat-\u7684\u533A\u522B",children:[]},{level:3,title:"Nginx \u548C Apache \u7684\u533A\u522B",slug:"nginx-\u548C-apache-\u7684\u533A\u522B",children:[]}]}],content:`---
+title: nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790
+date: 2022-02-19 15:53:03
+lang: zh-CN
+tag:
+  - nginx
+category:
+  - nginx
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041530281.png
+sticky: 5
+---
+
+&emsp;Nginx\u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86IMAP/POP3/SMTP \u670D\u52A1\u3002\u9002\u5408\u505A\u9759\u6001\u6587\u4EF6\u5904\u7406\u548C\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u8F7B\u91CF\u7EA7,\u975E\u963B\u585E\uFF0C\u652F\u6301\u9AD8\u5E76\u53D1\uFF0C\u9AD8\u6297\u538B\uFF0C\u8017\u8D39\u5185\u5B58\u5C11\u3002\u540C\u65F6\u652F\u6301\u6545\u969C\u8F6C\u79FB\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002
+
+<!-- more -->
+
+## \u4E00\u3001nginx \u7B80\u4ECB
+
+::: theorem
+Nginx (engine x) \u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86 IMAP/POP3/SMTP \u670D\u52A1\u3002Nginx \u662F\u7531\u4F0A\u6208\u5C14\xB7\u8D5B\u7D22\u8036\u592B\u4E3A\u4FC4\u7F57\u65AF\u8BBF\u95EE\u91CF\u7B2C\u4E8C\u7684 Rambler.ru \u7AD9\u70B9\uFF08\u4FC4\u6587\uFF1A\u0420\u0430\u043C\u0431\u043B\u0435\u0440\uFF09\u5F00\u53D1\u7684\uFF0C\u7B2C\u4E00\u4E2A\u516C\u5F00\u7248\u672C 0.1.0 \u53D1\u5E03\u4E8E 2004 \u5E74 10 \u6708 4 \u65E5\u3002
+\u5176\u5C06\u6E90\u4EE3\u7801\u4EE5\u7C7B BSD \u8BB8\u53EF\u8BC1\u7684\u5F62\u5F0F\u53D1\u5E03\uFF0C\u56E0\u5B83\u7684\u7A33\u5B9A\u6027\u3001\u4E30\u5BCC\u7684\u529F\u80FD\u96C6\u3001\u7B80\u5355\u7684\u914D\u7F6E\u6587\u4EF6\u548C\u4F4E\u7CFB\u7EDF\u8D44\u6E90\u7684\u6D88\u8017\u800C\u95FB\u540D\u30022011 \u5E74 6 \u6708 1 \u65E5\uFF0Cnginx 1.0.4 \u53D1\u5E03\u3002
+Nginx \u662F\u4E00\u6B3E\u8F7B\u91CF\u7EA7\u7684 Web \u670D\u52A1\u5668/\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\u53CA\u7535\u5B50\u90AE\u4EF6\uFF08IMAP/POP3\uFF09\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u5728 BSD-like \u534F\u8BAE\u4E0B\u53D1\u884C\u3002\u5176\u7279\u70B9\u662F\u5360\u6709\u5185\u5B58\u5C11\uFF0C\u5E76\u53D1\u80FD\u529B\u5F3A\uFF0C\u4E8B\u5B9E\u4E0A nginx \u7684\u5E76\u53D1\u80FD\u529B\u5728\u540C\u7C7B\u578B\u7684\u7F51\u9875\u670D\u52A1\u5668\u4E2D\u8868\u73B0\u8F83\u597D\uFF0C\u4E2D\u56FD\u5927\u9646\u4F7F\u7528 nginx \u7F51\u7AD9\u7528\u6237\u6709\uFF1A\u767E\u5EA6\u3001\u4EAC\u4E1C\u3001\u65B0\u6D6A\u3001\u7F51\u6613\u3001\u817E\u8BAF\u3001\u6DD8\u5B9D\u7B49\u3002
+
+::: right
+\u6765\u81EA [\u7EF4\u57FA\u767E\u79D1](https://baike.baidu.com/item/nginx/3817705?fr=aladdin)
+:::
+
+## \u4E8C\u3001Nginx \u7684\u4F18\u70B9
+
+1\u3001**\u8DE8\u5E73\u53F0**\uFF1ANginx \u53EF\u4EE5\u5728\u5927\u591A\u6570 Unix like OS \u7F16\u8BD1\u8FD0\u884C\uFF0C\u800C\u4E14\u4E5F\u6709 Windows \u7684\u79FB\u690D\u7248\u672C\u3002
+
+2\u3001**\u7B80\u5355\u7A33\u5B9A**\uFF1A\u914D\u7F6E\u7B80\u5355\uFF0C\u975E\u5E38\u5BB9\u6613\u4E0A\u624B\uFF0C\u57FA\u672C\u5728\u4E00\u4E2A conf \u6587\u4EF6\u4E2D\u914D\u7F6E\uFF0C\u6027\u80FD\u6BD4\u8F83\u7A33\u5B9A\uFF0C\u7528\u4E8E\u53CD\u5411\u4EE3\u7406\uFF0C\u5B95\u673A\u7684\u6982\u7387\u5FAE\u4E4E\u5176\u5FAE\uFF0C\u53EF\u4EE5 7\\*24 \u5C0F\u65F6\u957F\u65F6\u95F4\u4E0D\u95F4\u65AD\u8FD0\u884C\u624B\u3002
+
+3\u3001**\u975E\u963B\u585E**\u3001\u9AD8\u5E76\u53D1\u8FDE\u63A5\uFF1A\u6570\u636E\u590D\u5236\u65F6\uFF0C\u78C1\u76D8 I/O \u7684\u7B2C\u4E00\u9636\u6BB5\u662F\u975E\u963B\u585E\u7684\u3002\u5B98\u65B9\u6D4B\u8BD5\u80FD\u591F\u652F\u6491 5 \u4E07\u5E76\u53D1\u8FDE\u63A5\uFF0C\u5728\u5B9E\u9645\u751F\u4EA7\u73AF\u5883\u4E2D\u8DD1\u5230 2 \uFF5E 3 \u4E07\u5E76\u53D1\u8FDE\u63A5\u6570.(\u8FD9\u5F97\u76CA\u4E8E Nginx \u4F7F\u7528\u4E86\u6700\u65B0\u7684 epoll \u6A21\u578B)
+
+4\u3001**\u4E8B\u4EF6\u9A71\u52A8**\uFF1A\u901A\u4FE1\u673A\u5236\u91C7\u7528 epoll \u6A21\u578B\uFF0C\u652F\u6301\u66F4\u5927\u7684\u5E76\u53D1\u8FDE\u63A5\u3002
+
+5\u3001**master/worker \u7ED3\u6784**\uFF1A\u4E00\u4E2A master \u8FDB\u7A0B\uFF0C\u751F\u6210\u4E00\u4E2A\u6216\u591A\u4E2A worker \u8FDB\u7A0B
+
+6\u3001**\u5185\u5B58\u6D88\u8017\u5C0F**\uFF1A\u5904\u7406\u5927\u5E76\u53D1\u7684\u8BF7\u6C42\u5185\u5B58\u6D88\u8017\u975E\u5E38\u5C0F\u3002\u5728 3 \u4E07\u5E76\u53D1\u8FDE\u63A5\u4E0B\uFF0C\u5F00\u542F\u7684 10 \u4E2A Nginx \u8FDB\u7A0B\u624D\u6D88\u8017 150M \u5185\u5B58\uFF0815M\\*10=150M\uFF09
+
+7\u3001**\u6210\u672C\u4F4E\u5EC9**\uFF1ANginx \u53EF\u4EE5\u505A\u9AD8\u5E76\u53D1\u7684\u8D1F\u8F7D\u5747\u8861\uFF0C\u4E14 Nginx \u662F\u5F00\u6E90\u514D\u8D39\u7684\u3002\u800C\u8D2D\u4E70 F5 BIG-IP\u3001NetScaler \u7B49\u786C\u4EF6\u8D1F\u8F7D\u5747\u8861\u4EA4\u6362\u673A\u5219\u9700\u8981\u5341\u591A\u4E07\u81F3\u51E0\u5341\u4E07\u4EBA\u6C11\u5E01
+
+8\u3001**\u5185\u7F6E\u7684\u5065\u5EB7\u68C0\u67E5\u529F\u80FD**\uFF1ANGINX \u80FD\u591F\u6839\u636E\u5E94\u7528\u670D\u52A1\u5668\u5904\u7406\u9875\u9762\u8FD4\u56DE\u7684\u72B6\u6001\u7801\u3001\u8D85\u65F6\u4FE1\u606F\u7B49\u68C0\u6D4B\u670D\u52A1\u5668\u662F\u5426\u51FA\u73B0\u6545\u969C\uFF0C\u5E76\u53CA\u65F6\u8FD4\u56DE\u9519\u8BEF\u7684\u8BF7\u6C42\u91CD\u65B0\u63D0\u4EA4\u5230\u5176\u5B83\u8282\u70B9\u4E0A
+
+9\u3001**\u8282\u7701\u5E26\u5BBD**\uFF1A\u652F\u6301 GZIP \u538B\u7F29\uFF0C\u53EF\u4EE5\u6DFB\u52A0\u6D4F\u89C8\u5668\u672C\u5730\u7F13\u5B58\u7684 Header \u5934\u3002
+
+10\u3001**\u7A33\u5B9A\u6027\u9AD8**\uFF1A\u7528\u4E8E\u53CD\u5411\u4EE3\u7406\uFF0C\u5B95\u673A\u7684\u6982\u7387\u5FAE\u4E4E\u5176\u5FAE
+
+11\u3001**\u6A21\u5757\u5316\u7A0B\u5EA6\u9AD8**\uFF1ANginx \u662F\u9AD8\u5EA6\u6A21\u5757\u5316\u7684\u8BBE\u8BA1\uFF0C\u7F16\u5199\u6A21\u5757\u76F8\u5BF9\u7B80\u5355\uFF0C\u5305\u62EC gzipping, byte ranges, chunked responses,\u4EE5\u53CA SSI-filter \u7B49 filter\uFF0C\u652F\u6301 SSL \u548C TLSSNI\u3002
+
+12\u3001**\u652F\u6301 Rwrite \u91CD\u5199\u89C4\u5219**\uFF1A\u80FD\u591F\u6839\u636E\u57DF\u540D\u3001URL \u7684\u4E0D\u540C\uFF0C \u5C06 HTTP \u8BF7\u6C42\u5206\u53D1\u5230\u4E0D\u540C\u7684\u540E\u7AEF\u670D\u52A1\u5668\u7FA4\u7EC4\u3002
+
+13\u3001**\u652F\u6301\u53CD\u5411\u4EE3\u7406\u548C\u8D1F\u8F7D\u5747\u8861**\uFF1Anginx \u652F\u6301\u53CD\u5411\u4EE3\u7406\u548C\u8D1F\u8F7D\u5747\u8861\u7684\u529F\u80FD\u3002
+
+14\u3001nginx \u4EE3\u7406\u548C\u540E\u7AEF web \u670D\u52A1\u5668\u95F4\u65E0\u9700\u957F\u8FDE\u63A5\uFF1B
+
+15\u3001\u63A5\u6536\u7528\u6237\u8BF7\u6C42\u662F\u5F02\u6B65\u7684\uFF0C\u5373\u5148\u5C06\u7528\u6237\u8BF7\u6C42\u5168\u90E8\u63A5\u6536\u4E0B\u6765\uFF0C\u518D\u4E00\u6B21\u6027\u53D1\u9001\u540E\u540E\u7AEF web \u670D\u52A1\u5668\uFF0C\u6781\u5927\u7684\u51CF\u8F7B\u540E\u7AEF web \u670D\u52A1\u5668\u7684\u538B\u529B\u3002
+
+16\u3001\u9001\u54CD\u5E94\u62A5\u6587\u65F6\uFF0C\u662F\u8FB9\u63A5\u6536\u6765\u81EA\u540E\u7AEF web \u670D\u52A1\u5668\u7684\u6570\u636E\uFF0C\u8FB9\u53D1\u9001\u7ED9\u5BA2\u6237\u7AEF\u7684\u3002
+
+17\u3001\u7F51\u7EDC\u4F9D\u8D56\u578B\u4F4E\u3002NGINX \u5BF9\u7F51\u7EDC\u7684\u4F9D\u8D56\u7A0B\u5EA6\u975E\u5E38\u4F4E\uFF0C\u7406\u8BBA\u4E0A\u8BB2\uFF0C\u53EA\u8981\u80FD\u591F ping \u901A\u5C31\u53EF\u4EE5\u5B9E\u65BD\u8D1F\u8F7D\u5747\u8861\uFF0C\u800C\u4E14\u53EF\u4EE5\u6709\u6548\u533A\u5206\u5185\u7F51\u548C\u5916\u7F51\u6D41\u91CF\u3002
+
+## \u4E09\u3001Nginx \u7684\u7F3A\u70B9
+
+1\u3001**\u52A8\u6001\u5904\u7406\u5DEE**\uFF1ANginx\u53EA\u9002\u5408\u9759\u6001\u548C\u53CD\u5411\u4EE3\u7406\uFF0Cnginx \u5904\u7406\u9759\u6001\u6587\u4EF6\u597D,\u8017\u8D39\u5185\u5B58\u5C11\uFF0C\u4F46\u662F\u5904\u7406\u52A8\u6001\u9875\u9762\u5219\u5F88\u9E21\u808B\uFF0C\u73B0\u5728\u4E00\u822C\u524D\u7AEF\u7528 nginx \u4F5C\u4E3A\u53CD\u5411\u4EE3\u7406\u6297\u4F4F\u538B\u529B\uFF0Capache \u4F5C\u4E3A\u540E\u7AEF\u5904\u7406\u52A8\u6001\u8BF7\u6C42\u3002
+
+2\u3001**rewrite \u5F31**\uFF1A\u867D\u7136 nginx \u652F\u6301 rewrite \u529F\u80FD\uFF0C\u4F46\u662F\u76F8\u6BD4\u4E8E Apache \u6765\u8BF4\uFF0CApache \u6BD4 nginx \u7684 rewrite \u5F3A\u5927\u3002
+
+## \u56DB\u3001\u529F\u80FD\u5BF9\u6BD4
+
+### Nginx \u548C tomcat \u7684\u533A\u522B
+
+&emsp;nginx \u5E38\u7528\u505A\u9759\u6001\u5185\u5BB9\u670D\u52A1\u548C\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u76F4\u63A5\u5916\u6765\u8BF7\u6C42\u8F6C\u53D1\u7ED9\u540E\u9762\u7684\u5E94\u7528\u670D\u52A1\u5668\uFF08tomcat\uFF0CDjango \u7B49\uFF09\uFF0Ctomcat \u66F4\u591A\u7528\u6765\u505A\u4E00\u4E2A\u5E94\u7528\u5BB9\u5668\uFF0C\u8BA9 java web app \u6CE1\u5728\u91CC\u9762\u7684\u4E1C\u897F\u3002\u4E25\u683C\u610F\u4E49\u4E0A\u6765\u8BB2\uFF0CApache \u548C nginx \u5E94\u8BE5\u53EB\u505A HTTP Server\uFF0C\u800C tomcat \u662F\u4E00\u4E2A Application Server \u662F\u4E00\u4E2A Servlet/JSO \u5E94\u7528\u7684\u5BB9\u5668\u3002\u5BA2\u6237\u7AEF\u901A\u8FC7 HTTP Server \u8BBF\u95EE\u670D\u52A1\u5668\u4E0A\u5B58\u50A8\u7684\u8D44\u6E90\uFF08HTML \u6587\u4EF6\uFF0C\u56FE\u7247\u6587\u4EF6\u7B49\uFF09\uFF0CHTTP Server \u662F\u4E2D\u53EA\u662F\u628A\u670D\u52A1\u5668\u4E0A\u7684\u6587\u4EF6\u5982\u5B9E\u901A\u8FC7 HTTP \u534F\u8BAE\u4F20\u8F93\u7ED9\u5BA2\u6237\u7AEF\u3002\u5E94\u7528\u670D\u52A1\u5668\u5F80\u5F80\u662F\u8FD0\u884C\u5728 HTTP Server \u7684\u80CC\u540E\uFF0C\u6267\u884C\u5E94\u7528\uFF0C\u5C06\u52A8\u6001\u7684\u5185\u5BB9\u8F6C\u5316\u4E3A\u9759\u6001\u7684\u5185\u5BB9\u4E4B\u540E\uFF0C\u901A\u8FC7 HTTP Server \u5206\u53D1\u5230\u5BA2\u6237\u7AEF
+\u6CE8\u610F\uFF1Anginx \u53EA\u662F\u628A\u8BF7\u6C42\u505A\u4E86\u5206\u53D1\uFF0C\u4E0D\u505A\u5904\u7406\uFF01\uFF01
+
+### Nginx \u548C Apache \u7684\u533A\u522B
+
+&emsp;Apache \u662F\u540C\u6B65\u591A\u8FDB\u7A0B\u6A21\u578B\uFF0C\u4E00\u4E2A\u8FDE\u63A5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C nginx \u662F\u5F02\u6B65\u7684\uFF0C\u591A\u4E2A\u8FDE\u63A5\uFF08\u4E07\u7EA7\u522B\uFF09\u53EF\u4EE5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B\u3002nginx \u8F7B\u91CF\u7EA7\uFF0C\u6297\u5E76\u53D1\uFF0C\u5904\u7406\u9759\u6001\u6587\u4EF6\u597D
+Apache \u8D85\u7A33\u5B9A\uFF0C\u5BF9 PHP \u652F\u6301\u6BD4\u8F83\u7B80\u5355\uFF0Cnginx \u9700\u8981\u914D\u5408\u5176\u4ED6\u540E\u7AEF\u7528\uFF0C\u5904\u7406\u52A8\u6001\u8BF7\u6C42\u6709\u4F18\u52BF\uFF0C\u5EFA\u8BAE\u4F7F\u7528\u524D\u7AEF nginx \u6297\u5E76\u53D1\uFF0C\u540E\u7AEF apache \u96C6\u7FA4\uFF0C\u914D\u5408\u8D77\u6765\u4F1A\u66F4\u597D\uFF0Cnignx \u7684\u6B63\u5411\u4EE3\u7406\u548C\u53CD\u5411\u4EE3\u7406
+
+**1\u3001nginx \u76F8\u5BF9\u4E8E apache \u7684\u4F18\u70B9**
+:::tip
+\u8F7B\u91CF\u7EA7\uFF0C\u540C\u6837\u8D77 web \u670D\u52A1\uFF0C\u6BD4 apache \u5360\u7528\u66F4\u5C11\u7684\u5185\u5B58\u53CA\u8D44\u6E90 \u6297\u5E76\u53D1\uFF0Cnginx \u5904\u7406\u8BF7\u6C42\u662F\u5F02\u6B65\u975E\u963B\u585E\u7684\uFF0C\u800C apache \u5219\u662F\u963B\u585E\u578B\u7684\uFF0C\u5728\u9AD8\u5E76\u53D1\u4E0B nginx \u80FD\u4FDD\u6301\u4F4E\u8D44\u6E90\u4F4E\u6D88\u8017\u9AD8\u6027\u80FD\u9AD8\u5EA6\u6A21\u5757\u5316\u7684\u8BBE\u8BA1\uFF0C\u7F16\u5199\u6A21\u5757\u76F8\u5BF9\u7B80\u5355\u63D0\u4F9B\u8D1F\u8F7D\u5747\u8861,\u793E\u533A\u6D3B\u8DC3\uFF0C\u5404\u79CD\u9AD8\u6027\u80FD\u6A21\u5757\u51FA\u54C1\u8FC5\u901F
+:::
+**2\u3001apache \u76F8\u5BF9\u4E8E nginx \u7684\u4F18\u70B9**
+:::tip
+apache \u7684 rewrite\uFF08\u91CD\u5199\uFF09 \u6BD4 nginx \u7684\u5F3A\u5927 ;\u652F\u6301\u52A8\u6001\u9875\u9762;\u652F\u6301\u7684\u6A21\u5757\u591A\uFF0C\u57FA\u672C\u6DB5\u76D6\u6240\u6709\u5E94\u7528;\u6027\u80FD\u7A33\u5B9A\uFF0C\u800C nginx \u76F8\u5BF9 bug \u8F83\u591A\u3002
+:::
+
+**3\u3001\u4E24\u8005\u4F18\u7F3A\u70B9\u6BD4\u8F83**
+:::tip
+Nginx \u914D\u7F6E\u7B80\u6D01, Apache \u590D\u6742 ;
+Nginx \u9759\u6001\u5904\u7406\u6027\u80FD\u6BD4 Apache \u9AD8 3 \u500D\u4EE5\u4E0A ;
+Apache \u5BF9 PHP \u652F\u6301\u6BD4\u8F83\u7B80\u5355\uFF0CNginx \u9700\u8981\u914D\u5408\u5176\u4ED6\u540E\u7AEF\u7528;Apache \u7684\u7EC4\u4EF6\u6BD4 Nginx \u591A ;
+apache \u662F\u540C\u6B65\u591A\u8FDB\u7A0B\u6A21\u578B\uFF0C\u4E00\u4E2A\u8FDE\u63A5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B;nginx \u662F\u5F02\u6B65\u7684\uFF0C\u591A\u4E2A\u8FDE\u63A5(\u4E07\u7EA7\u522B)\u53EF\u4EE5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B;
+nginx \u5904\u7406\u9759\u6001\u6587\u4EF6\u597D,\u8017\u8D39\u5185\u5B58\u5C11;
+\u52A8\u6001\u8BF7\u6C42\u7531 apache \u53BB\u505A\uFF0Cnginx \u53EA\u9002\u5408\u9759\u6001\u548C\u53CD\u5411;
+Nginx \u9002\u5408\u505A\u524D\u7AEF\u670D\u52A1\u5668\uFF0C\u8D1F\u8F7D\u6027\u80FD\u5F88\u597D;
+Nginx \u672C\u8EAB\u5C31\u662F\u4E00\u4E2A\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668 \uFF0C\u4E14\u652F\u6301\u8D1F\u8F7D\u5747\u8861
+:::
+`,contentRendered:`<p>\u2003Nginx\u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86IMAP/POP3/SMTP \u670D\u52A1\u3002\u9002\u5408\u505A\u9759\u6001\u6587\u4EF6\u5904\u7406\u548C\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u8F7B\u91CF\u7EA7,\u975E\u963B\u585E\uFF0C\u652F\u6301\u9AD8\u5E76\u53D1\uFF0C\u9AD8\u6297\u538B\uFF0C\u8017\u8D39\u5185\u5B58\u5C11\u3002\u540C\u65F6\u652F\u6301\u6545\u969C\u8F6C\u79FB\uFF0C\u8D1F\u8F7D\u5747\u8861\u7B49\u529F\u80FD\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001nginx-\u7B80\u4ECB" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001nginx-\u7B80\u4ECB" aria-hidden="true">#</a> \u4E00\u3001nginx \u7B80\u4ECB</h2>
+<p>::: theorem
+Nginx (engine x) \u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 HTTP \u548C\u53CD\u5411\u4EE3\u7406 web \u670D\u52A1\u5668\uFF0C\u540C\u65F6\u4E5F\u63D0\u4F9B\u4E86 IMAP/POP3/SMTP \u670D\u52A1\u3002Nginx \u662F\u7531\u4F0A\u6208\u5C14\xB7\u8D5B\u7D22\u8036\u592B\u4E3A\u4FC4\u7F57\u65AF\u8BBF\u95EE\u91CF\u7B2C\u4E8C\u7684 Rambler.ru \u7AD9\u70B9\uFF08\u4FC4\u6587\uFF1A\u0420\u0430\u043C\u0431\u043B\u0435\u0440\uFF09\u5F00\u53D1\u7684\uFF0C\u7B2C\u4E00\u4E2A\u516C\u5F00\u7248\u672C 0.1.0 \u53D1\u5E03\u4E8E 2004 \u5E74 10 \u6708 4 \u65E5\u3002
+\u5176\u5C06\u6E90\u4EE3\u7801\u4EE5\u7C7B BSD \u8BB8\u53EF\u8BC1\u7684\u5F62\u5F0F\u53D1\u5E03\uFF0C\u56E0\u5B83\u7684\u7A33\u5B9A\u6027\u3001\u4E30\u5BCC\u7684\u529F\u80FD\u96C6\u3001\u7B80\u5355\u7684\u914D\u7F6E\u6587\u4EF6\u548C\u4F4E\u7CFB\u7EDF\u8D44\u6E90\u7684\u6D88\u8017\u800C\u95FB\u540D\u30022011 \u5E74 6 \u6708 1 \u65E5\uFF0Cnginx 1.0.4 \u53D1\u5E03\u3002
+Nginx \u662F\u4E00\u6B3E\u8F7B\u91CF\u7EA7\u7684 Web \u670D\u52A1\u5668/\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668\u53CA\u7535\u5B50\u90AE\u4EF6\uFF08IMAP/POP3\uFF09\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u5728 BSD-like \u534F\u8BAE\u4E0B\u53D1\u884C\u3002\u5176\u7279\u70B9\u662F\u5360\u6709\u5185\u5B58\u5C11\uFF0C\u5E76\u53D1\u80FD\u529B\u5F3A\uFF0C\u4E8B\u5B9E\u4E0A nginx \u7684\u5E76\u53D1\u80FD\u529B\u5728\u540C\u7C7B\u578B\u7684\u7F51\u9875\u670D\u52A1\u5668\u4E2D\u8868\u73B0\u8F83\u597D\uFF0C\u4E2D\u56FD\u5927\u9646\u4F7F\u7528 nginx \u7F51\u7AD9\u7528\u6237\u6709\uFF1A\u767E\u5EA6\u3001\u4EAC\u4E1C\u3001\u65B0\u6D6A\u3001\u7F51\u6613\u3001\u817E\u8BAF\u3001\u6DD8\u5B9D\u7B49\u3002</p>
+<p>::: right
+\u6765\u81EA <a href="https://baike.baidu.com/item/nginx/3817705?fr=aladdin" target="_blank" rel="noopener noreferrer">\u7EF4\u57FA\u767E\u79D1<ExternalLinkIcon/></a>
+:::</p>
+<h2 id="\u4E8C\u3001nginx-\u7684\u4F18\u70B9" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001nginx-\u7684\u4F18\u70B9" aria-hidden="true">#</a> \u4E8C\u3001Nginx \u7684\u4F18\u70B9</h2>
+<p>1\u3001<strong>\u8DE8\u5E73\u53F0</strong>\uFF1ANginx \u53EF\u4EE5\u5728\u5927\u591A\u6570 Unix like OS \u7F16\u8BD1\u8FD0\u884C\uFF0C\u800C\u4E14\u4E5F\u6709 Windows \u7684\u79FB\u690D\u7248\u672C\u3002</p>
+<p>2\u3001<strong>\u7B80\u5355\u7A33\u5B9A</strong>\uFF1A\u914D\u7F6E\u7B80\u5355\uFF0C\u975E\u5E38\u5BB9\u6613\u4E0A\u624B\uFF0C\u57FA\u672C\u5728\u4E00\u4E2A conf \u6587\u4EF6\u4E2D\u914D\u7F6E\uFF0C\u6027\u80FD\u6BD4\u8F83\u7A33\u5B9A\uFF0C\u7528\u4E8E\u53CD\u5411\u4EE3\u7406\uFF0C\u5B95\u673A\u7684\u6982\u7387\u5FAE\u4E4E\u5176\u5FAE\uFF0C\u53EF\u4EE5 7*24 \u5C0F\u65F6\u957F\u65F6\u95F4\u4E0D\u95F4\u65AD\u8FD0\u884C\u624B\u3002</p>
+<p>3\u3001<strong>\u975E\u963B\u585E</strong>\u3001\u9AD8\u5E76\u53D1\u8FDE\u63A5\uFF1A\u6570\u636E\u590D\u5236\u65F6\uFF0C\u78C1\u76D8 I/O \u7684\u7B2C\u4E00\u9636\u6BB5\u662F\u975E\u963B\u585E\u7684\u3002\u5B98\u65B9\u6D4B\u8BD5\u80FD\u591F\u652F\u6491 5 \u4E07\u5E76\u53D1\u8FDE\u63A5\uFF0C\u5728\u5B9E\u9645\u751F\u4EA7\u73AF\u5883\u4E2D\u8DD1\u5230 2 \uFF5E 3 \u4E07\u5E76\u53D1\u8FDE\u63A5\u6570.(\u8FD9\u5F97\u76CA\u4E8E Nginx \u4F7F\u7528\u4E86\u6700\u65B0\u7684 epoll \u6A21\u578B)</p>
+<p>4\u3001<strong>\u4E8B\u4EF6\u9A71\u52A8</strong>\uFF1A\u901A\u4FE1\u673A\u5236\u91C7\u7528 epoll \u6A21\u578B\uFF0C\u652F\u6301\u66F4\u5927\u7684\u5E76\u53D1\u8FDE\u63A5\u3002</p>
+<p>5\u3001<strong>master/worker \u7ED3\u6784</strong>\uFF1A\u4E00\u4E2A master \u8FDB\u7A0B\uFF0C\u751F\u6210\u4E00\u4E2A\u6216\u591A\u4E2A worker \u8FDB\u7A0B</p>
+<p>6\u3001<strong>\u5185\u5B58\u6D88\u8017\u5C0F</strong>\uFF1A\u5904\u7406\u5927\u5E76\u53D1\u7684\u8BF7\u6C42\u5185\u5B58\u6D88\u8017\u975E\u5E38\u5C0F\u3002\u5728 3 \u4E07\u5E76\u53D1\u8FDE\u63A5\u4E0B\uFF0C\u5F00\u542F\u7684 10 \u4E2A Nginx \u8FDB\u7A0B\u624D\u6D88\u8017 150M \u5185\u5B58\uFF0815M*10=150M\uFF09</p>
+<p>7\u3001<strong>\u6210\u672C\u4F4E\u5EC9</strong>\uFF1ANginx \u53EF\u4EE5\u505A\u9AD8\u5E76\u53D1\u7684\u8D1F\u8F7D\u5747\u8861\uFF0C\u4E14 Nginx \u662F\u5F00\u6E90\u514D\u8D39\u7684\u3002\u800C\u8D2D\u4E70 F5 BIG-IP\u3001NetScaler \u7B49\u786C\u4EF6\u8D1F\u8F7D\u5747\u8861\u4EA4\u6362\u673A\u5219\u9700\u8981\u5341\u591A\u4E07\u81F3\u51E0\u5341\u4E07\u4EBA\u6C11\u5E01</p>
+<p>8\u3001<strong>\u5185\u7F6E\u7684\u5065\u5EB7\u68C0\u67E5\u529F\u80FD</strong>\uFF1ANGINX \u80FD\u591F\u6839\u636E\u5E94\u7528\u670D\u52A1\u5668\u5904\u7406\u9875\u9762\u8FD4\u56DE\u7684\u72B6\u6001\u7801\u3001\u8D85\u65F6\u4FE1\u606F\u7B49\u68C0\u6D4B\u670D\u52A1\u5668\u662F\u5426\u51FA\u73B0\u6545\u969C\uFF0C\u5E76\u53CA\u65F6\u8FD4\u56DE\u9519\u8BEF\u7684\u8BF7\u6C42\u91CD\u65B0\u63D0\u4EA4\u5230\u5176\u5B83\u8282\u70B9\u4E0A</p>
+<p>9\u3001<strong>\u8282\u7701\u5E26\u5BBD</strong>\uFF1A\u652F\u6301 GZIP \u538B\u7F29\uFF0C\u53EF\u4EE5\u6DFB\u52A0\u6D4F\u89C8\u5668\u672C\u5730\u7F13\u5B58\u7684 Header \u5934\u3002</p>
+<p>10\u3001<strong>\u7A33\u5B9A\u6027\u9AD8</strong>\uFF1A\u7528\u4E8E\u53CD\u5411\u4EE3\u7406\uFF0C\u5B95\u673A\u7684\u6982\u7387\u5FAE\u4E4E\u5176\u5FAE</p>
+<p>11\u3001<strong>\u6A21\u5757\u5316\u7A0B\u5EA6\u9AD8</strong>\uFF1ANginx \u662F\u9AD8\u5EA6\u6A21\u5757\u5316\u7684\u8BBE\u8BA1\uFF0C\u7F16\u5199\u6A21\u5757\u76F8\u5BF9\u7B80\u5355\uFF0C\u5305\u62EC gzipping, byte ranges, chunked responses,\u4EE5\u53CA SSI-filter \u7B49 filter\uFF0C\u652F\u6301 SSL \u548C TLSSNI\u3002</p>
+<p>12\u3001<strong>\u652F\u6301 Rwrite \u91CD\u5199\u89C4\u5219</strong>\uFF1A\u80FD\u591F\u6839\u636E\u57DF\u540D\u3001URL \u7684\u4E0D\u540C\uFF0C \u5C06 HTTP \u8BF7\u6C42\u5206\u53D1\u5230\u4E0D\u540C\u7684\u540E\u7AEF\u670D\u52A1\u5668\u7FA4\u7EC4\u3002</p>
+<p>13\u3001<strong>\u652F\u6301\u53CD\u5411\u4EE3\u7406\u548C\u8D1F\u8F7D\u5747\u8861</strong>\uFF1Anginx \u652F\u6301\u53CD\u5411\u4EE3\u7406\u548C\u8D1F\u8F7D\u5747\u8861\u7684\u529F\u80FD\u3002</p>
+<p>14\u3001nginx \u4EE3\u7406\u548C\u540E\u7AEF web \u670D\u52A1\u5668\u95F4\u65E0\u9700\u957F\u8FDE\u63A5\uFF1B</p>
+<p>15\u3001\u63A5\u6536\u7528\u6237\u8BF7\u6C42\u662F\u5F02\u6B65\u7684\uFF0C\u5373\u5148\u5C06\u7528\u6237\u8BF7\u6C42\u5168\u90E8\u63A5\u6536\u4E0B\u6765\uFF0C\u518D\u4E00\u6B21\u6027\u53D1\u9001\u540E\u540E\u7AEF web \u670D\u52A1\u5668\uFF0C\u6781\u5927\u7684\u51CF\u8F7B\u540E\u7AEF web \u670D\u52A1\u5668\u7684\u538B\u529B\u3002</p>
+<p>16\u3001\u9001\u54CD\u5E94\u62A5\u6587\u65F6\uFF0C\u662F\u8FB9\u63A5\u6536\u6765\u81EA\u540E\u7AEF web \u670D\u52A1\u5668\u7684\u6570\u636E\uFF0C\u8FB9\u53D1\u9001\u7ED9\u5BA2\u6237\u7AEF\u7684\u3002</p>
+<p>17\u3001\u7F51\u7EDC\u4F9D\u8D56\u578B\u4F4E\u3002NGINX \u5BF9\u7F51\u7EDC\u7684\u4F9D\u8D56\u7A0B\u5EA6\u975E\u5E38\u4F4E\uFF0C\u7406\u8BBA\u4E0A\u8BB2\uFF0C\u53EA\u8981\u80FD\u591F ping \u901A\u5C31\u53EF\u4EE5\u5B9E\u65BD\u8D1F\u8F7D\u5747\u8861\uFF0C\u800C\u4E14\u53EF\u4EE5\u6709\u6548\u533A\u5206\u5185\u7F51\u548C\u5916\u7F51\u6D41\u91CF\u3002</p>
+<h2 id="\u4E09\u3001nginx-\u7684\u7F3A\u70B9" tabindex="-1"><a class="header-anchor" href="#\u4E09\u3001nginx-\u7684\u7F3A\u70B9" aria-hidden="true">#</a> \u4E09\u3001Nginx \u7684\u7F3A\u70B9</h2>
+<p>1\u3001<strong>\u52A8\u6001\u5904\u7406\u5DEE</strong>\uFF1ANginx\u53EA\u9002\u5408\u9759\u6001\u548C\u53CD\u5411\u4EE3\u7406\uFF0Cnginx \u5904\u7406\u9759\u6001\u6587\u4EF6\u597D,\u8017\u8D39\u5185\u5B58\u5C11\uFF0C\u4F46\u662F\u5904\u7406\u52A8\u6001\u9875\u9762\u5219\u5F88\u9E21\u808B\uFF0C\u73B0\u5728\u4E00\u822C\u524D\u7AEF\u7528 nginx \u4F5C\u4E3A\u53CD\u5411\u4EE3\u7406\u6297\u4F4F\u538B\u529B\uFF0Capache \u4F5C\u4E3A\u540E\u7AEF\u5904\u7406\u52A8\u6001\u8BF7\u6C42\u3002</p>
+<p>2\u3001<strong>rewrite \u5F31</strong>\uFF1A\u867D\u7136 nginx \u652F\u6301 rewrite \u529F\u80FD\uFF0C\u4F46\u662F\u76F8\u6BD4\u4E8E Apache \u6765\u8BF4\uFF0CApache \u6BD4 nginx \u7684 rewrite \u5F3A\u5927\u3002</p>
+<h2 id="\u56DB\u3001\u529F\u80FD\u5BF9\u6BD4" tabindex="-1"><a class="header-anchor" href="#\u56DB\u3001\u529F\u80FD\u5BF9\u6BD4" aria-hidden="true">#</a> \u56DB\u3001\u529F\u80FD\u5BF9\u6BD4</h2>
+<h3 id="nginx-\u548C-tomcat-\u7684\u533A\u522B" tabindex="-1"><a class="header-anchor" href="#nginx-\u548C-tomcat-\u7684\u533A\u522B" aria-hidden="true">#</a> Nginx \u548C tomcat \u7684\u533A\u522B</h3>
+<p>\u2003nginx \u5E38\u7528\u505A\u9759\u6001\u5185\u5BB9\u670D\u52A1\u548C\u4EE3\u7406\u670D\u52A1\u5668\uFF0C\u76F4\u63A5\u5916\u6765\u8BF7\u6C42\u8F6C\u53D1\u7ED9\u540E\u9762\u7684\u5E94\u7528\u670D\u52A1\u5668\uFF08tomcat\uFF0CDjango \u7B49\uFF09\uFF0Ctomcat \u66F4\u591A\u7528\u6765\u505A\u4E00\u4E2A\u5E94\u7528\u5BB9\u5668\uFF0C\u8BA9 java web app \u6CE1\u5728\u91CC\u9762\u7684\u4E1C\u897F\u3002\u4E25\u683C\u610F\u4E49\u4E0A\u6765\u8BB2\uFF0CApache \u548C nginx \u5E94\u8BE5\u53EB\u505A HTTP Server\uFF0C\u800C tomcat \u662F\u4E00\u4E2A Application Server \u662F\u4E00\u4E2A Servlet/JSO \u5E94\u7528\u7684\u5BB9\u5668\u3002\u5BA2\u6237\u7AEF\u901A\u8FC7 HTTP Server \u8BBF\u95EE\u670D\u52A1\u5668\u4E0A\u5B58\u50A8\u7684\u8D44\u6E90\uFF08HTML \u6587\u4EF6\uFF0C\u56FE\u7247\u6587\u4EF6\u7B49\uFF09\uFF0CHTTP Server \u662F\u4E2D\u53EA\u662F\u628A\u670D\u52A1\u5668\u4E0A\u7684\u6587\u4EF6\u5982\u5B9E\u901A\u8FC7 HTTP \u534F\u8BAE\u4F20\u8F93\u7ED9\u5BA2\u6237\u7AEF\u3002\u5E94\u7528\u670D\u52A1\u5668\u5F80\u5F80\u662F\u8FD0\u884C\u5728 HTTP Server \u7684\u80CC\u540E\uFF0C\u6267\u884C\u5E94\u7528\uFF0C\u5C06\u52A8\u6001\u7684\u5185\u5BB9\u8F6C\u5316\u4E3A\u9759\u6001\u7684\u5185\u5BB9\u4E4B\u540E\uFF0C\u901A\u8FC7 HTTP Server \u5206\u53D1\u5230\u5BA2\u6237\u7AEF
+\u6CE8\u610F\uFF1Anginx \u53EA\u662F\u628A\u8BF7\u6C42\u505A\u4E86\u5206\u53D1\uFF0C\u4E0D\u505A\u5904\u7406\uFF01\uFF01</p>
+<h3 id="nginx-\u548C-apache-\u7684\u533A\u522B" tabindex="-1"><a class="header-anchor" href="#nginx-\u548C-apache-\u7684\u533A\u522B" aria-hidden="true">#</a> Nginx \u548C Apache \u7684\u533A\u522B</h3>
+<p>\u2003Apache \u662F\u540C\u6B65\u591A\u8FDB\u7A0B\u6A21\u578B\uFF0C\u4E00\u4E2A\u8FDE\u63A5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B\uFF0C\u800C nginx \u662F\u5F02\u6B65\u7684\uFF0C\u591A\u4E2A\u8FDE\u63A5\uFF08\u4E07\u7EA7\u522B\uFF09\u53EF\u4EE5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B\u3002nginx \u8F7B\u91CF\u7EA7\uFF0C\u6297\u5E76\u53D1\uFF0C\u5904\u7406\u9759\u6001\u6587\u4EF6\u597D
+Apache \u8D85\u7A33\u5B9A\uFF0C\u5BF9 PHP \u652F\u6301\u6BD4\u8F83\u7B80\u5355\uFF0Cnginx \u9700\u8981\u914D\u5408\u5176\u4ED6\u540E\u7AEF\u7528\uFF0C\u5904\u7406\u52A8\u6001\u8BF7\u6C42\u6709\u4F18\u52BF\uFF0C\u5EFA\u8BAE\u4F7F\u7528\u524D\u7AEF nginx \u6297\u5E76\u53D1\uFF0C\u540E\u7AEF apache \u96C6\u7FA4\uFF0C\u914D\u5408\u8D77\u6765\u4F1A\u66F4\u597D\uFF0Cnignx \u7684\u6B63\u5411\u4EE3\u7406\u548C\u53CD\u5411\u4EE3\u7406</p>
+<p><strong>1\u3001nginx \u76F8\u5BF9\u4E8E apache \u7684\u4F18\u70B9</strong></p>
+<div class="custom-container tip"><p class="custom-container-title">\u63D0\u793A</p>
+<p>\u8F7B\u91CF\u7EA7\uFF0C\u540C\u6837\u8D77 web \u670D\u52A1\uFF0C\u6BD4 apache \u5360\u7528\u66F4\u5C11\u7684\u5185\u5B58\u53CA\u8D44\u6E90 \u6297\u5E76\u53D1\uFF0Cnginx \u5904\u7406\u8BF7\u6C42\u662F\u5F02\u6B65\u975E\u963B\u585E\u7684\uFF0C\u800C apache \u5219\u662F\u963B\u585E\u578B\u7684\uFF0C\u5728\u9AD8\u5E76\u53D1\u4E0B nginx \u80FD\u4FDD\u6301\u4F4E\u8D44\u6E90\u4F4E\u6D88\u8017\u9AD8\u6027\u80FD\u9AD8\u5EA6\u6A21\u5757\u5316\u7684\u8BBE\u8BA1\uFF0C\u7F16\u5199\u6A21\u5757\u76F8\u5BF9\u7B80\u5355\u63D0\u4F9B\u8D1F\u8F7D\u5747\u8861,\u793E\u533A\u6D3B\u8DC3\uFF0C\u5404\u79CD\u9AD8\u6027\u80FD\u6A21\u5757\u51FA\u54C1\u8FC5\u901F</p>
+</div>
+<p><strong>2\u3001apache \u76F8\u5BF9\u4E8E nginx \u7684\u4F18\u70B9</strong></p>
+<div class="custom-container tip"><p class="custom-container-title">\u63D0\u793A</p>
+<p>apache \u7684 rewrite\uFF08\u91CD\u5199\uFF09 \u6BD4 nginx \u7684\u5F3A\u5927 ;\u652F\u6301\u52A8\u6001\u9875\u9762;\u652F\u6301\u7684\u6A21\u5757\u591A\uFF0C\u57FA\u672C\u6DB5\u76D6\u6240\u6709\u5E94\u7528;\u6027\u80FD\u7A33\u5B9A\uFF0C\u800C nginx \u76F8\u5BF9 bug \u8F83\u591A\u3002</p>
+</div>
+<p><strong>3\u3001\u4E24\u8005\u4F18\u7F3A\u70B9\u6BD4\u8F83</strong></p>
+<div class="custom-container tip"><p class="custom-container-title">\u63D0\u793A</p>
+<p>Nginx \u914D\u7F6E\u7B80\u6D01, Apache \u590D\u6742 ;
+Nginx \u9759\u6001\u5904\u7406\u6027\u80FD\u6BD4 Apache \u9AD8 3 \u500D\u4EE5\u4E0A ;
+Apache \u5BF9 PHP \u652F\u6301\u6BD4\u8F83\u7B80\u5355\uFF0CNginx \u9700\u8981\u914D\u5408\u5176\u4ED6\u540E\u7AEF\u7528;Apache \u7684\u7EC4\u4EF6\u6BD4 Nginx \u591A ;
+apache \u662F\u540C\u6B65\u591A\u8FDB\u7A0B\u6A21\u578B\uFF0C\u4E00\u4E2A\u8FDE\u63A5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B;nginx \u662F\u5F02\u6B65\u7684\uFF0C\u591A\u4E2A\u8FDE\u63A5(\u4E07\u7EA7\u522B)\u53EF\u4EE5\u5BF9\u5E94\u4E00\u4E2A\u8FDB\u7A0B;
+nginx \u5904\u7406\u9759\u6001\u6587\u4EF6\u597D,\u8017\u8D39\u5185\u5B58\u5C11;
+\u52A8\u6001\u8BF7\u6C42\u7531 apache \u53BB\u505A\uFF0Cnginx \u53EA\u9002\u5408\u9759\u6001\u548C\u53CD\u5411;
+Nginx \u9002\u5408\u505A\u524D\u7AEF\u670D\u52A1\u5668\uFF0C\u8D1F\u8F7D\u6027\u80FD\u5F88\u597D;
+Nginx \u672C\u8EAB\u5C31\u662F\u4E00\u4E2A\u53CD\u5411\u4EE3\u7406\u670D\u52A1\u5668 \uFF0C\u4E14\u652F\u6301\u8D1F\u8F7D\u5747\u8861</p>
+</div>
+`,date:"2022-02-19",deps:[],links:[],pathInferred:"/posts/devops/nginx/",pathLocale:"/",permalink:null,routeMeta:{title:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790"},sfcBlocks:[],slug:"README",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/nginx/README.md",filePathRelative:"posts/devops/nginx/README.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/index.html.vue",componentFilePathRelative:"pages/posts/devops/nginx/index.html.vue",componentFileChunkName:"v-5a96e6d2",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/index.html.js",dataFilePathRelative:"pages/posts/devops/nginx/index.html.js",dataFileChunkName:"v-5a96e6d2",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/nginx/index.html",htmlFilePathRelative:"posts/devops/nginx/index.html"},title:"nginx \u5185\u5BB9\u7B80\u4ECB\u548C\u6027\u80FD\u5206\u6790"},["/posts/devops/nginx/index.html","/posts/devops/nginx/README.md"]],["v-324dfae9","/posts/devops/nginx/cache.html",{_blog:{data:{key:"v-324dfae9",path:"/posts/devops/nginx/cache.html",title:"Nginx Cache\u7F13\u5B58\u914D\u7F6E",lang:"zh-CN",frontmatter:{title:"Nginx Cache\u7F13\u5B58\u914D\u7F6E",date:"2022-03-14T10:13:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201016051.jpg",summary:`\u2003Nginx\u4F5C\u4E3AWeb\u7F13\u5B58\u670D\u52A1\u5668\uFF0C\u5B83\u4ECB\u4E8E\u5BA2\u6237\u7AEF\u548C\u5E94\u7528\u670D\u52A1\u5668\u4E4B\u95F4\uFF0C\u5F53\u7528\u6237\u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E00\u4E2AURL\u65F6\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u4F1A\u53BB\u5E94\u7528\u670D\u52A1\u5668\u83B7\u53D6\u8981\u5C55\u793A\u7ED9\u7528\u6237\u7684\u5185\u5BB9\uFF0C\u5C06\u5185\u5BB9\u7F13\u5B58\u5230\u81EA\u5DF1\u7684\u670D\u52A1\u5668\u4E0A\uFF0C\u5F53\u4E0B\u4E00\u6B21\u8BF7\u6C42\u5230\u6765\u65F6\uFF0C\u5982\u679C\u8BBF\u95EE\u7684\u662F\u540C\u4E00\u4E2AURL\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u5C31\u4F1A\u76F4\u63A5\u5C06\u4E4B\u524D\u7F13\u5B58\u7684\u5185\u5BB9\u8FD4\u56DE\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u800C\u4E0D\u662F\u5411\u5E94\u7528\u670D\u52A1\u5668\u518D\u6B21\u53D1\u9001\u8BF7\u6C42\u3002web\u7F13\u5B58\u964D\u4F4E\u4E86\u5E94\u7528\u670D\u52A1\u5668\u3001\u6570\u636E\u5E93\u7684\u8D1F\u8F7D\uFF0C\u51CF\u5C11\u4E86\u7F51\u7EDC\u5EF6\u8FDF\uFF0C\u63D0\u9AD8\u4E86\u7528\u6237\u8BBF\u95EE\u7684\u54CD\u5E94\u901F\u5EA6\uFF0C\u589E\u5F3A\u4E86\u7528\u6237\u7684\u4F53\u9A8C\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/cache.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx Cache\u7F13\u5B58\u914D\u7F6E"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T10:13:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx\u4F5C\u4E3AWeb\u7F13\u5B58\u670D\u52A1\u5668\uFF0C\u5B83\u4ECB\u4E8E\u5BA2\u6237\u7AEF\u548C\u5E94\u7528\u670D\u52A1\u5668\u4E4B\u95F4\uFF0C\u5F53\u7528\u6237\u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E00\u4E2AURL\u65F6\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u4F1A\u53BB\u5E94\u7528\u670D\u52A1\u5668\u83B7\u53D6\u8981\u5C55\u793A\u7ED9\u7528\u6237\u7684\u5185\u5BB9\uFF0C\u5C06\u5185\u5BB9\u7F13\u5B58\u5230\u81EA\u5DF1\u7684\u670D\u52A1\u5668\u4E0A\uFF0C\u5F53\u4E0B\u4E00\u6B21\u8BF7\u6C42\u5230\u6765\u65F6\uFF0C\u5982\u679C\u8BBF\u95EE\u7684\u662F\u540C\u4E00\u4E2AURL\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u5C31\u4F1A\u76F4\u63A5\u5C06\u4E4B\u524D\u7F13\u5B58\u7684\u5185\u5BB9\u8FD4\u56DE\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u800C\u4E0D\u662F\u5411\u5E94\u7528\u670D\u52A1\u5668\u518D\u6B21\u53D1\u9001\u8BF7\u6C42\u3002web\u7F13\u5B58\u964D\u4F4E\u4E86\u5E94\u7528\u670D\u52A1\u5668\u3001\u6570\u636E\u5E93\u7684\u8D1F\u8F7D\uFF0C\u51CF\u5C11\u4E86\u7F51\u7EDC\u5EF6\u8FDF\uFF0C\u63D0\u9AD8\u4E86\u7528\u6237\u8BBF\u95EE\u7684\u54CD\u5E94\u901F\u5EA6\uFF0C\u589E\u5F3A\u4E86\u7528\u6237\u7684\u4F53\u9A8C\u3002</p>
+`,headers:[{level:2,title:"\u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48\uFF1F",slug:"\u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48",children:[]},{level:2,title:"\u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462\uFF1F",slug:"\u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462",children:[]},{level:2,title:"\u534F\u5546\u7F13\u5B58 Last-Modified/if-Modify-Since",slug:"\u534F\u5546\u7F13\u5B58-last-modified-if-modify-since",children:[]},{level:2,title:"\u534F\u5546\u7F13\u5B58 ETag/if-None-Match",slug:"\u534F\u5546\u7F13\u5B58-etag-if-none-match",children:[]},{level:2,title:"last-modified \u548C ETag \u4E4B\u95F4\u5BF9\u6BD4",slug:"last-modified-\u548C-etag-\u4E4B\u95F4\u5BF9\u6BD4",children:[]},{level:2,title:"\u7406\u89E3\u5F3A\u5236\u7F13\u5B58",slug:"\u7406\u89E3\u5F3A\u5236\u7F13\u5B58",children:[]},{level:2,title:"nginx \u7F13\u5B58\u914D\u7F6E",slug:"nginx-\u7F13\u5B58\u914D\u7F6E",children:[]},{level:2,title:"\u89E3\u51B3 nginx \u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898",slug:"\u89E3\u51B3-nginx-\u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/nginx/cache.md",readingTime:{minutes:8.8,words:2639},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/nginx/cache.html`},key:"v-324dfae9",path:"/posts/devops/nginx/cache.html",title:"Nginx Cache\u7F13\u5B58\u914D\u7F6E",lang:"zh-CN",frontmatter:{title:"Nginx Cache\u7F13\u5B58\u914D\u7F6E",date:"2022-03-14T10:13:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201016051.jpg",summary:`\u2003Nginx\u4F5C\u4E3AWeb\u7F13\u5B58\u670D\u52A1\u5668\uFF0C\u5B83\u4ECB\u4E8E\u5BA2\u6237\u7AEF\u548C\u5E94\u7528\u670D\u52A1\u5668\u4E4B\u95F4\uFF0C\u5F53\u7528\u6237\u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E00\u4E2AURL\u65F6\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u4F1A\u53BB\u5E94\u7528\u670D\u52A1\u5668\u83B7\u53D6\u8981\u5C55\u793A\u7ED9\u7528\u6237\u7684\u5185\u5BB9\uFF0C\u5C06\u5185\u5BB9\u7F13\u5B58\u5230\u81EA\u5DF1\u7684\u670D\u52A1\u5668\u4E0A\uFF0C\u5F53\u4E0B\u4E00\u6B21\u8BF7\u6C42\u5230\u6765\u65F6\uFF0C\u5982\u679C\u8BBF\u95EE\u7684\u662F\u540C\u4E00\u4E2AURL\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u5C31\u4F1A\u76F4\u63A5\u5C06\u4E4B\u524D\u7F13\u5B58\u7684\u5185\u5BB9\u8FD4\u56DE\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u800C\u4E0D\u662F\u5411\u5E94\u7528\u670D\u52A1\u5668\u518D\u6B21\u53D1\u9001\u8BF7\u6C42\u3002web\u7F13\u5B58\u964D\u4F4E\u4E86\u5E94\u7528\u670D\u52A1\u5668\u3001\u6570\u636E\u5E93\u7684\u8D1F\u8F7D\uFF0C\u51CF\u5C11\u4E86\u7F51\u7EDC\u5EF6\u8FDF\uFF0C\u63D0\u9AD8\u4E86\u7528\u6237\u8BBF\u95EE\u7684\u54CD\u5E94\u901F\u5EA6\uFF0C\u589E\u5F3A\u4E86\u7528\u6237\u7684\u4F53\u9A8C\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/cache.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx Cache\u7F13\u5B58\u914D\u7F6E"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T10:13:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx\u4F5C\u4E3AWeb\u7F13\u5B58\u670D\u52A1\u5668\uFF0C\u5B83\u4ECB\u4E8E\u5BA2\u6237\u7AEF\u548C\u5E94\u7528\u670D\u52A1\u5668\u4E4B\u95F4\uFF0C\u5F53\u7528\u6237\u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E00\u4E2AURL\u65F6\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u4F1A\u53BB\u5E94\u7528\u670D\u52A1\u5668\u83B7\u53D6\u8981\u5C55\u793A\u7ED9\u7528\u6237\u7684\u5185\u5BB9\uFF0C\u5C06\u5185\u5BB9\u7F13\u5B58\u5230\u81EA\u5DF1\u7684\u670D\u52A1\u5668\u4E0A\uFF0C\u5F53\u4E0B\u4E00\u6B21\u8BF7\u6C42\u5230\u6765\u65F6\uFF0C\u5982\u679C\u8BBF\u95EE\u7684\u662F\u540C\u4E00\u4E2AURL\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u5C31\u4F1A\u76F4\u63A5\u5C06\u4E4B\u524D\u7F13\u5B58\u7684\u5185\u5BB9\u8FD4\u56DE\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u800C\u4E0D\u662F\u5411\u5E94\u7528\u670D\u52A1\u5668\u518D\u6B21\u53D1\u9001\u8BF7\u6C42\u3002web\u7F13\u5B58\u964D\u4F4E\u4E86\u5E94\u7528\u670D\u52A1\u5668\u3001\u6570\u636E\u5E93\u7684\u8D1F\u8F7D\uFF0C\u51CF\u5C11\u4E86\u7F51\u7EDC\u5EF6\u8FDF\uFF0C\u63D0\u9AD8\u4E86\u7528\u6237\u8BBF\u95EE\u7684\u54CD\u5E94\u901F\u5EA6\uFF0C\u589E\u5F3A\u4E86\u7528\u6237\u7684\u4F53\u9A8C\u3002</p>
+`,headers:[{level:2,title:"\u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48\uFF1F",slug:"\u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48",children:[]},{level:2,title:"\u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462\uFF1F",slug:"\u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462",children:[]},{level:2,title:"\u534F\u5546\u7F13\u5B58 Last-Modified/if-Modify-Since",slug:"\u534F\u5546\u7F13\u5B58-last-modified-if-modify-since",children:[]},{level:2,title:"\u534F\u5546\u7F13\u5B58 ETag/if-None-Match",slug:"\u534F\u5546\u7F13\u5B58-etag-if-none-match",children:[]},{level:2,title:"last-modified \u548C ETag \u4E4B\u95F4\u5BF9\u6BD4",slug:"last-modified-\u548C-etag-\u4E4B\u95F4\u5BF9\u6BD4",children:[]},{level:2,title:"\u7406\u89E3\u5F3A\u5236\u7F13\u5B58",slug:"\u7406\u89E3\u5F3A\u5236\u7F13\u5B58",children:[]},{level:2,title:"nginx \u7F13\u5B58\u914D\u7F6E",slug:"nginx-\u7F13\u5B58\u914D\u7F6E",children:[]},{level:2,title:"\u89E3\u51B3 nginx \u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898",slug:"\u89E3\u51B3-nginx-\u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898",children:[]}],content:`---
+title: Nginx Cache\u7F13\u5B58\u914D\u7F6E
+date: 2022-03-14 10:13:50
+tag:
+  - nginx
+category:
+  - nginx
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201016051.jpg
+---
+
+&emsp;Nginx\u4F5C\u4E3AWeb\u7F13\u5B58\u670D\u52A1\u5668\uFF0C\u5B83\u4ECB\u4E8E\u5BA2\u6237\u7AEF\u548C\u5E94\u7528\u670D\u52A1\u5668\u4E4B\u95F4\uFF0C\u5F53\u7528\u6237\u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E00\u4E2AURL\u65F6\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u4F1A\u53BB\u5E94\u7528\u670D\u52A1\u5668\u83B7\u53D6\u8981\u5C55\u793A\u7ED9\u7528\u6237\u7684\u5185\u5BB9\uFF0C\u5C06\u5185\u5BB9\u7F13\u5B58\u5230\u81EA\u5DF1\u7684\u670D\u52A1\u5668\u4E0A\uFF0C\u5F53\u4E0B\u4E00\u6B21\u8BF7\u6C42\u5230\u6765\u65F6\uFF0C\u5982\u679C\u8BBF\u95EE\u7684\u662F\u540C\u4E00\u4E2AURL\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u5C31\u4F1A\u76F4\u63A5\u5C06\u4E4B\u524D\u7F13\u5B58\u7684\u5185\u5BB9\u8FD4\u56DE\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u800C\u4E0D\u662F\u5411\u5E94\u7528\u670D\u52A1\u5668\u518D\u6B21\u53D1\u9001\u8BF7\u6C42\u3002web\u7F13\u5B58\u964D\u4F4E\u4E86\u5E94\u7528\u670D\u52A1\u5668\u3001\u6570\u636E\u5E93\u7684\u8D1F\u8F7D\uFF0C\u51CF\u5C11\u4E86\u7F51\u7EDC\u5EF6\u8FDF\uFF0C\u63D0\u9AD8\u4E86\u7528\u6237\u8BBF\u95EE\u7684\u54CD\u5E94\u901F\u5EA6\uFF0C\u589E\u5F3A\u4E86\u7528\u6237\u7684\u4F53\u9A8C\u3002
+
+<!-- more -->
+
+## \u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48\uFF1F
+
+&emsp;1. \u7F13\u5B58\u53EF\u4EE5\u51CF\u5C11\u5197\u4F59\u7684\u6570\u636E\u4F20\u8F93\u3002\u8282\u7701\u4E86\u7F51\u7EDC\u5E26\u5BBD\uFF0C\u4ECE\u800C\u66F4\u5FEB\u7684\u52A0\u8F7D\u9875\u9762\u3002  
+&emsp;2. \u7F13\u5B58\u964D\u4F4E\u4E86\u670D\u52A1\u5668\u7684\u8981\u6C42\uFF0C\u4ECE\u800C\u670D\u52A1\u5668\u66F4\u5FEB\u7684\u54CD\u5E94\u3002
+
+## \u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462\uFF1F
+
+&emsp;\u6839\u636E\u7F13\u5B58\u7684\u8D44\u6E90\u5B58\u50A8\u7684\u4F4D\u7F6E\u7F13\u5B58\u5206\u4E3A\`\u5185\u5B58\u7F13\u5B58(memory cache)\`\u548C\`\u78C1\u76D8\u7F13\u5B58(disk cache)\` memory cache: \u5B83\u662F\u5C06\u8D44\u6E90\u6587\u4EF6\u7F13\u5B58\u5230\u5185\u5B58\u4E2D\uFF0C\u7B49\u4E0B\u6B21\u8BF7\u6C42\u8BBF\u95EE\u7684\u65F6\u5019\u4E0D\u9700\u8981\u91CD\u65B0\u4E0B\u8F7D\u8D44\u6E90\uFF0C\u800C\u662F\u76F4\u63A5\u4ECE\u5185\u5B58\u4E2D\u8BFB\u53D6\u6570\u636E\u3002disk cache: \u5B83\u662F\u5C06\u8D44\u6E90\u6587\u4EF6\u7F13\u5B58\u5230\u786C\u76D8\u4E2D\uFF0C\u7B49\u4E0B\u6B21\u8BF7\u6C42\u7684\u65F6\u5019\u5B83\u662F\u76F4\u63A5\u4ECE\u786C\u76D8\u4E2D\u8BFB\u53D6\u3002\u4E8C\u8005\u533A\u522B\u5982\u4E0B\uFF1A
+
+- memory cache(\u5185\u5B58\u7F13\u5B58)\u9000\u51FA\u8FDB\u7A0B\u65F6\u6570\u636E\u4F1A\u88AB\u6E05\u9664\uFF0C\u800C disk cache(\u786C\u76D8\u7F13\u5B58)\u9000\u51FA\u8FDB\u7A0B\u65F6\u6570\u636E\u4E0D\u4F1A\u88AB\u6E05\u9664\u3002\u5185\u5B58\u8BFB\u53D6\u6BD4\u786C\u76D8\u4E2D\u8BFB\u53D6\u7684\u901F\u5EA6\u66F4\u5FEB\u3002\u4F46\u662F\u6211\u4EEC\u4E5F\u4E0D\u80FD\u628A\u6240\u6709\u6570\u636E\u653E\u5728\u5185\u5B58\u4E2D\u7F13\u5B58\u7684\uFF0C\u56E0\u4E3A\u5185\u5B58\u4E5F\u662F\u6709\u9650\u7684\u3002
+- memory cache(\u5185\u5B58\u7F13\u5B58)\u4E00\u822C\u4F1A\u5C06\u811A\u672C\u3001\u5B57\u4F53\u3001\u56FE\u7247\u4F1A\u5B58\u50A8\u5230\u5185\u5B58\u7F13\u5B58\u4E2D\u3002
+- disk cache(\u786C\u76D8\u7F13\u5B58) \u4E00\u822C\u975E\u811A\u672C\u4F1A\u5B58\u653E\u5728\u786C\u76D8\u4E2D\uFF0C\u6BD4\u5982 css \u8FD9\u4E9B\u3002
+
+&emsp;\u7F13\u5B58\u8BFB\u53D6\u7684\u539F\u7406\uFF1A\u5148\u4ECE\u5185\u5B58\u4E2D\u67E5\u627E\u5BF9\u5E94\u7684\u7F13\u5B58\uFF0C\u5982\u679C\u5185\u5B58\u4E2D\u80FD\u627E\u5230\u5C31\u8BFB\u53D6\u5BF9\u5E94\u7684\u7F13\u5B58\uFF0C\u5426\u5219\u7684\u8BDD\u5C31\u4ECE\u786C\u76D8\u4E2D\u67E5\u627E\u5BF9\u5E94\u7684\u7F13\u5B58\uFF0C\u5982\u679C\u6709\u5C31\u8BFB\u53D6\uFF0C\u5426\u5219\u7684\u8BDD\uFF0C\u5C31\u91CD\u65B0\u7F51\u7EDC\u8BF7\u6C42\u3002
+&emsp;\u6D4F\u89C8\u5668\u7F13\u5B58\u5206\u4E3A\uFF1A\`\u5F3A\u5236\u7F13\u5B58\u548C\u534F\u5546\u7F13\u5B58\`  
+&emsp;\u534F\u5546\u7F13\u5B58\u539F\u7406\uFF1A\u5BA2\u6237\u7AEF\u5411\u670D\u52A1\u5668\u7AEF\u53D1\u51FA\u8BF7\u6C42\uFF0C\u670D\u52A1\u7AEF\u4F1A\u68C0\u6D4B\u662F\u5426\u6709\u5BF9\u5E94\u7684\u6807\u8BC6\uFF0C\u5982\u679C\u6CA1\u6709\u5BF9\u5E94\u7684\u6807\u8BC6\uFF0C\u670D\u52A1\u5668\u7AEF\u4F1A\u8FD4\u56DE\u4E00\u4E2A\u5BF9\u5E94\u7684\u6807\u8BC6\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u5BA2\u6237\u7AEF\u4E0B\u6B21\u518D\u6B21\u8BF7\u6C42\u7684\u65F6\u5019\uFF0C\u628A\u8BE5\u6807\u8BC6\u5E26\u8FC7\u53BB\uFF0C\u7136\u540E\u670D\u52A1\u5668\u7AEF\u4F1A\u9A8C\u8BC1\u8BE5\u6807\u8BC6\uFF0C\u5982\u679C\u9A8C\u8BC1\u901A\u8FC7\u4E86\uFF0C\u5219\u4F1A\u54CD\u5E94 304\uFF0C\u544A\u8BC9\u6D4F\u89C8\u5668\u8BFB\u53D6\u7F13\u5B58\u3002\u5982\u679C\u6807\u8BC6\u6CA1\u6709\u901A\u8FC7\uFF0C\u5219\u8FD4\u56DE\u8BF7\u6C42\u7684\u8D44\u6E90\u3002\u90A3\u4E48\u534F\u5546\u7F13\u5B58\u7684\u6807\u8BC6\u53C8\u6709 2 \u79CD\uFF1A\`ETag/if-None-Match\` \u548C \`Last-Modified/if-Modify-Since\`
+
+## \u534F\u5546\u7F13\u5B58 Last-Modified/if-Modify-Since
+
+&emsp;\u6D4F\u89C8\u5668\u7B2C\u4E00\u6B21\u53D1\u51FA\u8BF7\u6C42\u4E00\u4E2A\u8D44\u6E90\u7684\u65F6\u5019\uFF0C\u670D\u52A1\u5668\u4F1A\u8FD4\u56DE\u4E00\u4E2A last-Modify \u5230 hearer \u4E2D. Last-Modify \u542B\u4E49\u662F\u6700\u540E\u7684\u4FEE\u6539\u65F6\u95F4\u3002\u5F53\u6D4F\u89C8\u5668\u518D\u6B21\u8BF7\u6C42\u7684\u65F6\u5019\uFF0Crequest \u7684\u8BF7\u6C42\u5934\u4F1A\u52A0\u4E0A if-Modify-Since\uFF0C\u8BE5\u503C\u4E3A\u7F13\u5B58\u4E4B\u524D\u8FD4\u56DE\u7684 Last-Modify. \u670D\u52A1\u5668\u6536\u5230 if-Modify-Since \u540E\uFF0C\u6839\u636E\u8D44\u6E90\u7684\u6700\u540E\u4FEE\u6539\u65F6\u95F4(last-Modify)\u548C\u8BE5\u503C(if-Modify-Since)\u8FDB\u884C\u6BD4\u8F83\uFF0C\u5982\u679C\u76F8\u7B49\u7684\u8BDD\uFF0C\u5219\u547D\u4E2D\u7F13\u5B58\uFF0C\u8FD4\u56DE 304\uFF0C\u5426\u5219, \u5982\u679C Last-Modify > if-Modify-Since, \u5219\u4F1A\u7ED9\u51FA 200 \u54CD\u5E94\uFF0C\u5E76\u4E14\u66F4\u65B0 Last-Modify \u4E3A\u65B0\u7684\u503C
+
+## \u534F\u5546\u7F13\u5B58 ETag/if-None-Match
+
+&emsp;ETag \u7684\u539F\u7406\u548C\u4E0A\u9762\u7684 last-modified \u662F\u7C7B\u4F3C\u7684\u3002ETag \u5219\u662F\u5BF9\u5F53\u524D\u8BF7\u6C42\u7684\u8D44\u6E90\u505A\u4E00\u4E2A\u552F\u4E00\u7684\u6807\u8BC6\u3002\u8BE5\u6807\u8BC6\u53EF\u4EE5\u662F\u4E00\u4E2A\u5B57\u7B26\u4E32\uFF0C\u6587\u4EF6\u7684 size,hash \u7B49\u3002\u53EA\u8981\u80FD\u591F\u5408\u7406\u6807\u8BC6\u8D44\u6E90\u7684\u552F\u4E00\u6027\u5E76\u80FD\u9A8C\u8BC1\u662F\u5426\u4FEE\u6539\u8FC7\u5C31\u53EF\u4EE5\u4E86\u3002ETag \u5728\u670D\u52A1\u5668\u54CD\u5E94\u8BF7\u6C42\u7684\u65F6\u5019\uFF0C\u8FD4\u56DE\u5F53\u524D\u8D44\u6E90\u7684\u552F\u4E00\u6807\u8BC6(\u5B83\u662F\u7531\u670D\u52A1\u5668\u751F\u6210\u7684)\u3002\u4F46\u662F\u53EA\u8981\u8D44\u6E90\u6709\u53D8\u5316\uFF0CETag \u4F1A\u91CD\u65B0\u751F\u6210\u7684\u3002\u6D4F\u89C8\u5668\u518D\u4E0B\u4E00\u6B21\u52A0\u8F7D\u7684\u65F6\u5019\u4F1A\u5411\u670D\u52A1\u5668\u53D1\u9001\u8BF7\u6C42\uFF0C\u4F1A\u5C06\u4E0A\u4E00\u6B21\u8FD4\u56DE\u7684 ETag \u503C\u653E\u5230 request header \u91CC\u7684 if-None-Match \u91CC\u9762\u53BB\uFF0C\u670D\u52A1\u5668\u7AEF\u53EA\u8981\u6BD4\u8F83\u5BA2\u6237\u7AEF\u4F20\u6765\u7684 if-None-Match \u503C\u662F\u5426\u548C\u81EA\u5DF1\u670D\u52A1\u5668\u4E0A\u7684 ETag \u662F\u5426\u4E00\u81F4\uFF0C\u5982\u679C\u4E00\u81F4\u8BF4\u660E\u8D44\u6E90\u672A\u4FEE\u6539\u8FC7\uFF0C\u56E0\u6B64\u8FD4\u56DE 304\uFF0C\u5982\u679C\u4E0D\u4E00\u81F4\uFF0C\u8BF4\u660E\u4FEE\u6539\u8FC7\uFF0C\u56E0\u6B64\u8FD4\u56DE 200\u3002\u5E76\u4E14\u628A\u65B0\u7684 Etag \u8D4B\u503C\u7ED9 if-None-Match \u6765\u66F4\u65B0\u8BE5\u503C
+
+## last-modified \u548C ETag \u4E4B\u95F4\u5BF9\u6BD4
+
+- 1. \u5728\u7CBE\u5EA6\u4E0A\uFF0CETag \u8981\u4F18\u5148\u4E8E last-modified\u3002
+- 2. \u5728\u6027\u80FD\u4E0A\uFF0CEtag \u8981\u900A\u4E8E Last-Modified\uFF0CLast-Modified \u9700\u8981\u8BB0\u5F55\u65F6\u95F4\uFF0C\u800C Etag \u9700\u8981\u670D\u52A1\u5668\u901A\u8FC7\u7B97\u6CD5\u6765\u8BA1\u7B97\u51FA\u4E00\u4E2A hash \u503C\u3002
+- 3. \u5728\u4F18\u5148\u7EA7\u4E0A\uFF0C\u670D\u52A1\u5668\u6821\u9A8C\u4F18\u5148\u8003\u8651 Etag\u3002
+
+## \u7406\u89E3\u5F3A\u5236\u7F13\u5B58
+
+&emsp;\u57FA\u672C\u539F\u7406\uFF1A\u6D4F\u89C8\u5668\u5728\u52A0\u8F7D\u8D44\u6E90\u7684\u65F6\u5019\uFF0C\u4F1A\u5148\u6839\u636E\u672C\u5730\u7F13\u5B58\u8D44\u6E90\u7684 header \u4E2D\u7684\u4FE1\u606F(Expires \u548C Cache-Control)\u6765\u5224\u65AD\u662F\u5426\u9700\u8981\u5F3A\u5236\u7F13\u5B58\u3002\u5982\u679C\u547D\u4E2D\u7684\u8BDD\uFF0C\u5219\u4F1A\u76F4\u63A5\u4F7F\u7528\u7F13\u5B58\u4E2D\u7684\u8D44\u6E90\u3002\u5426\u5219\u7684\u8BDD\uFF0C\u4F1A\u7EE7\u7EED\u5411\u670D\u52A1\u5668\u53D1\u9001\u8BF7\u6C42\u3002  
+&emsp;Expires \u662F http1.0 \u7684\u89C4\u8303\uFF0C\u5B83\u7684\u503C\u662F\u4E00\u4E2A\u7EDD\u5BF9\u65F6\u95F4\u7684 GMT \u683C\u5F0F\u7684\u65F6\u95F4\u5B57\u7B26\u4E32\u3002\u8FD9\u4E2A\u65F6\u95F4\u4EE3\u8868\u7684\u8BE5\u8D44\u6E90\u7684\u5931\u6548\u65F6\u95F4\uFF0C\u5982\u679C\u5728\u8BE5\u65F6\u95F4\u4E4B\u524D\u8BF7\u6C42\u7684\u8BDD\uFF0C\u5219\u90FD\u662F\u4ECE\u7F13\u5B58\u91CC\u9762\u8BFB\u53D6\u7684\u3002\u4F46\u662F\u4F7F\u7528\u8BE5\u89C4\u8303\u65F6\uFF0C\u53EF\u80FD\u4F1A\u6709\u4E00\u4E2A\u7F3A\u70B9\u5C31\u662F\u5F53\u670D\u52A1\u5668\u7684\u65F6\u95F4\u548C\u5BA2\u6237\u7AEF\u7684\u65F6\u95F4\u4E0D\u4E00\u6837\u7684\u60C5\u51B5\u4E0B\uFF0C\u4F1A\u5BFC\u81F4\u7F13\u5B58\u5931\u6548\u3002  
+&emsp;Cache-Control \u662F http1.1 \u7684\u89C4\u8303\uFF0C\u5B83\u662F\u5229\u7528\u8BE5\u5B57\u6BB5 max-age \u503C\u8FDB\u884C\u5224\u65AD\u7684\u3002\u8BE5\u503C\u662F\u4E00\u4E2A\u76F8\u5BF9\u65F6\u95F4\uFF0C\u6BD4\u5982 Cache-Control: max-age=3600, \u4EE3\u8868\u8BE5\u8D44\u6E90\u7684\u6709\u6548\u671F\u662F 3600 \u79D2\u3002\u9664\u4E86\u8BE5\u5B57\u6BB5\u5916\uFF0C\u6211\u4EEC\u8FD8\u6709\u5982\u4E0B\u5B57\u6BB5\u53EF\u4EE5\u8BBE\u7F6E\uFF1A
+
+- no-cache: \u9700\u8981\u8FDB\u884C\u534F\u5546\u7F13\u5B58\uFF0C\u53D1\u9001\u8BF7\u6C42\u5230\u670D\u52A1\u5668\u786E\u8BA4\u662F\u5426\u4F7F\u7528\u7F13\u5B58\u3002
+
+- no-store\uFF1A\u7981\u6B62\u4F7F\u7528\u7F13\u5B58\uFF0C\u6BCF\u4E00\u6B21\u90FD\u8981\u91CD\u65B0\u8BF7\u6C42\u6570\u636E\u3002
+
+- public\uFF1A\u53EF\u4EE5\u88AB\u6240\u6709\u7684\u7528\u6237\u7F13\u5B58\uFF0C\u5305\u62EC\u7EC8\u7AEF\u7528\u6237\u548C CDN \u7B49\u4E2D\u95F4\u4EE3\u7406\u670D\u52A1\u5668\u3002
+
+- private\uFF1A\u53EA\u80FD\u88AB\u7EC8\u7AEF\u7528\u6237\u7684\u6D4F\u89C8\u5668\u7F13\u5B58\uFF0C\u4E0D\u5141\u8BB8 CDN \u7B49\u4E2D\u7EE7\u7F13\u5B58\u670D\u52A1\u5668\u5BF9\u5176\u7F13\u5B58\u3002
+
+&emsp;**\u6CE8\u610F\uFF1ACache-Control \u4E0E Expires \u53EF\u4EE5\u5728\u670D\u52A1\u7AEF\u914D\u7F6E\u540C\u65F6\u542F\u7528\uFF0C\u540C\u65F6\u542F\u7528\u7684\u65F6\u5019 Cache-Control \u4F18\u5148\u7EA7\u9AD8**
+
+## nginx \u7F13\u5B58\u914D\u7F6E
+
+&emsp;\u53EF\u4EE5\u5728\u4E00\u5B9A\u7A0B\u5EA6\u4E0A\uFF0C\u51CF\u5C11\u670D\u52A1\u5668\u7684\u5904\u7406\u8BF7\u6C42\u538B\u529B\u3002\u6BD4\u5982\u5BF9\u4E00\u4E9B\u56FE\u7247\uFF0C\u5927\u6587\u4EF6\uFF0Ccss \u6216 js \u505A\u4E00\u4E9B\u7F13\u5B58\uFF0C\u90A3\u4E48\u5728\u6BCF\u6B21\u5237\u65B0\u6D4F\u89C8\u5668\u7684\u65F6\u5019\uFF0C\u5C31\u4E0D\u4F1A\u91CD\u65B0\u8BF7\u6C42\u4E86\uFF0C\u800C\u662F\u4ECE\u7F13\u5B58\u91CC\u9762\u8BFB\u53D6\u3002\u8FD9\u6837\u5C31\u53EF\u4EE5\u51CF\u8F7B\u670D\u52A1\u5668\u7684\u538B\u529B\u3002nginx \u53EF\u914D\u7F6E\u7684\u7F13\u5B58\u53C8\u6709 2 \u79CD\uFF1A
+
+- 1 \u5BA2\u6237\u7AEF\u7684\u7F13\u5B58(\u4E00\u822C\u6307\u6D4F\u89C8\u5668\u7684\u7F13\u5B58)\u3002
+- 2 \u670D\u52A1\u7AEF\u7684\u7F13\u5B58(\u4F7F\u7528 proxy-cache \u5B9E\u73B0\u7684)\u3002  
+  **\u6CE8\u610F\uFF1A\u5BA2\u6237\u7AEF\u7684\u7F13\u5B58\u4E00\u822C\u6709\u5982\u4E0B\u4E24\u79CD\u65B9\u5F0F\u5B9E\u73B0\uFF1A\u534F\u5546\u7F13\u5B58\u548C\u5F3A\u7F13\u5B58\u3002**
+
+\`\`\`bash
+server {
+  location ~* \\.(html)$ {
+    access_log off;
+    add_header  Cache-Control  max-age=no-cache;
+  }
+
+  location ~* \\.(css|js|png|jpg|jpeg|gif|gz|svg|mp4|ogg|ogv|webm|htc|xml|woff)$ {
+    # \u540C\u4E0A\uFF0C\u901A\u914D\u6240\u6709\u4EE5.css/.js/...\u7ED3\u5C3E\u7684\u8BF7\u6C42
+    access_log off;
+    add_header    Cache-Control  max-age=360000;
+  }
+}
+\`\`\`
+
+~_ \u7684\u542B\u4E49\u662F\uFF1A\u901A\u914D\u4EFB\u610F\u5B57\u7B26\uFF08\u4E14\u5927\u5C0F\u5199\u4E0D\u654F\u611F\uFF09\uFF0C\\\u8F6C\u4E49\u5B57\u7B26\uFF0C\u56E0\u6B64 ~_ \\.(html)$\u7684\u542B\u4E49\u662F\uFF1A\u5339\u914D\u6240\u6709\u4EE5.html \u7ED3\u5C3E\u7684\u8BF7\u6C42
+access_log off; \u7684\u542B\u4E49\u662F \u5173\u95ED\u65E5\u5FD7\u529F\u80FD\u3002  
+**add_header Cache-Control max-age=no-cache;** \u7684\u542B\u4E49\uFF1Ahtml \u6587\u4EF6\u4E0D\u8BBE\u7F6E\u5F3A\u5236\u7F13\u5B58\u65F6\u95F4\uFF0C\u534F\u5546\u7F13\u5B58\uFF0C\u4F7F\u7528 Last-Modified\u3002no-cache \u4F1A\u53D1\u8D77\u5F80\u8FD4\u901A\u4FE1\u6765\u9A8C\u8BC1\u7F13\u5B58\u7684\u54CD\u5E94\uFF0C\u4F46\u5982\u679C\u8D44\u6E90\u672A\u53D1\u751F\u53D8\u5316\uFF0C\u5219\u4E0D\u4F1A\u4E0B\u8F7D\uFF0C\u8FD4\u56DE 304  
+**add_header Cache-Control max-age=360000;** \u7684\u542B\u4E49\u7ED9\u4E0A\u9762\u5339\u914D\u540E\u7F00\u7684\u6587\u4EF6\u8BBE\u7F6E\u5F3A\u5236\u7F13\u5B58\uFF0C\u4E14\u7F13\u5B58\u7684\u65F6\u95F4\u662F 360000 \u79D2\uFF0C\u7B2C\u4E00\u6B21\u8BBF\u95EE\u7684\u65F6\u5019\uFF0C\u4ECE\u670D\u52A1\u5668\u8BF7\u6C42\uFF0C\u5F53\u9664\u4E86\u7B2C\u4E00\u6B21\u4EE5\u5916\uFF0C\u518D\u6B21\u5237\u65B0\u6D4F\u89C8\u5668\uFF0C\u4F1A\u4ECE\u6D4F\u89C8\u5668\u7F13\u5B58\u8BFB\u53D6\uFF0C\u90A3\u4E48\u5F3A\u5236\u7F13\u5B58\u4E00\u822C\u662F\u4ECE\u5185\u5B58\u91CC\u9762\u5148\u8BFB\u53D6\uFF0C\u5982\u679C\u5185\u5B58\u6CA1\u6709\uFF0C\u518D\u4ECE\u786C\u76D8\u8BFB\u53D6\u3002
+
+**\u6CE8\u610F\uFF1A\u5982\u4E0A\u53EA\u662F\u4E0D\u5BF9\u53CD\u5411\u4EE3\u7406\u7684\u9875\u9762\u8FDB\u884C\u7F13\u5B58\u8BBE\u7F6E\u7684\uFF0C\u4F46\u662F\u5982\u679C\u662F\u53CD\u5411\u4EE3\u7406\u540E\u7684\u9875\u9762\uFF0C\u5982\u4E0A\u8BBE\u7F6E\u662F\u4E0D\u751F\u6548\u7684\u3002\u6BD4\u5982\u8BF4\u6211 node \u8D77\u4E86\u4E00\u4E2A\u670D\u52A1\uFF0C\u7136\u540E\u901A\u8FC7\u8BBF\u95EE nginx \u53CD\u5411\u4EE3\u7406\u7684\u65B9\u5F0F\u4EE3\u7406\u5230\u6211 node \u670D\u52A1\u6765\uFF0C\u4E0A\u9762\u7684\u914D\u7F6E\u662F\u4E0D\u751F\u6548\u7684\u3002\u56E0\u6B64\u6211\u4EEC\u9700\u8981\u5982\u4E0B\u5904\u7406\u914D\u7F6E**
+
+## \u89E3\u51B3 nginx \u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898
+
+\u6BD4\u5982\u6211\u4E0A\u9762\u7684 node \u670D\u52A1\u7AEF\u53E3\u662F 7878 \u7AEF\u53E3\u3002nginx \u9700\u8981\u5982\u4E0B\u914D\u7F6E\uFF1A
+
+\`\`\`bash
+server {
+  listen  8081;
+  server_name  xxx.abc.com;
+  location / {
+    proxy_pass http://localhost:7878;
+    add_header  Cache-Control  max-age=no-cache;
+  }
+}
+\`\`\`
+
+1 \u5982\u679C\u6211\u4EEC\u8981\u6DFB\u52A0\u7F13\u5B58\u529F\u80FD\u7684\u8BDD\uFF0C\u9700\u8981\u521B\u5EFA\u4E00\u4E2A\u7528\u4E8E\u5B58\u653E\u7F13\u5B58\u6587\u4EF6\u7684\u6587\u4EF6\u5939\u3002\u6BD4\u5982\u6211\u4EEC\u8FD9\u91CC\u4F7F\u7528 /data/nuget-cache\u3002  
+2 \u7136\u540E\u6211\u4EEC\u9700\u8981\u5728 nginx.conf \u7684 http \u8BBE\u7F6E\u90E8\u5206\u6DFB\u52A0 proxy_cache_path \u7684\u8BBE\u7F6E\uFF0C\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+http {
+  // ..... \u5176\u4ED6\u7684\u914D\u7F6E
+  proxy_cache_path  /data/nuget-cache levels=1:2 keys_zone=nuget-cache:20m max_size=50g inactive=168h;
+  server {
+    listen  8081;
+    server_name  xxx.abc.com;
+    location / {
+      proxy_pass http://localhost:7878;
+      add_header  Cache-Control  max-age=no-cache;
+    }
+  }
+}
+\`\`\`
+
+proxy_cache_path \u5404\u4E2A\u914D\u7F6E\u503C\u7684\u542B\u4E49\u89E3\u6790\u5982\u4E0B\uFF1A
+
+- proxy_cache_path \u6307\u7F13\u5B58\u7684\u76EE\u5F55\uFF0C\u76EE\u5F55\u4E3A\uFF1A/data/nuget-cache\u3002
+- levels=1:2 \u8868\u793A\u91C7\u7528 2 \u7EA7\u76EE\u5F55\u7ED3\u6784\u3002
+- keys_zone \u6307\u7684\u662F\u7F13\u5B58\u7A7A\u95F4\u540D\u79F0\uFF0C\u53EB nuget-cache\u3002\u7F13\u5B58\u5185\u5B58\u7684\u7A7A\u95F4\u4E3A 20M\u3002
+- max_size \u6307\u7684\u662F\u7F13\u5B58\u6587\u4EF6\u53EF\u4EE5\u5360\u7528\u7684\u6700\u5927\u7A7A\u95F4\uFF0C\u4E3A 50G\u3002
+- inactive=168h; \u9ED8\u8BA4\u8FC7\u671F\u65F6\u95F4\u4E3A 168 \u4E2A\u5C0F\u65F6\u3002\u4E3A 7 \u5929\uFF0C\u4E5F\u53EF\u4EE5\u5199\u6210\uFF1Ainactive=7d; \u8FD9\u6837\u7684\u683C\u5F0F\u3002
+
+3 \u6211\u4EEC\u8FD8\u9700\u8981\u5728 server \u8BBE\u7F6E\u90E8\u5206\u6DFB\u52A0 proxy_cache \u4E0E proxy_cache_valid \u7684\u8BBE\u7F6E\uFF1A
+
+\`\`\`bash
+http {
+  // ..... \u5176\u4ED6\u7684\u914D\u7F6E
+  proxy_cache_path  /data/nuget-cache levels=1:2 keys_zone=nuget-cache:20m max_size=50g inactive=168h;
+  server {
+    listen  8081;
+    server_name  xxx.abc.com;
+    location / {
+      proxy_pass http://localhost:7878;
+      add_header  Cache-Control  max-age=no-cache;
+      proxy_cache nuget-cache;
+      proxy_cache_valid 168h;
+      proxy_ignore_headers Set-Cookie Cache-Control;
+      proxy_hide_header Cache-Control;
+      proxy_hide_header Set-Cookie;
+    }
+  }
+}
+\`\`\`
+
+- proxy_cache \u8BBE\u7F6E\u7684\u662F proxy_cache_path \u4E2D\u7684 keys_zone \u7684\u503C\u3002
+- proxy_cache_valid\uFF1A\u8BBE\u7F6E\u7684\u662F\u7F13\u5B58\u8FC7\u671F\u65F6\u95F4\uFF0C\u6BD4\u5982\u8BBE\u7F6E 168 \u4E2A\u5C0F\u65F6\u8FC7\u671F\u3002
+- proxy_ignore_headers \u7684\u542B\u4E49\u662F\uFF1A\u5FFD\u7565 Cache-Control \u7684\u8BF7\u6C42\u5934\u63A7\u5236\uFF0C\u4F9D\u7136\u8FDB\u884C\u7F13\u5B58\uFF0C\u6BD4\u5982\u5BF9\u8BF7\u6C42\u5934\u8BBE\u7F6E cookie \u540E\uFF0C\u9ED8\u8BA4\u662F\u4E0D\u7F13\u5B58\u7684\uFF0C\u9700\u8981\u6211\u4EEC\u589E\u52A0\u5FFD\u7565\u914D\u7F6E\u3002  
+  \u81F3\u6B64 nginx \u7F13\u5B58\u914D\u7F6E\u5C31\u5B8C\u6210\u4E86\uFF0C\u91CD\u542F nginx\uFF0C\u53D1\u73B0\u5DF2\u7ECF\u53EF\u4EE5\u5B9E\u73B0\u7F13\u5B58\u4E86\u3002
+`,contentRendered:`<p>\u2003Nginx\u4F5C\u4E3AWeb\u7F13\u5B58\u670D\u52A1\u5668\uFF0C\u5B83\u4ECB\u4E8E\u5BA2\u6237\u7AEF\u548C\u5E94\u7528\u670D\u52A1\u5668\u4E4B\u95F4\uFF0C\u5F53\u7528\u6237\u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E00\u4E2AURL\u65F6\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u4F1A\u53BB\u5E94\u7528\u670D\u52A1\u5668\u83B7\u53D6\u8981\u5C55\u793A\u7ED9\u7528\u6237\u7684\u5185\u5BB9\uFF0C\u5C06\u5185\u5BB9\u7F13\u5B58\u5230\u81EA\u5DF1\u7684\u670D\u52A1\u5668\u4E0A\uFF0C\u5F53\u4E0B\u4E00\u6B21\u8BF7\u6C42\u5230\u6765\u65F6\uFF0C\u5982\u679C\u8BBF\u95EE\u7684\u662F\u540C\u4E00\u4E2AURL\uFF0Cweb\u7F13\u5B58\u670D\u52A1\u5668\u5C31\u4F1A\u76F4\u63A5\u5C06\u4E4B\u524D\u7F13\u5B58\u7684\u5185\u5BB9\u8FD4\u56DE\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u800C\u4E0D\u662F\u5411\u5E94\u7528\u670D\u52A1\u5668\u518D\u6B21\u53D1\u9001\u8BF7\u6C42\u3002web\u7F13\u5B58\u964D\u4F4E\u4E86\u5E94\u7528\u670D\u52A1\u5668\u3001\u6570\u636E\u5E93\u7684\u8D1F\u8F7D\uFF0C\u51CF\u5C11\u4E86\u7F51\u7EDC\u5EF6\u8FDF\uFF0C\u63D0\u9AD8\u4E86\u7528\u6237\u8BBF\u95EE\u7684\u54CD\u5E94\u901F\u5EA6\uFF0C\u589E\u5F3A\u4E86\u7528\u6237\u7684\u4F53\u9A8C\u3002</p>
+<!-- more -->
+<h2 id="\u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48" tabindex="-1"><a class="header-anchor" href="#\u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48" aria-hidden="true">#</a> \u6D4F\u89C8\u5668\u7F13\u5B58\u7684\u4F5C\u7528\u662F\u4EC0\u4E48\uFF1F</h2>
+<p>\u20031. \u7F13\u5B58\u53EF\u4EE5\u51CF\u5C11\u5197\u4F59\u7684\u6570\u636E\u4F20\u8F93\u3002\u8282\u7701\u4E86\u7F51\u7EDC\u5E26\u5BBD\uFF0C\u4ECE\u800C\u66F4\u5FEB\u7684\u52A0\u8F7D\u9875\u9762\u3002<br>
+\u20032. \u7F13\u5B58\u964D\u4F4E\u4E86\u670D\u52A1\u5668\u7684\u8981\u6C42\uFF0C\u4ECE\u800C\u670D\u52A1\u5668\u66F4\u5FEB\u7684\u54CD\u5E94\u3002</p>
+<h2 id="\u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462" tabindex="-1"><a class="header-anchor" href="#\u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462" aria-hidden="true">#</a> \u7F13\u5B58\u7684\u8D44\u6E90\u6587\u4EF6\u5230\u4EC0\u4E48\u5730\u65B9\u53BB\u4E86\u5462\uFF1F</h2>
+<p>\u2003\u6839\u636E\u7F13\u5B58\u7684\u8D44\u6E90\u5B58\u50A8\u7684\u4F4D\u7F6E\u7F13\u5B58\u5206\u4E3A<code v-pre>\u5185\u5B58\u7F13\u5B58(memory cache)</code>\u548C<code v-pre>\u78C1\u76D8\u7F13\u5B58(disk cache)</code> memory cache: \u5B83\u662F\u5C06\u8D44\u6E90\u6587\u4EF6\u7F13\u5B58\u5230\u5185\u5B58\u4E2D\uFF0C\u7B49\u4E0B\u6B21\u8BF7\u6C42\u8BBF\u95EE\u7684\u65F6\u5019\u4E0D\u9700\u8981\u91CD\u65B0\u4E0B\u8F7D\u8D44\u6E90\uFF0C\u800C\u662F\u76F4\u63A5\u4ECE\u5185\u5B58\u4E2D\u8BFB\u53D6\u6570\u636E\u3002disk cache: \u5B83\u662F\u5C06\u8D44\u6E90\u6587\u4EF6\u7F13\u5B58\u5230\u786C\u76D8\u4E2D\uFF0C\u7B49\u4E0B\u6B21\u8BF7\u6C42\u7684\u65F6\u5019\u5B83\u662F\u76F4\u63A5\u4ECE\u786C\u76D8\u4E2D\u8BFB\u53D6\u3002\u4E8C\u8005\u533A\u522B\u5982\u4E0B\uFF1A</p>
+<ul>
+<li>memory cache(\u5185\u5B58\u7F13\u5B58)\u9000\u51FA\u8FDB\u7A0B\u65F6\u6570\u636E\u4F1A\u88AB\u6E05\u9664\uFF0C\u800C disk cache(\u786C\u76D8\u7F13\u5B58)\u9000\u51FA\u8FDB\u7A0B\u65F6\u6570\u636E\u4E0D\u4F1A\u88AB\u6E05\u9664\u3002\u5185\u5B58\u8BFB\u53D6\u6BD4\u786C\u76D8\u4E2D\u8BFB\u53D6\u7684\u901F\u5EA6\u66F4\u5FEB\u3002\u4F46\u662F\u6211\u4EEC\u4E5F\u4E0D\u80FD\u628A\u6240\u6709\u6570\u636E\u653E\u5728\u5185\u5B58\u4E2D\u7F13\u5B58\u7684\uFF0C\u56E0\u4E3A\u5185\u5B58\u4E5F\u662F\u6709\u9650\u7684\u3002</li>
+<li>memory cache(\u5185\u5B58\u7F13\u5B58)\u4E00\u822C\u4F1A\u5C06\u811A\u672C\u3001\u5B57\u4F53\u3001\u56FE\u7247\u4F1A\u5B58\u50A8\u5230\u5185\u5B58\u7F13\u5B58\u4E2D\u3002</li>
+<li>disk cache(\u786C\u76D8\u7F13\u5B58) \u4E00\u822C\u975E\u811A\u672C\u4F1A\u5B58\u653E\u5728\u786C\u76D8\u4E2D\uFF0C\u6BD4\u5982 css \u8FD9\u4E9B\u3002</li>
+</ul>
+<p>\u2003\u7F13\u5B58\u8BFB\u53D6\u7684\u539F\u7406\uFF1A\u5148\u4ECE\u5185\u5B58\u4E2D\u67E5\u627E\u5BF9\u5E94\u7684\u7F13\u5B58\uFF0C\u5982\u679C\u5185\u5B58\u4E2D\u80FD\u627E\u5230\u5C31\u8BFB\u53D6\u5BF9\u5E94\u7684\u7F13\u5B58\uFF0C\u5426\u5219\u7684\u8BDD\u5C31\u4ECE\u786C\u76D8\u4E2D\u67E5\u627E\u5BF9\u5E94\u7684\u7F13\u5B58\uFF0C\u5982\u679C\u6709\u5C31\u8BFB\u53D6\uFF0C\u5426\u5219\u7684\u8BDD\uFF0C\u5C31\u91CD\u65B0\u7F51\u7EDC\u8BF7\u6C42\u3002
+\u2003\u6D4F\u89C8\u5668\u7F13\u5B58\u5206\u4E3A\uFF1A<code v-pre>\u5F3A\u5236\u7F13\u5B58\u548C\u534F\u5546\u7F13\u5B58</code><br>
+\u2003\u534F\u5546\u7F13\u5B58\u539F\u7406\uFF1A\u5BA2\u6237\u7AEF\u5411\u670D\u52A1\u5668\u7AEF\u53D1\u51FA\u8BF7\u6C42\uFF0C\u670D\u52A1\u7AEF\u4F1A\u68C0\u6D4B\u662F\u5426\u6709\u5BF9\u5E94\u7684\u6807\u8BC6\uFF0C\u5982\u679C\u6CA1\u6709\u5BF9\u5E94\u7684\u6807\u8BC6\uFF0C\u670D\u52A1\u5668\u7AEF\u4F1A\u8FD4\u56DE\u4E00\u4E2A\u5BF9\u5E94\u7684\u6807\u8BC6\u7ED9\u5BA2\u6237\u7AEF\uFF0C\u5BA2\u6237\u7AEF\u4E0B\u6B21\u518D\u6B21\u8BF7\u6C42\u7684\u65F6\u5019\uFF0C\u628A\u8BE5\u6807\u8BC6\u5E26\u8FC7\u53BB\uFF0C\u7136\u540E\u670D\u52A1\u5668\u7AEF\u4F1A\u9A8C\u8BC1\u8BE5\u6807\u8BC6\uFF0C\u5982\u679C\u9A8C\u8BC1\u901A\u8FC7\u4E86\uFF0C\u5219\u4F1A\u54CD\u5E94 304\uFF0C\u544A\u8BC9\u6D4F\u89C8\u5668\u8BFB\u53D6\u7F13\u5B58\u3002\u5982\u679C\u6807\u8BC6\u6CA1\u6709\u901A\u8FC7\uFF0C\u5219\u8FD4\u56DE\u8BF7\u6C42\u7684\u8D44\u6E90\u3002\u90A3\u4E48\u534F\u5546\u7F13\u5B58\u7684\u6807\u8BC6\u53C8\u6709 2 \u79CD\uFF1A<code v-pre>ETag/if-None-Match</code> \u548C <code v-pre>Last-Modified/if-Modify-Since</code></p>
+<h2 id="\u534F\u5546\u7F13\u5B58-last-modified-if-modify-since" tabindex="-1"><a class="header-anchor" href="#\u534F\u5546\u7F13\u5B58-last-modified-if-modify-since" aria-hidden="true">#</a> \u534F\u5546\u7F13\u5B58 Last-Modified/if-Modify-Since</h2>
+<p>\u2003\u6D4F\u89C8\u5668\u7B2C\u4E00\u6B21\u53D1\u51FA\u8BF7\u6C42\u4E00\u4E2A\u8D44\u6E90\u7684\u65F6\u5019\uFF0C\u670D\u52A1\u5668\u4F1A\u8FD4\u56DE\u4E00\u4E2A last-Modify \u5230 hearer \u4E2D. Last-Modify \u542B\u4E49\u662F\u6700\u540E\u7684\u4FEE\u6539\u65F6\u95F4\u3002\u5F53\u6D4F\u89C8\u5668\u518D\u6B21\u8BF7\u6C42\u7684\u65F6\u5019\uFF0Crequest \u7684\u8BF7\u6C42\u5934\u4F1A\u52A0\u4E0A if-Modify-Since\uFF0C\u8BE5\u503C\u4E3A\u7F13\u5B58\u4E4B\u524D\u8FD4\u56DE\u7684 Last-Modify. \u670D\u52A1\u5668\u6536\u5230 if-Modify-Since \u540E\uFF0C\u6839\u636E\u8D44\u6E90\u7684\u6700\u540E\u4FEE\u6539\u65F6\u95F4(last-Modify)\u548C\u8BE5\u503C(if-Modify-Since)\u8FDB\u884C\u6BD4\u8F83\uFF0C\u5982\u679C\u76F8\u7B49\u7684\u8BDD\uFF0C\u5219\u547D\u4E2D\u7F13\u5B58\uFF0C\u8FD4\u56DE 304\uFF0C\u5426\u5219, \u5982\u679C Last-Modify &gt; if-Modify-Since, \u5219\u4F1A\u7ED9\u51FA 200 \u54CD\u5E94\uFF0C\u5E76\u4E14\u66F4\u65B0 Last-Modify \u4E3A\u65B0\u7684\u503C</p>
+<h2 id="\u534F\u5546\u7F13\u5B58-etag-if-none-match" tabindex="-1"><a class="header-anchor" href="#\u534F\u5546\u7F13\u5B58-etag-if-none-match" aria-hidden="true">#</a> \u534F\u5546\u7F13\u5B58 ETag/if-None-Match</h2>
+<p>\u2003ETag \u7684\u539F\u7406\u548C\u4E0A\u9762\u7684 last-modified \u662F\u7C7B\u4F3C\u7684\u3002ETag \u5219\u662F\u5BF9\u5F53\u524D\u8BF7\u6C42\u7684\u8D44\u6E90\u505A\u4E00\u4E2A\u552F\u4E00\u7684\u6807\u8BC6\u3002\u8BE5\u6807\u8BC6\u53EF\u4EE5\u662F\u4E00\u4E2A\u5B57\u7B26\u4E32\uFF0C\u6587\u4EF6\u7684 size,hash \u7B49\u3002\u53EA\u8981\u80FD\u591F\u5408\u7406\u6807\u8BC6\u8D44\u6E90\u7684\u552F\u4E00\u6027\u5E76\u80FD\u9A8C\u8BC1\u662F\u5426\u4FEE\u6539\u8FC7\u5C31\u53EF\u4EE5\u4E86\u3002ETag \u5728\u670D\u52A1\u5668\u54CD\u5E94\u8BF7\u6C42\u7684\u65F6\u5019\uFF0C\u8FD4\u56DE\u5F53\u524D\u8D44\u6E90\u7684\u552F\u4E00\u6807\u8BC6(\u5B83\u662F\u7531\u670D\u52A1\u5668\u751F\u6210\u7684)\u3002\u4F46\u662F\u53EA\u8981\u8D44\u6E90\u6709\u53D8\u5316\uFF0CETag \u4F1A\u91CD\u65B0\u751F\u6210\u7684\u3002\u6D4F\u89C8\u5668\u518D\u4E0B\u4E00\u6B21\u52A0\u8F7D\u7684\u65F6\u5019\u4F1A\u5411\u670D\u52A1\u5668\u53D1\u9001\u8BF7\u6C42\uFF0C\u4F1A\u5C06\u4E0A\u4E00\u6B21\u8FD4\u56DE\u7684 ETag \u503C\u653E\u5230 request header \u91CC\u7684 if-None-Match \u91CC\u9762\u53BB\uFF0C\u670D\u52A1\u5668\u7AEF\u53EA\u8981\u6BD4\u8F83\u5BA2\u6237\u7AEF\u4F20\u6765\u7684 if-None-Match \u503C\u662F\u5426\u548C\u81EA\u5DF1\u670D\u52A1\u5668\u4E0A\u7684 ETag \u662F\u5426\u4E00\u81F4\uFF0C\u5982\u679C\u4E00\u81F4\u8BF4\u660E\u8D44\u6E90\u672A\u4FEE\u6539\u8FC7\uFF0C\u56E0\u6B64\u8FD4\u56DE 304\uFF0C\u5982\u679C\u4E0D\u4E00\u81F4\uFF0C\u8BF4\u660E\u4FEE\u6539\u8FC7\uFF0C\u56E0\u6B64\u8FD4\u56DE 200\u3002\u5E76\u4E14\u628A\u65B0\u7684 Etag \u8D4B\u503C\u7ED9 if-None-Match \u6765\u66F4\u65B0\u8BE5\u503C</p>
+<h2 id="last-modified-\u548C-etag-\u4E4B\u95F4\u5BF9\u6BD4" tabindex="-1"><a class="header-anchor" href="#last-modified-\u548C-etag-\u4E4B\u95F4\u5BF9\u6BD4" aria-hidden="true">#</a> last-modified \u548C ETag \u4E4B\u95F4\u5BF9\u6BD4</h2>
+<ul>
+<li>
+<ol>
+<li>\u5728\u7CBE\u5EA6\u4E0A\uFF0CETag \u8981\u4F18\u5148\u4E8E last-modified\u3002</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>\u5728\u6027\u80FD\u4E0A\uFF0CEtag \u8981\u900A\u4E8E Last-Modified\uFF0CLast-Modified \u9700\u8981\u8BB0\u5F55\u65F6\u95F4\uFF0C\u800C Etag \u9700\u8981\u670D\u52A1\u5668\u901A\u8FC7\u7B97\u6CD5\u6765\u8BA1\u7B97\u51FA\u4E00\u4E2A hash \u503C\u3002</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>\u5728\u4F18\u5148\u7EA7\u4E0A\uFF0C\u670D\u52A1\u5668\u6821\u9A8C\u4F18\u5148\u8003\u8651 Etag\u3002</li>
+</ol>
+</li>
+</ul>
+<h2 id="\u7406\u89E3\u5F3A\u5236\u7F13\u5B58" tabindex="-1"><a class="header-anchor" href="#\u7406\u89E3\u5F3A\u5236\u7F13\u5B58" aria-hidden="true">#</a> \u7406\u89E3\u5F3A\u5236\u7F13\u5B58</h2>
+<p>\u2003\u57FA\u672C\u539F\u7406\uFF1A\u6D4F\u89C8\u5668\u5728\u52A0\u8F7D\u8D44\u6E90\u7684\u65F6\u5019\uFF0C\u4F1A\u5148\u6839\u636E\u672C\u5730\u7F13\u5B58\u8D44\u6E90\u7684 header \u4E2D\u7684\u4FE1\u606F(Expires \u548C Cache-Control)\u6765\u5224\u65AD\u662F\u5426\u9700\u8981\u5F3A\u5236\u7F13\u5B58\u3002\u5982\u679C\u547D\u4E2D\u7684\u8BDD\uFF0C\u5219\u4F1A\u76F4\u63A5\u4F7F\u7528\u7F13\u5B58\u4E2D\u7684\u8D44\u6E90\u3002\u5426\u5219\u7684\u8BDD\uFF0C\u4F1A\u7EE7\u7EED\u5411\u670D\u52A1\u5668\u53D1\u9001\u8BF7\u6C42\u3002<br>
+\u2003Expires \u662F http1.0 \u7684\u89C4\u8303\uFF0C\u5B83\u7684\u503C\u662F\u4E00\u4E2A\u7EDD\u5BF9\u65F6\u95F4\u7684 GMT \u683C\u5F0F\u7684\u65F6\u95F4\u5B57\u7B26\u4E32\u3002\u8FD9\u4E2A\u65F6\u95F4\u4EE3\u8868\u7684\u8BE5\u8D44\u6E90\u7684\u5931\u6548\u65F6\u95F4\uFF0C\u5982\u679C\u5728\u8BE5\u65F6\u95F4\u4E4B\u524D\u8BF7\u6C42\u7684\u8BDD\uFF0C\u5219\u90FD\u662F\u4ECE\u7F13\u5B58\u91CC\u9762\u8BFB\u53D6\u7684\u3002\u4F46\u662F\u4F7F\u7528\u8BE5\u89C4\u8303\u65F6\uFF0C\u53EF\u80FD\u4F1A\u6709\u4E00\u4E2A\u7F3A\u70B9\u5C31\u662F\u5F53\u670D\u52A1\u5668\u7684\u65F6\u95F4\u548C\u5BA2\u6237\u7AEF\u7684\u65F6\u95F4\u4E0D\u4E00\u6837\u7684\u60C5\u51B5\u4E0B\uFF0C\u4F1A\u5BFC\u81F4\u7F13\u5B58\u5931\u6548\u3002<br>
+\u2003Cache-Control \u662F http1.1 \u7684\u89C4\u8303\uFF0C\u5B83\u662F\u5229\u7528\u8BE5\u5B57\u6BB5 max-age \u503C\u8FDB\u884C\u5224\u65AD\u7684\u3002\u8BE5\u503C\u662F\u4E00\u4E2A\u76F8\u5BF9\u65F6\u95F4\uFF0C\u6BD4\u5982 Cache-Control: max-age=3600, \u4EE3\u8868\u8BE5\u8D44\u6E90\u7684\u6709\u6548\u671F\u662F 3600 \u79D2\u3002\u9664\u4E86\u8BE5\u5B57\u6BB5\u5916\uFF0C\u6211\u4EEC\u8FD8\u6709\u5982\u4E0B\u5B57\u6BB5\u53EF\u4EE5\u8BBE\u7F6E\uFF1A</p>
+<ul>
+<li>
+<p>no-cache: \u9700\u8981\u8FDB\u884C\u534F\u5546\u7F13\u5B58\uFF0C\u53D1\u9001\u8BF7\u6C42\u5230\u670D\u52A1\u5668\u786E\u8BA4\u662F\u5426\u4F7F\u7528\u7F13\u5B58\u3002</p>
+</li>
+<li>
+<p>no-store\uFF1A\u7981\u6B62\u4F7F\u7528\u7F13\u5B58\uFF0C\u6BCF\u4E00\u6B21\u90FD\u8981\u91CD\u65B0\u8BF7\u6C42\u6570\u636E\u3002</p>
+</li>
+<li>
+<p>public\uFF1A\u53EF\u4EE5\u88AB\u6240\u6709\u7684\u7528\u6237\u7F13\u5B58\uFF0C\u5305\u62EC\u7EC8\u7AEF\u7528\u6237\u548C CDN \u7B49\u4E2D\u95F4\u4EE3\u7406\u670D\u52A1\u5668\u3002</p>
+</li>
+<li>
+<p>private\uFF1A\u53EA\u80FD\u88AB\u7EC8\u7AEF\u7528\u6237\u7684\u6D4F\u89C8\u5668\u7F13\u5B58\uFF0C\u4E0D\u5141\u8BB8 CDN \u7B49\u4E2D\u7EE7\u7F13\u5B58\u670D\u52A1\u5668\u5BF9\u5176\u7F13\u5B58\u3002</p>
+</li>
+</ul>
+<p>\u2003<strong>\u6CE8\u610F\uFF1ACache-Control \u4E0E Expires \u53EF\u4EE5\u5728\u670D\u52A1\u7AEF\u914D\u7F6E\u540C\u65F6\u542F\u7528\uFF0C\u540C\u65F6\u542F\u7528\u7684\u65F6\u5019 Cache-Control \u4F18\u5148\u7EA7\u9AD8</strong></p>
+<h2 id="nginx-\u7F13\u5B58\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#nginx-\u7F13\u5B58\u914D\u7F6E" aria-hidden="true">#</a> nginx \u7F13\u5B58\u914D\u7F6E</h2>
+<p>\u2003\u53EF\u4EE5\u5728\u4E00\u5B9A\u7A0B\u5EA6\u4E0A\uFF0C\u51CF\u5C11\u670D\u52A1\u5668\u7684\u5904\u7406\u8BF7\u6C42\u538B\u529B\u3002\u6BD4\u5982\u5BF9\u4E00\u4E9B\u56FE\u7247\uFF0C\u5927\u6587\u4EF6\uFF0Ccss \u6216 js \u505A\u4E00\u4E9B\u7F13\u5B58\uFF0C\u90A3\u4E48\u5728\u6BCF\u6B21\u5237\u65B0\u6D4F\u89C8\u5668\u7684\u65F6\u5019\uFF0C\u5C31\u4E0D\u4F1A\u91CD\u65B0\u8BF7\u6C42\u4E86\uFF0C\u800C\u662F\u4ECE\u7F13\u5B58\u91CC\u9762\u8BFB\u53D6\u3002\u8FD9\u6837\u5C31\u53EF\u4EE5\u51CF\u8F7B\u670D\u52A1\u5668\u7684\u538B\u529B\u3002nginx \u53EF\u914D\u7F6E\u7684\u7F13\u5B58\u53C8\u6709 2 \u79CD\uFF1A</p>
+<ul>
+<li>1 \u5BA2\u6237\u7AEF\u7684\u7F13\u5B58(\u4E00\u822C\u6307\u6D4F\u89C8\u5668\u7684\u7F13\u5B58)\u3002</li>
+<li>2 \u670D\u52A1\u7AEF\u7684\u7F13\u5B58(\u4F7F\u7528 proxy-cache \u5B9E\u73B0\u7684)\u3002<br>
+<strong>\u6CE8\u610F\uFF1A\u5BA2\u6237\u7AEF\u7684\u7F13\u5B58\u4E00\u822C\u6709\u5982\u4E0B\u4E24\u79CD\u65B9\u5F0F\u5B9E\u73B0\uFF1A\u534F\u5546\u7F13\u5B58\u548C\u5F3A\u7F13\u5B58\u3002</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>server <span class="token punctuation">{</span>
+  location ~* <span class="token punctuation">\\</span>.<span class="token punctuation">(</span>html<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+    access_log off<span class="token punctuation">;</span>
+    add_header  Cache-Control  max-age<span class="token operator">=</span>no-cache<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  location ~* <span class="token punctuation">\\</span>.<span class="token punctuation">(</span>css<span class="token operator">|</span>js<span class="token operator">|</span>png<span class="token operator">|</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>gif<span class="token operator">|</span>gz<span class="token operator">|</span>svg<span class="token operator">|</span>mp4<span class="token operator">|</span>ogg<span class="token operator">|</span>ogv<span class="token operator">|</span>webm<span class="token operator">|</span>htc<span class="token operator">|</span>xml<span class="token operator">|</span>woff<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+    <span class="token comment"># \u540C\u4E0A\uFF0C\u901A\u914D\u6240\u6709\u4EE5.css/.js/...\u7ED3\u5C3E\u7684\u8BF7\u6C42</span>
+    access_log off<span class="token punctuation">;</span>
+    add_header    Cache-Control  max-age<span class="token operator">=</span><span class="token number">360000</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>~_ \u7684\u542B\u4E49\u662F\uFF1A\u901A\u914D\u4EFB\u610F\u5B57\u7B26\uFF08\u4E14\u5927\u5C0F\u5199\u4E0D\u654F\u611F\uFF09\uFF0C\\\u8F6C\u4E49\u5B57\u7B26\uFF0C\u56E0\u6B64 ~_ .(html)$\u7684\u542B\u4E49\u662F\uFF1A\u5339\u914D\u6240\u6709\u4EE5.html \u7ED3\u5C3E\u7684\u8BF7\u6C42
+access_log off; \u7684\u542B\u4E49\u662F \u5173\u95ED\u65E5\u5FD7\u529F\u80FD\u3002<br>
+<strong>add_header Cache-Control max-age=no-cache;</strong> \u7684\u542B\u4E49\uFF1Ahtml \u6587\u4EF6\u4E0D\u8BBE\u7F6E\u5F3A\u5236\u7F13\u5B58\u65F6\u95F4\uFF0C\u534F\u5546\u7F13\u5B58\uFF0C\u4F7F\u7528 Last-Modified\u3002no-cache \u4F1A\u53D1\u8D77\u5F80\u8FD4\u901A\u4FE1\u6765\u9A8C\u8BC1\u7F13\u5B58\u7684\u54CD\u5E94\uFF0C\u4F46\u5982\u679C\u8D44\u6E90\u672A\u53D1\u751F\u53D8\u5316\uFF0C\u5219\u4E0D\u4F1A\u4E0B\u8F7D\uFF0C\u8FD4\u56DE 304<br>
+<strong>add_header Cache-Control max-age=360000;</strong> \u7684\u542B\u4E49\u7ED9\u4E0A\u9762\u5339\u914D\u540E\u7F00\u7684\u6587\u4EF6\u8BBE\u7F6E\u5F3A\u5236\u7F13\u5B58\uFF0C\u4E14\u7F13\u5B58\u7684\u65F6\u95F4\u662F 360000 \u79D2\uFF0C\u7B2C\u4E00\u6B21\u8BBF\u95EE\u7684\u65F6\u5019\uFF0C\u4ECE\u670D\u52A1\u5668\u8BF7\u6C42\uFF0C\u5F53\u9664\u4E86\u7B2C\u4E00\u6B21\u4EE5\u5916\uFF0C\u518D\u6B21\u5237\u65B0\u6D4F\u89C8\u5668\uFF0C\u4F1A\u4ECE\u6D4F\u89C8\u5668\u7F13\u5B58\u8BFB\u53D6\uFF0C\u90A3\u4E48\u5F3A\u5236\u7F13\u5B58\u4E00\u822C\u662F\u4ECE\u5185\u5B58\u91CC\u9762\u5148\u8BFB\u53D6\uFF0C\u5982\u679C\u5185\u5B58\u6CA1\u6709\uFF0C\u518D\u4ECE\u786C\u76D8\u8BFB\u53D6\u3002</p>
+<p><strong>\u6CE8\u610F\uFF1A\u5982\u4E0A\u53EA\u662F\u4E0D\u5BF9\u53CD\u5411\u4EE3\u7406\u7684\u9875\u9762\u8FDB\u884C\u7F13\u5B58\u8BBE\u7F6E\u7684\uFF0C\u4F46\u662F\u5982\u679C\u662F\u53CD\u5411\u4EE3\u7406\u540E\u7684\u9875\u9762\uFF0C\u5982\u4E0A\u8BBE\u7F6E\u662F\u4E0D\u751F\u6548\u7684\u3002\u6BD4\u5982\u8BF4\u6211 node \u8D77\u4E86\u4E00\u4E2A\u670D\u52A1\uFF0C\u7136\u540E\u901A\u8FC7\u8BBF\u95EE nginx \u53CD\u5411\u4EE3\u7406\u7684\u65B9\u5F0F\u4EE3\u7406\u5230\u6211 node \u670D\u52A1\u6765\uFF0C\u4E0A\u9762\u7684\u914D\u7F6E\u662F\u4E0D\u751F\u6548\u7684\u3002\u56E0\u6B64\u6211\u4EEC\u9700\u8981\u5982\u4E0B\u5904\u7406\u914D\u7F6E</strong></p>
+<h2 id="\u89E3\u51B3-nginx-\u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898" tabindex="-1"><a class="header-anchor" href="#\u89E3\u51B3-nginx-\u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898" aria-hidden="true">#</a> \u89E3\u51B3 nginx \u53CD\u5411\u4EE3\u7406\u7F13\u5B58\u4E0D\u8D77\u4F5C\u7528\u7684\u95EE\u9898</h2>
+<p>\u6BD4\u5982\u6211\u4E0A\u9762\u7684 node \u670D\u52A1\u7AEF\u53E3\u662F 7878 \u7AEF\u53E3\u3002nginx \u9700\u8981\u5982\u4E0B\u914D\u7F6E\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>server <span class="token punctuation">{</span>
+  listen  <span class="token number">8081</span><span class="token punctuation">;</span>
+  server_name  xxx.abc.com<span class="token punctuation">;</span>
+  location / <span class="token punctuation">{</span>
+    proxy_pass http://localhost:7878<span class="token punctuation">;</span>
+    add_header  Cache-Control  max-age<span class="token operator">=</span>no-cache<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>1 \u5982\u679C\u6211\u4EEC\u8981\u6DFB\u52A0\u7F13\u5B58\u529F\u80FD\u7684\u8BDD\uFF0C\u9700\u8981\u521B\u5EFA\u4E00\u4E2A\u7528\u4E8E\u5B58\u653E\u7F13\u5B58\u6587\u4EF6\u7684\u6587\u4EF6\u5939\u3002\u6BD4\u5982\u6211\u4EEC\u8FD9\u91CC\u4F7F\u7528 /data/nuget-cache\u3002<br>
+2 \u7136\u540E\u6211\u4EEC\u9700\u8981\u5728 nginx.conf \u7684 http \u8BBE\u7F6E\u90E8\u5206\u6DFB\u52A0 proxy_cache_path \u7684\u8BBE\u7F6E\uFF0C\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>http <span class="token punctuation">{</span>
+  // <span class="token punctuation">..</span><span class="token punctuation">..</span>. \u5176\u4ED6\u7684\u914D\u7F6E
+  proxy_cache_path  /data/nuget-cache <span class="token assign-left variable">levels</span><span class="token operator">=</span><span class="token number">1</span>:2 <span class="token assign-left variable">keys_zone</span><span class="token operator">=</span>nuget-cache:20m <span class="token assign-left variable">max_size</span><span class="token operator">=</span>50g <span class="token assign-left variable">inactive</span><span class="token operator">=</span>168h<span class="token punctuation">;</span>
+  server <span class="token punctuation">{</span>
+    listen  <span class="token number">8081</span><span class="token punctuation">;</span>
+    server_name  xxx.abc.com<span class="token punctuation">;</span>
+    location / <span class="token punctuation">{</span>
+      proxy_pass http://localhost:7878<span class="token punctuation">;</span>
+      add_header  Cache-Control  max-age<span class="token operator">=</span>no-cache<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>proxy_cache_path \u5404\u4E2A\u914D\u7F6E\u503C\u7684\u542B\u4E49\u89E3\u6790\u5982\u4E0B\uFF1A</p>
+<ul>
+<li>proxy_cache_path \u6307\u7F13\u5B58\u7684\u76EE\u5F55\uFF0C\u76EE\u5F55\u4E3A\uFF1A/data/nuget-cache\u3002</li>
+<li>levels=1:2 \u8868\u793A\u91C7\u7528 2 \u7EA7\u76EE\u5F55\u7ED3\u6784\u3002</li>
+<li>keys_zone \u6307\u7684\u662F\u7F13\u5B58\u7A7A\u95F4\u540D\u79F0\uFF0C\u53EB nuget-cache\u3002\u7F13\u5B58\u5185\u5B58\u7684\u7A7A\u95F4\u4E3A 20M\u3002</li>
+<li>max_size \u6307\u7684\u662F\u7F13\u5B58\u6587\u4EF6\u53EF\u4EE5\u5360\u7528\u7684\u6700\u5927\u7A7A\u95F4\uFF0C\u4E3A 50G\u3002</li>
+<li>inactive=168h; \u9ED8\u8BA4\u8FC7\u671F\u65F6\u95F4\u4E3A 168 \u4E2A\u5C0F\u65F6\u3002\u4E3A 7 \u5929\uFF0C\u4E5F\u53EF\u4EE5\u5199\u6210\uFF1Ainactive=7d; \u8FD9\u6837\u7684\u683C\u5F0F\u3002</li>
+</ul>
+<p>3 \u6211\u4EEC\u8FD8\u9700\u8981\u5728 server \u8BBE\u7F6E\u90E8\u5206\u6DFB\u52A0 proxy_cache \u4E0E proxy_cache_valid \u7684\u8BBE\u7F6E\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>http <span class="token punctuation">{</span>
+  // <span class="token punctuation">..</span><span class="token punctuation">..</span>. \u5176\u4ED6\u7684\u914D\u7F6E
+  proxy_cache_path  /data/nuget-cache <span class="token assign-left variable">levels</span><span class="token operator">=</span><span class="token number">1</span>:2 <span class="token assign-left variable">keys_zone</span><span class="token operator">=</span>nuget-cache:20m <span class="token assign-left variable">max_size</span><span class="token operator">=</span>50g <span class="token assign-left variable">inactive</span><span class="token operator">=</span>168h<span class="token punctuation">;</span>
+  server <span class="token punctuation">{</span>
+    listen  <span class="token number">8081</span><span class="token punctuation">;</span>
+    server_name  xxx.abc.com<span class="token punctuation">;</span>
+    location / <span class="token punctuation">{</span>
+      proxy_pass http://localhost:7878<span class="token punctuation">;</span>
+      add_header  Cache-Control  max-age<span class="token operator">=</span>no-cache<span class="token punctuation">;</span>
+      proxy_cache nuget-cache<span class="token punctuation">;</span>
+      proxy_cache_valid 168h<span class="token punctuation">;</span>
+      proxy_ignore_headers Set-Cookie Cache-Control<span class="token punctuation">;</span>
+      proxy_hide_header Cache-Control<span class="token punctuation">;</span>
+      proxy_hide_header Set-Cookie<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>proxy_cache \u8BBE\u7F6E\u7684\u662F proxy_cache_path \u4E2D\u7684 keys_zone \u7684\u503C\u3002</li>
+<li>proxy_cache_valid\uFF1A\u8BBE\u7F6E\u7684\u662F\u7F13\u5B58\u8FC7\u671F\u65F6\u95F4\uFF0C\u6BD4\u5982\u8BBE\u7F6E 168 \u4E2A\u5C0F\u65F6\u8FC7\u671F\u3002</li>
+<li>proxy_ignore_headers \u7684\u542B\u4E49\u662F\uFF1A\u5FFD\u7565 Cache-Control \u7684\u8BF7\u6C42\u5934\u63A7\u5236\uFF0C\u4F9D\u7136\u8FDB\u884C\u7F13\u5B58\uFF0C\u6BD4\u5982\u5BF9\u8BF7\u6C42\u5934\u8BBE\u7F6E cookie \u540E\uFF0C\u9ED8\u8BA4\u662F\u4E0D\u7F13\u5B58\u7684\uFF0C\u9700\u8981\u6211\u4EEC\u589E\u52A0\u5FFD\u7565\u914D\u7F6E\u3002<br>
+\u81F3\u6B64 nginx \u7F13\u5B58\u914D\u7F6E\u5C31\u5B8C\u6210\u4E86\uFF0C\u91CD\u542F nginx\uFF0C\u53D1\u73B0\u5DF2\u7ECF\u53EF\u4EE5\u5B9E\u73B0\u7F13\u5B58\u4E86\u3002</li>
+</ul>
+`,date:"2022-03-14",deps:[],links:[],pathInferred:"/posts/devops/nginx/cache.html",pathLocale:"/",permalink:null,routeMeta:{title:"Nginx Cache\u7F13\u5B58\u914D\u7F6E"},sfcBlocks:[],slug:"cache",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/nginx/cache.md",filePathRelative:"posts/devops/nginx/cache.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/cache.html.vue",componentFilePathRelative:"pages/posts/devops/nginx/cache.html.vue",componentFileChunkName:"v-324dfae9",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/cache.html.js",dataFilePathRelative:"pages/posts/devops/nginx/cache.html.js",dataFileChunkName:"v-324dfae9",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/nginx/cache.html",htmlFilePathRelative:"posts/devops/nginx/cache.html"},title:"Nginx Cache\u7F13\u5B58\u914D\u7F6E"},["/posts/devops/nginx/cache","/posts/devops/nginx/cache.md"]],["v-2b29052d","/posts/devops/nginx/gzip.html",{_blog:{data:{key:"v-2b29052d",path:"/posts/devops/nginx/gzip.html",title:"Nginx Gzip\u8D44\u6E90\u538B\u7F29",lang:"zh-CN",frontmatter:{title:"Nginx Gzip\u8D44\u6E90\u538B\u7F29",date:"2022-03-14T09:34:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201100605.jpg",summary:`\u2003Nginx Gzip \u538B\u7F29\u529F\u80FD\uFF0C \u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u8D44\u6E90\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u5C3D\u7BA1\u8FD9\u6837\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4F1A\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\u6765\u63D0\u9AD8\u8BBF\u95EE\u901F\u5EA6
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/gzip.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx Gzip\u8D44\u6E90\u538B\u7F29"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T09:34:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx Gzip \u538B\u7F29\u529F\u80FD\uFF0C \u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u8D44\u6E90\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u5C3D\u7BA1\u8FD9\u6837\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4F1A\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\u6765\u63D0\u9AD8\u8BBF\u95EE\u901F\u5EA6</p>
+`,headers:[{level:2,title:"Gzip \u538B\u7F29",slug:"gzip-\u538B\u7F29",children:[]},{level:2,title:"Nginx \u5F00\u542F Gzip \u538B\u7F29\u53C2\u6570\u8BF4\u660E",slug:"nginx-\u5F00\u542F-gzip-\u538B\u7F29\u53C2\u6570\u8BF4\u660E",children:[]},{level:2,title:"\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C gzip \u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B",slug:"\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C-gzip-\u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/nginx/gzip.md",readingTime:{minutes:6.26,words:1878},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/nginx/gzip.html`},key:"v-2b29052d",path:"/posts/devops/nginx/gzip.html",title:"Nginx Gzip\u8D44\u6E90\u538B\u7F29",lang:"zh-CN",frontmatter:{title:"Nginx Gzip\u8D44\u6E90\u538B\u7F29",date:"2022-03-14T09:34:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201100605.jpg",summary:`\u2003Nginx Gzip \u538B\u7F29\u529F\u80FD\uFF0C \u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u8D44\u6E90\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u5C3D\u7BA1\u8FD9\u6837\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4F1A\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\u6765\u63D0\u9AD8\u8BBF\u95EE\u901F\u5EA6
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/gzip.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx Gzip\u8D44\u6E90\u538B\u7F29"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T09:34:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx Gzip \u538B\u7F29\u529F\u80FD\uFF0C \u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u8D44\u6E90\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u5C3D\u7BA1\u8FD9\u6837\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4F1A\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\u6765\u63D0\u9AD8\u8BBF\u95EE\u901F\u5EA6</p>
+`,headers:[{level:2,title:"Gzip \u538B\u7F29",slug:"gzip-\u538B\u7F29",children:[]},{level:2,title:"Nginx \u5F00\u542F Gzip \u538B\u7F29\u53C2\u6570\u8BF4\u660E",slug:"nginx-\u5F00\u542F-gzip-\u538B\u7F29\u53C2\u6570\u8BF4\u660E",children:[]},{level:2,title:"\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C gzip \u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B",slug:"\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C-gzip-\u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B",children:[]}],content:`---
+title: Nginx Gzip\u8D44\u6E90\u538B\u7F29
+date: 2022-03-14 09:34:50
+tag:
+  - nginx
+category:
+  - nginx
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201100605.jpg
+---
+
+&emsp;Nginx Gzip \u538B\u7F29\u529F\u80FD\uFF0C \u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u8D44\u6E90\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u5C3D\u7BA1\u8FD9\u6837\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4F1A\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\u6765\u63D0\u9AD8\u8BBF\u95EE\u901F\u5EA6
+
+<!-- more -->
+
+## Gzip \u538B\u7F29
+
+&emsp;Nginx \u5F00\u542F Gzip \u538B\u7F29\u529F\u80FD\uFF0C\u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u6587\u4EF6\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u63D0\u9AD8\u7F51\u9875\u7684\u8BBF\u95EE\u901F\u5EA6,\u6709\u6548\u5730\u8282\u7EA6\u5E26\u5BBD,\u8FDB\u800C\u4F18\u5316 Nginx \u6027\u80FD! \u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u9875\u9762\u5927\u5C0F\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u8FD9\u6837\uFF0C\u7528\u6237\u6D4F\u89C8\u9875\u9762\u7684\u65F6\u5019\u901F\u5EA6\u4F1A\u5FEB\u5F97\u591A\u3002Gzip \u7684\u538B\u7F29\u9875\u9762\u9700\u8981\u6D4F\u89C8\u5668\u548C\u670D\u52A1\u5668\u53CC\u65B9\u90FD\u652F\u6301\uFF0C\u5B9E\u9645\u4E0A\u5C31\u662F\u670D\u52A1\u5668\u7AEF\u538B\u7F29\uFF0C\u4F20\u5230\u6D4F\u89C8\u5668\u540E\u6D4F\u89C8\u5668\u89E3\u538B\u5E76\u89E3\u6790\u3002\u6D4F\u89C8\u5668\u90A3\u91CC\u4E0D\u9700\u8981\u6211\u4EEC\u62C5\u5FC3\uFF0C\u56E0\u4E3A\u76EE\u524D\u7684\u5DE8\u5927\u591A\u6570\u6D4F\u89C8\u5668 \u90FD\u652F\u6301\u89E3\u6790 Gzip \u8FC7\u7684\u9875\u9762\u3002  
+&emsp;\u5F00\u542F Gzip \u529F\u80FD\u540E\uFF0CNginx \u670D\u52A1\u5668\u4F1A\u6839\u636E\u914D\u7F6E\u7684\u7B56\u7565\u5BF9\u53D1\u9001\u7684\u5185\u5BB9, \u5982 css\u3001js\u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u8FDB\u884C\u538B\u7F29, \u4F7F\u5F97\u8FD9\u4E9B\u5185\u5BB9\u5927\u5C0F\u51CF\u5C11\uFF0C\u5728\u7528\u6237\u63A5\u6536\u5230\u8FD4\u56DE\u5185\u5BB9\u4E4B\u524D\u5BF9\u5176\u8FDB\u884C\u5904\u7406\uFF0C\u4EE5\u538B\u7F29\u540E\u7684\u6570\u636E\u5C55\u73B0\u7ED9\u5BA2\u6237\u3002\u8FD9\u6837\u4E0D\u4EC5\u53EF\u4EE5\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\uFF0C\u63D0\u9AD8\u4F20\u8F93\u6548\u7387\uFF0C\u8FD8\u80FD\u63D0\u5347\u7528\u6237\u5FEB\u7684\u611F\u77E5\u4F53\u9A8C, \u4E00\u4E3E\u4E24\u5F97; \u5C3D\u7BA1\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4E3A\u4E86\u7ED9\u7528\u6237\u66F4\u597D\u7684\u4F53\u9A8C\u8FD8\u662F\u503C\u5F97\u7684\u3002  
+&emsp;Web \u7F51\u7AD9\u4E0A\u7684\u56FE\u7247\uFF0C\u89C6\u9891\u7B49\u5176\u5B83\u591A\u5A92\u4F53\u6587\u4EF6\u4EE5\u53CA\u5927\u6587\u4EF6\uFF0C\u56E0\u4E3A\u538B\u7F29\u524D\u540E\u6587\u4EF6\u5927\u5C0F\u538B\u7F29\u5DEE\u5F02\u4E0D\u5927\uFF0C\u538B\u7F29\u6548\u679C\u4E0D\u597D\uFF0C\u53CD\u800C\u4F1A\u589E\u52A0 cup \u7684\u6D88\u8017\uFF0C\u6240\u4EE5\u5BF9\u4E8E\u56FE\u7247\u6216\u5927\u6587\u4EF6\u6CA1\u6709\u5FC5\u8981\u8FDB\u884C\u538B\u7F29\u3002\u5982\u679C\u60F3\u8981\u4F18\u5316\uFF0C\u53EF\u4EE5\u91C7\u7528\u5BA2\u6237\u7AEF\u7F13\u5B58\u7684\u65B9\u6CD5\u8FDB\u884C\u6027\u80FD\u4F18\u5316\u3002Gzip \u538B\u7F29\u53EF\u4EE5\u914D\u7F6E http,server \u548C location \u6A21\u5757\u4E0B\u3002  
+&emsp;\u5BF9\u4E8E\u5B57\u4F53\u7684\u5904\u7406,\u53EA\u9700\u8981\u4E3A ttf\u3001otf \u548C svg \u5B57\u4F53\u542F\u7528 gzip\uFF0C\u5BF9\u5176\u4ED6\u5B57\u4F53\u683C\u5F0F\u8FDB\u884C gzip \u538B\u7F29\u65F6\u6548\u679C\u4E0D\u660E\u663E\u3002\`gzip_types font/ttf font/otf image/svg+xml \`
+
+## Nginx \u5F00\u542F Gzip \u538B\u7F29\u53C2\u6570\u8BF4\u660E
+
+\`\`\`bash
+# \u5F00\u542Fgzip\u538B\u7F29\u670D\u52A1
+gzip on;
+
+# gzip\u538B\u7F29\u662F\u8981\u7533\u8BF7\u4E34\u65F6\u5185\u5B58\u7A7A\u95F4\u7684\uFF0C\u5047\u8BBE\u524D\u63D0\u662F\u538B\u7F29\u540E\u5927\u5C0F\u662F\u5C0F\u4E8E\u7B49\u4E8E\u538B\u7F29\u524D\u7684\u3002
+# \u4F8B\u5982\uFF0C\u5982\u679C\u539F\u59CB\u6587\u4EF6\u5927\u5C0F\u4E3A10K\uFF0C\u90A3\u4E48\u5B83\u8D85\u8FC7\u4E868K\uFF0C\u6240\u4EE5\u5206\u914D\u7684\u5185\u5B58\u662F8 * 2 = 16K;\u518D\u4F8B\u5982\uFF0C
+# \u539F\u59CB\u6587\u4EF6\u5927\u5C0F\u4E3A18K\uFF0C\u5F88\u660E\u663E16K\u4E5F\u662F\u4E0D\u591F\u7684\uFF0C\u90A3\u4E48\u6309\u7167 8 * 2 * 2 = 32K\u7684\u5927\u5C0F\u7533\u8BF7\u5185\u5B58\u3002
+# \u5982\u679C\u6CA1\u6709\u8BBE\u7F6E\uFF0C\u9ED8\u8BA4\u503C\u662F\u7533\u8BF7\u8DDF\u539F\u59CB\u6570\u636E\u76F8\u540C\u5927\u5C0F\u7684\u5185\u5B58\u7A7A\u95F4\u53BB\u5B58\u50A8gzip\u538B\u7F29\u7ED3\u679C\u3002
+
+# \u8BBE\u7F6E\u7CFB\u7EDF\u83B7\u53D6\u51E0\u4E2A\u5355\u4F4D\u7684\u7F13\u5B58\u7528\u4E8E\u5B58\u50A8gzip\u7684\u538B\u7F29\u7ED3\u679C\u6570\u636E\u6D41\u3002
+# \u4F8B\u5982 4 4k \u4EE3\u8868\u4EE54k\u4E3A\u5355\u4F4D\uFF0C\u6309\u7167\u539F\u59CB\u6570\u636E\u5927\u5C0F\u4EE54k\u4E3A\u5355\u4F4D\u76844\u500D\u7533\u8BF7\u5185\u5B58\u3002
+# 4 8k \u4EE3\u8868\u4EE58k\u4E3A\u5355\u4F4D\uFF0C\u6309\u7167\u539F\u59CB\u6570\u636E\u5927\u5C0F\u4EE58k\u4E3A\u5355\u4F4D\u76844\u500D\u7533\u8BF7\u5185\u5B58\u3002
+# \u5982\u679C\u6CA1\u6709\u8BBE\u7F6E\uFF0C\u9ED8\u8BA4\u503C\u662F\u7533\u8BF7\u8DDF\u539F\u59CB\u6570\u636E\u76F8\u540C\u5927\u5C0F\u7684\u5185\u5B58\u7A7A\u95F4\u53BB\u5B58\u50A8gzip\u538B\u7F29\u7ED3\u679C\u3002
+gzip_buffers 2 8k;
+
+# nginx\u5BF9\u4E8E\u9759\u6001\u6587\u4EF6\u7684\u5904\u7406\u6A21\u5757\u3002
+# \u8BE5\u6A21\u5757\u53EF\u4EE5\u8BFB\u53D6\u9884\u5148\u538B\u7F29\u7684gz\u6587\u4EF6\uFF0C\u8FD9\u6837\u53EF\u4EE5\u51CF\u5C11\u6BCF\u6B21\u8BF7\u6C42\u8FDB\u884Cgzip\u538B\u7F29\u7684CPU\u8D44\u6E90\u6D88\u8017\u3002
+# \u8BE5\u6A21\u5757\u542F\u7528\u540E\uFF0Cnginx\u9996\u5148\u68C0\u67E5\u662F\u5426\u5B58\u5728\u8BF7\u6C42\u9759\u6001\u6587\u4EF6\u7684gz\u7ED3\u5C3E\u7684\u6587\u4EF6\uFF0C\u5982\u679C\u6709\u5219\u76F4\u63A5\u8FD4\u56DE\u8BE5gz\u6587\u4EF6\u5185\u5BB9\u3002
+# \u4E3A\u4E86\u8981\u517C\u5BB9\u4E0D\u652F\u6301gzip\u7684\u6D4F\u89C8\u5668\uFF0C\u542F\u7528gzip_static\u6A21\u5757\u5C31\u5FC5\u987B\u540C\u65F6\u4FDD\u7559\u539F\u59CB\u9759\u6001\u6587\u4EF6\u548Cgz\u6587\u4EF6\u3002
+# \u8FD9\u6837\u7684\u8BDD\uFF0C\u5728\u6709\u5927\u91CF\u9759\u6001\u6587\u4EF6\u7684\u60C5\u51B5\u4E0B\uFF0C\u5C06\u4F1A\u5927\u5927\u589E\u52A0\u78C1\u76D8\u7A7A\u95F4\u3002\u6211\u4EEC\u53EF\u4EE5\u5229\u7528nginx\u7684\u53CD\u5411\u4EE3\u7406\u529F\u80FD\u5B9E\u73B0\u53EA\u4FDD\u7559gz\u6587\u4EF6\u3002
+gzip_static on|off
+
+# \u542F\u7528gzip\u538B\u7F29\u7684\u6700\u5C0F\u6587\u4EF6\uFF0C\u5C0F\u4E8E\u8BBE\u7F6E\u503C\u7684\u6587\u4EF6\u5C06\u4E0D\u4F1A\u538B\u7F29
+gzip_min_length 1k;
+
+# gzip\u538B\u7F29\u57FA\u4E8E\u7684http\u534F\u8BAE\u7248\u672C\uFF0C\u9ED8\u8BA4\u5C31\u662FHTTP 1.1
+gzip_http_version 1.1;
+
+# gzip \u538B\u7F29\u7EA7\u522B\uFF0C1-10\uFF0C\u6570\u5B57\u8D8A\u5927\u538B\u7F29\u7684\u8D8A\u597D\uFF0C\u4E5F\u8D8A\u5360\u7528CPU\u65F6\u95F4\uFF0C\u540E\u9762\u4F1A\u6709\u8BE6\u7EC6\u8BF4\u660E
+gzip_comp_level 2;
+
+# \u9700\u8981\u8FDB\u884Cgzip\u538B\u7F29\u7684Content-Type\u7684Header\u7684\u7C7B\u578B\u3002\u5EFA\u8BAEjs\u3001text\u3001css\u3001xml\u3001json\u90FD\u8981\u8FDB\u884C\u538B\u7F29\uFF1B
+# \u56FE\u7247\u5C31\u6CA1\u5FC5\u8981\u4E86\uFF0Cgif\u3001jpge\u6587\u4EF6\u5DF2\u7ECF\u538B\u7F29\u5F97\u5F88\u597D\u4E86\uFF0C\u5C31\u7B97\u518D\u538B\uFF0C\u6548\u679C\u4E5F\u4E0D\u597D\uFF0C\u800C\u4E14\u8FD8\u8017\u8D39cpu\u3002
+# javascript\u6709\u591A\u79CD\u5F62\u5F0F\u3002\u5176\u4E2D\u7684\u503C\u53EF\u4EE5\u5728 mime.types \u6587\u4EF6\u4E2D\u627E\u5230\u3002
+gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png;
+
+# \u9ED8\u8BA4\u503C\uFF1Aoff
+# Nginx\u4F5C\u4E3A\u53CD\u5411\u4EE3\u7406\u7684\u65F6\u5019\u542F\u7528\uFF0C\u5F00\u542F\u6216\u8005\u5173\u95ED\u540E\u7AEF\u670D\u52A1\u5668\u8FD4\u56DE\u7684\u7ED3\u679C\uFF0C\u5339\u914D\u7684\u524D\u63D0\u662F\u540E\u7AEF\u670D\u52A1\u5668\u5FC5\u987B\u8981\u8FD4\u56DE\u5305\u542B"Via"\u7684 header\u5934\u3002
+# off - \u5173\u95ED\u6240\u6709\u7684\u4EE3\u7406\u7ED3\u679C\u6570\u636E\u7684\u538B\u7F29
+# expired - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Expires" \u5934\u4FE1\u606F
+# no-cache - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Cache-Control:no-cache" \u5934\u4FE1\u606F
+# no-store - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Cache-Control:no-store" \u5934\u4FE1\u606F
+# private - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Cache-Control:private" \u5934\u4FE1\u606F
+# no_last_modified - \u542F\u7528\u538B\u7F29,\u5982\u679Cheader\u5934\u4E2D\u4E0D\u5305\u542B "Last-Modified" \u5934\u4FE1\u606F
+# no_etag - \u542F\u7528\u538B\u7F29 ,\u5982\u679Cheader\u5934\u4E2D\u4E0D\u5305\u542B "ETag" \u5934\u4FE1\u606F
+# auth - \u542F\u7528\u538B\u7F29 , \u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Authorization" \u5934\u4FE1\u606F
+# any - \u65E0\u6761\u4EF6\u542F\u7528\u538B\u7F29
+gzip_proxied [off|expired|no-cache|no-store|private|no_last_modified|no_etag|auth|any] ...
+
+# \u662F\u5426\u5728http header\u4E2D\u6DFB\u52A0Vary: Accept-Encoding\uFF0C\u5EFA\u8BAE\u5F00\u542F
+# \u548Chttp\u5934\u6709\u5173\u7CFB\uFF0C\u52A0\u4E2Avary\u5934\uFF0C\u7ED9\u4EE3\u7406\u670D\u52A1\u5668\u7528\u7684\uFF0C\u6709\u7684\u6D4F\u89C8\u5668\u652F\u6301\u538B\u7F29\uFF0C
+# \u6709\u7684\u4E0D\u652F\u6301\uFF0C\u6240\u4EE5\u907F\u514D\u6D6A\u8D39\u4E0D\u652F\u6301\u7684\u4E5F\u538B\u7F29\uFF0C\u6240\u4EE5\u6839\u636E\u5BA2\u6237\u7AEF\u7684HTTP\u5934\u6765\u5224\u65AD\uFF0C\u662F\u5426\u9700\u8981\u538B\u7F29
+gzip_vary on;
+
+# \u7981\u7528IE 6 gzip
+gzip_disable "MSIE [1-6]\\.";
+\`\`\`
+
+## \u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C gzip \u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B
+
+![](https://cdn.jsdelivr.net/gh/AnyFork/blog-images/main/markdown/202203141006242.png)
+
+- \u6574\u4E2A\u8BF7\u6C42\u8FC7\u7A0B\u6765\u770B\uFF0C\u5F00\u542F gzip \u548C\u4E0D\u5F00\u542F gip \u529F\u80FD\uFF0C\u5176 http \u7684\u8BF7\u6C42\u548C\u8FD4\u56DE\u8FC7\u7A0B\u662F\u4E00\u81F4\u7684\uFF0C\u4E0D\u540C\u7684\u662F\u53C2\u6570\u3002
+- \u5F53\u5F00\u542F HTTP \u7684 gzip \u529F\u80FD\u65F6\uFF0C\u5BA2\u6237\u7AEF\u53D1\u51FA http \u8BF7\u6C42\u65F6\uFF0C\u4F1A\u901A\u8FC7 headers \u4E2D\u7684 Accept-Encoding \u5C5E\u6027\u544A\u8BC9\u670D\u52A1\u5668\u201C\u6211\u652F\u6301 gzip \u89E3\u538B\uFF0C\u89E3\u538B\u683C\u5F0F\uFF08\u7B97\u6CD5\uFF09deflate,sdch \u4E3A\uFF1A\u201D\u3002Accept-Encoding:gzip,deflate,sdch\u3002
+  \u6CE8\u610F\uFF0C\u4E0D\u662F request \u8BF4\u81EA\u5DF1\u652F\u6301\u89E3\u538B\uFF0CNginx \u8FD4\u56DE response \u6570\u636E\u7684\u65F6\u5019\u5C31\u4E00\u5B9A\u4F1A\u538B\u7F29\u3002\u8FD9\u8FD8\u8981\u770B\u672C\u6B21 Nginx \u8FD4\u56DE\u6570\u636E\u7684\u683C\u5F0F\u662F\u4EC0\u4E48\uFF0C\u5982\u679C\u8FD4\u56DE\u6570\u636E\u7684\u539F\u59CB\u6570\u636E\u683C\u5F0F\uFF0C\u548C\u8BBE\u7F6E\u7684 gzip_types \u76F8\u7B26\u5408\uFF0C\u8FD9\u65F6 Nginx \u624D\u4F1A\u8FDB\u884C\u538B\u7F29\u3002
+- Nginx \u8FD4\u56DE response headers \u662F\uFF0C\u5982\u679C\u6570\u636E\u88AB\u538B\u7F29\u4E86\uFF0C\u5C31\u4F1A\u5728 Content-Encoding \u5C5E\u6027\u4E2D\u6807\u793A gzip\uFF0C\u8868\u793A\u63A5\u4E0B\u6765\u8FD4\u56DE\u7684 response
+- content \u662F\u7ECF\u8FC7\u538B\u7F29\u7684\uFF1B\u5E76\u4E14\u5728 Content-Type \u5C5E\u6027\u4E2D\u8868\u793A\u6570\u636E\u7684\u539F\u59CB\u683C\u5F0F\u3002\u6700\u540E\u8FD4\u56DE\u7ECF\u8FC7\u538B\u7F29\u7684 response content \u7ED9\u5BA2\u6237\u7AEF\uFF0C\u5BA2\u6237\u7AEF\u518D\u8FDB\u884C\u89E3\u538B\u3002\u8FD9\u91CC\u6CE8\u610F\u4E00\u4E0B\uFF0C\u5728\u5BA2\u6237\u7AEF\u53D1\u9001\u7684 headers \u91CC\u9762\uFF0C\u6709\u4E00\u4E2A deflate,sdch\u3002\u8FD9\u662F\u4E24\u79CD\u538B\u7F29\u7B97\u6CD5\uFF0C\u5982\u679C\u8BFB\u8005\u611F\u5174\u8DA3\uFF0C\u53EF\u4EE5\u67E5\u67E5\u76F8\u5173\u7684\u8D44\u6599\uFF08\u6211\u5EFA\u8BAE\u67E5\u67E5\uFF0C\u4E86\u89E3\u54C8\u5F17\u66FC\u538B\u7F29\u7B97\u6CD5\u5BF9\u6269\u5C55\u81EA\u5DF1\u7684\u67B6\u6784\u601D\u8DEF\u5F88\u6709\u5E2E\u52A9\uFF09
+`,contentRendered:`<p>\u2003Nginx Gzip \u538B\u7F29\u529F\u80FD\uFF0C \u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u8D44\u6E90\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u5C3D\u7BA1\u8FD9\u6837\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4F1A\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\u6765\u63D0\u9AD8\u8BBF\u95EE\u901F\u5EA6</p>
+<!-- more -->
+<h2 id="gzip-\u538B\u7F29" tabindex="-1"><a class="header-anchor" href="#gzip-\u538B\u7F29" aria-hidden="true">#</a> Gzip \u538B\u7F29</h2>
+<p>\u2003Nginx \u5F00\u542F Gzip \u538B\u7F29\u529F\u80FD\uFF0C\u53EF\u4EE5\u4F7F\u7F51\u7AD9\u7684 css\u3001js \u3001xml\u3001html \u6587\u4EF6\u5728\u4F20\u8F93\u65F6\u8FDB\u884C\u538B\u7F29\uFF0C\u63D0\u9AD8\u7F51\u9875\u7684\u8BBF\u95EE\u901F\u5EA6,\u6709\u6548\u5730\u8282\u7EA6\u5E26\u5BBD,\u8FDB\u800C\u4F18\u5316 Nginx \u6027\u80FD! \u7ECF\u8FC7 Gzip \u538B\u7F29\u540E\u9875\u9762\u5927\u5C0F\u53EF\u4EE5\u53D8\u4E3A\u539F\u6765\u7684 30%\u751A\u81F3\u66F4\u5C0F\uFF0C\u8FD9\u6837\uFF0C\u7528\u6237\u6D4F\u89C8\u9875\u9762\u7684\u65F6\u5019\u901F\u5EA6\u4F1A\u5FEB\u5F97\u591A\u3002Gzip \u7684\u538B\u7F29\u9875\u9762\u9700\u8981\u6D4F\u89C8\u5668\u548C\u670D\u52A1\u5668\u53CC\u65B9\u90FD\u652F\u6301\uFF0C\u5B9E\u9645\u4E0A\u5C31\u662F\u670D\u52A1\u5668\u7AEF\u538B\u7F29\uFF0C\u4F20\u5230\u6D4F\u89C8\u5668\u540E\u6D4F\u89C8\u5668\u89E3\u538B\u5E76\u89E3\u6790\u3002\u6D4F\u89C8\u5668\u90A3\u91CC\u4E0D\u9700\u8981\u6211\u4EEC\u62C5\u5FC3\uFF0C\u56E0\u4E3A\u76EE\u524D\u7684\u5DE8\u5927\u591A\u6570\u6D4F\u89C8\u5668 \u90FD\u652F\u6301\u89E3\u6790 Gzip \u8FC7\u7684\u9875\u9762\u3002<br>
+\u2003\u5F00\u542F Gzip \u529F\u80FD\u540E\uFF0CNginx \u670D\u52A1\u5668\u4F1A\u6839\u636E\u914D\u7F6E\u7684\u7B56\u7565\u5BF9\u53D1\u9001\u7684\u5185\u5BB9, \u5982 css\u3001js\u3001xml\u3001html \u7B49\u9759\u6001\u8D44\u6E90\u8FDB\u884C\u538B\u7F29, \u4F7F\u5F97\u8FD9\u4E9B\u5185\u5BB9\u5927\u5C0F\u51CF\u5C11\uFF0C\u5728\u7528\u6237\u63A5\u6536\u5230\u8FD4\u56DE\u5185\u5BB9\u4E4B\u524D\u5BF9\u5176\u8FDB\u884C\u5904\u7406\uFF0C\u4EE5\u538B\u7F29\u540E\u7684\u6570\u636E\u5C55\u73B0\u7ED9\u5BA2\u6237\u3002\u8FD9\u6837\u4E0D\u4EC5\u53EF\u4EE5\u8282\u7EA6\u5927\u91CF\u7684\u51FA\u53E3\u5E26\u5BBD\uFF0C\u63D0\u9AD8\u4F20\u8F93\u6548\u7387\uFF0C\u8FD8\u80FD\u63D0\u5347\u7528\u6237\u5FEB\u7684\u611F\u77E5\u4F53\u9A8C, \u4E00\u4E3E\u4E24\u5F97; \u5C3D\u7BA1\u4F1A\u6D88\u8017\u4E00\u5B9A\u7684 cpu \u8D44\u6E90\uFF0C\u4F46\u662F\u4E3A\u4E86\u7ED9\u7528\u6237\u66F4\u597D\u7684\u4F53\u9A8C\u8FD8\u662F\u503C\u5F97\u7684\u3002<br>
+\u2003Web \u7F51\u7AD9\u4E0A\u7684\u56FE\u7247\uFF0C\u89C6\u9891\u7B49\u5176\u5B83\u591A\u5A92\u4F53\u6587\u4EF6\u4EE5\u53CA\u5927\u6587\u4EF6\uFF0C\u56E0\u4E3A\u538B\u7F29\u524D\u540E\u6587\u4EF6\u5927\u5C0F\u538B\u7F29\u5DEE\u5F02\u4E0D\u5927\uFF0C\u538B\u7F29\u6548\u679C\u4E0D\u597D\uFF0C\u53CD\u800C\u4F1A\u589E\u52A0 cup \u7684\u6D88\u8017\uFF0C\u6240\u4EE5\u5BF9\u4E8E\u56FE\u7247\u6216\u5927\u6587\u4EF6\u6CA1\u6709\u5FC5\u8981\u8FDB\u884C\u538B\u7F29\u3002\u5982\u679C\u60F3\u8981\u4F18\u5316\uFF0C\u53EF\u4EE5\u91C7\u7528\u5BA2\u6237\u7AEF\u7F13\u5B58\u7684\u65B9\u6CD5\u8FDB\u884C\u6027\u80FD\u4F18\u5316\u3002Gzip \u538B\u7F29\u53EF\u4EE5\u914D\u7F6E http,server \u548C location \u6A21\u5757\u4E0B\u3002<br>
+\u2003\u5BF9\u4E8E\u5B57\u4F53\u7684\u5904\u7406,\u53EA\u9700\u8981\u4E3A ttf\u3001otf \u548C svg \u5B57\u4F53\u542F\u7528 gzip\uFF0C\u5BF9\u5176\u4ED6\u5B57\u4F53\u683C\u5F0F\u8FDB\u884C gzip \u538B\u7F29\u65F6\u6548\u679C\u4E0D\u660E\u663E\u3002<code v-pre>gzip_types font/ttf font/otf image/svg+xml </code></p>
+<h2 id="nginx-\u5F00\u542F-gzip-\u538B\u7F29\u53C2\u6570\u8BF4\u660E" tabindex="-1"><a class="header-anchor" href="#nginx-\u5F00\u542F-gzip-\u538B\u7F29\u53C2\u6570\u8BF4\u660E" aria-hidden="true">#</a> Nginx \u5F00\u542F Gzip \u538B\u7F29\u53C2\u6570\u8BF4\u660E</h2>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u5F00\u542Fgzip\u538B\u7F29\u670D\u52A1</span>
+<span class="token function">gzip</span> on<span class="token punctuation">;</span>
+
+<span class="token comment"># gzip\u538B\u7F29\u662F\u8981\u7533\u8BF7\u4E34\u65F6\u5185\u5B58\u7A7A\u95F4\u7684\uFF0C\u5047\u8BBE\u524D\u63D0\u662F\u538B\u7F29\u540E\u5927\u5C0F\u662F\u5C0F\u4E8E\u7B49\u4E8E\u538B\u7F29\u524D\u7684\u3002</span>
+<span class="token comment"># \u4F8B\u5982\uFF0C\u5982\u679C\u539F\u59CB\u6587\u4EF6\u5927\u5C0F\u4E3A10K\uFF0C\u90A3\u4E48\u5B83\u8D85\u8FC7\u4E868K\uFF0C\u6240\u4EE5\u5206\u914D\u7684\u5185\u5B58\u662F8 * 2 = 16K;\u518D\u4F8B\u5982\uFF0C</span>
+<span class="token comment"># \u539F\u59CB\u6587\u4EF6\u5927\u5C0F\u4E3A18K\uFF0C\u5F88\u660E\u663E16K\u4E5F\u662F\u4E0D\u591F\u7684\uFF0C\u90A3\u4E48\u6309\u7167 8 * 2 * 2 = 32K\u7684\u5927\u5C0F\u7533\u8BF7\u5185\u5B58\u3002</span>
+<span class="token comment"># \u5982\u679C\u6CA1\u6709\u8BBE\u7F6E\uFF0C\u9ED8\u8BA4\u503C\u662F\u7533\u8BF7\u8DDF\u539F\u59CB\u6570\u636E\u76F8\u540C\u5927\u5C0F\u7684\u5185\u5B58\u7A7A\u95F4\u53BB\u5B58\u50A8gzip\u538B\u7F29\u7ED3\u679C\u3002</span>
+
+<span class="token comment"># \u8BBE\u7F6E\u7CFB\u7EDF\u83B7\u53D6\u51E0\u4E2A\u5355\u4F4D\u7684\u7F13\u5B58\u7528\u4E8E\u5B58\u50A8gzip\u7684\u538B\u7F29\u7ED3\u679C\u6570\u636E\u6D41\u3002</span>
+<span class="token comment"># \u4F8B\u5982 4 4k \u4EE3\u8868\u4EE54k\u4E3A\u5355\u4F4D\uFF0C\u6309\u7167\u539F\u59CB\u6570\u636E\u5927\u5C0F\u4EE54k\u4E3A\u5355\u4F4D\u76844\u500D\u7533\u8BF7\u5185\u5B58\u3002</span>
+<span class="token comment"># 4 8k \u4EE3\u8868\u4EE58k\u4E3A\u5355\u4F4D\uFF0C\u6309\u7167\u539F\u59CB\u6570\u636E\u5927\u5C0F\u4EE58k\u4E3A\u5355\u4F4D\u76844\u500D\u7533\u8BF7\u5185\u5B58\u3002</span>
+<span class="token comment"># \u5982\u679C\u6CA1\u6709\u8BBE\u7F6E\uFF0C\u9ED8\u8BA4\u503C\u662F\u7533\u8BF7\u8DDF\u539F\u59CB\u6570\u636E\u76F8\u540C\u5927\u5C0F\u7684\u5185\u5B58\u7A7A\u95F4\u53BB\u5B58\u50A8gzip\u538B\u7F29\u7ED3\u679C\u3002</span>
+gzip_buffers <span class="token number">2</span> 8k<span class="token punctuation">;</span>
+
+<span class="token comment"># nginx\u5BF9\u4E8E\u9759\u6001\u6587\u4EF6\u7684\u5904\u7406\u6A21\u5757\u3002</span>
+<span class="token comment"># \u8BE5\u6A21\u5757\u53EF\u4EE5\u8BFB\u53D6\u9884\u5148\u538B\u7F29\u7684gz\u6587\u4EF6\uFF0C\u8FD9\u6837\u53EF\u4EE5\u51CF\u5C11\u6BCF\u6B21\u8BF7\u6C42\u8FDB\u884Cgzip\u538B\u7F29\u7684CPU\u8D44\u6E90\u6D88\u8017\u3002</span>
+<span class="token comment"># \u8BE5\u6A21\u5757\u542F\u7528\u540E\uFF0Cnginx\u9996\u5148\u68C0\u67E5\u662F\u5426\u5B58\u5728\u8BF7\u6C42\u9759\u6001\u6587\u4EF6\u7684gz\u7ED3\u5C3E\u7684\u6587\u4EF6\uFF0C\u5982\u679C\u6709\u5219\u76F4\u63A5\u8FD4\u56DE\u8BE5gz\u6587\u4EF6\u5185\u5BB9\u3002</span>
+<span class="token comment"># \u4E3A\u4E86\u8981\u517C\u5BB9\u4E0D\u652F\u6301gzip\u7684\u6D4F\u89C8\u5668\uFF0C\u542F\u7528gzip_static\u6A21\u5757\u5C31\u5FC5\u987B\u540C\u65F6\u4FDD\u7559\u539F\u59CB\u9759\u6001\u6587\u4EF6\u548Cgz\u6587\u4EF6\u3002</span>
+<span class="token comment"># \u8FD9\u6837\u7684\u8BDD\uFF0C\u5728\u6709\u5927\u91CF\u9759\u6001\u6587\u4EF6\u7684\u60C5\u51B5\u4E0B\uFF0C\u5C06\u4F1A\u5927\u5927\u589E\u52A0\u78C1\u76D8\u7A7A\u95F4\u3002\u6211\u4EEC\u53EF\u4EE5\u5229\u7528nginx\u7684\u53CD\u5411\u4EE3\u7406\u529F\u80FD\u5B9E\u73B0\u53EA\u4FDD\u7559gz\u6587\u4EF6\u3002</span>
+gzip_static on<span class="token operator">|</span>off
+
+<span class="token comment"># \u542F\u7528gzip\u538B\u7F29\u7684\u6700\u5C0F\u6587\u4EF6\uFF0C\u5C0F\u4E8E\u8BBE\u7F6E\u503C\u7684\u6587\u4EF6\u5C06\u4E0D\u4F1A\u538B\u7F29</span>
+gzip_min_length 1k<span class="token punctuation">;</span>
+
+<span class="token comment"># gzip\u538B\u7F29\u57FA\u4E8E\u7684http\u534F\u8BAE\u7248\u672C\uFF0C\u9ED8\u8BA4\u5C31\u662FHTTP 1.1</span>
+gzip_http_version <span class="token number">1.1</span><span class="token punctuation">;</span>
+
+<span class="token comment"># gzip \u538B\u7F29\u7EA7\u522B\uFF0C1-10\uFF0C\u6570\u5B57\u8D8A\u5927\u538B\u7F29\u7684\u8D8A\u597D\uFF0C\u4E5F\u8D8A\u5360\u7528CPU\u65F6\u95F4\uFF0C\u540E\u9762\u4F1A\u6709\u8BE6\u7EC6\u8BF4\u660E</span>
+gzip_comp_level <span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token comment"># \u9700\u8981\u8FDB\u884Cgzip\u538B\u7F29\u7684Content-Type\u7684Header\u7684\u7C7B\u578B\u3002\u5EFA\u8BAEjs\u3001text\u3001css\u3001xml\u3001json\u90FD\u8981\u8FDB\u884C\u538B\u7F29\uFF1B</span>
+<span class="token comment"># \u56FE\u7247\u5C31\u6CA1\u5FC5\u8981\u4E86\uFF0Cgif\u3001jpge\u6587\u4EF6\u5DF2\u7ECF\u538B\u7F29\u5F97\u5F88\u597D\u4E86\uFF0C\u5C31\u7B97\u518D\u538B\uFF0C\u6548\u679C\u4E5F\u4E0D\u597D\uFF0C\u800C\u4E14\u8FD8\u8017\u8D39cpu\u3002</span>
+<span class="token comment"># javascript\u6709\u591A\u79CD\u5F62\u5F0F\u3002\u5176\u4E2D\u7684\u503C\u53EF\u4EE5\u5728 mime.types \u6587\u4EF6\u4E2D\u627E\u5230\u3002</span>
+gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png<span class="token punctuation">;</span>
+
+<span class="token comment"># \u9ED8\u8BA4\u503C\uFF1Aoff</span>
+<span class="token comment"># Nginx\u4F5C\u4E3A\u53CD\u5411\u4EE3\u7406\u7684\u65F6\u5019\u542F\u7528\uFF0C\u5F00\u542F\u6216\u8005\u5173\u95ED\u540E\u7AEF\u670D\u52A1\u5668\u8FD4\u56DE\u7684\u7ED3\u679C\uFF0C\u5339\u914D\u7684\u524D\u63D0\u662F\u540E\u7AEF\u670D\u52A1\u5668\u5FC5\u987B\u8981\u8FD4\u56DE\u5305\u542B"Via"\u7684 header\u5934\u3002</span>
+<span class="token comment"># off - \u5173\u95ED\u6240\u6709\u7684\u4EE3\u7406\u7ED3\u679C\u6570\u636E\u7684\u538B\u7F29</span>
+<span class="token comment"># expired - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Expires" \u5934\u4FE1\u606F</span>
+<span class="token comment"># no-cache - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Cache-Control:no-cache" \u5934\u4FE1\u606F</span>
+<span class="token comment"># no-store - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Cache-Control:no-store" \u5934\u4FE1\u606F</span>
+<span class="token comment"># private - \u542F\u7528\u538B\u7F29\uFF0C\u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Cache-Control:private" \u5934\u4FE1\u606F</span>
+<span class="token comment"># no_last_modified - \u542F\u7528\u538B\u7F29,\u5982\u679Cheader\u5934\u4E2D\u4E0D\u5305\u542B "Last-Modified" \u5934\u4FE1\u606F</span>
+<span class="token comment"># no_etag - \u542F\u7528\u538B\u7F29 ,\u5982\u679Cheader\u5934\u4E2D\u4E0D\u5305\u542B "ETag" \u5934\u4FE1\u606F</span>
+<span class="token comment"># auth - \u542F\u7528\u538B\u7F29 , \u5982\u679Cheader\u5934\u4E2D\u5305\u542B "Authorization" \u5934\u4FE1\u606F</span>
+<span class="token comment"># any - \u65E0\u6761\u4EF6\u542F\u7528\u538B\u7F29</span>
+gzip_proxied <span class="token punctuation">[</span>off<span class="token operator">|</span>expired<span class="token operator">|</span>no-cache<span class="token operator">|</span>no-store<span class="token operator">|</span>private<span class="token operator">|</span>no_last_modified<span class="token operator">|</span>no_etag<span class="token operator">|</span>auth<span class="token operator">|</span>any<span class="token punctuation">]</span> <span class="token punctuation">..</span>.
+
+<span class="token comment"># \u662F\u5426\u5728http header\u4E2D\u6DFB\u52A0Vary: Accept-Encoding\uFF0C\u5EFA\u8BAE\u5F00\u542F</span>
+<span class="token comment"># \u548Chttp\u5934\u6709\u5173\u7CFB\uFF0C\u52A0\u4E2Avary\u5934\uFF0C\u7ED9\u4EE3\u7406\u670D\u52A1\u5668\u7528\u7684\uFF0C\u6709\u7684\u6D4F\u89C8\u5668\u652F\u6301\u538B\u7F29\uFF0C</span>
+<span class="token comment"># \u6709\u7684\u4E0D\u652F\u6301\uFF0C\u6240\u4EE5\u907F\u514D\u6D6A\u8D39\u4E0D\u652F\u6301\u7684\u4E5F\u538B\u7F29\uFF0C\u6240\u4EE5\u6839\u636E\u5BA2\u6237\u7AEF\u7684HTTP\u5934\u6765\u5224\u65AD\uFF0C\u662F\u5426\u9700\u8981\u538B\u7F29</span>
+gzip_vary on<span class="token punctuation">;</span>
+
+<span class="token comment"># \u7981\u7528IE 6 gzip</span>
+gzip_disable <span class="token string">"MSIE [1-6]\\."</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C-gzip-\u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B" tabindex="-1"><a class="header-anchor" href="#\u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C-gzip-\u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B" aria-hidden="true">#</a> \u5BA2\u6237\u7AEF\u548C\u670D\u52A1\u5668\u8FDB\u884C gzip \u538B\u7F29\u7684\u8BF7\u6C42\u548C\u5904\u7406\u8FC7\u7A0B</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/AnyFork/blog-images/main/markdown/202203141006242.png" alt=""></p>
+<ul>
+<li>\u6574\u4E2A\u8BF7\u6C42\u8FC7\u7A0B\u6765\u770B\uFF0C\u5F00\u542F gzip \u548C\u4E0D\u5F00\u542F gip \u529F\u80FD\uFF0C\u5176 http \u7684\u8BF7\u6C42\u548C\u8FD4\u56DE\u8FC7\u7A0B\u662F\u4E00\u81F4\u7684\uFF0C\u4E0D\u540C\u7684\u662F\u53C2\u6570\u3002</li>
+<li>\u5F53\u5F00\u542F HTTP \u7684 gzip \u529F\u80FD\u65F6\uFF0C\u5BA2\u6237\u7AEF\u53D1\u51FA http \u8BF7\u6C42\u65F6\uFF0C\u4F1A\u901A\u8FC7 headers \u4E2D\u7684 Accept-Encoding \u5C5E\u6027\u544A\u8BC9\u670D\u52A1\u5668\u201C\u6211\u652F\u6301 gzip \u89E3\u538B\uFF0C\u89E3\u538B\u683C\u5F0F\uFF08\u7B97\u6CD5\uFF09deflate,sdch \u4E3A\uFF1A\u201D\u3002Accept-Encoding:gzip,deflate,sdch\u3002
+\u6CE8\u610F\uFF0C\u4E0D\u662F request \u8BF4\u81EA\u5DF1\u652F\u6301\u89E3\u538B\uFF0CNginx \u8FD4\u56DE response \u6570\u636E\u7684\u65F6\u5019\u5C31\u4E00\u5B9A\u4F1A\u538B\u7F29\u3002\u8FD9\u8FD8\u8981\u770B\u672C\u6B21 Nginx \u8FD4\u56DE\u6570\u636E\u7684\u683C\u5F0F\u662F\u4EC0\u4E48\uFF0C\u5982\u679C\u8FD4\u56DE\u6570\u636E\u7684\u539F\u59CB\u6570\u636E\u683C\u5F0F\uFF0C\u548C\u8BBE\u7F6E\u7684 gzip_types \u76F8\u7B26\u5408\uFF0C\u8FD9\u65F6 Nginx \u624D\u4F1A\u8FDB\u884C\u538B\u7F29\u3002</li>
+<li>Nginx \u8FD4\u56DE response headers \u662F\uFF0C\u5982\u679C\u6570\u636E\u88AB\u538B\u7F29\u4E86\uFF0C\u5C31\u4F1A\u5728 Content-Encoding \u5C5E\u6027\u4E2D\u6807\u793A gzip\uFF0C\u8868\u793A\u63A5\u4E0B\u6765\u8FD4\u56DE\u7684 response</li>
+<li>content \u662F\u7ECF\u8FC7\u538B\u7F29\u7684\uFF1B\u5E76\u4E14\u5728 Content-Type \u5C5E\u6027\u4E2D\u8868\u793A\u6570\u636E\u7684\u539F\u59CB\u683C\u5F0F\u3002\u6700\u540E\u8FD4\u56DE\u7ECF\u8FC7\u538B\u7F29\u7684 response content \u7ED9\u5BA2\u6237\u7AEF\uFF0C\u5BA2\u6237\u7AEF\u518D\u8FDB\u884C\u89E3\u538B\u3002\u8FD9\u91CC\u6CE8\u610F\u4E00\u4E0B\uFF0C\u5728\u5BA2\u6237\u7AEF\u53D1\u9001\u7684 headers \u91CC\u9762\uFF0C\u6709\u4E00\u4E2A deflate,sdch\u3002\u8FD9\u662F\u4E24\u79CD\u538B\u7F29\u7B97\u6CD5\uFF0C\u5982\u679C\u8BFB\u8005\u611F\u5174\u8DA3\uFF0C\u53EF\u4EE5\u67E5\u67E5\u76F8\u5173\u7684\u8D44\u6599\uFF08\u6211\u5EFA\u8BAE\u67E5\u67E5\uFF0C\u4E86\u89E3\u54C8\u5F17\u66FC\u538B\u7F29\u7B97\u6CD5\u5BF9\u6269\u5C55\u81EA\u5DF1\u7684\u67B6\u6784\u601D\u8DEF\u5F88\u6709\u5E2E\u52A9\uFF09</li>
+</ul>
+`,date:"2022-03-14",deps:[],links:[],pathInferred:"/posts/devops/nginx/gzip.html",pathLocale:"/",permalink:null,routeMeta:{title:"Nginx Gzip\u8D44\u6E90\u538B\u7F29"},sfcBlocks:[],slug:"gzip",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/nginx/gzip.md",filePathRelative:"posts/devops/nginx/gzip.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/gzip.html.vue",componentFilePathRelative:"pages/posts/devops/nginx/gzip.html.vue",componentFileChunkName:"v-2b29052d",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/gzip.html.js",dataFilePathRelative:"pages/posts/devops/nginx/gzip.html.js",dataFileChunkName:"v-2b29052d",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/nginx/gzip.html",htmlFilePathRelative:"posts/devops/nginx/gzip.html"},title:"Nginx Gzip\u8D44\u6E90\u538B\u7F29"},["/posts/devops/nginx/gzip","/posts/devops/nginx/gzip.md"]],["v-00fac020","/posts/devops/nginx/install.html",{_blog:{data:{key:"v-00fac020",path:"/posts/devops/nginx/install.html",title:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4",lang:"zh-CN",frontmatter:{title:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4",date:"2022-02-18T18:51:45.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201025944.jpg",summary:`\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0Cnginx \u4F7F\u7528\u975E\u5E38\u9891\u7E41\u3002\u4ECA\u65E5\u62BD\u7A7A\uFF0C\u987A\u4FBF\u6574\u7406\u4E00\u4E0B linux \u73AF\u5883\u4E0B nginx \u5E38\u7528\u7684 3 \u79CD\u5B89\u88C5\u65B9\u5F0F(yum,\u6E90\u7801\u7F16\u8BD1\uFF0Cdocker)\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\uFF0C\u51CF\u5C11\u4E0D\u5FC5\u8981\u7684\u9519\u8BEF\u3002docker \u65B9\u5F0F\u6BD4\u8F83\u7B80\u5355\uFF0C\u4F46\u4E00\u5B9A\u8981\u6CE8\u610F\u6587\u4EF6\u76EE\u5F55\u6302\u8F7D\u914D\u7F6E\uFF0C\u914D\u7F6E\u4E0D\u6B63\u786E\uFF0C\u5373\u4F7F\u5BB9\u5668\u542F\u52A8\u8D77\u6765\uFF0Cnginx \u4E5F\u65E0\u6CD5\u8FD0\u884C\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/install.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-02-18T18:51:45.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0Cnginx \u4F7F\u7528\u975E\u5E38\u9891\u7E41\u3002\u4ECA\u65E5\u62BD\u7A7A\uFF0C\u987A\u4FBF\u6574\u7406\u4E00\u4E0B linux \u73AF\u5883\u4E0B nginx \u5E38\u7528\u7684 3 \u79CD\u5B89\u88C5\u65B9\u5F0F(yum,\u6E90\u7801\u7F16\u8BD1\uFF0Cdocker)\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\uFF0C\u51CF\u5C11\u4E0D\u5FC5\u8981\u7684\u9519\u8BEF\u3002docker \u65B9\u5F0F\u6BD4\u8F83\u7B80\u5355\uFF0C\u4F46\u4E00\u5B9A\u8981\u6CE8\u610F\u6587\u4EF6\u76EE\u5F55\u6302\u8F7D\u914D\u7F6E\uFF0C\u914D\u7F6E\u4E0D\u6B63\u786E\uFF0C\u5373\u4F7F\u5BB9\u5668\u542F\u52A8\u8D77\u6765\uFF0Cnginx \u4E5F\u65E0\u6CD5\u8FD0\u884C\u3002</p>
+`,headers:[{level:2,title:"\u4E00 yum \u5B89\u88C5 nginx",slug:"\u4E00-yum-\u5B89\u88C5-nginx",children:[{level:3,title:"1 \u66F4\u65B0 yum",slug:"_1-\u66F4\u65B0-yum",children:[]},{level:3,title:"2 \u5B89\u88C5 nginx \u6E90",slug:"_2-\u5B89\u88C5-nginx-\u6E90",children:[]},{level:3,title:"3 \u5B89\u88C5 nginx",slug:"_3-\u5B89\u88C5-nginx",children:[]},{level:3,title:"4 \u5F00\u653E 80 \u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899",slug:"_4-\u5F00\u653E-80-\u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899",children:[]},{level:3,title:"5 \u542F\u52A8 nginx",slug:"_5-\u542F\u52A8-nginx",children:[]},{level:3,title:"6 \u5F00\u673A\u81EA\u542F\u52A8",slug:"_6-\u5F00\u673A\u81EA\u542F\u52A8",children:[]},{level:3,title:"7 \u67E5\u770B nginx \u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F",slug:"_7-\u67E5\u770B-nginx-\u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F",children:[]}]},{level:2,title:"\u4E8C \u6E90\u7801\u7F16\u8BD1\u5B89\u88C5",slug:"\u4E8C-\u6E90\u7801\u7F16\u8BD1\u5B89\u88C5",children:[{level:3,title:"1\u3001\u4E0B\u8F7D Nginx",slug:"_1\u3001\u4E0B\u8F7D-nginx",children:[]},{level:3,title:"2\u3001\u89E3\u538B",slug:"_2\u3001\u89E3\u538B",children:[]},{level:3,title:"3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5",slug:"_3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5",children:[]},{level:3,title:"4\u3001\u9884\u7F16\u8BD1",slug:"_4\u3001\u9884\u7F16\u8BD1",children:[]},{level:3,title:"5\u3001\u7F16\u8BD1",slug:"_5\u3001\u7F16\u8BD1",children:[]},{level:3,title:"6\u3001\u5B89\u88C5",slug:"_6\u3001\u5B89\u88C5",children:[]},{level:3,title:"7\u3001\u521B\u5EFA linux \u5168\u5C40\u8F6F\u8FDE\u63A5",slug:"_7\u3001\u521B\u5EFA-linux-\u5168\u5C40\u8F6F\u8FDE\u63A5",children:[]},{level:3,title:"8\u3001nginx \u547D\u4EE4",slug:"_8\u3001nginx-\u547D\u4EE4",children:[]}]},{level:2,title:"\u4E09 Docker \u5B89\u88C5",slug:"\u4E09-docker-\u5B89\u88C5",children:[{level:3,title:"1\u3001\u62C9\u53D6 nginx \u955C\u50CF",slug:"_1\u3001\u62C9\u53D6-nginx-\u955C\u50CF",children:[]},{level:3,title:"2\u3001\u542F\u52A8 nginx \u5BB9\u5668",slug:"_2\u3001\u542F\u52A8-nginx-\u5BB9\u5668",children:[]},{level:3,title:"3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",slug:"_3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",children:[]},{level:3,title:"4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6",slug:"_4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6",children:[]},{level:3,title:"5\u3001\u5220\u9664\u65E7\u7684 nginx \u5BB9\u5668",slug:"_5\u3001\u5220\u9664\u65E7\u7684-nginx-\u5BB9\u5668",children:[]},{level:3,title:"6\u3001\u521B\u5EFA nginx \u6302\u8F7D\u76EE\u5F55\u5BB9\u5668",slug:"_6\u3001\u521B\u5EFA-nginx-\u6302\u8F7D\u76EE\u5F55\u5BB9\u5668",children:[]},{level:3,title:"7\u3001\u67E5\u770B nginx \u5BB9\u5668\u8FD0\u884C\u60C5\u51B5",slug:"_7\u3001\u67E5\u770B-nginx-\u5BB9\u5668\u8FD0\u884C\u60C5\u51B5",children:[]}]},{level:2,title:"\u56DB nginx \u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757",slug:"\u56DB-nginx-\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/nginx/install.md",readingTime:{minutes:8.48,words:2544},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/nginx/install.html`},key:"v-00fac020",path:"/posts/devops/nginx/install.html",title:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4",lang:"zh-CN",frontmatter:{title:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4",date:"2022-02-18T18:51:45.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201025944.jpg",summary:`\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0Cnginx \u4F7F\u7528\u975E\u5E38\u9891\u7E41\u3002\u4ECA\u65E5\u62BD\u7A7A\uFF0C\u987A\u4FBF\u6574\u7406\u4E00\u4E0B linux \u73AF\u5883\u4E0B nginx \u5E38\u7528\u7684 3 \u79CD\u5B89\u88C5\u65B9\u5F0F(yum,\u6E90\u7801\u7F16\u8BD1\uFF0Cdocker)\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\uFF0C\u51CF\u5C11\u4E0D\u5FC5\u8981\u7684\u9519\u8BEF\u3002docker \u65B9\u5F0F\u6BD4\u8F83\u7B80\u5355\uFF0C\u4F46\u4E00\u5B9A\u8981\u6CE8\u610F\u6587\u4EF6\u76EE\u5F55\u6302\u8F7D\u914D\u7F6E\uFF0C\u914D\u7F6E\u4E0D\u6B63\u786E\uFF0C\u5373\u4F7F\u5BB9\u5668\u542F\u52A8\u8D77\u6765\uFF0Cnginx \u4E5F\u65E0\u6CD5\u8FD0\u884C\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/install.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-02-18T18:51:45.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0Cnginx \u4F7F\u7528\u975E\u5E38\u9891\u7E41\u3002\u4ECA\u65E5\u62BD\u7A7A\uFF0C\u987A\u4FBF\u6574\u7406\u4E00\u4E0B linux \u73AF\u5883\u4E0B nginx \u5E38\u7528\u7684 3 \u79CD\u5B89\u88C5\u65B9\u5F0F(yum,\u6E90\u7801\u7F16\u8BD1\uFF0Cdocker)\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\uFF0C\u51CF\u5C11\u4E0D\u5FC5\u8981\u7684\u9519\u8BEF\u3002docker \u65B9\u5F0F\u6BD4\u8F83\u7B80\u5355\uFF0C\u4F46\u4E00\u5B9A\u8981\u6CE8\u610F\u6587\u4EF6\u76EE\u5F55\u6302\u8F7D\u914D\u7F6E\uFF0C\u914D\u7F6E\u4E0D\u6B63\u786E\uFF0C\u5373\u4F7F\u5BB9\u5668\u542F\u52A8\u8D77\u6765\uFF0Cnginx \u4E5F\u65E0\u6CD5\u8FD0\u884C\u3002</p>
+`,headers:[{level:2,title:"\u4E00 yum \u5B89\u88C5 nginx",slug:"\u4E00-yum-\u5B89\u88C5-nginx",children:[{level:3,title:"1 \u66F4\u65B0 yum",slug:"_1-\u66F4\u65B0-yum",children:[]},{level:3,title:"2 \u5B89\u88C5 nginx \u6E90",slug:"_2-\u5B89\u88C5-nginx-\u6E90",children:[]},{level:3,title:"3 \u5B89\u88C5 nginx",slug:"_3-\u5B89\u88C5-nginx",children:[]},{level:3,title:"4 \u5F00\u653E 80 \u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899",slug:"_4-\u5F00\u653E-80-\u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899",children:[]},{level:3,title:"5 \u542F\u52A8 nginx",slug:"_5-\u542F\u52A8-nginx",children:[]},{level:3,title:"6 \u5F00\u673A\u81EA\u542F\u52A8",slug:"_6-\u5F00\u673A\u81EA\u542F\u52A8",children:[]},{level:3,title:"7 \u67E5\u770B nginx \u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F",slug:"_7-\u67E5\u770B-nginx-\u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F",children:[]}]},{level:2,title:"\u4E8C \u6E90\u7801\u7F16\u8BD1\u5B89\u88C5",slug:"\u4E8C-\u6E90\u7801\u7F16\u8BD1\u5B89\u88C5",children:[{level:3,title:"1\u3001\u4E0B\u8F7D Nginx",slug:"_1\u3001\u4E0B\u8F7D-nginx",children:[]},{level:3,title:"2\u3001\u89E3\u538B",slug:"_2\u3001\u89E3\u538B",children:[]},{level:3,title:"3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5",slug:"_3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5",children:[]},{level:3,title:"4\u3001\u9884\u7F16\u8BD1",slug:"_4\u3001\u9884\u7F16\u8BD1",children:[]},{level:3,title:"5\u3001\u7F16\u8BD1",slug:"_5\u3001\u7F16\u8BD1",children:[]},{level:3,title:"6\u3001\u5B89\u88C5",slug:"_6\u3001\u5B89\u88C5",children:[]},{level:3,title:"7\u3001\u521B\u5EFA linux \u5168\u5C40\u8F6F\u8FDE\u63A5",slug:"_7\u3001\u521B\u5EFA-linux-\u5168\u5C40\u8F6F\u8FDE\u63A5",children:[]},{level:3,title:"8\u3001nginx \u547D\u4EE4",slug:"_8\u3001nginx-\u547D\u4EE4",children:[]}]},{level:2,title:"\u4E09 Docker \u5B89\u88C5",slug:"\u4E09-docker-\u5B89\u88C5",children:[{level:3,title:"1\u3001\u62C9\u53D6 nginx \u955C\u50CF",slug:"_1\u3001\u62C9\u53D6-nginx-\u955C\u50CF",children:[]},{level:3,title:"2\u3001\u542F\u52A8 nginx \u5BB9\u5668",slug:"_2\u3001\u542F\u52A8-nginx-\u5BB9\u5668",children:[]},{level:3,title:"3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",slug:"_3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55",children:[]},{level:3,title:"4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6",slug:"_4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6",children:[]},{level:3,title:"5\u3001\u5220\u9664\u65E7\u7684 nginx \u5BB9\u5668",slug:"_5\u3001\u5220\u9664\u65E7\u7684-nginx-\u5BB9\u5668",children:[]},{level:3,title:"6\u3001\u521B\u5EFA nginx \u6302\u8F7D\u76EE\u5F55\u5BB9\u5668",slug:"_6\u3001\u521B\u5EFA-nginx-\u6302\u8F7D\u76EE\u5F55\u5BB9\u5668",children:[]},{level:3,title:"7\u3001\u67E5\u770B nginx \u5BB9\u5668\u8FD0\u884C\u60C5\u51B5",slug:"_7\u3001\u67E5\u770B-nginx-\u5BB9\u5668\u8FD0\u884C\u60C5\u51B5",children:[]}]},{level:2,title:"\u56DB nginx \u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757",slug:"\u56DB-nginx-\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757",children:[]}],content:`---
+title: Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4
+date: 2022-02-18 18:51:45
+tag:
+  - nginx
+category:
+  - nginx
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201025944.jpg
+---
+
+&emsp;\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0Cnginx \u4F7F\u7528\u975E\u5E38\u9891\u7E41\u3002\u4ECA\u65E5\u62BD\u7A7A\uFF0C\u987A\u4FBF\u6574\u7406\u4E00\u4E0B linux \u73AF\u5883\u4E0B nginx \u5E38\u7528\u7684 3 \u79CD\u5B89\u88C5\u65B9\u5F0F(yum,\u6E90\u7801\u7F16\u8BD1\uFF0Cdocker)\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\uFF0C\u51CF\u5C11\u4E0D\u5FC5\u8981\u7684\u9519\u8BEF\u3002docker \u65B9\u5F0F\u6BD4\u8F83\u7B80\u5355\uFF0C\u4F46\u4E00\u5B9A\u8981\u6CE8\u610F\u6587\u4EF6\u76EE\u5F55\u6302\u8F7D\u914D\u7F6E\uFF0C\u914D\u7F6E\u4E0D\u6B63\u786E\uFF0C\u5373\u4F7F\u5BB9\u5668\u542F\u52A8\u8D77\u6765\uFF0Cnginx \u4E5F\u65E0\u6CD5\u8FD0\u884C\u3002
+
+<!-- more -->
+
+## \u4E00 yum \u5B89\u88C5 nginx
+
+yum \u5B89\u88C5 nginx \u64CD\u4F5C\u7B80\u5355\uFF0C\u65E0\u9700\u7F16\u8BD1\u6E90\u7801\uFF0C\u8FD8\u4F1A\u751F\u6210 nginx \u670D\u52A1\u3002\u5177\u4F53\u6B65\u9AA4\u5982\u4E0B\uFF1A
+
+### 1 \u66F4\u65B0 yum
+
+\`\`\`bash
+yum update -y
+\`\`\`
+
+### 2 \u5B89\u88C5 nginx \u6E90
+
+\u53EF\u4EE5\u901A\u8FC7\uFF1A<http://nginx.org/packages/centos/7/x86_64/RPMS/>,\u67E5\u627E\u81EA\u5DF1\u60F3\u5B89\u88C5\u7684\u7248\u672C\u3002
+
+\`\`\`bash
+#\u5B89\u88C5nginx\u6E90
+rpm -ivh http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.20.2-1.el7.ngx.x86_64.rpm
+#\u67E5\u770Bnginx\u4FE1\u606F
+yum info nginx
+\`\`\`
+
+### 3 \u5B89\u88C5 nginx
+
+\`\`\`bash
+yum install nginx -y
+\`\`\`
+
+### 4 \u5F00\u653E 80 \u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899
+
+\`\`\`bash
+# \u5F00\u53D180\u7AEF\u53E3
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+# \u91CD\u65B0\u52A0\u8F7D
+firewall-cmd --reload
+#\u6216\u76F4\u63A5\u5173\u95ED\u9632\u706B\u5899
+systemctl stop firewalld
+\`\`\`
+
+### 5 \u542F\u52A8 nginx
+
+\`\`\`bash
+# \u542F\u52A8nginx
+systemctl start nginx
+\`\`\`
+
+### 6 \u5F00\u673A\u81EA\u542F\u52A8
+
+\`\`\`bash
+systemctl enable nginx
+\`\`\`
+
+### 7 \u67E5\u770B nginx \u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F
+
+\`\`\`bash
+#nginx\u7248\u672C\u4FE1\u606F
+nginx -v
+#nginx\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F,\u5305\u62EC\u5B89\u88C5\u4F4D\u7F6E\u4EE5\u53CA\u5404\u79CD\u914D\u7F6E\u6587\u4EF6\u4FE1\u606F\u3002
+nginx -V
+\`\`\`
+
+**nginx \u76F8\u5173\u914D\u7F6E\u4FE1\u606F\uFF1A**
+![](https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203181052935.png)
+
+**yum \u65B9\u5F0F\u5B89\u88C5\u7684\u9ED8\u8BA4\u5730\u5740\u548C\u914D\u7F6E\u7684\u9ED8\u8BA4\u5730\u5740**
+
+\`\`\`bash
+#yum\u65B9\u5F0F\u5B89\u88C5\u540E\u9ED8\u8BA4\u914D\u7F6E\u6587\u4EF6\u7684\u8DEF\u5F84
+/etc/nginx/nginx.conf
+#nginx\u7F51\u7AD9\u9ED8\u8BA4\u5B58\u653E\u76EE\u5F55
+/usr/share/nginx/html
+#\u7F51\u7AD9\u9ED8\u8BA4\u4E3B\u9875\u8DEF\u5F84
+/usr/share/nginx/html/index.html
+\`\`\`
+
+## \u4E8C \u6E90\u7801\u7F16\u8BD1\u5B89\u88C5
+
+### 1\u3001\u4E0B\u8F7D Nginx
+
+&emsp;Nginx \u5B98\u7F51\u5730\u5740\uFF1A<https://nginx.org/en/download.html>\uFF0C\u9009\u62E9\u5BF9\u5E94\u7684 linux \u7248\u672C\uFF0C\u901A\u8FC7\`wget\`\u8FDB\u884C\u4E0B\u8F7D\u3002
+
+\`\`\`bash
+wget http://nginx.org/download/nginx-1.20.1.tar.gz
+\`\`\`
+
+**\u6CE8\u610F**\uFF1A\u5982\u679C\`wget\`\u6CA1\u6709\u5B89\u88C5\uFF0C\u8BF7\u6267\u884C\`yum -y install wget\` \u8FDB\u884C\u5B89\u88C5\u3002
+
+### 2\u3001\u89E3\u538B
+
+\u901A\u8FC7\`tar\`\u547D\u4EE4\u8FDB\u884C\u89E3\u538B
+
+\`\`\`bash
+tar -zvxf nginx-1.20.1.tar.gz
+cd nginx-1.12.1
+\`\`\`
+
+### 3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5
+
+**gcc \u5B89\u88C5**\uFF1A\u5B89\u88C5 nginx \u9700\u8981\u5148\u5C06\u5B98\u7F51\u4E0B\u8F7D\u7684\u6E90\u7801\u8FDB\u884C\u7F16\u8BD1\uFF0C\u7F16\u8BD1\u4F9D\u8D56 gcc \u73AF\u5883\uFF0C\u5982\u679C\u6CA1\u6709 gcc \u73AF\u5883\uFF0C\u5219\u9700\u8981\u5B89\u88C5
+
+\`\`\`bash
+# gcc \u5B89\u88C5
+yum install gcc-c++
+\`\`\`
+
+**PCRE pcre-devel \u5B89\u88C5**\uFF1APCRE(Perl Compatible Regular Expressions) \u662F\u4E00\u4E2A Perl \u5E93\uFF0C\u5305\u62EC perl \u517C\u5BB9\u7684\u6B63\u5219\u8868\u8FBE\u5F0F\u5E93\u3002nginx \u7684 http \u6A21\u5757\u4F7F\u7528 pcre \u6765\u89E3\u6790\u6B63\u5219\u8868\u8FBE\u5F0F\uFF0C\u6240\u4EE5\u9700\u8981\u5728 linux \u4E0A\u5B89\u88C5 pcre \u5E93\uFF0Cpcre-devel \u662F\u4F7F\u7528 pcre \u5F00\u53D1\u7684\u4E00\u4E2A\u4E8C\u6B21\u5F00\u53D1\u5E93\uFF0Cnginx \u4E5F\u9700\u8981\u6B64\u5E93\u3002
+
+\`\`\`bash
+yum install -y pcre pcre-devel
+\`\`\`
+
+**zlib \u5B89\u88C5**\uFF1Azlib \u5E93\u63D0\u4F9B\u4E86\u5F88\u591A\u79CD\u538B\u7F29\u548C\u89E3\u538B\u7F29\u7684\u65B9\u5F0F\uFF0C nginx \u4F7F\u7528 zlib \u5BF9 http \u5305\u7684\u5185\u5BB9\u8FDB\u884C gzip \uFF0C\u6240\u4EE5\u9700\u8981\u5728 Centos \u4E0A\u5B89\u88C5 zlib \u5E93\u3002
+
+\`\`\`bash
+yum install -y zlib zlib-devel
+\`\`\`
+
+**OpenSSL \u5B89\u88C5**\uFF1AOpenSSL \u662F\u4E00\u4E2A\u5F3A\u5927\u7684\u5B89\u5168\u5957\u63A5\u5B57\u5C42\u5BC6\u7801\u5E93\uFF0C\u56CA\u62EC\u4E3B\u8981\u7684\u5BC6\u7801\u7B97\u6CD5\u3001\u5E38\u7528\u7684\u5BC6\u94A5\u548C\u8BC1\u4E66\u5C01\u88C5\u7BA1\u7406\u529F\u80FD\u53CA SSL \u534F\u8BAE\uFF0C\u5E76\u63D0\u4F9B\u4E30\u5BCC\u7684\u5E94\u7528\u7A0B\u5E8F\u4F9B\u6D4B\u8BD5\u6216\u5176\u5B83\u76EE\u7684\u4F7F\u7528\u3002
+nginx \u4E0D\u4EC5\u652F\u6301 http \u534F\u8BAE\uFF0C\u8FD8\u652F\u6301 https\uFF08\u5373\u5728 ssl \u534F\u8BAE\u4E0A\u4F20\u8F93 http\uFF09\uFF0C\u6240\u4EE5\u9700\u8981\u5728 Centos \u5B89\u88C5 OpenSSL \u5E93\u3002
+
+\`\`\`bash
+yum install -y openssl openssl-devel
+\`\`\`
+
+### 4\u3001\u9884\u7F16\u8BD1
+
+\u8FDB\u5165\u89E3\u538B\u540E\u7684\u76EE\u5F55 nginx-1.20.1 \u8FDB\u884C\u9884\u7F16\u8BD1\u3002\u6CE8\u610F\uFF1A--prefix \u662F\u6307\u5B9A\u5B89\u88C5\u76EE\u5F55\uFF0C\u9ED8\u8BA4\`/usr/local/nginx\`
+
+\`\`\`bash
+./configure --prefix=/opt/nginx --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module
+\`\`\`
+
+### 5\u3001\u7F16\u8BD1
+
+\u901A\u8FC7\`make\`\u547D\u4EE4\u8FDB\u884C\u6E90\u7801\u7F16\u8BD1\uFF1B\u5982\u679C\`make\`\u547D\u4EE4\u4E0D\u5B58\u5728\uFF0C\u901A\u8FC7\`yum -y install make autoconf \`\u5B89\u88C5
+
+\`\`\`bash
+make
+\`\`\`
+
+### 6\u3001\u5B89\u88C5
+
+\`\`\`bash
+make install
+\`\`\`
+
+\u5B89\u88C5\u5B8C\u6210\u540E\u8FDB\u5165\`/opt/nginx/sbin\`\u76EE\u5F55\uFF0C\u7136\u540E\u542F\u52A8\`./nginx\` \u8FD9\u6761\u547D\u4EE4\u6210\u529F\u6CA1\u6709\u8F93\u51FA\u3002\u901A\u8FC7\u4E00\u4E0B\u547D\u4EE4\u67E5\u770B\`nginx\`\u662F\u5426\u542F\u52A8\u6210\u529F\uFF1A
+
+\`\`\`bash
+ps -ef |grep nginx
+\`\`\`
+
+\u5982\u679C\u51FA\u73B0\`nginx\`\u8FDB\u7A0B\uFF0C\u5219\u8868\u793A\u542F\u52A8\u6210\u529F
+![nginx](https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041716374.png)
+
+\u6253\u5F00\u6D4F\u89C8\u5668\uFF0C\u8F93\u5165\`nginx\`\u5730\u5740\uFF0C\u9ED8\u8BA4\u76D1\u542C 80 \u7AEF\u53E3\uFF0C\u5982\u4E0B\u56FE\uFF1A
+![nginxWeb](https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041715335.png)
+
+\u5982\u679C\u51FA\u73B0\u8BBF\u95EE\u4E0D\u4E86\uFF0C\u5C1D\u8BD5\u5173\u95ED\u9632\u706B\u5899\`systemctl stop firewalld.service\`\u6216\u8005\u6C38\u4E45\u5173\u95ED\u9632\u706B\u5899\`systemctl disable firewalld.service\`
+
+### 7\u3001\u521B\u5EFA linux \u5168\u5C40\u8F6F\u8FDE\u63A5
+
+::: tip
+\u901A\u8FC7\u8F6F\u94FE\u63A5\u7684\u65B9\u5F0F\u8BBE\u7F6E nginx \u4E3A\u5168\u5C40\u53D8\u91CF\uFF0C\u5C31\u53EF\u4EE5\u5B9E\u73B0\u5168\u5C40\u4EFB\u4F55\u5730\u65B9\u901A\u8FC7 nginx \u76F8\u5173\u547D\u4EE4\u64CD\u4F5C nginx \u4E0D\u7528\u5230 nginx \u5B89\u88C5\u76EE\u5F55\u6216\u8005 nginx \u5168\u8DEF\u5F84\u8FDB\u884C\u547D\u4EE4\u6267\u884C\uFF0C\u4F7F\u64CD\u4F5C\u53D8\u5F97\u66F4\u52A0\u7B80\u5355\u3002
+:::
+
+\`\`\`bash
+ln -s /opt/nginx/sbin/nginx  /usr/bin/nginx
+\`\`\`
+
+**\u4E0A\u9762\u7684\uFF1A/opt/nginx/sbin/nginx \u4E3A\u6211\u4EEC\u7684 nginx \u5B89\u88C5\u76EE\u5F55\uFF0C\u82E5\u4F60\u7684\u5B89\u88C5\u76EE\u5F55\u548C\u6211\u7684\u4E0D\u4E00\u6837\uFF0C\u81EA\u884C\u4FEE\u6539\u4E3A\u4F60\u7684\u5B89\u88C5\u76EE\u5F55\u4FBF\u53EF\uFF0C\u5EFA\u7ACB\u8F6F\u94FE\u63A5\u540E\uFF0C\u6211\u4EEC\u4FBF\u53EF\u4EE5\u5728\u4EFB\u610F\u76EE\u5F55\u6267\u884C nginx \u547D\u4EE4\u4E86**
+
+### 8\u3001nginx \u547D\u4EE4
+
+\u9996\u5148\u9700\u8981\u8FDB\u5165 nginx \u5B89\u88C5\u76EE\u5F55\uFF1A\`cd /opt/nginx/sbin/\`
+
+**\u542F\u52A8\u547D\u4EE4**\uFF1A\`./nginx\`
+
+**\u9000\u51FA\u547D\u4EE4**: \`./nginx -s quit\`\uFF0C\u6B64\u65B9\u5F0F\u505C\u6B62\u6B65\u9AA4\u662F\u5F85 nginx \u8FDB\u7A0B\u5904\u7406\u4EFB\u52A1\u5B8C\u6BD5\u8FDB\u884C\u505C\u6B62\u3002
+
+**\u505C\u6B62\u547D\u4EE4**\uFF1A\`./nginx -s stop\`\uFF0C\u6B64\u65B9\u5F0F\u76F8\u5F53\u4E8E\u5148\u67E5\u51FA nginx \u8FDB\u7A0B id \u518D\u4F7F\u7528 kill \u547D\u4EE4\u5F3A\u5236\u6740\u6389\u8FDB\u7A0B\u3002
+
+**\u5355\u7EAF\u91CD\u542F\u547D\u4EE4**\uFF1A\u5148\u505C\u6B62\u518D\u542F\u52A8(\u63A8\u8350)\uFF0C\u5BF9 nginx \u8FDB\u884C\u91CD\u542F\u76F8\u5F53\u4E8E\u5148\u505C\u6B62\u518D\u542F\u52A8\uFF0C\u5373\u5148\u6267\u884C\u505C\u6B62\u547D\u4EE4\u518D\u6267\u884C\u542F\u52A8\u547D\u4EE4\u3002
+
+\`\`\`bash
+./nginx -s quit
+./nginx
+\`\`\`
+
+**\u91CD\u65B0\u52A0\u8F7D\u914D\u7F6E\u6587\u4EF6**\uFF1A\u5F53 nginx \u7684\u914D\u7F6E\u6587\u4EF6 nginx.conf \u4FEE\u6539\u540E\uFF0C\u8981\u60F3\u8BA9\u914D\u7F6E\u751F\u6548\u9700\u8981\u91CD\u542F nginx\uFF0C\u4F7F\u7528 ./nginx -s reload \u4E0D\u7528\u5148\u505C\u6B62 nginx \u518D\u542F\u52A8 nginx, \u5373\u53EF\u5C06\u914D\u7F6E\u4FE1\u606F\u5728 nginx \u4E2D\u751F\u6548\uFF0C\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+./nginx -s reload
+\`\`\`
+
+**\u6307\u5B9A\u914D\u7F6E\u6587\u4EF6\u542F\u52A8**: /opt/nginx/sbin/nginx -c /opt/nginx/conf/nginx.conf
+
+**\u6307\u5B9A\u914D\u7F6E\u6587\u4EF6\u91CD\u542F**: /opt/nginx/sbin/nginx -s reload -c /opt/nginx/conf/nginx.conf
+
+**\u6D4B\u8BD5 nginx \u914D\u7F6E\u6587\u4EF6\u662F\u5426\u6B63\u786E**\uFF1A/nginx -t -c /opt/nginx/conf/nginx.conf
+
+**\u5F00\u542F\u81EA\u542F\u52A8**
+
+1\u3001\u5728/etc/rc.d/rc.local \u4E2D\u6DFB\u52A0 nginx \u542F\u52A8\u547D\u4EE4\u884C\uFF1A
+
+\`\`\`bash
+vi /etc/rc.d/rc.local
+/opt/nginx/sbin/nginx
+\`\`\`
+
+2\u3001\u6388\u6743\uFF1A\`chmod +x /etc/rc.d/rc.local\`
+
+3\u3001\u91CD\u542F\uFF1A\`reboot\`,\u901A\u8FC7\u547D\u4EE4\`ps -ef | grep nginx\`\u67E5\u770B nginx \u662F\u5426\u5F00\u673A\u81EA\u542F\u52A8\u6210\u529F
+
+**\u4E0A\u9762\u8FD9\u79CD\u662F\u6700\u7B80\u5355\u7684 nginx \u5F00\u673A\u81EA\u542F\u52A8\u7684\uFF0C\u63A8\u8350\u5927\u5BB6\u4F7F\u7528**\u3002
+
+## \u4E09 Docker \u5B89\u88C5
+
+### 1\u3001\u62C9\u53D6 nginx \u955C\u50CF
+
+\`\`\`bash
+docker pull nginx
+\`\`\`
+
+### 2\u3001\u542F\u52A8 nginx \u5BB9\u5668
+
+\`\`\`bash
+docker run --name nginx -p 80:80 -d nginx
+\`\`\`
+
+\u81F3\u6B64\u4E00\u4E2A\u7B80\u5355\u7684 nginx \u5BB9\u5668\u5C31\u542F\u52A8\u6210\u529F\u4E86\uFF0C\u4E0B\u9762\u914D\u7F6E\u6302\u8F7D\u76EE\u5F55\u3002
+
+### 3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55
+
+\`\`\`bash
+mkdir -p /opt/nginx
+mkdir -p /opt/nginx/html
+mkdir -p /opt/nginx/conf.d
+mkdir -p /opt/nginx/logs
+\`\`\`
+
+### 4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6
+
+\`\`\`bash
+docker cp 67e:/etc/nginx/nginx.conf /opt/nginx/
+docker cp 67e:/etc/nginx/conf.d /opt/nginx/conf.d/
+docker cp 67e:/usr/share/nginx/html/ /opt/nginx/html/
+docker cp 67e:/var/log/nginx/ /opt/nginx/logs/
+\u6CE8\uFF1Adocker cp 67e \u4E2D\u7684 "67e" \u4E3A\u5BB9\u5668ID\u524D\u7F00\uFF0C\u53EA\u8981\u552F\u4E00\u5C31\u597D\u4E86
+\`\`\`
+
+### 5\u3001\u5220\u9664\u65E7\u7684 nginx \u5BB9\u5668
+
+\`\`\`bash
+# \u505C\u6B62\u5BB9\u5668
+docker stop 67e
+# \u79FB\u9664\u5BB9\u5668
+docker rm 67e
+#\u6216\u8005\u5F3A\u5236\u5220\u9664\u5BB9\u5668
+docker rm -f 67e
+\`\`\`
+
+### 6\u3001\u521B\u5EFA nginx \u6302\u8F7D\u76EE\u5F55\u5BB9\u5668
+
+\`\`\`bash
+docker run -d --name nginx -p 80:80 -p 443:443 -v /opt/nginx/nginx.conf:/etc/nginx/nginx.conf \\
+-v /opt/nginx/html:/usr/share/nginx/html -v /opt/nginx/logs:/var/log/nginx \\
+-v /opt/nginx/conf.d:/etc/nginx/conf.d --privileged=true --restart=always nginx
+\`\`\`
+
+\`--privileged=true\`: \u4F7F\u7528\u8BE5\u53C2\u6570\uFF0Ccontainer \u5185\u7684 root \u62E5\u6709\u771F\u6B63\u7684 root \u6743\u9650\u3002\u5426\u5219\uFF0Ccontainer \u5185\u7684 root \u53EA\u662F\u5916\u90E8\u7684\u4E00\u4E2A\u666E\u901A\u7528\u6237\u6743\u9650\u3002privileged \u542F\u52A8\u7684\u5BB9\u5668\uFF0C\u53EF\u4EE5\u770B\u5230\u5F88\u591A host \u4E0A\u7684\u8BBE\u5907\uFF0C\u5E76\u4E14\u53EF\u4EE5\u6267\u884C mount\u3002\u751A\u81F3\u5141\u8BB8\u4F60\u5728 docker \u5BB9\u5668\u4E2D\u542F\u52A8 docker \u5BB9\u5668  
+\`--restart=always\`: \u5F53 Docker \u91CD\u542F\u65F6\uFF0C\u5BB9\u5668\u81EA\u52A8\u542F\u52A8\u3002  
+\u4FEE\u6539\u8FD0\u884C\u4E2D\u7684\u5BB9\u5668\u81EA\u542F\u52A8\uFF1A\`docker container update --restart=always \u5BB9\u5668\u540D\u5B57\`  
+\u6784\u5EFA\u5BB9\u5668\u81EA\u542F\u52A8\uFF1A\u542F\u52A8\u547D\u4EE4\u989D\u5916\u52A0\u4E0A\`--restart=always\`
+
+### 7\u3001\u67E5\u770B nginx \u5BB9\u5668\u8FD0\u884C\u60C5\u51B5
+
+\`\`\`bash
+# \u547D\u4EE4\u67E5\u770B\u5F53\u524D\u8FD0\u884C\u7684\u5BB9\u5668
+docker ps
+# \u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE80\u7AEF\u53E3\uFF0C\u67E5\u770B\u662F\u5426\u663E\u793A\u6B63\u5E38\u9875\u9762
+http:ip/
+
+\`\`\`
+
+\u5982\u679C\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E0D\u4E86\uFF0C\u5E94\u8BE5\u662F\u9632\u706B\u5899\u7684\u539F\u56E0\u3002\u53EF\u4EE5\u901A\u8FC7\u547D\u4EE4\`systemctl stop firewalld\`\u5173\u95ED\u9632\u706B\u5899\u6216\u8005\u5F00\u901A\u5BF9\u5E94\u7684\u7AEF\u53E3\`80\`\u548C\`443\`\uFF0C\u7AEF\u53E3\u5F00\u901A\u547D\u4EE4\u53C2\u8003\uFF1A[linux \u5E38\u7528\u6307\u4EE4](../../others/linux/basecommand.html#_6-centos-\u7AEF\u53E3\u5F00\u901A)
+
+## \u56DB nginx \u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757
+
+&emsp;nginx \u6587\u4EF6\u975E\u5E38\u5C0F\u4F46\u662F\u6027\u80FD\u975E\u5E38\u7684\u9AD8\u6548,\u8FD9\u65B9\u9762\u5B8C\u80DC apache,nginx \u6587\u4EF6\u5C0F\u7684\u4E00\u4E2A\u539F\u56E0\u4E4B\u4E00\u662F nginx \u81EA\u5E26\u7684\u529F\u80FD\u76F8\u5BF9\u8F83\u5C11,\u597D\u5728 nginx \u5141\u8BB8\u7B2C\u4E09\u65B9\u6A21\u5757,\u7B2C\u4E09\u65B9\u6A21\u5757\u4F7F\u5F97 nginx \u8D8A\u53D1\u7684\u5F3A\u5927. \u5728\u5B89\u88C5\u6A21\u5757\u65B9\u9762,nginx \u663E\u5F97\u6CA1\u6709 apache \u5B89\u88C5\u6A21\u5757\u65B9\u4FBF\uFF0C\u5F53\u7136\u4E5F\u6CA1\u6709 php \u5B89\u88C5\u6269\u5C55\u65B9\u4FBF.\u5728\u539F\u751F\u7684 nginx,\u4ED6\u4E0D\u53EF\u4EE5\u52A8\u6001\u52A0\u8F7D\u6A21\u5757,\u6240\u4EE5\u5F53\u4F60\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\u7684\u65F6\u5019\u9700\u8981\u8986\u76D6 nginx \u6587\u4EF6.\u63A5\u4E0B\u6765\u770B\u770B\u5982\u4F55\u5B89\u88C5 nginx \u7B2C\u4E09\u6A21\u5757\u5427\u3002
+
+nginx \u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u65B9\u6CD5\uFF1A\`./configure --prefix=/\u4F60\u7684\u5B89\u88C5\u76EE\u5F55 --add-module=/\u7B2C\u4E09\u65B9\u6A21\u5757\u8DEF\u5F84\`\u3002\u4E0B\u9762\u4EE5\`nginx-upsync-module\`\u7B2C\u4E09\u65B9\u6A21\u5757\u4E3A\u4F8B\u5B50\u3002
+
+- \u5982\u679C\u7B2C\u4E00\u6B21\u5B89\u88C5 nginx \u5E76\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\uFF1A
+
+\`\`\`bash
+#\u8FDB\u5165\u6E90\u7801\u6587\u4EF6\u76EE\u5F55
+cd nginx-1.19
+#\u8FDB\u884C\u9884\u7F16\u8BD1
+./configure --prefix=/opt/nginx --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module    --with-pcre --add-module=../nginx-upsync-module-master
+#\u7F16\u8BD1
+make
+#\u5B89\u88C5
+make install
+\`\`\`
+
+- \u5982\u679C\u5DF2\u7ECF\u5B89\u88C5 nginx \u5E76\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\uFF1A
+
+\`\`\`bash
+#\u5982\u679C\u6CA1\u6709\u5DF2\u5B89\u88C5\u597D\u7684nginx\u6E90\u7801\u76EE\u5F55\uFF0C\u9700\u8981\u4ECEnginx\u5B98\u7F51\u4E0B\u8F7D\u76F8\u540C\u7248\u672C\u7684\u6E90\u7801\uFF0C\u5728\u6E90\u7801\u57FA\u7840\u4E0A\u91CD\u65B0\u5B89\u88C5nginx,\u8FDB\u5165\u6E90\u7801\u6587\u4EF6\u76EE\u5F55
+cd nginx-1.19
+#\u8FDB\u884C\u9884\u7F16\u8BD1
+./configure --prefix=/opt/nginx  --with-http_ssl_module    --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module    --with-pcre --add-module=../nginx-upsync-module-master
+#\u7F16\u8BD1
+make
+#\u5C06\u7F16\u8BD1\u597D\u7684\u6587\u4EF6\u8986\u76D6\u539F\u6765\u7684nginx\u6587\u4EF6\uFF0C\u5728nginx\u6E90\u7801\u76EE\u5F55\u4E0B\u7684objs\u6587\u4EF6\u5728
+cp objs/nginx /opt/nginx/sbin/nginx
+\`\`\`
+
+\u603B\u7ED3,\u5B89\u88C5 nginx \u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\u5B9E\u9645\u4E0A\u662F\u4F7F\u7528--add-module \u91CD\u65B0\u5B89\u88C5\u4E00\u6B21 nginx\uFF0C\u4E0D\u8981 make install \u800C\u662F\u76F4\u63A5\u628A\u7F16\u8BD1\u76EE\u5F55\u4E0B objs/nginx \u6587\u4EF6\u76F4\u63A5\u8986\u76D6\u8001\u7684 nginx \u6587\u4EF6\u3002\u5982\u679C\u4F60\u9700\u8981\u5B89\u88C5\u591A\u4E2A nginx \u7B2C\u4E09\u65B9\u6A21\u5757,\u4F60\u53EA\u9700\u8981\u591A\u6307\u5B9A\u51E0\u4E2A\u76F8\u5E94\u7684--add-module \u5373\u53EF\u3002\u6CE8\u610F\uFF1A\u91CD\u65B0\u7F16\u8BD1\u7684\u65F6\u5019\uFF0C\u8BB0\u5F97\u4E00\u5B9A\u8981\u628A\u4EE5\u524D\u7F16\u8BD1\u8FC7\u7684\u6A21\u5757\u4E00\u540C\u52A0\u5230 configure \u53C2\u6570\u91CC\u9762\u3002
+
+nginx \u63D0\u4F9B\u4E86\u975E\u5E38\u591A\u7684\u7B2C\u4E09\u65B9\u6A21\u5757\uFF1A<https://www.nginx.com/resources/wiki/modules/>
+`,contentRendered:`<p>\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0Cnginx \u4F7F\u7528\u975E\u5E38\u9891\u7E41\u3002\u4ECA\u65E5\u62BD\u7A7A\uFF0C\u987A\u4FBF\u6574\u7406\u4E00\u4E0B linux \u73AF\u5883\u4E0B nginx \u5E38\u7528\u7684 3 \u79CD\u5B89\u88C5\u65B9\u5F0F(yum,\u6E90\u7801\u7F16\u8BD1\uFF0Cdocker)\uFF0C\u4EE5\u5907\u65E5\u540E\u4F7F\u7528\uFF0C\u51CF\u5C11\u4E0D\u5FC5\u8981\u7684\u9519\u8BEF\u3002docker \u65B9\u5F0F\u6BD4\u8F83\u7B80\u5355\uFF0C\u4F46\u4E00\u5B9A\u8981\u6CE8\u610F\u6587\u4EF6\u76EE\u5F55\u6302\u8F7D\u914D\u7F6E\uFF0C\u914D\u7F6E\u4E0D\u6B63\u786E\uFF0C\u5373\u4F7F\u5BB9\u5668\u542F\u52A8\u8D77\u6765\uFF0Cnginx \u4E5F\u65E0\u6CD5\u8FD0\u884C\u3002</p>
+<!-- more -->
+<h2 id="\u4E00-yum-\u5B89\u88C5-nginx" tabindex="-1"><a class="header-anchor" href="#\u4E00-yum-\u5B89\u88C5-nginx" aria-hidden="true">#</a> \u4E00 yum \u5B89\u88C5 nginx</h2>
+<p>yum \u5B89\u88C5 nginx \u64CD\u4F5C\u7B80\u5355\uFF0C\u65E0\u9700\u7F16\u8BD1\u6E90\u7801\uFF0C\u8FD8\u4F1A\u751F\u6210 nginx \u670D\u52A1\u3002\u5177\u4F53\u6B65\u9AA4\u5982\u4E0B\uFF1A</p>
+<h3 id="_1-\u66F4\u65B0-yum" tabindex="-1"><a class="header-anchor" href="#_1-\u66F4\u65B0-yum" aria-hidden="true">#</a> 1 \u66F4\u65B0 yum</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum update <span class="token parameter variable">-y</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_2-\u5B89\u88C5-nginx-\u6E90" tabindex="-1"><a class="header-anchor" href="#_2-\u5B89\u88C5-nginx-\u6E90" aria-hidden="true">#</a> 2 \u5B89\u88C5 nginx \u6E90</h3>
+<p>\u53EF\u4EE5\u901A\u8FC7\uFF1A<a href="http://nginx.org/packages/centos/7/x86_64/RPMS/" target="_blank" rel="noopener noreferrer">http://nginx.org/packages/centos/7/x86_64/RPMS/<ExternalLinkIcon/></a>,\u67E5\u627E\u81EA\u5DF1\u60F3\u5B89\u88C5\u7684\u7248\u672C\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5B89\u88C5nginx\u6E90</span>
+<span class="token function">rpm</span> <span class="token parameter variable">-ivh</span> http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.20.2-1.el7.ngx.x86_64.rpm
+<span class="token comment">#\u67E5\u770Bnginx\u4FE1\u606F</span>
+yum info nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-\u5B89\u88C5-nginx" tabindex="-1"><a class="header-anchor" href="#_3-\u5B89\u88C5-nginx" aria-hidden="true">#</a> 3 \u5B89\u88C5 nginx</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token function">install</span> nginx <span class="token parameter variable">-y</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_4-\u5F00\u653E-80-\u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899" tabindex="-1"><a class="header-anchor" href="#_4-\u5F00\u653E-80-\u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899" aria-hidden="true">#</a> 4 \u5F00\u653E 80 \u7AEF\u53E3\u6216\u8005\u5173\u95ED\u9632\u706B\u5899</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u5F00\u53D180\u7AEF\u53E3</span>
+firewall-cmd <span class="token parameter variable">--zone</span><span class="token operator">=</span>public --add-port<span class="token operator">=</span><span class="token number">80</span>/tcp <span class="token parameter variable">--permanent</span>
+<span class="token comment"># \u91CD\u65B0\u52A0\u8F7D</span>
+firewall-cmd <span class="token parameter variable">--reload</span>
+<span class="token comment">#\u6216\u76F4\u63A5\u5173\u95ED\u9632\u706B\u5899</span>
+systemctl stop firewalld
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5-\u542F\u52A8-nginx" tabindex="-1"><a class="header-anchor" href="#_5-\u542F\u52A8-nginx" aria-hidden="true">#</a> 5 \u542F\u52A8 nginx</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u542F\u52A8nginx</span>
+systemctl start nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_6-\u5F00\u673A\u81EA\u542F\u52A8" tabindex="-1"><a class="header-anchor" href="#_6-\u5F00\u673A\u81EA\u542F\u52A8" aria-hidden="true">#</a> 6 \u5F00\u673A\u81EA\u542F\u52A8</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>systemctl <span class="token builtin class-name">enable</span> nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_7-\u67E5\u770B-nginx-\u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F" tabindex="-1"><a class="header-anchor" href="#_7-\u67E5\u770B-nginx-\u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F" aria-hidden="true">#</a> 7 \u67E5\u770B nginx \u7248\u672C\u548C\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#nginx\u7248\u672C\u4FE1\u606F</span>
+nginx <span class="token parameter variable">-v</span>
+<span class="token comment">#nginx\u7F16\u8BD1\u53C2\u6570\u4FE1\u606F,\u5305\u62EC\u5B89\u88C5\u4F4D\u7F6E\u4EE5\u53CA\u5404\u79CD\u914D\u7F6E\u6587\u4EF6\u4FE1\u606F\u3002</span>
+nginx <span class="token parameter variable">-V</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>nginx \u76F8\u5173\u914D\u7F6E\u4FE1\u606F\uFF1A</strong>
+<img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202203181052935.png" alt=""></p>
+<p><strong>yum \u65B9\u5F0F\u5B89\u88C5\u7684\u9ED8\u8BA4\u5730\u5740\u548C\u914D\u7F6E\u7684\u9ED8\u8BA4\u5730\u5740</strong></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#yum\u65B9\u5F0F\u5B89\u88C5\u540E\u9ED8\u8BA4\u914D\u7F6E\u6587\u4EF6\u7684\u8DEF\u5F84</span>
+/etc/nginx/nginx.conf
+<span class="token comment">#nginx\u7F51\u7AD9\u9ED8\u8BA4\u5B58\u653E\u76EE\u5F55</span>
+/usr/share/nginx/html
+<span class="token comment">#\u7F51\u7AD9\u9ED8\u8BA4\u4E3B\u9875\u8DEF\u5F84</span>
+/usr/share/nginx/html/index.html
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u4E8C-\u6E90\u7801\u7F16\u8BD1\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#\u4E8C-\u6E90\u7801\u7F16\u8BD1\u5B89\u88C5" aria-hidden="true">#</a> \u4E8C \u6E90\u7801\u7F16\u8BD1\u5B89\u88C5</h2>
+<h3 id="_1\u3001\u4E0B\u8F7D-nginx" tabindex="-1"><a class="header-anchor" href="#_1\u3001\u4E0B\u8F7D-nginx" aria-hidden="true">#</a> 1\u3001\u4E0B\u8F7D Nginx</h3>
+<p>\u2003Nginx \u5B98\u7F51\u5730\u5740\uFF1A<a href="https://nginx.org/en/download.html" target="_blank" rel="noopener noreferrer">https://nginx.org/en/download.html<ExternalLinkIcon/></a>\uFF0C\u9009\u62E9\u5BF9\u5E94\u7684 linux \u7248\u672C\uFF0C\u901A\u8FC7<code v-pre>wget</code>\u8FDB\u884C\u4E0B\u8F7D\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">wget</span> http://nginx.org/download/nginx-1.20.1.tar.gz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>\u6CE8\u610F</strong>\uFF1A\u5982\u679C<code v-pre>wget</code>\u6CA1\u6709\u5B89\u88C5\uFF0C\u8BF7\u6267\u884C<code v-pre>yum -y install wget</code> \u8FDB\u884C\u5B89\u88C5\u3002</p>
+<h3 id="_2\u3001\u89E3\u538B" tabindex="-1"><a class="header-anchor" href="#_2\u3001\u89E3\u538B" aria-hidden="true">#</a> 2\u3001\u89E3\u538B</h3>
+<p>\u901A\u8FC7<code v-pre>tar</code>\u547D\u4EE4\u8FDB\u884C\u89E3\u538B</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">tar</span> <span class="token parameter variable">-zvxf</span> nginx-1.20.1.tar.gz
+<span class="token builtin class-name">cd</span> nginx-1.12.1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#_3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5" aria-hidden="true">#</a> 3\u3001\u8BD1\u73AF\u5883\u5B89\u88C5</h3>
+<p><strong>gcc \u5B89\u88C5</strong>\uFF1A\u5B89\u88C5 nginx \u9700\u8981\u5148\u5C06\u5B98\u7F51\u4E0B\u8F7D\u7684\u6E90\u7801\u8FDB\u884C\u7F16\u8BD1\uFF0C\u7F16\u8BD1\u4F9D\u8D56 gcc \u73AF\u5883\uFF0C\u5982\u679C\u6CA1\u6709 gcc \u73AF\u5883\uFF0C\u5219\u9700\u8981\u5B89\u88C5</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># gcc \u5B89\u88C5</span>
+yum <span class="token function">install</span> gcc-c++
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>PCRE pcre-devel \u5B89\u88C5</strong>\uFF1APCRE(Perl Compatible Regular Expressions) \u662F\u4E00\u4E2A Perl \u5E93\uFF0C\u5305\u62EC perl \u517C\u5BB9\u7684\u6B63\u5219\u8868\u8FBE\u5F0F\u5E93\u3002nginx \u7684 http \u6A21\u5757\u4F7F\u7528 pcre \u6765\u89E3\u6790\u6B63\u5219\u8868\u8FBE\u5F0F\uFF0C\u6240\u4EE5\u9700\u8981\u5728 linux \u4E0A\u5B89\u88C5 pcre \u5E93\uFF0Cpcre-devel \u662F\u4F7F\u7528 pcre \u5F00\u53D1\u7684\u4E00\u4E2A\u4E8C\u6B21\u5F00\u53D1\u5E93\uFF0Cnginx \u4E5F\u9700\u8981\u6B64\u5E93\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> pcre pcre-devel
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>zlib \u5B89\u88C5</strong>\uFF1Azlib \u5E93\u63D0\u4F9B\u4E86\u5F88\u591A\u79CD\u538B\u7F29\u548C\u89E3\u538B\u7F29\u7684\u65B9\u5F0F\uFF0C nginx \u4F7F\u7528 zlib \u5BF9 http \u5305\u7684\u5185\u5BB9\u8FDB\u884C gzip \uFF0C\u6240\u4EE5\u9700\u8981\u5728 Centos \u4E0A\u5B89\u88C5 zlib \u5E93\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> zlib zlib-devel
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>OpenSSL \u5B89\u88C5</strong>\uFF1AOpenSSL \u662F\u4E00\u4E2A\u5F3A\u5927\u7684\u5B89\u5168\u5957\u63A5\u5B57\u5C42\u5BC6\u7801\u5E93\uFF0C\u56CA\u62EC\u4E3B\u8981\u7684\u5BC6\u7801\u7B97\u6CD5\u3001\u5E38\u7528\u7684\u5BC6\u94A5\u548C\u8BC1\u4E66\u5C01\u88C5\u7BA1\u7406\u529F\u80FD\u53CA SSL \u534F\u8BAE\uFF0C\u5E76\u63D0\u4F9B\u4E30\u5BCC\u7684\u5E94\u7528\u7A0B\u5E8F\u4F9B\u6D4B\u8BD5\u6216\u5176\u5B83\u76EE\u7684\u4F7F\u7528\u3002
+nginx \u4E0D\u4EC5\u652F\u6301 http \u534F\u8BAE\uFF0C\u8FD8\u652F\u6301 https\uFF08\u5373\u5728 ssl \u534F\u8BAE\u4E0A\u4F20\u8F93 http\uFF09\uFF0C\u6240\u4EE5\u9700\u8981\u5728 Centos \u5B89\u88C5 OpenSSL \u5E93\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token function">install</span> <span class="token parameter variable">-y</span> openssl openssl-devel
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_4\u3001\u9884\u7F16\u8BD1" tabindex="-1"><a class="header-anchor" href="#_4\u3001\u9884\u7F16\u8BD1" aria-hidden="true">#</a> 4\u3001\u9884\u7F16\u8BD1</h3>
+<p>\u8FDB\u5165\u89E3\u538B\u540E\u7684\u76EE\u5F55 nginx-1.20.1 \u8FDB\u884C\u9884\u7F16\u8BD1\u3002\u6CE8\u610F\uFF1A--prefix \u662F\u6307\u5B9A\u5B89\u88C5\u76EE\u5F55\uFF0C\u9ED8\u8BA4<code v-pre>/usr/local/nginx</code></p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>./configure <span class="token parameter variable">--prefix</span><span class="token operator">=</span>/opt/nginx --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_5\u3001\u7F16\u8BD1" tabindex="-1"><a class="header-anchor" href="#_5\u3001\u7F16\u8BD1" aria-hidden="true">#</a> 5\u3001\u7F16\u8BD1</h3>
+<p>\u901A\u8FC7<code v-pre>make</code>\u547D\u4EE4\u8FDB\u884C\u6E90\u7801\u7F16\u8BD1\uFF1B\u5982\u679C<code v-pre>make</code>\u547D\u4EE4\u4E0D\u5B58\u5728\uFF0C\u901A\u8FC7<code v-pre>yum -y install make autoconf </code>\u5B89\u88C5</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">make</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_6\u3001\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#_6\u3001\u5B89\u88C5" aria-hidden="true">#</a> 6\u3001\u5B89\u88C5</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">make</span> <span class="token function">install</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u5B89\u88C5\u5B8C\u6210\u540E\u8FDB\u5165<code v-pre>/opt/nginx/sbin</code>\u76EE\u5F55\uFF0C\u7136\u540E\u542F\u52A8<code v-pre>./nginx</code> \u8FD9\u6761\u547D\u4EE4\u6210\u529F\u6CA1\u6709\u8F93\u51FA\u3002\u901A\u8FC7\u4E00\u4E0B\u547D\u4EE4\u67E5\u770B<code v-pre>nginx</code>\u662F\u5426\u542F\u52A8\u6210\u529F\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">ps</span> <span class="token parameter variable">-ef</span> <span class="token operator">|</span><span class="token function">grep</span> nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u5982\u679C\u51FA\u73B0<code v-pre>nginx</code>\u8FDB\u7A0B\uFF0C\u5219\u8868\u793A\u542F\u52A8\u6210\u529F
+<img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041716374.png" alt="nginx"></p>
+<p>\u6253\u5F00\u6D4F\u89C8\u5668\uFF0C\u8F93\u5165<code v-pre>nginx</code>\u5730\u5740\uFF0C\u9ED8\u8BA4\u76D1\u542C 80 \u7AEF\u53E3\uFF0C\u5982\u4E0B\u56FE\uFF1A
+<img src="https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202209041715335.png" alt="nginxWeb"></p>
+<p>\u5982\u679C\u51FA\u73B0\u8BBF\u95EE\u4E0D\u4E86\uFF0C\u5C1D\u8BD5\u5173\u95ED\u9632\u706B\u5899<code v-pre>systemctl stop firewalld.service</code>\u6216\u8005\u6C38\u4E45\u5173\u95ED\u9632\u706B\u5899<code v-pre>systemctl disable firewalld.service</code></p>
+<h3 id="_7\u3001\u521B\u5EFA-linux-\u5168\u5C40\u8F6F\u8FDE\u63A5" tabindex="-1"><a class="header-anchor" href="#_7\u3001\u521B\u5EFA-linux-\u5168\u5C40\u8F6F\u8FDE\u63A5" aria-hidden="true">#</a> 7\u3001\u521B\u5EFA linux \u5168\u5C40\u8F6F\u8FDE\u63A5</h3>
+<div class="custom-container tip"><p class="custom-container-title">\u63D0\u793A</p>
+<p>\u901A\u8FC7\u8F6F\u94FE\u63A5\u7684\u65B9\u5F0F\u8BBE\u7F6E nginx \u4E3A\u5168\u5C40\u53D8\u91CF\uFF0C\u5C31\u53EF\u4EE5\u5B9E\u73B0\u5168\u5C40\u4EFB\u4F55\u5730\u65B9\u901A\u8FC7 nginx \u76F8\u5173\u547D\u4EE4\u64CD\u4F5C nginx \u4E0D\u7528\u5230 nginx \u5B89\u88C5\u76EE\u5F55\u6216\u8005 nginx \u5168\u8DEF\u5F84\u8FDB\u884C\u547D\u4EE4\u6267\u884C\uFF0C\u4F7F\u64CD\u4F5C\u53D8\u5F97\u66F4\u52A0\u7B80\u5355\u3002</p>
+</div>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">ln</span> <span class="token parameter variable">-s</span> /opt/nginx/sbin/nginx  /usr/bin/nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>\u4E0A\u9762\u7684\uFF1A/opt/nginx/sbin/nginx \u4E3A\u6211\u4EEC\u7684 nginx \u5B89\u88C5\u76EE\u5F55\uFF0C\u82E5\u4F60\u7684\u5B89\u88C5\u76EE\u5F55\u548C\u6211\u7684\u4E0D\u4E00\u6837\uFF0C\u81EA\u884C\u4FEE\u6539\u4E3A\u4F60\u7684\u5B89\u88C5\u76EE\u5F55\u4FBF\u53EF\uFF0C\u5EFA\u7ACB\u8F6F\u94FE\u63A5\u540E\uFF0C\u6211\u4EEC\u4FBF\u53EF\u4EE5\u5728\u4EFB\u610F\u76EE\u5F55\u6267\u884C nginx \u547D\u4EE4\u4E86</strong></p>
+<h3 id="_8\u3001nginx-\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#_8\u3001nginx-\u547D\u4EE4" aria-hidden="true">#</a> 8\u3001nginx \u547D\u4EE4</h3>
+<p>\u9996\u5148\u9700\u8981\u8FDB\u5165 nginx \u5B89\u88C5\u76EE\u5F55\uFF1A<code v-pre>cd /opt/nginx/sbin/</code></p>
+<p><strong>\u542F\u52A8\u547D\u4EE4</strong>\uFF1A<code v-pre>./nginx</code></p>
+<p><strong>\u9000\u51FA\u547D\u4EE4</strong>: <code v-pre>./nginx -s quit</code>\uFF0C\u6B64\u65B9\u5F0F\u505C\u6B62\u6B65\u9AA4\u662F\u5F85 nginx \u8FDB\u7A0B\u5904\u7406\u4EFB\u52A1\u5B8C\u6BD5\u8FDB\u884C\u505C\u6B62\u3002</p>
+<p><strong>\u505C\u6B62\u547D\u4EE4</strong>\uFF1A<code v-pre>./nginx -s stop</code>\uFF0C\u6B64\u65B9\u5F0F\u76F8\u5F53\u4E8E\u5148\u67E5\u51FA nginx \u8FDB\u7A0B id \u518D\u4F7F\u7528 kill \u547D\u4EE4\u5F3A\u5236\u6740\u6389\u8FDB\u7A0B\u3002</p>
+<p><strong>\u5355\u7EAF\u91CD\u542F\u547D\u4EE4</strong>\uFF1A\u5148\u505C\u6B62\u518D\u542F\u52A8(\u63A8\u8350)\uFF0C\u5BF9 nginx \u8FDB\u884C\u91CD\u542F\u76F8\u5F53\u4E8E\u5148\u505C\u6B62\u518D\u542F\u52A8\uFF0C\u5373\u5148\u6267\u884C\u505C\u6B62\u547D\u4EE4\u518D\u6267\u884C\u542F\u52A8\u547D\u4EE4\u3002</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>./nginx <span class="token parameter variable">-s</span> quit
+./nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>\u91CD\u65B0\u52A0\u8F7D\u914D\u7F6E\u6587\u4EF6</strong>\uFF1A\u5F53 nginx \u7684\u914D\u7F6E\u6587\u4EF6 nginx.conf \u4FEE\u6539\u540E\uFF0C\u8981\u60F3\u8BA9\u914D\u7F6E\u751F\u6548\u9700\u8981\u91CD\u542F nginx\uFF0C\u4F7F\u7528 ./nginx -s reload \u4E0D\u7528\u5148\u505C\u6B62 nginx \u518D\u542F\u52A8 nginx, \u5373\u53EF\u5C06\u914D\u7F6E\u4FE1\u606F\u5728 nginx \u4E2D\u751F\u6548\uFF0C\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>./nginx <span class="token parameter variable">-s</span> reload
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>\u6307\u5B9A\u914D\u7F6E\u6587\u4EF6\u542F\u52A8</strong>: /opt/nginx/sbin/nginx -c /opt/nginx/conf/nginx.conf</p>
+<p><strong>\u6307\u5B9A\u914D\u7F6E\u6587\u4EF6\u91CD\u542F</strong>: /opt/nginx/sbin/nginx -s reload -c /opt/nginx/conf/nginx.conf</p>
+<p><strong>\u6D4B\u8BD5 nginx \u914D\u7F6E\u6587\u4EF6\u662F\u5426\u6B63\u786E</strong>\uFF1A/nginx -t -c /opt/nginx/conf/nginx.conf</p>
+<p><strong>\u5F00\u542F\u81EA\u542F\u52A8</strong></p>
+<p>1\u3001\u5728/etc/rc.d/rc.local \u4E2D\u6DFB\u52A0 nginx \u542F\u52A8\u547D\u4EE4\u884C\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">vi</span> /etc/rc.d/rc.local
+/opt/nginx/sbin/nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>2\u3001\u6388\u6743\uFF1A<code v-pre>chmod +x /etc/rc.d/rc.local</code></p>
+<p>3\u3001\u91CD\u542F\uFF1A<code v-pre>reboot</code>,\u901A\u8FC7\u547D\u4EE4<code v-pre>ps -ef | grep nginx</code>\u67E5\u770B nginx \u662F\u5426\u5F00\u673A\u81EA\u542F\u52A8\u6210\u529F</p>
+<p><strong>\u4E0A\u9762\u8FD9\u79CD\u662F\u6700\u7B80\u5355\u7684 nginx \u5F00\u673A\u81EA\u542F\u52A8\u7684\uFF0C\u63A8\u8350\u5927\u5BB6\u4F7F\u7528</strong>\u3002</p>
+<h2 id="\u4E09-docker-\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#\u4E09-docker-\u5B89\u88C5" aria-hidden="true">#</a> \u4E09 Docker \u5B89\u88C5</h2>
+<h3 id="_1\u3001\u62C9\u53D6-nginx-\u955C\u50CF" tabindex="-1"><a class="header-anchor" href="#_1\u3001\u62C9\u53D6-nginx-\u955C\u50CF" aria-hidden="true">#</a> 1\u3001\u62C9\u53D6 nginx \u955C\u50CF</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">docker</span> pull nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3 id="_2\u3001\u542F\u52A8-nginx-\u5BB9\u5668" tabindex="-1"><a class="header-anchor" href="#_2\u3001\u542F\u52A8-nginx-\u5BB9\u5668" aria-hidden="true">#</a> 2\u3001\u542F\u52A8 nginx \u5BB9\u5668</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">--name</span> nginx <span class="token parameter variable">-p</span> <span class="token number">80</span>:80 <span class="token parameter variable">-d</span> nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u81F3\u6B64\u4E00\u4E2A\u7B80\u5355\u7684 nginx \u5BB9\u5668\u5C31\u542F\u52A8\u6210\u529F\u4E86\uFF0C\u4E0B\u9762\u914D\u7F6E\u6302\u8F7D\u76EE\u5F55\u3002</p>
+<h3 id="_3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55" tabindex="-1"><a class="header-anchor" href="#_3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55" aria-hidden="true">#</a> 3\u3001\u521B\u5EFA\u6302\u8F7D\u76EE\u5F55</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /opt/nginx
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /opt/nginx/html
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /opt/nginx/conf.d
+<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /opt/nginx/logs
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6" tabindex="-1"><a class="header-anchor" href="#_4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6" aria-hidden="true">#</a> 4\u3001\u590D\u5236\u5BB9\u5668\u4E2D\u6302\u8F7D\u6587\u4EF6</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">docker</span> <span class="token function">cp</span> 67e:/etc/nginx/nginx.conf /opt/nginx/
+<span class="token function">docker</span> <span class="token function">cp</span> 67e:/etc/nginx/conf.d /opt/nginx/conf.d/
+<span class="token function">docker</span> <span class="token function">cp</span> 67e:/usr/share/nginx/html/ /opt/nginx/html/
+<span class="token function">docker</span> <span class="token function">cp</span> 67e:/var/log/nginx/ /opt/nginx/logs/
+\u6CE8\uFF1Adocker <span class="token function">cp</span> 67e \u4E2D\u7684 <span class="token string">"67e"</span> \u4E3A\u5BB9\u5668ID\u524D\u7F00\uFF0C\u53EA\u8981\u552F\u4E00\u5C31\u597D\u4E86
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_5\u3001\u5220\u9664\u65E7\u7684-nginx-\u5BB9\u5668" tabindex="-1"><a class="header-anchor" href="#_5\u3001\u5220\u9664\u65E7\u7684-nginx-\u5BB9\u5668" aria-hidden="true">#</a> 5\u3001\u5220\u9664\u65E7\u7684 nginx \u5BB9\u5668</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u505C\u6B62\u5BB9\u5668</span>
+<span class="token function">docker</span> stop 67e
+<span class="token comment"># \u79FB\u9664\u5BB9\u5668</span>
+<span class="token function">docker</span> <span class="token function">rm</span> 67e
+<span class="token comment">#\u6216\u8005\u5F3A\u5236\u5220\u9664\u5BB9\u5668</span>
+<span class="token function">docker</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span> 67e
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_6\u3001\u521B\u5EFA-nginx-\u6302\u8F7D\u76EE\u5F55\u5BB9\u5668" tabindex="-1"><a class="header-anchor" href="#_6\u3001\u521B\u5EFA-nginx-\u6302\u8F7D\u76EE\u5F55\u5BB9\u5668" aria-hidden="true">#</a> 6\u3001\u521B\u5EFA nginx \u6302\u8F7D\u76EE\u5F55\u5BB9\u5668</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">--name</span> nginx <span class="token parameter variable">-p</span> <span class="token number">80</span>:80 <span class="token parameter variable">-p</span> <span class="token number">443</span>:443 <span class="token parameter variable">-v</span> /opt/nginx/nginx.conf:/etc/nginx/nginx.conf <span class="token punctuation">\\</span>
+<span class="token parameter variable">-v</span> /opt/nginx/html:/usr/share/nginx/html <span class="token parameter variable">-v</span> /opt/nginx/logs:/var/log/nginx <span class="token punctuation">\\</span>
+<span class="token parameter variable">-v</span> /opt/nginx/conf.d:/etc/nginx/conf.d <span class="token parameter variable">--privileged</span><span class="token operator">=</span>true <span class="token parameter variable">--restart</span><span class="token operator">=</span>always nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code v-pre>--privileged=true</code>: \u4F7F\u7528\u8BE5\u53C2\u6570\uFF0Ccontainer \u5185\u7684 root \u62E5\u6709\u771F\u6B63\u7684 root \u6743\u9650\u3002\u5426\u5219\uFF0Ccontainer \u5185\u7684 root \u53EA\u662F\u5916\u90E8\u7684\u4E00\u4E2A\u666E\u901A\u7528\u6237\u6743\u9650\u3002privileged \u542F\u52A8\u7684\u5BB9\u5668\uFF0C\u53EF\u4EE5\u770B\u5230\u5F88\u591A host \u4E0A\u7684\u8BBE\u5907\uFF0C\u5E76\u4E14\u53EF\u4EE5\u6267\u884C mount\u3002\u751A\u81F3\u5141\u8BB8\u4F60\u5728 docker \u5BB9\u5668\u4E2D\u542F\u52A8 docker \u5BB9\u5668<br>
+<code v-pre>--restart=always</code>: \u5F53 Docker \u91CD\u542F\u65F6\uFF0C\u5BB9\u5668\u81EA\u52A8\u542F\u52A8\u3002<br>
+\u4FEE\u6539\u8FD0\u884C\u4E2D\u7684\u5BB9\u5668\u81EA\u542F\u52A8\uFF1A<code v-pre>docker container update --restart=always \u5BB9\u5668\u540D\u5B57</code><br>
+\u6784\u5EFA\u5BB9\u5668\u81EA\u542F\u52A8\uFF1A\u542F\u52A8\u547D\u4EE4\u989D\u5916\u52A0\u4E0A<code v-pre>--restart=always</code></p>
+<h3 id="_7\u3001\u67E5\u770B-nginx-\u5BB9\u5668\u8FD0\u884C\u60C5\u51B5" tabindex="-1"><a class="header-anchor" href="#_7\u3001\u67E5\u770B-nginx-\u5BB9\u5668\u8FD0\u884C\u60C5\u51B5" aria-hidden="true">#</a> 7\u3001\u67E5\u770B nginx \u5BB9\u5668\u8FD0\u884C\u60C5\u51B5</h3>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u547D\u4EE4\u67E5\u770B\u5F53\u524D\u8FD0\u884C\u7684\u5BB9\u5668</span>
+<span class="token function">docker</span> <span class="token function">ps</span>
+<span class="token comment"># \u901A\u8FC7\u6D4F\u89C8\u5668\u8BBF\u95EE80\u7AEF\u53E3\uFF0C\u67E5\u770B\u662F\u5426\u663E\u793A\u6B63\u5E38\u9875\u9762</span>
+http:ip/
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u5982\u679C\u6D4F\u89C8\u5668\u8BBF\u95EE\u4E0D\u4E86\uFF0C\u5E94\u8BE5\u662F\u9632\u706B\u5899\u7684\u539F\u56E0\u3002\u53EF\u4EE5\u901A\u8FC7\u547D\u4EE4<code v-pre>systemctl stop firewalld</code>\u5173\u95ED\u9632\u706B\u5899\u6216\u8005\u5F00\u901A\u5BF9\u5E94\u7684\u7AEF\u53E3<code v-pre>80</code>\u548C<code v-pre>443</code>\uFF0C\u7AEF\u53E3\u5F00\u901A\u547D\u4EE4\u53C2\u8003\uFF1A<RouterLink to="/posts/others/linux/basecommand.html#_6-centos-%E7%AB%AF%E5%8F%A3%E5%BC%80%E9%80%9A">linux \u5E38\u7528\u6307\u4EE4</RouterLink></p>
+<h2 id="\u56DB-nginx-\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757" tabindex="-1"><a class="header-anchor" href="#\u56DB-nginx-\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757" aria-hidden="true">#</a> \u56DB nginx \u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757</h2>
+<p>\u2003nginx \u6587\u4EF6\u975E\u5E38\u5C0F\u4F46\u662F\u6027\u80FD\u975E\u5E38\u7684\u9AD8\u6548,\u8FD9\u65B9\u9762\u5B8C\u80DC apache,nginx \u6587\u4EF6\u5C0F\u7684\u4E00\u4E2A\u539F\u56E0\u4E4B\u4E00\u662F nginx \u81EA\u5E26\u7684\u529F\u80FD\u76F8\u5BF9\u8F83\u5C11,\u597D\u5728 nginx \u5141\u8BB8\u7B2C\u4E09\u65B9\u6A21\u5757,\u7B2C\u4E09\u65B9\u6A21\u5757\u4F7F\u5F97 nginx \u8D8A\u53D1\u7684\u5F3A\u5927. \u5728\u5B89\u88C5\u6A21\u5757\u65B9\u9762,nginx \u663E\u5F97\u6CA1\u6709 apache \u5B89\u88C5\u6A21\u5757\u65B9\u4FBF\uFF0C\u5F53\u7136\u4E5F\u6CA1\u6709 php \u5B89\u88C5\u6269\u5C55\u65B9\u4FBF.\u5728\u539F\u751F\u7684 nginx,\u4ED6\u4E0D\u53EF\u4EE5\u52A8\u6001\u52A0\u8F7D\u6A21\u5757,\u6240\u4EE5\u5F53\u4F60\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\u7684\u65F6\u5019\u9700\u8981\u8986\u76D6 nginx \u6587\u4EF6.\u63A5\u4E0B\u6765\u770B\u770B\u5982\u4F55\u5B89\u88C5 nginx \u7B2C\u4E09\u6A21\u5757\u5427\u3002</p>
+<p>nginx \u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u65B9\u6CD5\uFF1A<code v-pre>./configure --prefix=/\u4F60\u7684\u5B89\u88C5\u76EE\u5F55 --add-module=/\u7B2C\u4E09\u65B9\u6A21\u5757\u8DEF\u5F84</code>\u3002\u4E0B\u9762\u4EE5<code v-pre>nginx-upsync-module</code>\u7B2C\u4E09\u65B9\u6A21\u5757\u4E3A\u4F8B\u5B50\u3002</p>
+<ul>
+<li>\u5982\u679C\u7B2C\u4E00\u6B21\u5B89\u88C5 nginx \u5E76\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\uFF1A</li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u8FDB\u5165\u6E90\u7801\u6587\u4EF6\u76EE\u5F55</span>
+<span class="token builtin class-name">cd</span> nginx-1.19
+<span class="token comment">#\u8FDB\u884C\u9884\u7F16\u8BD1</span>
+./configure <span class="token parameter variable">--prefix</span><span class="token operator">=</span>/opt/nginx --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module    --with-pcre --add-module<span class="token operator">=</span><span class="token punctuation">..</span>/nginx-upsync-module-master
+<span class="token comment">#\u7F16\u8BD1</span>
+<span class="token function">make</span>
+<span class="token comment">#\u5B89\u88C5</span>
+<span class="token function">make</span> <span class="token function">install</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>\u5982\u679C\u5DF2\u7ECF\u5B89\u88C5 nginx \u5E76\u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\uFF1A</li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5982\u679C\u6CA1\u6709\u5DF2\u5B89\u88C5\u597D\u7684nginx\u6E90\u7801\u76EE\u5F55\uFF0C\u9700\u8981\u4ECEnginx\u5B98\u7F51\u4E0B\u8F7D\u76F8\u540C\u7248\u672C\u7684\u6E90\u7801\uFF0C\u5728\u6E90\u7801\u57FA\u7840\u4E0A\u91CD\u65B0\u5B89\u88C5nginx,\u8FDB\u5165\u6E90\u7801\u6587\u4EF6\u76EE\u5F55</span>
+<span class="token builtin class-name">cd</span> nginx-1.19
+<span class="token comment">#\u8FDB\u884C\u9884\u7F16\u8BD1</span>
+./configure <span class="token parameter variable">--prefix</span><span class="token operator">=</span>/opt/nginx  --with-http_ssl_module    --with-http_ssl_module   --with-http_flv_module  --with-http_stub_status_module  --with-http_gzip_static_module   --with-http_realip_module    --with-pcre --add-module<span class="token operator">=</span><span class="token punctuation">..</span>/nginx-upsync-module-master
+<span class="token comment">#\u7F16\u8BD1</span>
+<span class="token function">make</span>
+<span class="token comment">#\u5C06\u7F16\u8BD1\u597D\u7684\u6587\u4EF6\u8986\u76D6\u539F\u6765\u7684nginx\u6587\u4EF6\uFF0C\u5728nginx\u6E90\u7801\u76EE\u5F55\u4E0B\u7684objs\u6587\u4EF6\u5728</span>
+<span class="token function">cp</span> objs/nginx /opt/nginx/sbin/nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u603B\u7ED3,\u5B89\u88C5 nginx \u5B89\u88C5\u7B2C\u4E09\u65B9\u6A21\u5757\u5B9E\u9645\u4E0A\u662F\u4F7F\u7528--add-module \u91CD\u65B0\u5B89\u88C5\u4E00\u6B21 nginx\uFF0C\u4E0D\u8981 make install \u800C\u662F\u76F4\u63A5\u628A\u7F16\u8BD1\u76EE\u5F55\u4E0B objs/nginx \u6587\u4EF6\u76F4\u63A5\u8986\u76D6\u8001\u7684 nginx \u6587\u4EF6\u3002\u5982\u679C\u4F60\u9700\u8981\u5B89\u88C5\u591A\u4E2A nginx \u7B2C\u4E09\u65B9\u6A21\u5757,\u4F60\u53EA\u9700\u8981\u591A\u6307\u5B9A\u51E0\u4E2A\u76F8\u5E94\u7684--add-module \u5373\u53EF\u3002\u6CE8\u610F\uFF1A\u91CD\u65B0\u7F16\u8BD1\u7684\u65F6\u5019\uFF0C\u8BB0\u5F97\u4E00\u5B9A\u8981\u628A\u4EE5\u524D\u7F16\u8BD1\u8FC7\u7684\u6A21\u5757\u4E00\u540C\u52A0\u5230 configure \u53C2\u6570\u91CC\u9762\u3002</p>
+<p>nginx \u63D0\u4F9B\u4E86\u975E\u5E38\u591A\u7684\u7B2C\u4E09\u65B9\u6A21\u5757\uFF1A<a href="https://www.nginx.com/resources/wiki/modules/" target="_blank" rel="noopener noreferrer">https://www.nginx.com/resources/wiki/modules/<ExternalLinkIcon/></a></p>
+`,date:"2022-02-18",deps:[],links:[{raw:"../../others/linux/basecommand.html#_6-centos-%E7%AB%AF%E5%8F%A3%E5%BC%80%E9%80%9A",relative:"posts/others/linux/basecommand.html",absolute:"/blog-docs/posts/others/linux/basecommand.html"}],pathInferred:"/posts/devops/nginx/install.html",pathLocale:"/",permalink:null,routeMeta:{title:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4"},sfcBlocks:[],slug:"install",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/nginx/install.md",filePathRelative:"posts/devops/nginx/install.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/install.html.vue",componentFilePathRelative:"pages/posts/devops/nginx/install.html.vue",componentFileChunkName:"v-00fac020",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/install.html.js",dataFilePathRelative:"pages/posts/devops/nginx/install.html.js",dataFileChunkName:"v-00fac020",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/nginx/install.html",htmlFilePathRelative:"posts/devops/nginx/install.html"},title:"Nginx \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F\u4EE5\u53CA\u7B2C\u4E09\u65B9\u6A21\u5757\u5B89\u88C5\u6B65\u9AA4"},["/posts/devops/nginx/install","/posts/devops/nginx/install.md"]],["v-2e2615a9","/posts/devops/nginx/kill.html",{_blog:{data:{key:"v-2e2615a9",path:"/posts/devops/nginx/kill.html",title:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5",date:"2022-07-23T18:51:45.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207232148622.jpg",summary:`\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0C\u5F53\u6211\u4EEC\u9700\u8981kill\u6389Nginx\u8FDB\u7A0B\u65F6\uFF0C\u901A\u8FC7\u67E5\u770BNginx\u7AEF\u53E3\u7ED1\u5B9A\u7684\u8FDB\u7A0B\uFF0C\u7136\u540E\u53BB\u6740\u6B7B\u76F8\u5E94\u8FDB\u7A0B\uFF0C\u53D1\u73B0\u4F1A\u6709\u65B0\u7684\u8FDB\u7A0B\u7ED1\u5B9A\uFF0C\u4F7F\u7528kill -9\u6740\u5B8C\u4E86\u5C31\u6709\u65B0\u7684\u8FDB\u7A0B\u51FA\u73B0\uFF0C\u539F\u56E0\u662F\uFF1A nginx\u7684\u8FDB\u7A0B\u5206\u4E3AMaster\u8FDB\u7A0B\u548CWorker\u8FDB\u7A0B\uFF0CWorker\u8FDB\u7A0B\u662FMaster\u6D3E\u751F\u51FA\u6765\u7684\u5B50\u8FDB\u7A0B\uFF0C\u5176\u6570\u91CF\u59CB\u7EC8\u7EF4\u6301\u5728\u4E00\u4E2A\u6570\u91CF\u4E0A\uFF0C\u5F53\u7F3A\u5C11\u4E00\u4E2AWorker\u8FDB\u7A0B\u662F\uFF0CMaster\u5C31\u4F1A\u6D3E\u751F\u4E00\u4E2A\u65B0\u7684\u5B50\u8FDB\u7A0B\u3002\u6240\u4EE5\u4F60\u6740worker\u8FDB\u7A0B\u662F\u6740\u4E0D\u5B8C\u7684\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/kill.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-07-23T18:51:45.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0C\u5F53\u6211\u4EEC\u9700\u8981kill\u6389Nginx\u8FDB\u7A0B\u65F6\uFF0C\u901A\u8FC7\u67E5\u770BNginx\u7AEF\u53E3\u7ED1\u5B9A\u7684\u8FDB\u7A0B\uFF0C\u7136\u540E\u53BB\u6740\u6B7B\u76F8\u5E94\u8FDB\u7A0B\uFF0C\u53D1\u73B0\u4F1A\u6709\u65B0\u7684\u8FDB\u7A0B\u7ED1\u5B9A\uFF0C\u4F7F\u7528kill -9\u6740\u5B8C\u4E86\u5C31\u6709\u65B0\u7684\u8FDB\u7A0B\u51FA\u73B0\uFF0C\u539F\u56E0\u662F\uFF1A nginx\u7684\u8FDB\u7A0B\u5206\u4E3AMaster\u8FDB\u7A0B\u548CWorker\u8FDB\u7A0B\uFF0CWorker\u8FDB\u7A0B\u662FMaster\u6D3E\u751F\u51FA\u6765\u7684\u5B50\u8FDB\u7A0B\uFF0C\u5176\u6570\u91CF\u59CB\u7EC8\u7EF4\u6301\u5728\u4E00\u4E2A\u6570\u91CF\u4E0A\uFF0C\u5F53\u7F3A\u5C11\u4E00\u4E2AWorker\u8FDB\u7A0B\u662F\uFF0CMaster\u5C31\u4F1A\u6D3E\u751F\u4E00\u4E2A\u65B0\u7684\u5B50\u8FDB\u7A0B\u3002\u6240\u4EE5\u4F60\u6740worker\u8FDB\u7A0B\u662F\u6740\u4E0D\u5B8C\u7684\u3002</p>
+`,headers:[{level:2,title:"\u65B9\u5F0F\u4E00\uFF1A",slug:"\u65B9\u5F0F\u4E00",children:[]},{level:2,title:"\u65B9\u5F0F\u4E8C\uFF1A",slug:"\u65B9\u5F0F\u4E8C",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/nginx/kill.md",readingTime:{minutes:.84,words:252},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/nginx/kill.html`},key:"v-2e2615a9",path:"/posts/devops/nginx/kill.html",title:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5",lang:"zh-CN",frontmatter:{title:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5",date:"2022-07-23T18:51:45.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207232148622.jpg",summary:`\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0C\u5F53\u6211\u4EEC\u9700\u8981kill\u6389Nginx\u8FDB\u7A0B\u65F6\uFF0C\u901A\u8FC7\u67E5\u770BNginx\u7AEF\u53E3\u7ED1\u5B9A\u7684\u8FDB\u7A0B\uFF0C\u7136\u540E\u53BB\u6740\u6B7B\u76F8\u5E94\u8FDB\u7A0B\uFF0C\u53D1\u73B0\u4F1A\u6709\u65B0\u7684\u8FDB\u7A0B\u7ED1\u5B9A\uFF0C\u4F7F\u7528kill -9\u6740\u5B8C\u4E86\u5C31\u6709\u65B0\u7684\u8FDB\u7A0B\u51FA\u73B0\uFF0C\u539F\u56E0\u662F\uFF1A nginx\u7684\u8FDB\u7A0B\u5206\u4E3AMaster\u8FDB\u7A0B\u548CWorker\u8FDB\u7A0B\uFF0CWorker\u8FDB\u7A0B\u662FMaster\u6D3E\u751F\u51FA\u6765\u7684\u5B50\u8FDB\u7A0B\uFF0C\u5176\u6570\u91CF\u59CB\u7EC8\u7EF4\u6301\u5728\u4E00\u4E2A\u6570\u91CF\u4E0A\uFF0C\u5F53\u7F3A\u5C11\u4E00\u4E2AWorker\u8FDB\u7A0B\u662F\uFF0CMaster\u5C31\u4F1A\u6D3E\u751F\u4E00\u4E2A\u65B0\u7684\u5B50\u8FDB\u7A0B\u3002\u6240\u4EE5\u4F60\u6740worker\u8FDB\u7A0B\u662F\u6740\u4E0D\u5B8C\u7684\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/kill.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-07-23T18:51:45.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0C\u5F53\u6211\u4EEC\u9700\u8981kill\u6389Nginx\u8FDB\u7A0B\u65F6\uFF0C\u901A\u8FC7\u67E5\u770BNginx\u7AEF\u53E3\u7ED1\u5B9A\u7684\u8FDB\u7A0B\uFF0C\u7136\u540E\u53BB\u6740\u6B7B\u76F8\u5E94\u8FDB\u7A0B\uFF0C\u53D1\u73B0\u4F1A\u6709\u65B0\u7684\u8FDB\u7A0B\u7ED1\u5B9A\uFF0C\u4F7F\u7528kill -9\u6740\u5B8C\u4E86\u5C31\u6709\u65B0\u7684\u8FDB\u7A0B\u51FA\u73B0\uFF0C\u539F\u56E0\u662F\uFF1A nginx\u7684\u8FDB\u7A0B\u5206\u4E3AMaster\u8FDB\u7A0B\u548CWorker\u8FDB\u7A0B\uFF0CWorker\u8FDB\u7A0B\u662FMaster\u6D3E\u751F\u51FA\u6765\u7684\u5B50\u8FDB\u7A0B\uFF0C\u5176\u6570\u91CF\u59CB\u7EC8\u7EF4\u6301\u5728\u4E00\u4E2A\u6570\u91CF\u4E0A\uFF0C\u5F53\u7F3A\u5C11\u4E00\u4E2AWorker\u8FDB\u7A0B\u662F\uFF0CMaster\u5C31\u4F1A\u6D3E\u751F\u4E00\u4E2A\u65B0\u7684\u5B50\u8FDB\u7A0B\u3002\u6240\u4EE5\u4F60\u6740worker\u8FDB\u7A0B\u662F\u6740\u4E0D\u5B8C\u7684\u3002</p>
+`,headers:[{level:2,title:"\u65B9\u5F0F\u4E00\uFF1A",slug:"\u65B9\u5F0F\u4E00",children:[]},{level:2,title:"\u65B9\u5F0F\u4E8C\uFF1A",slug:"\u65B9\u5F0F\u4E8C",children:[]}],content:`---
+title: Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5
+date: 2022-07-23 18:51:45
+tag:
+  - nginx
+category:
+  - nginx
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207232148622.jpg
+---
+
+&emsp;\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0C\u5F53\u6211\u4EEC\u9700\u8981kill\u6389Nginx\u8FDB\u7A0B\u65F6\uFF0C\u901A\u8FC7\u67E5\u770BNginx\u7AEF\u53E3\u7ED1\u5B9A\u7684\u8FDB\u7A0B\uFF0C\u7136\u540E\u53BB\u6740\u6B7B\u76F8\u5E94\u8FDB\u7A0B\uFF0C\u53D1\u73B0\u4F1A\u6709\u65B0\u7684\u8FDB\u7A0B\u7ED1\u5B9A\uFF0C\u4F7F\u7528kill -9\u6740\u5B8C\u4E86\u5C31\u6709\u65B0\u7684\u8FDB\u7A0B\u51FA\u73B0\uFF0C\u539F\u56E0\u662F\uFF1A nginx\u7684\u8FDB\u7A0B\u5206\u4E3AMaster\u8FDB\u7A0B\u548CWorker\u8FDB\u7A0B\uFF0CWorker\u8FDB\u7A0B\u662FMaster\u6D3E\u751F\u51FA\u6765\u7684\u5B50\u8FDB\u7A0B\uFF0C\u5176\u6570\u91CF\u59CB\u7EC8\u7EF4\u6301\u5728\u4E00\u4E2A\u6570\u91CF\u4E0A\uFF0C\u5F53\u7F3A\u5C11\u4E00\u4E2AWorker\u8FDB\u7A0B\u662F\uFF0CMaster\u5C31\u4F1A\u6D3E\u751F\u4E00\u4E2A\u65B0\u7684\u5B50\u8FDB\u7A0B\u3002\u6240\u4EE5\u4F60\u6740worker\u8FDB\u7A0B\u662F\u6740\u4E0D\u5B8C\u7684\u3002
+
+<!-- more -->
+
+## \u65B9\u5F0F\u4E00\uFF1A
+
+\u76F8\u5173nginx\u8FDB\u884C\u5168\u90E8\u6740\u6389:
+\`\`\`js
+killall -9 nginx
+\`\`\`
+## \u65B9\u5F0F\u4E8C\uFF1A
+
+\u67E5\u8BE2\u6240\u6709\u7684nginx\u7684\u8FDB\u7A0B\uFF1Aps -A | grep nginx\uFF0C\u7136\u540E\u5168\u90E8\u6740\u6389
+\`\`\`js
+[root@VM-0-12-centos /]# ps -A | grep nginx
+ 105248 ?        00:00:00 nginx
+ 105249 ?        00:00:00 nginx
+ 105250 ?        00:00:00 nginx
+[root@VM-0-12-centos /]# kill -9 105248 and kill -9 105249 and kill -9 105250 
+\`\`\`
+`,contentRendered:`<p>\u2003\u65E5\u5E38\u5DE5\u4F5C\u4E2D\uFF0C\u5F53\u6211\u4EEC\u9700\u8981kill\u6389Nginx\u8FDB\u7A0B\u65F6\uFF0C\u901A\u8FC7\u67E5\u770BNginx\u7AEF\u53E3\u7ED1\u5B9A\u7684\u8FDB\u7A0B\uFF0C\u7136\u540E\u53BB\u6740\u6B7B\u76F8\u5E94\u8FDB\u7A0B\uFF0C\u53D1\u73B0\u4F1A\u6709\u65B0\u7684\u8FDB\u7A0B\u7ED1\u5B9A\uFF0C\u4F7F\u7528kill -9\u6740\u5B8C\u4E86\u5C31\u6709\u65B0\u7684\u8FDB\u7A0B\u51FA\u73B0\uFF0C\u539F\u56E0\u662F\uFF1A nginx\u7684\u8FDB\u7A0B\u5206\u4E3AMaster\u8FDB\u7A0B\u548CWorker\u8FDB\u7A0B\uFF0CWorker\u8FDB\u7A0B\u662FMaster\u6D3E\u751F\u51FA\u6765\u7684\u5B50\u8FDB\u7A0B\uFF0C\u5176\u6570\u91CF\u59CB\u7EC8\u7EF4\u6301\u5728\u4E00\u4E2A\u6570\u91CF\u4E0A\uFF0C\u5F53\u7F3A\u5C11\u4E00\u4E2AWorker\u8FDB\u7A0B\u662F\uFF0CMaster\u5C31\u4F1A\u6D3E\u751F\u4E00\u4E2A\u65B0\u7684\u5B50\u8FDB\u7A0B\u3002\u6240\u4EE5\u4F60\u6740worker\u8FDB\u7A0B\u662F\u6740\u4E0D\u5B8C\u7684\u3002</p>
+<!-- more -->
+<h2 id="\u65B9\u5F0F\u4E00" tabindex="-1"><a class="header-anchor" href="#\u65B9\u5F0F\u4E00" aria-hidden="true">#</a> \u65B9\u5F0F\u4E00\uFF1A</h2>
+<p>\u76F8\u5173nginx\u8FDB\u884C\u5168\u90E8\u6740\u6389:</p>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code>killall <span class="token operator">-</span><span class="token number">9</span> nginx
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="\u65B9\u5F0F\u4E8C" tabindex="-1"><a class="header-anchor" href="#\u65B9\u5F0F\u4E8C" aria-hidden="true">#</a> \u65B9\u5F0F\u4E8C\uFF1A</h2>
+<p>\u67E5\u8BE2\u6240\u6709\u7684nginx\u7684\u8FDB\u7A0B\uFF1Aps -A | grep nginx\uFF0C\u7136\u540E\u5168\u90E8\u6740\u6389</p>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token punctuation">[</span>root@<span class="token constant">VM</span><span class="token operator">-</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">12</span><span class="token operator">-</span>centos <span class="token operator">/</span><span class="token punctuation">]</span># ps <span class="token operator">-</span><span class="token constant">A</span> <span class="token operator">|</span> grep nginx
+ <span class="token number">105248</span> <span class="token operator">?</span>        <span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span> nginx
+ <span class="token number">105249</span> <span class="token operator">?</span>        <span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span> nginx
+ <span class="token number">105250</span> <span class="token operator">?</span>        <span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span><span class="token operator">:</span><span class="token number">00</span> nginx
+<span class="token punctuation">[</span>root@<span class="token constant">VM</span><span class="token operator">-</span><span class="token number">0</span><span class="token operator">-</span><span class="token number">12</span><span class="token operator">-</span>centos <span class="token operator">/</span><span class="token punctuation">]</span># kill <span class="token operator">-</span><span class="token number">9</span> <span class="token number">105248</span> and kill <span class="token operator">-</span><span class="token number">9</span> <span class="token number">105249</span> and kill <span class="token operator">-</span><span class="token number">9</span> <span class="token number">105250</span> 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-07-23",deps:[],links:[],pathInferred:"/posts/devops/nginx/kill.html",pathLocale:"/",permalink:null,routeMeta:{title:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5"},sfcBlocks:[],slug:"kill",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/nginx/kill.md",filePathRelative:"posts/devops/nginx/kill.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/kill.html.vue",componentFilePathRelative:"pages/posts/devops/nginx/kill.html.vue",componentFileChunkName:"v-2e2615a9",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/kill.html.js",dataFilePathRelative:"pages/posts/devops/nginx/kill.html.js",dataFileChunkName:"v-2e2615a9",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/nginx/kill.html",htmlFilePathRelative:"posts/devops/nginx/kill.html"},title:"Nginx\u8FDB\u7A0B\u6740\u4E0D\u5B8C\u89E3\u51B3\u65B9\u6CD5"},["/posts/devops/nginx/kill","/posts/devops/nginx/kill.md"]],["v-267068b2","/posts/devops/nginx/location.html",{_blog:{data:{key:"v-267068b2",path:"/posts/devops/nginx/location.html",title:"Nginx location\u5339\u914D\u89C4\u5219",lang:"zh-CN",frontmatter:{title:"Nginx location\u5339\u914D\u89C4\u5219",date:"2022-03-14T11:29:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201031629.jpg",summary:`\u2003nginx \u7684 location \u6307\u4EE4\u7684\u4F5C\u7528\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u7684 URI \u6765\u6267\u884C\u4E0D\u540C\u7684\u5E94\u7528\uFF0CURI \u5C31\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u5230\u7684\u7F51\u5740 URL \u8FDB\u884C\u5339\u914D\uFF0C\u5339\u914D\u6210\u529F\u4E86\u8FDB\u884C\u76F8\u5173\u7684\u64CD\u4F5C\u3002\u4E00\u4E2A location \u53EF\u4EE5\u7528 prefix string(\u524D\u7F00\u5B57\u7B26\u4E32)\u5B9A\u4E49\uFF0C\u4E5F\u53EF\u4EE5\u901A\u8FC7 regular expression\uFF08\u6B63\u5219\u8868\u8FBE\u5F0F\u6765\u5B9A\u4E49\uFF09\u3002\u901A\u4FD7\u7684\u8BF4\u4E5F\u5C31\u662F\uFF1A\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7\u4F7F\u7528\u4E0D\u540C\u7684\u524D\u7F00\uFF0C\u8868\u8FBE\u4E0D\u540C\u7684\u542B\u4E49\uFF0C\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/location.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx location\u5339\u914D\u89C4\u5219"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T11:29:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003nginx \u7684 location \u6307\u4EE4\u7684\u4F5C\u7528\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u7684 URI \u6765\u6267\u884C\u4E0D\u540C\u7684\u5E94\u7528\uFF0CURI \u5C31\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u5230\u7684\u7F51\u5740 URL \u8FDB\u884C\u5339\u914D\uFF0C\u5339\u914D\u6210\u529F\u4E86\u8FDB\u884C\u76F8\u5173\u7684\u64CD\u4F5C\u3002\u4E00\u4E2A location \u53EF\u4EE5\u7528 prefix string(\u524D\u7F00\u5B57\u7B26\u4E32)\u5B9A\u4E49\uFF0C\u4E5F\u53EF\u4EE5\u901A\u8FC7 regular expression\uFF08\u6B63\u5219\u8868\u8FBE\u5F0F\u6765\u5B9A\u4E49\uFF09\u3002\u901A\u4FD7\u7684\u8BF4\u4E5F\u5C31\u662F\uFF1A\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7\u4F7F\u7528\u4E0D\u540C\u7684\u524D\u7F00\uFF0C\u8868\u8FBE\u4E0D\u540C\u7684\u542B\u4E49\uFF0C\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location</p>
+`,headers:[{level:2,title:"location",slug:"location",children:[]},{level:2,title:"location \u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE",slug:"location-\u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/nginx/location.md",readingTime:{minutes:2.62,words:787},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/nginx/location.html`},key:"v-267068b2",path:"/posts/devops/nginx/location.html",title:"Nginx location\u5339\u914D\u89C4\u5219",lang:"zh-CN",frontmatter:{title:"Nginx location\u5339\u914D\u89C4\u5219",date:"2022-03-14T11:29:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201031629.jpg",summary:`\u2003nginx \u7684 location \u6307\u4EE4\u7684\u4F5C\u7528\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u7684 URI \u6765\u6267\u884C\u4E0D\u540C\u7684\u5E94\u7528\uFF0CURI \u5C31\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u5230\u7684\u7F51\u5740 URL \u8FDB\u884C\u5339\u914D\uFF0C\u5339\u914D\u6210\u529F\u4E86\u8FDB\u884C\u76F8\u5173\u7684\u64CD\u4F5C\u3002\u4E00\u4E2A location \u53EF\u4EE5\u7528 prefix string(\u524D\u7F00\u5B57\u7B26\u4E32)\u5B9A\u4E49\uFF0C\u4E5F\u53EF\u4EE5\u901A\u8FC7 regular expression\uFF08\u6B63\u5219\u8868\u8FBE\u5F0F\u6765\u5B9A\u4E49\uFF09\u3002\u901A\u4FD7\u7684\u8BF4\u4E5F\u5C31\u662F\uFF1A\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7\u4F7F\u7528\u4E0D\u540C\u7684\u524D\u7F00\uFF0C\u8868\u8FBE\u4E0D\u540C\u7684\u542B\u4E49\uFF0C\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/location.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx location\u5339\u914D\u89C4\u5219"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T11:29:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003nginx \u7684 location \u6307\u4EE4\u7684\u4F5C\u7528\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u7684 URI \u6765\u6267\u884C\u4E0D\u540C\u7684\u5E94\u7528\uFF0CURI \u5C31\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u5230\u7684\u7F51\u5740 URL \u8FDB\u884C\u5339\u914D\uFF0C\u5339\u914D\u6210\u529F\u4E86\u8FDB\u884C\u76F8\u5173\u7684\u64CD\u4F5C\u3002\u4E00\u4E2A location \u53EF\u4EE5\u7528 prefix string(\u524D\u7F00\u5B57\u7B26\u4E32)\u5B9A\u4E49\uFF0C\u4E5F\u53EF\u4EE5\u901A\u8FC7 regular expression\uFF08\u6B63\u5219\u8868\u8FBE\u5F0F\u6765\u5B9A\u4E49\uFF09\u3002\u901A\u4FD7\u7684\u8BF4\u4E5F\u5C31\u662F\uFF1A\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7\u4F7F\u7528\u4E0D\u540C\u7684\u524D\u7F00\uFF0C\u8868\u8FBE\u4E0D\u540C\u7684\u542B\u4E49\uFF0C\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location</p>
+`,headers:[{level:2,title:"location",slug:"location",children:[]},{level:2,title:"location \u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE",slug:"location-\u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE",children:[]}],content:`---
+title: Nginx location\u5339\u914D\u89C4\u5219
+date: 2022-03-14 11:29:50
+tag:
+  - nginx
+category:
+  - nginx
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201031629.jpg
+---
+
+&emsp;nginx \u7684 location \u6307\u4EE4\u7684\u4F5C\u7528\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u7684 URI \u6765\u6267\u884C\u4E0D\u540C\u7684\u5E94\u7528\uFF0CURI \u5C31\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u5230\u7684\u7F51\u5740 URL \u8FDB\u884C\u5339\u914D\uFF0C\u5339\u914D\u6210\u529F\u4E86\u8FDB\u884C\u76F8\u5173\u7684\u64CD\u4F5C\u3002\u4E00\u4E2A location \u53EF\u4EE5\u7528 prefix string(\u524D\u7F00\u5B57\u7B26\u4E32)\u5B9A\u4E49\uFF0C\u4E5F\u53EF\u4EE5\u901A\u8FC7 regular expression\uFF08\u6B63\u5219\u8868\u8FBE\u5F0F\u6765\u5B9A\u4E49\uFF09\u3002\u901A\u4FD7\u7684\u8BF4\u4E5F\u5C31\u662F\uFF1A\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7\u4F7F\u7528\u4E0D\u540C\u7684\u524D\u7F00\uFF0C\u8868\u8FBE\u4E0D\u540C\u7684\u542B\u4E49\uFF0C\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location
+
+<!-- more -->
+
+## location
+
+&emsp;\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location\u3002\u7B26\u53F7\uFF1A\u201D~\u201D\u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u5E76\u4E14\u533A\u5206\u5927\u5C0F\u5199\u3002\u7B26\u53F7\uFF1A\u201C~\\*\u201D\u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u4F46\u4E0D\u533A\u5206\u5927\u5C0F\u5199\u3002Nginx \u670D\u52A1\u5668\u4F1A\u9996\u5148\u4F1A\u68C0\u67E5\u591A\u4E2A location \u4E2D\u662F\u5426\u6709\u666E\u901A\u7684 uri \u5339\u914D\uFF0C\u5982\u679C\u6709\u591A\u4E2A\u5339\u914D\uFF0C\u4F1A\u5148\u8BB0\u4F4F\u5339\u914D\u5EA6\u6700\u9AD8\u7684\u90A3\u4E2A\u3002\u7136\u540E\u518D\u68C0\u67E5\u6B63\u5219\u5339\u914D\uFF0C\u8FD9\u91CC\u5207\u8BB0\u6B63\u5219\u5339\u914D\u662F\u6709\u987A\u5E8F\u7684\uFF0C\u4ECE\u4E0A\u5230\u4E0B\u4F9D\u6B21\u5339\u914D\uFF0C\u4E00\u65E6\u5339\u914D\u6210\u529F\uFF0C\u5219\u7ED3\u675F\u68C0\u67E5\uFF0C\u5E76\u5C31\u4F1A\u4F7F\u7528\u8FD9\u4E2A location \u5757\u5904\u7406\u6B64\u8BF7\u6C42\u3002\u5982\u679C\u6B63\u5219\u5339\u914D\u5168\u90E8\u5931\u8D25\uFF0C\u5C31\u4F1A\u4F7F\u7528\u521A\u624D\u8BB0\u5F55\u666E\u901A uri \u5339\u914D\u5EA6\u6700\u9AD8\u7684\u90A3\u4E2A location \u5757\u5904\u7406\u6B64\u8BF7\u6C42\u3002\u5F53\u666E\u901A\u5339\u914D\u7684\u6700\u957F\u524D\u7F00\u5339\u914D\u6709\u7B26\u53F7\u201C^~\u201D\u7684\u65F6\u5019\uFF0C\u5C31\u4E0D\u4F1A\u5728\u5339\u914D\u6B63\u5219\u3002\u76F4\u63A5\u4F7F\u7528\u5F53\u524D\u5339\u914D\u7684\u8FD9\u4E2A location \u5757\u5904\u7406\u6B64\u8BF7\u6C42\u3002\u4F7F\u7528\u7B26\u53F7\u201C=\u201D\u4FEE\u9970\u7B26\u53EF\u4EE5\u5B9A\u4E49\u4E00\u4E2A\u7CBE\u786E\u5339\u914D\u7684 URI \u548C\u4F4D\u7F6E\uFF0C\u5982\u679C\u627E\u5230\u4E86\u4E00\u4E2A\u7CBE\u786E\u7684\u5339\u914D\uFF0C\u5219\u641C\u7D22\u7EC8\u6B62\uFF0C\u4F8B\u5982\uFF0C\u5982\u679C\u4E00\u4E2A\u201D/\u201D\u8BF7\u6C42\u9891\u7E41\u53D1\u751F\uFF0C\u5B9A\u4E49\u201Clocation =/\u201D\u5C06\u52A0\u5FEB\u8FD9\u4E9B\u8BF7\u6C42\u7684\u5904\u7406\uFF0C\u4E00\u65E6\u7CBE\u786E\u5339\u914D\u53EA\u6709\u5C31\u7ED3\u675F\uFF0C\u8FD9\u6837\u7684 location \u663E\u7136\u4E0D\u80FD\u5305\u542B\u5D4C\u5957 location\u3002
+
+\u8FD9\u91CC\u6211\u4EEC\u8BF4\u4E00\u4E0B location / {} \u548C location =/ {}\u7684\u533A\u522B\uFF1A
+
+\u201Clocation / {}\u201D\u662F\u666E\u901A\u7684\u6700\u5927\u524D\u7F00\u5339\u914D\uFF0C\u4EFB\u4F55\u7684 uri \u80AF\u5B9A\u662F\u4EE5\u201C/\u201D\u5F00\u5934\uFF0C\u6240\u4EE5 location / {} \u53EF\u4EE5\u8BF4\u662F\u9ED8\u8BA4\u5339\u914D\uFF0C\u5F53\u5176\u4ED6\u90FD\u4E0D\u5339\u914D\u4E86\uFF0C\u5219\u5339\u914D\u9ED8\u8BA4\u5339\u914D\u3002  
+\u6839\u636E\u4E0A\u8FF0\u5B98\u7F51\u5185\u5BB9\u8FDB\u884C\u603B\u7ED3
+a. \u201D=\u201D\u7528\u4E8E\u666E\u901A uri \u524D\uFF0C\u8981\u6C42\u7CBE\u786E\u5339\u914D\uFF0C\u5982\u679C\u5339\u914D\u6210\u529F\uFF0C\u5219\u505C\u6B62\u641C\u7D22\u5E76\u7528\u5F53\u524D location \u5904\u7406\u6B64\u8BF7\u6C42
+
+b. \u201D~\u201D \u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u5E76\u4E14\u533A\u5206\u5927\u5C0F\u5199
+
+c. \u201C~\\*\u201D\u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u4F46\u4E0D\u533A\u5206\u5927\u5C0F\u5199
+
+d. \u201D^~\u201D\u8868\u793A\u5728\u666E\u901A uri \u524D\u8981\u6C42 Nginx \u670D\u52A1\u5668\u627E\u5230\u666E\u901A uri \u5339\u914D\u5EA6\u6700\u9AD8\u7684\u90A3\u4E2A location \u540E\uFF0C\u7ACB\u5373\u5904\u7406\u6B64\u8BF7\u6C42\uFF0C\u5E76\u4E0D\u518D\u8FDB\u884C\u6B63\u5219\u5339\u914D\u3002
+
+e. \u201D^~\u201D\u548C\u201C=\u201D\u90FD\u53EF\u4EE5\u963B\u6B62\u7EE7\u7EED\u5339\u914D\u6B63\u5219 location \u4E24\u8005\u7684\u533A\u522B\uFF1A\u201C^~\u201D\u4F9D\u7136\u9075\u5B88\u6700\u5927\u524D\u7F00\u539F\u5219\uFF0C\u7136\u540E\u201C=\u201D\u662F\u9700\u8981\u4E25\u683C\u5339\u914D\u3002
+
+\u6CE8\u610F\uFF1A\u5982\u679C\u662F\u666E\u901A uri \u5339\u914D\uFF0C\u8FD9\u4E2A\u65F6\u5019\u662F\u6CA1\u6709\u987A\u5E8F\u7684\uFF0C\u4F46\u662F\u6B63\u5219\u5339\u914D\u5219\u662F\u6709\u987A\u5E8F\u7684\uFF0C\u662F\u4ECE\u4E0A\u5230\u4E0B\u4F9D\u6B21\u5339\u914D\uFF0C\u4E00\u65E6\u6709\u5339\u914D\u6210\u529F\uFF0C\u5219\u505C\u6B62\u540E\u9762\u7684\u5339\u914D\u3002
+
+## location \u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE
+
+![](https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203141144181.png)
+
+\u6587\u7AE0\u53C2\u8003\u6765\u6E90\uFF1A<https://www.cnblogs.com/zhaof/p/5945576.html>`,contentRendered:`<p>\u2003nginx \u7684 location \u6307\u4EE4\u7684\u4F5C\u7528\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u7684 URI \u6765\u6267\u884C\u4E0D\u540C\u7684\u5E94\u7528\uFF0CURI \u5C31\u662F\u6839\u636E\u7528\u6237\u8BF7\u6C42\u5230\u7684\u7F51\u5740 URL \u8FDB\u884C\u5339\u914D\uFF0C\u5339\u914D\u6210\u529F\u4E86\u8FDB\u884C\u76F8\u5173\u7684\u64CD\u4F5C\u3002\u4E00\u4E2A location \u53EF\u4EE5\u7528 prefix string(\u524D\u7F00\u5B57\u7B26\u4E32)\u5B9A\u4E49\uFF0C\u4E5F\u53EF\u4EE5\u901A\u8FC7 regular expression\uFF08\u6B63\u5219\u8868\u8FBE\u5F0F\u6765\u5B9A\u4E49\uFF09\u3002\u901A\u4FD7\u7684\u8BF4\u4E5F\u5C31\u662F\uFF1A\u6211\u4EEC\u53EF\u4EE5\u901A\u8FC7\u4F7F\u7528\u4E0D\u540C\u7684\u524D\u7F00\uFF0C\u8868\u8FBE\u4E0D\u540C\u7684\u542B\u4E49\uFF0C\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location</p>
+<!-- more -->
+<h2 id="location" tabindex="-1"><a class="header-anchor" href="#location" aria-hidden="true">#</a> location</h2>
+<p>\u2003\u5BF9\u4E8E\u4E0D\u540C\u7684\u524D\u7F00\u53EF\u4EE5\u5206\u4E3A\u4E24\u5927\u7C7B\uFF1A\u666E\u901A location \u548C\u6B63\u5219 location\u3002\u7B26\u53F7\uFF1A\u201D~\u201D\u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u5E76\u4E14\u533A\u5206\u5927\u5C0F\u5199\u3002\u7B26\u53F7\uFF1A\u201C~*\u201D\u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u4F46\u4E0D\u533A\u5206\u5927\u5C0F\u5199\u3002Nginx \u670D\u52A1\u5668\u4F1A\u9996\u5148\u4F1A\u68C0\u67E5\u591A\u4E2A location \u4E2D\u662F\u5426\u6709\u666E\u901A\u7684 uri \u5339\u914D\uFF0C\u5982\u679C\u6709\u591A\u4E2A\u5339\u914D\uFF0C\u4F1A\u5148\u8BB0\u4F4F\u5339\u914D\u5EA6\u6700\u9AD8\u7684\u90A3\u4E2A\u3002\u7136\u540E\u518D\u68C0\u67E5\u6B63\u5219\u5339\u914D\uFF0C\u8FD9\u91CC\u5207\u8BB0\u6B63\u5219\u5339\u914D\u662F\u6709\u987A\u5E8F\u7684\uFF0C\u4ECE\u4E0A\u5230\u4E0B\u4F9D\u6B21\u5339\u914D\uFF0C\u4E00\u65E6\u5339\u914D\u6210\u529F\uFF0C\u5219\u7ED3\u675F\u68C0\u67E5\uFF0C\u5E76\u5C31\u4F1A\u4F7F\u7528\u8FD9\u4E2A location \u5757\u5904\u7406\u6B64\u8BF7\u6C42\u3002\u5982\u679C\u6B63\u5219\u5339\u914D\u5168\u90E8\u5931\u8D25\uFF0C\u5C31\u4F1A\u4F7F\u7528\u521A\u624D\u8BB0\u5F55\u666E\u901A uri \u5339\u914D\u5EA6\u6700\u9AD8\u7684\u90A3\u4E2A location \u5757\u5904\u7406\u6B64\u8BF7\u6C42\u3002\u5F53\u666E\u901A\u5339\u914D\u7684\u6700\u957F\u524D\u7F00\u5339\u914D\u6709\u7B26\u53F7\u201C^~\u201D\u7684\u65F6\u5019\uFF0C\u5C31\u4E0D\u4F1A\u5728\u5339\u914D\u6B63\u5219\u3002\u76F4\u63A5\u4F7F\u7528\u5F53\u524D\u5339\u914D\u7684\u8FD9\u4E2A location \u5757\u5904\u7406\u6B64\u8BF7\u6C42\u3002\u4F7F\u7528\u7B26\u53F7\u201C=\u201D\u4FEE\u9970\u7B26\u53EF\u4EE5\u5B9A\u4E49\u4E00\u4E2A\u7CBE\u786E\u5339\u914D\u7684 URI \u548C\u4F4D\u7F6E\uFF0C\u5982\u679C\u627E\u5230\u4E86\u4E00\u4E2A\u7CBE\u786E\u7684\u5339\u914D\uFF0C\u5219\u641C\u7D22\u7EC8\u6B62\uFF0C\u4F8B\u5982\uFF0C\u5982\u679C\u4E00\u4E2A\u201D/\u201D\u8BF7\u6C42\u9891\u7E41\u53D1\u751F\uFF0C\u5B9A\u4E49\u201Clocation =/\u201D\u5C06\u52A0\u5FEB\u8FD9\u4E9B\u8BF7\u6C42\u7684\u5904\u7406\uFF0C\u4E00\u65E6\u7CBE\u786E\u5339\u914D\u53EA\u6709\u5C31\u7ED3\u675F\uFF0C\u8FD9\u6837\u7684 location \u663E\u7136\u4E0D\u80FD\u5305\u542B\u5D4C\u5957 location\u3002</p>
+<p>\u8FD9\u91CC\u6211\u4EEC\u8BF4\u4E00\u4E0B location / {} \u548C location =/ {}\u7684\u533A\u522B\uFF1A</p>
+<p>\u201Clocation / {}\u201D\u662F\u666E\u901A\u7684\u6700\u5927\u524D\u7F00\u5339\u914D\uFF0C\u4EFB\u4F55\u7684 uri \u80AF\u5B9A\u662F\u4EE5\u201C/\u201D\u5F00\u5934\uFF0C\u6240\u4EE5 location / {} \u53EF\u4EE5\u8BF4\u662F\u9ED8\u8BA4\u5339\u914D\uFF0C\u5F53\u5176\u4ED6\u90FD\u4E0D\u5339\u914D\u4E86\uFF0C\u5219\u5339\u914D\u9ED8\u8BA4\u5339\u914D\u3002<br>
+\u6839\u636E\u4E0A\u8FF0\u5B98\u7F51\u5185\u5BB9\u8FDB\u884C\u603B\u7ED3
+a. \u201D=\u201D\u7528\u4E8E\u666E\u901A uri \u524D\uFF0C\u8981\u6C42\u7CBE\u786E\u5339\u914D\uFF0C\u5982\u679C\u5339\u914D\u6210\u529F\uFF0C\u5219\u505C\u6B62\u641C\u7D22\u5E76\u7528\u5F53\u524D location \u5904\u7406\u6B64\u8BF7\u6C42</p>
+<p>b. \u201D~\u201D \u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u5E76\u4E14\u533A\u5206\u5927\u5C0F\u5199</p>
+<p>c. \u201C~*\u201D\u8868\u793A uri \u5305\u542B\u6B63\u5219\uFF0C\u4F46\u4E0D\u533A\u5206\u5927\u5C0F\u5199</p>
+<p>d. \u201D^~\u201D\u8868\u793A\u5728\u666E\u901A uri \u524D\u8981\u6C42 Nginx \u670D\u52A1\u5668\u627E\u5230\u666E\u901A uri \u5339\u914D\u5EA6\u6700\u9AD8\u7684\u90A3\u4E2A location \u540E\uFF0C\u7ACB\u5373\u5904\u7406\u6B64\u8BF7\u6C42\uFF0C\u5E76\u4E0D\u518D\u8FDB\u884C\u6B63\u5219\u5339\u914D\u3002</p>
+<p>e. \u201D^~\u201D\u548C\u201C=\u201D\u90FD\u53EF\u4EE5\u963B\u6B62\u7EE7\u7EED\u5339\u914D\u6B63\u5219 location \u4E24\u8005\u7684\u533A\u522B\uFF1A\u201C^~\u201D\u4F9D\u7136\u9075\u5B88\u6700\u5927\u524D\u7F00\u539F\u5219\uFF0C\u7136\u540E\u201C=\u201D\u662F\u9700\u8981\u4E25\u683C\u5339\u914D\u3002</p>
+<p>\u6CE8\u610F\uFF1A\u5982\u679C\u662F\u666E\u901A uri \u5339\u914D\uFF0C\u8FD9\u4E2A\u65F6\u5019\u662F\u6CA1\u6709\u987A\u5E8F\u7684\uFF0C\u4F46\u662F\u6B63\u5219\u5339\u914D\u5219\u662F\u6709\u987A\u5E8F\u7684\uFF0C\u662F\u4ECE\u4E0A\u5230\u4E0B\u4F9D\u6B21\u5339\u914D\uFF0C\u4E00\u65E6\u6709\u5339\u914D\u6210\u529F\uFF0C\u5219\u505C\u6B62\u540E\u9762\u7684\u5339\u914D\u3002</p>
+<h2 id="location-\u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE" tabindex="-1"><a class="header-anchor" href="#location-\u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE" aria-hidden="true">#</a> location \u5339\u914D\u89C4\u5219\u987A\u5E8F\u56FE</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/AnyFork/blog-images/markdown/202203141144181.png" alt=""></p>
+<p>\u6587\u7AE0\u53C2\u8003\u6765\u6E90\uFF1A<a href="https://www.cnblogs.com/zhaof/p/5945576.html" target="_blank" rel="noopener noreferrer">https://www.cnblogs.com/zhaof/p/5945576.html<ExternalLinkIcon/></a></p>
+`,date:"2022-03-14",deps:[],links:[],pathInferred:"/posts/devops/nginx/location.html",pathLocale:"/",permalink:null,routeMeta:{title:"Nginx location\u5339\u914D\u89C4\u5219"},sfcBlocks:[],slug:"location",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/nginx/location.md",filePathRelative:"posts/devops/nginx/location.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/location.html.vue",componentFilePathRelative:"pages/posts/devops/nginx/location.html.vue",componentFileChunkName:"v-267068b2",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/location.html.js",dataFilePathRelative:"pages/posts/devops/nginx/location.html.js",dataFileChunkName:"v-267068b2",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/nginx/location.html",htmlFilePathRelative:"posts/devops/nginx/location.html"},title:"Nginx location\u5339\u914D\u89C4\u5219"},["/posts/devops/nginx/location","/posts/devops/nginx/location.md"]],["v-147a0632","/posts/devops/nginx/log.html",{_blog:{data:{key:"v-147a0632",path:"/posts/devops/nginx/log.html",title:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3",lang:"zh-CN",frontmatter:{title:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3",date:"2022-03-14T12:02:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201036989.jpg",summary:`\u2003Nginx \u65E5\u5FD7\u5BF9\u4E8E\u7EDF\u8BA1\u3001\u7CFB\u7EDF\u670D\u52A1\u6392\u9519\u5F88\u6709\u7528\u3002Nginx \u65E5\u5FD7\u4E3B\u8981\u5206\u4E3A\u4E24\u79CD\uFF1Aaccess_log(\u8BBF\u95EE\u65E5\u5FD7)\u548C error_log(\u9519\u8BEF\u65E5\u5FD7)\u3002\u901A\u8FC7\u8BBF\u95EE\u65E5\u5FD7\u6211\u4EEC\u53EF\u4EE5\u5F97\u5230\u7528\u6237\u7684 IP \u5730\u5740\u3001\u6D4F\u89C8\u5668\u7684\u4FE1\u606F\uFF0C\u8BF7\u6C42\u7684\u5904\u7406\u65F6\u95F4\u7B49\u4FE1\u606F\u3002\u9519\u8BEF\u65E5\u5FD7\u8BB0\u5F55\u4E86\u8BBF\u95EE\u51FA\u9519\u7684\u4FE1\u606F\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5B9A\u4F4D\u9519\u8BEF\u7684\u539F\u56E0\u3002\u672C\u6587\u5C06\u8BE6\u7EC6\u63CF\u8FF0\u4E00\u4E0B\u5982\u4F55\u914D\u7F6E Nginx \u65E5\u5FD7\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/log.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T12:02:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx \u65E5\u5FD7\u5BF9\u4E8E\u7EDF\u8BA1\u3001\u7CFB\u7EDF\u670D\u52A1\u6392\u9519\u5F88\u6709\u7528\u3002Nginx \u65E5\u5FD7\u4E3B\u8981\u5206\u4E3A\u4E24\u79CD\uFF1Aaccess_log(\u8BBF\u95EE\u65E5\u5FD7)\u548C error_log(\u9519\u8BEF\u65E5\u5FD7)\u3002\u901A\u8FC7\u8BBF\u95EE\u65E5\u5FD7\u6211\u4EEC\u53EF\u4EE5\u5F97\u5230\u7528\u6237\u7684 IP \u5730\u5740\u3001\u6D4F\u89C8\u5668\u7684\u4FE1\u606F\uFF0C\u8BF7\u6C42\u7684\u5904\u7406\u65F6\u95F4\u7B49\u4FE1\u606F\u3002\u9519\u8BEF\u65E5\u5FD7\u8BB0\u5F55\u4E86\u8BBF\u95EE\u51FA\u9519\u7684\u4FE1\u606F\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5B9A\u4F4D\u9519\u8BEF\u7684\u539F\u56E0\u3002\u672C\u6587\u5C06\u8BE6\u7EC6\u63CF\u8FF0\u4E00\u4E0B\u5982\u4F55\u914D\u7F6E Nginx \u65E5\u5FD7\u3002</p>
+`,headers:[{level:2,title:"\u8BBE\u7F6E access_log",slug:"\u8BBE\u7F6E-access-log",children:[{level:3,title:"\u4F7F\u7528 log_format \u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F",slug:"\u4F7F\u7528-log-format-\u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F",children:[]}]},{level:2,title:"\u8BBE\u7F6E error_log",slug:"\u8BBE\u7F6E-error-log",children:[]},{level:2,title:"open_log_file_cache",slug:"open-log-file-cache",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/nginx/log.md",readingTime:{minutes:4.41,words:1322},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/nginx/log.html`},key:"v-147a0632",path:"/posts/devops/nginx/log.html",title:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3",lang:"zh-CN",frontmatter:{title:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3",date:"2022-03-14T12:02:50.000Z",tag:["nginx"],category:["nginx","\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201036989.jpg",summary:`\u2003Nginx \u65E5\u5FD7\u5BF9\u4E8E\u7EDF\u8BA1\u3001\u7CFB\u7EDF\u670D\u52A1\u6392\u9519\u5F88\u6709\u7528\u3002Nginx \u65E5\u5FD7\u4E3B\u8981\u5206\u4E3A\u4E24\u79CD\uFF1Aaccess_log(\u8BBF\u95EE\u65E5\u5FD7)\u548C error_log(\u9519\u8BEF\u65E5\u5FD7)\u3002\u901A\u8FC7\u8BBF\u95EE\u65E5\u5FD7\u6211\u4EEC\u53EF\u4EE5\u5F97\u5230\u7528\u6237\u7684 IP \u5730\u5740\u3001\u6D4F\u89C8\u5668\u7684\u4FE1\u606F\uFF0C\u8BF7\u6C42\u7684\u5904\u7406\u65F6\u95F4\u7B49\u4FE1\u606F\u3002\u9519\u8BEF\u65E5\u5FD7\u8BB0\u5F55\u4E86\u8BBF\u95EE\u51FA\u9519\u7684\u4FE1\u606F\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5B9A\u4F4D\u9519\u8BEF\u7684\u539F\u56E0\u3002\u672C\u6587\u5C06\u8BE6\u7EC6\u63CF\u8FF0\u4E00\u4E0B\u5982\u4F55\u914D\u7F6E Nginx \u65E5\u5FD7\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/nginx/log.html"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"nginx"}],["meta",{property:"article:published_time",content:"2022-03-14T12:02:50.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Nginx \u65E5\u5FD7\u5BF9\u4E8E\u7EDF\u8BA1\u3001\u7CFB\u7EDF\u670D\u52A1\u6392\u9519\u5F88\u6709\u7528\u3002Nginx \u65E5\u5FD7\u4E3B\u8981\u5206\u4E3A\u4E24\u79CD\uFF1Aaccess_log(\u8BBF\u95EE\u65E5\u5FD7)\u548C error_log(\u9519\u8BEF\u65E5\u5FD7)\u3002\u901A\u8FC7\u8BBF\u95EE\u65E5\u5FD7\u6211\u4EEC\u53EF\u4EE5\u5F97\u5230\u7528\u6237\u7684 IP \u5730\u5740\u3001\u6D4F\u89C8\u5668\u7684\u4FE1\u606F\uFF0C\u8BF7\u6C42\u7684\u5904\u7406\u65F6\u95F4\u7B49\u4FE1\u606F\u3002\u9519\u8BEF\u65E5\u5FD7\u8BB0\u5F55\u4E86\u8BBF\u95EE\u51FA\u9519\u7684\u4FE1\u606F\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5B9A\u4F4D\u9519\u8BEF\u7684\u539F\u56E0\u3002\u672C\u6587\u5C06\u8BE6\u7EC6\u63CF\u8FF0\u4E00\u4E0B\u5982\u4F55\u914D\u7F6E Nginx \u65E5\u5FD7\u3002</p>
+`,headers:[{level:2,title:"\u8BBE\u7F6E access_log",slug:"\u8BBE\u7F6E-access-log",children:[{level:3,title:"\u4F7F\u7528 log_format \u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F",slug:"\u4F7F\u7528-log-format-\u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F",children:[]}]},{level:2,title:"\u8BBE\u7F6E error_log",slug:"\u8BBE\u7F6E-error-log",children:[]},{level:2,title:"open_log_file_cache",slug:"open-log-file-cache",children:[]}],content:`---
+title: Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3
+date: 2022-03-14 12:02:50
+tag:
+  - nginx
+category:
+  - nginx
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202207201036989.jpg
+---
+
+&emsp;Nginx \u65E5\u5FD7\u5BF9\u4E8E\u7EDF\u8BA1\u3001\u7CFB\u7EDF\u670D\u52A1\u6392\u9519\u5F88\u6709\u7528\u3002Nginx \u65E5\u5FD7\u4E3B\u8981\u5206\u4E3A\u4E24\u79CD\uFF1Aaccess_log(\u8BBF\u95EE\u65E5\u5FD7)\u548C error_log(\u9519\u8BEF\u65E5\u5FD7)\u3002\u901A\u8FC7\u8BBF\u95EE\u65E5\u5FD7\u6211\u4EEC\u53EF\u4EE5\u5F97\u5230\u7528\u6237\u7684 IP \u5730\u5740\u3001\u6D4F\u89C8\u5668\u7684\u4FE1\u606F\uFF0C\u8BF7\u6C42\u7684\u5904\u7406\u65F6\u95F4\u7B49\u4FE1\u606F\u3002\u9519\u8BEF\u65E5\u5FD7\u8BB0\u5F55\u4E86\u8BBF\u95EE\u51FA\u9519\u7684\u4FE1\u606F\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5B9A\u4F4D\u9519\u8BEF\u7684\u539F\u56E0\u3002\u672C\u6587\u5C06\u8BE6\u7EC6\u63CF\u8FF0\u4E00\u4E0B\u5982\u4F55\u914D\u7F6E Nginx \u65E5\u5FD7\u3002
+
+<!-- more -->
+
+## \u8BBE\u7F6E access_log
+
+&emsp;\u8BBF\u95EE\u65E5\u5FD7\u4E3B\u8981\u8BB0\u5F55\u5BA2\u6237\u7AEF\u7684\u8BF7\u6C42\u3002\u5BA2\u6237\u7AEF\u5411 Nginx \u670D\u52A1\u5668\u53D1\u8D77\u7684\u6BCF\u4E00\u6B21\u8BF7\u6C42\u90FD\u8BB0\u5F55\u5728\u8FD9\u91CC\u3002\u5BA2\u6237\u7AEF IP\uFF0C\u6D4F\u89C8\u5668\u4FE1\u606F\uFF0Creferer\uFF0C\u8BF7\u6C42\u5904\u7406\u65F6\u95F4\uFF0C\u8BF7\u6C42 URL \u7B49\u90FD\u53EF\u4EE5\u5728\u8BBF\u95EE\u65E5\u5FD7\u4E2D\u5F97\u5230\u3002\u5F53\u7136\u5177\u4F53\u8981\u8BB0\u5F55\u54EA\u4E9B\u4FE1\u606F\uFF0C\u4F60\u53EF\u4EE5\u901A\u8FC7 log_format \u6307\u4EE4\u5B9A\u4E49\u3002
+
+\u8BED\u6CD5\u5982\u4E0B\uFF1A
+
+\`\`\`bash
+# \u8BBE\u7F6E\u8BBF\u95EE\u65E5\u5FD7
+access_log path [format [buffer=size] [gzip[=level]] [flush=time] [if=condition]];
+# \u5173\u95ED\u8BBF\u95EE\u65E5\u5FD7
+access_log off;
+\`\`\`
+
+- path \u6307\u5B9A\u65E5\u5FD7\u7684\u5B58\u653E\u4F4D\u7F6E\u3002
+- format \u6307\u5B9A\u65E5\u5FD7\u7684\u683C\u5F0F\u3002\u9ED8\u8BA4\u4F7F\u7528\u9884\u5B9A\u4E49\u7684 combined\u3002
+- buffer \u7528\u6765\u6307\u5B9A\u65E5\u5FD7\u5199\u5165\u65F6\u7684\u7F13\u5B58\u5927\u5C0F\u3002\u9ED8\u8BA4\u662F 64k\u3002
+- gzip \u65E5\u5FD7\u5199\u5165\u524D\u5148\u8FDB\u884C\u538B\u7F29\u3002\u538B\u7F29\u7387\u53EF\u4EE5\u6307\u5B9A\uFF0C\u4ECE 1 \u5230 9 \u6570\u503C\u8D8A\u5927\u538B\u7F29\u6BD4\u8D8A\u9AD8\uFF0C\u540C\u65F6\u538B\u7F29\u7684\u901F\u5EA6\u4E5F\u8D8A\u6162\u3002\u9ED8\u8BA4\u662F 1\u3002
+- flush \u8BBE\u7F6E\u7F13\u5B58\u7684\u6709\u6548\u65F6\u95F4\u3002\u5982\u679C\u8D85\u8FC7 flush \u6307\u5B9A\u7684\u65F6\u95F4\uFF0C\u7F13\u5B58\u4E2D\u7684\u5185\u5BB9\u5C06\u88AB\u6E05\u7A7A\u3002
+- if \u6761\u4EF6\u5224\u65AD\u3002\u5982\u679C\u6307\u5B9A\u7684\u6761\u4EF6\u8BA1\u7B97\u4E3A 0 \u6216\u7A7A\u5B57\u7B26\u4E32\uFF0C\u90A3\u4E48\u8BE5\u8BF7\u6C42\u4E0D\u4F1A\u5199\u5165\u65E5\u5FD7\u3002
+
+\u53E6\u5916\uFF0C\u8FD8\u6709\u4E00\u4E2A\u7279\u6B8A\u7684\u503C off\u3002\u5982\u679C\u6307\u5B9A\u4E86\u8BE5\u503C\uFF0C\u5F53\u524D\u4F5C\u7528\u57DF\u4E0B\u7684\u6240\u6709\u7684\u8BF7\u6C42\u65E5\u5FD7\u90FD\u88AB\u5173\u95ED\u3002  
+\u4F5C\u7528\u57DF\uFF1A\u53EF\u4EE5\u5E94\u7528 access_log \u6307\u4EE4\u7684\u4F5C\u7528\u57DF\u5206\u522B\u6709 http\uFF0Cserver\uFF0Clocation\uFF0Climit_except\u3002\u4E5F\u5C31\u662F\u8BF4\uFF0C\u5728\u8FD9\u51E0\u4E2A\u4F5C\u7528\u57DF\u5916\u4F7F\u7528\u8BE5\u6307\u4EE4\uFF0CNginx \u4F1A\u62A5\u9519\u3002  
+\u57FA\u672C\u7528\u6CD5\uFF1A
+
+\`\`\`bash
+#\u8BE5\u4F8B\u5B50\u6307\u5B9A\u65E5\u5FD7\u7684\u5199\u5165\u8DEF\u5F84\u4E3A/var/logs/nginx-access.log\uFF0C\u65E5\u5FD7\u683C\u5F0F\u4F7F\u7528\u9ED8\u8BA4\u7684combined\u3002
+access_log /var/logs/nginx-access.log
+#\u6216
+#\u8BE5\u4F8B\u5B50\u6307\u5B9A\u65E5\u5FD7\u7684\u5199\u5165\u8DEF\u5F84\u4E3A/var/logs/nginx-access.log\uFF0C\u65E5\u5FD7\u683C\u5F0F\u4F7F\u7528\u9ED8\u8BA4\u7684combined\uFF0C\u6307\u5B9A\u65E5\u5FD7\u7684\u7F13\u5B58\u5927\u5C0F\u4E3A32k\uFF0C\u65E5\u5FD7\u5199\u5165\u524D\u542F\u7528gzip\u8FDB\u884C\u538B\u7F29\uFF0C\u538B\u7F29\u6BD4\u4F7F\u7528\u9ED8\u8BA4\u503C1\uFF0C\u7F13\u5B58\u6570\u636E\u6709\u6548\u65F6\u95F4\u4E3A1\u5206\u949F\u3002
+access_log /var/logs/nginx-access.log buffer=32k gzip flush=1m
+\`\`\`
+
+### \u4F7F\u7528 log_format \u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F
+
+Nginx \u9884\u5B9A\u4E49\u4E86\u540D\u4E3A combined \u65E5\u5FD7\u683C\u5F0F\uFF0C\u5982\u679C\u6CA1\u6709\u660E\u786E\u6307\u5B9A\u65E5\u5FD7\u683C\u5F0F\u9ED8\u8BA4\u4F7F\u7528\u8BE5\u683C\u5F0F\uFF1A
+
+\`\`\`bash
+log_format combined '$remote_addr - $remote_user [$time_local] ''"$request" $status $body_bytes_sent ''"$http_referer" "$http_user_agent"';
+\`\`\`
+
+\u5982\u679C\u4E0D\u60F3\u4F7F\u7528 Nginx \u9884\u5B9A\u4E49\u7684\u683C\u5F0F\uFF0C\u53EF\u4EE5\u901A\u8FC7 log_format \u6307\u4EE4\u6765\u81EA\u5B9A\u4E49\uFF1A\`log_format name [escape=default|json] string ...; \`
+
+- name \u683C\u5F0F\u540D\u79F0\u3002\u5728 access_log \u6307\u4EE4\u4E2D\u5F15\u7528\u3002
+- escape \u8BBE\u7F6E\u53D8\u91CF\u4E2D\u7684\u5B57\u7B26\u7F16\u7801\u65B9\u5F0F\u662F json \u8FD8\u662F default\uFF0C\u9ED8\u8BA4\u662F default\u3002
+- string \u8981\u5B9A\u4E49\u7684\u65E5\u5FD7\u683C\u5F0F\u5185\u5BB9\u3002\u8BE5\u53C2\u6570\u53EF\u4EE5\u6709\u591A\u4E2A\u3002\u53C2\u6570\u4E2D\u53EF\u4EE5\u4F7F\u7528 Nginx \u53D8\u91CF\u3002
+
+\u4E0B\u9762\u6F14\u793A\u4E00\u4E0B\u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F\u7684\u4F7F\u7528:
+
+\`\`\`bash
+access_log /var/logs/nginx-access.log main
+log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                  '$status $body_bytes_sent "$http_referer" '
+                  '"$http_user_agent" "$http_x_forwarded_for"';
+
+\`\`\`
+
+## \u8BBE\u7F6E error_log
+
+\u9519\u8BEF\u65E5\u5FD7\u5728 Nginx \u4E2D\u662F\u901A\u8FC7 error_log \u6307\u4EE4\u5B9E\u73B0\u7684\u3002\u8BE5\u6307\u4EE4\u8BB0\u5F55\u670D\u52A1\u5668\u548C\u8BF7\u6C42\u5904\u7406\u8FC7\u7A0B\u4E2D\u7684\u9519\u8BEF\u4FE1\u606F\u3002\u914D\u7F6E\u9519\u8BEF\u65E5\u5FD7\u6587\u4EF6\u7684\u8DEF\u5F84\u548C\u65E5\u5FD7\u7EA7\u522B\uFF1A
+
+\`\`\`bash
+error_log file [level];
+Default:
+error_log logs/error.log error;
+\`\`\`
+
+\u7B2C\u4E00\u4E2A\u53C2\u6570\u6307\u5B9A\u65E5\u5FD7\u7684\u5199\u5165\u4F4D\u7F6E\u3002
+
+\u7B2C\u4E8C\u4E2A\u53C2\u6570\u6307\u5B9A\u65E5\u5FD7\u7684\u7EA7\u522B\u3002level \u53EF\u4EE5\u662F debug, info, notice, warn, error, crit, alert,emerg \u4E2D\u7684\u4EFB\u610F\u503C\u3002\u53EF\u4EE5\u770B\u5230\u5176\u53D6\u503C\u8303\u56F4\u662F\u6309\u7D27\u6025\u7A0B\u5EA6\u4ECE\u4F4E\u5230\u9AD8\u6392\u5217\u7684\u3002\u53EA\u6709\u65E5\u5FD7\u7684\u9519\u8BEF\u7EA7\u522B\u7B49\u4E8E\u6216\u9AD8\u4E8E level \u6307\u5B9A\u7684\u503C\u624D\u4F1A\u5199\u5165\u9519\u8BEF\u65E5\u5FD7\u4E2D\u3002\u9ED8\u8BA4\u503C\u662F error\u3002
+
+\u57FA\u672C\u7528\u6CD5\uFF1A\`error_log /var/logs/nginx/nginx-error.log\`\u3002\u5B83\u53EF\u4EE5\u914D\u7F6E\u5728\uFF1Amain\uFF0C http, mail, stream, server, location \u4F5C\u7528\u57DF\u3002\u4F8B\u5B50\u4E2D\u6307\u5B9A\u4E86\u9519\u8BEF\u65E5\u5FD7\u7684\u8DEF\u5F84\u4E3A\uFF1A/var/logs/nginx/nginx-error.log\uFF0C\u65E5\u5FD7\u7EA7\u522B\u4F7F\u7528\u9ED8\u8BA4\u7684 error
+
+## open_log_file_cache
+
+\u6BCF\u4E00\u6761\u65E5\u5FD7\u8BB0\u5F55\u7684\u5199\u5165\u90FD\u662F\u5148\u6253\u5F00\u6587\u4EF6\u518D\u5199\u5165\u8BB0\u5F55\uFF0C\u7136\u540E\u5173\u95ED\u65E5\u5FD7\u6587\u4EF6\u3002\u5982\u679C\u4F60\u7684\u65E5\u5FD7\u6587\u4EF6\u8DEF\u5F84\u4E2D\u4F7F\u7528\u4E86\u53D8\u91CF\uFF0C\u5982 access_log /var/logs/$host/nginx-access.log\uFF0C\u4E3A\u63D0\u9AD8\u6027\u80FD\uFF0C\u53EF\u4EE5\u4F7F\u7528 open_log_file_cache \u6307\u4EE4\u8BBE\u7F6E\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\u7684\u7F13\u5B58\u3002
+\u8BED\u6CD5\uFF1A\`open_log_file_cache max=N [inactive=time] [min_uses=N] [valid=time];\`
+
+- max \u8BBE\u7F6E\u7F13\u5B58\u4E2D\u6700\u591A\u5BB9\u7EB3\u7684\u6587\u4EF6\u63CF\u8FF0\u7B26\u6570\u91CF\uFF0C\u5982\u679C\u88AB\u5360\u6EE1\uFF0C\u91C7\u7528 LRU \u7B97\u6CD5\u5C06\u63CF\u8FF0\u7B26\u5173\u95ED\u3002
+- inactive \u8BBE\u7F6E\u7F13\u5B58\u5B58\u6D3B\u65F6\u95F4\uFF0C\u9ED8\u8BA4\u662F 10s\u3002
+- min_uses \u5728 inactive \u65F6\u95F4\u6BB5\u5185\uFF0C\u65E5\u5FD7\u6587\u4EF6\u6700\u5C11\u4F7F\u7528\u51E0\u6B21\uFF0C\u8BE5\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\u8BB0\u5165\u7F13\u5B58\uFF0C\u9ED8\u8BA4\u662F 1 \u6B21\u3002
+- valid\uFF1A\u8BBE\u7F6E\u591A\u4E45\u5BF9\u65E5\u5FD7\u6587\u4EF6\u540D\u8FDB\u884C\u68C0\u67E5\uFF0C\u770B\u662F\u5426\u53D1\u751F\u53D8\u5316\uFF0C\u9ED8\u8BA4\u662F 60s\u3002
+- off\uFF1A\u4E0D\u4F7F\u7528\u7F13\u5B58\u3002\u9ED8\u8BA4\u4E3A off\u3002
+
+\u57FA\u672C\u7528\u6CD5\uFF1A\`open_log_file_cache max=1000 inactive=20s valid=1m min_uses=2;\`\u3002\u5B83\u53EF\u4EE5\u914D\u7F6E\u5728 http\u3001server\u3001location \u4F5C\u7528\u57DF\u4E2D\u3002\u4F8B\u5B50\u4E2D\uFF0C\u8BBE\u7F6E\u7F13\u5B58\u6700\u591A\u7F13\u5B58 1000 \u4E2A\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\uFF0C20s \u5185\u5982\u679C\u7F13\u5B58\u4E2D\u7684\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\u81F3\u5C11\u88AB\u88AB\u8BBF\u95EE 2 \u6B21\uFF0C\u624D\u4E0D\u4F1A\u88AB\u7F13\u5B58\u5173\u95ED\u3002\u6BCF\u9694 1 \u5206\u949F\u68C0\u67E5\u7F13\u5B58\u4E2D\u7684\u6587\u4EF6\u63CF\u8FF0\u7B26\u7684\u6587\u4EF6\u540D\u662F\u5426\u8FD8\u5B58\u5728\u3002
+`,contentRendered:`<p>\u2003Nginx \u65E5\u5FD7\u5BF9\u4E8E\u7EDF\u8BA1\u3001\u7CFB\u7EDF\u670D\u52A1\u6392\u9519\u5F88\u6709\u7528\u3002Nginx \u65E5\u5FD7\u4E3B\u8981\u5206\u4E3A\u4E24\u79CD\uFF1Aaccess_log(\u8BBF\u95EE\u65E5\u5FD7)\u548C error_log(\u9519\u8BEF\u65E5\u5FD7)\u3002\u901A\u8FC7\u8BBF\u95EE\u65E5\u5FD7\u6211\u4EEC\u53EF\u4EE5\u5F97\u5230\u7528\u6237\u7684 IP \u5730\u5740\u3001\u6D4F\u89C8\u5668\u7684\u4FE1\u606F\uFF0C\u8BF7\u6C42\u7684\u5904\u7406\u65F6\u95F4\u7B49\u4FE1\u606F\u3002\u9519\u8BEF\u65E5\u5FD7\u8BB0\u5F55\u4E86\u8BBF\u95EE\u51FA\u9519\u7684\u4FE1\u606F\uFF0C\u53EF\u4EE5\u5E2E\u52A9\u6211\u4EEC\u5B9A\u4F4D\u9519\u8BEF\u7684\u539F\u56E0\u3002\u672C\u6587\u5C06\u8BE6\u7EC6\u63CF\u8FF0\u4E00\u4E0B\u5982\u4F55\u914D\u7F6E Nginx \u65E5\u5FD7\u3002</p>
+<!-- more -->
+<h2 id="\u8BBE\u7F6E-access-log" tabindex="-1"><a class="header-anchor" href="#\u8BBE\u7F6E-access-log" aria-hidden="true">#</a> \u8BBE\u7F6E access_log</h2>
+<p>\u2003\u8BBF\u95EE\u65E5\u5FD7\u4E3B\u8981\u8BB0\u5F55\u5BA2\u6237\u7AEF\u7684\u8BF7\u6C42\u3002\u5BA2\u6237\u7AEF\u5411 Nginx \u670D\u52A1\u5668\u53D1\u8D77\u7684\u6BCF\u4E00\u6B21\u8BF7\u6C42\u90FD\u8BB0\u5F55\u5728\u8FD9\u91CC\u3002\u5BA2\u6237\u7AEF IP\uFF0C\u6D4F\u89C8\u5668\u4FE1\u606F\uFF0Creferer\uFF0C\u8BF7\u6C42\u5904\u7406\u65F6\u95F4\uFF0C\u8BF7\u6C42 URL \u7B49\u90FD\u53EF\u4EE5\u5728\u8BBF\u95EE\u65E5\u5FD7\u4E2D\u5F97\u5230\u3002\u5F53\u7136\u5177\u4F53\u8981\u8BB0\u5F55\u54EA\u4E9B\u4FE1\u606F\uFF0C\u4F60\u53EF\u4EE5\u901A\u8FC7 log_format \u6307\u4EE4\u5B9A\u4E49\u3002</p>
+<p>\u8BED\u6CD5\u5982\u4E0B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u8BBE\u7F6E\u8BBF\u95EE\u65E5\u5FD7</span>
+access_log path <span class="token punctuation">[</span>format <span class="token punctuation">[</span>buffer<span class="token operator">=</span>size<span class="token punctuation">]</span> <span class="token punctuation">[</span>gzip<span class="token punctuation">[</span><span class="token operator">=</span>level<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token punctuation">[</span>flush<span class="token operator">=</span>time<span class="token punctuation">]</span> <span class="token punctuation">[</span>if<span class="token operator">=</span>condition<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token comment"># \u5173\u95ED\u8BBF\u95EE\u65E5\u5FD7</span>
+access_log off<span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>path \u6307\u5B9A\u65E5\u5FD7\u7684\u5B58\u653E\u4F4D\u7F6E\u3002</li>
+<li>format \u6307\u5B9A\u65E5\u5FD7\u7684\u683C\u5F0F\u3002\u9ED8\u8BA4\u4F7F\u7528\u9884\u5B9A\u4E49\u7684 combined\u3002</li>
+<li>buffer \u7528\u6765\u6307\u5B9A\u65E5\u5FD7\u5199\u5165\u65F6\u7684\u7F13\u5B58\u5927\u5C0F\u3002\u9ED8\u8BA4\u662F 64k\u3002</li>
+<li>gzip \u65E5\u5FD7\u5199\u5165\u524D\u5148\u8FDB\u884C\u538B\u7F29\u3002\u538B\u7F29\u7387\u53EF\u4EE5\u6307\u5B9A\uFF0C\u4ECE 1 \u5230 9 \u6570\u503C\u8D8A\u5927\u538B\u7F29\u6BD4\u8D8A\u9AD8\uFF0C\u540C\u65F6\u538B\u7F29\u7684\u901F\u5EA6\u4E5F\u8D8A\u6162\u3002\u9ED8\u8BA4\u662F 1\u3002</li>
+<li>flush \u8BBE\u7F6E\u7F13\u5B58\u7684\u6709\u6548\u65F6\u95F4\u3002\u5982\u679C\u8D85\u8FC7 flush \u6307\u5B9A\u7684\u65F6\u95F4\uFF0C\u7F13\u5B58\u4E2D\u7684\u5185\u5BB9\u5C06\u88AB\u6E05\u7A7A\u3002</li>
+<li>if \u6761\u4EF6\u5224\u65AD\u3002\u5982\u679C\u6307\u5B9A\u7684\u6761\u4EF6\u8BA1\u7B97\u4E3A 0 \u6216\u7A7A\u5B57\u7B26\u4E32\uFF0C\u90A3\u4E48\u8BE5\u8BF7\u6C42\u4E0D\u4F1A\u5199\u5165\u65E5\u5FD7\u3002</li>
+</ul>
+<p>\u53E6\u5916\uFF0C\u8FD8\u6709\u4E00\u4E2A\u7279\u6B8A\u7684\u503C off\u3002\u5982\u679C\u6307\u5B9A\u4E86\u8BE5\u503C\uFF0C\u5F53\u524D\u4F5C\u7528\u57DF\u4E0B\u7684\u6240\u6709\u7684\u8BF7\u6C42\u65E5\u5FD7\u90FD\u88AB\u5173\u95ED\u3002<br>
+\u4F5C\u7528\u57DF\uFF1A\u53EF\u4EE5\u5E94\u7528 access_log \u6307\u4EE4\u7684\u4F5C\u7528\u57DF\u5206\u522B\u6709 http\uFF0Cserver\uFF0Clocation\uFF0Climit_except\u3002\u4E5F\u5C31\u662F\u8BF4\uFF0C\u5728\u8FD9\u51E0\u4E2A\u4F5C\u7528\u57DF\u5916\u4F7F\u7528\u8BE5\u6307\u4EE4\uFF0CNginx \u4F1A\u62A5\u9519\u3002<br>
+\u57FA\u672C\u7528\u6CD5\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u8BE5\u4F8B\u5B50\u6307\u5B9A\u65E5\u5FD7\u7684\u5199\u5165\u8DEF\u5F84\u4E3A/var/logs/nginx-access.log\uFF0C\u65E5\u5FD7\u683C\u5F0F\u4F7F\u7528\u9ED8\u8BA4\u7684combined\u3002</span>
+access_log /var/logs/nginx-access.log
+<span class="token comment">#\u6216</span>
+<span class="token comment">#\u8BE5\u4F8B\u5B50\u6307\u5B9A\u65E5\u5FD7\u7684\u5199\u5165\u8DEF\u5F84\u4E3A/var/logs/nginx-access.log\uFF0C\u65E5\u5FD7\u683C\u5F0F\u4F7F\u7528\u9ED8\u8BA4\u7684combined\uFF0C\u6307\u5B9A\u65E5\u5FD7\u7684\u7F13\u5B58\u5927\u5C0F\u4E3A32k\uFF0C\u65E5\u5FD7\u5199\u5165\u524D\u542F\u7528gzip\u8FDB\u884C\u538B\u7F29\uFF0C\u538B\u7F29\u6BD4\u4F7F\u7528\u9ED8\u8BA4\u503C1\uFF0C\u7F13\u5B58\u6570\u636E\u6709\u6548\u65F6\u95F4\u4E3A1\u5206\u949F\u3002</span>
+access_log /var/logs/nginx-access.log <span class="token assign-left variable">buffer</span><span class="token operator">=</span>32k <span class="token function">gzip</span> <span class="token assign-left variable">flush</span><span class="token operator">=</span>1m
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="\u4F7F\u7528-log-format-\u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F" tabindex="-1"><a class="header-anchor" href="#\u4F7F\u7528-log-format-\u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F" aria-hidden="true">#</a> \u4F7F\u7528 log_format \u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F</h3>
+<p>Nginx \u9884\u5B9A\u4E49\u4E86\u540D\u4E3A combined \u65E5\u5FD7\u683C\u5F0F\uFF0C\u5982\u679C\u6CA1\u6709\u660E\u786E\u6307\u5B9A\u65E5\u5FD7\u683C\u5F0F\u9ED8\u8BA4\u4F7F\u7528\u8BE5\u683C\u5F0F\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>log_format combined <span class="token string">'$remote_addr - $remote_user [$time_local] '</span>'<span class="token string">"<span class="token variable">$request</span>"</span> <span class="token variable">$status</span> <span class="token variable">$body_bytes_sent</span> <span class="token string">''</span><span class="token string">"<span class="token variable">$http_referer</span>"</span> <span class="token string">"<span class="token variable">$http_user_agent</span>"</span>'<span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>\u5982\u679C\u4E0D\u60F3\u4F7F\u7528 Nginx \u9884\u5B9A\u4E49\u7684\u683C\u5F0F\uFF0C\u53EF\u4EE5\u901A\u8FC7 log_format \u6307\u4EE4\u6765\u81EA\u5B9A\u4E49\uFF1A<code v-pre>log_format name [escape=default|json] string ...; </code></p>
+<ul>
+<li>name \u683C\u5F0F\u540D\u79F0\u3002\u5728 access_log \u6307\u4EE4\u4E2D\u5F15\u7528\u3002</li>
+<li>escape \u8BBE\u7F6E\u53D8\u91CF\u4E2D\u7684\u5B57\u7B26\u7F16\u7801\u65B9\u5F0F\u662F json \u8FD8\u662F default\uFF0C\u9ED8\u8BA4\u662F default\u3002</li>
+<li>string \u8981\u5B9A\u4E49\u7684\u65E5\u5FD7\u683C\u5F0F\u5185\u5BB9\u3002\u8BE5\u53C2\u6570\u53EF\u4EE5\u6709\u591A\u4E2A\u3002\u53C2\u6570\u4E2D\u53EF\u4EE5\u4F7F\u7528 Nginx \u53D8\u91CF\u3002</li>
+</ul>
+<p>\u4E0B\u9762\u6F14\u793A\u4E00\u4E0B\u81EA\u5B9A\u4E49\u65E5\u5FD7\u683C\u5F0F\u7684\u4F7F\u7528:</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>access_log /var/logs/nginx-access.log main
+log_format  main  <span class="token string">'$remote_addr - $remote_user [$time_local] "$request" '</span>
+                  <span class="token string">'$status $body_bytes_sent "$http_referer" '</span>
+                  <span class="token string">'"$http_user_agent" "$http_x_forwarded_for"'</span><span class="token punctuation">;</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u8BBE\u7F6E-error-log" tabindex="-1"><a class="header-anchor" href="#\u8BBE\u7F6E-error-log" aria-hidden="true">#</a> \u8BBE\u7F6E error_log</h2>
+<p>\u9519\u8BEF\u65E5\u5FD7\u5728 Nginx \u4E2D\u662F\u901A\u8FC7 error_log \u6307\u4EE4\u5B9E\u73B0\u7684\u3002\u8BE5\u6307\u4EE4\u8BB0\u5F55\u670D\u52A1\u5668\u548C\u8BF7\u6C42\u5904\u7406\u8FC7\u7A0B\u4E2D\u7684\u9519\u8BEF\u4FE1\u606F\u3002\u914D\u7F6E\u9519\u8BEF\u65E5\u5FD7\u6587\u4EF6\u7684\u8DEF\u5F84\u548C\u65E5\u5FD7\u7EA7\u522B\uFF1A</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>error_log <span class="token function">file</span> <span class="token punctuation">[</span>level<span class="token punctuation">]</span><span class="token punctuation">;</span>
+Default:
+error_log logs/error.log error<span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u7B2C\u4E00\u4E2A\u53C2\u6570\u6307\u5B9A\u65E5\u5FD7\u7684\u5199\u5165\u4F4D\u7F6E\u3002</p>
+<p>\u7B2C\u4E8C\u4E2A\u53C2\u6570\u6307\u5B9A\u65E5\u5FD7\u7684\u7EA7\u522B\u3002level \u53EF\u4EE5\u662F debug, info, notice, warn, error, crit, alert,emerg \u4E2D\u7684\u4EFB\u610F\u503C\u3002\u53EF\u4EE5\u770B\u5230\u5176\u53D6\u503C\u8303\u56F4\u662F\u6309\u7D27\u6025\u7A0B\u5EA6\u4ECE\u4F4E\u5230\u9AD8\u6392\u5217\u7684\u3002\u53EA\u6709\u65E5\u5FD7\u7684\u9519\u8BEF\u7EA7\u522B\u7B49\u4E8E\u6216\u9AD8\u4E8E level \u6307\u5B9A\u7684\u503C\u624D\u4F1A\u5199\u5165\u9519\u8BEF\u65E5\u5FD7\u4E2D\u3002\u9ED8\u8BA4\u503C\u662F error\u3002</p>
+<p>\u57FA\u672C\u7528\u6CD5\uFF1A<code v-pre>error_log /var/logs/nginx/nginx-error.log</code>\u3002\u5B83\u53EF\u4EE5\u914D\u7F6E\u5728\uFF1Amain\uFF0C http, mail, stream, server, location \u4F5C\u7528\u57DF\u3002\u4F8B\u5B50\u4E2D\u6307\u5B9A\u4E86\u9519\u8BEF\u65E5\u5FD7\u7684\u8DEF\u5F84\u4E3A\uFF1A/var/logs/nginx/nginx-error.log\uFF0C\u65E5\u5FD7\u7EA7\u522B\u4F7F\u7528\u9ED8\u8BA4\u7684 error</p>
+<h2 id="open-log-file-cache" tabindex="-1"><a class="header-anchor" href="#open-log-file-cache" aria-hidden="true">#</a> open_log_file_cache</h2>
+<p>\u6BCF\u4E00\u6761\u65E5\u5FD7\u8BB0\u5F55\u7684\u5199\u5165\u90FD\u662F\u5148\u6253\u5F00\u6587\u4EF6\u518D\u5199\u5165\u8BB0\u5F55\uFF0C\u7136\u540E\u5173\u95ED\u65E5\u5FD7\u6587\u4EF6\u3002\u5982\u679C\u4F60\u7684\u65E5\u5FD7\u6587\u4EF6\u8DEF\u5F84\u4E2D\u4F7F\u7528\u4E86\u53D8\u91CF\uFF0C\u5982 access_log /var/logs/$host/nginx-access.log\uFF0C\u4E3A\u63D0\u9AD8\u6027\u80FD\uFF0C\u53EF\u4EE5\u4F7F\u7528 open_log_file_cache \u6307\u4EE4\u8BBE\u7F6E\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\u7684\u7F13\u5B58\u3002
+\u8BED\u6CD5\uFF1A<code v-pre>open_log_file_cache max=N [inactive=time] [min_uses=N] [valid=time];</code></p>
+<ul>
+<li>max \u8BBE\u7F6E\u7F13\u5B58\u4E2D\u6700\u591A\u5BB9\u7EB3\u7684\u6587\u4EF6\u63CF\u8FF0\u7B26\u6570\u91CF\uFF0C\u5982\u679C\u88AB\u5360\u6EE1\uFF0C\u91C7\u7528 LRU \u7B97\u6CD5\u5C06\u63CF\u8FF0\u7B26\u5173\u95ED\u3002</li>
+<li>inactive \u8BBE\u7F6E\u7F13\u5B58\u5B58\u6D3B\u65F6\u95F4\uFF0C\u9ED8\u8BA4\u662F 10s\u3002</li>
+<li>min_uses \u5728 inactive \u65F6\u95F4\u6BB5\u5185\uFF0C\u65E5\u5FD7\u6587\u4EF6\u6700\u5C11\u4F7F\u7528\u51E0\u6B21\uFF0C\u8BE5\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\u8BB0\u5165\u7F13\u5B58\uFF0C\u9ED8\u8BA4\u662F 1 \u6B21\u3002</li>
+<li>valid\uFF1A\u8BBE\u7F6E\u591A\u4E45\u5BF9\u65E5\u5FD7\u6587\u4EF6\u540D\u8FDB\u884C\u68C0\u67E5\uFF0C\u770B\u662F\u5426\u53D1\u751F\u53D8\u5316\uFF0C\u9ED8\u8BA4\u662F 60s\u3002</li>
+<li>off\uFF1A\u4E0D\u4F7F\u7528\u7F13\u5B58\u3002\u9ED8\u8BA4\u4E3A off\u3002</li>
+</ul>
+<p>\u57FA\u672C\u7528\u6CD5\uFF1A<code v-pre>open_log_file_cache max=1000 inactive=20s valid=1m min_uses=2;</code>\u3002\u5B83\u53EF\u4EE5\u914D\u7F6E\u5728 http\u3001server\u3001location \u4F5C\u7528\u57DF\u4E2D\u3002\u4F8B\u5B50\u4E2D\uFF0C\u8BBE\u7F6E\u7F13\u5B58\u6700\u591A\u7F13\u5B58 1000 \u4E2A\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\uFF0C20s \u5185\u5982\u679C\u7F13\u5B58\u4E2D\u7684\u65E5\u5FD7\u6587\u4EF6\u63CF\u8FF0\u7B26\u81F3\u5C11\u88AB\u88AB\u8BBF\u95EE 2 \u6B21\uFF0C\u624D\u4E0D\u4F1A\u88AB\u7F13\u5B58\u5173\u95ED\u3002\u6BCF\u9694 1 \u5206\u949F\u68C0\u67E5\u7F13\u5B58\u4E2D\u7684\u6587\u4EF6\u63CF\u8FF0\u7B26\u7684\u6587\u4EF6\u540D\u662F\u5426\u8FD8\u5B58\u5728\u3002</p>
+`,date:"2022-03-14",deps:[],links:[],pathInferred:"/posts/devops/nginx/log.html",pathLocale:"/",permalink:null,routeMeta:{title:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3"},sfcBlocks:[],slug:"log",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/nginx/log.md",filePathRelative:"posts/devops/nginx/log.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/log.html.vue",componentFilePathRelative:"pages/posts/devops/nginx/log.html.vue",componentFileChunkName:"v-147a0632",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/nginx/log.html.js",dataFilePathRelative:"pages/posts/devops/nginx/log.html.js",dataFileChunkName:"v-147a0632",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/nginx/log.html",htmlFilePathRelative:"posts/devops/nginx/log.html"},title:"Nginx\u65E5\u5FD7\u914D\u7F6E\u8BE6\u89E3"},["/posts/devops/nginx/log","/posts/devops/nginx/log.md"]],["v-614bc111","/posts/devops/redis/",{_blog:{data:{key:"v-614bc111",path:"/posts/devops/redis/",title:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",lang:"zh-CN",frontmatter:{title:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",date:"2022-04-22T15:53:03.000Z",tag:["Redis"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204221600458.jpg",sticky:6,summary:`\u2003Redis(Remote Dictionary Server)\uFF0C\u5373\u8FDC\u7A0B\u5B57\u5178\u670D\u52A1\uFF0C\u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u4F7F\u7528 ANSI C \u8BED\u8A00\u7F16\u5199\u3001\u652F\u6301\u7F51\u7EDC\u3001\u53EF\u57FA\u4E8E\u5185\u5B58\u4EA6\u53EF\u6301\u4E45\u5316\u7684\u65E5\u5FD7\u578B\u3001Key-Value \u6570\u636E\u5E93\uFF0C\u5E76\u63D0\u4F9B\u591A\u79CD\u8BED\u8A00\u7684 API\u3002redis \u7684\u5B98\u7F51\u5730\u5740\uFF0C\u975E\u5E38\u597D\u8BB0\uFF0C\u662F redis.io\u3002(\u57DF\u540D\u540E\u7F00 io \u5C5E\u4E8E\u56FD\u5BB6\u57DF\u540D\uFF0C\u662F british Indian Ocean territory\uFF0C\u5373\u82F1\u5C5E\u5370\u5EA6\u6D0B\u9886\u5730\uFF09\uFF0CVmware \u5728\u8D44\u52A9\u7740 redis \u9879\u76EE\u7684\u5F00\u53D1\u548C\u7EF4\u62A4\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/redis/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Redis"}],["meta",{property:"article:published_time",content:"2022-04-22T15:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Redis(Remote Dictionary Server)\uFF0C\u5373\u8FDC\u7A0B\u5B57\u5178\u670D\u52A1\uFF0C\u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u4F7F\u7528 ANSI C \u8BED\u8A00\u7F16\u5199\u3001\u652F\u6301\u7F51\u7EDC\u3001\u53EF\u57FA\u4E8E\u5185\u5B58\u4EA6\u53EF\u6301\u4E45\u5316\u7684\u65E5\u5FD7\u578B\u3001Key-Value \u6570\u636E\u5E93\uFF0C\u5E76\u63D0\u4F9B\u591A\u79CD\u8BED\u8A00\u7684 API\u3002redis \u7684\u5B98\u7F51\u5730\u5740\uFF0C\u975E\u5E38\u597D\u8BB0\uFF0C\u662F redis.io\u3002(\u57DF\u540D\u540E\u7F00 io \u5C5E\u4E8E\u56FD\u5BB6\u57DF\u540D\uFF0C\u662F british Indian Ocean territory\uFF0C\u5373\u82F1\u5C5E\u5370\u5EA6\u6D0B\u9886\u5730\uFF09\uFF0CVmware \u5728\u8D44\u52A9\u7740 redis \u9879\u76EE\u7684\u5F00\u53D1\u548C\u7EF4\u62A4\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001Redis \u7B80\u4ECB",slug:"\u4E00\u3001redis-\u7B80\u4ECB",children:[]},{level:2,title:"\u4E8C\u3001Redis \u5B89\u88C5",slug:"\u4E8C\u3001redis-\u5B89\u88C5",children:[{level:3,title:"1\u3001Yum \u65B9\u5F0F\u5B89\u88C5 Redis",slug:"_1\u3001yum-\u65B9\u5F0F\u5B89\u88C5-redis",children:[]},{level:3,title:"2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5 Redis",slug:"_2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5-redis",children:[]}]},{level:2,title:"\u4E09\u3001Redis \u76F8\u5173\u914D\u7F6E",slug:"\u4E09\u3001redis-\u76F8\u5173\u914D\u7F6E",children:[]},{level:2,title:"\u56DB\u3001Redis \u76F8\u5173\u547D\u4EE4",slug:"\u56DB\u3001redis-\u76F8\u5173\u547D\u4EE4",children:[]}],git:{updatedTime:1662283954e3,contributors:[{name:"anyfork",email:"874957743@qq.com",commits:1}]},filePathRelative:"posts/devops/redis/README.md",readingTime:{minutes:7.56,words:2269},copyright:`\u8457\u4F5C\u6743\u5F52\u5C0F\u7D2B\u5FF5\u6C81\u6240\u6709
+\u539F\u6587\u94FE\u63A5\uFF1Ahttps://anyfork.github.io/blog-docs/blog-docs/posts/devops/redis/`},key:"v-614bc111",path:"/posts/devops/redis/",title:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",lang:"zh-CN",frontmatter:{title:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F",date:"2022-04-22T15:53:03.000Z",tag:["Redis"],category:["\u8FD0\u7EF4"],image:"https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204221600458.jpg",sticky:6,summary:`\u2003Redis(Remote Dictionary Server)\uFF0C\u5373\u8FDC\u7A0B\u5B57\u5178\u670D\u52A1\uFF0C\u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u4F7F\u7528 ANSI C \u8BED\u8A00\u7F16\u5199\u3001\u652F\u6301\u7F51\u7EDC\u3001\u53EF\u57FA\u4E8E\u5185\u5B58\u4EA6\u53EF\u6301\u4E45\u5316\u7684\u65E5\u5FD7\u578B\u3001Key-Value \u6570\u636E\u5E93\uFF0C\u5E76\u63D0\u4F9B\u591A\u79CD\u8BED\u8A00\u7684 API\u3002redis \u7684\u5B98\u7F51\u5730\u5740\uFF0C\u975E\u5E38\u597D\u8BB0\uFF0C\u662F redis.io\u3002(\u57DF\u540D\u540E\u7F00 io \u5C5E\u4E8E\u56FD\u5BB6\u57DF\u540D\uFF0C\u662F british Indian Ocean territory\uFF0C\u5373\u82F1\u5C5E\u5370\u5EA6\u6D0B\u9886\u5730\uFF09\uFF0CVmware \u5728\u8D44\u52A9\u7740 redis \u9879\u76EE\u7684\u5F00\u53D1\u548C\u7EF4\u62A4\u3002
+`,head:[["meta",{property:"og:url",content:"https://anyfork.github.io/blog-docs/posts/devops/redis/"}],["meta",{property:"og:site_name",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"og:title",content:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"}],["meta",{property:"og:type",content:"article"}],["meta",{property:"og:updated_time",content:"2022-09-04T09:32:34.000Z"}],["meta",{property:"og:locale",content:"zh-CN"}],["meta",{property:"article:author",content:"\u5C0F\u7D2B\u5FF5\u6C81"}],["meta",{property:"article:tag",content:"Redis"}],["meta",{property:"article:published_time",content:"2022-04-22T15:53:03.000Z"}],["meta",{property:"article:modified_time",content:"2022-09-04T09:32:34.000Z"}]]},excerpt:`<p>\u2003Redis(Remote Dictionary Server)\uFF0C\u5373\u8FDC\u7A0B\u5B57\u5178\u670D\u52A1\uFF0C\u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u4F7F\u7528 ANSI C \u8BED\u8A00\u7F16\u5199\u3001\u652F\u6301\u7F51\u7EDC\u3001\u53EF\u57FA\u4E8E\u5185\u5B58\u4EA6\u53EF\u6301\u4E45\u5316\u7684\u65E5\u5FD7\u578B\u3001Key-Value \u6570\u636E\u5E93\uFF0C\u5E76\u63D0\u4F9B\u591A\u79CD\u8BED\u8A00\u7684 API\u3002redis \u7684\u5B98\u7F51\u5730\u5740\uFF0C\u975E\u5E38\u597D\u8BB0\uFF0C\u662F redis.io\u3002(\u57DF\u540D\u540E\u7F00 io \u5C5E\u4E8E\u56FD\u5BB6\u57DF\u540D\uFF0C\u662F british Indian Ocean territory\uFF0C\u5373\u82F1\u5C5E\u5370\u5EA6\u6D0B\u9886\u5730\uFF09\uFF0CVmware \u5728\u8D44\u52A9\u7740 redis \u9879\u76EE\u7684\u5F00\u53D1\u548C\u7EF4\u62A4\u3002</p>
+`,headers:[{level:2,title:"\u4E00\u3001Redis \u7B80\u4ECB",slug:"\u4E00\u3001redis-\u7B80\u4ECB",children:[]},{level:2,title:"\u4E8C\u3001Redis \u5B89\u88C5",slug:"\u4E8C\u3001redis-\u5B89\u88C5",children:[{level:3,title:"1\u3001Yum \u65B9\u5F0F\u5B89\u88C5 Redis",slug:"_1\u3001yum-\u65B9\u5F0F\u5B89\u88C5-redis",children:[]},{level:3,title:"2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5 Redis",slug:"_2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5-redis",children:[]}]},{level:2,title:"\u4E09\u3001Redis \u76F8\u5173\u914D\u7F6E",slug:"\u4E09\u3001redis-\u76F8\u5173\u914D\u7F6E",children:[]},{level:2,title:"\u56DB\u3001Redis \u76F8\u5173\u547D\u4EE4",slug:"\u56DB\u3001redis-\u76F8\u5173\u547D\u4EE4",children:[]}],content:`---
+title: Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F
+date: 2022-4-22 15:53:03
+tag:
+  - Redis
+category:
+  - \u8FD0\u7EF4
+image: https://cdn.staticaly.com/gh/AnyFork/blog-images/main/markdown/202204221600458.jpg
+sticky: 6
+---
+
+&emsp;Redis(Remote Dictionary Server)\uFF0C\u5373\u8FDC\u7A0B\u5B57\u5178\u670D\u52A1\uFF0C\u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u4F7F\u7528 ANSI C \u8BED\u8A00\u7F16\u5199\u3001\u652F\u6301\u7F51\u7EDC\u3001\u53EF\u57FA\u4E8E\u5185\u5B58\u4EA6\u53EF\u6301\u4E45\u5316\u7684\u65E5\u5FD7\u578B\u3001Key-Value \u6570\u636E\u5E93\uFF0C\u5E76\u63D0\u4F9B\u591A\u79CD\u8BED\u8A00\u7684 API\u3002redis \u7684\u5B98\u7F51\u5730\u5740\uFF0C\u975E\u5E38\u597D\u8BB0\uFF0C\u662F redis.io\u3002(\u57DF\u540D\u540E\u7F00 io \u5C5E\u4E8E\u56FD\u5BB6\u57DF\u540D\uFF0C\u662F british Indian Ocean territory\uFF0C\u5373\u82F1\u5C5E\u5370\u5EA6\u6D0B\u9886\u5730\uFF09\uFF0CVmware \u5728\u8D44\u52A9\u7740 redis \u9879\u76EE\u7684\u5F00\u53D1\u548C\u7EF4\u62A4\u3002
+
+<!-- more -->
+
+## \u4E00\u3001Redis \u7B80\u4ECB
+
+
+&emsp;redis \u662F\u4E00\u4E2A key-value \u5B58\u50A8\u7CFB\u7EDF\u3002\u548C Memcached \u7C7B\u4F3C\uFF0C\u5B83\u652F\u6301\u5B58\u50A8\u7684 value \u7C7B\u578B\u76F8\u5BF9\u66F4\u591A\uFF0C\u5305\u62EC string(\u5B57\u7B26\u4E32)\u3001list(\u94FE\u8868)\u3001set(\u96C6\u5408)\u3001zset(sorted set --\u6709\u5E8F\u96C6\u5408)\u548C hash\uFF08\u54C8\u5E0C\u7C7B\u578B\uFF09\u3002\u8FD9\u4E9B\u6570\u636E\u7C7B\u578B\u90FD\u652F\u6301 push/pop\u3001add/remove \u53CA\u53D6\u4EA4\u96C6\u5E76\u96C6\u548C\u5DEE\u96C6\u53CA\u66F4\u4E30\u5BCC\u7684\u64CD\u4F5C\uFF0C\u800C\u4E14\u8FD9\u4E9B\u64CD\u4F5C\u90FD\u662F\u539F\u5B50\u6027\u7684\u3002\u5728\u6B64\u57FA\u7840\u4E0A\uFF0Credis \u652F\u6301\u5404\u79CD\u4E0D\u540C\u65B9\u5F0F\u7684\u6392\u5E8F\u3002\u4E0E memcached \u4E00\u6837\uFF0C\u4E3A\u4E86\u4FDD\u8BC1\u6548\u7387\uFF0C\u6570\u636E\u90FD\u662F\u7F13\u5B58\u5728\u5185\u5B58\u4E2D\u3002\u533A\u522B\u7684\u662F redis \u4F1A\u5468\u671F\u6027\u7684\u628A\u66F4\u65B0\u7684\u6570\u636E\u5199\u5165\u78C1\u76D8\u6216\u8005\u628A\u4FEE\u6539\u64CD\u4F5C\u5199\u5165\u8FFD\u52A0\u7684\u8BB0\u5F55\u6587\u4EF6\uFF0C\u5E76\u4E14\u5728\u6B64\u57FA\u7840\u4E0A\u5B9E\u73B0\u4E86 master-slave(\u4E3B\u4ECE)\u540C\u6B65\u3002<br>
+&emsp;Redis \u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 key-value \u6570\u636E\u5E93\u3002 redis \u7684\u51FA\u73B0\uFF0C\u5F88\u5927\u7A0B\u5EA6\u8865\u507F\u4E86 memcached \u8FD9\u7C7B key/value \u5B58\u50A8\u7684\u4E0D\u8DB3\uFF0C\u5728\u90E8 \u5206\u573A\u5408\u53EF\u4EE5\u5BF9\u5173\u7CFB\u6570\u636E\u5E93\u8D77\u5230\u5F88\u597D\u7684\u8865\u5145\u4F5C\u7528\u3002\u5B83\u63D0\u4F9B\u4E86 Java\uFF0CC/C++\uFF0CC#\uFF0CPHP\uFF0CJavaScript\uFF0CPerl\uFF0CObject-C\uFF0CPython\uFF0CRuby\uFF0CErlang \u7B49\u5BA2\u6237\u7AEF\uFF0C\u4F7F\u7528\u5F88\u65B9\u4FBF\u3002<br>
+&emsp;Redis \u652F\u6301\u4E3B\u4ECE\u540C\u6B65\u3002\u6570\u636E\u53EF\u4EE5\u4ECE\u4E3B\u670D\u52A1\u5668\u5411\u4EFB\u610F\u6570\u91CF\u7684\u4ECE\u670D\u52A1\u5668\u4E0A\u540C\u6B65\uFF0C\u4ECE\u670D\u52A1\u5668\u53EF\u4EE5\u662F\u5173\u8054\u5176\u4ED6\u4ECE\u670D\u52A1\u5668\u7684\u4E3B\u670D\u52A1\u5668\u3002\u8FD9\u4F7F\u5F97 Redis \u53EF\u6267\u884C\u5355\u5C42\u6811\u590D\u5236\u3002\u5B58\u76D8\u53EF\u4EE5\u6709\u610F\u65E0\u610F\u7684\u5BF9\u6570\u636E\u8FDB\u884C\u5199\u64CD\u4F5C\u3002\u7531\u4E8E\u5B8C\u5168\u5B9E\u73B0\u4E86\u53D1\u5E03/\u8BA2\u9605\u673A\u5236\uFF0C\u4F7F\u5F97\u4ECE\u6570\u636E\u5E93\u5728\u4EFB\u4F55\u5730\u65B9\u540C\u6B65\u6811\u65F6\uFF0C\u53EF\u8BA2\u9605\u4E00\u4E2A\u9891\u9053\u5E76\u63A5\u6536\u4E3B\u670D\u52A1\u5668\u5B8C\u6574\u7684\u6D88\u606F\u53D1\u5E03\u8BB0\u5F55\u3002\u540C\u6B65\u5BF9\u8BFB\u53D6\u64CD\u4F5C\u7684\u53EF\u6269\u5C55\u6027\u548C\u6570\u636E\u5197\u4F59\u5F88\u6709\u5E2E\u52A9\u3002
+
+:::tip
+1\u3001Reids \u5B98\u7F51\u5730\u5740\uFF1A<https://redis.io/><br>
+2\u3001Redis \u4E0B\u8F7D\u5730\u5740\uFF1A<https://redis.io/download/><br>
+3\u3001redis \u5386\u53F2\u7248\u672C\u5730\u5740\uFF1A<https://download.redis.io/releases/><br>
+:::
+
+## \u4E8C\u3001Redis \u5B89\u88C5
+
+&emsp;\u672C\u6587\u4E3B\u8981\u8BB2\u8FF0\`yum\`\u5B89\u88C5\uFF0C\u6E90\u7801\u5B89\u88C5\u548C \`Docker\` \u5B89\u88C5 3 \u79CD\u65B9\u5F0F\u3002\u63A8\u8350\u4F7F\u7528\u6E90\u7801\u6216\u8005 docker \u65B9\u5F0F\u5B89\u88C5 Redis\uFF0C\u53EF\u4EE5\u9009\u62E9\u6BD4\u8F83\u65B0\u800C\u4E14\u7A33\u5B9A\u7684\u7248\u672C\u3002
+
+### 1\u3001Yum \u65B9\u5F0F\u5B89\u88C5 Redis
+
+\`yum\`\u65B9\u5F0F\u5B89\u88C5\u8F6F\u4EF6\uFF0C\u6BD4\u8F83\u65B9\u4FBF\uFF0C\u5FEB\u6377\uFF0C\u4E0D\u7528\u8003\u8651\u5B89\u88C5\u4F9D\u8D56\u5305\uFF0C\u65E0\u9700\u624B\u52A8\u7F16\u8BD1\uFF0C\u4F46\u65E0\u6CD5\u4EBA\u4E3A\u5E72\u9884\u5B89\u88C5\u8FC7\u7A0B\u4EE5\u53CA\u8F6F\u4EF6\u5B89\u88C5\u4F4D\u7F6E\u3002\u76F8\u5173\`yum\`\u7528\u6CD5\u8BF7\u53C2\u8003\uFF1A\u3002
+
+- **\u4E0B\u8F7D epel \u4ED3\u5E93**
+
+\`\`\`bash
+yum install epel-release -y
+\`\`\`
+
+- **\u4E0B\u8F7D redis \u6570\u636E\u5E93**
+
+\`\`\`bash
+yum install redis -y
+\`\`\`
+
+- **\u542F\u52A8 Redis \u670D\u52A1**
+
+\`\`\`bash
+systemctl start redis
+\`\`\`
+
+- **Redis \u670D\u52A1\u5F00\u673A\u81EA\u542F\u52A8**
+
+\`\`\`bash
+systemctl enable redis
+\u6216
+chkconfig redis on
+\`\`\`
+
+- **\u5F00\u653E\u7AEF\u53E3**
+
+\`\`\`bash
+#\u5F00\u653E6379\u7AEF\u53E3
+firewall-cmd --zone=public --add-port=6379/tcp --permanent
+#\u914D\u7F6E\u7ACB\u5373\u751F\u6548
+firewall-cmd --reload
+\`\`\`
+
+- **Redis \u670D\u52A1\u5E38\u89C1\u547D\u4EE4**
+
+\`\`\`bash
+#\u67E5\u770B\u670D\u52A1\u72B6\u6001
+systemctl status redis
+#\u505C\u6B62\u670D\u52A1
+systemctl stop redis
+#\u91CD\u542F\u670D\u52A1
+systemctl restart redis
+\`\`\`
+
+### 2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5 Redis
+
+- **\u4E0B\u8F7D Redis \u6E90\u7801\u5305**
+  \u9009\u62E9\u4E00\u4E2A\u7A33\u5B9A\u7248\u672C\uFF1A<https://download.redis.io/releases/>
+
+\`\`\`bash
+#\u9ED8\u8BA4\u4E0B\u8F7D\u5B89\u88C5\u5230/opt\u76EE\u5F55
+cd /opt/
+#\u76EE\u524DRedis-6.2.6\u662F\u6700\u65B0\u7684\u7A33\u5B9A\u7248\u672C\uFF1B
+wget https://download.redis.io/releases/redis-6.2.6.tar.gz
+\`\`\`
+
+- **\u89E3\u538B\u5E76\u91CD\u547D\u540D**
+
+\`\`\`bash
+# \u89E3\u538B\u7F29
+tar -zxvf redis-6.2.6.tar.gz
+# \u91CD\u547D\u540D
+mv redis-6.2.6.tar.gz redis
+# \u5220\u9664\u538B\u7F29\u5305
+rm -rf redis-6.2.6.tar.gz
+\`\`\`
+
+- **\u7F16\u8BD1**
+
+\`\`\`bash
+#\u8FDB\u5165\u76EE\u5F55
+cd redis
+#\u7F16\u8BD1,\u5982\u679C\u62A5\u9519\uFF0C\u9700\u8981\u5B89\u88C5gcc\u73AF\u5883
+make
+\`\`\`
+
+- **\u5B89\u88C5**
+
+&emsp;\u5173\u952E\u5B57 \`PREFIX\`\u7684\u4F5C\u7528\u662F\u7F16\u8BD1\u7684\u65F6\u5019\u7528\u4E8E\u6307\u5B9A\u7A0B\u5E8F\u5B58\u653E\u7684\u8DEF\u5F84\u3002\u6BD4\u5982\u6211\u4EEC\u73B0\u5728\u5C31\u662F\u6307\u5B9A\u4E86 redis \u5FC5\u987B\u5B58\u653E\u5728/opt/redis \u76EE\u5F55\u3002\u5047\u8BBE\u4E0D\u6DFB\u52A0\u8BE5\u5173\u952E\u5B57 Linux \u4F1A\u5C06\u53EF\u6267\u884C\u6587\u4EF6\u5B58\u653E\u5728/usr/local/bin \u76EE\u5F55\uFF0C\u5E93\u6587\u4EF6\u4F1A\u5B58\u653E\u5728/usr/local/lib \u76EE\u5F55\u3002\u914D\u7F6E\u6587\u4EF6\u4F1A\u5B58\u653E\u5728/usr/local/etc \u76EE\u5F55\u3002\u5176\u4ED6\u7684\u8D44\u6E90\u6587\u4EF6\u4F1A\u5B58\u653E\u5728 usr/local/share \u76EE\u5F55\u3002\u8FD9\u91CC\u6307\u5B9A\u53F7\u76EE\u5F55\u4E5F\u65B9\u4FBF\u540E\u7EED\u7684\u5378\u8F7D\uFF0C\u540E\u7EED\u76F4\u63A5 rm -rf /opt/redis \u5373\u53EF\u5220\u9664 redis
+
+\`\`\`bash
+make PREFIX=/opt/redis install
+\`\`\`
+
+- **\u542F\u52A8 Redis**
+
+&emsp;\u4E8C\u8FDB\u5236\u6587\u4EF6\u662F\u7F16\u8BD1\u5B89\u88C5\u5B8C\u6210\u540E\u5728 src \u4E0B\u9762\u7684 bin \u76EE\u5F55\uFF0C\u901A\u8FC7\u4E0B\u9762\u7684\u547D\u4EE4\u542F\u52A8 Redis \u670D\u52A1
+
+\`\`\`bash
+./bin/redis-server ./redis.conf
+\`\`\`
+
+- **\u5F00\u653E\u7AEF\u53E3**
+
+\`\`\`bash
+#\u5F00\u653E6379\u7AEF\u53E3
+firewall-cmd --zone=public --add-port=6379/tcp --permanent
+#\u914D\u7F6E\u7ACB\u5373\u751F\u6548
+firewall-cmd --reload
+\`\`\`
+
+- **\u914D\u7F6E Redis \u670D\u52A1**
+
+&emsp;Redis \u5B89\u88C5\u5B8C\u6210\u540E\uFF0C\u6BCF\u6B21\u542F\u52A8\u6216\u8005\u505C\u6B62\u90FD\u9700\u8981\u8FDB\u5165\u5B89\u88C5\u76EE\u5F55\u4E0B\u6267\u884C\u547D\u4EE4\uFF0C\u76F8\u5BF9\u6BD4\u8F83\u9EBB\u70E6\uFF0C\u53EF\u4EE5\u901A\u8FC7\u4E0B\u9762\u65B9\u6CD5\uFF0C\u914D\u7F6E Redis \u670D\u52A1\uFF0C\u4E0B\u6B21\u542F\u52A8\u548C\u505C\u6B62\u975E\u5E38\u7B80\u5355\u3002<br>
+1\u3001\u5728 redis \u76EE\u5F55\u4E0B\u627E\u5230 utils/redis_init_script \u590D\u5236\u5230 /etc/init.d/redis \u6253\u5F00\u6587\u4EF6\u8FDB\u884C\u4FEE\u6539
+
+\`\`\`bash
+cp /opt/redis/redis_init_script /etc/init.d/redis
+\`\`\`
+
+2\u3001\u8FDB\u5165/etc/init.d,\u7F16\u8F91\u914D\u7F6E\u6587\u4EF6 redis
+
+\`\`\`bash
+cd /etc/init.d/
+vim redis
+#\u4EE3\u7801\u5982\u4E0B
+#!/bin/sh
+REDISPORT=6379
+EXEC=/opt/redis/bin/redis-server
+CLIEXEC=/opt/redis/bin/redis-cli
+
+PIDFILE=/var/run/redis_\${REDISPORT}.pid
+CONF="/opt/redis/\${REDISPORT}.conf"
+
+case "$1" in
+    start)
+        if [ -f $PIDFILE ]
+        then
+                echo "$PIDFILE exists, process is already running or crashed"
+        else
+                echo "Starting Redis server..."
+                $EXEC $CONF
+        fi
+        ;;
+    stop)
+        if [ ! -f $PIDFILE ]
+        then
+                echo "$PIDFILE does not exist, process is not running"
+        else
+                PID=$(cat $PIDFILE)
+                echo "Stopping ..."
+                $CLIEXEC -p $REDISPORT shutdown
+                while [ -x /proc/\${PID} ]
+                do
+                    echo "Waiting for Redis to shutdown ..."
+                    sleep 1
+                done
+                echo "Redis stopped"
+        fi
+        ;;
+    *)
+        echo "Please use start or stop as first argument"
+        ;;
+esac
+\`\`\`
+
+\u4E3B\u8981\u7F16\u8F91\u524D 4 \u884C\`redis-server,redis-cli,redis.conf,pdi\`\u6587\u4EF6\u771F\u5B9E\u5B89\u88C5\u8DEF\u5F84\uFF0C\u7F16\u8F91\u5B8C\uFF0C\u4FDD\u5B58\u9000\u51FA\u3002
+
+- **\u6587\u4EF6\u6388\u6743**
+
+\`\`\`bash
+#/etc/init.d/redis\u6587\u4EF6\u8D4B\u4E88\u53EF\u6267\u884C\u6743\u9650\u3002
+chmod +x /etc/init.d/redis
+\`\`\`
+
+- **\u8BBE\u7F6E\u5F00\u673A\u81EA\u542F\u52A8**
+
+\u5728 /etc/init.d/\u76EE\u5F55\u4E0B\u6267\u884C\u4EE5\u4E0B\u547D\u4EE4
+
+\`\`\`bash
+#\u8BBE\u7F6E\u5F00\u673A\u81EA\u542F\u52A8
+chkconfig redis on
+#\u5173\u95ED\u5F00\u673A\u81EA\u542F\u52A8
+chkconfig redis off
+\`\`\`
+
+- **\u542F\u52A8\u505C\u6B62\u547D\u4EE4**
+
+\`\`\`bash
+#\u5F00\u542Fredis\u670D\u52A1
+service redis start
+#\u5173\u95EDredis\u670D\u52A1
+service redis stop
+\`\`\`
+
+## \u4E09\u3001Redis \u76F8\u5173\u914D\u7F6E
+
+Redis \u7684\u914D\u7F6E\u6587\u4EF6\u4F4D\u4E8E/opt/redis/\u76EE\u5F55\u4E0B\uFF0C\u53EF\u4EE5\u66F4\u6539\u914D\u7F6E\u6587\u4EF6\u53C2\u6570\uFF0C\u5E38\u7528\u53C2\u6570\u542B\u4E49\u5982\u4E0B\uFF1A
+| \u914D\u7F6E\u9879\u540D\u79F0 | \u914D\u7F6E\u9879\u503C\u8303\u56F4 | \u8BF4\u660E |
+| ---- | ---- | ---- |
+| daemonize | yes/no | yes \u8868\u793A\u542F\u7528\u5B88\u62A4\u8FDB\u7A0B\uFF0C\u9ED8\u8BA4\u662F no \u5373\u4E0D\u4EE5\u5B88\u62A4\u8FDB\u7A0B\u65B9\u5F0F\u8FD0\u884C\u3002\u5176\u4E2D Windows \u7CFB\u7EDF\u4E0B\u4E0D\u652F\u6301\u542F\u7528\u5B88\u62A4\u8FDB\u7A0B\u65B9\u5F0F\u8FD0\u884C |
+| port | | \u6307\u5B9A Redis \u76D1\u542C\u7AEF\u53E3\uFF0C\u9ED8\u8BA4\u7AEF\u53E3\u4E3A 6379 |
+| bind | | \u7ED1\u5B9A\u8BBF\u95EE Ip,\u9650\u5236\u9664\u7ED1\u5B9A IP \u5916\u7684\u5176\u4ED6 IP \u8BBF\u95EE\u3002\u5982\u679C\u4E0D\u9650\u5236\u53EF\u4EE5\u6CE8\u91CA\u6389\u6216\u8005 bind 0.0.0.0 \u3002\u8FD9\u4E2A\u5C5E\u6027\u548C\u4E0B\u9762\u7684 protected-mode \u63A7\u5236\u4E86\u662F\u5426\u53EF\u4EE5\u8FDC\u7A0B\u8BBF\u95EE |
+| protected-mode | yse/no | \u4FDD\u62A4\u6A21\u5F0F\uFF0C\u8BE5\u6A21\u5F0F\u63A7\u5236\u5916\u90E8\u7F51\u662F\u5426\u53EF\u4EE5\u8FDE\u63A5 redis \u670D\u52A1\uFF0C\u9ED8\u8BA4\u662F yes,\u6240\u4EE5\u9ED8\u8BA4\u6211\u4EEC\u5916\u7F51\u662F\u65E0\u6CD5\u8BBF\u95EE\u7684\uFF0C\u5982\u9700\u5916\u7F51\u8FDE\u63A5 rendis \u670D\u52A1\u5219\u9700\u8981\u5C06\u6B64\u5C5E\u6027\u6539\u4E3A no |
+| timeout | 300 | \u5F53\u5BA2\u6237\u7AEF\u95F2\u7F6E\u591A\u957F\u65F6\u95F4\u540E\u5173\u95ED\u8FDE\u63A5\uFF0C\u5982\u679C\u6307\u5B9A\u4E3A 0\uFF0C\u8868\u793A\u5173\u95ED\u8BE5\u529F\u80FD |
+| loglevel | debug\u3001verbose\u3001notice\u3001warning | \u65E5\u5FD7\u7EA7\u522B\uFF0C\u9ED8\u8BA4\u4E3A notice |
+| databases | 16 | \u8BBE\u7F6E\u6570\u636E\u5E93\u7684\u6570\u91CF\uFF0C\u9ED8\u8BA4\u7684\u6570\u636E\u5E93\u662F 0\u3002\u6574\u4E2A\u901A\u8FC7\u5BA2\u6237\u7AEF\u5DE5\u5177\u53EF\u4EE5\u770B\u5F97\u5230 |
+| rdbcompression | yes/no | \u6307\u5B9A\u5B58\u50A8\u81F3\u672C\u5730\u6570\u636E\u5E93\u65F6\u662F\u5426\u538B\u7F29\u6570\u636E\uFF0C\u9ED8\u8BA4\u4E3A yes\uFF0CRedis \u91C7\u7528 LZF \u538B\u7F29\uFF0C\u5982\u679C\u4E3A\u4E86\u8282\u7701 CPU \u65F6\u95F4\uFF0C\u53EF\u4EE5\u5173\u95ED\u8BE5\u9009\u9879\uFF0C\u4F46\u4F1A\u5BFC\u81F4\u6570\u636E\u5E93\u6587\u4EF6\u53D8\u7684\u5DE8\u5927\u3002 |
+| dbfilename | dump.rdb | \u6307\u5B9A\u672C\u5730\u6570\u636E\u5E93\u6587\u4EF6\u540D\uFF0C\u9ED8\u8BA4\u503C\u4E3A dump.rdb |
+| dir | | \u6307\u5B9A\u672C\u5730\u6570\u636E\u5E93\u5B58\u653E\u76EE\u5F55 |
+| requirepass | | \u8BBE\u7F6E Redis \u8FDE\u63A5\u5BC6\u7801\uFF0C\u5982\u679C\u914D\u7F6E\u4E86\u8FDE\u63A5\u5BC6\u7801\uFF0C\u5BA2\u6237\u7AEF\u5728\u8FDE\u63A5 Redis \u65F6\u9700\u8981\u901A\u8FC7 AUTH \`<password>\` \u547D\u4EE4\u63D0\u4F9B\u5BC6\u7801\uFF0C\u9ED8\u8BA4\u5173\u95ED |
+| maxclients | 0 | \u8BBE\u7F6E\u540C\u4E00\u65F6\u95F4\u6700\u5927\u5BA2\u6237\u7AEF\u8FDE\u63A5\u6570\uFF0C\u9ED8\u8BA4\u65E0\u9650\u5236\uFF0CRedis \u53EF\u4EE5\u540C\u65F6\u6253\u5F00\u7684\u5BA2\u6237\u7AEF\u8FDE\u63A5\u6570\u4E3A Redis \u8FDB\u7A0B\u53EF\u4EE5\u6253\u5F00\u7684\u6700\u5927\u6587\u4EF6\u63CF\u8FF0\u7B26\u6570\uFF0C\u5982\u679C\u8BBE\u7F6E maxclients 0\uFF0C\u8868\u793A\u4E0D\u4F5C\u9650\u5236\u3002\u5F53\u5BA2\u6237\u7AEF\u8FDE\u63A5\u6570\u5230\u8FBE\u9650\u5236\u65F6\uFF0CRedis \u4F1A\u5173\u95ED\u65B0\u7684\u8FDE\u63A5\u5E76\u5411\u5BA2\u6237\u7AEF\u8FD4\u56DE max number of clients reached \u9519\u8BEF\u4FE1\u606F\u3002|
+| maxmemory | \`XXX <bytes>\`| \u6307\u5B9A Redis \u6700\u5927\u5185\u5B58\u9650\u5236\uFF0CRedis \u5728\u542F\u52A8\u65F6\u4F1A\u628A\u6570\u636E\u52A0\u8F7D\u5230\u5185\u5B58\u4E2D\uFF0C\u8FBE\u5230\u6700\u5927\u5185\u5B58\u540E\uFF0CRedis \u4F1A\u5148\u5C1D\u8BD5\u6E05\u9664\u5DF2\u5230\u671F\u6216\u5373\u5C06\u5230\u671F\u7684 Key\uFF0C\u5F53\u6B64\u65B9\u6CD5\u5904\u7406 \u540E\uFF0C\u4ECD\u7136\u5230\u8FBE\u6700\u5927\u5185\u5B58\u8BBE\u7F6E\uFF0C\u5C06\u65E0\u6CD5\u518D\u8FDB\u884C\u5199\u5165\u64CD\u4F5C\uFF0C\u4F46\u4ECD\u7136\u53EF\u4EE5\u8FDB\u884C\u8BFB\u53D6\u64CD\u4F5C\u3002Redis \u65B0\u7684 vm \u673A\u5236\uFF0C\u4F1A\u628A Key \u5B58\u653E\u5185\u5B58\uFF0CValue \u4F1A\u5B58\u653E\u5728 swap \u533A\u3002\u914D\u7F6E\u9879\u503C\u8303\u56F4\u5217\u91CC XXX \u4E3A\u6570\u503C\u3002|
+
+## \u56DB\u3001Redis \u76F8\u5173\u547D\u4EE4
+
+1\u3001\u67E5\u770B Redis \u7248\u672C
+
+\`\`\`bash
+#\u8FDB\u5165redis-cli\u76EE\u5F55\u4E0B
+redis-cli --version
+#\u6216\u8005\u8FDE\u63A5\u4E0Aredis
+redis-cli
+#\u8F93\u51FA\u8BE6\u7EC6\u4FE1\u606F
+info
+\`\`\`
+
+2\u3001\u67E5\u770B Redis \u8FDB\u7A0B\u548C\u7AEF\u53E3
+
+\`\`\`bash
+#\u67E5\u770B\u8FDB\u7A0B\u662F\u5426\u8FD0\u884C
+ps -ef | grep redis
+#\u67E5\u770B\u7AEF\u53E3\u8FDB\u7A0B
+netstat -tunlp | grep 6379
+\`\`\`
+
+3\u3001\u6CE8\u518C\u4E3A service \u670D\u52A1\u542F\u52A8\u505C\u6B62\u547D\u4EE4
+
+\`\`\`bash
+#\u5F00\u542Fredis\u670D\u52A1
+service redis start
+#\u5173\u95EDredis\u670D\u52A1
+service redis stop
+\`\`\`
+
+4\u3001Yum \u5B89\u88C5\u670D\u52A1\u542F\u52A8\u505C\u6B62\u547D\u4EE4
+
+\`\`\`bash
+#\u67E5\u770B\u670D\u52A1\u72B6\u6001
+systemctl status redis
+#\u505C\u6B62\u670D\u52A1
+systemctl stop redis
+#\u91CD\u542F\u670D\u52A1
+systemctl restart redis
+\`\`\`
+`,contentRendered:`<p>\u2003Redis(Remote Dictionary Server)\uFF0C\u5373\u8FDC\u7A0B\u5B57\u5178\u670D\u52A1\uFF0C\u662F\u4E00\u4E2A\u5F00\u6E90\u7684\u4F7F\u7528 ANSI C \u8BED\u8A00\u7F16\u5199\u3001\u652F\u6301\u7F51\u7EDC\u3001\u53EF\u57FA\u4E8E\u5185\u5B58\u4EA6\u53EF\u6301\u4E45\u5316\u7684\u65E5\u5FD7\u578B\u3001Key-Value \u6570\u636E\u5E93\uFF0C\u5E76\u63D0\u4F9B\u591A\u79CD\u8BED\u8A00\u7684 API\u3002redis \u7684\u5B98\u7F51\u5730\u5740\uFF0C\u975E\u5E38\u597D\u8BB0\uFF0C\u662F redis.io\u3002(\u57DF\u540D\u540E\u7F00 io \u5C5E\u4E8E\u56FD\u5BB6\u57DF\u540D\uFF0C\u662F british Indian Ocean territory\uFF0C\u5373\u82F1\u5C5E\u5370\u5EA6\u6D0B\u9886\u5730\uFF09\uFF0CVmware \u5728\u8D44\u52A9\u7740 redis \u9879\u76EE\u7684\u5F00\u53D1\u548C\u7EF4\u62A4\u3002</p>
+<!-- more -->
+<h2 id="\u4E00\u3001redis-\u7B80\u4ECB" tabindex="-1"><a class="header-anchor" href="#\u4E00\u3001redis-\u7B80\u4ECB" aria-hidden="true">#</a> \u4E00\u3001Redis \u7B80\u4ECB</h2>
+<p>\u2003redis \u662F\u4E00\u4E2A key-value \u5B58\u50A8\u7CFB\u7EDF\u3002\u548C Memcached \u7C7B\u4F3C\uFF0C\u5B83\u652F\u6301\u5B58\u50A8\u7684 value \u7C7B\u578B\u76F8\u5BF9\u66F4\u591A\uFF0C\u5305\u62EC string(\u5B57\u7B26\u4E32)\u3001list(\u94FE\u8868)\u3001set(\u96C6\u5408)\u3001zset(sorted set --\u6709\u5E8F\u96C6\u5408)\u548C hash\uFF08\u54C8\u5E0C\u7C7B\u578B\uFF09\u3002\u8FD9\u4E9B\u6570\u636E\u7C7B\u578B\u90FD\u652F\u6301 push/pop\u3001add/remove \u53CA\u53D6\u4EA4\u96C6\u5E76\u96C6\u548C\u5DEE\u96C6\u53CA\u66F4\u4E30\u5BCC\u7684\u64CD\u4F5C\uFF0C\u800C\u4E14\u8FD9\u4E9B\u64CD\u4F5C\u90FD\u662F\u539F\u5B50\u6027\u7684\u3002\u5728\u6B64\u57FA\u7840\u4E0A\uFF0Credis \u652F\u6301\u5404\u79CD\u4E0D\u540C\u65B9\u5F0F\u7684\u6392\u5E8F\u3002\u4E0E memcached \u4E00\u6837\uFF0C\u4E3A\u4E86\u4FDD\u8BC1\u6548\u7387\uFF0C\u6570\u636E\u90FD\u662F\u7F13\u5B58\u5728\u5185\u5B58\u4E2D\u3002\u533A\u522B\u7684\u662F redis \u4F1A\u5468\u671F\u6027\u7684\u628A\u66F4\u65B0\u7684\u6570\u636E\u5199\u5165\u78C1\u76D8\u6216\u8005\u628A\u4FEE\u6539\u64CD\u4F5C\u5199\u5165\u8FFD\u52A0\u7684\u8BB0\u5F55\u6587\u4EF6\uFF0C\u5E76\u4E14\u5728\u6B64\u57FA\u7840\u4E0A\u5B9E\u73B0\u4E86 master-slave(\u4E3B\u4ECE)\u540C\u6B65\u3002<br>
+\u2003Redis \u662F\u4E00\u4E2A\u9AD8\u6027\u80FD\u7684 key-value \u6570\u636E\u5E93\u3002 redis \u7684\u51FA\u73B0\uFF0C\u5F88\u5927\u7A0B\u5EA6\u8865\u507F\u4E86 memcached \u8FD9\u7C7B key/value \u5B58\u50A8\u7684\u4E0D\u8DB3\uFF0C\u5728\u90E8 \u5206\u573A\u5408\u53EF\u4EE5\u5BF9\u5173\u7CFB\u6570\u636E\u5E93\u8D77\u5230\u5F88\u597D\u7684\u8865\u5145\u4F5C\u7528\u3002\u5B83\u63D0\u4F9B\u4E86 Java\uFF0CC/C++\uFF0CC#\uFF0CPHP\uFF0CJavaScript\uFF0CPerl\uFF0CObject-C\uFF0CPython\uFF0CRuby\uFF0CErlang \u7B49\u5BA2\u6237\u7AEF\uFF0C\u4F7F\u7528\u5F88\u65B9\u4FBF\u3002<br>
+\u2003Redis \u652F\u6301\u4E3B\u4ECE\u540C\u6B65\u3002\u6570\u636E\u53EF\u4EE5\u4ECE\u4E3B\u670D\u52A1\u5668\u5411\u4EFB\u610F\u6570\u91CF\u7684\u4ECE\u670D\u52A1\u5668\u4E0A\u540C\u6B65\uFF0C\u4ECE\u670D\u52A1\u5668\u53EF\u4EE5\u662F\u5173\u8054\u5176\u4ED6\u4ECE\u670D\u52A1\u5668\u7684\u4E3B\u670D\u52A1\u5668\u3002\u8FD9\u4F7F\u5F97 Redis \u53EF\u6267\u884C\u5355\u5C42\u6811\u590D\u5236\u3002\u5B58\u76D8\u53EF\u4EE5\u6709\u610F\u65E0\u610F\u7684\u5BF9\u6570\u636E\u8FDB\u884C\u5199\u64CD\u4F5C\u3002\u7531\u4E8E\u5B8C\u5168\u5B9E\u73B0\u4E86\u53D1\u5E03/\u8BA2\u9605\u673A\u5236\uFF0C\u4F7F\u5F97\u4ECE\u6570\u636E\u5E93\u5728\u4EFB\u4F55\u5730\u65B9\u540C\u6B65\u6811\u65F6\uFF0C\u53EF\u8BA2\u9605\u4E00\u4E2A\u9891\u9053\u5E76\u63A5\u6536\u4E3B\u670D\u52A1\u5668\u5B8C\u6574\u7684\u6D88\u606F\u53D1\u5E03\u8BB0\u5F55\u3002\u540C\u6B65\u5BF9\u8BFB\u53D6\u64CD\u4F5C\u7684\u53EF\u6269\u5C55\u6027\u548C\u6570\u636E\u5197\u4F59\u5F88\u6709\u5E2E\u52A9\u3002</p>
+<div class="custom-container tip"><p class="custom-container-title">\u63D0\u793A</p>
+<p>1\u3001Reids \u5B98\u7F51\u5730\u5740\uFF1A<a href="https://redis.io/" target="_blank" rel="noopener noreferrer">https://redis.io/<ExternalLinkIcon/></a><br>
+2\u3001Redis \u4E0B\u8F7D\u5730\u5740\uFF1A<a href="https://redis.io/download/" target="_blank" rel="noopener noreferrer">https://redis.io/download/<ExternalLinkIcon/></a><br>
+3\u3001redis \u5386\u53F2\u7248\u672C\u5730\u5740\uFF1A<a href="https://download.redis.io/releases/" target="_blank" rel="noopener noreferrer">https://download.redis.io/releases/<ExternalLinkIcon/></a><br></p>
+</div>
+<h2 id="\u4E8C\u3001redis-\u5B89\u88C5" tabindex="-1"><a class="header-anchor" href="#\u4E8C\u3001redis-\u5B89\u88C5" aria-hidden="true">#</a> \u4E8C\u3001Redis \u5B89\u88C5</h2>
+<p>\u2003\u672C\u6587\u4E3B\u8981\u8BB2\u8FF0<code v-pre>yum</code>\u5B89\u88C5\uFF0C\u6E90\u7801\u5B89\u88C5\u548C <code v-pre>Docker</code> \u5B89\u88C5 3 \u79CD\u65B9\u5F0F\u3002\u63A8\u8350\u4F7F\u7528\u6E90\u7801\u6216\u8005 docker \u65B9\u5F0F\u5B89\u88C5 Redis\uFF0C\u53EF\u4EE5\u9009\u62E9\u6BD4\u8F83\u65B0\u800C\u4E14\u7A33\u5B9A\u7684\u7248\u672C\u3002</p>
+<h3 id="_1\u3001yum-\u65B9\u5F0F\u5B89\u88C5-redis" tabindex="-1"><a class="header-anchor" href="#_1\u3001yum-\u65B9\u5F0F\u5B89\u88C5-redis" aria-hidden="true">#</a> 1\u3001Yum \u65B9\u5F0F\u5B89\u88C5 Redis</h3>
+<p><code v-pre>yum</code>\u65B9\u5F0F\u5B89\u88C5\u8F6F\u4EF6\uFF0C\u6BD4\u8F83\u65B9\u4FBF\uFF0C\u5FEB\u6377\uFF0C\u4E0D\u7528\u8003\u8651\u5B89\u88C5\u4F9D\u8D56\u5305\uFF0C\u65E0\u9700\u624B\u52A8\u7F16\u8BD1\uFF0C\u4F46\u65E0\u6CD5\u4EBA\u4E3A\u5E72\u9884\u5B89\u88C5\u8FC7\u7A0B\u4EE5\u53CA\u8F6F\u4EF6\u5B89\u88C5\u4F4D\u7F6E\u3002\u76F8\u5173<code v-pre>yum</code>\u7528\u6CD5\u8BF7\u53C2\u8003\uFF1A\u3002</p>
+<ul>
+<li><strong>\u4E0B\u8F7D epel \u4ED3\u5E93</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token function">install</span> epel-release <span class="token parameter variable">-y</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>\u4E0B\u8F7D redis \u6570\u636E\u5E93</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>yum <span class="token function">install</span> redis <span class="token parameter variable">-y</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>\u542F\u52A8 Redis \u670D\u52A1</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>systemctl start redis
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>Redis \u670D\u52A1\u5F00\u673A\u81EA\u542F\u52A8</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>systemctl <span class="token builtin class-name">enable</span> redis
+\u6216
+<span class="token function">chkconfig</span> redis on
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>\u5F00\u653E\u7AEF\u53E3</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5F00\u653E6379\u7AEF\u53E3</span>
+firewall-cmd <span class="token parameter variable">--zone</span><span class="token operator">=</span>public --add-port<span class="token operator">=</span><span class="token number">6379</span>/tcp <span class="token parameter variable">--permanent</span>
+<span class="token comment">#\u914D\u7F6E\u7ACB\u5373\u751F\u6548</span>
+firewall-cmd <span class="token parameter variable">--reload</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>Redis \u670D\u52A1\u5E38\u89C1\u547D\u4EE4</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u770B\u670D\u52A1\u72B6\u6001</span>
+systemctl status redis
+<span class="token comment">#\u505C\u6B62\u670D\u52A1</span>
+systemctl stop redis
+<span class="token comment">#\u91CD\u542F\u670D\u52A1</span>
+systemctl restart redis
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5-redis" tabindex="-1"><a class="header-anchor" href="#_2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5-redis" aria-hidden="true">#</a> 2\u3001\u6E90\u7801\u65B9\u5F0F\u5B89\u88C5 Redis</h3>
+<ul>
+<li><strong>\u4E0B\u8F7D Redis \u6E90\u7801\u5305</strong>
+\u9009\u62E9\u4E00\u4E2A\u7A33\u5B9A\u7248\u672C\uFF1A<a href="https://download.redis.io/releases/" target="_blank" rel="noopener noreferrer">https://download.redis.io/releases/<ExternalLinkIcon/></a></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u9ED8\u8BA4\u4E0B\u8F7D\u5B89\u88C5\u5230/opt\u76EE\u5F55</span>
+<span class="token builtin class-name">cd</span> /opt/
+<span class="token comment">#\u76EE\u524DRedis-6.2.6\u662F\u6700\u65B0\u7684\u7A33\u5B9A\u7248\u672C\uFF1B</span>
+<span class="token function">wget</span> https://download.redis.io/releases/redis-6.2.6.tar.gz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>\u89E3\u538B\u5E76\u91CD\u547D\u540D</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment"># \u89E3\u538B\u7F29</span>
+<span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> redis-6.2.6.tar.gz
+<span class="token comment"># \u91CD\u547D\u540D</span>
+<span class="token function">mv</span> redis-6.2.6.tar.gz redis
+<span class="token comment"># \u5220\u9664\u538B\u7F29\u5305</span>
+<span class="token function">rm</span> <span class="token parameter variable">-rf</span> redis-6.2.6.tar.gz
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>\u7F16\u8BD1</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u8FDB\u5165\u76EE\u5F55</span>
+<span class="token builtin class-name">cd</span> redis
+<span class="token comment">#\u7F16\u8BD1,\u5982\u679C\u62A5\u9519\uFF0C\u9700\u8981\u5B89\u88C5gcc\u73AF\u5883</span>
+<span class="token function">make</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>\u5B89\u88C5</strong></li>
+</ul>
+<p>\u2003\u5173\u952E\u5B57 <code v-pre>PREFIX</code>\u7684\u4F5C\u7528\u662F\u7F16\u8BD1\u7684\u65F6\u5019\u7528\u4E8E\u6307\u5B9A\u7A0B\u5E8F\u5B58\u653E\u7684\u8DEF\u5F84\u3002\u6BD4\u5982\u6211\u4EEC\u73B0\u5728\u5C31\u662F\u6307\u5B9A\u4E86 redis \u5FC5\u987B\u5B58\u653E\u5728/opt/redis \u76EE\u5F55\u3002\u5047\u8BBE\u4E0D\u6DFB\u52A0\u8BE5\u5173\u952E\u5B57 Linux \u4F1A\u5C06\u53EF\u6267\u884C\u6587\u4EF6\u5B58\u653E\u5728/usr/local/bin \u76EE\u5F55\uFF0C\u5E93\u6587\u4EF6\u4F1A\u5B58\u653E\u5728/usr/local/lib \u76EE\u5F55\u3002\u914D\u7F6E\u6587\u4EF6\u4F1A\u5B58\u653E\u5728/usr/local/etc \u76EE\u5F55\u3002\u5176\u4ED6\u7684\u8D44\u6E90\u6587\u4EF6\u4F1A\u5B58\u653E\u5728 usr/local/share \u76EE\u5F55\u3002\u8FD9\u91CC\u6307\u5B9A\u53F7\u76EE\u5F55\u4E5F\u65B9\u4FBF\u540E\u7EED\u7684\u5378\u8F7D\uFF0C\u540E\u7EED\u76F4\u63A5 rm -rf /opt/redis \u5373\u53EF\u5220\u9664 redis</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">make</span> <span class="token assign-left variable">PREFIX</span><span class="token operator">=</span>/opt/redis <span class="token function">install</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>\u542F\u52A8 Redis</strong></li>
+</ul>
+<p>\u2003\u4E8C\u8FDB\u5236\u6587\u4EF6\u662F\u7F16\u8BD1\u5B89\u88C5\u5B8C\u6210\u540E\u5728 src \u4E0B\u9762\u7684 bin \u76EE\u5F55\uFF0C\u901A\u8FC7\u4E0B\u9762\u7684\u547D\u4EE4\u542F\u52A8 Redis \u670D\u52A1</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code>./bin/redis-server ./redis.conf
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>\u5F00\u653E\u7AEF\u53E3</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5F00\u653E6379\u7AEF\u53E3</span>
+firewall-cmd <span class="token parameter variable">--zone</span><span class="token operator">=</span>public --add-port<span class="token operator">=</span><span class="token number">6379</span>/tcp <span class="token parameter variable">--permanent</span>
+<span class="token comment">#\u914D\u7F6E\u7ACB\u5373\u751F\u6548</span>
+firewall-cmd <span class="token parameter variable">--reload</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>\u914D\u7F6E Redis \u670D\u52A1</strong></li>
+</ul>
+<p>\u2003Redis \u5B89\u88C5\u5B8C\u6210\u540E\uFF0C\u6BCF\u6B21\u542F\u52A8\u6216\u8005\u505C\u6B62\u90FD\u9700\u8981\u8FDB\u5165\u5B89\u88C5\u76EE\u5F55\u4E0B\u6267\u884C\u547D\u4EE4\uFF0C\u76F8\u5BF9\u6BD4\u8F83\u9EBB\u70E6\uFF0C\u53EF\u4EE5\u901A\u8FC7\u4E0B\u9762\u65B9\u6CD5\uFF0C\u914D\u7F6E Redis \u670D\u52A1\uFF0C\u4E0B\u6B21\u542F\u52A8\u548C\u505C\u6B62\u975E\u5E38\u7B80\u5355\u3002<br>
+1\u3001\u5728 redis \u76EE\u5F55\u4E0B\u627E\u5230 utils/redis_init_script \u590D\u5236\u5230 /etc/init.d/redis \u6253\u5F00\u6587\u4EF6\u8FDB\u884C\u4FEE\u6539</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token function">cp</span> /opt/redis/redis_init_script /etc/init.d/redis
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>2\u3001\u8FDB\u5165/etc/init.d,\u7F16\u8F91\u914D\u7F6E\u6587\u4EF6 redis</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token builtin class-name">cd</span> /etc/init.d/
+<span class="token function">vim</span> redis
+<span class="token comment">#\u4EE3\u7801\u5982\u4E0B</span>
+<span class="token comment">#!/bin/sh</span>
+<span class="token assign-left variable">REDISPORT</span><span class="token operator">=</span><span class="token number">6379</span>
+<span class="token assign-left variable">EXEC</span><span class="token operator">=</span>/opt/redis/bin/redis-server
+<span class="token assign-left variable">CLIEXEC</span><span class="token operator">=</span>/opt/redis/bin/redis-cli
+
+<span class="token assign-left variable">PIDFILE</span><span class="token operator">=</span>/var/run/redis_<span class="token variable">\${REDISPORT}</span>.pid
+<span class="token assign-left variable">CONF</span><span class="token operator">=</span><span class="token string">"/opt/redis/<span class="token variable">\${REDISPORT}</span>.conf"</span>
+
+<span class="token keyword">case</span> <span class="token string">"<span class="token variable">$1</span>"</span> <span class="token keyword">in</span>
+    start<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-f</span> <span class="token variable">$PIDFILE</span> <span class="token punctuation">]</span>
+        <span class="token keyword">then</span>
+                <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$PIDFILE</span> exists, process is already running or crashed"</span>
+        <span class="token keyword">else</span>
+                <span class="token builtin class-name">echo</span> <span class="token string">"Starting Redis server..."</span>
+                <span class="token variable">$EXEC</span> <span class="token variable">$CONF</span>
+        <span class="token keyword">fi</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    stop<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-f</span> <span class="token variable">$PIDFILE</span> <span class="token punctuation">]</span>
+        <span class="token keyword">then</span>
+                <span class="token builtin class-name">echo</span> <span class="token string">"<span class="token variable">$PIDFILE</span> does not exist, process is not running"</span>
+        <span class="token keyword">else</span>
+                <span class="token assign-left variable">PID</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">cat</span> $PIDFILE<span class="token variable">)</span></span>
+                <span class="token builtin class-name">echo</span> <span class="token string">"Stopping ..."</span>
+                <span class="token variable">$CLIEXEC</span> <span class="token parameter variable">-p</span> <span class="token variable">$REDISPORT</span> <span class="token function">shutdown</span>
+                <span class="token keyword">while</span> <span class="token punctuation">[</span> <span class="token parameter variable">-x</span> /proc/<span class="token variable">\${PID}</span> <span class="token punctuation">]</span>
+                <span class="token keyword">do</span>
+                    <span class="token builtin class-name">echo</span> <span class="token string">"Waiting for Redis to shutdown ..."</span>
+                    <span class="token function">sleep</span> <span class="token number">1</span>
+                <span class="token keyword">done</span>
+                <span class="token builtin class-name">echo</span> <span class="token string">"Redis stopped"</span>
+        <span class="token keyword">fi</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+    *<span class="token punctuation">)</span>
+        <span class="token builtin class-name">echo</span> <span class="token string">"Please use start or stop as first argument"</span>
+        <span class="token punctuation">;</span><span class="token punctuation">;</span>
+<span class="token keyword">esac</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>\u4E3B\u8981\u7F16\u8F91\u524D 4 \u884C<code v-pre>redis-server,redis-cli,redis.conf,pdi</code>\u6587\u4EF6\u771F\u5B9E\u5B89\u88C5\u8DEF\u5F84\uFF0C\u7F16\u8F91\u5B8C\uFF0C\u4FDD\u5B58\u9000\u51FA\u3002</p>
+<ul>
+<li><strong>\u6587\u4EF6\u6388\u6743</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#/etc/init.d/redis\u6587\u4EF6\u8D4B\u4E88\u53EF\u6267\u884C\u6743\u9650\u3002</span>
+<span class="token function">chmod</span> +x /etc/init.d/redis
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>\u8BBE\u7F6E\u5F00\u673A\u81EA\u542F\u52A8</strong></li>
+</ul>
+<p>\u5728 /etc/init.d/\u76EE\u5F55\u4E0B\u6267\u884C\u4EE5\u4E0B\u547D\u4EE4</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u8BBE\u7F6E\u5F00\u673A\u81EA\u542F\u52A8</span>
+<span class="token function">chkconfig</span> redis on
+<span class="token comment">#\u5173\u95ED\u5F00\u673A\u81EA\u542F\u52A8</span>
+<span class="token function">chkconfig</span> redis off
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>\u542F\u52A8\u505C\u6B62\u547D\u4EE4</strong></li>
+</ul>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5F00\u542Fredis\u670D\u52A1</span>
+<span class="token function">service</span> redis start
+<span class="token comment">#\u5173\u95EDredis\u670D\u52A1</span>
+<span class="token function">service</span> redis stop
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="\u4E09\u3001redis-\u76F8\u5173\u914D\u7F6E" tabindex="-1"><a class="header-anchor" href="#\u4E09\u3001redis-\u76F8\u5173\u914D\u7F6E" aria-hidden="true">#</a> \u4E09\u3001Redis \u76F8\u5173\u914D\u7F6E</h2>
+<p>Redis \u7684\u914D\u7F6E\u6587\u4EF6\u4F4D\u4E8E/opt/redis/\u76EE\u5F55\u4E0B\uFF0C\u53EF\u4EE5\u66F4\u6539\u914D\u7F6E\u6587\u4EF6\u53C2\u6570\uFF0C\u5E38\u7528\u53C2\u6570\u542B\u4E49\u5982\u4E0B\uFF1A</p>
+<table>
+<thead>
+<tr>
+<th>\u914D\u7F6E\u9879\u540D\u79F0</th>
+<th>\u914D\u7F6E\u9879\u503C\u8303\u56F4</th>
+<th>\u8BF4\u660E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>daemonize</td>
+<td>yes/no</td>
+<td>yes \u8868\u793A\u542F\u7528\u5B88\u62A4\u8FDB\u7A0B\uFF0C\u9ED8\u8BA4\u662F no \u5373\u4E0D\u4EE5\u5B88\u62A4\u8FDB\u7A0B\u65B9\u5F0F\u8FD0\u884C\u3002\u5176\u4E2D Windows \u7CFB\u7EDF\u4E0B\u4E0D\u652F\u6301\u542F\u7528\u5B88\u62A4\u8FDB\u7A0B\u65B9\u5F0F\u8FD0\u884C</td>
+</tr>
+<tr>
+<td>port</td>
+<td></td>
+<td>\u6307\u5B9A Redis \u76D1\u542C\u7AEF\u53E3\uFF0C\u9ED8\u8BA4\u7AEF\u53E3\u4E3A 6379</td>
+</tr>
+<tr>
+<td>bind</td>
+<td></td>
+<td>\u7ED1\u5B9A\u8BBF\u95EE Ip,\u9650\u5236\u9664\u7ED1\u5B9A IP \u5916\u7684\u5176\u4ED6 IP \u8BBF\u95EE\u3002\u5982\u679C\u4E0D\u9650\u5236\u53EF\u4EE5\u6CE8\u91CA\u6389\u6216\u8005 bind 0.0.0.0 \u3002\u8FD9\u4E2A\u5C5E\u6027\u548C\u4E0B\u9762\u7684 protected-mode \u63A7\u5236\u4E86\u662F\u5426\u53EF\u4EE5\u8FDC\u7A0B\u8BBF\u95EE</td>
+</tr>
+<tr>
+<td>protected-mode</td>
+<td>yse/no</td>
+<td>\u4FDD\u62A4\u6A21\u5F0F\uFF0C\u8BE5\u6A21\u5F0F\u63A7\u5236\u5916\u90E8\u7F51\u662F\u5426\u53EF\u4EE5\u8FDE\u63A5 redis \u670D\u52A1\uFF0C\u9ED8\u8BA4\u662F yes,\u6240\u4EE5\u9ED8\u8BA4\u6211\u4EEC\u5916\u7F51\u662F\u65E0\u6CD5\u8BBF\u95EE\u7684\uFF0C\u5982\u9700\u5916\u7F51\u8FDE\u63A5 rendis \u670D\u52A1\u5219\u9700\u8981\u5C06\u6B64\u5C5E\u6027\u6539\u4E3A no</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>300</td>
+<td>\u5F53\u5BA2\u6237\u7AEF\u95F2\u7F6E\u591A\u957F\u65F6\u95F4\u540E\u5173\u95ED\u8FDE\u63A5\uFF0C\u5982\u679C\u6307\u5B9A\u4E3A 0\uFF0C\u8868\u793A\u5173\u95ED\u8BE5\u529F\u80FD</td>
+</tr>
+<tr>
+<td>loglevel</td>
+<td>debug\u3001verbose\u3001notice\u3001warning</td>
+<td>\u65E5\u5FD7\u7EA7\u522B\uFF0C\u9ED8\u8BA4\u4E3A notice</td>
+</tr>
+<tr>
+<td>databases</td>
+<td>16</td>
+<td>\u8BBE\u7F6E\u6570\u636E\u5E93\u7684\u6570\u91CF\uFF0C\u9ED8\u8BA4\u7684\u6570\u636E\u5E93\u662F 0\u3002\u6574\u4E2A\u901A\u8FC7\u5BA2\u6237\u7AEF\u5DE5\u5177\u53EF\u4EE5\u770B\u5F97\u5230</td>
+</tr>
+<tr>
+<td>rdbcompression</td>
+<td>yes/no</td>
+<td>\u6307\u5B9A\u5B58\u50A8\u81F3\u672C\u5730\u6570\u636E\u5E93\u65F6\u662F\u5426\u538B\u7F29\u6570\u636E\uFF0C\u9ED8\u8BA4\u4E3A yes\uFF0CRedis \u91C7\u7528 LZF \u538B\u7F29\uFF0C\u5982\u679C\u4E3A\u4E86\u8282\u7701 CPU \u65F6\u95F4\uFF0C\u53EF\u4EE5\u5173\u95ED\u8BE5\u9009\u9879\uFF0C\u4F46\u4F1A\u5BFC\u81F4\u6570\u636E\u5E93\u6587\u4EF6\u53D8\u7684\u5DE8\u5927\u3002</td>
+</tr>
+<tr>
+<td>dbfilename</td>
+<td>dump.rdb</td>
+<td>\u6307\u5B9A\u672C\u5730\u6570\u636E\u5E93\u6587\u4EF6\u540D\uFF0C\u9ED8\u8BA4\u503C\u4E3A dump.rdb</td>
+</tr>
+<tr>
+<td>dir</td>
+<td></td>
+<td>\u6307\u5B9A\u672C\u5730\u6570\u636E\u5E93\u5B58\u653E\u76EE\u5F55</td>
+</tr>
+<tr>
+<td>requirepass</td>
+<td></td>
+<td>\u8BBE\u7F6E Redis \u8FDE\u63A5\u5BC6\u7801\uFF0C\u5982\u679C\u914D\u7F6E\u4E86\u8FDE\u63A5\u5BC6\u7801\uFF0C\u5BA2\u6237\u7AEF\u5728\u8FDE\u63A5 Redis \u65F6\u9700\u8981\u901A\u8FC7 AUTH <code v-pre>&lt;password&gt;</code> \u547D\u4EE4\u63D0\u4F9B\u5BC6\u7801\uFF0C\u9ED8\u8BA4\u5173\u95ED</td>
+</tr>
+<tr>
+<td>maxclients</td>
+<td>0</td>
+<td>\u8BBE\u7F6E\u540C\u4E00\u65F6\u95F4\u6700\u5927\u5BA2\u6237\u7AEF\u8FDE\u63A5\u6570\uFF0C\u9ED8\u8BA4\u65E0\u9650\u5236\uFF0CRedis \u53EF\u4EE5\u540C\u65F6\u6253\u5F00\u7684\u5BA2\u6237\u7AEF\u8FDE\u63A5\u6570\u4E3A Redis \u8FDB\u7A0B\u53EF\u4EE5\u6253\u5F00\u7684\u6700\u5927\u6587\u4EF6\u63CF\u8FF0\u7B26\u6570\uFF0C\u5982\u679C\u8BBE\u7F6E maxclients 0\uFF0C\u8868\u793A\u4E0D\u4F5C\u9650\u5236\u3002\u5F53\u5BA2\u6237\u7AEF\u8FDE\u63A5\u6570\u5230\u8FBE\u9650\u5236\u65F6\uFF0CRedis \u4F1A\u5173\u95ED\u65B0\u7684\u8FDE\u63A5\u5E76\u5411\u5BA2\u6237\u7AEF\u8FD4\u56DE max number of clients reached \u9519\u8BEF\u4FE1\u606F\u3002</td>
+</tr>
+<tr>
+<td>maxmemory</td>
+<td><code v-pre>XXX &lt;bytes&gt;</code></td>
+<td>\u6307\u5B9A Redis \u6700\u5927\u5185\u5B58\u9650\u5236\uFF0CRedis \u5728\u542F\u52A8\u65F6\u4F1A\u628A\u6570\u636E\u52A0\u8F7D\u5230\u5185\u5B58\u4E2D\uFF0C\u8FBE\u5230\u6700\u5927\u5185\u5B58\u540E\uFF0CRedis \u4F1A\u5148\u5C1D\u8BD5\u6E05\u9664\u5DF2\u5230\u671F\u6216\u5373\u5C06\u5230\u671F\u7684 Key\uFF0C\u5F53\u6B64\u65B9\u6CD5\u5904\u7406 \u540E\uFF0C\u4ECD\u7136\u5230\u8FBE\u6700\u5927\u5185\u5B58\u8BBE\u7F6E\uFF0C\u5C06\u65E0\u6CD5\u518D\u8FDB\u884C\u5199\u5165\u64CD\u4F5C\uFF0C\u4F46\u4ECD\u7136\u53EF\u4EE5\u8FDB\u884C\u8BFB\u53D6\u64CD\u4F5C\u3002Redis \u65B0\u7684 vm \u673A\u5236\uFF0C\u4F1A\u628A Key \u5B58\u653E\u5185\u5B58\uFF0CValue \u4F1A\u5B58\u653E\u5728 swap \u533A\u3002\u914D\u7F6E\u9879\u503C\u8303\u56F4\u5217\u91CC XXX \u4E3A\u6570\u503C\u3002</td>
+</tr>
+</tbody>
+</table>
+<h2 id="\u56DB\u3001redis-\u76F8\u5173\u547D\u4EE4" tabindex="-1"><a class="header-anchor" href="#\u56DB\u3001redis-\u76F8\u5173\u547D\u4EE4" aria-hidden="true">#</a> \u56DB\u3001Redis \u76F8\u5173\u547D\u4EE4</h2>
+<p>1\u3001\u67E5\u770B Redis \u7248\u672C</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u8FDB\u5165redis-cli\u76EE\u5F55\u4E0B</span>
+redis-cli <span class="token parameter variable">--version</span>
+<span class="token comment">#\u6216\u8005\u8FDE\u63A5\u4E0Aredis</span>
+redis-cli
+<span class="token comment">#\u8F93\u51FA\u8BE6\u7EC6\u4FE1\u606F</span>
+info
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>2\u3001\u67E5\u770B Redis \u8FDB\u7A0B\u548C\u7AEF\u53E3</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u770B\u8FDB\u7A0B\u662F\u5426\u8FD0\u884C</span>
+<span class="token function">ps</span> <span class="token parameter variable">-ef</span> <span class="token operator">|</span> <span class="token function">grep</span> redis
+<span class="token comment">#\u67E5\u770B\u7AEF\u53E3\u8FDB\u7A0B</span>
+<span class="token function">netstat</span> <span class="token parameter variable">-tunlp</span> <span class="token operator">|</span> <span class="token function">grep</span> <span class="token number">6379</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>3\u3001\u6CE8\u518C\u4E3A service \u670D\u52A1\u542F\u52A8\u505C\u6B62\u547D\u4EE4</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u5F00\u542Fredis\u670D\u52A1</span>
+<span class="token function">service</span> redis start
+<span class="token comment">#\u5173\u95EDredis\u670D\u52A1</span>
+<span class="token function">service</span> redis stop
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>4\u3001Yum \u5B89\u88C5\u670D\u52A1\u542F\u52A8\u505C\u6B62\u547D\u4EE4</p>
+<div class="language-bash ext-sh line-numbers-mode"><pre v-pre class="language-bash"><code><span class="token comment">#\u67E5\u770B\u670D\u52A1\u72B6\u6001</span>
+systemctl status redis
+<span class="token comment">#\u505C\u6B62\u670D\u52A1</span>
+systemctl stop redis
+<span class="token comment">#\u91CD\u542F\u670D\u52A1</span>
+systemctl restart redis
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,date:"2022-04-22",deps:[],links:[],pathInferred:"/posts/devops/redis/",pathLocale:"/",permalink:null,routeMeta:{title:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"},sfcBlocks:[],slug:"README",filePath:"/home/runner/work/blog-docs/blog-docs/docs/posts/devops/redis/README.md",filePathRelative:"posts/devops/redis/README.md",componentFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/redis/index.html.vue",componentFilePathRelative:"pages/posts/devops/redis/index.html.vue",componentFileChunkName:"v-614bc111",dataFilePath:"/home/runner/work/blog-docs/blog-docs/docs/.vuepress/.temp/pages/posts/devops/redis/index.html.js",dataFilePathRelative:"pages/posts/devops/redis/index.html.js",dataFileChunkName:"v-614bc111",htmlFilePath:"/home/runner/work/blog-docs/blog-docs/dist/posts/devops/redis/index.html",htmlFilePathRelative:"posts/devops/redis/index.html"},title:"Redis \u591A\u79CD\u5B89\u88C5\u65B9\u5F0F"},["/posts/devops/redis/index.html","/posts/devops/redis/README.md"]],["v-3706649a","/404.html",{title:""},["/404"]],["v-5bc93818","/category/",{title:"Categories"},["/category/index.html"]],["v-744d024e","/tag/",{title:"Tags"},["/tag/index.html"]],["v-e52c881c","/article/",{title:"Articles"},["/article/index.html"]],["v-01560935","/timeline/",{title:"Timeline"},["/timeline/index.html"]],["v-5831b135","/category/java/",{title:"Category java"},["/category/java/index.html"]],["v-05b88e01","/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/",{title:"Tag \u8BBE\u8BA1\u6A21\u5F0F"},["/tag/\u8BBE\u8BA1\u6A21\u5F0F/","/tag/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html"]],["v-9c48d85a","/category/linux/",{title:"Category linux"},["/category/linux/index.html"]],["v-211f44ee","/tag/linux/",{title:"Tag linux"},["/tag/linux/index.html"]],["v-5e0b61bd","/category/%E6%95%B0%E6%8D%AE%E5%BA%93/",{title:"Category \u6570\u636E\u5E93"},["/category/\u6570\u636E\u5E93/","/category/%E6%95%B0%E6%8D%AE%E5%BA%93/index.html"]],["v-1bee38ca","/tag/mysql/",{title:"Tag MySql"},["/tag/mysql/index.html"]],["v-58702955","/category/node/",{title:"Category Node"},["/category/node/index.html"]],["v-28e050df","/tag/node/",{title:"Tag Node"},["/tag/node/index.html"]],["v-58733074","/category/nuxt/",{title:"Category Nuxt"},["/category/nuxt/index.html"]],["v-28e357fe","/tag/nuxt/",{title:"Tag Nuxt"},["/tag/nuxt/index.html"]],["v-4110d7ce","/category/%E8%BF%90%E7%BB%B4/",{title:"Category \u8FD0\u7EF4"},["/category/\u8FD0\u7EF4/","/category/%E8%BF%90%E7%BB%B4/index.html"]],["v-1eec4968","/tag/algolia/",{title:"Tag Algolia"},["/tag/algolia/index.html"]],["v-13b66e9c","/category/%E5%85%B6%E4%BB%96/",{title:"Category \u5176\u4ED6"},["/category/\u5176\u4ED6/","/category/%E5%85%B6%E4%BB%96/index.html"]],["v-3a134560","/tag/%E5%8D%9A%E5%AE%A2/",{title:"Tag \u535A\u5BA2"},["/tag/\u535A\u5BA2/","/tag/%E5%8D%9A%E5%AE%A2/index.html"]],["v-9f17d77e","/category/%E7%9B%97%E9%93%BE/",{title:"Category \u76D7\u94FE"},["/category/\u76D7\u94FE/","/category/%E7%9B%97%E9%93%BE/index.html"]],["v-200bf6bc","/tag/%E5%85%B6%E4%BB%96/",{title:"Tag \u5176\u4ED6"},["/tag/\u5176\u4ED6/","/tag/%E5%85%B6%E4%BB%96/index.html"]],["v-2d060772","/category/%E5%9B%BE%E5%BA%8A/",{title:"Category \u56FE\u5E8A"},["/category/\u56FE\u5E8A/","/category/%E5%9B%BE%E5%BA%8A/index.html"]],["v-aac522f2","/tag/github-pages/",{title:"Tag Github Pages"},["/tag/github-pages/index.html"]],["v-726261d4","/category/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90/",{title:"Category \u7F51\u7EDC\u8D44\u6E90"},["/category/\u7F51\u7EDC\u8D44\u6E90/","/category/%E7%BD%91%E7%BB%9C%E8%B5%84%E6%BA%90/index.html"]],["v-36b75823","/tag/waline/",{title:"Tag waline"},["/tag/waline/index.html"]],["v-27fb5a12","/category/docker/",{title:"Category docker"},["/category/docker/index.html"]],["v-6106c001","/tag/docker/",{title:"Tag docker"},["/tag/docker/index.html"]],["v-95b29426","/category/nginx/",{title:"Category nginx"},["/category/nginx/index.html"]],["v-13275df4","/tag/gitlab/",{title:"Tag Gitlab"},["/tag/gitlab/index.html"]],["v-1a8900ba","/tag/nginx/",{title:"Tag nginx"},["/tag/nginx/index.html"]],["v-0d1f4c3c","/tag/redis/",{title:"Tag Redis"},["/tag/redis/index.html"]]];export{n as p};
