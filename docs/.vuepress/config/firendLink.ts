@@ -1,9 +1,9 @@
 export const firendLink = [{
-    title: 'vuepress 2.X',
+    title: 'vuepress 2.X 中文官网',
     link: 'https://v2.vuepress.vuejs.org/zh/'
 },
 {
-    title: 'vuepress-theme-reco 2.x',
+    title: 'vuepress-theme-reco 2.x 官网',
     link: 'http://v2.vuepress-reco.recoluan.com/'
 },
 {
@@ -13,7 +13,7 @@ export const firendLink = [{
     title: 'Vite 3.X中文文档',
     link: 'https://cn.vitejs.dev/'
 }, {
-    title: 'vuepress-theme-hope 2.x',
+    title: 'vuepress-theme-hope 2.X官网',
     link: 'https://vuepress-theme-hope.github.io/v2/zh/guide/'
 }, {
     title: 'MarkDown功能增强插件',
@@ -21,4 +21,7 @@ export const firendLink = [{
 },{
     title: 'Vue3中文文档',
     link: 'https://cn.vuejs.org/'
+},{
+    title: 'Frp文档',
+    link: 'https://gofrp.org/'
 }]
