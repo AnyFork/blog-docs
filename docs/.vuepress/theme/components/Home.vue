@@ -1,6 +1,8 @@
 <template>
   <main>
-    <LoadingPage v-if="show"></LoadingPage>
+    <client-only v-if="show">
+      <LoadingPage></LoadingPage>
+    </client-only>
     <div v-show="!show">
       <HomeBanner />
       <HomeBlog />
