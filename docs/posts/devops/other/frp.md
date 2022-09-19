@@ -158,36 +158,36 @@ log_max_days = 3
 # 服务端身份验证token
 token = 52010
 # 服务端地址
-server_addr = 43.143.18.120
+server_addr = xxxxxx
 # 服务端端口
-server_port = 7000
+server_port = xxx
 # 客户端adminUi地址
-admin_addr = 127.0.0.1
+admin_addr = xxx
 # 客户端adminUi端口
-admin_port = 7400
+admin_port = xxx
 # 客户端adminUi账号
-admin_user = admin
+admin_user = xxx
 # 客户端adminUi密码
-admin_pwd = admin
+admin_pwd = xxx
 
 [web]
 type = https
-custom_domains = frp.anyfork.top
+custom_domains = xxx
 plugin = https2http
-plugin_local_addr = 127.0.0.1:9527
+plugin_local_addr = xxxx
 # HTTPS 证书相关的配置
-plugin_crt_path = ./frp.anyfork.top_bundle.crt
-plugin_key_path = ./frp.anyfork.top.key
-plugin_host_header_rewrite = 127.0.0.1
-plugin_header_X-From-Where = frp
+plugin_crt_path = xxxx
+plugin_key_path = xxxx
+plugin_host_header_rewrite = xxxx
+plugin_header_X-From-Where = xxxx
 
 [web2]
 type = http
 #内网启动客户端ip
-local_ip = 127.0.0.1
+local_ip = xxxx
 #本地服务开启的端口
-local_port = 9527
-custom_domains = frp.anyfork.top
+local_port = xxxx
+custom_domains = xxxx
 ```
 
 `[web]`和`[web2]`为配的的 2 个代理节点，前者采用 https 协议，后者采用 http 协议。在使用 https 或者 http 协议前，需要在服务器 frps.ini 文件中配置对应的 http 和 https 访问端口参数`vhost_http_port =8081`和`vhost_https_port =8080`,并在云服务器安全组开发对外端口，具体端口可以自定义。
