@@ -13,8 +13,8 @@ export default defineUserConfig({
   base: "/",
   //站点语言配置
   lang: "zh-CN",
-  title: "小紫念沁",
-  description: "资料文档汇集网站",
+  title: "技术经验总结",
+  description: "技术经验总结，资料文档汇集网站，小紫念沁的博客",
   dest: "dist",
   head: [
     ["link", { rel: "shortcut icon", type: "image/x-icon", href: "/favicon.ico" }],
